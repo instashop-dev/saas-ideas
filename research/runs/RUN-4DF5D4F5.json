@@ -1,7 +1,7 @@
 {
   "run_id": "RUN-4DF5D4F5",
   "started_at": "2026-08-12T14:02:46.333Z",
-  "completed_at": null,
+  "completed_at": "2026-08-12T18:24:52.538Z",
   "trigger": "manual",
   "models": {
     "pain_miner": "qwen/qwen3.7-flash",
@@ -22,5 +22,5 @@
     "approved": 0
   },
   "estimated_cost": null,
-  "status": "judging"
+  "status": "completed"
 }
