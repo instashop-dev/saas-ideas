@@ -27,6 +27,28 @@ describe('Executor model fallback on invalid output', () => {
     process.env['OPENROUTER_API_KEY'] = 'sk-test-executor';
   });
 
+  it('repairs truncated JSON responses (mid-array)', async () => {
+    // Simulates a model response cut off before the closing brackets.
+    const { parseAgentJson } = await import('../../src/agents/executor.js');
+
+    const truncated = '{"clusters": [{"cluster_id": "CL-1"}, {"cluster_id": "CL-2"}';
+    const repaired = parseAgentJson(truncated) as { clusters: Array<{ cluster_id: string }> };
+    expect(repaired.clusters).toHaveLength(2);
+    expect(repaired.clusters[1]!.cluster_id).toBe('CL-2');
+
+    // Nested object truncation variant.
+    const truncated2 = '{"signals": [{"signal_id": "SIG-1"}], "evidence": [{"source_id": "SRC-1"}';
+    const repaired2 = parseAgentJson(truncated2) as {
+      signals: Array<{ signal_id: string }>;
+      evidence: Array<{ source_id: string }>;
+    };
+    expect(repaired2.signals).toHaveLength(1);
+    expect(repaired2.evidence).toHaveLength(1);
+
+    // Garbage that cannot be repaired still throws.
+    expect(() => parseAgentJson('{not json at all')).toThrow(/invalid JSON/);
+  });
+
   it('falls back to the next model when the primary returns schema-invalid JSON', async () => {
     const { callWithRetry } = await import('../../src/openrouter/provider.js');
     const mocked = callWithRetry as unknown as { mockResolvedValueOnce: (v: unknown) => void };

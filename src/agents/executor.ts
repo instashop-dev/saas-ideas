@@ -22,6 +22,35 @@ export interface AgentCallResult<T> {
   };
 }
 
+/**
+ * Extract the JSON object from a model response and parse it.
+ *
+ * Models frequently truncate long responses mid-array. When the plain parse
+ * fails, repair the truncated payload by closing the outermost array/object so
+ * the complete prefix is recovered (e.g. '{"clusters": [{...},{...}' -> append ']}').
+ * The resulting prefix is still schema-validated downstream, so malformed data
+ * cannot slip through.
+ */
+export function parseAgentJson(content: string): unknown {
+  const match = content.match(/\{[\s\S]*\}/);
+  const candidate = match ? match[0] : content;
+
+  try {
+    return JSON.parse(candidate);
+  } catch {
+    // Truncation repair: try closing the outermost array and/or object.
+    for (const suffix of [']}', '}]', '}']) {
+      try {
+        return JSON.parse(candidate + suffix);
+      } catch {
+        // keep trying
+      }
+    }
+  }
+
+  throw new Error('invalid JSON in model response');
+}
+
 async function callAgent<T>(
   agentName: string,
   schema: z.ZodType<T>,
@@ -60,10 +89,7 @@ async function callAgent<T>(
       // Parse and validate the structured output
       let parsed: unknown;
       try {
-        // Try to extract JSON from the response
-        const jsonMatch = result.content.match(/\{[\s\S]*\}/);
-        const jsonStr = jsonMatch ? jsonMatch[0] : result.content;
-        parsed = JSON.parse(jsonStr);
+        parsed = parseAgentJson(result.content);
       } catch {
         throw new Error(
           `Agent ${agentName} returned invalid JSON from model ${result.model}. Content: ${result.content.slice(0, 500)}`,
