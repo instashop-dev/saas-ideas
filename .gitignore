@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Runtime artifacts (generated at run time, not source code)
+research/runs/
+research/raw-signals/
+research/clusters/
+opportunities/
+reports/
+!research/runs/.gitkeep
+!research/raw-signals/.gitkeep
+!research/clusters/.gitkeep
+!opportunities/.gitkeep
+!reports/.gitkeep
+!reports/archive/.gitkeep

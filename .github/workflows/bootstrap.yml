@@ -1,0 +1,84 @@
+name: Bootstrap
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (validate only, no mutations)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Validate config
+        run: npx tsx src/cli/bootstrap.ts
+
+      - name: Create labels (idempotent)
+        if: ${{ !inputs.dry_run }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = [
+              { name: 'stage:pain', color: 'FF6B6B', description: 'Pain mining stage' },
+              { name: 'stage:cluster', color: 'FFA07A', description: 'Clustering stage' },
+              { name: 'stage:validate', color: 'FFD700', description: 'Validation stage' },
+              { name: 'stage:competition', color: '98FB98', description: 'Competition research stage' },
+              { name: 'stage:debate', color: '87CEEB', description: 'Bull/Bear/Customer debate stage' },
+              { name: 'stage:judge', color: 'DDA0DD', description: 'Final judge stage' },
+              { name: 'stage:complete', color: '90EE90', description: 'Stage completed' },
+              { name: 'status:ready', color: 'BFE5BF', description: 'Ready to process' },
+              { name: 'status:running', color: 'FFE4B5', description: 'Currently running' },
+              { name: 'status:review', color: 'ADD8E6', description: 'Needs human review' },
+              { name: 'status:passed', color: '006B3C', description: 'Passed gates' },
+              { name: 'status:rejected', color: 'B22222', description: 'Rejected' },
+              { name: 'status:approved', color: '228B22', description: 'Approved' },
+              { name: 'status:error', color: 'FF0000', description: 'Error occurred' },
+              { name: 'status:needs-evidence', color: 'FFA500', description: 'Needs more evidence' },
+            ];
+
+            for (const label of labels) {
+              try {
+                await github.rest.issues.getLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: label.name,
+                });
+                console.log(`Label exists: ${label.name}`);
+              } catch (e) {
+                if (e.status === 404) {
+                  await github.rest.issues.createLabel({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    name: label.name,
+                    color: label.color,
+                    description: label.description,
+                  });
+                  console.log(`Created label: ${label.name}`);
+                } else {
+                  console.error(`Error checking label ${label.name}: ${e.message}`);
+                }
+              }
+            }
+
+      - name: Bootstrap Summary
+        run: |
+          echo "## Bootstrap Complete" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Config validated" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Labels created/verified" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Required directories checked" >> $GITHUB_STEP_SUMMARY

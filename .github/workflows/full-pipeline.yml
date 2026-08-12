@@ -1,0 +1,195 @@
+name: Full Pipeline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: full-pipeline
+  cancel-in-progress: false
+
+env:
+  OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      run_id: ${{ steps.create-run.outputs.RUN_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Create Discovery Run
+        id: create-run
+        run: |
+          OUTPUT=$(npx tsx src/cli/discovery.ts manual)
+          RUN_ID=$(echo "$OUTPUT" | grep 'RUN_ID=' | cut -d'=' -f2)
+          echo "RUN_ID=$RUN_ID" >> $GITHUB_OUTPUT
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/
+          git diff --staged --quiet || git commit -m "Start pipeline $RUN_ID"
+          git push
+
+  pain-mining:
+    needs: discovery
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npx tsx src/cli/stage-pain-mine.ts "${{ needs.discovery.outputs.run_id }}"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/
+          git diff --staged --quiet || git commit -m "Pain mining for ${{ needs.discovery.outputs.run_id }}"
+          git push
+
+  clustering:
+    needs: [discovery, pain-mining]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npx tsx src/cli/stage-cluster.ts "${{ needs.discovery.outputs.run_id }}"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/
+          git diff --staged --quiet || git commit -m "Clustering for ${{ needs.discovery.outputs.run_id }}"
+          git push
+
+  validation:
+    needs: [discovery, clustering]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npx tsx src/cli/stage-validate.ts "${{ needs.discovery.outputs.run_id }}"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/ opportunities/
+          git diff --staged --quiet || git commit -m "Validation for ${{ needs.discovery.outputs.run_id }}"
+          git push
+
+  competition:
+    needs: [discovery, validation]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npx tsx src/cli/stage-competition.ts "${{ needs.discovery.outputs.run_id }}"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add opportunities/ research/
+          git diff --staged --quiet || git commit -m "Competition for ${{ needs.discovery.outputs.run_id }}"
+          git push
+
+  debate:
+    needs: [discovery, competition]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npx tsx src/cli/stage-debate.ts "${{ needs.discovery.outputs.run_id }}"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add opportunities/ research/
+          git diff --staged --quiet || git commit -m "Debate for ${{ needs.discovery.outputs.run_id }}"
+          git push
+
+  judge:
+    needs: [discovery, debate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npx tsx src/cli/stage-judge.ts "${{ needs.discovery.outputs.run_id }}"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add opportunities/ research/
+          git diff --staged --quiet || git commit -m "Judge for ${{ needs.discovery.outputs.run_id }}"
+          git push
+
+  report:
+    needs: [discovery, judge]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npx tsx src/cli/stage-report.ts "${{ needs.discovery.outputs.run_id }}"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/ research/
+          git diff --staged --quiet || git commit -m "Reports for ${{ needs.discovery.outputs.run_id }}"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Full Pipeline Complete" >> $GITHUB_STEP_SUMMARY
+          echo "**Run ID**: ${{ needs.discovery.outputs.run_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "📊 See reports/ for results" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,76 @@
+name: Recovery
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'Run ID to recover'
+        required: true
+        type: string
+      stage:
+        description: 'Stage to resume from'
+        required: true
+        type: choice
+        options:
+          - pain_mining
+          - clustering
+          - validation
+          - competition
+          - debate
+          - judge
+          - report
+
+permissions:
+  contents: write
+  issues: write
+
+env:
+  OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Run Recovery Stage
+        run: |
+          case "${{ inputs.stage }}" in
+            pain_mining)
+              npx tsx src/cli/stage-pain-mine.ts "${{ inputs.run_id }}"
+              ;;
+            clustering)
+              npx tsx src/cli/stage-cluster.ts "${{ inputs.run_id }}"
+              ;;
+            validation)
+              npx tsx src/cli/stage-validate.ts "${{ inputs.run_id }}"
+              ;;
+            competition)
+              npx tsx src/cli/stage-competition.ts "${{ inputs.run_id }}"
+              ;;
+            debate)
+              npx tsx src/cli/stage-debate.ts "${{ inputs.run_id }}"
+              ;;
+            judge)
+              npx tsx src/cli/stage-judge.ts "${{ inputs.run_id }}"
+              ;;
+            report)
+              npx tsx src/cli/stage-report.ts "${{ inputs.run_id }}"
+              ;;
+          esac
+
+      - name: Commit Results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/ opportunities/ reports/
+          git diff --staged --quiet || git commit -m "[${{ inputs.run_id }}] Recovery: ${{ inputs.stage }}"
+          git push
