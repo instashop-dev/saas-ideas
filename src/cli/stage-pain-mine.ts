@@ -62,7 +62,8 @@ async function main(): Promise<void> {
           `Look for manual workflows, reconciliation tasks, integration gaps, ` +
           `and compliance operations. Focus on signals where people are actively ` +
           `complaining about or spending money to solve a problem. ` +
-          `Max ${maxSignals} signals.`,
+          `Return between 3 and ${Math.min(10, maxSignals)} high-quality signals with ` +
+          `full evidence for each — prefer depth and verified detail over volume.`,
       );
 
       const ecoDir = resolve(rawSignalsDir, ecosystem.replace(/[^a-zA-Z0-9-]/g, '_'));

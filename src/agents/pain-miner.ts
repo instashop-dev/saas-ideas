@@ -90,7 +90,15 @@ Find real, recurring operational pain signals in this ecosystem. Focus on manual
 
 Return an array of raw signals with associated evidence items. Each signal must have at least one evidence item.`;
 
-  const result = await callAgent('pain_miner', PainMineOutputSchema, userPrompt);
+  const result = await callAgent(
+    'pain_miner',
+    PainMineOutputSchema,
+    userPrompt,
+    undefined,
+    // An all-empty response is unusable: treat it as a model failure so the
+    // fallback models get a chance to produce real signals.
+    (data) => (data.signals?.length ?? 0) > 0 || (data.evidence?.length ?? 0) > 0,
+  );
   return {
     data: normalizePainMineOutput(result.data),
     metadata: result.metadata,
@@ -107,7 +115,13 @@ ${searchResults}
 
 Find real, recurring operational pain signals. Return an array of raw signals with associated evidence items.`;
 
-  const result = await callAgent('pain_miner', PainMineOutputSchema, userPrompt);
+  const result = await callAgent(
+    'pain_miner',
+    PainMineOutputSchema,
+    userPrompt,
+    undefined,
+    (data) => (data.signals?.length ?? 0) > 0 || (data.evidence?.length ?? 0) > 0,
+  );
   return {
     data: normalizePainMineOutput(result.data),
     metadata: result.metadata,

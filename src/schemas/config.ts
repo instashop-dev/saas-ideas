@@ -59,6 +59,7 @@ export const LLMConfigSchema = z.object({
   temperature: z.number().min(0).max(2).default(0.2),
   timeout_seconds: z.number().int().min(1).default(180),
   max_retries: z.number().int().min(1).default(3),
+  max_tokens: z.number().int().min(256).max(16384).default(8192),
 });
 
 export const BudgetConfigSchema = z.object({

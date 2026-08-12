@@ -27,6 +27,7 @@ async function callAgent<T>(
   schema: z.ZodType<T>,
   userPrompt: string,
   responseSchema?: object,
+  isAcceptable?: (data: T) => boolean,
 ): Promise<AgentCallResult<T>> {
   const config = getConfig();
   const modelsConfig = config.models[agentName as keyof typeof config.models];
@@ -41,6 +42,7 @@ async function callAgent<T>(
     userPrompt,
     temperature: config.llm.temperature,
     timeoutMs: config.llm.timeout_seconds * 1000,
+    maxTokens: config.llm.max_tokens,
     responseFormat: responseSchema
       ? { type: 'json_object' as const, schema: responseSchema }
       : { type: 'json_object' as const },
@@ -49,8 +51,8 @@ async function callAgent<T>(
   let lastError: Error | null = null;
 
   // Try each model in order (primary first, then fallbacks). Transport failures,
-  // invalid JSON, and schema-validation failures all advance to the next model,
-  // so a model that returns well-formed-but-invalid output doesn't kill the stage.
+  // invalid JSON, schema-validation failures, and unusable (e.g. empty) output all
+  // advance to the next model, so one bad response doesn't kill the stage.
   for (const model of models) {
     try {
       const result = await callWithRetry({ ...baseOptions, model }, config.llm.max_retries);
@@ -72,6 +74,12 @@ async function callAgent<T>(
       if (!validated.success) {
         throw new Error(
           `Agent ${agentName} returned data that failed schema validation (model ${result.model}): ${validated.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`,
+        );
+      }
+
+      if (isAcceptable && !isAcceptable(validated.data)) {
+        throw new Error(
+          `Agent ${agentName} returned unusable (empty) output from model ${result.model}`,
         );
       }
 

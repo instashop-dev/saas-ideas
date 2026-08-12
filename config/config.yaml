@@ -1,56 +1,56 @@
 models:
   # Pain mining / web research → Kimi K3
   pain_miner:
-    primary: "moonshotai/kimi-k3"
+    primary: 'moonshotai/kimi-k3'
     fallbacks:
-      - "deepseek/deepseek-v4-flash"
-      - "qwen/qwen3.7-flash"
+      - 'deepseek/deepseek-v4-flash'
+      - 'qwen/qwen3.7-flash'
 
   # Clustering → Kimi K3
   clusterer:
-    primary: "moonshotai/kimi-k3"
+    primary: 'moonshotai/kimi-k3'
     fallbacks:
-      - "deepseek/deepseek-v4-pro"
-      - "deepseek/deepseek-v4-flash"
+      - 'deepseek/deepseek-v4-pro'
+      - 'deepseek/deepseek-v4-flash'
 
   # Pain validation → Kimi K3, fallback DeepSeek V4 Pro
   validator:
-    primary: "moonshotai/kimi-k3"
+    primary: 'moonshotai/kimi-k3'
     fallbacks:
-      - "deepseek/deepseek-v4-pro"
-      - "z-ai/glm-5.2"
+      - 'deepseek/deepseek-v4-pro'
+      - 'z-ai/glm-5.2'
 
   # Competition research → Kimi K3
   competition:
-    primary: "moonshotai/kimi-k3"
+    primary: 'moonshotai/kimi-k3'
     fallbacks:
-      - "deepseek/deepseek-v4-pro"
-      - "deepseek/deepseek-v4-flash"
+      - 'deepseek/deepseek-v4-pro'
+      - 'deepseek/deepseek-v4-flash'
 
   # Debate: different models = useful diversity
   # Bull → Kimi K3
   bull:
-    primary: "moonshotai/kimi-k3"
+    primary: 'moonshotai/kimi-k3'
     fallbacks:
-      - "deepseek/deepseek-v4-pro"
+      - 'deepseek/deepseek-v4-pro'
 
   # Bear → DeepSeek V4 Pro (adversarial perspective from a different model family)
   bear:
-    primary: "deepseek/deepseek-v4-pro"
+    primary: 'deepseek/deepseek-v4-pro'
     fallbacks:
-      - "moonshotai/kimi-k3"
+      - 'moonshotai/kimi-k3'
 
   # Customer → GLM 5.2 (buyer perspective from a third model family)
   customer:
-    primary: "z-ai/glm-5.2"
+    primary: 'z-ai/glm-5.2'
     fallbacks:
-      - "moonshotai/kimi-k3"
+      - 'moonshotai/kimi-k3'
 
   # Final judge → Kimi K3
   judge:
-    primary: "moonshotai/kimi-k3"
+    primary: 'moonshotai/kimi-k3'
     fallbacks:
-      - "deepseek/deepseek-v4-pro"
+      - 'deepseek/deepseek-v4-pro'
 
 research:
   ecosystems:
@@ -89,10 +89,11 @@ llm:
   temperature: 0.2
   timeout_seconds: 180
   max_retries: 3
+  max_tokens: 8192
 
 budget:
   max_cost_per_run_usd: null
 
 schedule:
   enabled: true
-  cron: "0 0 * * 0"
+  cron: '0 0 * * 0'
