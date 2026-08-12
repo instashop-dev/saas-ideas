@@ -3,7 +3,9 @@
   "started_at": "2026-08-12T14:02:46.333Z",
   "completed_at": null,
   "trigger": "manual",
-  "models": {},
+  "models": {
+    "pain_miner": "moonshotai/kimi-k3"
+  },
   "candidate_counts": {
     "signals": 0,
     "clusters": 0,
@@ -13,5 +15,5 @@
     "approved": 0
   },
   "estimated_cost": null,
-  "status": "created"
+  "status": "pain_mining"
 }
