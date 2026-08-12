@@ -12,6 +12,9 @@ permissions:
   contents: read
   issues: write
 
+env:
+  OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
 jobs:
   bootstrap:
     runs-on: ubuntu-latest
