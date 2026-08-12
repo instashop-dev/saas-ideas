@@ -13,6 +13,8 @@ import {
   loadRunManifest,
   incrementCandidateCount,
   updateRunStatus,
+  recordModelUsed,
+  setCandidateCount,
 } from '../state/run-manifest.js';
 import { runValidator } from '../agents/validator.js';
 import { saveOpportunity, saveOpportunityArtifact } from '../state/opportunities.js';
@@ -51,6 +53,9 @@ async function main(): Promise<void> {
 
   const maxCandidates = config.research.max_candidates_after_validation;
   let validated = 0;
+
+  // Reset the count so Recovery re-runs are idempotent (counts = current state).
+  setCandidateCount(runId, 'validated', 0);
 
   for (const cluster of clusters.slice(0, maxCandidates)) {
     console.log(`  Validating: ${cluster.cluster_id}: ${cluster.canonical_jtbd.slice(0, 60)}...`);
@@ -109,6 +114,7 @@ async function main(): Promise<void> {
 
       saveOpportunity(opportunity);
       saveOpportunityArtifact(opportunityId, 'validation.json', validation);
+      recordModelUsed(runId, 'validator', result.metadata.model);
 
       console.log(
         `    ✓ Saved ${opportunityId} (pain: ${validation.scores.pain_intensity}, freq: ${validation.scores.frequency}, WTP: ${validation.scores.willingness_to_pay}) [${result.metadata.model}]`,

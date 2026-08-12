@@ -11,6 +11,8 @@ import {
   loadRunManifest,
   incrementCandidateCount,
   updateRunStatus,
+  recordModelUsed,
+  setCandidateCount,
 } from '../state/run-manifest.js';
 import { runCompetitionResearcher } from '../agents/competition.js';
 import {
@@ -51,6 +53,9 @@ async function main(): Promise<void> {
   console.log(
     `Checking competition for ${opportunities.length} opportunities (max ${maxCandidates} survivors)...\n`,
   );
+
+  // Reset the count so Recovery re-runs are idempotent (counts = current state).
+  setCandidateCount(runId, 'competition_survivors', 0);
 
   let survivors = 0;
 
@@ -96,6 +101,7 @@ async function main(): Promise<void> {
 
       saveOpportunity(opp);
       saveOpportunityArtifact(opp.id, 'competition.json', competition);
+      recordModelUsed(runId, 'competition', result.metadata.model);
     } catch (err) {
       console.error(`    ✗ Failed: ${err}`);
       opp.status = 'REJECTED';

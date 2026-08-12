@@ -10,6 +10,8 @@ import {
   loadRunManifest,
   incrementCandidateCount,
   updateRunStatus,
+  recordModelUsed,
+  setCandidateCount,
 } from '../state/run-manifest.js';
 import { runBull, runBear, runCustomer } from '../agents/debate.js';
 import {
@@ -49,6 +51,9 @@ async function main(): Promise<void> {
   }
 
   console.log(`Debating ${opportunities.length} opportunities (Bull + Bear + Customer)...\n`);
+
+  // Reset the count so Recovery re-runs are idempotent (counts = current state).
+  setCandidateCount(runId, 'finalists', 0);
 
   let debated = 0;
 
@@ -100,14 +105,17 @@ async function main(): Promise<void> {
 
       if (bull) {
         saveOpportunityArtifact(opp.id, 'bull.json', bull.data);
+        recordModelUsed(runId, 'bull', bull.metadata.model);
         console.log(`    ✓ Bull: ${bull.data.summary.slice(0, 60)}...`);
       }
       if (bear) {
         saveOpportunityArtifact(opp.id, 'bear.json', bear.data);
+        recordModelUsed(runId, 'bear', bear.metadata.model);
         console.log(`    ✓ Bear: ${bear.data.summary.slice(0, 60)}...`);
       }
       if (customer) {
         saveOpportunityArtifact(opp.id, 'customer.json', customer.data);
+        recordModelUsed(runId, 'customer', customer.metadata.model);
         console.log(`    ✓ Customer: ${customer.data.summary.slice(0, 60)}...`);
       }
 

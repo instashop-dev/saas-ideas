@@ -66,10 +66,39 @@ export function incrementCandidateCount(
   return manifest;
 }
 
+/**
+ * Set a candidate count to an absolute value.
+ * Used by stage CLIs before re-processing so that Recovery re-runs are
+ * idempotent (counts reflect the current state, not cumulative re-runs).
+ */
+export function setCandidateCount(
+  runId: string,
+  field: keyof RunManifest['candidate_counts'],
+  count: number,
+): RunManifest | null {
+  const manifest = loadRunManifest(runId);
+  if (!manifest) return null;
+  manifest.candidate_counts[field] = count;
+  saveRunManifest(manifest);
+  return manifest;
+}
+
 export function setModelsUsed(runId: string, models: Record<string, string>): RunManifest | null {
   const manifest = loadRunManifest(runId);
   if (!manifest) return null;
   manifest.models = models;
+  saveRunManifest(manifest);
+  return manifest;
+}
+
+/**
+ * Record the model actually used for one pipeline stage, keyed by agent role.
+ * Merges into the existing map so every stage's model survives.
+ */
+export function recordModelUsed(runId: string, stage: string, model: string): RunManifest | null {
+  const manifest = loadRunManifest(runId);
+  if (!manifest) return null;
+  manifest.models[stage] = model;
   saveRunManifest(manifest);
   return manifest;
 }

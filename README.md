@@ -74,7 +74,7 @@ created → pain_mining → clustering → validating → competition_checking �
 ```
 /
 ├── agents/              # Agent system prompts (Markdown)
-│   ├── pain-miner.md
+│   ├── pain_miner.md
 │   ├── clusterer.md
 │   ├── validator.md
 │   ├── competition.md

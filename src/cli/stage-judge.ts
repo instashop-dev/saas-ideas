@@ -10,6 +10,8 @@ import {
   loadRunManifest,
   incrementCandidateCount,
   updateRunStatus,
+  recordModelUsed,
+  setCandidateCount,
 } from '../state/run-manifest.js';
 import { runJudge } from '../agents/judge.js';
 import {
@@ -49,6 +51,9 @@ async function main(): Promise<void> {
   }
 
   console.log(`Judging ${opportunities.length} opportunities...\n`);
+
+  // Reset the count so Recovery re-runs are idempotent (counts = current state).
+  setCandidateCount(runId, 'approved', 0);
 
   let approved = 0;
   let rejected = 0;
@@ -98,6 +103,7 @@ async function main(): Promise<void> {
       opp.updated_at = new Date().toISOString();
 
       saveOpportunityArtifact(opp.id, 'judge_verdict.json', verdict);
+      recordModelUsed(runId, 'judge', result.metadata.model);
 
       if (verdict.verdict === 'APPROVE') {
         // Check deterministic gates

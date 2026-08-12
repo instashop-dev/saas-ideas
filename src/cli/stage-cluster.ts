@@ -12,6 +12,8 @@ import {
   loadRunManifest,
   incrementCandidateCount,
   updateRunStatus,
+  recordModelUsed,
+  setCandidateCount,
 } from '../state/run-manifest.js';
 import { runClusterer } from '../agents/clusterer.js';
 import { checkDuplicate } from '../dedupe/index.js';
@@ -69,6 +71,9 @@ async function main(): Promise<void> {
     process.exit(0);
   }
 
+  // Reset the count so Recovery re-runs are idempotent (counts = current state).
+  setCandidateCount(runId, 'clusters', 0);
+
   // Run clusterer
   console.log('\nRunning clusterer...');
   const result = await runClusterer(JSON.stringify(allSignals, null, 2));
@@ -77,6 +82,7 @@ async function main(): Promise<void> {
   console.log(
     `  ✓ ${clusters.length} clusters created (${result.metadata.model}, ${result.metadata.durationMs}ms)`,
   );
+  recordModelUsed(runId, 'clusterer', result.metadata.model);
 
   // Save clusters and check duplicates
   const clustersDir = resolve(process.cwd(), 'research', 'clusters', runId);

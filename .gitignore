@@ -5,15 +5,8 @@ dist/
 *.log
 .DS_Store
 
-# Runtime artifacts (generated at run time, not source code)
-research/runs/
-research/raw-signals/
-research/clusters/
-opportunities/
-reports/
-!research/runs/.gitkeep
-!research/raw-signals/.gitkeep
-!research/clusters/.gitkeep
-!opportunities/.gitkeep
-!reports/.gitkeep
-!reports/archive/.gitkeep
+# Pipeline artifacts ARE committed: the Git-native state machine relies on each stage
+# committing + pushing its outputs so downstream stages and Recovery can consume them
+# from a fresh checkout. Directory placeholders (.gitkeep) remain tracked on purpose.
+
+.reasonix/

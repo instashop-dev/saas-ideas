@@ -13,6 +13,8 @@ import {
   loadRunManifest,
   incrementCandidateCount,
   updateRunStatus,
+  recordModelUsed,
+  setCandidateCount,
 } from '../state/run-manifest.js';
 import { runPainMiner } from '../agents/pain-miner.js';
 
@@ -45,6 +47,9 @@ async function main(): Promise<void> {
   if (!existsSync(rawSignalsDir)) {
     mkdirSync(rawSignalsDir, { recursive: true });
   }
+
+  // Reset the count so Recovery re-runs are idempotent (counts = current state).
+  setCandidateCount(runId, 'signals', 0);
 
   let totalSignals = 0;
 
@@ -79,6 +84,7 @@ async function main(): Promise<void> {
       console.log(
         `    ✓ ${result.data.signals.length} signals, ${result.data.evidence.length} evidence items (${result.metadata.model}, ${result.metadata.durationMs}ms)`,
       );
+      recordModelUsed(runId, 'pain_miner', result.metadata.model);
       totalSignals += result.data.signals.length;
     } catch (err) {
       console.error(`    ✗ Failed: ${err}`);
