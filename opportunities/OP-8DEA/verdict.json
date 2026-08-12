@@ -1,0 +1,69 @@
+{
+  "id": "OP-8DEA",
+  "canonical_key": "CK-829005740bdeb411",
+  "title": "When I need to generate recurring reports and dashboards, I want to automatically pull data from mul",
+  "target_user": "Data Analyst / Marketing Operations Specialist / PPC Specialist / Community Manager / Product Manager",
+  "job_to_be_done": "When I need to generate recurring reports and dashboards, I want to automatically pull data from multiple sources (analytics, ad platforms, logs, CRMs) and compile it into a standardized format, so I can get accurate insights without manual data entry and spreadsheet wrangling.",
+  "painful_workflow": "Manually exporting data from various tools (Google Ads, Meta Ads, GA4, Salesforce, Jira, GitHub, Discord, Stack Exchange) as CSVs, then copying/pasting into spreadsheets or slide decks, formatting charts, and writing commentary. This is repeated weekly or monthly for each report or client.",
+  "current_workaround": "Manual exports from each platform, copy/paste into per-client Excel/Google Sheets templates, screenshots into PowerPoint/Google Slides, and hand-written commentary. Some maintain brittle internal scripts or pay for connector tools that break.",
+  "source_ids": [
+    "SIG-DEV-003",
+    "SIG-0003",
+    "SIG-0004",
+    "SIG-0005",
+    "SIG-0003",
+    "SIG-0004",
+    "SIG-0005",
+    "SIG-0008",
+    "SIG-UPW-002"
+  ],
+  "independent_sources": 7,
+  "source_type_count": 4,
+  "pain_score": 3,
+  "frequency_score": 4,
+  "urgency_score": 3,
+  "economic_impact_score": 3,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 4,
+  "distribution_score": 3,
+  "global_score": 5,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 2,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "Manual CSV export/import between SaaS tools (Salesforce→Mailchimp) is described in review sources (SIG-0003).",
+    "Recurring weekly/monthly reporting from multiple platforms (Google Ads, Meta, GA4, logs, databases) is described across forum and review sources (SIG-0004, SIG-0005, SIG-DEV-003).",
+    "Manual cleanup of exported reports (reformatting dates, deduplication, merging) is described in at least one forum source (SIG-0008).",
+    "Users are described as paying for connector tools that are perceived as brittle (cluster workaround field, corroborated by SIG-0005-reddit 'fragile scripts')."
+  ],
+  "inferences": [
+    "Weekly multi-source manual reporting plausibly consumes several hours per report cycle per person, implying real but unquantified labor cost.",
+    "The recurring mention of paid connector tools indicates an existing, mature commercial category already serving this JTBD, which validates spend but undermines whitespace.",
+    "The duplication of signal IDs with divergent evidence suggests the cluster's apparent breadth (9 signals) overstates its true evidentiary weight.",
+    "Agency-side reporting (client deliverables) likely carries higher economic stakes than the freelancer/blogger cases, meaning severity varies widely across the mixed personas."
+  ],
+  "assumptions": [
+    "That these heterogeneous pains (compliance reporting, agency client reporting, sponsor reporting, personal freelancer dashboards, CRM→email data transfer) constitute one coherent buyer and one product.",
+    "That 'connector tools that break' reflects dissatisfaction severe enough to drive switching, rather than grumbling tolerance.",
+    "That the unnamed sources (SRC-0005, SRC-0006, etc.) represent genuinely independent people rather than recycled or overlapping content."
+  ],
+  "unknowns": [
+    "Hours and dollar cost per reporting cycle — no source quantifies anything.",
+    "Current tool spend per affected user and churn/dissatisfaction rates with incumbent connector/BI tools.",
+    "Whether the SOC 2 reporting pain (SIG-0004) ever resulted in audit findings or only inconvenience.",
+    "Whether any of these users are actively evaluating alternatives or merely venting.",
+    "The actual independence of the 7 claimed sources given source-ID reuse across ecosystems."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4DF5D4F5",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-12T15:46:59.260Z",
+  "updated_at": "2026-08-12T15:46:59.260Z"
+}

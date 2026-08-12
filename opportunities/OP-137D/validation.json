@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 4,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0004 contains only a neutral restatement of the task ('Researching and personalizing outbound sales emails by manually looking up prospects'). There is no intensity language — no 'frustrating', 'hours', 'hate', 'slow', or any consequence description. The evidence proves the task exists, not that it is severely painful. Score capped at 2 because the evidence describes a routine task with no expressed suffering.",
+    "frequency": "SIG-0004 does not state how often this occurs. A score of 3 is an inference from the general nature of the SDR role (outbound is typically a daily activity), not from the evidence itself. If the SDR sends low-volume/high-touch outreach, frequency could be lower; we simply do not know.",
+    "urgency": "Nothing in SIG-0004 indicates anything is blocked. The workflow completes — research happens, emails get sent. There is no deadline pressure, failure mode, or escalation described in the evidence. Urgency beyond convenience is unproven.",
+    "economic_impact": "SIG-0004 contains zero quantification: no time cost per prospect, no salary-weighted labor cost, no response-rate delta, no pipeline impact. The JTBD's claim of 'increase response rates' is part of the cluster framing, not the source evidence. Dollar impact is entirely unverified.",
+    "operational_impact": "SIG-0004 describes an individual task, not a team-level disruption. No evidence of blocked colleagues, missed quotas, or process breakdown. There is no basis to score above 2.",
+    "workaround_intensity": "The described workaround (SIG-0004, cluster description) is switching between browser tabs. That is a mild-effort workaround measured in minutes, not a full-time person, not a spreadsheet empire, not a hired contractor. This actively argues AGAINST a burning need: the cheapness of the workaround lowers switching pressure.",
+    "willingness_to_pay": "SIG-0004 shows no spend: no tools purchased, no consultants, no budget. The only weak signal is that the evidence lives in a product-review ecosystem (SRC-0004), which implies the reviewer engaged with some product in this space — but engagement is not payment, and the evidence text does not even confirm dissatisfaction. Score 2, and that is generous.",
+    "global_applicability": "Outbound sales research is not tied to any one country's regulation or market structure; the workflow is structurally identical across regions. This is an inference about the problem's nature, not something SIG-0004 confirms, but it is a low-risk inference. Score 4.",
+    "customer_accessibility": "SDRs are one of the most identifiable and reachable B2B personas (large presence on professional networks, sales communities, and the review ecosystem this very evidence came from). This is a structural property of the segment and does not depend on pain evidence. Score 4. Note: reachability of the persona does not rescue the unproven pain.",
+    "evidence_quality": "This is the decisive failure. The entire cluster rests on ONE signal (SIG-0004), from ONE source (SRC-0004), of ONE source type (product-hunt-reviews), and the 'evidence' is a single clause that merely restates the workflow with no intensity, no quantification, no consequence, and no context (we don't even know if the review was positive or negative). independent_sources: 1 confirms this. Score 1."
+  },
+  "verified_facts": [
+    "The workflow of manually looking up prospects to personalize outbound emails exists (SIG-0004).",
+    "The evidence base consists of exactly one signal, one source, and one source type (SIG-0004 / SRC-0004 / product-hunt-reviews).",
+    "The evidence text contains no intensity language, quantification, stated consequences, or spend indicators."
+  ],
+  "inferences": [
+    "The task likely recurs frequently (possibly daily) given the typical SDR role, but this is inferred from the persona, not evidenced.",
+    "Because the source is a product review, a market of existing tools for this problem likely exists and the reviewer engaged with at least one — which cuts both ways: it hints the problem is recognized, but also suggests the pain may already be served by incumbents, weakening the case for a new entrant.",
+    "The 'increase response rates' motivation in the JTBD is plausible but is a framing added by the cluster, not present in SIG-0004."
+  ],
+  "assumptions": [
+    "That the person behind SIG-0004 is actually an SDR — the evidence does not state a role.",
+    "That the tab-switching workaround described in the cluster reflects the actual user's behavior rather than an elaboration of the one-line evidence.",
+    "That the reviewer was describing a pain rather than neutrally or positively describing a feature category."
+  ],
+  "unknowns": [
+    "Time cost per prospect and total weekly hours lost.",
+    "Whether manual research actually depresses response rates or pipeline for this user.",
+    "Any existing tool spend, subscriptions, or prior solution attempts.",
+    "Team size affected and whether this is an individual or organizational pain.",
+    "The sentiment, rating, and full context of SRC-0004.",
+    "Whether the user perceives this as a problem at all, or simply as a normal part of the job."
+  ],
+  "overall_assessment": "This cluster fails validation. The underlying problem — manual prospect research for outbound personalization — is plausible and the persona is reachable, but plausibility is not evidence. The entire case rests on a single one-line product-review fragment (SIG-0004) that merely restates the workflow with zero intensity, zero quantification, zero consequence, and zero demonstrated spend. Worse, the described workaround (browser tab-switching) is cheap, which undermines switching pressure, and the fact that the signal originates from a product-review ecosystem suggests the space is already served by existing tools, weakening the opening for a new SaaS. Under the burning-need threshold, this cluster demonstrates at most 1-2 of the required characteristics (frequent recurrence, inferred; customer accessibility), and lacks verified labor cost, revenue impact, risk exposure, operational bottleneck, and active paid workarounds. Verdict: DO NOT ADVANCE. Reject or return for evidence gathering — at minimum, multiple independent sources with expressed dissatisfaction, quantified time/labor cost, and demonstrated willingness to pay are needed before this can be reconsidered."
+}

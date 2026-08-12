@@ -1,0 +1,51 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 4,
+    "urgency": 2,
+    "economic_impact": 1,
+    "operational_impact": 2,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 1,
+    "global_applicability": 4,
+    "customer_accessibility": 2,
+    "evidence_quality": 2
+  },
+  "reasoning": {
+    "pain_intensity": "The evidence (SIG-DEV-002, SIG-001 x2, SIG-004) describes the *existence* of manual moderation work, not acute suffering. None of the four signals contains a quote about burnout, time lost, quitting, or escalation — they read as neutral descriptions of the moderator job. Manual review is the inherent nature of moderation, not evidence of a severe unmet pain. No severity markers anywhere in the cluster.",
+    "frequency": "This is the strongest dimension. Flag queues, spam, and user reports are continuous in active communities (SIG-001 Stack Exchange flag queue, SIG-DEV-002 comment review). It is reasonable to infer daily recurrence, though no signal provides volume or cadence data, so I cannot justify a 5.",
+    "urgency": "Nothing in the evidence indicates blocked operations or time-critical failure. Communities on Discord and Stack Exchange demonstrably continue operating with manual review today. Backlogged flags are annoying, not operationally blocking. No evidence of deadlines, SLAs, or compliance clocks.",
+    "economic_impact": "No signal mentions money, revenue loss, labor cost, or any quantified impact. The named target users (Discord server admins, Stack Exchange moderators) are overwhelmingly unpaid volunteers — there is no dollar cost to the person experiencing the pain. Whatever economic cost exists accrues to the platforms (Discord, Stack Exchange, Forem), and platforms build their own internal tooling rather than buying third-party SaaS for this.",
+    "operational_impact": "SIG-001 and SIG-DEV-002 describe a workflow inconvenience, not a team or business being blocked. A slow moderation queue degrades community quality gradually; it does not halt operations. No evidence of staff being unable to ship, serve customers, or meet obligations.",
+    "workaround_intensity": "The workarounds (manual queue review, browser extensions/scripts, spreadsheets, external search for plagiarism per SIG-001/SIG-004) do represent ongoing labor. However, the evidence itself also shows built-in mechanisms already absorb much of the load (Discord audit logs, SE flag/moderator queues), which undercuts the claim that the workaround is crushing. Continuous but partial effort: a 3.",
+    "willingness_to_pay": "Zero evidence of spend in any signal — no tools purchased, no consultants, no paid bots mentioned. Critically, the market context works against this: the incumbent solutions are free and native (Discord AutoMod, Reddit AutoModerator, Stack Exchange's community-run SmokeDetector for spam, Forem's built-in moderation for dev.to). Volunteer moderators have no budget authority. This is the dimension where the opportunity dies.",
+    "global_applicability": "Content moderation is genuinely universal across languages and jurisdictions — spam, abuse, and plagiarism exist in every community. This is one of the few dimensions that scores well, though language-specific detection quality would fragment any product's coverage.",
+    "customer_accessibility": "Moderators are findable (public servers, SE sites), but the *buyer* is unclear. Volunteers cannot authorize purchases; server owners rarely have moderation budgets; platforms self-supply tooling. There is no identifiable procurement path, no budget line, and no evidence in the signals of anyone shopping for a solution.",
+    "evidence_quality": "Weak. The cluster claims 4 independent sources, but SIG-001/SRC-001 is cited twice across two different ecosystems (discord-forums and Stack Exchange) — either the same document is double-counted or the sourcing is mislabeled, reducing effective independence to ~3 unique source IDs (SRC-DEV-003/004, SRC-001, SRC-004). Only 2 source types. All entries are terse secondhand summaries with no quotes, metrics, dates, or verifiable outcomes. Nothing here would survive source-level verification."
+  },
+  "verified_facts": [
+    "The four cited signals describe manual moderation workflows on dev.to, Discord forums, and Stack Exchange (flag queues, comment review, plagiarism checks, spreadsheet logging).",
+    "SIG-001 with source SRC-001 is listed twice for two different ecosystems, so the claimed '4 independent sources' overstates source independence.",
+    "No signal contains quantified data: no time costs, queue volumes, burnout statements, or spending.",
+    "Only 2 source types are represented (github, forum)."
+  ],
+  "inferences": [
+    "Moderation work recurs daily in active communities, making frequency the strongest dimension.",
+    "The target users are predominantly unpaid volunteers (Discord admins, SE moderators), which structurally eliminates willingness to pay at the individual level.",
+    "Free, entrenched incumbents already cover most of this JTBD: Discord AutoMod and free bots (MEE6, Dyno, Carl-bot), Reddit AutoModerator, Stack Exchange's community-run SmokeDetector/Charcoal for spam, and Forem's built-in moderation for dev.to — inferred from market knowledge, not from the provided evidence.",
+    "The 'manual' nature of the work partly reflects moderation's inherent need for human judgment on edge cases, not purely a tooling gap."
+  ],
+  "assumptions": [
+    "That communities would adopt and trust a third-party cross-platform moderation tool over native/free options.",
+    "That the described manual workflows are not already handled by existing bots or platform features unknown to the signal authors.",
+    "That SRC-001 cited for Discord and SRC-001 cited for Stack Exchange are distinct documents rather than a duplicate."
+  ],
+  "unknowns": [
+    "Queue volumes, time spent per moderator per day, and moderator attrition/burnout rates.",
+    "Whether any of these communities or their owners have ever paid for moderation tooling.",
+    "Actual size and activity level of the communities behind each signal.",
+    "Whether the double-cited SRC-001 represents one or two sources.",
+    "Who the economic buyer would be (server owner? community? platform?) — no evidence addresses this."
+  ],
+  "overall_assessment": "This cluster describes real, frequent labor, but fails as a SaaS opportunity on the dimensions that matter most. The evidence shows moderators doing their job manually — it does not show suffering, spending, or searching for a paid solution. The target users are overwhelmingly volunteers with no budget and no procurement path. The problem space is saturated with free, deeply entrenched incumbents (Discord AutoMod, Reddit AutoModerator, Stack Exchange's SmokeDetector, Forem's built-in tools), meaning the 'gap' is largely the irreducible human-judgment portion of moderation, not an unserved tooling need. Evidence quality is poor: the claimed four independent sources collapse to roughly three due to the double-cited SIG-001/SRC-001, there are only two source types, and no signal contains metrics, quotes, or verified outcomes. Pain exists; a burning, monetizable need does not. Verdict: DISPROVED — do not advance without direct evidence of paid demand from an identifiable buyer."
+}

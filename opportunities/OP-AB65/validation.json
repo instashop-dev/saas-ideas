@@ -1,0 +1,52 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 2,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0008 states only 'Monitoring customer health scores and identifying at-risk accounts manually.' The word 'manually' implies tedium, but there is no language indicating frustration, severity, business damage, or emotional intensity. This reads as a mild-to-moderate annoyance, not a severe pain. No quantified impact is provided.",
+    "frequency": "SIG-0008 gives no indication of how often this manual monitoring occurs. While customer health monitoring is plausibly a recurring activity for a CSM (inference), the evidence itself is silent — it could be daily, weekly, or ad hoc. Cannot score above 2 on unverified recurrence.",
+    "urgency": "Nothing in SIG-0008 indicates anything is blocked, at risk of imminent failure, or time-critical. No mention of an account churning because monitoring failed, no deadline pressure, no executive escalation. Urgency is asserted by the cluster framing, not by the evidence.",
+    "economic_impact": "SIG-0008 contains zero dollar figures, no churn losses, no contract values, no labor cost estimates. The general claim that churn is expensive is common knowledge, but attributing a specific economic impact to THIS pain requires evidence that does not exist here.",
+    "operational_impact": "The evidence shows one person doing something manually. There is no evidence of a team being blocked, SLAs missed, or workflows breaking. The described workaround (checking multiple tools) is a standard, survivable inconvenience, not an operational bottleneck per SIG-0008.",
+    "workaround_intensity": "The cluster describes logging into product analytics, a support platform, and a CRM. This is tedious but is the default state for most CS teams and takes minutes-to-hours, not a full-time headcount. SIG-0008 does not quantify time spent, so intensity cannot be verified beyond a low score.",
+    "willingness_to_pay": "SIG-0008 contains no mention of paying for tools, consultants, or internal resources to solve this. Notably, the source is a Product Hunt review (SRC-0008) — which weakly implies the reviewer was evaluating some existing product, suggesting solutions already exist and this may already be 'solved' for this user. That cuts against unmet willingness to pay rather than for it.",
+    "global_applicability": "The JTBD is geography- and regulation-agnostic; customer success is practiced globally across SaaS companies. This is an inference rather than an evidenced fact, but nothing about the pain is jurisdiction-bound, so a 4 is defensible despite the thin evidence.",
+    "customer_accessibility": "CSMs are an identifiable, reachable persona (LinkedIn, CS communities, conferences) — this is a reasonable market inference, not something established by SIG-0008. Moderate score because reachability is plausible but unvalidated, and no buyer/budget-owner is identified (the CSM may be the user, not the economic buyer).",
+    "evidence_quality": "Weakest possible foundation: exactly 1 signal (SIG-0008), from 1 source (SRC-0008), of 1 source type (a single terse review). The evidence sentence is 10 words long, unquantified, and unverifiable. independent_sources=1, source_type_count=1. This is the definition of a single anecdote."
+  },
+  "verified_facts": [
+    "A single review-source signal (SIG-0008, SRC-0008, product-hunt-reviews) mentions monitoring customer health scores and identifying at-risk accounts manually.",
+    "The cluster is supported by exactly 1 independent source and 1 source type.",
+    "The evidence text contains no quantification of time, cost, frequency, or business impact."
+  ],
+  "inferences": [
+    "Manual cross-tool monitoring is likely time-consuming, though no time estimate exists in the evidence.",
+    "Churn prevention generally carries economic value, so the problem domain is plausibly valuable even if this specific evidence does not demonstrate it.",
+    "CSMs are a globally distributed and reachable persona, making the market theoretically accessible.",
+    "Because the signal originates from a Product Hunt review, the reviewer was likely evaluating an existing product in or adjacent to this space, implying incumbent solutions already exist."
+  ],
+  "assumptions": [
+    "That the reviewer is an actual CSM experiencing this pain firsthand rather than a founder, marketer, or casual reviewer describing a workflow.",
+    "That the manual monitoring described is a frequent, recurring burden rather than an occasional task.",
+    "That the reviewer is not already using a customer success platform that largely addresses this (the review context suggests they may be).",
+    "That the workaround description in the cluster accurately reflects real behavior rather than a reconstructed narrative."
+  ],
+  "unknowns": [
+    "Time spent per week on manual health-score monitoring.",
+    "Any dollar figure: churn losses, labor cost, or current tool spend.",
+    "Whether the reviewer already pays for a CS platform (Gainsight/Totango/ChurnZero/Vitally-class tools).",
+    "Segment context: SMB vs. enterprise, team size, number of accounts managed.",
+    "Whether any churn event actually resulted from the manual process.",
+    "Who the economic buyer would be (CSM vs. VP of CS vs. RevOps)."
+  ],
+  "overall_assessment": "This cluster fails validation on evidentiary grounds. The entire opportunity rests on a single 10-word review excerpt (SIG-0008) with no quantification of pain, frequency, cost, or urgency. While the problem domain — customer health scoring and churn prevention — is plausibly valuable in the abstract, plausibility is not evidence. Two red flags compound the weakness: (1) the signal comes from a Product Hunt review, meaning the reviewer was likely evaluating an existing product, which suggests the market is already served and this pain may already be addressed by incumbents; (2) the cluster's workaround description (multi-tool manual checking) is the well-known default state that mature CS platforms were built to eliminate, raising the bar significantly for any new entrant. There is no demonstrated willingness to pay, no verified economic impact, and no urgency signal. This is a hypothesis, not a validated pain. To proceed, this cluster needs: multiple independent signals from distinct source types, at least one quantified account of time or money lost, evidence of churn events caused by the manual process, and proof that existing CS platforms fail to solve it for a definable underserved segment."
+}

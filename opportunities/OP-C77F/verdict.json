@@ -1,0 +1,62 @@
+{
+  "id": "OP-C77F",
+  "canonical_key": "CK-788e707516a79bd3",
+  "title": "When I need to manage employee time-off and leave balances, I want to automatically track requests, ",
+  "target_user": "HR Generalist / Office Manager / People-Ops-of-One",
+  "job_to_be_done": "When I need to manage employee time-off and leave balances, I want to automatically track requests, calculate accruals, and sync with payroll, so I can avoid balance disputes and compliance risks.",
+  "painful_workflow": "Tracking employee PTO and leave balances in a shared spreadsheet: receiving requests over email or chat, manually updating balances, checking accrual math, and reconciling the spreadsheet against payroll records when numbers disagree.",
+  "current_workaround": "A shared Excel or Google Sheet with hand-built formulas, email-based request threads, manual accrual calculations, and periodic reconciliation against the payroll system.",
+  "source_ids": [
+    "SIG-0007"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 1,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0007/SRC-0008 is a single forum (reddit) source whose entire recorded evidence is: 'Tracking employee PTO and leave balances in a shared spreadsheet manually.'",
+    "The cluster rests on exactly 1 independent source and 1 source type.",
+    "The evidence text contains no expression of frustration, no quantified time or dollar cost, no frequency data, no mention of an actual dispute, error, or compliance incident.",
+    "The only observed tooling behavior is use of a free spreadsheet — zero observed spend."
+  ],
+  "inferences": [
+    "Manual spreadsheet tracking plausibly creates some error and reconciliation risk, but its severity and frequency are unknown from this evidence.",
+    "Continued reliance on a free spreadsheet suggests the pain is currently tolerable and that willingness to pay is low.",
+    "The cluster-level claims of 'balance disputes and compliance risks' are narrative embellishments not present in the source signal.",
+    "The leave-management software category is mature and crowded with established incumbents (general market knowledge, not derived from the evidence), meaning even a validated pain would face severe competitive pressure and low switching willingness."
+  ],
+  "assumptions": [
+    "That the single reddit poster represents a broader population of HR generalists with the same workflow.",
+    "That the described workflow causes pain beyond mild inconvenience — the evidence does not actually state this.",
+    "That buyers in this segment have budget authority and unmet needs despite abundant existing tools."
+  ],
+  "unknowns": [
+    "How often PTO requests and reconciliations occur for this user.",
+    "Company size, industry, and jurisdiction of the poster.",
+    "Whether any actual error, dispute, overpayment, or compliance event has ever occurred.",
+    "Whether the poster has tried or rejected existing PTO-tracking tools, and why.",
+    "Any budget, spend, or willingness-to-pay signal.",
+    "Whether the pain is felt by the buyer (HR) or merely by employees."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4DF5D4F5",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-12T16:07:40.699Z",
+  "updated_at": "2026-08-12T16:07:40.699Z"
+}

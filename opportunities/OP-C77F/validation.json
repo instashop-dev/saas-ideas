@@ -1,0 +1,52 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 2,
+    "urgency": 1,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 1,
+    "global_applicability": 3,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0007 (SRC-0008) merely states that PTO is 'tracked in a shared spreadsheet manually.' This is a neutral description of a workflow, not an expression of pain. There is no language indicating frustration, errors, disputes, or consequences. Describing an activity is not evidence that the activity hurts. Score 2 because manual tracking is plausibly annoying, but the evidence itself shows zero expressed suffering.",
+    "frequency": "SIG-0007 contains no frequency data — no mention of how many employees, how many requests per week/month, or how often reconciliation occurs. For a 'People-Ops-of-One' at a small company, PTO events may be only a few per month. Cannot score above 2 on a single silent data point.",
+    "urgency": "Nothing in SIG-0007 indicates anything is blocked, broken, or time-critical. The poster has a functioning system (the spreadsheet works, however inelegantly). No deadline, incident, or compliance event is mentioned. Score 1.",
+    "economic_impact": "SIG-0007 contains no dollar figures, no labor-hour estimates, no overpayment or dispute costs. The cluster narrative asserts 'balance disputes and compliance risks,' but these appear nowhere in the underlying evidence — they are embellishments added at cluster level, not observed facts. Score 2 on the generic possibility of payroll error, unsupported by the source.",
+    "operational_impact": "No evidence of disruption in SIG-0007. The workflow is being completed; nobody is described as blocked. A solo HR person spending some minutes updating a sheet is not an operational bottleneck on this evidence. Score 2.",
+    "workaround_intensity": "The workaround (shared spreadsheet + email threads) is exactly what SIG-0007 describes as the current state — and it is functioning. The continued use of a zero-cost, low-effort workaround is evidence the pain is tolerable, not that the workaround is burdensome. No evidence of hours spent or a dedicated person. Score 2.",
+    "willingness_to_pay": "The only observed behavior in SIG-0007 is use of a free spreadsheet. There is no mention of paid tools, consultants, or budget. Observed spend is $0. Score 1.",
+    "global_applicability": "Leave tracking exists in most countries, so the general problem is plausibly widespread — but SIG-0007 gives no geographic signal, and accrual/leave rules are jurisdiction-specific, which fragments any compliance-driven value proposition. Score 3 as an inference from general knowledge, not from the evidence.",
+    "customer_accessibility": "HR generalists and office managers are an identifiable, reachable role (LinkedIn, HR communities) — but this is an inference; SIG-0007 provides no evidence of where these buyers congregate or how to reach them, and a single anonymous forum poster is not a channel. Score 3.",
+    "evidence_quality": "One signal (SIG-0007), one source (SRC-0008), one source type (forum/reddit), and the quoted text does not even articulate a pain point — it describes a process. independent_sources=1, source_type_count=1. This is the weakest possible evidentiary basis short of nothing. Score 1."
+  },
+  "verified_facts": [
+    "SIG-0007/SRC-0008 is a single forum (reddit) source whose entire recorded evidence is: 'Tracking employee PTO and leave balances in a shared spreadsheet manually.'",
+    "The cluster rests on exactly 1 independent source and 1 source type.",
+    "The evidence text contains no expression of frustration, no quantified time or dollar cost, no frequency data, no mention of an actual dispute, error, or compliance incident.",
+    "The only observed tooling behavior is use of a free spreadsheet — zero observed spend."
+  ],
+  "inferences": [
+    "Manual spreadsheet tracking plausibly creates some error and reconciliation risk, but its severity and frequency are unknown from this evidence.",
+    "Continued reliance on a free spreadsheet suggests the pain is currently tolerable and that willingness to pay is low.",
+    "The cluster-level claims of 'balance disputes and compliance risks' are narrative embellishments not present in the source signal.",
+    "The leave-management software category is mature and crowded with established incumbents (general market knowledge, not derived from the evidence), meaning even a validated pain would face severe competitive pressure and low switching willingness."
+  ],
+  "assumptions": [
+    "That the single reddit poster represents a broader population of HR generalists with the same workflow.",
+    "That the described workflow causes pain beyond mild inconvenience — the evidence does not actually state this.",
+    "That buyers in this segment have budget authority and unmet needs despite abundant existing tools."
+  ],
+  "unknowns": [
+    "How often PTO requests and reconciliations occur for this user.",
+    "Company size, industry, and jurisdiction of the poster.",
+    "Whether any actual error, dispute, overpayment, or compliance event has ever occurred.",
+    "Whether the poster has tried or rejected existing PTO-tracking tools, and why.",
+    "Any budget, spend, or willingness-to-pay signal.",
+    "Whether the pain is felt by the buyer (HR) or merely by employees."
+  ],
+  "overall_assessment": "This cluster fails validation on evidentiary grounds. The entire case rests on one forum mention (SIG-0007/SRC-0008) that describes a workflow without expressing any pain, cost, frequency, or consequence. Every severe-sounding element in the cluster narrative — disputes, compliance risk, reconciliation burden — is unsupported by the underlying signal. The observed behavior (persistent use of a free spreadsheet) is weak evidence against willingness to pay, not for it. Even if the pain were real, the category is mature and crowded, raising the bar for displacement that this evidence comes nowhere near clearing. This does not meet the burning-need threshold on any dimension. Recommendation: reject or return for evidence gathering — specifically, multiple independent sources showing quantified time loss, actual payroll/dispute incidents, failed attempts with existing tools, or expressed willingness to pay."
+}

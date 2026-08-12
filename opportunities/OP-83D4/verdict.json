@@ -1,0 +1,59 @@
+{
+  "id": "OP-83D4",
+  "canonical_key": "CK-d93284e33490389b",
+  "title": "When I need to track my reputation or performance metrics across platforms, I want to automatically ",
+  "target_user": "Stack Exchange Power User / Writer",
+  "job_to_be_done": "When I need to track my reputation or performance metrics across platforms, I want to automatically export and visualize historical data, so I can analyze trends without manual data entry.",
+  "painful_workflow": "Tracking reputation changes over time across multiple sites by manually recording daily or weekly reputation points because the built-in history is not easily exportable.",
+  "current_workaround": "Users copy-paste data from the reputation tab into spreadsheets or use third-party scripts (e.g., Stack Exchange Data Explorer queries) to pull history.",
+  "source_ids": [
+    "SIG-002"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 1,
+  "economic_impact_score": 1,
+  "operational_impact_score": 1,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "The cluster is supported by exactly one signal (SIG-002) from one source (SRC-002) of one type (forum), per independent_sources=1 and source_type_count=1.",
+    "The evidence text in SIG-002 describes manual tracking behavior and contains no complaint language, frequency data, or quantified impact.",
+    "The cluster's stated workaround relies on free tooling: spreadsheets and Stack Exchange Data Explorer queries."
+  ],
+  "inferences": [
+    "Reputation is a discretionary gamification metric; users tracking it manually are likely doing so out of personal interest, not operational necessity.",
+    "Because free programmatic options (SEDE, per the cluster's workaround field) already exist, the residual pain after using available free tools is likely minimal.",
+    "The 'daily or weekly' cadence in the painful_workflow description is likely an overstatement tailored to justify the cluster rather than an observed pattern."
+  ],
+  "assumptions": [
+    "That manual reputation recording is burdensome enough that users want it automated — asserted by the cluster, not evidenced by SIG-002.",
+    "That a meaningful population of Stack Exchange users performs this manual tracking at all.",
+    "That the JTBD's 'across platforms' framing extends beyond Stack Exchange, which the single Stack Exchange-only signal does not support."
+  ],
+  "unknowns": [
+    "How many users actually engage in manual reputation tracking.",
+    "The actual time cost per week of the manual workflow.",
+    "Whether any user has ever paid money for reputation analytics or export tooling.",
+    "Whether existing free scripts/API-based solutions already fully satisfy the need.",
+    "Any demographic or segment data on who these power users are and whether they have budget."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4DF5D4F5",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-12T16:05:10.308Z",
+  "updated_at": "2026-08-12T16:05:10.308Z"
+}

@@ -1,0 +1,53 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 3,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 2
+  },
+  "reasoning": {
+    "pain_intensity": "All four snippets (SIG-003, SIG-0003, SIG-0002 x2) describe manual work, but none describe consequences: no SLA breaches, no lost customers, no churn, no missed revenue, no compliance exposure. 'Manually tagging and routing tickets' (SIG-0002) is a chore, not a crisis. The most severe-sounding item, reconciling Discord tickets with order/payment systems (SIG-003), is a single clause with no stated impact. Annoyance is documented; severity is not.",
+    "frequency": "Ticket triage plausibly recurs with every inbound ticket (inference from the workflow description), which for an active support team means daily. However, no evidence states ticket volume or cadence. SIG-0002 and SIG-0003 describe the existence of the task, not its rate. Cannot justify higher than 3 without volume data.",
+    "urgency": "Nothing in SIG-003, SIG-0003, or SIG-0002 indicates the problem blocks operations or that solving it is time-critical. The described workarounds (shared inbox, Google Sheet, pinned Slack messages) are tolerated stopgaps, which suggests the pain is being absorbed rather than demanding urgent resolution.",
+    "economic_impact": "Zero quantification across all sources. No hours-per-week, no cost-per-ticket, no revenue-at-risk figures. Copy-pasting between systems (SIG-0003) costs labor, but the dollar magnitude is entirely unknown. Score cannot exceed 2 on this evidence.",
+    "operational_impact": "Context switching and duplicate entry across Zendesk/Slack/Salesforce (SIG-0003) and manual cross-system reconciliation (SIG-003) do consume real agent time and create error risk (misrouted tickets, unsynced records). This is a genuine drag on a support function, but no evidence shows a team being blocked or a customer-facing failure resulting. Moderate score.",
+    "workaround_intensity": "The stated workaround stack (shared inbox + pinned Slack messages + shared Google Sheet + manual copy-paste) is a multi-artifact manual system that requires ongoing upkeep — that is real effort, consistent with SIG-0003's 'duplication of tickets.' But it does not approach a dedicated full-time role, and the tools used are all free/generic, suggesting the team copes rather than invests.",
+    "willingness_to_pay": "No signal shows anyone paying to solve this specific problem. The workarounds are free tools. The mention of Zendesk and Salesforce (SIG-0003) implies existing budget in the support-tooling category (inference), but also implies the buyer already owns ticketing software — meaning a new product must displace or augment an incumbent they already pay for, which raises the bar and is unaddressed by the evidence.",
+    "global_applicability": "Support ticket triage and cross-channel context loss are not jurisdiction-dependent; nothing in the evidence ties the pain to one country's regulation or market. However, the Discord-to-order-management reconciliation (SIG-003) is narrower, applying mainly to community-led e-commerce/gaming businesses, which trims the universal score slightly.",
+    "customer_accessibility": "The cluster names four distinct personas (support agent, team lead, CSM, e-commerce business owner) spanning SMB Discord communities and Zendesk/Salesforce environments — these are materially different buyers with different budgets and purchase processes, reachable through different channels. Diffuse targeting weakens accessibility. Support leads are identifiable in principle (LinkedIn, support communities), but no acquisition channel evidence is provided.",
+    "evidence_quality": "Weak. (1) SIG-0002 is listed twice, so 'independent_sources: 4' overstates the count — there are 3 unique signals. (2) Every item is a single sentence with no direct quote depth, no metrics, no engagement data, no dates. (3) Only 2 source types (forum, review). (4) No signal confirms the user tried and failed with existing automation. This is a thin, partially duplicated evidence base."
+  },
+  "verified_facts": [
+    "Three unique signals (SIG-003, SIG-0003, SIG-0002; SIG-0002 duplicated in the cluster) describe manual ticket categorization, routing, cross-tool duplication, and Discord-to-order/payment reconciliation.",
+    "Sources span forums (Hacker News, Indie Hackers, Discord forums) and Product Hunt reviews — 2 source types.",
+    "The described workarounds rely on free generic tools: shared email inbox, pinned Slack messages, shared Google Sheet, manual copy-paste.",
+    "SIG-0003 references paid incumbents (Zendesk, Salesforce) already present in the user's stack."
+  ],
+  "inferences": [
+    "Manual triage recurs per inbound ticket, so for active support teams it is likely a daily task — but volume is unmeasured.",
+    "The presence of Zendesk/Salesforce suggests budget exists in the support-tooling category, though not necessarily for this specific problem.",
+    "Reliance on free workarounds rather than purchased solutions suggests the pain is tolerated at current intensity, or that existing paid solutions were not evaluated.",
+    "The cluster conflates two distinct sub-pains: (a) automated triage/routing (SIG-0002, SIG-0003) and (b) cross-system reconciliation of Discord tickets with commerce/payment data (SIG-003). These have different buyers and different competitive sets."
+  ],
+  "assumptions": [
+    "The snippets reflect genuine practitioner pain rather than hypothetical statements, marketing copy, or vendor-seeded complaints.",
+    "The four named personas share enough workflow similarity to constitute one addressable market (questionable given SMB-vs-enterprise spread).",
+    "The claimed 'independent_sources: 4' is treated as 3 unique signals given the SIG-0002 duplication."
+  ],
+  "unknowns": [
+    "Time cost per ticket and aggregate weekly labor cost — no quantification exists in any signal.",
+    "Ticket volumes and team sizes of the complaining users.",
+    "Whether users tried native automation in Zendesk/Slack/Salesforce (routing rules, macros, integrations, AI triage) or existing triage/sync products, and why those failed.",
+    "Whether anyone has paid money or built internal tooling to solve this — no spend evidence at all.",
+    "Competitive saturation: this is a heavily served category (incumbent helpdesks plus numerous AI triage and integration tools); no market scan was provided.",
+    "Why SIG-0002 appears twice — whether the duplication is a data error or two genuinely separate observations from the same source.",
+    "Which of the two sub-pains (triage/routing vs. Discord-commerce reconciliation) is the actual wedge."
+  ],
+  "overall_assessment": "This cluster describes a real and common irritation — manual ticket triage and cross-tool copy-paste — but the evidence does not support a burning need. All evidence is one-sentence snippets, the signal count is inflated by a duplicated ID (3 unique signals, not 4), and there is zero quantification of time, money, or customer impact. Critically, the cluster sits in one of the most saturated categories in SaaS: the complaining users already own Zendesk/Salesforce (SIG-0003), and the evidence never shows that native automation or existing triage/integration products were tried and failed. The workaround stack (Google Sheets, pinned messages, shared inbox) is free, indicating the pain is absorbed rather than paid away — willingness-to-pay evidence is absent. The strongest thread is SIG-003 (reconciling Discord support with order management and payment systems), which is more specific and plausibly underserved, but it rests on a single one-line signal and cannot carry the cluster alone. As framed — four diffuse personas, two conflated sub-pains, thin evidence, entrenched incumbents — this scores 26/50 and should not advance without sharper segmentation (likely the Discord-commerce niche) and direct evidence of failed existing solutions and quantified cost."
+}

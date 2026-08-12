@@ -1,0 +1,54 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 2,
+    "global_applicability": 3,
+    "customer_accessibility": 3,
+    "evidence_quality": 2
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0004 and SIG-0003 describe tedious manual work (cross-system log gathering, screenshots, user-list exports), which is genuinely annoying. But neither snippet contains any severity marker: no failed audit, no fine, no lost deal, no escalation. The JTBD's claim of 'weeks of manual preparation' appears nowhere in the evidence — it is cluster-author framing, not sourced fact. SIG-002 (license compliance in a monorepo) describes a different pain entirely and cannot be used to inflate this score. Real tedium, unproven severity: 3.",
+    "frequency": "SIG-0004 explicitly states 'weekly' SOC 2 report generation — that is the only frequency marker in the entire cluster and supports a moderate score. SIG-0003 describes audit-driven evidence assembly, which is typically episodic (annual/quarterly audits), not daily. SIG-002 gives no frequency. One weekly signal plus one episodic signal does not justify 'multiple times daily' or even consistent weekly pain across the cluster: 3.",
+    "urgency": "No evidence of blocking operations anywhere. No snippet mentions a deadline missed, an audit at risk, a deal held up, or a compliance finding. Audit deadlines plausibly create periodic urgency spikes, but that is an inference, not evidence. On the record provided, this is a recurring chore, not an urgent blocker: 2.",
+    "economic_impact": "Zero quantification in all three signals. No dollar figures, no headcount cost, no hours-per-week, no revenue-at-risk. One can infer analyst labor cost from SIG-0004's weekly multi-system reporting, but the cluster provides nothing to size it. Skeptically, unquantified labor tedium scores low: 2.",
+    "operational_impact": "The evidence describes individual-contributor tedium (one analyst assembling reports in SIG-0004; one person taking screenshots in SIG-0003), not team-level or org-level disruption. Nothing shows operations blocked, launches delayed, or audits failed. Impact is real but contained to one role's time: 2.",
+    "workaround_intensity": "The workarounds are multi-step and genuinely laborious: SIG-0004 implies querying three separate systems and assembling reports weekly; SIG-0003 describes screenshots to shared drives, manual exports, and hand-assembled audit proof. This is meaningful recurring effort, but nothing in the evidence approaches a full-time person dedicated to it. Solid 3, not higher.",
+    "willingness_to_pay": "No signal shows anyone paying for tools, consultants, or auditors to solve this. SIG-0004 comes from a review site, which hints the author was using or evaluating some software — but we do not know what product, whether it addresses this workflow, or whether it was paid. That is an inference, not evidence of spend. Strictly on the record: 2.",
+    "global_applicability": "SIG-0004's SOC 2 framing is US-centric (AICPA framework, primarily relevant to companies selling into US enterprise markets). SIG-002's license compliance is globally applicable, but that signal is off-cluster for this JTBD. The on-cluster evidence skews toward one jurisdiction's compliance regime, with partial international relevance via ISO 27001-style audits (inference): 3.",
+    "customer_accessibility": "The target role (Compliance Analyst / Security Compliance Officer) is well-defined and findable via professional networks and compliance communities — but that is an inference from the role title, not from the evidence. No signal demonstrates where these users congregate, what communities they inhabit, or how they buy. Identifiable persona, unproven channel: 3.",
+    "evidence_quality": "Three short snippets, no quantification, no company size, no industry, no geography, no verification. SIG-002 is topically misaligned with the cluster JTBD (OSS license compliance is a different workflow and market than audit evidence collection), effectively reducing on-cluster support to two signals. SIG-0004's review-site context is ambiguous — it may describe a workflow already solved by the reviewed product. There is also a metadata inconsistency: source_type_count says 2, but three distinct source types (review, github, forum) appear. Thin and partially off-target: 2."
+  },
+  "verified_facts": [
+    "SIG-0004: A reviewer describes generating weekly SOC 2 compliance reports from log data spread across AWS CloudWatch, GitHub Actions, and a custom SIEM tool.",
+    "SIG-0003: A forum poster describes manual compliance evidence collection via screenshots, exported user lists, and hand-assembled audit proof.",
+    "SIG-002: A GitHub issue describes manual verification of open-source license compliance for dependencies in a large monorepo.",
+    "The cluster contains 3 signals from 3 distinct source types (review site, GitHub issues, Reddit forum)."
+  ],
+  "inferences": [
+    "SIG-0004's weekly cadence implies recurring analyst labor cost, though the amount is unquantified.",
+    "SIG-0004's presence on a review site suggests the author was using or evaluating software adjacent to this workflow — meaning some tooling (possibly paid) may already be in place, and the pain may be partially solved.",
+    "Audit deadlines likely create periodic urgency spikes, but no signal states this.",
+    "SIG-002 belongs to a different product category (software composition analysis / license compliance) than the cluster's JTBD and should not count as supporting evidence for this opportunity.",
+    "The compliance-automation category this cluster describes is known to be heavily served by mature incumbents (general market knowledge, not from the provided evidence), which means demonstrated pain does not translate into an open opportunity."
+  ],
+  "assumptions": [
+    "That the 'weeks of manual preparation' framing in the JTBD reflects reality — it is not supported by any snippet.",
+    "That the people experiencing this pain control budget or can influence purchasing.",
+    "That the described workflows are not already automated by tools the evidence authors use.",
+    "That SOC 2 evidence collection and license compliance were clustered together deliberately rather than due to keyword overlap."
+  ],
+  "unknowns": [
+    "Company size, industry, and geography of all three evidence authors.",
+    "Actual hours per week/month spent on these workflows.",
+    "Whether any author has failed an audit, received a finding, or lost a deal because of this pain.",
+    "Whether authors already use compliance automation platforms and still feel this pain (i.e., is this pre-tool pain or a gap in incumbent tools?).",
+    "What product SIG-0004's review was actually about, and whether the described workflow was a complaint or a solved use case.",
+    "Why source_type_count is recorded as 2 when three distinct source types are present."
+  ],
+  "overall_assessment": "This cluster describes a real and recognizable workflow pain, but the evidence does not support a burning need. Only two of three signals are actually on-topic — SIG-002 (OSS license compliance) is a different workflow, buyer, and market, and its inclusion inflates the cluster's apparent support. The on-cluster evidence (SIG-0004, SIG-0003) shows recurring, tedious manual work but contains zero quantification: no hours, no dollars, no failed audits, no lost revenue, no demonstrated spend. The JTBD's most severe claim ('weeks of manual preparation') is unsupported by any snippet. Furthermore, SIG-0004's review-site provenance cuts against the opportunity: the author was likely already using software in this space, suggesting the pain may be partially addressed by existing tooling. This is also, by general market knowledge, one of the most saturated categories in SaaS (compliance automation), so even a validated pain would not imply an open opportunity — though that consideration is flagged as inference, not evidence. Net: moderate, real tedium with weak evidence quality, cluster coherence problems, and no demonstrated willingness to pay. Average score ~2.4/5. Disproved as a burning need on the evidence provided; would require quantified time-cost data, evidence of audit failure risk, and proof of an unserved gap in existing tools to reconsider."
+}

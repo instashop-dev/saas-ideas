@@ -1,0 +1,65 @@
+{
+  "id": "OP-5892",
+  "canonical_key": "CK-0ab43067ed2922fa",
+  "title": "When I need to onboard and manage contractors or freelancers, I want to automatically verify complia",
+  "target_user": "HR Specialist / Payroll Administrator / Agency Owner / Operations Manager",
+  "job_to_be_done": "When I need to onboard and manage contractors or freelancers, I want to automatically verify compliance documents, consolidate payment data, and integrate with my payroll system, so I can reduce compliance risk and administrative overhead.",
+  "painful_workflow": "Manually requesting tax forms (W-9/W-8BEN) and identity documents via email, checking expiration dates, cross-referencing names, and maintaining a local database. For payroll, exporting invoice data from platforms like Upwork, cleaning up currency conversions, mapping user IDs to internal codes, and re-entering totals into payroll software.",
+  "current_workaround": "Manually requesting PDFs via email, maintaining a local database of valid documents, and re-requesting expired documents without automated reminders. For payroll, using Excel to map Upwork user IDs to internal employee/vendor codes.",
+  "source_ids": [
+    "SIG-UPW-003",
+    "SIG-UPW-005"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 3,
+  "distribution_score": 3,
+  "global_score": 2,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-UPW-003 (SRC-UPW-003) is an Upwork job posting that includes verifying freelancer identity, tax forms, and compliance documents before onboarding.",
+    "SIG-UPW-005 (SRC-UPW-005) is an Upwork job posting that includes consolidating hourly rates, fixed-price milestones, and bonus structures from Upwork contracts into a unified payroll system.",
+    "The cluster rests on exactly 1 independent source and 1 source type (job postings).",
+    "Neither evidence snippet contains quantified impact, pain language, error rates, dollar figures, or urgency indicators.",
+    "Companies posting these jobs are spending money on human labor to perform these tasks."
+  ],
+  "inferences": [
+    "Because companies pay freelancers to do this work, the tasks consume enough labor to be worth delegating — implying real but modest operational cost.",
+    "Payroll consolidation recurs on a pay-cycle cadence for organizations with active contractor rosters, so frequency is likely moderate for high-volume agencies and low for occasional hirers.",
+    "The cluster's detailed painful_workflow (expiration-date tracking, currency conversion cleanup, W-9/W-8BEN specifics) was authored beyond the evidence and likely reflects assumptions about the workflow rather than observed facts.",
+    "Labor spend on this problem is being absorbed by low-cost freelance help, which implies a low willingness-to-pay ceiling for software replacing it."
+  ],
+  "assumptions": [
+    "That the two job posters represent a broad, repeatable market rather than isolated cases.",
+    "That the companies posting these jobs do not already use existing contractor-management or payroll tooling.",
+    "That the described manual workflow is actually how these organizations operate, rather than a hypothesized workflow.",
+    "That compliance risk (W-9/W-8BEN collection) falls on the hiring company in these engagements rather than being absorbed by the platform or another entity."
+  ],
+  "unknowns": [
+    "Contractor volume per company and onboarding frequency.",
+    "Hours per week/month spent on document verification and payroll consolidation.",
+    "Whether these companies already use incumbent tools (contractor-management platforms, payroll integrations, Upwork's own exports/API) and why those fail them.",
+    "Any actual compliance failure, penalty, or payment error attributable to this workflow.",
+    "Budget authority and software-buying intent of the job posters.",
+    "Whether the pain persists when work is conducted and paid entirely on-platform versus off-platform."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4DF5D4F5",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-12T15:51:22.682Z",
+  "updated_at": "2026-08-12T15:51:22.682Z"
+}

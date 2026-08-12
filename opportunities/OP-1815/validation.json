@@ -1,0 +1,49 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 2,
+    "urgency": 1,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 4,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0001 is the only evidence, and it is a neutral workflow description ('Collecting, organizing, and prioritizing user feedback from multiple channels into a single product roadmap'), not a pain statement. There is no emotional language, no severity indicator, no complaint. We cannot confirm anyone is suffering; the text could just as easily be a feature description from a positive review of an existing tool. Score 2 reflects a plausible-but-unverified annoyance.",
+    "frequency": "SIG-0001 contains zero frequency data. It does not say how often feedback triage occurs, how many channels are involved, or how much volume a PM handles. Any claim that this is a daily/weekly pain is an inference from the general nature of PM work, not from evidence. Score 2.",
+    "urgency": "Nothing in SIG-0001 indicates blocked operations, deadlines missed, or risk exposure. Manual spreadsheet triage, as described in the cluster's workaround field (which itself is unsupported by SIG-0001), is tedious but rarely operationally blocking. No evidence of urgency whatsoever. Score 1.",
+    "economic_impact": "SIG-0001 provides no dollar figures, no time-cost estimates, no revenue-loss claims. There is no quantification of any kind in the single source. Any economic framing (e.g., 'PMs waste X hours/week') would be an unsupported fabrication. Score 2 based only on the generic inference that manual labor has some cost.",
+    "operational_impact": "The evidence does not describe teams blocked, roadmap delays, or customer churn caused by this workflow. The cluster's canonical_jtbd mentions 'reduce time spent on manual triage,' which implies inefficiency, not operational disruption. Score 2.",
+    "workaround_intensity": "The cluster describes a manual workaround (export to spreadsheet, manual categorization), which suggests real, recurring effort — this is the strongest dimension. However, SIG-0001 does not itself describe or quantify this workaround; the description comes from the cluster compiler, not the evidence. Spreadsheets are a cheap, tolerable, widely-used workaround, which argues AGAINST a burning need. Score 3, with low confidence.",
+    "willingness_to_pay": "SIG-0001 shows no purchase intent, no spend, no consultant hiring. The only indirect signal is that the evidence originates from product-hunt-reviews (SRC-0001), implying commercial products already exist in this category and are being reviewed — an inference, not a verified fact. Incumbent spend, if it exists, validates the category but simultaneously disproves whitespace for a new entrant. Score 2.",
+    "global_applicability": "Feedback collection is not jurisdiction- or regulation-specific; it plausibly applies to SaaS teams in any country. This is an inference from the nature of the workflow, not from SIG-0001, which gives no geographic data. Score 4.",
+    "customer_accessibility": "Product Managers are a well-defined, reachable persona (Product Hunt itself, LinkedIn, PM communities). This is a general inference; SIG-0001 does not identify specific reachable buyers. Score 4.",
+    "evidence_quality": "This is the fatal flaw. independent_sources = 1, source_type_count = 1, and the single piece of evidence (SIG-0001 / SRC-0001) is not even a pain complaint — it is a workflow description with no severity, no frequency, no quantification, no named sufferer. It is impossible to distinguish whether the reviewer was lamenting a problem or praising an existing solution. Score 1 — the minimum."
+  },
+  "verified_facts": [
+    "The cluster is supported by exactly one signal (SIG-0001) from exactly one source (SRC-0001), a Product Hunt review.",
+    "The evidence text in SIG-0001 is a neutral workflow description and contains no explicit expression of pain, frustration, cost, or urgency.",
+    "independent_sources = 1 and source_type_count = 1, meaning there is no corroboration across sources or source types.",
+    "No quantified data (time, money, frequency, headcount) appears anywhere in the supplied evidence."
+  ],
+  "inferences": [
+    "Manual feedback triage is a plausibly real inconvenience for PMs, but this cluster's evidence does not verify it.",
+    "Because the evidence comes from a Product Hunt review, at least one commercial product likely already addresses this workflow; the category appears mature rather than underserved.",
+    "If users tolerate the spreadsheet workaround without paying for tools, that would indicate the pain is below the willingness-to-pay threshold; the evidence does not resolve this either way."
+  ],
+  "assumptions": [
+    "The cluster's 'current_workaround' description (manual export to spreadsheet, manual categorization) reflects real user behavior, though SIG-0001 does not document it.",
+    "The target persona (Product Manager / SaaS Operator) actually experiences this workflow regularly — assumed, not evidenced."
+  ],
+  "unknowns": [
+    "Whether the SIG-0001 reviewer was complaining about a pain or positively reviewing an existing tool — the evidence text is ambiguous on sentiment.",
+    "Frequency, severity, time cost, and dollar cost of the manual triage workflow.",
+    "How many users experience this pain and whether the market is already saturated by incumbents.",
+    "Whether anyone has paid, or refused to pay, for a solution.",
+    "Which specific channels, team sizes, and company stages the pain applies to."
+  ],
+  "overall_assessment": "This cluster FAILS validation as presented. It rests on a single, uncorroborated source (SIG-0001) whose content is a neutral workflow description rather than an evidenced pain statement — there is no severity, no frequency, no quantified cost, no workaround effort documented, and no purchase intent. Nearly every dimension score above 2 rests on general-knowledge inference about PM work rather than on the supplied evidence, which violates the standard required to declare a burning need. Structurally, the opportunity is further weakened by category maturity: the evidence's own ecosystem (Product Hunt reviews) implies existing commercial solutions already serve this exact job, so even if the pain is real, the bar for a new entrant is high and undifferentiated. Recommendation: REJECT in current form. To resurrect, require (a) at least 3-5 independent signals with explicit pain language, (b) quantified workaround cost or stated spend, and (c) evidence of dissatisfaction with existing tools rather than evidence of the workflow merely existing."
+}

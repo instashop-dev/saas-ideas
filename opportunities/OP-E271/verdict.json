@@ -1,0 +1,66 @@
+{
+  "id": "OP-E271",
+  "canonical_key": "CK-1b7b912430271ac8",
+  "title": "When I need to manage compliance audits and security evidence collection, I want to automatically ga",
+  "target_user": "Compliance Analyst / Security Compliance Officer / IT Manager",
+  "job_to_be_done": "When I need to manage compliance audits and security evidence collection, I want to automatically gather, organize, and report on compliance evidence from multiple systems, so I can pass audits without weeks of manual preparation.",
+  "painful_workflow": "Manually querying each system (AWS CloudWatch, GitHub Actions, SIEM, etc.) separately, downloading logs, pasting into a master Excel workbook, formatting pivot tables, and sending via email as PDF. Or taking screenshots of configurations, exporting user lists, and documenting access reviews by hand.",
+  "current_workaround": "Point-in-time screenshots saved to shared drives, spreadsheets tracking controls and access reviews, calendar reminders to re-capture evidence, and manually written answers to repetitive vendor security questionnaires.",
+  "source_ids": [
+    "SIG-0004",
+    "SIG-002",
+    "SIG-0003"
+  ],
+  "independent_sources": 3,
+  "source_type_count": 2,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 2,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0004: A reviewer describes generating weekly SOC 2 compliance reports from log data spread across AWS CloudWatch, GitHub Actions, and a custom SIEM tool.",
+    "SIG-0003: A forum poster describes manual compliance evidence collection via screenshots, exported user lists, and hand-assembled audit proof.",
+    "SIG-002: A GitHub issue describes manual verification of open-source license compliance for dependencies in a large monorepo.",
+    "The cluster contains 3 signals from 3 distinct source types (review site, GitHub issues, Reddit forum)."
+  ],
+  "inferences": [
+    "SIG-0004's weekly cadence implies recurring analyst labor cost, though the amount is unquantified.",
+    "SIG-0004's presence on a review site suggests the author was using or evaluating software adjacent to this workflow — meaning some tooling (possibly paid) may already be in place, and the pain may be partially solved.",
+    "Audit deadlines likely create periodic urgency spikes, but no signal states this.",
+    "SIG-002 belongs to a different product category (software composition analysis / license compliance) than the cluster's JTBD and should not count as supporting evidence for this opportunity.",
+    "The compliance-automation category this cluster describes is known to be heavily served by mature incumbents (general market knowledge, not from the provided evidence), which means demonstrated pain does not translate into an open opportunity."
+  ],
+  "assumptions": [
+    "That the 'weeks of manual preparation' framing in the JTBD reflects reality — it is not supported by any snippet.",
+    "That the people experiencing this pain control budget or can influence purchasing.",
+    "That the described workflows are not already automated by tools the evidence authors use.",
+    "That SOC 2 evidence collection and license compliance were clustered together deliberately rather than due to keyword overlap."
+  ],
+  "unknowns": [
+    "Company size, industry, and geography of all three evidence authors.",
+    "Actual hours per week/month spent on these workflows.",
+    "Whether any author has failed an audit, received a finding, or lost a deal because of this pain.",
+    "Whether authors already use compliance automation platforms and still feel this pain (i.e., is this pre-tool pain or a gap in incumbent tools?).",
+    "What product SIG-0004's review was actually about, and whether the described workflow was a complaint or a solved use case.",
+    "Why source_type_count is recorded as 2 when three distinct source types are present."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4DF5D4F5",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-12T15:56:15.169Z",
+  "updated_at": "2026-08-12T15:56:15.169Z"
+}

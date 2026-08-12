@@ -1,0 +1,56 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 3,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 2
+  },
+  "reasoning": {
+    "pain_intensity": "The evidence describes activities, not suffering. SIG-0002 states 'manual deployment orchestration... using shell scripts and runbooks' — a description of a workflow, with no failure anecdotes, no downtime reports, no emotional intensity markers. SIG-004 mentions rollback procedures but gives no incident where a failed migration caused damage. The cluster narrative ('when migrations fail, engineers must manually revert data changes') is a synthesized inference not present in any source line. Real pain likely exists in this category generally, but the provided evidence does not demonstrate severity above a 3.",
+    "frequency": "No source states how often deployments, config updates, or migrations occur. SIG-0002 and SIG-004 imply recurring multi-environment workflows (inference: weekly or more for active teams), but SIG-002 (Discord bot config across guilds) plausibly represents infrequent, hobby-scale updates. With zero frequency data in evidence, 3 is the ceiling, and it rests on inference rather than fact.",
+    "urgency": "Nothing in SIG-0002, SIG-002, or SIG-004 indicates blocked operations, deadlines, or active incidents. All three sources describe functioning workarounds (scripts, runbooks, local migration testing before CI/CD). A team with a working, if clunky, process is not in an urgent state. Urgency only materializes during a failed migration, and no such event is documented.",
+    "economic_impact": "Zero economic data in any source. No dollar figures, no time-cost estimates, no revenue-loss claims. The workaround stack described (shell scripts, Google Docs, local scripts) is zero-dollar, which typically correlates with small teams or cost-sensitive operators. SIG-002's Discord-bot context is frequently hobbyist, where economic impact approaches negligible. Score of 2 reflects absence of evidence, not absence of theoretical category impact.",
+    "operational_impact": "Manual multi-environment deployments and per-server config edits do consume engineer time (supported at a general level by SIG-0002 and the cluster's workaround description), and SIG-004's cross-environment rollback scenario carries release-blocking potential. But no source shows a team blocked, a release delayed, or an outage. Impact appears concentrated on individual engineers performing manual toil, not organization-wide disruption.",
+    "workaround_intensity": "SIG-0002 supports that the workaround is a maintained collection of shell scripts plus documented runbooks — real, ongoing toil, not trivial. The cluster adds per-server JSON/YAML config maintenance and locally-run custom migration scripts (partially traceable to SIG-002 and SIG-004). This is meaningful effort but nowhere near a full-time person, and it is the standard free alternative most teams tolerate indefinitely. 3 is generous given the thin sourcing.",
+    "willingness_to_pay": "The evidence shows zero current spend: free shell scripts, a free Google Doc, free local scripts. No source mentions paying for tools, consultants, or considering paid solutions. Critically, this problem space is saturated with mature free/open-source incumbents (CI/CD platforms, IaC and config-management tools, migration frameworks, GitOps controllers), which structurally suppresses willingness to pay for a new entrant. Category-level spend exists industry-wide, but these specific signals show none, and the Discord-bot segment (SIG-002) typically has no budget at all.",
+    "global_applicability": "The strongest dimension. Deployment orchestration, config management, and schema migrations are jurisdiction-independent engineering problems with no regulatory or geographic boundary. Nothing in SIG-0002, SIG-002, or SIG-004 ties the pain to one country's law or one ecosystem's quirk (SIG-002 is Discord-specific but the underlying config-management pattern generalizes). Held at 4 rather than 5 because all sources are English-language and the evidence base is narrow.",
+    "customer_accessibility": "DevOps/platform engineers are identifiable and reachable — the signals themselves surfaced on Hacker News and GitHub, proving channel existence. However, this is the most heavily marketed-to audience in software, with strong open-source preference, high skepticism toward new SaaS, and procurement that often sits above the practitioner's head. Reachable users, yes; reachable buyers with budget, unproven.",
+    "evidence_quality": "Three independent sources across two source types is structurally acceptable, but every source is a one-line paraphrase: no direct quotes, no engagement metrics, no dates, no thread context, no quantification. Worse, SIG-002 (Discord bots across guilds) is a weak fit for the canonical JTBD of multi-environment enterprise deployment orchestration — it inflates the independent-source count without supporting the same pain. The cluster's detailed workaround narrative is largely synthesized inference layered on thin source lines."
+  },
+  "verified_facts": [
+    "Three independent sources exist across two source types (forum/Hacker News and GitHub).",
+    "SIG-0002 evidences manual deployment orchestration across multiple cloud environments using shell scripts and runbooks.",
+    "SIG-004 evidences management of database schema migrations and rollback procedures across multiple environments.",
+    "SIG-002 evidences configuration and deployment pipeline management for multiple Discord bots across guilds.",
+    "No source contains direct quotes, frequency data, severity incidents, time costs, or dollar figures.",
+    "The described workarounds (shell scripts, shared documents, locally-run scripts) involve zero monetary spend."
+  ],
+  "inferences": [
+    "Deployment and migration work recurs regularly for teams practicing it, implying moderate frequency.",
+    "Manual orchestration consumes meaningful engineering time and carries failure/rollback risk.",
+    "The pain is globally applicable and not jurisdiction-bound.",
+    "The cluster's detailed 'current_workaround' narrative synthesizes elements from all three signals rather than appearing verbatim in any single source.",
+    "Category-level willingness to pay exists in the broader industry, but this cannot be attributed to the users in these signals."
+  ],
+  "assumptions": [
+    "The three signals reflect one coherent job-to-be-done, despite SIG-002's Discord-bot context differing materially from enterprise multi-environment deployment.",
+    "The target users have budget authority or purchasing influence.",
+    "The teams behind these signals have not already adopted existing mature tooling.",
+    "The one-line evidence summaries accurately represent richer underlying source content."
+  ],
+  "unknowns": [
+    "How often deployments/migrations occur and how often they fail for these specific users.",
+    "Any quantified time or dollar cost of the manual workflow.",
+    "Whether these users have evaluated and rejected existing solutions (CI/CD platforms, IaC tools, migration frameworks, GitOps controllers) — and why.",
+    "Team size, company size, and budget behind each signal.",
+    "Whether SIG-002 represents commercial or hobbyist use.",
+    "Why teams still on shell scripts and Google Docs would adopt a new paid tool when free mature alternatives already exist."
+  ],
+  "overall_assessment": "This cluster describes a real and well-known category of engineering toil, but the validation fails on both evidence and market context. On evidence: three one-line source summaries with no quotes, no frequency, no severity incidents, and no economic data; one of the three (SIG-002, Discord bots) is a poor fit for the canonical JTBD and likely represents low-budget or hobbyist use, undermining the 'independent sources = 3' claim. On market context: deployment orchestration, configuration management, and database migration is arguably the most saturated problem space in all of software, with mature free and commercial incumbents entrenched for over a decade. The users still relying on shell scripts and Google Docs have, by revealed preference, declined to adopt existing free solutions — there is no evidence they would pay for a new one. The pain is genuine but moderate, the workaround is functional and free, willingness to pay is unevidenced and structurally suppressed by open source, and any new entrant faces a red ocean with enormous switching costs. This does not meet the burning-need threshold: no demonstrated frequent recurrence with quantified cost, no revenue loss, no compliance exposure, no active spend. Average score 2.6/10 dimensions — disproved as a compelling SaaS opportunity on the evidence provided."
+}

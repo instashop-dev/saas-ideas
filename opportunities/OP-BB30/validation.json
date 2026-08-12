@@ -1,0 +1,52 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 2,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0002 describes an activity ('cross-referencing Shopify inventory levels with NetSuite ERP records'), not a pain. There is no emotional language, no complaint, no severity indicator, no consequence described in SRC-0003/SRC-0004. The JTBD's claims about 'preventing overselling and stockouts' are not present in the cited evidence. Describing a task is not evidence the task is painful.",
+    "frequency": "No evidence in SIG-0002 states how often this cross-referencing occurs — daily, weekly, or monthly is unknown. While inventory sync is plausibly recurring for an active seller, that is an assumption, not evidence. Score reflects absence of frequency data.",
+    "urgency": "Nothing in SIG-0002 indicates this blocks operations, causes failed orders, or carries a deadline. The evidence reads as routine maintenance ('to maintain stock accuracy'), which suggests hygiene, not urgency.",
+    "economic_impact": "Zero dollar figures, no quantified loss from overselling or stockouts, no labor-hour estimates anywhere in the evidence. The economic framing in the cluster (overselling, stockouts) is asserted in the JTBD but unsupported by SRC-0003/SRC-0004.",
+    "operational_impact": "SIG-0002 shows one person performing a reconciliation task. There is no evidence of team blockage, downstream process failure, or customer-facing impact. A single-user bookkeeping task is a minor operational footprint based on what is actually evidenced.",
+    "workaround_intensity": "The elaborate workaround in the cluster (export Shopify CSV → Google Sheets → manual compare → update lower system) is NOT found in the evidence text. SIG-0002 only says 'cross-referencing... to maintain stock accuracy.' The CSV/Google Sheets detail appears to be an unsupported embellishment, which is a fabrication risk. Scoring only what is evidenced: an unspecified cross-referencing task of unknown effort.",
+    "willingness_to_pay": "No evidence of spend on tools, consultants, or labor to solve this. Weak inference only: NetSuite is an expensive ERP, so the user organization has software budget, and the evidence surfacing in G2/Capterra reviews implies the user was already using some software — possibly software that already addresses this. Neither establishes willingness to pay for a new solution.",
+    "global_applicability": "The one dimension that survives scrutiny, and only structurally: Shopify-to-ERP inventory sync is not tied to any single country's regulation, so the problem class is inherently cross-border. This is an inference from the problem domain, not from the evidence, so it does not earn a 5.",
+    "customer_accessibility": "The persona (inventory managers at Shopify+NetSuite merchants) is identifiable in principle via app marketplaces, review platforms, and professional networks, but the evidence package itself demonstrates no channel, no community, and no reachable complainant. Moderate score based on persona identifiability, not evidence.",
+    "evidence_quality": "Weakest dimension. One signal (SIG-0002), one source type (reviews), and the cluster's own metadata reports independent_sources: 1 despite listing two source IDs (SRC-0003, SRC-0004) — an internal inconsistency. Critically, the evidence text does not even express pain; it describes a neutral workflow. This is functionally a single anecdote that fails to support the cluster's central claims."
+  },
+  "verified_facts": [
+    "SIG-0002 (sourcing SRC-0003, SRC-0004) describes cross-referencing Shopify inventory levels with NetSuite ERP records to maintain stock accuracy.",
+    "The cluster is supported by exactly one signal from one source type (g2-capterra reviews).",
+    "The cluster metadata reports independent_sources: 1.",
+    "The evidence text contains no frequency, cost, time, severity, or consequence data."
+  ],
+  "inferences": [
+    "Manual cross-referencing implies some recurring labor burden, but its magnitude is unknown.",
+    "NetSuite usage implies a mid-market organization with existing software budget, which weakly suggests capacity — but not willingness — to pay.",
+    "Because the evidence originates from software reviews, the user was likely already using a tool in this category, meaning the pain may already be partially addressed by an existing product.",
+    "The detailed CSV/Google Sheets workaround in the cluster is not supported by the cited evidence and appears to be an embellishment added during clustering."
+  ],
+  "assumptions": [
+    "That overselling and stockouts actually occur for this user — asserted in the JTBD, absent from the evidence.",
+    "That the reconciliation workflow recurs frequently enough to matter.",
+    "That the user lacks an existing integration solution."
+  ],
+  "unknowns": [
+    "How often the cross-referencing is performed and how long it takes.",
+    "Any dollar impact from overselling, stockouts, or labor.",
+    "Whether the user is already paying for a connector, iPaaS, or inventory tool (the G2/Capterra origin suggests they may be).",
+    "How many companies share this exact Shopify+NetSuite stack and pain.",
+    "What the two underlying reviews (SRC-0003, SRC-0004) actually said verbatim and what product they were reviewing.",
+    "Whether the market for this integration is already saturated with existing solutions."
+  ],
+  "overall_assessment": "This cluster fails validation on evidentiary grounds. The single supporting signal (SIG-0002) describes a neutral workflow activity, not a pain: there is no complaint, no quantified cost, no frequency, no consequence, and no demonstrated spend. Worse, the cluster's most concrete details — the CSV export, Google Sheets, manual comparison workaround — appear nowhere in the cited evidence, indicating the pain narrative has been embellished beyond what sources support. The problem class (multi-channel inventory sync) is plausible and structurally global, and the persona is identifiable, but plausibility is not evidence. With 9 of 10 dimensions at 2 or below and evidence_quality at 1, this is far below the burning-need threshold. Recommendation: do not advance. If this opportunity is to be reconsidered, it requires multiple independent signals containing actual expressions of pain (time lost, overselling incidents, dollars spent), plus an honest assessment of the existing integration solutions the reviewers were likely already using."
+}

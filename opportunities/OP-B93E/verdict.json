@@ -1,0 +1,60 @@
+{
+  "id": "OP-B93E",
+  "canonical_key": "CK-30cb3ab76b513207",
+  "title": "When I need to audit user activity and access logs for compliance, I want to automatically export, p",
+  "target_user": "IT Security Analyst / Compliance Officer",
+  "job_to_be_done": "When I need to audit user activity and access logs for compliance, I want to automatically export, parse, and report on Discord or system logs, so I can meet regulatory requirements without manual data processing.",
+  "painful_workflow": "Exporting large volumes of data from Discord or other systems, parsing it, and matching it against internal records or regulatory requirements for compliance audits or security incident investigations.",
+  "current_workaround": "Using Discord's official API to export messages/channels, then using Python scripts to parse JSON files and search for keywords or user IDs. Manually compiling reports in Word/Excel.",
+  "source_ids": [
+    "SIG-005"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 1,
+  "frequency_score": 1,
+  "urgency_score": 1,
+  "economic_impact_score": 1,
+  "operational_impact_score": 1,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 2,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-005 (source SRC-005) is a documentation-type source from the discord-forums ecosystem that mentions auditing Discord server access logs and message history for compliance purposes.",
+    "The cluster is supported by exactly 1 independent source and 1 source type.",
+    "No user complaints, quantified impacts, frequency data, or payment evidence appear in the cited evidence."
+  ],
+  "inferences": [
+    "The activity of Discord compliance auditing exists as a documented concept, which suggests at least one party has considered it.",
+    "If the workflow is real, it likely involves technical effort (API exports, parsing), making it non-trivial — but this is inferred from the cluster metadata, not the evidence."
+  ],
+  "assumptions": [
+    "That IT Security Analysts / Compliance Officers are the actual users — no evidence identifies the persona.",
+    "That the described workaround (API + Python + manual reports) is actually used by anyone — it appears only in cluster metadata.",
+    "That regulated organizations use Discord in scope of compliance obligations at all.",
+    "That Discord's native Audit Log and existing logging bots do not already satisfy the need."
+  ],
+  "unknowns": [
+    "How many organizations audit Discord for compliance and how often.",
+    "Whether anyone has failed an audit, incurred a fine, or lost revenue due to this gap.",
+    "Whether any budget or tool spend exists for this problem.",
+    "Whether the native Discord Audit Log, data export, or third-party logging bots already solve this adequately.",
+    "The size and reachability of the buyer segment.",
+    "What SRC-005 actually is (title, author, context) beyond the one-sentence excerpt."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4DF5D4F5",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-12T16:03:25.550Z",
+  "updated_at": "2026-08-12T16:03:25.550Z"
+}

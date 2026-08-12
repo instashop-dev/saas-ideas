@@ -1,0 +1,61 @@
+{
+  "id": "OP-D170",
+  "canonical_key": "CK-ac0a30c6e3708440",
+  "title": "When I need to manage incident response and post-mortems, I want to automatically log events, timest",
+  "target_user": "Customer Support Engineer / SRE",
+  "job_to_be_done": "When I need to manage incident response and post-mortems, I want to automatically log events, timestamps, and actions during incidents, so I can produce accurate post-mortems and prevent repeated incidents.",
+  "painful_workflow": "Manually logging events, timestamps, and actions taken across Slack, PagerDuty, and internal wikis during an incident. Afterward, spending hours correlating disjointed records to write the post-mortem.",
+  "current_workaround": "Engineers manually copy-paste Slack messages, PagerDuty alerts, and console outputs into a shared Google Doc during the incident.",
+  "source_ids": [
+    "SIG-005"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "The cluster is supported by exactly one signal (SIG-005) drawn from one source (SRC-005), a GitHub issue (per cluster metadata: independent_sources = 1, source_type_count = 1).",
+    "The evidence text describes on-call incident coordination involving manual logging of events, timestamps, and actions across Slack, PagerDuty, and internal wikis.",
+    "The stated current workaround is manual copy-paste of records into a shared Google Doc during the incident.",
+    "The evidence contains no direct user quote, no quantified time or dollar cost, and no engagement metrics."
+  ],
+  "inferences": [
+    "Manual correlation of disjointed records likely consumes some engineer time after incidents — the magnitude is unknown but plausibly hours per major incident.",
+    "The existence of mature commercial incident-management tools (inference from general market knowledge, not from SIG-005) suggests market-level willingness to pay exists, but is already captured by incumbents, weakening the case for a new product.",
+    "A single GitHub issue mention may indicate the topic arises in OSS tooling discussions, but one mention cannot represent a population of buyers."
+  ],
+  "assumptions": [
+    "It is assumed (not evidenced) that the GitHub issue author experienced this as painful rather than describing it neutrally.",
+    "It is assumed (not evidenced) that incidents recur frequently enough for the target user to prioritize a solution.",
+    "It is assumed (not evidenced) that the target user's organization lacks existing tooling like incident.io or PagerDuty post-mortems."
+  ],
+  "unknowns": [
+    "Incident frequency for the target user or their organization.",
+    "Quantified time or dollar cost of post-mortem assembly.",
+    "Whether the evidence author or their org currently spends any money on this problem.",
+    "Reach and resonance of the source issue: comments, reactions, or corroborating participants.",
+    "Why existing solutions (incident.io, FireHydrant, Rootly, PagerDuty, Blameless) fail this user, if they do.",
+    "Who the economic buyer would be and whether they perceive this as a budget-worthy problem."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4DF5D4F5",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-12T15:57:53.020Z",
+  "updated_at": "2026-08-12T15:57:53.020Z"
+}
