@@ -19,6 +19,7 @@ import {
 import { runValidator } from '../agents/validator.js';
 import { saveOpportunity, saveOpportunityArtifact } from '../state/opportunities.js';
 import { generateCanonicalKey, generateOpportunityId } from '../dedupe/index.js';
+import { mapWithConcurrency } from '../lib/concurrency.js';
 import type { Cluster, Opportunity } from '../schemas/index.js';
 
 async function main(): Promise<void> {
@@ -52,78 +53,87 @@ async function main(): Promise<void> {
   console.log(`Validating ${clusters.length} clusters...\n`);
 
   const maxCandidates = config.research.max_candidates_after_validation;
-  let validated = 0;
+  console.log(
+    `Validating up to ${maxCandidates} clusters (concurrency ${config.parallelism.validators})...\n`,
+  );
 
   // Reset the count so Recovery re-runs are idempotent (counts = current state).
   setCandidateCount(runId, 'validated', 0);
 
-  for (const cluster of clusters.slice(0, maxCandidates)) {
-    console.log(`  Validating: ${cluster.cluster_id}: ${cluster.canonical_jtbd.slice(0, 60)}...`);
+  const results = await mapWithConcurrency(
+    clusters.slice(0, maxCandidates),
+    config.parallelism.validators,
+    async (cluster) => {
+      console.log(`  Validating: ${cluster.cluster_id}: ${cluster.canonical_jtbd.slice(0, 60)}...`);
 
-    try {
-      const result = await runValidator(JSON.stringify(cluster, null, 2));
-      const validation = result.data;
+      try {
+        const result = await runValidator(JSON.stringify(cluster, null, 2));
+        const validation = result.data;
 
-      const canonicalKey = generateCanonicalKey(cluster.canonical_jtbd);
-      const opportunityId = generateOpportunityId(canonicalKey);
+        const canonicalKey = generateCanonicalKey(cluster.canonical_jtbd);
+        const opportunityId = generateOpportunityId(canonicalKey);
 
-      const opportunity: Opportunity = {
-        id: opportunityId,
-        canonical_key: canonicalKey,
-        title: cluster.canonical_jtbd.slice(0, 100),
-        target_user: cluster.target_user,
-        job_to_be_done: cluster.canonical_jtbd,
-        painful_workflow: cluster.painful_workflow,
-        current_workaround: cluster.current_workaround,
-        source_ids: cluster.source_signal_ids,
-        independent_sources: cluster.independent_sources,
-        source_type_count: cluster.source_type_count,
+        const opportunity: Opportunity = {
+          id: opportunityId,
+          canonical_key: canonicalKey,
+          title: cluster.canonical_jtbd.slice(0, 100),
+          target_user: cluster.target_user,
+          job_to_be_done: cluster.canonical_jtbd,
+          painful_workflow: cluster.painful_workflow,
+          current_workaround: cluster.current_workaround,
+          source_ids: cluster.source_signal_ids,
+          independent_sources: cluster.independent_sources,
+          source_type_count: cluster.source_type_count,
 
-        pain_score: validation.scores.pain_intensity,
-        frequency_score: validation.scores.frequency,
-        urgency_score: validation.scores.urgency,
-        economic_impact_score: validation.scores.economic_impact,
-        operational_impact_score: validation.scores.operational_impact,
-        workaround_intensity_score: validation.scores.workaround_intensity,
-        willingness_to_pay_score: validation.scores.willingness_to_pay,
-        distribution_score: 3, // to be refined later
-        global_score: validation.scores.global_applicability,
-        mvp_complexity_score: 3, // to be refined later
-        evidence_quality_score: validation.scores.evidence_quality,
+          pain_score: validation.scores.pain_intensity,
+          frequency_score: validation.scores.frequency,
+          urgency_score: validation.scores.urgency,
+          economic_impact_score: validation.scores.economic_impact,
+          operational_impact_score: validation.scores.operational_impact,
+          workaround_intensity_score: validation.scores.workaround_intensity,
+          willingness_to_pay_score: validation.scores.willingness_to_pay,
+          distribution_score: 3, // to be refined later
+          global_score: validation.scores.global_applicability,
+          mvp_complexity_score: 3, // to be refined later
+          evidence_quality_score: validation.scores.evidence_quality,
 
-        competition_score: 3, // to be refined by competition stage
-        competitors: [],
-        substitutes: [],
+          competition_score: 3, // to be refined by competition stage
+          competitors: [],
+          substitutes: [],
 
-        verified_facts: validation.verified_facts,
-        inferences: validation.inferences,
-        assumptions: validation.assumptions,
-        unknowns: validation.unknowns,
-        rejection_reasons: [],
+          verified_facts: validation.verified_facts,
+          inferences: validation.inferences,
+          assumptions: validation.assumptions,
+          unknowns: validation.unknowns,
+          rejection_reasons: [],
 
-        judge_verdict: '',
-        confidence: 0,
-        final_score: 0,
+          judge_verdict: '',
+          confidence: 0,
+          final_score: 0,
 
-        run_id: runId,
-        stage: 'validation',
-        status: 'VALIDATED',
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      };
+          run_id: runId,
+          stage: 'validation',
+          status: 'VALIDATED',
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        };
 
-      saveOpportunity(opportunity);
-      saveOpportunityArtifact(opportunityId, 'validation.json', validation);
-      recordModelUsed(runId, 'validator', result.metadata.model);
+        saveOpportunity(opportunity);
+        saveOpportunityArtifact(opportunityId, 'validation.json', validation);
+        recordModelUsed(runId, 'validator', result.metadata.model);
 
-      console.log(
-        `    ✓ Saved ${opportunityId} (pain: ${validation.scores.pain_intensity}, freq: ${validation.scores.frequency}, WTP: ${validation.scores.willingness_to_pay}) [${result.metadata.model}]`,
-      );
-      validated++;
-    } catch (err) {
-      console.error(`    ✗ Failed: ${err}`);
-    }
-  }
+        console.log(
+          `    ✓ Saved ${opportunityId} (pain: ${validation.scores.pain_intensity}, freq: ${validation.scores.frequency}, WTP: ${validation.scores.willingness_to_pay}) [${result.metadata.model}]`,
+        );
+        return 1;
+      } catch (err) {
+        console.error(`    ✗ Failed: ${err}`);
+        return 0;
+      }
+    },
+  );
+
+  const validated = results.reduce((sum: number, n: number) => sum + n, 0);
 
   incrementCandidateCount(runId, 'validated', validated);
   updateRunStatus(runId, 'validating');

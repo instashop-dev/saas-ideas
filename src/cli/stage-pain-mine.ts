@@ -17,6 +17,7 @@ import {
   setCandidateCount,
 } from '../state/run-manifest.js';
 import { runPainMiner } from '../agents/pain-miner.js';
+import { mapWithConcurrency } from '../lib/concurrency.js';
 
 async function main(): Promise<void> {
   const runId = process.argv[2] || process.env['RUN_ID'];
@@ -51,46 +52,51 @@ async function main(): Promise<void> {
   // Reset the count so Recovery re-runs are idempotent (counts = current state).
   setCandidateCount(runId, 'signals', 0);
 
-  let totalSignals = 0;
+  const results = await mapWithConcurrency(
+    ecosystems,
+    config.parallelism.pain_miners,
+    async (ecosystem) => {
+      console.log(`  Mining: ${ecosystem}...`);
+      try {
+        const result = await runPainMiner(
+          ecosystem,
+          `Search for recurring operational pain in the ${ecosystem} ecosystem. ` +
+            `Look for manual workflows, reconciliation tasks, integration gaps, ` +
+            `and compliance operations. Focus on signals where people are actively ` +
+            `complaining about or spending money to solve a problem. ` +
+            `Return between 3 and ${Math.min(10, maxSignals)} high-quality signals with ` +
+            `full evidence for each — prefer depth and verified detail over volume.`,
+        );
 
-  for (const ecosystem of ecosystems) {
-    console.log(`  Mining: ${ecosystem}...`);
-    try {
-      const result = await runPainMiner(
-        ecosystem,
-        `Search for recurring operational pain in the ${ecosystem} ecosystem. ` +
-          `Look for manual workflows, reconciliation tasks, integration gaps, ` +
-          `and compliance operations. Focus on signals where people are actively ` +
-          `complaining about or spending money to solve a problem. ` +
-          `Return between 3 and ${Math.min(10, maxSignals)} high-quality signals with ` +
-          `full evidence for each — prefer depth and verified detail over volume.`,
-      );
+        const ecoDir = resolve(rawSignalsDir, ecosystem.replace(/[^a-zA-Z0-9-]/g, '_'));
+        if (!existsSync(ecoDir)) {
+          mkdirSync(ecoDir, { recursive: true });
+        }
 
-      const ecoDir = resolve(rawSignalsDir, ecosystem.replace(/[^a-zA-Z0-9-]/g, '_'));
-      if (!existsSync(ecoDir)) {
-        mkdirSync(ecoDir, { recursive: true });
+        writeFileSync(
+          resolve(ecoDir, 'signals.json'),
+          JSON.stringify(result.data.signals, null, 2),
+          'utf-8',
+        );
+        writeFileSync(
+          resolve(ecoDir, 'evidence.json'),
+          JSON.stringify(result.data.evidence, null, 2),
+          'utf-8',
+        );
+
+        console.log(
+          `    ✓ ${result.data.signals.length} signals, ${result.data.evidence.length} evidence items (${result.metadata.model}, ${result.metadata.durationMs}ms)`,
+        );
+        recordModelUsed(runId, 'pain_miner', result.metadata.model);
+        return result.data.signals.length;
+      } catch (err) {
+        console.error(`    ✗ Failed: ${err}`);
+        return 0;
       }
+    },
+  );
 
-      writeFileSync(
-        resolve(ecoDir, 'signals.json'),
-        JSON.stringify(result.data.signals, null, 2),
-        'utf-8',
-      );
-      writeFileSync(
-        resolve(ecoDir, 'evidence.json'),
-        JSON.stringify(result.data.evidence, null, 2),
-        'utf-8',
-      );
-
-      console.log(
-        `    ✓ ${result.data.signals.length} signals, ${result.data.evidence.length} evidence items (${result.metadata.model}, ${result.metadata.durationMs}ms)`,
-      );
-      recordModelUsed(runId, 'pain_miner', result.metadata.model);
-      totalSignals += result.data.signals.length;
-    } catch (err) {
-      console.error(`    ✗ Failed: ${err}`);
-    }
-  }
+  const totalSignals = results.reduce((sum: number, n: number) => sum + n, 0);
 
   incrementCandidateCount(runId, 'signals', totalSignals);
   updateRunStatus(runId, 'pain_mining');
