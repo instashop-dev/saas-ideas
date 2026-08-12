@@ -131,13 +131,15 @@
     "The sentiment, rating, and full context of SRC-0004.",
     "Whether the user perceives this as a problem at all, or simply as a normal part of the job."
   ],
-  "rejection_reasons": [],
-  "judge_verdict": "",
-  "confidence": 0,
+  "rejection_reasons": [
+    "Judge rejected: Pain (2/5) and willingness-to-pay (2/5) are both weak while the market is already saturated with five direct competitors (Autobound, Smartwriter, Lavender, Regie, Lyne) delivering near-identical functionality at $29–50/user/month — this is a moderate efficiency annoyance in a commoditized category, and the customer perspective explicitly states an SDR would not buy another standalone tool for it."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.85,
   "final_score": 0,
   "run_id": "RUN-4DF5D4F5",
-  "stage": "debate",
-  "status": "DEBATED",
+  "stage": "judge",
+  "status": "REJECTED",
   "created_at": "2026-08-12T16:10:49.290Z",
-  "updated_at": "2026-08-12T18:13:09.567Z"
+  "updated_at": "2026-08-12T18:21:03.121Z"
 }

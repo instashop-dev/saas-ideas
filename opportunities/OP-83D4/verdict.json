@@ -143,13 +143,15 @@
     "Whether existing free scripts/API-based solutions already fully satisfy the need.",
     "Any demographic or segment data on who these power users are and whether they have budget."
   ],
-  "rejection_reasons": [],
-  "judge_verdict": "",
-  "confidence": 0,
+  "rejection_reasons": [
+    "Judge rejected: The opportunity fails the burning-need gates on every dimension: pain=2, frequency=2, and willingness_to_pay=1 (the lowest possible score). The single evidence item (SIG-002, one forum source) contains no complaint language, no frequency data, and no quantified impact — it merely describes a workaround. The customer simulation explicitly states 'I would likely NOT buy this' with a WTP of $0–2/month, and the bear case (confidence 0.85) correctly identifies that the target user is a technical power user already served by free, official tools (SEDE, Stack Exchange API) and free userscripts."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.85,
   "final_score": 0,
   "run_id": "RUN-4DF5D4F5",
-  "stage": "debate",
-  "status": "DEBATED",
+  "stage": "judge",
+  "status": "REJECTED",
   "created_at": "2026-08-12T16:05:10.308Z",
-  "updated_at": "2026-08-12T18:13:38.716Z"
+  "updated_at": "2026-08-12T18:23:11.507Z"
 }

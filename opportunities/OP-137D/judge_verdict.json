@@ -1,0 +1,8 @@
+{
+  "verdict": "REJECT",
+  "strongest_reason": "Pain (2/5) and willingness-to-pay (2/5) are both weak while the market is already saturated with five direct competitors (Autobound, Smartwriter, Lavender, Regie, Lyne) delivering near-identical functionality at $29–50/user/month — this is a moderate efficiency annoyance in a commoditized category, and the customer perspective explicitly states an SDR would not buy another standalone tool for it.",
+  "strongest_risk": "Feature-not-a-company: the core capability (scraping public sources plus LLM-generated personalized lines) is technically trivial and is being absorbed as a native AI feature by incumbent platforms (Apollo, Outreach, SalesLoft, HubSpot), which the customer confirms is the only form they would adopt — eliminating the standalone market.",
+  "unresolved_assumption": "Whether the target user perceives manual prospect research as a problem worth paying to solve at all — the single underlying signal does not confirm the user's role, negative sentiment, quantified time loss, or any existing spend.",
+  "confidence": 0.85,
+  "recommended_next_step": "Discard. Revisit only if a defensible wedge emerges (e.g., proprietary data advantage or native distribution inside a major sales engagement platform) AND new multi-source evidence shows quantified time loss or measurable response-rate impact from verified SDRs."
+}

@@ -1,0 +1,8 @@
+{
+  "verdict": "REJECT",
+  "strongest_reason": "The opportunity fails the burning-need hard gate decisively: willingness to pay is 1/5 and pain is 2/5 (gate requires ≥4 on pain, frequency, and WTP). The target users are overwhelmingly unpaid volunteers with zero budget, free incumbents (SmokeDetector, MEE6 free tier, Reddit Automoderator, native SE tools) anchor the price at $0, and the customer simulation explicitly states it would not pay. This is a chronic annoyance with no economic buyer, not a budget-releasing crisis.",
+  "strongest_risk": "No identifiable economic buyer exists: moderators are volunteers, free platform-native tools cover ~80% of needs, enterprise buyers are already served by Hive/CleanSpeak, and the entire value proposition depends on third-party platform APIs that could be restricted or expanded natively at any time — making monetization structurally blocked rather than merely unproven.",
+  "unresolved_assumption": "That any actor — power moderators managing multiple communities, community owners, or platforms themselves — would actually pay for cross-platform moderation aggregation. There is zero evidence of historical spend on moderation tooling by these users, and the claimed 4 independent sources are overstated (SRC-001 is double-cited) with no quantified pain data.",
+  "confidence": 0.85,
+  "recommended_next_step": "Discard this opportunity as scoped. It could only be revisited if re-targeted at a buyer with real budget (e.g., brands, game studios, or companies running large Discord/community operations rather than volunteer moderators) AND direct evidence of spend in that segment is gathered — but that is a different opportunity, not a validation of this one."
+}

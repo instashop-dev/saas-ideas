@@ -167,13 +167,15 @@
     "Whether SRC-004 and SRC-0004 are truly independent given their near-identical ID pattern.",
     "Size and reachability of the segment running Discord-native affiliate programs at painful scale."
   ],
-  "rejection_reasons": [],
-  "judge_verdict": "",
-  "confidence": 0,
+  "rejection_reasons": [
+    "Judge rejected: The core demand signals fail the approval gates decisively: pain = 2, frequency = 2, and willingness_to_pay = 1 (the lowest possible), against an approval threshold of ≥ 4 on all three. The only documented workaround is a free, functioning spreadsheet, and neither of the two evidence sources contains any quantified pain, time loss, error cost, or any mention of users paying for or even evaluating a paid solution. One key assumption — that users find spreadsheets inadequate — is directly contradicted by the evidence showing continued spreadsheet use."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.87,
   "final_score": 0,
   "run_id": "RUN-4DF5D4F5",
-  "stage": "debate",
-  "status": "DEBATED",
+  "stage": "judge",
+  "status": "REJECTED",
   "created_at": "2026-08-12T15:55:07.213Z",
-  "updated_at": "2026-08-12T18:14:17.944Z"
+  "updated_at": "2026-08-12T18:23:50.401Z"
 }
