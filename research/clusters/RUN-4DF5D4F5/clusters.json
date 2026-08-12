@@ -1,0 +1,815 @@
+[
+  {
+    "cluster_id": "CL-0001",
+    "canonical_jtbd": "When I need to close the books at month-end, I want to automatically reconcile financial data from multiple sources (payment processors, bank accounts, ERPs, marketplaces) against my accounting records, so I can produce accurate financial reports without manual data wrangling and avoid errors, delays, and audit risks.",
+    "target_user": "Accounting Manager / Staff Accountant / Bookkeeper / SaaS Founder",
+    "painful_workflow": "Manually exporting CSVs from payment processors (Stripe, PayPal), bank accounts, ERPs (QuickBooks, NetSuite), and marketplaces (Amazon, Etsy, Shopify), then using Excel (VLOOKUP, pivot tables) to match transactions, decompose bundled payouts (fees, refunds, reserves), and reconcile against invoices or internal records. This is repeated monthly or per-payout cycle.",
+    "current_workaround": "Downloading CSV reports, manually matching transaction IDs in Excel/Sheets, maintaining personal checklist spreadsheets, and building ad-hoc macros that only one person understands. Some sellers give up and book net deposits, worrying about accuracy at tax time.",
+    "source_signal_ids": [
+      "SIG-0001",
+      "SIG-0001",
+      "SIG-0002",
+      "SIG-0001",
+      "SIG-0001",
+      "SIG-0010",
+      "SIG-0001",
+      "SIG-0002",
+      "SIG-UPW-001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001",
+          "SRC-0002"
+        ],
+        "source_type": "review",
+        "ecosystem": "g2-capterra-reviews",
+        "evidence": "Monthly reconciliation of Stripe payouts against QuickBooks invoices using CSV downloads and VLOOKUP."
+      },
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001"
+        ],
+        "source_type": "forum",
+        "ecosystem": "hacker-news",
+        "evidence": "Manual monthly reconciliation of MRR from multiple payment processors into a single spreadsheet for board reporting."
+      },
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0002",
+          "SRC-0003"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Reconciling marketplace payouts (Amazon, Shopify, Etsy) against bank deposits by manually decomposing settlement reports."
+      },
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001"
+        ],
+        "source_type": "forum",
+        "ecosystem": "indie-hackers",
+        "evidence": "Manual invoicing for subscription customers, generating PDF invoices from a template."
+      },
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Month-end close reconciliation: exporting trial balances, bank statements, and subledger data into Excel for manual matching."
+      },
+      {
+        "signal_id": "SIG-0010",
+        "source_ids": [
+          "SRC-0010"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Reconciling invoices and payments by manually matching bank statements against accounting records."
+      },
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001"
+        ],
+        "source_type": "forum",
+        "ecosystem": "indie-hackers",
+        "evidence": "Manual churn analysis from payment data by exporting Stripe subscription data to Excel."
+      },
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0002"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Reconciling marketplace payouts (Amazon settlements, Shopify Payments, Etsy deposits) against bank deposits."
+      },
+      {
+        "signal_id": "SIG-UPW-001",
+        "source_ids": [
+          "SRC-UPW-001"
+        ],
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Manually reconciling client invoices against Upwork payment reports and bank statements."
+      }
+    ],
+    "independent_sources": 6,
+    "source_type_count": 4,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0002",
+    "canonical_jtbd": "When I need to publish content across multiple platforms, I want to automatically schedule, format, and distribute my posts (blog, social media, newsletter) from a single source, so I can maintain a consistent presence without manual copy-paste and reduce time spent on repetitive publishing tasks.",
+    "target_user": "Content Creator / Developer Blogger / Marketing Manager / Indie Hacker",
+    "painful_workflow": "Writing a blog post, then manually copying and pasting the content (markdown or HTML) into each target platform (dev.to, Medium, own blog, LinkedIn, Twitter, Instagram, Facebook, newsletter), adjusting formatting per platform, and coordinating publish dates/times using spreadsheets or calendar reminders.",
+    "current_workaround": "Using a spreadsheet to track publish dates, manually copying markdown to each platform, setting calendar reminders, or using basic scheduling tools that lack advanced features. For newsletters, copying blog post HTML into the email editor and adjusting formatting.",
+    "source_signal_ids": [
+      "SIG-DEV-001",
+      "SIG-0003",
+      "SIG-0009",
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-DEV-001",
+        "source_ids": [
+          "SRC-DEV-001",
+          "SRC-DEV-002"
+        ],
+        "source_type": "forum",
+        "ecosystem": "dev-to",
+        "evidence": "Scheduling and publishing posts across multiple platforms (dev.to, own blog, Medium) requires manual copy-paste and date coordination."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0003"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Repurposing long-form content into multiple short-form social media posts, emails, and other assets manually."
+      },
+      {
+        "signal_id": "SIG-0009",
+        "source_ids": [
+          "SRC-0009"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Scheduling and publishing social media posts across multiple platforms at optimal times manually."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0003"
+        ],
+        "source_type": "forum",
+        "ecosystem": "indie-hackers",
+        "evidence": "Manual formatting and scheduling of newsletter content by copying blog post HTML into email editor."
+      }
+    ],
+    "independent_sources": 3,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0003",
+    "canonical_jtbd": "When I need to manage support tickets and customer inquiries, I want to automatically triage, categorize, route, and sync conversations across my support tools (Zendesk, Slack, Discord, CRM), so I can respond faster, reduce manual effort, and prevent context loss.",
+    "target_user": "Customer Support Agent / Team Lead / Customer Success Manager / E-commerce Business Owner",
+    "painful_workflow": "Receiving support requests across multiple channels (Discord, email, chat, Zendesk, Slack), manually reading each ticket, categorizing it, assigning it to the right team member, and then updating the CRM or order management system separately. Agents must switch between multiple browser tabs and tools to look up customer information.",
+    "current_workaround": "Using a shared email inbox or basic ticketing system, maintaining a personal Slack channel with pinned messages, using a shared Google Sheet to track high-priority cases, and manually copy-pasting conversations between systems.",
+    "source_signal_ids": [
+      "SIG-003",
+      "SIG-0003",
+      "SIG-0002",
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-003",
+        "source_ids": [
+          "SRC-003"
+        ],
+        "source_type": "forum",
+        "ecosystem": "discord-forums",
+        "evidence": "Reconciling customer support tickets from Discord with order management systems and payment gateways manually."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0003"
+        ],
+        "source_type": "forum",
+        "ecosystem": "hacker-news",
+        "evidence": "Manual triage and duplication of support tickets between Zendesk, Slack, and Salesforce."
+      },
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0002"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Manually tagging, categorizing, and routing support tickets to the appropriate team member."
+      },
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0002"
+        ],
+        "source_type": "forum",
+        "ecosystem": "indie-hackers",
+        "evidence": "Manual categorization of customer support tickets by reading each ticket and assigning a category label."
+      }
+    ],
+    "independent_sources": 4,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0004",
+    "canonical_jtbd": "When I need to generate recurring reports and dashboards, I want to automatically pull data from multiple sources (analytics, ad platforms, logs, CRMs) and compile it into a standardized format, so I can get accurate insights without manual data entry and spreadsheet wrangling.",
+    "target_user": "Data Analyst / Marketing Operations Specialist / PPC Specialist / Community Manager / Product Manager",
+    "painful_workflow": "Manually exporting data from various tools (Google Ads, Meta Ads, GA4, Salesforce, Jira, GitHub, Discord, Stack Exchange) as CSVs, then copying/pasting into spreadsheets or slide decks, formatting charts, and writing commentary. This is repeated weekly or monthly for each report or client.",
+    "current_workaround": "Manual exports from each platform, copy/paste into per-client Excel/Google Sheets templates, screenshots into PowerPoint/Google Slides, and hand-written commentary. Some maintain brittle internal scripts or pay for connector tools that break.",
+    "source_signal_ids": [
+      "SIG-DEV-003",
+      "SIG-0003",
+      "SIG-0004",
+      "SIG-0005",
+      "SIG-0003",
+      "SIG-0004",
+      "SIG-0005",
+      "SIG-0008",
+      "SIG-UPW-002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-DEV-003",
+        "source_ids": [
+          "SRC-DEV-005"
+        ],
+        "source_type": "forum",
+        "ecosystem": "dev-to",
+        "evidence": "Exporting post-level analytics manually each month to check performance and report to sponsors."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0005",
+          "SRC-0006"
+        ],
+        "source_type": "review",
+        "ecosystem": "g2-capterra-reviews",
+        "evidence": "Transferring Salesforce lead data into Mailchimp for email campaigns via CSV export and manual import."
+      },
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0007",
+          "SRC-0008"
+        ],
+        "source_type": "review",
+        "ecosystem": "g2-capterra-reviews",
+        "evidence": "Generating weekly SOC 2 compliance reports from log data spread across multiple systems."
+      },
+      {
+        "signal_id": "SIG-0005",
+        "source_ids": [
+          "SRC-0005"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Creating and distributing recurring reports by manually querying databases and building charts."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-003"
+        ],
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Aggregating feature usage statistics and bug reports from disparate sources into a single weekly executive dashboard."
+      },
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0005"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Recurring client reporting: pulling performance data out of Google Ads, Meta Ads, GA4, and other platforms manually."
+      },
+      {
+        "signal_id": "SIG-0005",
+        "source_ids": [
+          "SRC-0006"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Keeping data flowing between SaaS tools that don't interoperate via manual CSV exports and fragile scripts."
+      },
+      {
+        "signal_id": "SIG-0008",
+        "source_ids": [
+          "SRC-0009"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Repetitive manual cleanup of exported reports: reformatting dates, deduplicating rows, and merging files."
+      },
+      {
+        "signal_id": "SIG-UPW-002",
+        "source_ids": [
+          "SRC-UPW-002"
+        ],
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Aggregating performance data from multiple Upwork contracts into a single dashboard manually."
+      }
+    ],
+    "independent_sources": 7,
+    "source_type_count": 4,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0005",
+    "canonical_jtbd": "When I need to moderate user-generated content and enforce community guidelines, I want to automatically detect and handle spam, abuse, plagiarism, and policy violations, so I can maintain a healthy community without manual review burnout.",
+    "target_user": "Community Moderator / Admin / Stack Exchange Moderator / Discord Server Administrator",
+    "painful_workflow": "Manually reviewing all user reports, flags, and comments for spam, abuse, off-topic content, or plagiarism. Moderators must work through queues manually, cross-reference user IDs with external databases, and log decisions in separate spreadsheets.",
+    "current_workaround": "Relying on community flagging and manual review of flagged comments, using browser extensions or custom scripts for bulk actions, and using external search engines for plagiarism checks. For Discord, using built-in audit logs and manual copy-pasting of user IDs into spreadsheets.",
+    "source_signal_ids": [
+      "SIG-DEV-002",
+      "SIG-001",
+      "SIG-001",
+      "SIG-004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-DEV-002",
+        "source_ids": [
+          "SRC-DEV-003",
+          "SRC-DEV-004"
+        ],
+        "source_type": "github",
+        "ecosystem": "dev-to",
+        "evidence": "Manually reviewing all comments for spam, abuse, or off-topic content with no automated moderation rules."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_ids": [
+          "SRC-001"
+        ],
+        "source_type": "forum",
+        "ecosystem": "discord-forums",
+        "evidence": "Manual moderation of user reports and ban appeals across multiple servers, requiring cross-referencing user IDs with external databases."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_ids": [
+          "SRC-001"
+        ],
+        "source_type": "forum",
+        "ecosystem": "Stack Exchange",
+        "evidence": "Manually reviewing and processing flags in the moderator queue for spam, low-quality, and duplicate posts."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_ids": [
+          "SRC-004"
+        ],
+        "source_type": "forum",
+        "ecosystem": "Stack Exchange",
+        "evidence": "Manually checking for plagiarism and copyright violations in posts, comparing text against original sources."
+      }
+    ],
+    "independent_sources": 4,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0006",
+    "canonical_jtbd": "When I need to manage inventory across multiple sales channels and systems, I want to automatically sync stock levels between my e-commerce platform and ERP, so I can prevent overselling and stockouts without manual reconciliation.",
+    "target_user": "Inventory Manager / E-commerce Seller",
+    "painful_workflow": "Cross-referencing inventory levels between Shopify and NetSuite ERP by exporting CSVs, uploading to Google Sheets, manually comparing item counts, and updating the lower system to avoid overselling.",
+    "current_workaround": "Export Shopify inventory CSV, upload to Google Sheets, manually compare against NetSuite item counts, then update the lower system.",
+    "source_signal_ids": [
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0003",
+          "SRC-0004"
+        ],
+        "source_type": "review",
+        "ecosystem": "g2-capterra-reviews",
+        "evidence": "Cross-referencing Shopify inventory levels with NetSuite ERP records to maintain stock accuracy across sales channels."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0007",
+    "canonical_jtbd": "When I need to onboard and manage contractors or freelancers, I want to automatically verify compliance documents, consolidate payment data, and integrate with my payroll system, so I can reduce compliance risk and administrative overhead.",
+    "target_user": "HR Specialist / Payroll Administrator / Agency Owner / Operations Manager",
+    "painful_workflow": "Manually requesting tax forms (W-9/W-8BEN) and identity documents via email, checking expiration dates, cross-referencing names, and maintaining a local database. For payroll, exporting invoice data from platforms like Upwork, cleaning up currency conversions, mapping user IDs to internal codes, and re-entering totals into payroll software.",
+    "current_workaround": "Manually requesting PDFs via email, maintaining a local database of valid documents, and re-requesting expired documents without automated reminders. For payroll, using Excel to map Upwork user IDs to internal employee/vendor codes.",
+    "source_signal_ids": [
+      "SIG-UPW-003",
+      "SIG-UPW-005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-UPW-003",
+        "source_ids": [
+          "SRC-UPW-003"
+        ],
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Verifying freelancer identity, tax forms, and compliance documents before onboarding."
+      },
+      {
+        "signal_id": "SIG-UPW-005",
+        "source_ids": [
+          "SRC-UPW-005"
+        ],
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Consolidating hourly rates, fixed-price milestones, and bonus structures from diverse Upwork contracts into a unified payroll system."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0008",
+    "canonical_jtbd": "When I need to manage product feedback and prioritize features, I want to automatically collect, organize, and analyze user feedback from multiple channels, so I can build the right features and reduce time spent on manual triage.",
+    "target_user": "Product Manager / SaaS Operator",
+    "painful_workflow": "Collecting, organizing, and prioritizing user feedback from multiple channels (email, support tickets, social media, in-app) into a single product roadmap by manually exporting and categorizing feedback.",
+    "current_workaround": "Manually exporting feedback from various sources into a spreadsheet or a single document, then manually categorizing and prioritizing it.",
+    "source_signal_ids": [
+      "SIG-0001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Collecting, organizing, and prioritizing user feedback from multiple channels into a single product roadmap."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0009",
+    "canonical_jtbd": "When I need to manage software deployments and infrastructure changes, I want to automate deployment orchestration, database migrations, and configuration management across environments, so I can reduce deployment failures and security gaps.",
+    "target_user": "DevOps Engineer / Platform Engineer / Data Engineer",
+    "painful_workflow": "Manually running deployment scripts, updating load balancer rules, verifying health endpoints, managing database schema migrations across environments, and maintaining configuration files per server. When migrations fail, engineers must manually revert data changes.",
+    "current_workaround": "A collection of shell scripts and a shared Google Doc with step-by-step runbooks. Maintaining central JSON/YAML config files per server and manually editing them. Writing custom migration scripts and running them locally before pushing to CI/CD.",
+    "source_signal_ids": [
+      "SIG-0002",
+      "SIG-002",
+      "SIG-004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0002"
+        ],
+        "source_type": "forum",
+        "ecosystem": "hacker-news",
+        "evidence": "Manual deployment orchestration across multiple cloud environments using shell scripts and runbooks."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_ids": [
+          "SRC-002"
+        ],
+        "source_type": "github",
+        "ecosystem": "discord-forums",
+        "evidence": "Managing configuration updates and deployment pipelines for multiple Discord bots across different guilds."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_ids": [
+          "SRC-004"
+        ],
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Managing database schema migrations and rollback procedures across multiple environments."
+      }
+    ],
+    "independent_sources": 3,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0010",
+    "canonical_jtbd": "When I need to track and manage affiliate or influencer partnerships, I want to automatically track referrals, calculate commissions, and reconcile payouts, so I can scale my program without manual spreadsheet errors.",
+    "target_user": "Marketing Manager / Influencer Coordinator / Indie Hacker",
+    "painful_workflow": "Manually collecting Discord usernames/user IDs from influencers, mapping them to affiliate codes, and reconciling sales data from e-commerce platforms against Discord activity logs. Or using a spreadsheet to record affiliate links, sales, and calculate commissions.",
+    "current_workaround": "Spreadsheets listing influencer names, Discord handles, affiliate links, and manual export/import of sales data. Manually calculating commissions and sending invoices via email or PayPal.",
+    "source_signal_ids": [
+      "SIG-004",
+      "SIG-0004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-004",
+        "source_ids": [
+          "SRC-004"
+        ],
+        "source_type": "marketplace",
+        "ecosystem": "discord-forums",
+        "evidence": "Tracking influencer partnerships and affiliate commissions generated through Discord-based campaigns."
+      },
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0004"
+        ],
+        "source_type": "forum",
+        "ecosystem": "indie-hackers",
+        "evidence": "Manual tracking of affiliate referrals and commissions using a spreadsheet."
+      }
+    ],
+    "independent_sources": 2,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0011",
+    "canonical_jtbd": "When I need to manage compliance audits and security evidence collection, I want to automatically gather, organize, and report on compliance evidence from multiple systems, so I can pass audits without weeks of manual preparation.",
+    "target_user": "Compliance Analyst / Security Compliance Officer / IT Manager",
+    "painful_workflow": "Manually querying each system (AWS CloudWatch, GitHub Actions, SIEM, etc.) separately, downloading logs, pasting into a master Excel workbook, formatting pivot tables, and sending via email as PDF. Or taking screenshots of configurations, exporting user lists, and documenting access reviews by hand.",
+    "current_workaround": "Point-in-time screenshots saved to shared drives, spreadsheets tracking controls and access reviews, calendar reminders to re-capture evidence, and manually written answers to repetitive vendor security questionnaires.",
+    "source_signal_ids": [
+      "SIG-0004",
+      "SIG-002",
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0007",
+          "SRC-0008"
+        ],
+        "source_type": "review",
+        "ecosystem": "g2-capterra-reviews",
+        "evidence": "Generating weekly SOC 2 compliance reports from log data spread across AWS CloudWatch, GitHub Actions, and a custom SIEM tool."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_ids": [
+          "SRC-002"
+        ],
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Manual verification of open-source license compliance for all dependencies in a large monorepo."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0004"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Manual compliance evidence collection: taking screenshots, exporting user lists, and assembling proof for audits."
+      }
+    ],
+    "independent_sources": 3,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0012",
+    "canonical_jtbd": "When I need to manage incident response and post-mortems, I want to automatically log events, timestamps, and actions during incidents, so I can produce accurate post-mortems and prevent repeated incidents.",
+    "target_user": "Customer Support Engineer / SRE",
+    "painful_workflow": "Manually logging events, timestamps, and actions taken across Slack, PagerDuty, and internal wikis during an incident. Afterward, spending hours correlating disjointed records to write the post-mortem.",
+    "current_workaround": "Engineers manually copy-paste Slack messages, PagerDuty alerts, and console outputs into a shared Google Doc during the incident.",
+    "source_signal_ids": [
+      "SIG-005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-005",
+        "source_ids": [
+          "SRC-005"
+        ],
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "On-call incident response coordination involving manual logging of events, timestamps, and actions taken across Slack, PagerDuty, and internal wikis."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0013",
+    "canonical_jtbd": "When I need to manage a team of content contributors or publication authors, I want to automate the workflow for onboarding writers, reviewing drafts, and maintaining consistent branding, so I can reduce permission errors and missed reviews.",
+    "target_user": "Team Lead / Manager of a Publication",
+    "painful_workflow": "Coordinating multiple authors in a publication: managing permissions, approving drafts, and ensuring consistent branding without a proper workflow. Using a shared spreadsheet to track authors, drafts, and publication status.",
+    "current_workaround": "Using a shared spreadsheet to track authors, drafts, and publication status; manually adjusting permissions in the settings.",
+    "source_signal_ids": [
+      "SIG-DEV-005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-DEV-005",
+        "source_ids": [
+          "SRC-DEV-008"
+        ],
+        "source_type": "forum",
+        "ecosystem": "dev-to",
+        "evidence": "Coordinating multiple authors in a publication: managing permissions, approving drafts, and ensuring consistent branding without a proper workflow."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0014",
+    "canonical_jtbd": "When I need to sync my blog content with my project documentation (README, GitHub Pages), I want to automatically update links and references when I publish new articles, so my documentation stays current and cross-promotion is seamless.",
+    "target_user": "Developer / Maintainer of Open-Source Projects",
+    "painful_workflow": "Manually updating the project's README or GitHub Pages with links to latest dev.to articles to keep the documentation in sync.",
+    "current_workaround": "Editing the README.md directly, committing and pushing changes, or using a GitHub Action that fetches RSS but still requires manual setup.",
+    "source_signal_ids": [
+      "SIG-DEV-004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-DEV-004",
+        "source_ids": [
+          "SRC-DEV-006",
+          "SRC-DEV-007"
+        ],
+        "source_type": "github",
+        "ecosystem": "dev-to",
+        "evidence": "Manually updating the project's README or GitHub Pages with links to latest dev.to articles."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0015",
+    "canonical_jtbd": "When I need to audit user activity and access logs for compliance, I want to automatically export, parse, and report on Discord or system logs, so I can meet regulatory requirements without manual data processing.",
+    "target_user": "IT Security Analyst / Compliance Officer",
+    "painful_workflow": "Exporting large volumes of data from Discord or other systems, parsing it, and matching it against internal records or regulatory requirements for compliance audits or security incident investigations.",
+    "current_workaround": "Using Discord's official API to export messages/channels, then using Python scripts to parse JSON files and search for keywords or user IDs. Manually compiling reports in Word/Excel.",
+    "source_signal_ids": [
+      "SIG-005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-005",
+        "source_ids": [
+          "SRC-005"
+        ],
+        "source_type": "documentation",
+        "ecosystem": "discord-forums",
+        "evidence": "Auditing Discord server access logs and message history for compliance purposes."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0016",
+    "canonical_jtbd": "When I need to track my reputation or performance metrics across platforms, I want to automatically export and visualize historical data, so I can analyze trends without manual data entry.",
+    "target_user": "Stack Exchange Power User / Writer",
+    "painful_workflow": "Tracking reputation changes over time across multiple sites by manually recording daily or weekly reputation points because the built-in history is not easily exportable.",
+    "current_workaround": "Users copy-paste data from the reputation tab into spreadsheets or use third-party scripts (e.g., Stack Exchange Data Explorer queries) to pull history.",
+    "source_signal_ids": [
+      "SIG-002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-002",
+        "source_ids": [
+          "SRC-002"
+        ],
+        "source_type": "forum",
+        "ecosystem": "Stack Exchange",
+        "evidence": "Tracking reputation changes over time across multiple sites manually."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0017",
+    "canonical_jtbd": "When I need to manage employee time-off and leave balances, I want to automatically track requests, calculate accruals, and sync with payroll, so I can avoid balance disputes and compliance risks.",
+    "target_user": "HR Generalist / Office Manager / People-Ops-of-One",
+    "painful_workflow": "Tracking employee PTO and leave balances in a shared spreadsheet: receiving requests over email or chat, manually updating balances, checking accrual math, and reconciling the spreadsheet against payroll records when numbers disagree.",
+    "current_workaround": "A shared Excel or Google Sheet with hand-built formulas, email-based request threads, manual accrual calculations, and periodic reconciliation against the payroll system.",
+    "source_signal_ids": [
+      "SIG-0007"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0007",
+        "source_ids": [
+          "SRC-0008"
+        ],
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Tracking employee PTO and leave balances in a shared spreadsheet manually."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0018",
+    "canonical_jtbd": "When I need to manage customer health and prevent churn, I want to automatically calculate health scores from usage data, support tickets, and NPS, so I can proactively retain at-risk accounts.",
+    "target_user": "Customer Success Manager",
+    "painful_workflow": "Monitoring customer health scores and identifying at-risk accounts by manually checking usage data, support tickets, and NPS scores across multiple tools.",
+    "current_workaround": "Logging into multiple tools (product analytics, support platform, CRM) to gather data and manually calculating a health score.",
+    "source_signal_ids": [
+      "SIG-0008"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0008",
+        "source_ids": [
+          "SRC-0008"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Monitoring customer health scores and identifying at-risk accounts manually."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0019",
+    "canonical_jtbd": "When I need to personalize outbound sales emails, I want to automatically research prospects from multiple sources, so I can increase response rates without manual research.",
+    "target_user": "Sales Development Representative (SDR)",
+    "painful_workflow": "Researching and personalizing outbound sales emails by manually looking up prospects on LinkedIn, company websites, and other sources.",
+    "current_workaround": "Switching between multiple browser tabs and tools to gather information about a prospect before writing a personalized email.",
+    "source_signal_ids": [
+      "SIG-0004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0004"
+        ],
+        "source_type": "review",
+        "ecosystem": "product-hunt-reviews",
+        "evidence": "Researching and personalizing outbound sales emails by manually looking up prospects."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T10:00:00Z"
+  }
+]
