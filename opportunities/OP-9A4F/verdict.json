@@ -172,8 +172,8 @@
   "confidence": 0,
   "final_score": 0,
   "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "COMPETITION_CHECKED",
+  "stage": "debate",
+  "status": "DEBATED",
   "created_at": "2026-08-12T15:55:07.213Z",
-  "updated_at": "2026-08-12T18:03:02.087Z"
+  "updated_at": "2026-08-12T18:14:17.944Z"
 }
