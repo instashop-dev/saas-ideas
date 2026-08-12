@@ -45,10 +45,16 @@ jobs:
           if [ -n "${{ inputs.run_id }}" ]; then
             echo "RUN_ID=${{ inputs.run_id }}" >> $GITHUB_OUTPUT
           else
-            # Find latest run manifest
-            LATEST=$(ls -t research/runs/RUN-*.json 2>/dev/null | head -1)
-            if [ -n "$LATEST" ]; then
-              RUN_ID=$(basename "$LATEST" .json)
+            # Prefer the run id from the most recent commit that touched
+            # research/runs: ls -t is not reliable on fresh checkouts because
+            # all checked-out files share the same mtime (arbitrary order),
+            # which caused chained stages to reprocess stale runs.
+            RUN_ID=$(git show --name-only --format="" HEAD 2>/dev/null | grep -oE 'RUN-[A-F0-9]{8}\.json' | head -1 | sed 's/\.json$//')
+            if [ -z "$RUN_ID" ]; then
+              LATEST=$(ls -t research/runs/RUN-*.json 2>/dev/null | head -1)
+              [ -n "$LATEST" ] && RUN_ID=$(basename "$LATEST" .json)
+            fi
+            if [ -n "$RUN_ID" ]; then
               echo "RUN_ID=$RUN_ID" >> $GITHUB_OUTPUT
             else
               echo "No run manifests found"
