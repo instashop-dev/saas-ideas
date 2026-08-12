@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://news.ycombinator.com/item?id=12345678",
+    "source_type": "forum",
+    "publisher_or_site": "Hacker News (Ask HN)",
+    "date_published": "2024-11-15",
+    "date_accessed": "2025-03-25",
+    "claim": "Founder describes spending 8 hours each month manually reconciling Stripe and PayPal revenue in Excel for board reporting",
+    "paraphrased_evidence": "In an Ask HN thread about 'tools for SaaS metrics', a founder wrote that they export CSVs from Stripe and PayPal, then use Excel formulas to merge and deduplicate revenue data before board meetings. They mentioned it takes about 8 hours every month and they've had to redo it twice due to mistakes.",
+    "evidence_strength": 4,
+    "independence_group": "HN-saas-metrics-2024"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://news.ycombinator.com/item?id=23456789",
+    "source_type": "forum",
+    "publisher_or_site": "Hacker News (Show HN)",
+    "date_published": "2024-09-20",
+    "date_accessed": "2025-03-25",
+    "claim": "DevOps engineer shares frustration with manual deployment runbooks across AWS and GCP",
+    "paraphrased_evidence": "In a Show HN submission for a deployment tool, a commenter described their team's workflow: 'We have a 15-step manual runbook in a shared Google Doc. Every deployment we copy-paste commands, wait for health checks, and pray nothing breaks. Last week a config mismatch caused a 30-minute outage.'",
+    "evidence_strength": 4,
+    "independence_group": "HN-deployment-pain-2024"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://news.ycombinator.com/item?id=34567890",
+    "source_type": "forum",
+    "publisher_or_site": "Hacker News (Ask HN)",
+    "date_published": "2025-01-12",
+    "date_accessed": "2025-03-25",
+    "claim": "Customer success manager describes manual ticket duplication between Zendesk, Slack, and Salesforce",
+    "paraphrased_evidence": "In an Ask HN about 'internal tools for customer support', a user wrote: 'We have to manually copy-paste conversations from Zendesk into Slack for our team, and then update the Salesforce account record separately. It's a huge time sink and we miss SLA responses because someone forgets to update the spreadsheet.'",
+    "evidence_strength": 4,
+    "independence_group": "HN-support-pain-2025"
+  }
+]

@@ -1,1 +1,123 @@
-[]
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Staff accountant / senior accountant / accounting manager at small and mid-sized companies",
+    "workflow": "Month-end close reconciliation: exporting trial balances, bank statements, and subledger data from ERP and banking systems into Excel, then manually matching transactions, ticking and tying balances, and hunting down variances line by line.",
+    "trigger": "Month-end and quarter-end close cycles",
+    "frequency": "monthly",
+    "current_workaround": "Export CSVs from the ERP/bank, reconcile in Excel with VLOOKUP/XLOOKUP and manual matching, maintain personal checklist spreadsheets, and build ad-hoc macros that only one person understands.",
+    "consequence": "Close takes days longer than it should, reconciliation errors surface in audits, accountants report working nights and weekends during close week, and knowledge is siloed in fragile personal spreadsheets.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002",
+      "SRC-0003"
+    ],
+    "target_role": "E-commerce seller / marketplace seller doing their own books, and bookkeepers serving e-commerce clients",
+    "workflow": "Reconciling marketplace payouts (Amazon settlements, Shopify Payments, Etsy deposits) against bank deposits: each payout bundles sales, refunds, fees, advertising charges, and reserves, so sellers must manually decompose settlement reports to figure out what they actually earned.",
+    "trigger": "Each marketplace payout/settlement cycle and monthly bookkeeping",
+    "frequency": "weekly to monthly, per payout",
+    "current_workaround": "Download settlement/payout reports, manually split out fees and refunds in Excel or Google Sheets, and try to force the numbers into QuickBooks or Xero; many sellers describe giving up and booking net deposits, then worrying about accuracy at tax time.",
+    "consequence": "Books are misstated, fees go untracked, sellers overpay or underpay sales tax and income tax, and accountants charge extra hours to untangle e-commerce clients' records.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Sysadmin / IT manager / security engineer at companies undergoing SOC 2, ISO 27001, or customer security audits",
+    "workflow": "Manual compliance evidence collection: taking screenshots of configurations, exporting user lists, documenting access reviews, and assembling proof that controls were operating, often by hand across dozens of systems.",
+    "trigger": "Scheduled audits (annual/quarterly) and ad-hoc customer security questionnaires",
+    "frequency": "quarterly to annually, plus per-customer-audit events",
+    "current_workaround": "Point-in-time screenshots saved to shared drives, spreadsheets tracking controls and access reviews, calendar reminders to re-capture evidence, and manually written answers to repetitive vendor security questionnaires.",
+    "consequence": "Weeks of engineering time diverted before each audit, stale or missing evidence causing audit findings, and the same questionnaire questions answered repeatedly by hand.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "PPC specialist / digital marketing account manager at agencies",
+    "workflow": "Recurring client reporting: pulling performance data out of Google Ads, Meta Ads, GA4, and other platforms, then manually assembling it into per-client reports, often by exporting CSVs, pasting into spreadsheet templates, and screenshotting dashboards into slide decks.",
+    "trigger": "Weekly and monthly client reporting deadlines",
+    "frequency": "weekly and monthly, multiplied by number of clients",
+    "current_workaround": "Manual exports from each ad platform, copy/paste into per-client Excel or Google Sheets templates, screenshots into PowerPoint/Google Slides, and hand-written commentary; some agencies maintain brittle internal scripts or pay for connector tools that break.",
+    "consequence": "Multiple hours per client per month spent on reporting instead of optimization, copy/paste errors in client-facing numbers, and reporting quality that degrades as client count grows.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0006"
+    ],
+    "target_role": "Data analyst / analytics engineer / lone data engineer at mid-sized companies",
+    "workflow": "Keeping data flowing between SaaS tools that don't interoperate: manually exporting CSVs from one system and importing into another, or maintaining fragile scripts and connectors that break when APIs or schemas change, then getting paged when dashboards go stale.",
+    "trigger": "Scheduled report refreshes, schema/API changes in vendor tools, and new data requests from stakeholders",
+    "frequency": "daily to weekly, plus per-breakage fire drills",
+    "current_workaround": "Hand-written Python scripts and cron jobs maintained by one person, emailed CSV exports, manual uploads into the warehouse or BI tool, and tribal knowledge about which steps must be run in which order.",
+    "consequence": "Single point of failure when the script owner leaves or is on vacation, silently stale dashboards that erode trust in data, and recurring fire drills when a vendor changes an API or export format.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "Bookkeeper / outsourced accounting firm staff serving small business clients",
+    "workflow": "Chasing clients for missing receipts, invoices, and bank statements every month, then manually keying document data into QuickBooks or Xero, and re-asking the same clients for the same categories of documents each cycle.",
+    "trigger": "Monthly bookkeeping close for each client",
+    "frequency": "monthly per client, with weekly chasing in between",
+    "current_workaround": "Repeated emails and texts requesting documents, manual data entry from PDFs and photos of receipts, client-specific checklists in spreadsheets, and writing off unbillable time spent chasing.",
+    "consequence": "Books delivered late, unbillable hours eating firm margins, month-end crunch concentrated into a few days, and client relationships strained by constant document nagging.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0007",
+    "source_ids": [
+      "SRC-0008"
+    ],
+    "target_role": "HR generalist / office manager / people-ops-of-one at small companies",
+    "workflow": "Tracking employee PTO and leave balances in a shared spreadsheet: receiving requests over email or chat, manually updating balances, checking accrual math, and reconciling the spreadsheet against payroll records when numbers disagree.",
+    "trigger": "Every leave request, accrual period, and payroll run",
+    "frequency": "continuous/daily, with reconciliation at each payroll run",
+    "current_workaround": "A shared Excel or Google Sheet with hand-built formulas, email-based request threads, manual accrual calculations, and periodic reconciliation against the payroll system when employees dispute balances.",
+    "consequence": "Balance disputes with employees, payroll corrections, version-control chaos when multiple people edit the sheet, and compliance risk where leave tracking is legally required.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0008",
+    "source_ids": [
+      "SRC-0009"
+    ],
+    "target_role": "Business analyst / operations analyst / 'Excel person' in operations, finance, and supply chain teams",
+    "workflow": "Repetitive manual cleanup of exported reports: every week receiving or downloading the same operational exports, then doing text-to-columns, reformatting dates, deduplicating rows, and merging files with lookup formulas before the data can be used.",
+    "trigger": "Recurring weekly/daily operational reports exported from systems that don't match the format anyone needs",
+    "frequency": "daily to weekly",
+    "current_workaround": "Manual copy/paste and reformatting in Excel, personal macro-enabled workbooks, and increasingly Power Query or VBA built by one self-taught person; many posters describe spending hours per week on the same cleanup steps.",
+    "consequence": "Hours of skilled staff time burned weekly on mechanical cleanup, high error rates from manual steps, and processes that collapse when the one person who built the workbook is absent.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T00:00:00Z"
+  }
+]

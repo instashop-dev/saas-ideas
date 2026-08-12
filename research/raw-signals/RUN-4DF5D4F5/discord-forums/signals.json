@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Discord Server Administrator / Community Manager",
+    "workflow": "Manual moderation of user reports and ban appeals across multiple servers or large communities, requiring cross-referencing user IDs with external databases (like Discord's API or third-party blocklists) and logging decisions in a separate spreadsheet.",
+    "trigger": "User report submission or ban appeal request",
+    "frequency": "Daily (high volume)",
+    "current_workaround": "Using a combination of Discord's built-in audit log, manual copy-pasting of user IDs into Excel/Sheets for tracking, and private DMs for communication. Often using multiple bot instances that don't share state.",
+    "consequence": "Inconsistent moderation decisions, delayed response times leading to community churn, risk of moderator burnout, and potential legal/compliance issues if evidence isn't properly preserved.",
+    "ecosystem": "discord-forums",
+    "source_type": "forum",
+    "collected_at": "2023-10-27T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Discord Bot Developer / DevOps Engineer",
+    "workflow": "Managing configuration updates and deployment pipelines for multiple Discord bots across different guilds (servers), where each server has unique settings, permissions, and webhook endpoints that must be manually synchronized.",
+    "trigger": "New server onboarding or configuration change request",
+    "frequency": "Weekly/Monthly",
+    "current_workaround": "Maintaining a central JSON/YAML config file per server, manually editing it, and redeploying the bot. Using custom scripts to parse these configs and apply them via Discord API calls.",
+    "consequence": "Configuration drift, broken features in specific servers due to outdated configs, high maintenance overhead, and difficulty scaling to hundreds of servers.",
+    "ecosystem": "discord-forums",
+    "source_type": "github",
+    "collected_at": "2023-10-27T10:05:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "E-commerce Business Owner / Support Agent",
+    "workflow": "Reconciling customer support tickets from Discord with order management systems (Shopify/WooCommerce) and payment gateways (Stripe/PayPal). Agents must manually look up order details in one system while chatting in another, then update both systems after resolution.",
+    "trigger": "Customer inquiry about order status, refund, or shipping",
+    "frequency": "Daily",
+    "current_workaround": "Having multiple browser tabs open (Discord, Shopify Admin, Stripe Dashboard). Copying order IDs from Discord, searching in Shopify, copying order details back to Discord. Manually issuing refunds in Stripe and noting it in Discord.",
+    "consequence": "Slow response times, human error in refund amounts or order statuses, frustration for both agents and customers, inability to provide real-time accurate information.",
+    "ecosystem": "discord-forums",
+    "source_type": "forum",
+    "collected_at": "2023-10-27T10:10:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Marketing Manager / Influencer Coordinator",
+    "workflow": "Tracking influencer partnerships and affiliate commissions generated through Discord-based campaigns. This involves manually collecting Discord usernames/user IDs from influencers, mapping them to affiliate codes, and reconciling sales data from e-commerce platforms against Discord activity logs.",
+    "trigger": "Monthly commission payout cycle",
+    "frequency": "Monthly",
+    "current_workaround": "Spreadsheets listing influencer names, Discord handles, affiliate links, and manual export/import of sales data. Manually calculating commissions and sending invoices via email or PayPal.",
+    "consequence": "Incorrect payments, disputes with influencers, significant time spent on reconciliation, lack of transparency leading to trust issues.",
+    "ecosystem": "discord-forums",
+    "source_type": "marketplace",
+    "collected_at": "2023-10-27T10:15:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "IT Security Analyst / Compliance Officer",
+    "workflow": "Auditing Discord server access logs and message history for compliance purposes (e.g., GDPR, financial regulations). This requires exporting large volumes of data from Discord, parsing it, and matching it against internal records or regulatory requirements.",
+    "trigger": "Quarterly compliance audit or security incident investigation",
+    "frequency": "Quarterly/Per-incident",
+    "current_workaround": "Using Discord's official API to export messages/channels, then using Python scripts to parse JSON files and search for keywords or user IDs. Manually compiling reports in Word/Excel.",
+    "consequence": "High labor cost for audits, risk of missing critical information due to manual parsing errors, slow response to security incidents, potential non-compliance penalties.",
+    "ecosystem": "discord-forums",
+    "source_type": "documentation",
+    "collected_at": "2023-10-27T10:20:00Z"
+  }
+]

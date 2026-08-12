@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Stack Exchange moderator",
+    "workflow": "Manually reviewing and processing flags in the moderator queue, especially for spam, low-quality, and duplicate posts",
+    "trigger": "User reports a post via flagging interface",
+    "frequency": "Daily (ongoing, depends on site size)",
+    "current_workaround": "Moderators work through the queue manually, often using browser extensions or custom scripts to speed up bulk actions like deleting multiple spam posts",
+    "consequence": "Backlog of flags builds up, spam stays visible longer, low-quality content reduces site quality, moderator burnout",
+    "ecosystem": "Stack Exchange",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Stack Exchange power user / contributor",
+    "workflow": "Tracking reputation changes over time across multiple sites, manually recording daily or weekly reputation points because the built-in reputation history is not easily exportable",
+    "trigger": "Desire to monitor rep growth, identify vote patterns, or prepare for nomination applications",
+    "frequency": "Weekly (or daily for active users)",
+    "current_workaround": "Users copy-paste data from the reputation tab into spreadsheets or use third-party scripts (e.g., Stack Exchange Data Explorer queries) to pull history",
+    "consequence": "Time wasted on manual data entry, errors in manual transcription, difficulty comparing sites, inability to get historical trends without custom code",
+    "ecosystem": "Stack Exchange",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Stack Exchange community manager",
+    "workflow": "Generating weekly community health reports (questions, answers, votes, flags, users) by manually querying the Stack Exchange Data Explorer (SEDE) and compiling results in a spreadsheet",
+    "trigger": "Weekly cycle or special review requests from Stack Exchange Inc.",
+    "frequency": "Weekly",
+    "current_workaround": "Run SQL queries on SEDE, export CSV, then manually combine and format in Excel/Google Sheets; sometimes automated with scripts but still fragile",
+    "consequence": "Inconsistent reporting, time sink (hours per week), error-prone, difficult to reproduce or share without manual steps",
+    "ecosystem": "Stack Exchange",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Stack Exchange moderator and community manager",
+    "workflow": "Manually checking for plagiarism and copyright violations in posts, comparing text against original sources, and following up with takedown notices",
+    "trigger": "User flags a post as plagiarized, or automated detection (e.g., Turnitin) raises a match",
+    "frequency": "Daily (varies by site size)",
+    "current_workaround": "Moderators use external search engines, manual comparison, and sometimes custom scripts to check similarity; DMCA takedowns are handled via email with Stack Exchange legal team",
+    "consequence": "Copyright infringement goes undetected, legal risk, community trust erosion, moderator time diverted from other tasks",
+    "ecosystem": "Stack Exchange",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  }
+]

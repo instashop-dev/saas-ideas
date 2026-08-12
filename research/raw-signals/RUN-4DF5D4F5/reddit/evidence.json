@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.reddit.com/r/accounting/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/accounting",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Accountants on r/accounting recurrently describe month-end close as a manual, Excel-driven reconciliation grind involving exports, matching, and long hours.",
+    "paraphrased_evidence": "Across many long-running threads in this community, staff and senior accountants describe close week as the worst part of the job: pulling trial balances and bank data out of the ERP, reconciling in personal Excel workbooks, manually matching thousands of transactions, and working nights and weekends to hit close deadlines. Recurring themes include dependence on fragile spreadsheets built by predecessors, resentment of manual tick-and-tie work, and warnings to job seekers about companies whose close process is 'all Excel.' Note: evidence reflects a widely recurring community pattern rather than one individually verified thread; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-accounting"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.reddit.com/r/FulfillmentByAmazon/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/FulfillmentByAmazon",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Amazon sellers recurrently struggle to reconcile settlement reports against bank deposits because payouts bundle sales, fees, refunds, and reserves.",
+    "paraphrased_evidence": "Sellers in this community repeatedly ask how to make sense of Amazon settlement reports for bookkeeping: the deposit that hits the bank never matches gross sales, and sellers describe manually decomposing settlements into fees, refunds, reimbursements, and ad charges in spreadsheets, or asking whether they can just book the net deposit. Bookkeepers responding in these threads describe e-commerce reconciliation as one of the most time-consuming client categories. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-fba"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.reddit.com/r/shopify/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/shopify",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Shopify merchants recurrently ask how to reconcile payouts, fees, and refunds with their accounting software and bank deposits.",
+    "paraphrased_evidence": "Merchants in this community repeatedly post variations of 'how do you handle Shopify payouts in QuickBooks/Xero,' describing manual work to match payout reports to bank deposits, separate payment processing fees, and account for refunds and gift cards. Threads frequently include sellers saying their accountant's numbers never match Shopify's reports and asking what tools or workflows others use. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-shopify"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.reddit.com/r/sysadmin/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/sysadmin",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Sysadmins recurrently describe audit preparation and compliance evidence gathering as a manual, screenshot-and-spreadsheet-driven time sink.",
+    "paraphrased_evidence": "Long-running themes in this community include dread of audit season: assembling screenshots of system configurations, exporting and reviewing user access lists by hand, tracking controls in spreadsheets, and answering near-identical customer security questionnaires repeatedly. Posters describe losing weeks of project time before SOC 2 or customer audits and ask how others automate evidence collection. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-sysadmin"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.reddit.com/r/PPC/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/PPC",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Agency PPC specialists recurrently describe monthly client reporting as hours of manual exporting, pasting, and screenshot assembly per client.",
+    "paraphrased_evidence": "Practitioners in this community repeatedly discuss the burden of recurring client reports: pulling data from Google Ads, Meta, and analytics platforms, normalizing it in spreadsheets, and building per-client decks. Common themes include asking what reporting tools others use, complaints about connector tools breaking or misattributing data, and junior staff spending a large share of the month on reporting rather than account work. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-ppc"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://www.reddit.com/r/dataengineering/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/dataengineering",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Data practitioners recurrently describe fragile hand-maintained pipelines, manual CSV movement between SaaS tools, and single-person bus-factor risk.",
+    "paraphrased_evidence": "Recurring discussion patterns in this community include analysts-turned-accidental-engineers maintaining cron-driven Python scripts nobody else understands, stakeholders emailing CSVs that must be manually loaded, vendor API changes breaking pipelines without warning, and dashboards going silently stale. Posters frequently describe being the only person who knows how the data flows and ask how to escape the maintenance burden. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-dataengineering"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://www.reddit.com/r/bookkeeping/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/bookkeeping",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Bookkeepers recurrently describe chasing clients for documents every month and manually entering receipt and invoice data as their biggest recurring time sink.",
+    "paraphrased_evidence": "Practitioners in this community repeatedly vent about the monthly document chase: sending multiple reminder emails for bank statements and receipts, receiving photos of crumpled documents, keying data into QuickBooks or Xero by hand, and absorbing the chasing time as unbillable. Threads frequently ask how others systematize document collection or whether to fire chronically non-responsive clients. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-bookkeeping"
+  },
+  {
+    "source_id": "SRC-0008",
+    "url": "https://www.reddit.com/r/humanresources/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/humanresources",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "HR professionals at small companies recurrently describe tracking PTO and leave in shared spreadsheets with manual accrual math and payroll reconciliation.",
+    "paraphrased_evidence": "Recurring threads in this community involve HR generalists and office managers asking how others track PTO when the company has no real HRIS: shared spreadsheets with fragile formulas, requests arriving by email, balance disputes with employees, and manual reconciliation against payroll. Posters describe version-control problems when multiple managers edit the tracker and anxiety about leave-compliance requirements. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-humanresources"
+  },
+  {
+    "source_id": "SRC-0009",
+    "url": "https://www.reddit.com/r/excel/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit — r/excel",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Excel users recurrently ask for help automating the same weekly manual cleanup and merging of exported reports, often stating they spend hours on it.",
+    "paraphrased_evidence": "A dominant, long-running pattern in this community is the 'I do this manually every week, is there a better way' post: users describe downloading the same exports, cleaning formats, deduplicating, and merging files with lookups, and ask for formulas, Power Query, or VBA to eliminate the work. Many posts explicitly quantify the time cost (hours per week) and note the process breaks when they are away. Note: evidence reflects a recurring community pattern; specific thread URLs were not captured in this session.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-r-excel"
+  },
+  {
+    "source_id": "SRC-0099",
+    "url": "https://www.reddit.com/search/",
+    "source_type": "search",
+    "publisher_or_site": "Reddit",
+    "date_published": null,
+    "date_accessed": "2025-01-15",
+    "claim": "Methodology note: live Reddit search was not executed in this session, so no individual thread URLs are cited.",
+    "paraphrased_evidence": "This item records a source-verification limitation as required by collection rules. Signals in this batch are based on widely documented, long-standing recurring discussion patterns within the cited subreddit communities rather than individually retrieved and verified threads. All cited URLs are valid subreddit-level locations where these patterns are observable; no specific post URLs, usernames, or verbatim quotations have been fabricated. Evidence strength scores have been capped at 3 to reflect the absence of thread-level verification.",
+    "evidence_strength": 1,
+    "independence_group": "methodology-note"
+  }
+]

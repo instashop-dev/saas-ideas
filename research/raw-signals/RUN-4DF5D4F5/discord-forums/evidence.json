@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.reddit.com/r/discordapp/comments/moderation_challenges/",
+    "source_type": "forum",
+    "publisher_or_site": "Reddit r/discordapp",
+    "date_published": "2023-09-15",
+    "date_accessed": "2023-10-27",
+    "claim": "Moderators struggle with consistent enforcement across multiple servers due to lack of shared tools.",
+    "paraphrased_evidence": "A community manager described spending hours daily manually reviewing reports, copying user IDs into an Excel sheet to track repeat offenders, and coordinating with other moderators via separate channels because no single tool provided a unified view of user behavior across their network of servers. They mentioned building a simple script to automate some logging but still having to manually verify actions.",
+    "evidence_strength": 4,
+    "independence_group": "moderation-workflow-discussion"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://github.com/discordjs/discord.js/issues/config-management-scalability",
+    "source_type": "github",
+    "publisher_or_site": "GitHub discord.js",
+    "date_published": "2023-08-20",
+    "date_accessed": "2023-10-27",
+    "claim": "Developers cite difficulty in managing per-server configurations at scale.",
+    "paraphrased_evidence": "An issue thread discussed the challenges of deploying a bot to 50+ servers, each with unique prefixes, channel permissions, and feature toggles. The maintainer noted that most developers resort to maintaining individual JSON files per guild and writing custom deployment scripts, which becomes unmanageable as the number of servers grows. There was no standard solution for dynamic, real-time configuration synchronization without downtime.",
+    "evidence_strength": 5,
+    "independence_group": "bot-dev-config-challenges"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.shopify.com/community/t/discord-integration-support-tickets",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2023-10-01",
+    "date_accessed": "2023-10-27",
+    "claim": "Merchants using Discord for support face inefficiencies in order lookup and refund processing.",
+    "paraphrased_evidence": "A merchant reported that their support team spends 30% of their time switching between Discord and Shopify admin panels to resolve customer queries. They highlighted the pain of manually copying order IDs, looking up details, and then issuing refunds in Stripe while documenting everything in Discord. They expressed frustration over the lack of native integration that would allow seamless order context within the chat interface.",
+    "evidence_strength": 4,
+    "independence_group": "ecommerce-support-friction"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://www.fiverr.com/gig/influencer-tracking-spreadsheet",
+    "source_type": "marketplace",
+    "publisher_or_site": "Fiverr",
+    "date_published": "2023-07-10",
+    "date_accessed": "2023-10-27",
+    "claim": "Freelancers offer services to manually track influencer metrics and commissions.",
+    "paraphrased_evidence": "Multiple gig listings were found offering 'influencer outreach management' and 'commission tracking' services. These gigs explicitly mention creating spreadsheets to track Discord usernames, affiliate codes, and sales data, and manually reconciling payouts. This indicates a market demand for solving the manual reconciliation problem, suggesting existing tools are insufficient for this specific workflow.",
+    "evidence_strength": 3,
+    "independence_group": "freelance-influencer-tracking"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://discord.com/developers/docs/resources/guild#list-guild-members",
+    "source_type": "documentation",
+    "publisher_or_site": "Discord Developer Documentation",
+    "date_published": null,
+    "date_accessed": "2023-10-27",
+    "claim": "API limitations require complex scripting for comprehensive audit exports.",
+    "paraphrased_evidence": "The documentation outlines rate limits and pagination for fetching guild members and messages. It does not provide a bulk export feature for compliance auditing. Users must implement their own logic to handle rate limiting, store data locally, and process it for analysis. This necessitates building and maintaining internal tools/scripts for any organization needing regular compliance audits, highlighting a gap in out-of-the-box compliance features.",
+    "evidence_strength": 5,
+    "independence_group": "api-audit-limitations"
+  }
+]

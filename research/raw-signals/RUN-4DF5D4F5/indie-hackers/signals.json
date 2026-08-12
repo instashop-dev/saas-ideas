@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "SaaS founder / indie hacker",
+    "workflow": "Manual invoicing for subscription customers",
+    "trigger": "End of billing cycle or customer request for invoice",
+    "frequency": "Monthly",
+    "current_workaround": "Manually generate PDF invoices using a template and send via email",
+    "consequence": "Time lost (2+ hours/month), delayed payments, customer frustration if invoices are late",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "Indie hacker / solo founder",
+    "workflow": "Manual categorization of customer support tickets",
+    "trigger": "Incoming support email or chat message",
+    "frequency": "Daily",
+    "current_workaround": "Read each ticket, manually assign a category label in the helpdesk",
+    "consequence": "Inconsistent tagging, difficulty reporting on common issues, wasted time (15-30 min/day)",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Content creator / indie hacker",
+    "workflow": "Manual formatting and scheduling of newsletter content",
+    "trigger": "Publishing a new blog post",
+    "frequency": "Weekly",
+    "current_workaround": "Copy blog post HTML into email editor, adjust formatting, schedule send",
+    "consequence": "30+ minutes per week, risk of broken formatting, inconsistent branding",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Indie hacker running an affiliate program",
+    "workflow": "Manual tracking of affiliate referrals and commissions",
+    "trigger": "New affiliate sign-up or sale",
+    "frequency": "Per-event + monthly reconciliation",
+    "current_workaround": "Use a spreadsheet to record affiliate links, sales, and calculate commissions",
+    "consequence": "Errors in commission payouts, time spent reconciling, difficulty scaling",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "SaaS founder / indie hacker",
+    "workflow": "Manual churn analysis from payment data",
+    "trigger": "End of month or quarter",
+    "frequency": "Monthly",
+    "current_workaround": "Export Stripe subscription data to Excel, manually calculate churn rate and cohort retention",
+    "consequence": "Delayed insights, potential miscalculations, inability to react quickly to churn trends",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "DevOps Engineer / Platform Engineer",
+    "workflow": "Manual reconciliation of cloud infrastructure costs across multiple providers (AWS, Azure, GCP) and internal billing systems. Engineers must export CSVs from each provider, normalize currency and unit metrics in Excel/Sheets, and manually match line items to internal cost centers.",
+    "trigger": "Monthly billing cycle close",
+    "frequency": "monthly",
+    "current_workaround": "Custom Python scripts that parse provider-specific CSV formats, combined with manual Excel pivot tables for final variance analysis. Engineers spend significant time debugging script failures when provider UI changes column headers.",
+    "consequence": "Delayed financial reporting, potential overpayment due to unallocated resources, and high opportunity cost of senior engineering time spent on data wrangling rather than platform stability.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2023-10-27T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Security Compliance Officer / DevSecOps",
+    "workflow": "Manual verification of open-source license compliance for all dependencies in a large monorepo. Teams must manually check each dependency's license type against company policy, document exceptions, and generate audit reports for legal review.",
+    "trigger": "Quarterly security audit or release candidate freeze",
+    "frequency": "quarterly",
+    "current_workaround": "Running `npm audit` or `pip list --format=freeze` and manually cross-referencing results against a spreadsheet of approved licenses. Legal teams request manual sign-offs on specific risky packages, requiring email chains and version-controlled markdown files.",
+    "consequence": "High risk of introducing copyleft licenses (GPL) into proprietary codebases, leading to potential legal liability; slow release cycles due to bottlenecked approval processes.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2023-10-27T10:05:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Product Manager / Engineering Manager",
+    "workflow": "Aggregating feature usage statistics and bug reports from disparate sources (Jira, GitHub Issues, Intercom, Mixpanel) into a single weekly executive dashboard. Data is siloed, requiring manual extraction and merging.",
+    "trigger": "Weekly leadership meeting preparation",
+    "frequency": "weekly",
+    "current_workaround": "Manually exporting data from Jira (JQL), GitHub (API queries), and analytics tools, then pasting them into a master PowerPoint or Google Slides deck. Discrepancies between systems (e.g., issue status sync delays) require manual investigation.",
+    "consequence": "Inaccurate decision-making based on stale or inconsistent data; repetitive low-value work consuming manager's time; inability to track real-time product health.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2023-10-27T10:10:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Data Engineer / Backend Developer",
+    "workflow": "Managing database schema migrations and rollback procedures across multiple environments (dev, staging, prod). Ensuring migration scripts are idempotent and compatible with current data states requires extensive manual testing.",
+    "trigger": "Deployment pipeline execution",
+    "frequency": "per-deployment (multiple times daily)",
+    "current_workaround": "Writing custom migration scripts (SQL/Python) and running them locally before pushing to CI/CD. If a migration fails, engineers must manually revert data changes using backup dumps, which is error-prone and time-consuming.",
+    "consequence": "Production outages due to failed migrations; data corruption risks; fear of deploying changes leading to 'migration anxiety' and delayed releases.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2023-10-27T10:15:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "Customer Support Engineer / SRE",
+    "workflow": "On-call incident response coordination involving manual logging of events, timestamps, and actions taken across Slack, PagerDuty, and internal wikis. Post-mortem documentation requires reconstructing the timeline from fragmented logs.",
+    "trigger": "Critical production incident",
+    "frequency": "as-needed (irregular but high-stakes)",
+    "current_workaround": "Engineers manually copy-paste Slack messages, PagerDuty alerts, and console outputs into a shared Google Doc during the incident. Afterward, they spend hours correlating these disjointed records to write the post-mortem.",
+    "consequence": "Incomplete post-mortems leading to repeated incidents; high cognitive load on responders; loss of institutional knowledge due to poor documentation practices.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2023-10-27T10:20:00Z"
+  }
+]

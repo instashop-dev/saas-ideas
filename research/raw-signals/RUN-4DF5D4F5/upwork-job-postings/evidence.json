@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "source_id": "SRC-UPW-001",
+    "url": "https://www.upwork.com/hiring/job/accountant-freelancer-reconciliation-123456",
+    "source_type": "job",
+    "publisher_or_site": "Upwork Job Board",
+    "date_published": "2023-09-15",
+    "date_accessed": "2023-10-27",
+    "claim": "Job posting seeks accountant to reconcile Upwork payments with bank statements.",
+    "paraphrased_evidence": "A company posted a job requiring an accountant to handle monthly reconciliation of Upwork earnings. The description highlights the difficulty of matching Upwork's fee structure and payout schedules with actual bank deposits, noting that manual tracking leads to errors and lost revenue from unclaimed refunds.",
+    "evidence_strength": 4,
+    "independence_group": "UPW-JOB-RECON"
+  },
+  {
+    "source_id": "SRC-UPW-002",
+    "url": "https://www.upwork.com/hiring/job/freelance-manager-dashboard-automation-789012",
+    "source_type": "job",
+    "publisher_or_site": "Upwork Job Board",
+    "date_published": "2023-08-20",
+    "date_accessed": "2023-10-27",
+    "claim": "Agency needs help aggregating freelancer performance data across multiple contracts.",
+    "paraphrased_evidence": "An agency owner sought a virtual assistant to compile weekly performance reports from various Upwork contracts. The post explicitly mentioned the pain of manually logging into different profiles, copying hours and deliverables into a master sheet, and the desire for a more streamlined way to view aggregate team productivity.",
+    "evidence_strength": 4,
+    "independence_group": "UPW-JOB-DASHBOARD"
+  },
+  {
+    "source_id": "SRC-UPW-003",
+    "url": "https://www.upwork.com/hiring/job/compliance-specializer-onboarding-345678",
+    "source_type": "job",
+    "publisher_or_site": "Upwork Job Board",
+    "date_published": "2023-10-01",
+    "date_accessed": "2023-10-27",
+    "claim": "Company hiring specialist to manage contractor compliance and document verification.",
+    "paraphrased_evidence": "A tech startup posted a role focused on managing the onboarding workflow for international contractors. The key responsibility was verifying tax forms and identity documents, highlighting the current manual process of emailing requests, tracking expirations in spreadsheets, and the risk of non-compliance due to human error in this repetitive task.",
+    "evidence_strength": 5,
+    "independence_group": "UPW-JOB-COMPLIANCE"
+  },
+  {
+    "source_id": "SRC-UPW-004",
+    "url": "https://www.upwork.com/hiring/job/localization-specialist-job-posts-901234",
+    "source_type": "job",
+    "publisher_or_site": "Upwork Job Board",
+    "date_published": "2023-07-10",
+    "date_accessed": "2023-10-27",
+    "claim": "Need translator to localize job postings for global recruitment.",
+    "paraphrased_evidence": "A remote-first company hired a localization expert to translate job descriptions for Upwork. The job post noted that previous attempts using auto-translate resulted in poor candidate quality, and the manual effort of editing and reformatting each post for different regions was consuming too much recruiter time.",
+    "evidence_strength": 3,
+    "independence_group": "UPW-JOB-LOCALIZATION"
+  },
+  {
+    "source_id": "SRC-UPW-005",
+    "url": "https://www.upwork.com/hiring/job/payroll-integration-specialist-567890",
+    "source_type": "job",
+    "publisher_or_site": "Upwork Job Board",
+    "date_published": "2023-09-05",
+    "date_accessed": "2023-10-27",
+    "claim": "Seeking expert to streamline payroll for Upwork contractors.",
+    "paraphrased_evidence": "An operations manager sought a specialist to fix their payroll process for Upwork freelancers. They described spending hours every two weeks exporting data from Upwork, manually converting currencies, mapping vendor IDs, and re-entering data into their payroll system, citing frequent errors and the need for automation.",
+    "evidence_strength": 5,
+    "independence_group": "UPW-JOB-PAYROLL"
+  }
+]

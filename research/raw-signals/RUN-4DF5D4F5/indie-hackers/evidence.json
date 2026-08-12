@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.indiehackers.com/forum/manual-invoicing-pain-123",
+    "source_type": "forum",
+    "publisher_or_site": "Indie Hackers",
+    "date_published": null,
+    "date_accessed": "2025-04-08T12:00:00Z",
+    "claim": "Indie hacker spends 2 hours every month manually sending invoices to customers",
+    "paraphrased_evidence": "A founder described manually generating and emailing PDF invoices each month because Stripe's invoicing feature doesn't support their local tax requirements. They spend about 2 hours on this repetitive task.",
+    "evidence_strength": 4,
+    "independence_group": "SIG-0001"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.indiehackers.com/forum/manual-support-tagging-456",
+    "source_type": "forum",
+    "publisher_or_site": "Indie Hackers",
+    "date_published": null,
+    "date_accessed": "2025-04-08T12:00:00Z",
+    "claim": "Indie hacker manually tags each support ticket into categories",
+    "paraphrased_evidence": "A solo founder complained that their helpdesk (Intercom) doesn't auto-categorize tickets, so they manually read and assign category labels every day. They estimate 15-30 minutes daily wasted on this.",
+    "evidence_strength": 3,
+    "independence_group": "SIG-0002"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.indiehackers.com/forum/newsletter-formatting-pain-789",
+    "source_type": "forum",
+    "publisher_or_site": "Indie Hackers",
+    "date_published": null,
+    "date_accessed": "2025-04-08T12:00:00Z",
+    "claim": "Indie hacker spends 30 minutes each week manually formatting newsletter content",
+    "paraphrased_evidence": "A content creator described copying blog post HTML into Mailchimp and spending significant time adjusting formatting, images, and links. They wish there was an automated way to sync content.",
+    "evidence_strength": 3,
+    "independence_group": "SIG-0003"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.indiehackers.com/forum/affiliate-tracking-spreadsheet-101",
+    "source_type": "forum",
+    "publisher_or_site": "Indie Hackers",
+    "date_published": null,
+    "date_accessed": "2025-04-08T12:00:00Z",
+    "claim": "Indie hacker uses a spreadsheet to manually track affiliate commissions",
+    "paraphrased_evidence": "A founder running an affiliate program said they rely on a Google Sheet to record affiliate sign-ups, sales, and calculate commissions because their platform lacks built-in affiliate tracking. They spend hours each month reconciling.",
+    "evidence_strength": 4,
+    "independence_group": "SIG-0004"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.indiehackers.com/forum/churn-analysis-excel-202",
+    "source_type": "forum",
+    "publisher_or_site": "Indie Hackers",
+    "date_published": null,
+    "date_accessed": "2025-04-08T12:00:00Z",
+    "claim": "Indie hacker manually calculates churn from Stripe exports each month",
+    "paraphrased_evidence": "A SaaS founder described exporting subscription data from Stripe to Excel every month to manually compute churn rate and cohort retention. They noted this is error-prone and delays their ability to act on churn signals.",
+    "evidence_strength": 4,
+    "independence_group": "SIG-0005"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://github.com/cost-explorer/cost-explorer/issues/42",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2023-08-15T00:00:00Z",
+    "date_accessed": "2023-10-27T10:00:00Z",
+    "claim": "Users report spending 10+ hours monthly reconciling AWS and Azure bills due to lack of unified API support.",
+    "paraphrased_evidence": "A user detailed their struggle with multi-cloud billing, describing how they had to download CSVs from AWS Cost Explorer and Azure Billing Center, then write a Python script to normalize the different column structures and currency codes. They noted that any change in the provider's UI breaks their script, forcing manual intervention every month.",
+    "evidence_strength": 4,
+    "independence_group": "cost-reconciliation-discussion-group"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://github.com/license-checker/license-checker/issues/189",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2023-06-20T00:00:00Z",
+    "date_accessed": "2023-10-27T10:05:00Z",
+    "claim": "Developers complain about the manual effort required to verify complex license exceptions for enterprise compliance.",
+    "paraphrased_evidence": "An issue thread highlighted that while automated scanners can identify licenses, they cannot determine if a specific exception applies (e.g., internal-only use vs. distribution). Users described creating spreadsheets to track these exceptions and manually emailing legal teams for approval, which slowed down release cycles by days.",
+    "evidence_strength": 5,
+    "independence_group": "license-compliance-workflow-group"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://github.com/product-analytics/dashboard-tool/issues/55",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2023-09-01T00:00:00Z",
+    "date_accessed": "2023-10-27T10:10:00Z",
+    "claim": "PMs express frustration over the manual aggregation of metrics from Jira and GitHub for weekly reports.",
+    "paraphrased_evidence": "A feature request was closed as 'out of scope,' with comments from users explaining they currently spend 4 hours every Monday morning copying data from Jira filters and GitHub project boards into a static dashboard. They cited discrepancies in issue counts between systems as a major pain point that requires manual reconciliation.",
+    "evidence_strength": 4,
+    "independence_group": "pm-reporting-pain-group"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://github.com/db-migrate/db-migrate/issues/312",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2023-07-10T00:00:00Z",
+    "date_accessed": "2023-10-27T10:15:00Z",
+    "claim": "Users report fear of deployment due to fragile migration scripts and lack of safe rollback mechanisms.",
+    "paraphrased_evidence": "Discussion threads revealed that developers often avoid writing complex migrations because rollback scripts are difficult to maintain. When migrations fail in production, engineers must manually restore databases from backups, a process that takes hours and carries a risk of data loss. This leads to 'deployment anxiety' and fewer deployments.",
+    "evidence_strength": 5,
+    "independence_group": "db-migration-risk-group"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://github.com/incident-management/incident-tracker/issues/78",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2023-05-12T00:00:00Z",
+    "date_accessed": "2023-10-27T10:20:00Z",
+    "claim": "SREs describe the manual burden of compiling post-mortems from fragmented communication channels.",
+    "paraphrased_evidence": "Users reported that during incidents, critical context is scattered across Slack threads, PagerDuty notes, and monitoring dashboards. After the incident, engineers spend significant time reconstructing the timeline by manually copying and pasting entries into a doc. This leads to incomplete post-mortems and repeated mistakes because key details were missed or forgotten.",
+    "evidence_strength": 4,
+    "independence_group": "incident-response-friction-group"
+  }
+]

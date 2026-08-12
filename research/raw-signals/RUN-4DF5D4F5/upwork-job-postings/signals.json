@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "signal_id": "SIG-UPW-001",
+    "source_ids": [
+      "SRC-UPW-001"
+    ],
+    "target_role": "Freelance Accountant / Bookkeeper",
+    "workflow": "Manually reconciling client invoices against Upwork payment reports and bank statements to identify missing fees or discrepancies.",
+    "trigger": "Monthly billing cycle completion",
+    "frequency": "monthly",
+    "current_workaround": "Downloading CSV exports from Upwork, Excel, and bank; manually matching transaction IDs and calculating net pay after platform fees, which often requires chasing clients for clarification on disputed charges.",
+    "consequence": "Revenue leakage due to unclaimed refunds for overcharged fees, delayed payments to freelancers, and significant time spent on forensic accounting for simple transactions.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2023-10-27T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-UPW-002",
+    "source_ids": [
+      "SRC-UPW-002"
+    ],
+    "target_role": "Agency Owner / Freelance Manager",
+    "workflow": "Aggregating performance data (hours worked, deliverables completed, client satisfaction) from multiple Upwork contracts into a single dashboard for internal team review.",
+    "trigger": "Weekly or bi-weekly performance reviews",
+    "frequency": "weekly",
+    "current_workaround": "Manually logging into each freelancer's Upwork profile or contract page, copying metrics into a master spreadsheet, and updating formulas. Often involves exporting individual contract reports and merging them in Excel.",
+    "consequence": "Inaccurate visibility into agency profitability, delayed identification of underperforming contractors, and administrative overhead that scales poorly as the number of active contracts increases.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2023-10-27T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-UPW-003",
+    "source_ids": [
+      "SRC-UPW-003"
+    ],
+    "target_role": "HR Specialist / Recruiter",
+    "workflow": "Verifying freelancer identity, tax forms (W-9/W-8BEN), and compliance documents before onboarding to external platforms or internal systems.",
+    "trigger": "New contractor onboarding",
+    "frequency": "per-event",
+    "current_workaround": "Manually requesting PDFs via email, checking expiration dates, cross-referencing names with government databases where possible, and maintaining a local database of valid documents. Re-requesting expired documents without automated reminders.",
+    "consequence": "Compliance risks due to expired or invalid tax forms, legal liability for misclassified workers, and significant delays in getting new hires productive.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2023-10-27T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-UPW-004",
+    "source_ids": [
+      "SRC-UPW-004"
+    ],
+    "target_role": "Operations Manager",
+    "workflow": "Translating and formatting job descriptions and proposals between languages for global talent acquisition teams.",
+    "trigger": "Posting jobs in non-English speaking markets",
+    "frequency": "per-job-posting",
+    "current_workaround": "Using machine translation tools followed by manual editing for nuance, then manually copying/pasting into Upwork's interface. Creating separate spreadsheets to track which roles have been localized and their status.",
+    "consequence": "Inconsistent brand voice, poor quality candidates due to ambiguous job descriptions, and high labor cost for professional translation services for every single role.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2023-10-27T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-UPW-005",
+    "source_ids": [
+      "SRC-UPW-005"
+    ],
+    "target_role": "Payroll Administrator",
+    "workflow": "Consolidating hourly rates, fixed-price milestones, and bonus structures from diverse Upwork contracts into a unified payroll system.",
+    "trigger": "Payroll processing period",
+    "frequency": "bi-weekly or monthly",
+    "current_workaround": "Exporting invoice data from Upwork, cleaning up currency conversion discrepancies manually, mapping Upwork user IDs to internal employee/vendor codes in Excel, and re-entering totals into payroll software like Gusto or ADP.",
+    "consequence": "Payroll errors leading to under/overpayment, increased audit complexity, and significant friction when integrating gig economy workers into traditional HRIS systems.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2023-10-27T10:00:00Z"
+  }
+]

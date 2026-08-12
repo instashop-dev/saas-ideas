@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "SaaS founder / operations lead",
+    "workflow": "Manual monthly reconciliation of MRR from multiple payment processors (Stripe, PayPal, manual invoices) into a single spreadsheet for board reporting",
+    "trigger": "End of month close",
+    "frequency": "monthly",
+    "current_workaround": "Exporting CSVs from each payment system, then using Excel formulas and VLOOKUP to merge and deduplicate records",
+    "consequence": "Errors in MRR reporting lead to incorrect board presentations, delayed funding decisions, and wasted 8–12 hours per month",
+    "ecosystem": "hacker-news",
+    "source_type": "forum",
+    "collected_at": "2025-03-25T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "DevOps engineer / platform team",
+    "workflow": "Manual deployment orchestration across multiple cloud environments: copying configs, running scripts, updating load balancer rules, verifying health endpoints",
+    "trigger": "Every code merge to main branch",
+    "frequency": "multiple times per day",
+    "current_workaround": "A collection of shell scripts and a shared Google Doc with step-by-step runbooks",
+    "consequence": "Deployment failures happen weekly; rollbacks take 30+ minutes; security gaps due to inconsistent manual steps",
+    "ecosystem": "hacker-news",
+    "source_type": "forum",
+    "collected_at": "2025-03-25T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Customer success manager / support team lead",
+    "workflow": "Manual triage and duplication of support tickets between Zendesk, Slack, and Salesforce: CS agents copy-paste conversations, tag tickets by hand, and update CRM records separately",
+    "trigger": "Every incoming support request",
+    "frequency": "daily",
+    "current_workaround": "Agents maintain a personal Slack channel with pinned messages, plus a shared Google Sheet to track high-priority cases",
+    "consequence": "Missed SLA responses, duplicate effort, loss of context when agents are out sick, and customer churn due to slow resolution",
+    "ecosystem": "hacker-news",
+    "source_type": "forum",
+    "collected_at": "2025-03-25T12:00:00Z"
+  }
+]

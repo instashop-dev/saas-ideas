@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "signal_id": "SIG-DEV-001",
+    "source_ids": [
+      "SRC-DEV-001",
+      "SRC-DEV-002"
+    ],
+    "target_role": "content creator / developer blogger",
+    "workflow": "Scheduling and publishing posts across multiple platforms (dev.to, own blog, Medium) requires manual copy-paste and date coordination.",
+    "trigger": "Writing a new blog post that needs to be published on a specific date/time.",
+    "frequency": "per post (multiple times per month)",
+    "current_workaround": "Using a spreadsheet to track publish dates, manually copying markdown to each platform, and setting calendar reminders.",
+    "consequence": "Inconsistent publication timing, duplicated effort, and reduced reach due to forgetting to cross-post.",
+    "ecosystem": "dev-to",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-DEV-002",
+    "source_ids": [
+      "SRC-DEV-003",
+      "SRC-DEV-004"
+    ],
+    "target_role": "community moderator / admin",
+    "workflow": "Manually reviewing all comments for spam, abuse, or off-topic content. No automated moderation rules or AI filtering.",
+    "trigger": "Whenever a new comment is posted on any article.",
+    "frequency": "daily (multiple times per day)",
+    "current_workaround": "Relying on community flagging and manual review of flagged comments, plus periodic scanning of recent comments.",
+    "consequence": "Spam and toxic comments staying visible for hours, driving away legitimate users and increasing moderator burnout.",
+    "ecosystem": "dev-to",
+    "source_type": "github",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-DEV-003",
+    "source_ids": [
+      "SRC-DEV-005"
+    ],
+    "target_role": "analytics consumer / writer",
+    "workflow": "Exporting post-level analytics (views, reactions, comments) manually each month to check performance and report to sponsors.",
+    "trigger": "End of month reporting or need to evaluate content strategy.",
+    "frequency": "monthly",
+    "current_workaround": "Manually scrolling through the Dashboard, copying numbers into a spreadsheet, and calculating trends.",
+    "consequence": "Time wasted on data entry, prone to transcription errors, and no easy way to compare historical data across months.",
+    "ecosystem": "dev-to",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-DEV-004",
+    "source_ids": [
+      "SRC-DEV-006",
+      "SRC-DEV-007"
+    ],
+    "target_role": "developer / maintainer of open-source projects",
+    "workflow": "Manually updating the project's README or GitHub Pages with links to latest dev.to articles to keep the documentation in sync.",
+    "trigger": "Publishing a new article on dev.to that should be referenced from the project's GitHub repo.",
+    "frequency": "per article (weekly or biweekly)",
+    "current_workaround": "Editing the README.md directly, committing and pushing changes, or using a GitHub Action that fetches RSS but still requires manual setup.",
+    "consequence": "README becomes stale, outdated links, and missed opportunities for cross-promotion.",
+    "ecosystem": "dev-to",
+    "source_type": "github",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-DEV-005",
+    "source_ids": [
+      "SRC-DEV-008"
+    ],
+    "target_role": "team lead / manager of a dev.to publication",
+    "workflow": "Coordinating multiple authors in a publication: managing permissions, approving drafts, and ensuring consistent branding without a proper workflow.",
+    "trigger": "Onboarding a new writer or publishing a draft that needs review.",
+    "frequency": "per event (multiple times per month)",
+    "current_workaround": "Using a shared spreadsheet to track authors, drafts, and publication status; manually adjusting permissions in the dev.to settings.",
+    "consequence": "Permission errors, missed reviews, and inconsistent branding; heavy reliance on email and manual communication.",
+    "ecosystem": "dev-to",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
+  }
+]

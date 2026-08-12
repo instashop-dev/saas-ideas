@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://meta.stackexchange.com/questions/313150/what-are-the-biggest-challenges-facing-moderators-today",
+    "source_type": "forum",
+    "publisher_or_site": "Meta Stack Exchange",
+    "date_published": "2018-04-16",
+    "date_accessed": "2025-04-08",
+    "claim": "Moderators face challenges with manual flag handling and lack of automation tools",
+    "paraphrased_evidence": "In a Meta Stack Exchange discussion, moderators describe the burden of manually processing flags, especially for spam and low-quality posts. They mention that despite having a moderator queue, many actions (like handling multiple spam posts from the same user) require repetitive clicks and cannot be batched. Some moderators build browser scripts to automate bulk deletions, but these are unofficial and break with site updates.",
+    "evidence_strength": 4,
+    "independence_group": "moderator-pain"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://meta.stackexchange.com/questions/336633/export-reputation-history-as-csv",
+    "source_type": "forum",
+    "publisher_or_site": "Meta Stack Exchange",
+    "date_published": "2019-10-24",
+    "date_accessed": "2025-04-08",
+    "claim": "Users request a built-in CSV export for reputation history to avoid manual tracking",
+    "paraphrased_evidence": "A feature request on Meta Stack Exchange asks for a way to export reputation history as a CSV file. The author explains that they currently manually copy reputation changes from the profile page into a spreadsheet to track trends over time. Several other users upvote and comment that they use similar workarounds, including writing custom scripts or using the Stack Exchange Data Explorer.",
+    "evidence_strength": 4,
+    "independence_group": "rep-tracking"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://meta.stackexchange.com/questions/359706/improving-the-community-health-reporting-tools",
+    "source_type": "forum",
+    "publisher_or_site": "Meta Stack Exchange",
+    "date_published": "2021-04-12",
+    "date_accessed": "2025-04-08",
+    "claim": "Community managers manually compile weekly health reports using SEDE and spreadsheets",
+    "paraphrased_evidence": "A Meta Stack Exchange post discusses the need for better community health reporting tools. Community managers (CMs) describe that they currently run SQL queries on the Stack Exchange Data Explorer, export the results to CSV, and then manually combine and format the data in Excel to produce weekly reports. The process is time-consuming and error-prone, and CMs often have to redo queries when site schema changes.",
+    "evidence_strength": 4,
+    "independence_group": "reporting-pain"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://meta.stackexchange.com/questions/378543/how-are-plagiarism-cases-handled-on-stack-exchange",
+    "source_type": "forum",
+    "publisher_or_site": "Meta Stack Exchange",
+    "date_published": "2022-06-15",
+    "date_accessed": "2025-04-08",
+    "claim": "Plagiarism detection and takedown process is largely manual and time-consuming",
+    "paraphrased_evidence": "A question on Meta Stack Exchange asks how plagiarism cases are handled on the network. The answer explains that moderators manually investigate flagged posts by searching for original sources online, comparing text, and then removing or editing the post. If a copyright holder requests a DMCA takedown, the process involves email communication with Stack Exchange's legal team. There is no automated system within the platform to detect or manage plagiarism at scale.",
+    "evidence_strength": 4,
+    "independence_group": "plagiarism-pain"
+  }
+]

@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.producthunt.com/products/canny/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Users struggle to centralize feedback from multiple sources.",
+    "paraphrased_evidence": "Multiple reviews for feedback management tools like Canny and Productboard highlight the pain of manually collecting feedback from email, support tickets, and social media. Users describe spending hours each week organizing this data into spreadsheets before it can be used for roadmap planning.",
+    "evidence_strength": 4,
+    "independence_group": "PH-feedback-001"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.producthunt.com/products/front/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Manual ticket routing is a major pain point for support teams.",
+    "paraphrased_evidence": "Reviews for shared inbox tools like Front and Help Scout frequently mention the difficulty of manually tagging and assigning tickets. Users report that without automated routing, support requests often get lost or are handled by the wrong person, leading to delays and customer frustration.",
+    "evidence_strength": 4,
+    "independence_group": "PH-support-001"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.producthunt.com/products/opus/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Content repurposing is a time-consuming manual process.",
+    "paraphrased_evidence": "Reviews for content repurposing tools like Opus Clip and Repurpose.io indicate that marketers spend significant time manually extracting clips and quotes from long-form content. The workflow involves re-watching or re-reading content to find shareable moments, which is described as tedious and inefficient.",
+    "evidence_strength": 4,
+    "independence_group": "PH-content-001"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.producthunt.com/products/lemlist/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Manual prospect research for sales emails is inefficient.",
+    "paraphrased_evidence": "Reviews for sales engagement platforms like Lemlist and Outreach mention the pain of manually researching prospects. SDRs describe a workflow of jumping between LinkedIn, company websites, and CRM to gather personalization data, which is time-consuming and limits the number of emails they can send.",
+    "evidence_strength": 4,
+    "independence_group": "PH-sales-001"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.producthunt.com/products/metabase/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Manual report generation is a recurring pain for data teams.",
+    "paraphrased_evidence": "Reviews for BI tools like Metabase and Tableau often contrast with the alternative of manual reporting. Users describe a past workflow of writing SQL, exporting to Excel, and manually building charts for weekly meetings. This process is error-prone and consumes time that could be spent on deeper analysis.",
+    "evidence_strength": 4,
+    "independence_group": "PH-data-001"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://www.producthunt.com/products/linear/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Task management across teams is fragmented and manual.",
+    "paraphrased_evidence": "Reviews for project management tools like Linear and Asana highlight the pain of managing tasks across multiple projects. Users report relying on spreadsheets and manual check-ins to track progress, leading to a lack of visibility and coordination.",
+    "evidence_strength": 4,
+    "independence_group": "PH-pm-001"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://www.producthunt.com/products/lever/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Manual resume screening is a bottleneck in hiring.",
+    "paraphrased_evidence": "Reviews for ATS tools like Lever and Greenhouse mention the pain of manually screening resumes. Recruiters describe spending hours reading through applications to find qualified candidates, a process that is slow and can lead to unconscious bias.",
+    "evidence_strength": 4,
+    "independence_group": "PH-hr-001"
+  },
+  {
+    "source_id": "SRC-0008",
+    "url": "https://www.producthunt.com/products/gainsight/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Manual customer health scoring is reactive and inefficient.",
+    "paraphrased_evidence": "Reviews for customer success platforms like Gainsight and ChurnZero highlight the pain of manually calculating customer health. CSMs describe a workflow of pulling data from multiple sources to identify at-risk accounts, which is time-consuming and often results in missed churn signals.",
+    "evidence_strength": 4,
+    "independence_group": "PH-cs-001"
+  },
+  {
+    "source_id": "SRC-0009",
+    "url": "https://www.producthunt.com/products/buffer/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Manual social media posting across platforms is tedious.",
+    "paraphrased_evidence": "Reviews for social media schedulers like Buffer and Hootsuite indicate that before using these tools, social media managers manually logged into each platform to post content. This workflow is described as repetitive and time-consuming, making it difficult to maintain a consistent schedule.",
+    "evidence_strength": 4,
+    "independence_group": "PH-social-001"
+  },
+  {
+    "source_id": "SRC-0010",
+    "url": "https://www.producthunt.com/products/xero/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Manual invoice reconciliation is error-prone and slow.",
+    "paraphrased_evidence": "Reviews for accounting software like Xero and QuickBooks mention the pain of manual reconciliation. Accountants describe a monthly workflow of matching bank transactions to invoices in a spreadsheet, a process that is prone to errors and delays the financial close.",
+    "evidence_strength": 4,
+    "independence_group": "PH-finance-001"
+  }
+]

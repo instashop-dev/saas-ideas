@@ -1,1 +1,152 @@
-[]
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Product Manager / SaaS Operator",
+    "workflow": "Collecting, organizing, and prioritizing user feedback from multiple channels (email, support tickets, social media, in-app) into a single product roadmap.",
+    "trigger": "Inability to track and act on user feedback scattered across disparate tools.",
+    "frequency": "weekly",
+    "current_workaround": "Manually exporting feedback from various sources into a spreadsheet or a single document, then manually categorizing and prioritizing it.",
+    "consequence": "Missed or delayed product improvements, frustrated users, and wasted engineering time on low-impact features.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "Customer Support Agent / Team Lead",
+    "workflow": "Manually tagging, categorizing, and routing support tickets to the appropriate team member or department.",
+    "trigger": "High volume of incoming support requests that need to be sorted and assigned.",
+    "frequency": "daily",
+    "current_workaround": "Using a shared email inbox or a basic ticketing system and manually reading each ticket to determine its category and assignee.",
+    "consequence": "Slow response times, misrouted tickets, and increased agent burnout.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Marketing Manager / Content Creator",
+    "workflow": "Repurposing long-form content (blog posts, webinars, podcasts) into multiple short-form social media posts, emails, and other assets.",
+    "trigger": "Need to maintain a consistent content marketing cadence across multiple channels.",
+    "frequency": "weekly",
+    "current_workaround": "Manually re-reading or re-watching content, extracting key quotes and ideas, and rewriting them for each platform.",
+    "consequence": "Inconsistent brand messaging, missed content distribution opportunities, and significant time investment.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Sales Development Representative (SDR)",
+    "workflow": "Researching and personalizing outbound sales emails by manually looking up prospects on LinkedIn, company websites, and other sources.",
+    "trigger": "Need to generate qualified leads and book meetings.",
+    "frequency": "daily",
+    "current_workaround": "Switching between multiple browser tabs and tools to gather information about a prospect before writing a personalized email.",
+    "consequence": "Low email response rates, inefficient use of SDR time, and reduced pipeline generation.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Data Analyst / Business Intelligence Manager",
+    "workflow": "Creating and distributing recurring reports by manually querying databases, exporting data to spreadsheets, and building charts and dashboards.",
+    "trigger": "Weekly or monthly business review meetings requiring updated metrics.",
+    "frequency": "weekly",
+    "current_workaround": "Writing SQL queries, copying results into Excel or Google Sheets, and manually formatting charts and tables for presentation.",
+    "consequence": "Delayed insights, data inconsistencies, and analysts spending more time on reporting than on analysis.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0006"
+    ],
+    "target_role": "Engineering Manager / Developer",
+    "workflow": "Managing and tracking software development tasks, bugs, and feature requests across multiple projects and teams.",
+    "trigger": "Lack of visibility into what different teams are working on and the status of various tasks.",
+    "frequency": "daily",
+    "current_workaround": "Using a combination of spreadsheets, sticky notes, and multiple project management tools that don't integrate well.",
+    "consequence": "Missed deadlines, duplicated work, and difficulty in prioritizing tasks.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0007",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "HR Manager / Recruiter",
+    "workflow": "Screening and shortlisting job applicants by manually reviewing resumes and cover letters.",
+    "trigger": "Receiving a high volume of applications for an open position.",
+    "frequency": "per-event",
+    "current_workaround": "Reading through each resume and cover letter to identify candidates that match the job requirements.",
+    "consequence": "Slow hiring process, potential to overlook qualified candidates, and recruiter fatigue.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0008",
+    "source_ids": [
+      "SRC-0008"
+    ],
+    "target_role": "Customer Success Manager",
+    "workflow": "Monitoring customer health scores and identifying at-risk accounts by manually checking usage data, support tickets, and NPS scores.",
+    "trigger": "Proactive need to prevent churn and ensure customer satisfaction.",
+    "frequency": "weekly",
+    "current_workaround": "Logging into multiple tools (product analytics, support platform, CRM) to gather data and manually calculating a health score.",
+    "consequence": "Missed churn signals, reactive rather than proactive customer management, and lost revenue.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0009",
+    "source_ids": [
+      "SRC-0009"
+    ],
+    "target_role": "Social Media Manager",
+    "workflow": "Scheduling and publishing social media posts across multiple platforms (LinkedIn, Twitter, Instagram, Facebook) at optimal times.",
+    "trigger": "Need to maintain a consistent social media presence without being online 24/7.",
+    "frequency": "daily",
+    "current_workaround": "Manually logging into each social media platform to post content, or using a basic scheduling tool that lacks advanced features.",
+    "consequence": "Inconsistent posting schedule, missed engagement opportunities, and time wasted on repetitive tasks.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0010",
+    "source_ids": [
+      "SRC-0010"
+    ],
+    "target_role": "Finance Manager / Accountant",
+    "workflow": "Reconciling invoices and payments by manually matching bank statements against accounting records.",
+    "trigger": "End-of-month or end-of-quarter financial close process.",
+    "frequency": "monthly",
+    "current_workaround": "Downloading bank statements, exporting invoices from accounting software, and manually comparing line items in a spreadsheet.",
+    "consequence": "Errors in financial reporting, delayed close, and increased audit risk.",
+    "ecosystem": "product-hunt-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T00:00:00Z"
+  }
+]

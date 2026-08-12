@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "Accounting Manager",
+    "workflow": "Monthly reconciliation of Stripe payouts against QuickBooks invoices to ensure all payments are accounted for and no discrepancies exist.",
+    "trigger": "End of month closing cycle",
+    "frequency": "Monthly",
+    "current_workaround": "Download Stripe payout reports as CSV, manually import into Excel, compare against QuickBooks invoice data using VLOOKUP, then adjust entries in QuickBooks.",
+    "consequence": "If not done, cash flow reports are inaccurate, delayed month-end close, and potential duplicate or missing revenue entries.",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0003",
+      "SRC-0004"
+    ],
+    "target_role": "Inventory Manager",
+    "workflow": "Cross-referencing Shopify inventory levels with NetSuite ERP records to maintain stock accuracy across sales channels.",
+    "trigger": "Daily order fulfillment or when stock discrepancies are flagged",
+    "frequency": "Daily",
+    "current_workaround": "Export Shopify inventory CSV, upload to Google Sheets, manually compare against NetSuite item counts, then update the lower system to avoid overselling.",
+    "consequence": "Overselling, stockouts, customer cancellations, and manual write-offs of inventory differences.",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0005",
+      "SRC-0006"
+    ],
+    "target_role": "Marketing Operations Specialist",
+    "workflow": "Transferring Salesforce lead data into Mailchimp for email campaigns because the native integration does not handle custom fields or update logic reliably.",
+    "trigger": "Each new campaign launch or list segmentation",
+    "frequency": "Weekly",
+    "current_workaround": "Export Salesforce report as CSV, map columns manually, import into Mailchimp, then flag duplicates and clean formatting errors.",
+    "consequence": "Campaigns delayed, leads end up in wrong segments, and email send failures due to field mismatches.",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0007",
+      "SRC-0008"
+    ],
+    "target_role": "Compliance Analyst",
+    "workflow": "Generating weekly SOC 2 compliance reports from log data that is spread across AWS CloudWatch, GitHub Actions, and a custom SIEM tool.",
+    "trigger": "Weekly compliance review or auditor request",
+    "frequency": "Weekly",
+    "current_workaround": "Query each system separately, download logs, paste into a master Excel workbook, format pivot tables, and send via email as PDF.",
+    "consequence": "Reports are error-prone, audits take longer, and missing logs can lead to compliance gaps or failed audits.",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  }
+]

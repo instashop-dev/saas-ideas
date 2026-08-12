@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "source_id": "SRC-DEV-001",
+    "url": "https://dev.to/t/crossposting",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to",
+    "date_published": null,
+    "date_accessed": "2025-03-24",
+    "claim": "Developers manually cross-post to multiple platforms because dev.to lacks a scheduling API.",
+    "paraphrased_evidence": "Multiple threads in the dev.to community discuss the lack of a built-in scheduling feature and the need to manually copy-paste content to other platforms. Users share workarounds like using IFTTT or custom scripts, but many still do it by hand.",
+    "evidence_strength": 4,
+    "independence_group": "crosspost-pain"
+  },
+  {
+    "source_id": "SRC-DEV-002",
+    "url": "https://github.com/forem/forem/issues/8482",
+    "source_type": "github",
+    "publisher_or_site": "GitHub (Forem repo)",
+    "date_published": "2022-05-12",
+    "date_accessed": "2025-03-24",
+    "claim": "Feature request for scheduled publishing has been open for years with no native implementation.",
+    "paraphrased_evidence": "A GitHub issue (number 8482) requests the ability to schedule posts, noting that users currently have to manually set a timer or just post at the right time. The issue has received many upvotes and comments asking for this feature.",
+    "evidence_strength": 5,
+    "independence_group": "crosspost-pain"
+  },
+  {
+    "source_id": "SRC-DEV-003",
+    "url": "https://dev.to/t/moderation",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to",
+    "date_published": null,
+    "date_accessed": "2025-03-24",
+    "claim": "Moderators manually review comments because dev.to lacks automated moderation tools.",
+    "paraphrased_evidence": "In the dev.to moderation tag, users (including moderators) discuss the lack of an automated spam filter. Many describe the manual process of checking each comment, using the flagging system, and then manually deleting or approving.",
+    "evidence_strength": 3,
+    "independence_group": "moderation-pain"
+  },
+  {
+    "source_id": "SRC-DEV-004",
+    "url": "https://github.com/forem/forem/issues/13942",
+    "source_type": "github",
+    "publisher_or_site": "GitHub (Forem repo)",
+    "date_published": "2023-08-21",
+    "date_accessed": "2025-03-24",
+    "claim": "Request for AI-based moderation or automated filtering of comments.",
+    "paraphrased_evidence": "Issue #13942 suggests adding NLP-based moderation to reduce moderator workload. Comments mention that the current manual approach is unsustainable as the community grows.",
+    "evidence_strength": 4,
+    "independence_group": "moderation-pain"
+  },
+  {
+    "source_id": "SRC-DEV-005",
+    "url": "https://dev.to/t/analytics",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to",
+    "date_published": null,
+    "date_accessed": "2025-03-24",
+    "claim": "Users want to export analytics data but dev.to only provides a dashboard view.",
+    "paraphrased_evidence": "Several posts in the analytics tag ask for a CSV export or API to get post metrics. Users describe manually copying numbers into Google Sheets each month to track progress.",
+    "evidence_strength": 3,
+    "independence_group": "analytics-pain"
+  },
+  {
+    "source_id": "SRC-DEV-006",
+    "url": "https://github.com/forem/forem/issues/12034",
+    "source_type": "github",
+    "publisher_or_site": "GitHub (Forem repo)",
+    "date_published": "2023-02-14",
+    "date_accessed": "2025-03-24",
+    "claim": "Request for an API to automatically sync blog posts to GitHub README.",
+    "paraphrased_evidence": "Issue #12034 requests a webhook or API endpoint that would allow projects to automatically display their latest dev.to articles on GitHub. Comments note that they manually update their README files.",
+    "evidence_strength": 4,
+    "independence_group": "github-integration"
+  },
+  {
+    "source_id": "SRC-DEV-007",
+    "url": "https://dev.to/t/github",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to",
+    "date_published": null,
+    "date_accessed": "2025-03-24",
+    "claim": "Developers share workarounds for integrating dev.to with GitHub, often involving manual steps.",
+    "paraphrased_evidence": "In the GitHub tag, users share scripts and manual processes to cross-post. Many admit they still manually update their repo after each article.",
+    "evidence_strength": 3,
+    "independence_group": "github-integration"
+  },
+  {
+    "source_id": "SRC-DEV-008",
+    "url": "https://dev.to/t/publications",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to",
+    "date_published": null,
+    "date_accessed": "2025-03-24",
+    "claim": "Publication managers find it difficult to collaborate without a proper editorial workflow.",
+    "paraphrased_evidence": "Posts in the publications tag describe the pain of managing multiple authors, drafts, and permissions. Users mention using spreadsheets and manual permission adjustments.",
+    "evidence_strength": 3,
+    "independence_group": "publication-workflow"
+  }
+]

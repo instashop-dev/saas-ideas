@@ -4,10 +4,10 @@
   "completed_at": null,
   "trigger": "manual",
   "models": {
-    "pain_miner": "moonshotai/kimi-k3"
+    "pain_miner": "qwen/qwen3.7-flash"
   },
   "candidate_counts": {
-    "signals": 0,
+    "signals": 54,
     "clusters": 0,
     "validated": 0,
     "competition_survivors": 0,
@@ -15,5 +15,5 @@
     "approved": 0
   },
   "estimated_cost": null,
-  "status": "clustering"
+  "status": "pain_mining"
 }

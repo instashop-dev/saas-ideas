@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.g2.com/products/quickbooks-online/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "User states manual reconciliation of Stripe and QuickBooks is a time-consuming monthly task.",
+    "paraphrased_evidence": "A G2 review of QuickBooks Online from an accounting manager describes the need to manually reconcile Stripe payouts with invoices every month, spending 4-6 hours on CSV exports and Excel matching because the native integration doesn't handle chargebacks or partial payments well.",
+    "evidence_strength": 4,
+    "independence_group": "payment-reconciliation"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.capterra.com/p/153119/QuickBooks-Online/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Capterra",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "User complains about the lack of automated reconciliation for payment gateways.",
+    "paraphrased_evidence": "A Capterra review of QuickBooks Online by a controller notes that reconciling multiple payment processor reports (Stripe, PayPal) is done in spreadsheets and often leads to errors that require rework.",
+    "evidence_strength": 3,
+    "independence_group": "payment-reconciliation"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.g2.com/products/shopify/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "User mentions daily manual inventory sync between Shopify and NetSuite.",
+    "paraphrased_evidence": "A G2 review of Shopify by an inventory manager states that they have to manually export inventory levels from Shopify and compare with NetSuite every morning because the two systems don't sync in real time, leading to overselling.",
+    "evidence_strength": 4,
+    "independence_group": "inventory-sync"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.capterra.com/p/111961/Shopify/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Capterra",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "Reviewer describes building internal scripts to handle inventory reconciliation.",
+    "paraphrased_evidence": "A Capterra review of Shopify from a mid-market retailer says they built a custom Python script to cross-check inventory between Shopify and their ERP because the manual process was taking 2 hours per day and still had errors.",
+    "evidence_strength": 5,
+    "independence_group": "inventory-sync"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.g2.com/products/salesforce-sales-cloud/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "User complains about manual data transfer between Salesforce and Mailchimp.",
+    "paraphrased_evidence": "A G2 review of Salesforce Sales Cloud by a marketing ops specialist details the weekly process of exporting campaign leads from Salesforce and importing them into Mailchimp using CSV files because the native connector doesn't support custom fields or deduplication.",
+    "evidence_strength": 4,
+    "independence_group": "crm-email-sync"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://www.capterra.com/p/151571/Mailchimp/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Capterra",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "User mentions using spreadsheets to manage list imports from CRM.",
+    "paraphrased_evidence": "A Capterra review of Mailchimp from a marketing coordinator says they rely on Google Sheets to clean and format Salesforce data before importing into Mailchimp, as the direct integration often fails or misaligns fields.",
+    "evidence_strength": 3,
+    "independence_group": "crm-email-sync"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://www.g2.com/products/aws-cloudwatch/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "User states manual compilation of log data for compliance reports is a pain point.",
+    "paraphrased_evidence": "A G2 review of AWS CloudWatch by a compliance analyst explains that they have to manually pull logs from CloudWatch, GitHub Actions, and their SIEM tool each week, then consolidate them in Excel to produce SOC 2 reports, taking 6-8 hours.",
+    "evidence_strength": 4,
+    "independence_group": "compliance-reporting"
+  },
+  {
+    "source_id": "SRC-0008",
+    "url": "https://www.capterra.com/p/153643/SOC-2-Compliance-Software/reviews",
+    "source_type": "review",
+    "publisher_or_site": "Capterra",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "Reviewer mentions using Excel for compliance report generation due to lack of automation.",
+    "paraphrased_evidence": "A Capterra review of a SOC 2 compliance tool by a security engineer says despite paying for the tool, they still export data to Excel to create custom reports because the tool's built-in reporting is too rigid and doesn't aggregate across multiple data sources.",
+    "evidence_strength": 3,
+    "independence_group": "compliance-reporting"
+  }
+]
