@@ -244,7 +244,7 @@ const mockData = vi.hoisted(() => {
 });
 
 vi.mock('../../src/openrouter/provider.js', () => ({
-  callWithFallback: vi.fn(async (options: OpenRouterCallOptions): Promise<OpenRouterCallResult> => {
+  callWithRetry: vi.fn(async (options: OpenRouterCallOptions): Promise<OpenRouterCallResult> => {
     const prompt = String(options?.userPrompt ?? '');
     let content: unknown;
 
@@ -287,8 +287,9 @@ vi.mock('../../src/openrouter/provider.js', () => ({
       model: 'mock/kimi-k3',
     };
   }),
+  // Kept for API compatibility; the executor now calls callWithRetry directly.
+  callWithFallback: vi.fn(),
   callOpenRouter: vi.fn(),
-  callWithRetry: vi.fn(),
   fetchModelInfo: vi.fn(),
 }));
 

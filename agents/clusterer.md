@@ -38,6 +38,21 @@ For each cluster, output:
 }
 ```
 
+## Response Contract
+
+Return ONLY a single JSON object with exactly one top-level key:
+
+```json
+{
+  "clusters": [{ "cluster_id": "CL-XXXX", "canonical_jtbd": "...", "...": "..." }]
+}
+```
+
+Rules:
+
+- ALWAYS wrap the cluster array in the top-level `clusters` key.
+- Output raw JSON only — no markdown fences, no commentary around the JSON.
+
 ## Source Independence Calculation
 
 - Comments in the same forum thread: 1 independence group

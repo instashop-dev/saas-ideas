@@ -1,21 +1,44 @@
-import { describe, it, expect, beforeEach } from 'vitest';
-import { existsSync, mkdirSync, readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
-import {
-  writeReports,
-  generateTopReport,
-  generateRejectedReport,
-} from '../../src/reporting/index.js';
+import { describe, it, expect, beforeAll, afterAll } from 'vitest';
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join, resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { fixtureA, fixtureB, fixtureC, fixtureD } from '../fixtures/opportunities.js';
 import { calculateFinalScore } from '../../src/scoring/index.js';
 
-describe('Report Generation', () => {
-  const reportsDir = resolve(process.cwd(), 'reports');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const REPO_ROOT = resolve(__dirname, '..', '..');
 
-  beforeEach(() => {
-    if (!existsSync(reportsDir)) {
-      mkdirSync(reportsDir, { recursive: true });
-    }
+/**
+ * Report generation tests run in a temp directory so they never overwrite
+ * committed reports/ artifacts in the repository.
+ */
+describe('Report Generation', () => {
+  let workDir: string;
+  let originalCwd: string;
+  let writeReports: (typeof import('../../src/reporting/index.js'))['writeReports'];
+  let generateTopReport: (typeof import('../../src/reporting/index.js'))['generateTopReport'];
+  let generateRejectedReport: (typeof import('../../src/reporting/index.js'))['generateRejectedReport'];
+
+  beforeAll(async () => {
+    originalCwd = process.cwd();
+    workDir = join(tmpdir(), `saas-ideas-reports-${Date.now()}`);
+    mkdirSync(join(workDir, 'config'), { recursive: true });
+    writeFileSync(
+      join(workDir, 'config', 'config.yaml'),
+      readFileSync(join(REPO_ROOT, 'config', 'config.yaml'), 'utf-8'),
+      'utf-8',
+    );
+    process.chdir(workDir);
+    const reporting = await import('../../src/reporting/index.js');
+    writeReports = reporting.writeReports;
+    generateTopReport = reporting.generateTopReport;
+    generateRejectedReport = reporting.generateRejectedReport;
+  });
+
+  afterAll(() => {
+    process.chdir(originalCwd);
+    rmSync(workDir, { recursive: true, force: true });
   });
 
   it('generates TOP report with approved opportunities', () => {

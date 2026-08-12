@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { existsSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
+import { existsSync, mkdirSync, rmSync } from 'node:fs';
 import { resolve } from 'node:path';
 import {
   createRunManifest,
@@ -12,6 +12,14 @@ import {
 const TEST_RUNS_DIR = resolve(process.cwd(), 'research', 'runs');
 
 describe('run-manifest state', () => {
+  const createdRunIds: string[] = [];
+
+  function createTestManifest(): ReturnType<typeof createRunManifest> {
+    const manifest = createRunManifest('manual');
+    createdRunIds.push(manifest.run_id);
+    return manifest;
+  }
+
   beforeEach(() => {
     if (!existsSync(TEST_RUNS_DIR)) {
       mkdirSync(TEST_RUNS_DIR, { recursive: true });
@@ -19,19 +27,16 @@ describe('run-manifest state', () => {
   });
 
   afterEach(() => {
-    // Clean up test manifests
-    if (existsSync(TEST_RUNS_DIR)) {
-      const files = readdirSync(TEST_RUNS_DIR);
-      for (const file of files) {
-        if (file.startsWith('RUN-TEST-') && file.endsWith('.json')) {
-          rmSync(resolve(TEST_RUNS_DIR, file));
-        }
-      }
+    // Remove only the manifests created by THIS test file, so tests running
+    // in parallel workers (and committed pipeline artifacts) are never touched.
+    for (const id of createdRunIds) {
+      rmSync(resolve(TEST_RUNS_DIR, `${id}.json`), { force: true });
     }
+    createdRunIds.length = 0;
   });
 
   it('creates a run manifest', () => {
-    const manifest = createRunManifest('manual');
+    const manifest = createTestManifest();
     expect(manifest.run_id).toMatch(/^RUN-/);
     expect(manifest.status).toBe('created');
     expect(manifest.trigger).toBe('manual');
@@ -39,7 +44,7 @@ describe('run-manifest state', () => {
   });
 
   it('saves and loads a run manifest', () => {
-    const manifest = createRunManifest('manual');
+    const manifest = createTestManifest();
     const loaded = loadRunManifest(manifest.run_id);
     expect(loaded).not.toBeNull();
     expect(loaded!.run_id).toBe(manifest.run_id);
@@ -47,7 +52,7 @@ describe('run-manifest state', () => {
   });
 
   it('updates run status', () => {
-    const manifest = createRunManifest('manual');
+    const manifest = createTestManifest();
     const updated = updateRunStatus(manifest.run_id, 'pain_mining');
     expect(updated).not.toBeNull();
     expect(updated!.status).toBe('pain_mining');
@@ -57,13 +62,13 @@ describe('run-manifest state', () => {
   });
 
   it('sets completed_at on terminal status', () => {
-    const manifest = createRunManifest('manual');
+    const manifest = createTestManifest();
     const updated = updateRunStatus(manifest.run_id, 'completed');
     expect(updated!.completed_at).not.toBeNull();
   });
 
   it('increments candidate counts', () => {
-    const manifest = createRunManifest('manual');
+    const manifest = createTestManifest();
     incrementCandidateCount(manifest.run_id, 'signals', 10);
     const loaded = loadRunManifest(manifest.run_id);
     expect(loaded!.candidate_counts.signals).toBe(10);

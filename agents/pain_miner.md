@@ -29,6 +29,7 @@ Search for evidence of painful manual workflows across multiple independent sour
 ## Strong Signal Phrases
 
 Look for language equivalent to:
+
 - "we do this manually"
 - "we use Excel for this"
 - "we built a script to handle this"
@@ -59,6 +60,24 @@ For each signal found, output a raw signal object:
   "collected_at": "ISO timestamp"
 }
 ```
+
+## Response Contract
+
+Return ONLY a single JSON object with exactly two top-level keys:
+
+```json
+{
+  "signals": [{ "signal_id": "SIG-XXXX", "source_ids": ["SRC-XXXX"], "...": "..." }],
+  "evidence": [{ "source_id": "SRC-XXXX", "url": "https://...", "...": "..." }]
+}
+```
+
+Rules:
+
+- ALWAYS include BOTH top-level keys, even if one list is empty.
+- Every `source_id` referenced by a signal must exist in the `evidence` array.
+- Include at least one evidence item per signal.
+- Output raw JSON only — no markdown fences, no commentary around the JSON.
 
 ## Rules
 
