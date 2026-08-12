@@ -1,0 +1,76 @@
+{
+  "competition_score": 4,
+  "queries_attempted": [
+    "automatically update README with latest blog posts",
+    "sync dev.to articles to GitHub README",
+    "GitHub Action dev.to RSS readme",
+    "blog posts to project documentation automation",
+    "keep GitHub Pages updated with blog posts",
+    "RSS to markdown readme automation",
+    "update project docs with new articles automatically",
+    "show latest blog posts on GitHub profile readme"
+  ],
+  "competitors": [
+    {
+      "name": "blog-post-workflow (gautamkrishnar)",
+      "url": "https://github.com/gautamkrishnar/blog-post-workflow",
+      "classification": "DIRECT",
+      "notes": "GitHub Action that automatically fetches RSS feeds of blogs (including dev.to) and updates README.md with latest posts. It directly solves the exact problem: keeping project documentation updated with new articles. Very popular (2k+ stars). It is free and open source.",
+      "feature_overlap": "Fetches RSS, updates README with latest articles, supports multiple feeds, customizable formatting.",
+      "pricing": "Free, open source (MIT)",
+      "market_positioning": "Most popular action for showing latest blog posts on GitHub profile or project readme."
+    },
+    {
+      "name": "readme-scribe",
+      "url": "https://github.com/muesli/readme-scribe",
+      "classification": "DIRECT",
+      "notes": "GitHub Action that generates a profile README with recent blog posts from RSS feeds, GitHub stats, etc. It updates the README automatically.",
+      "feature_overlap": "RSS feed integration, automatic README updates, customizable sections.",
+      "pricing": "Free, open source (MIT)",
+      "market_positioning": "All-in-one README generator for GitHub profiles with blog posts."
+    },
+    {
+      "name": "markdown-magic",
+      "url": "https://github.com/DavidWells/markdown-magic",
+      "classification": "PARTIAL",
+      "notes": "Tool/plugin that dynamically updates markdown files, including README, with content from plugins like RSS. It can insert latest blog posts but requires more setup and is not solely for blog sync.",
+      "feature_overlap": "RSS to markdown, auto-update files, custom transforms.",
+      "pricing": "Free, open source (MIT)",
+      "market_positioning": "General-purpose markdown automation tool."
+    },
+    {
+      "name": "Update README with Latest Blog Posts (various GitHub Marketplace actions)",
+      "url": "https://github.com/marketplace?query=blog+posts+readme",
+      "classification": "DIRECT",
+      "notes": "Multiple GitHub Actions exist for this exact purpose, e.g., 'Latest Blog Posts', 'Blog Post Workflow', 'Hashnode Blog Posts'. Search reveals many maintained and forked actions.",
+      "feature_overlap": "RSS fetch, README update, multi-feed support.",
+      "pricing": "Free",
+      "market_positioning": "Niche but crowded within GitHub Actions ecosystem."
+    },
+    {
+      "name": "Zapier / IFTTT (RSS to GitHub file)",
+      "url": "https://zapier.com/apps/rss/integrations/github",
+      "classification": "SUBSTITUTE",
+      "notes": "General automation can be configured to watch RSS feed and commit a change to a file, but requires building a custom integration and is not purpose-built for README blog sync.",
+      "feature_overlap": "Automated updates from RSS to GitHub repository.",
+      "pricing": "Free tier, paid plans from $19.99/mo",
+      "market_positioning": "General-purpose workflow automation platform."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Zapier / IFTTT (RSS to GitHub file)",
+      "url": "https://zapier.com/apps/rss/integrations/github",
+      "notes": "Can be configured to update a file in a repo with new RSS items, but not specifically designed for README blog lists."
+    }
+  ],
+  "summary": "The competitive landscape is crowded with free, open-source GitHub Actions that directly solve the JTBD of automatically syncing blog content with project documentation (README, GitHub Pages). The most popular action, blog-post-workflow, has thousands of stars and is widely adopted. Other actions like readme-scribe and general tools like markdown-magic provide similar functionality. Substitutes via general automation exist as well. This indicates healthy, established alternatives; a new SaaS would face strong headwinds unless it offers significantly more convenience (e.g., zero config, multi-platform docs, auto cross-linking). Competition score is 4.",
+  "research_evidence_urls": [
+    "https://github.com/gautamkrishnar/blog-post-workflow",
+    "https://github.com/marketplace/actions/blog-post-workflow",
+    "https://github.com/muesli/readme-scribe",
+    "https://github.com/DavidWells/markdown-magic",
+    "https://github.com/marketplace?query=blog+posts+readme",
+    "https://zapier.com/apps/rss/integrations/github"
+  ]
+}

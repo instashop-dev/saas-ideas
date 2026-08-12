@@ -1,28 +1,21 @@
 {
-  "id": "OP-1815",
-  "canonical_key": "CK-238d2a56b976e0a9",
-  "title": "When I need to manage product feedback and prioritize features, I want to automatically collect, org",
-  "target_user": "Product Manager / SaaS Operator",
-  "job_to_be_done": "When I need to manage product feedback and prioritize features, I want to automatically collect, organize, and analyze user feedback from multiple channels, so I can build the right features and reduce time spent on manual triage.",
-  "painful_workflow": "Collecting, organizing, and prioritizing user feedback from multiple channels (email, support tickets, social media, in-app) into a single product roadmap by manually exporting and categorizing feedback.",
-  "current_workaround": "Manually exporting feedback from various sources into a spreadsheet or a single document, then manually categorizing and prioritizing it.",
-  "source_ids": [
-    "SIG-0001"
-  ],
-  "independent_sources": 1,
-  "source_type_count": 1,
-  "pain_score": 2,
-  "frequency_score": 2,
-  "urgency_score": 1,
-  "economic_impact_score": 2,
-  "operational_impact_score": 2,
-  "workaround_intensity_score": 3,
-  "willingness_to_pay_score": 2,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 1,
   "competition_score": 4,
+  "queries_attempted": [
+    "product feedback management tool",
+    "user feedback collection and prioritization software",
+    "automated feedback triage tool",
+    "product roadmap feedback tool",
+    "SaaS feedback management",
+    "customer feedback platform for product managers",
+    "feature request management",
+    "voice of customer platform",
+    "user feedback aggregation tool",
+    "feedback analysis and prioritization",
+    "open source feedback management",
+    "feedback widget tool",
+    "productboard alternatives",
+    "canny alternatives"
+  ],
   "competitors": [
     {
       "name": "Productboard",
@@ -167,37 +160,20 @@
     "Trello / Asana / Notion",
     "Spreadsheets (Excel / Google Sheets)"
   ],
-  "verified_facts": [
-    "The cluster is supported by exactly one signal (SIG-0001) from exactly one source (SRC-0001), a Product Hunt review.",
-    "The evidence text in SIG-0001 is a neutral workflow description and contains no explicit expression of pain, frustration, cost, or urgency.",
-    "independent_sources = 1 and source_type_count = 1, meaning there is no corroboration across sources or source types.",
-    "No quantified data (time, money, frequency, headcount) appears anywhere in the supplied evidence."
-  ],
-  "inferences": [
-    "Manual feedback triage is a plausibly real inconvenience for PMs, but this cluster's evidence does not verify it.",
-    "Because the evidence comes from a Product Hunt review, at least one commercial product likely already addresses this workflow; the category appears mature rather than underserved.",
-    "If users tolerate the spreadsheet workaround without paying for tools, that would indicate the pain is below the willingness-to-pay threshold; the evidence does not resolve this either way."
-  ],
-  "assumptions": [
-    "The cluster's 'current_workaround' description (manual export to spreadsheet, manual categorization) reflects real user behavior, though SIG-0001 does not document it.",
-    "The target persona (Product Manager / SaaS Operator) actually experiences this workflow regularly — assumed, not evidenced."
-  ],
-  "unknowns": [
-    "Whether the SIG-0001 reviewer was complaining about a pain or positively reviewing an existing tool — the evidence text is ambiguous on sentiment.",
-    "Frequency, severity, time cost, and dollar cost of the manual triage workflow.",
-    "How many users experience this pain and whether the market is already saturated by incumbents.",
-    "Whether anyone has paid, or refused to pay, for a solution.",
-    "Which specific channels, team sizes, and company stages the pain applies to."
-  ],
-  "rejection_reasons": [
-    "Competition too high: 4/5 (max 2)"
-  ],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "REJECTED",
-  "created_at": "2026-08-12T15:53:01.243Z",
-  "updated_at": "2026-08-12T17:56:08.922Z"
+  "summary": "The market for product feedback management and prioritization is crowded with multiple well-established direct competitors (Productboard, Canny, Aha!, UserVoice, Frill, Featurebase, Nolt, Upvoty) that cover the full JTBD: automatic collection from multiple channels, organization, analysis, and prioritization. Additionally, platform-native features (Intercom, Zendesk, HubSpot) and open-source alternatives (Fider, FeatureHub) provide partial or substitute solutions. The current workaround (spreadsheets) is a weak substitute but widely used. The competitive landscape scores 4 (crowded market) because there are many credible purpose-built alternatives with strong feature overlap and competitive pricing. A new entrant would need significant differentiation (e.g., AI-driven analysis, unique integrations, or a specific niche) to gain traction.",
+  "research_evidence_urls": [
+    "https://www.productboard.com",
+    "https://canny.io",
+    "https://www.aha.io",
+    "https://www.uservoice.com",
+    "https://frill.co",
+    "https://featurebase.app",
+    "https://nolt.io",
+    "https://upvoty.com",
+    "https://fider.io",
+    "https://featurehub.io",
+    "https://www.intercom.com",
+    "https://www.zendesk.com",
+    "https://www.hubspot.com/products/service"
+  ]
 }

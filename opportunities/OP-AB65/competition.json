@@ -1,28 +1,19 @@
 {
-  "id": "OP-AB65",
-  "canonical_key": "CK-391a4935deb92926",
-  "title": "When I need to manage customer health and prevent churn, I want to automatically calculate health sc",
-  "target_user": "Customer Success Manager",
-  "job_to_be_done": "When I need to manage customer health and prevent churn, I want to automatically calculate health scores from usage data, support tickets, and NPS, so I can proactively retain at-risk accounts.",
-  "painful_workflow": "Monitoring customer health scores and identifying at-risk accounts by manually checking usage data, support tickets, and NPS scores across multiple tools.",
-  "current_workaround": "Logging into multiple tools (product analytics, support platform, CRM) to gather data and manually calculating a health score.",
-  "source_ids": [
-    "SIG-0008"
-  ],
-  "independent_sources": 1,
-  "source_type_count": 1,
-  "pain_score": 2,
-  "frequency_score": 2,
-  "urgency_score": 2,
-  "economic_impact_score": 2,
-  "operational_impact_score": 2,
-  "workaround_intensity_score": 2,
-  "willingness_to_pay_score": 2,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 1,
   "competition_score": 4,
+  "queries_attempted": [
+    "customer health score software",
+    "automated health scoring SaaS",
+    "customer success platform health score",
+    "predict customer churn with usage data software",
+    "SaaS health score calculator NPS tickets",
+    "customer health monitoring tool",
+    "best customer success software health scores",
+    "NPS health score integration",
+    "customer 360 health score tool",
+    "open source customer health scoring",
+    "customer success analytics platform",
+    "Gainsight alternatives"
+  ],
   "competitors": [
     {
       "name": "Gainsight CS",
@@ -183,40 +174,12 @@
       "notes": "Using Salesforce or HubSpot custom properties to create basic health metrics, but often lacks automation and holistic view."
     }
   ],
-  "verified_facts": [
-    "A single review-source signal (SIG-0008, SRC-0008, product-hunt-reviews) mentions monitoring customer health scores and identifying at-risk accounts manually.",
-    "The cluster is supported by exactly 1 independent source and 1 source type.",
-    "The evidence text contains no quantification of time, cost, frequency, or business impact."
-  ],
-  "inferences": [
-    "Manual cross-tool monitoring is likely time-consuming, though no time estimate exists in the evidence.",
-    "Churn prevention generally carries economic value, so the problem domain is plausibly valuable even if this specific evidence does not demonstrate it.",
-    "CSMs are a globally distributed and reachable persona, making the market theoretically accessible.",
-    "Because the signal originates from a Product Hunt review, the reviewer was likely evaluating an existing product in or adjacent to this space, implying incumbent solutions already exist."
-  ],
-  "assumptions": [
-    "That the reviewer is an actual CSM experiencing this pain firsthand rather than a founder, marketer, or casual reviewer describing a workflow.",
-    "That the manual monitoring described is a frequent, recurring burden rather than an occasional task.",
-    "That the reviewer is not already using a customer success platform that largely addresses this (the review context suggests they may be).",
-    "That the workaround description in the cluster accurately reflects real behavior rather than a reconstructed narrative."
-  ],
-  "unknowns": [
-    "Time spent per week on manual health-score monitoring.",
-    "Any dollar figure: churn losses, labor cost, or current tool spend.",
-    "Whether the reviewer already pays for a CS platform (Gainsight/Totango/ChurnZero/Vitally-class tools).",
-    "Segment context: SMB vs. enterprise, team size, number of accounts managed.",
-    "Whether any churn event actually resulted from the manual process.",
-    "Who the economic buyer would be (CSM vs. VP of CS vs. RevOps)."
-  ],
-  "rejection_reasons": [
-    "Competition too high: 4/5 (max 2)"
-  ],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "REJECTED",
-  "created_at": "2026-08-12T16:09:09.629Z",
-  "updated_at": "2026-08-12T18:03:24.855Z"
+  "summary": "The customer health scoring market is crowded with mature, purpose-built solutions (Gainsight, Totango, ChurnZero, Planhat, etc.) that directly address the JTBD. These tools integrate usage, tickets, and NPS to generate automated health scores, often with playbooks and workflows. Many also offer predictive churn capabilities. Additionally, partial competitors like product analytics platforms (Pendo, Amplitude) and CRMs (HubSpot, Salesforce) have some health scoring features, while low-end substitutes (sheets, Zendesk mashups) exist. The market has been well-defined for years, and barriers to entry include deep integrations and mature feature sets. A new entrant would face significant headwinds without a unique differentiator. The competitive landscape scores 4 (crowded market) due to the number of direct and partial competitors.",
+  "research_evidence_urls": [
+    "https://www.g2.com/categories/customer-success-software",
+    "https://www.gartner.com/reviews/market/customer-success-management-platforms",
+    "https://www.capterra.com/customer-success-software/",
+    "https://www.getapp.ca/software/customer-success-health-scoring/",
+    "https://www.linkedin.com/pulse/customer-health-scoring-tools-comparison-2024"
+  ]
 }

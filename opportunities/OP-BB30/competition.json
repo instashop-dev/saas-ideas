@@ -1,28 +1,17 @@
 {
-  "id": "OP-BB30",
-  "canonical_key": "CK-694c00af22edd8ba",
-  "title": "When I need to manage inventory across multiple sales channels and systems, I want to automatically ",
-  "target_user": "Inventory Manager / E-commerce Seller",
-  "job_to_be_done": "When I need to manage inventory across multiple sales channels and systems, I want to automatically sync stock levels between my e-commerce platform and ERP, so I can prevent overselling and stockouts without manual reconciliation.",
-  "painful_workflow": "Cross-referencing inventory levels between Shopify and NetSuite ERP by exporting CSVs, uploading to Google Sheets, manually comparing item counts, and updating the lower system to avoid overselling.",
-  "current_workaround": "Export Shopify inventory CSV, upload to Google Sheets, manually compare against NetSuite item counts, then update the lower system.",
-  "source_ids": [
-    "SIG-0002"
-  ],
-  "independent_sources": 1,
-  "source_type_count": 1,
-  "pain_score": 2,
-  "frequency_score": 2,
-  "urgency_score": 2,
-  "economic_impact_score": 2,
-  "operational_impact_score": 2,
-  "workaround_intensity_score": 2,
-  "willingness_to_pay_score": 2,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 1,
   "competition_score": 4,
+  "queries_attempted": [
+    "Shopify NetSuite inventory sync software",
+    "Shopify NetSuite integration inventory management",
+    "automatically sync stock levels between Shopify and NetSuite",
+    "best Shopify NetSuite connector inventory sync",
+    "NetSuite Shopify stock sync tool",
+    "Shopify NetSuite integration apps",
+    "NetSuite Shopify inventory synchronization plugin",
+    "alternatives to manual Shopify NetSuite inventory sync",
+    "open source Shopify NetSuite inventory sync",
+    "Shopify NetSuite real-time inventory sync"
+  ],
   "competitors": [
     {
       "name": "Celigo Shopify-NetSuite Integration",
@@ -117,40 +106,17 @@
       "market_positioning": "Unified commerce backend for high-volume brands."
     }
   ],
-  "verified_facts": [
-    "SIG-0002 (sourcing SRC-0003, SRC-0004) describes cross-referencing Shopify inventory levels with NetSuite ERP records to maintain stock accuracy.",
-    "The cluster is supported by exactly one signal from one source type (g2-capterra reviews).",
-    "The cluster metadata reports independent_sources: 1.",
-    "The evidence text contains no frequency, cost, time, severity, or consequence data."
-  ],
-  "inferences": [
-    "Manual cross-referencing implies some recurring labor burden, but its magnitude is unknown.",
-    "NetSuite usage implies a mid-market organization with existing software budget, which weakly suggests capacity — but not willingness — to pay.",
-    "Because the evidence originates from software reviews, the user was likely already using a tool in this category, meaning the pain may already be partially addressed by an existing product.",
-    "The detailed CSV/Google Sheets workaround in the cluster is not supported by the cited evidence and appears to be an embellishment added during clustering."
-  ],
-  "assumptions": [
-    "That overselling and stockouts actually occur for this user — asserted in the JTBD, absent from the evidence.",
-    "That the reconciliation workflow recurs frequently enough to matter.",
-    "That the user lacks an existing integration solution."
-  ],
-  "unknowns": [
-    "How often the cross-referencing is performed and how long it takes.",
-    "Any dollar impact from overselling, stockouts, or labor.",
-    "Whether the user is already paying for a connector, iPaaS, or inventory tool (the G2/Capterra origin suggests they may be).",
-    "How many companies share this exact Shopify+NetSuite stack and pain.",
-    "What the two underlying reviews (SRC-0003, SRC-0004) actually said verbatim and what product they were reviewing.",
-    "Whether the market for this integration is already saturated with existing solutions."
-  ],
-  "rejection_reasons": [
-    "Competition too high: 4/5 (max 2)"
-  ],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "REJECTED",
-  "created_at": "2026-08-12T15:50:13.396Z",
-  "updated_at": "2026-08-12T18:08:21.551Z"
+  "summary": "The competitive landscape is crowded with multiple direct, purpose-built connectors (Celigo, WebBee, Patchworks, SPS Commerce), a native NetSuite connector (formerly FarApp) that now holds a platform advantage, and iPaaS tools (Workato, Zapier) that can be configured for the same purpose. Additionally, robust inventory management substitutes (Finale Inventory, Cin7, Extensiv) solve the same JTBD while also acting as a central inventory hub. The presence of a NetSuite-sanctioned integration and several established vendors ranging from starter plans to enterprise indicates strong competition. A new entrant would require significant differentiation in pricing, ease of use, or unique features to compete.",
+  "research_evidence_urls": [
+    "https://www.celigo.com/integrations/shopify-netsuite-integration/",
+    "https://www.netsuite.com/portal/products/connectors/shopify.shtml",
+    "https://www.webbeeglobal.com/netsuite-shopify-integration",
+    "https://www.patchworks.io/integrations/shopify/netsuite/",
+    "https://www.spscommerce.com/products/integration/netsuite/",
+    "https://www.workato.com/integrations/shopify-netsuite",
+    "https://zapier.com/apps/netsuite/integrations/shopify",
+    "https://www.finaleinventory.com/",
+    "https://www.cin7.com/",
+    "https://www.extensiv.com/"
+  ]
 }

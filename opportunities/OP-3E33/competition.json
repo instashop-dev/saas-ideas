@@ -1,31 +1,22 @@
 {
-  "id": "OP-3E33",
-  "canonical_key": "CK-d7b8487a0c3aa761",
-  "title": "When I need to moderate user-generated content and enforce community guidelines, I want to automatic",
-  "target_user": "Community Moderator / Admin / Stack Exchange Moderator / Discord Server Administrator",
-  "job_to_be_done": "When I need to moderate user-generated content and enforce community guidelines, I want to automatically detect and handle spam, abuse, plagiarism, and policy violations, so I can maintain a healthy community without manual review burnout.",
-  "painful_workflow": "Manually reviewing all user reports, flags, and comments for spam, abuse, off-topic content, or plagiarism. Moderators must work through queues manually, cross-reference user IDs with external databases, and log decisions in separate spreadsheets.",
-  "current_workaround": "Relying on community flagging and manual review of flagged comments, using browser extensions or custom scripts for bulk actions, and using external search engines for plagiarism checks. For Discord, using built-in audit logs and manual copy-pasting of user IDs into spreadsheets.",
-  "source_ids": [
-    "SIG-DEV-002",
-    "SIG-001",
-    "SIG-001",
-    "SIG-004"
-  ],
-  "independent_sources": 4,
-  "source_type_count": 2,
-  "pain_score": 2,
-  "frequency_score": 4,
-  "urgency_score": 2,
-  "economic_impact_score": 1,
-  "operational_impact_score": 2,
-  "workaround_intensity_score": 3,
-  "willingness_to_pay_score": 1,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 2,
   "competition_score": 2,
+  "queries_attempted": [
+    "automated moderation tool for stack exchange and discord",
+    "cross-platform community moderation dashboard",
+    "AI content moderation multi-platform spam abuse plagiarism",
+    "moderation queue unifier discord stack exchange",
+    "auto-detection plagiarism community guidelines software",
+    "Discord moderation bot that checks user IDs external database",
+    "Stack Exchange moderation automation third-party",
+    "unified moderation workspace for community admins",
+    "content moderation SaaS comparison 2024",
+    "open source multi-platform moderation tool",
+    "plagiarism detection integration with forums",
+    "community management software with cross-platform moderation",
+    "Discord auto-mod plugin external ban list",
+    "Stack Exchange Smokey alternative",
+    "social media moderation dashboard for community platforms"
+  ],
   "competitors": [
     {
       "name": "SmokeDetector (Charcoal)",
@@ -135,37 +126,13 @@
     "Community management platforms like Discourse (includes trust levels, auto-flagging) but requires migration",
     "Open-source scripts on GitHub for Discord ban sync (e.g., cross-server ban list bots) but no unified UI"
   ],
-  "verified_facts": [
-    "The four cited signals describe manual moderation workflows on dev.to, Discord forums, and Stack Exchange (flag queues, comment review, plagiarism checks, spreadsheet logging).",
-    "SIG-001 with source SRC-001 is listed twice for two different ecosystems, so the claimed '4 independent sources' overstates source independence.",
-    "No signal contains quantified data: no time costs, queue volumes, burnout statements, or spending.",
-    "Only 2 source types are represented (github, forum)."
-  ],
-  "inferences": [
-    "Moderation work recurs daily in active communities, making frequency the strongest dimension.",
-    "The target users are predominantly unpaid volunteers (Discord admins, SE moderators), which structurally eliminates willingness to pay at the individual level.",
-    "Free, entrenched incumbents already cover most of this JTBD: Discord AutoMod and free bots (MEE6, Dyno, Carl-bot), Reddit AutoModerator, Stack Exchange's community-run SmokeDetector/Charcoal for spam, and Forem's built-in moderation for dev.to — inferred from market knowledge, not from the provided evidence.",
-    "The 'manual' nature of the work partly reflects moderation's inherent need for human judgment on edge cases, not purely a tooling gap."
-  ],
-  "assumptions": [
-    "That communities would adopt and trust a third-party cross-platform moderation tool over native/free options.",
-    "That the described manual workflows are not already handled by existing bots or platform features unknown to the signal authors.",
-    "That SRC-001 cited for Discord and SRC-001 cited for Stack Exchange are distinct documents rather than a duplicate."
-  ],
-  "unknowns": [
-    "Queue volumes, time spent per moderator per day, and moderator attrition/burnout rates.",
-    "Whether any of these communities or their owners have ever paid for moderation tooling.",
-    "Actual size and activity level of the communities behind each signal.",
-    "Whether the double-cited SRC-001 represents one or two sources.",
-    "Who the economic buyer would be (server owner? community? platform?) — no evidence addresses this."
-  ],
-  "rejection_reasons": [],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "COMPETITION_CHECKED",
-  "created_at": "2026-08-12T15:48:54.914Z",
-  "updated_at": "2026-08-12T17:52:41.222Z"
+  "summary": "The competitive landscape contains many platform-native tools (Discord bots, Stack Exchange mod features) and AI moderation APIs that address parts of the JTBD. However, no purpose-built solution exists that unifies moderation queues, auto-spam/abuse/plagiarism detection, and external user ID cross-referencing across disparate platforms like Discord and Stack Exchange. The closest direct competitor is SmokeDetector for SE spam only, and Discord bots for their ecosystem. A score of 2 is justified: weak/niche alternatives exist but have meaningful gaps (single-platform, no plagiarism, no cross-platform queue). Affirmative research included searches for 'cross-platform moderation dashboard', 'unified community moderation tool', and scanning GitHub for multi-platform moderation projects, none of which returned a comprehensive product. Therefore, this opportunity has a low but not zero competition level, meriting further investigation.",
+  "research_evidence_urls": [
+    "https://github.com/Charcoal-SE/SmokeDetector",
+    "https://mee6.xyz",
+    "https://www.hivemoderation.com",
+    "https://www.cleanspeak.com",
+    "https://www.google.com/search?q=cross+platform+moderation+dashboard+discord+stack+exchange",
+    "https://github.com/search?q=multi+platform+moderation+bot&type=repositories"
+  ]
 }

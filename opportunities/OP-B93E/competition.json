@@ -1,28 +1,19 @@
 {
-  "id": "OP-B93E",
-  "canonical_key": "CK-30cb3ab76b513207",
-  "title": "When I need to audit user activity and access logs for compliance, I want to automatically export, p",
-  "target_user": "IT Security Analyst / Compliance Officer",
-  "job_to_be_done": "When I need to audit user activity and access logs for compliance, I want to automatically export, parse, and report on Discord or system logs, so I can meet regulatory requirements without manual data processing.",
-  "painful_workflow": "Exporting large volumes of data from Discord or other systems, parsing it, and matching it against internal records or regulatory requirements for compliance audits or security incident investigations.",
-  "current_workaround": "Using Discord's official API to export messages/channels, then using Python scripts to parse JSON files and search for keywords or user IDs. Manually compiling reports in Word/Excel.",
-  "source_ids": [
-    "SIG-005"
-  ],
-  "independent_sources": 1,
-  "source_type_count": 1,
-  "pain_score": 1,
-  "frequency_score": 1,
-  "urgency_score": 1,
-  "economic_impact_score": 1,
-  "operational_impact_score": 1,
-  "workaround_intensity_score": 2,
-  "willingness_to_pay_score": 1,
-  "distribution_score": 3,
-  "global_score": 2,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 1,
   "competition_score": 4,
+  "queries_attempted": [
+    "Discord compliance export tool",
+    "Discord audit log exporter",
+    "Discord log parsing compliance",
+    "Discord archiving solution",
+    "Discord audit log reporting",
+    "Discord export to CSV for legal",
+    "Discord data export API for compliance",
+    "Discord SIEM integration",
+    "open source Discord log parser",
+    "Discord server compliance audit software",
+    "enterprise Discord compliance archive",
+    "Discord communications archiving platform"
+  ],
   "competitors": [
     {
       "name": "DiscordChatExporter",
@@ -157,38 +148,18 @@
     "Workflow automation tools (Zapier, Make) piping Discord events into spreadsheets or databases",
     "Using Discord's native data export feature (user data package or server owner request) then manually processing"
   ],
-  "verified_facts": [
-    "SIG-005 (source SRC-005) is a documentation-type source from the discord-forums ecosystem that mentions auditing Discord server access logs and message history for compliance purposes.",
-    "The cluster is supported by exactly 1 independent source and 1 source type.",
-    "No user complaints, quantified impacts, frequency data, or payment evidence appear in the cited evidence."
-  ],
-  "inferences": [
-    "The activity of Discord compliance auditing exists as a documented concept, which suggests at least one party has considered it.",
-    "If the workflow is real, it likely involves technical effort (API exports, parsing), making it non-trivial — but this is inferred from the cluster metadata, not the evidence."
-  ],
-  "assumptions": [
-    "That IT Security Analysts / Compliance Officers are the actual users — no evidence identifies the persona.",
-    "That the described workaround (API + Python + manual reports) is actually used by anyone — it appears only in cluster metadata.",
-    "That regulated organizations use Discord in scope of compliance obligations at all.",
-    "That Discord's native Audit Log and existing logging bots do not already satisfy the need."
-  ],
-  "unknowns": [
-    "How many organizations audit Discord for compliance and how often.",
-    "Whether anyone has failed an audit, incurred a fine, or lost revenue due to this gap.",
-    "Whether any budget or tool spend exists for this problem.",
-    "Whether the native Discord Audit Log, data export, or third-party logging bots already solve this adequately.",
-    "The size and reachability of the buyer segment.",
-    "What SRC-005 actually is (title, author, context) beyond the one-sentence excerpt."
-  ],
-  "rejection_reasons": [
-    "Competition too high: 4/5 (max 2)"
-  ],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "REJECTED",
-  "created_at": "2026-08-12T16:03:25.550Z",
-  "updated_at": "2026-08-12T18:06:39.944Z"
+  "summary": "The competitive landscape for Discord compliance auditing and log export is mature. Multiple enterprise archiving and compliance platforms (PageFreezer, Smarsh, Global Relay, Theta Lake) directly address capturing and reporting on Discord data, often as part of broader unified communications compliance suites. In addition, a strong open-source ecosystem (DiscordChatExporter, Discord History Tracker, numerous Python scripts) provides free export/parsing capabilities, while horizontal SIEM tools can be configured to handle the same logs. Discord's own built-in audit log covers some in-app review, and moderation bots add partial alerting. While there may be gaps in lightweight, SMB-focused, turnkey compliance reporting specifically for Discord, the existence of multiple purpose-built enterprise services and widely adopted open-source exporters indicates an established market with credible alternatives. A new entrant would face significant competition from both enterprise incumbents and free DIY tools.",
+  "research_evidence_urls": [
+    "https://github.com/Tyrrrz/DiscordChatExporter",
+    "https://www.pagefreezer.com/solutions/archive-discord/",
+    "https://www.smarsh.com/",
+    "https://www.globalrelay.com/",
+    "https://thetalake.com/",
+    "https://www.splunk.com/",
+    "https://www.elastic.co/",
+    "https://zapier.com/",
+    "https://support.discord.com/hc/en-us/articles/360052709494-Audit-Logs",
+    "https://dht.chylex.com/",
+    "https://github.com/search?q=discord+export+logs+python"
+  ]
 }

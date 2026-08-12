@@ -6,16 +6,17 @@
   "models": {
     "pain_miner": "qwen/qwen3.7-flash",
     "clusterer": "deepseek/deepseek-v4-flash",
-    "validator": "moonshotai/kimi-k3"
+    "validator": "moonshotai/kimi-k3",
+    "competition": "deepseek/deepseek-v4-pro"
   },
   "candidate_counts": {
     "signals": 54,
     "clusters": 19,
     "validated": 19,
-    "competition_survivors": 0,
+    "competition_survivors": 5,
     "finalists": 0,
     "approved": 0
   },
   "estimated_cost": null,
-  "status": "validating"
+  "status": "competition_checking"
 }

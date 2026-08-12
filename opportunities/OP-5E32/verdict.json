@@ -22,9 +22,61 @@
   "global_score": 5,
   "mvp_complexity_score": 3,
   "evidence_quality_score": 1,
-  "competition_score": 3,
-  "competitors": [],
-  "substitutes": [],
+  "competition_score": 4,
+  "competitors": [
+    {
+      "name": "blog-post-workflow (gautamkrishnar)",
+      "url": "https://github.com/gautamkrishnar/blog-post-workflow",
+      "classification": "DIRECT",
+      "notes": "GitHub Action that automatically fetches RSS feeds of blogs (including dev.to) and updates README.md with latest posts. It directly solves the exact problem: keeping project documentation updated with new articles. Very popular (2k+ stars). It is free and open source.",
+      "feature_overlap": "Fetches RSS, updates README with latest articles, supports multiple feeds, customizable formatting.",
+      "pricing": "Free, open source (MIT)",
+      "market_positioning": "Most popular action for showing latest blog posts on GitHub profile or project readme."
+    },
+    {
+      "name": "readme-scribe",
+      "url": "https://github.com/muesli/readme-scribe",
+      "classification": "DIRECT",
+      "notes": "GitHub Action that generates a profile README with recent blog posts from RSS feeds, GitHub stats, etc. It updates the README automatically.",
+      "feature_overlap": "RSS feed integration, automatic README updates, customizable sections.",
+      "pricing": "Free, open source (MIT)",
+      "market_positioning": "All-in-one README generator for GitHub profiles with blog posts."
+    },
+    {
+      "name": "markdown-magic",
+      "url": "https://github.com/DavidWells/markdown-magic",
+      "classification": "PARTIAL",
+      "notes": "Tool/plugin that dynamically updates markdown files, including README, with content from plugins like RSS. It can insert latest blog posts but requires more setup and is not solely for blog sync.",
+      "feature_overlap": "RSS to markdown, auto-update files, custom transforms.",
+      "pricing": "Free, open source (MIT)",
+      "market_positioning": "General-purpose markdown automation tool."
+    },
+    {
+      "name": "Update README with Latest Blog Posts (various GitHub Marketplace actions)",
+      "url": "https://github.com/marketplace?query=blog+posts+readme",
+      "classification": "DIRECT",
+      "notes": "Multiple GitHub Actions exist for this exact purpose, e.g., 'Latest Blog Posts', 'Blog Post Workflow', 'Hashnode Blog Posts'. Search reveals many maintained and forked actions.",
+      "feature_overlap": "RSS fetch, README update, multi-feed support.",
+      "pricing": "Free",
+      "market_positioning": "Niche but crowded within GitHub Actions ecosystem."
+    },
+    {
+      "name": "Zapier / IFTTT (RSS to GitHub file)",
+      "url": "https://zapier.com/apps/rss/integrations/github",
+      "classification": "SUBSTITUTE",
+      "notes": "General automation can be configured to watch RSS feed and commit a change to a file, but requires building a custom integration and is not purpose-built for README blog sync.",
+      "feature_overlap": "Automated updates from RSS to GitHub repository.",
+      "pricing": "Free tier, paid plans from $19.99/mo",
+      "market_positioning": "General-purpose workflow automation platform."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Zapier / IFTTT (RSS to GitHub file)",
+      "url": "https://zapier.com/apps/rss/integrations/github",
+      "notes": "Can be configured to update a file in a repo with new RSS items, but not specifically designed for README blog lists."
+    }
+  ],
   "verified_facts": [
     "The entire cluster rests on a single signal (SIG-DEV-004) from a single source type (GitHub), with independent_sources = 1 (per cluster metadata).",
     "The evidence text describes the existence of a manual workflow but contains no user quote, severity language, frequency data, or economic figures.",
@@ -46,13 +98,15 @@
     "Whether anyone has ever paid for, donated to, or sponsored a tool solving this problem.",
     "How many developers actually cross-post dev.to articles to project READMEs at all — the addressable population is unverified."
   ],
-  "rejection_reasons": [],
+  "rejection_reasons": [
+    "Competition too high: 4/5 (max 2)"
+  ],
   "judge_verdict": "",
   "confidence": 0,
   "final_score": 0,
   "run_id": "RUN-4DF5D4F5",
-  "stage": "validation",
-  "status": "VALIDATED",
+  "stage": "competition",
+  "status": "REJECTED",
   "created_at": "2026-08-12T16:00:59.625Z",
-  "updated_at": "2026-08-12T16:00:59.625Z"
+  "updated_at": "2026-08-12T17:53:16.569Z"
 }

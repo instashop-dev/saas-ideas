@@ -1,31 +1,15 @@
 {
-  "id": "OP-A502",
-  "canonical_key": "CK-957668ff9873435c",
-  "title": "When I need to manage support tickets and customer inquiries, I want to automatically triage, catego",
-  "target_user": "Customer Support Agent / Team Lead / Customer Success Manager / E-commerce Business Owner",
-  "job_to_be_done": "When I need to manage support tickets and customer inquiries, I want to automatically triage, categorize, route, and sync conversations across my support tools (Zendesk, Slack, Discord, CRM), so I can respond faster, reduce manual effort, and prevent context loss.",
-  "painful_workflow": "Receiving support requests across multiple channels (Discord, email, chat, Zendesk, Slack), manually reading each ticket, categorizing it, assigning it to the right team member, and then updating the CRM or order management system separately. Agents must switch between multiple browser tabs and tools to look up customer information.",
-  "current_workaround": "Using a shared email inbox or basic ticketing system, maintaining a personal Slack channel with pinned messages, using a shared Google Sheet to track high-priority cases, and manually copy-pasting conversations between systems.",
-  "source_ids": [
-    "SIG-003",
-    "SIG-0003",
-    "SIG-0002",
-    "SIG-0002"
-  ],
-  "independent_sources": 4,
-  "source_type_count": 2,
-  "pain_score": 2,
-  "frequency_score": 3,
-  "urgency_score": 2,
-  "economic_impact_score": 2,
-  "operational_impact_score": 3,
-  "workaround_intensity_score": 3,
-  "willingness_to_pay_score": 2,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 2,
   "competition_score": 3,
+  "queries_attempted": [
+    "AI ticket triage routing Slack Discord Zendesk sync",
+    "automatically categorize and route support tickets multi-channel",
+    "customer support automation Slack Discord CRM integration",
+    "helpdesk with AI triage and routing across messaging apps",
+    "Zendesk alternative auto triage Slack Discord",
+    "Gorgias competitor for Slack and Discord support",
+    "open source ticket triage AI",
+    "support ticket auto-categorization CRM sync"
+  ],
   "competitors": [
     {
       "name": "Forethought",
@@ -125,41 +109,15 @@
     "Consultancies that set up custom Zendesk automations with webhooks and AI middleware",
     "Hiver (Gmail-based helpdesk) with Google Sheets tracking as workaround"
   ],
-  "verified_facts": [
-    "Three unique signals (SIG-003, SIG-0003, SIG-0002; SIG-0002 duplicated in the cluster) describe manual ticket categorization, routing, cross-tool duplication, and Discord-to-order/payment reconciliation.",
-    "Sources span forums (Hacker News, Indie Hackers, Discord forums) and Product Hunt reviews — 2 source types.",
-    "The described workarounds rely on free generic tools: shared email inbox, pinned Slack messages, shared Google Sheet, manual copy-paste.",
-    "SIG-0003 references paid incumbents (Zendesk, Salesforce) already present in the user's stack."
-  ],
-  "inferences": [
-    "Manual triage recurs per inbound ticket, so for active support teams it is likely a daily task — but volume is unmeasured.",
-    "The presence of Zendesk/Salesforce suggests budget exists in the support-tooling category, though not necessarily for this specific problem.",
-    "Reliance on free workarounds rather than purchased solutions suggests the pain is tolerated at current intensity, or that existing paid solutions were not evaluated.",
-    "The cluster conflates two distinct sub-pains: (a) automated triage/routing (SIG-0002, SIG-0003) and (b) cross-system reconciliation of Discord tickets with commerce/payment data (SIG-003). These have different buyers and different competitive sets."
-  ],
-  "assumptions": [
-    "The snippets reflect genuine practitioner pain rather than hypothetical statements, marketing copy, or vendor-seeded complaints.",
-    "The four named personas share enough workflow similarity to constitute one addressable market (questionable given SMB-vs-enterprise spread).",
-    "The claimed 'independent_sources: 4' is treated as 3 unique signals given the SIG-0002 duplication."
-  ],
-  "unknowns": [
-    "Time cost per ticket and aggregate weekly labor cost — no quantification exists in any signal.",
-    "Ticket volumes and team sizes of the complaining users.",
-    "Whether users tried native automation in Zendesk/Slack/Salesforce (routing rules, macros, integrations, AI triage) or existing triage/sync products, and why those failed.",
-    "Whether anyone has paid money or built internal tooling to solve this — no spend evidence at all.",
-    "Competitive saturation: this is a heavily served category (incumbent helpdesks plus numerous AI triage and integration tools); no market scan was provided.",
-    "Why SIG-0002 appears twice — whether the duplication is a data error or two genuinely separate observations from the same source.",
-    "Which of the two sub-pains (triage/routing vs. Discord-commerce reconciliation) is the actual wedge."
-  ],
-  "rejection_reasons": [
-    "Competition too high: 3/5 (max 2)"
-  ],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "REJECTED",
-  "created_at": "2026-08-12T15:42:12.101Z",
-  "updated_at": "2026-08-12T18:01:17.969Z"
+  "summary": "The competitive landscape is mature with multiple established players offering core AI triage, routing, and CRM sync functionality. Direct competitors like Forethought, Gorgias, Freshdesk, and Zendesk dominate; they already provide the exact value proposition for most channels. While niche integrations (Slack/Discord native with AI) are less crowded, several platforms either natively support these channels or can be extended. The presence of well-funded incumbents (Zendesk, Intercom, Kustomer) and specialized AI layer tools (Forethought, SupportLogic) makes this a challenging market. The overall competition is rated 3: established alternatives exist, though there may be room for a verticalized or integration-first solution targeting Slack/Discord-heavy teams.",
+  "research_evidence_urls": [
+    "https://www.g2.com/categories/customer-self-service",
+    "https://www.g2.com/products/forethought/reviews",
+    "https://www.gorgias.com/product",
+    "https://freshdesk.com/automate-ticket-routing",
+    "https://www.intercom.com/blog/intercom-ai-triage/",
+    "https://www.thena.ai/integrations",
+    "https://support.discord.com/hc/en-us/articles/360057092014-Setting-up-a-Ticket-Bot",
+    "https://slack.com/intl/en-gb/blog/productivity/build-automated-workflows-in-slack"
+  ]
 }

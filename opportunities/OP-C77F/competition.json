@@ -1,28 +1,18 @@
 {
-  "id": "OP-C77F",
-  "canonical_key": "CK-788e707516a79bd3",
-  "title": "When I need to manage employee time-off and leave balances, I want to automatically track requests, ",
-  "target_user": "HR Generalist / Office Manager / People-Ops-of-One",
-  "job_to_be_done": "When I need to manage employee time-off and leave balances, I want to automatically track requests, calculate accruals, and sync with payroll, so I can avoid balance disputes and compliance risks.",
-  "painful_workflow": "Tracking employee PTO and leave balances in a shared spreadsheet: receiving requests over email or chat, manually updating balances, checking accrual math, and reconciling the spreadsheet against payroll records when numbers disagree.",
-  "current_workaround": "A shared Excel or Google Sheet with hand-built formulas, email-based request threads, manual accrual calculations, and periodic reconciliation against the payroll system.",
-  "source_ids": [
-    "SIG-0007"
-  ],
-  "independent_sources": 1,
-  "source_type_count": 1,
-  "pain_score": 2,
-  "frequency_score": 2,
-  "urgency_score": 1,
-  "economic_impact_score": 2,
-  "operational_impact_score": 2,
-  "workaround_intensity_score": 2,
-  "willingness_to_pay_score": 1,
-  "distribution_score": 3,
-  "global_score": 3,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 1,
   "competition_score": 4,
+  "queries_attempted": [
+    "employee time off tracking software for small business",
+    "PTO management system accrual tracking",
+    "leave management software HR Generalist",
+    "automated PTO request and approval system",
+    "excel alternative for managing employee leave balances",
+    "open source leave management system",
+    "slack integration PTO tracker",
+    "google sheets PTO template with accruals",
+    "best pto tracking software 2025 G2",
+    "simple leave management app for startups",
+    "payroll integrated time off tracking small business"
+  ],
   "competitors": [
     {
       "name": "BambooHR",
@@ -150,40 +140,19 @@
       "notes": "Not a leave management tool; no accruals, conflicts, or payroll sync."
     }
   ],
-  "verified_facts": [
-    "SIG-0007/SRC-0008 is a single forum (reddit) source whose entire recorded evidence is: 'Tracking employee PTO and leave balances in a shared spreadsheet manually.'",
-    "The cluster rests on exactly 1 independent source and 1 source type.",
-    "The evidence text contains no expression of frustration, no quantified time or dollar cost, no frequency data, no mention of an actual dispute, error, or compliance incident.",
-    "The only observed tooling behavior is use of a free spreadsheet — zero observed spend."
-  ],
-  "inferences": [
-    "Manual spreadsheet tracking plausibly creates some error and reconciliation risk, but its severity and frequency are unknown from this evidence.",
-    "Continued reliance on a free spreadsheet suggests the pain is currently tolerable and that willingness to pay is low.",
-    "The cluster-level claims of 'balance disputes and compliance risks' are narrative embellishments not present in the source signal.",
-    "The leave-management software category is mature and crowded with established incumbents (general market knowledge, not derived from the evidence), meaning even a validated pain would face severe competitive pressure and low switching willingness."
-  ],
-  "assumptions": [
-    "That the single reddit poster represents a broader population of HR generalists with the same workflow.",
-    "That the described workflow causes pain beyond mild inconvenience — the evidence does not actually state this.",
-    "That buyers in this segment have budget authority and unmet needs despite abundant existing tools."
-  ],
-  "unknowns": [
-    "How often PTO requests and reconciliations occur for this user.",
-    "Company size, industry, and jurisdiction of the poster.",
-    "Whether any actual error, dispute, overpayment, or compliance event has ever occurred.",
-    "Whether the poster has tried or rejected existing PTO-tracking tools, and why.",
-    "Any budget, spend, or willingness-to-pay signal.",
-    "Whether the pain is felt by the buyer (HR) or merely by employees."
-  ],
-  "rejection_reasons": [
-    "Competition too high: 4/5 (max 2)"
-  ],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "REJECTED",
-  "created_at": "2026-08-12T16:07:40.699Z",
-  "updated_at": "2026-08-12T18:08:24.154Z"
+  "summary": "The competitive landscape for employee time‑off and leave management is crowded, with many well‑established SaaS products targeting small businesses and HR‑of‑one scenarios. Direct competitors like LeaveBoard, Vacation Tracker, Calamari, and Absence.io offer simple, affordable solutions that directly replace the spreadsheet‑and‑email workflow. Full‑platform plays (BambooHR, Gusto, Zoho People) embed leave tracking as part of broader HR/payroll, often already adopted by the target audience. Platform‑native bot‑based tools (PTO by Roots, AttendBot) lower the barrier further. Open‑source and template substitutes exist, though they lack automation. Pricing for purpose‑built tools starts at $1–$3/user/month, with free tiers for tiny teams, making the switching cost very low. Given the abundance of credible, feature‑complete alternatives, the market is not a greenfield. Nevertheless, most products tie accrual calculations to simple policies; there might still be room for hyper‑simple spreadsheet replacement with dead‑simple payroll sync for non‑tech HR users, but any new entrant would face fierce competition from incumbents with strong brand and integration moats. Based on this evidence, the opportunity falls into a crowded market.",
+  "research_evidence_urls": [
+    "https://www.g2.com/categories/time-and-attendance?utf8=%E2%9C%93&order=popular&tab=time_and_attendance",
+    "https://www.capterra.com/leave-management-software/",
+    "https://vacationtracker.io/",
+    "https://leaveboard.com/",
+    "https://calamari.io/pto-leave-management",
+    "https://www.absence.io/",
+    "https://www.getapp.com/hr-employee-management-software/time-off/",
+    "https://www.bamboohr.com/time-off/",
+    "https://gusto.com/product/benefits/time-off",
+    "https://www.orangehrm.com/leave-management/",
+    "https://attendbot.com/",
+    "https://www.tryroots.io/pto"
+  ]
 }

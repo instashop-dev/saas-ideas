@@ -1,30 +1,17 @@
 {
-  "id": "OP-8A2D",
-  "canonical_key": "CK-375eb97cc04b4cb8",
-  "title": "When I need to manage software deployments and infrastructure changes, I want to automate deployment",
-  "target_user": "DevOps Engineer / Platform Engineer / Data Engineer",
-  "job_to_be_done": "When I need to manage software deployments and infrastructure changes, I want to automate deployment orchestration, database migrations, and configuration management across environments, so I can reduce deployment failures and security gaps.",
-  "painful_workflow": "Manually running deployment scripts, updating load balancer rules, verifying health endpoints, managing database schema migrations across environments, and maintaining configuration files per server. When migrations fail, engineers must manually revert data changes.",
-  "current_workaround": "A collection of shell scripts and a shared Google Doc with step-by-step runbooks. Maintaining central JSON/YAML config files per server and manually editing them. Writing custom migration scripts and running them locally before pushing to CI/CD.",
-  "source_ids": [
-    "SIG-0002",
-    "SIG-002",
-    "SIG-004"
-  ],
-  "independent_sources": 3,
-  "source_type_count": 2,
-  "pain_score": 3,
-  "frequency_score": 3,
-  "urgency_score": 2,
-  "economic_impact_score": 2,
-  "operational_impact_score": 3,
-  "workaround_intensity_score": 3,
-  "willingness_to_pay_score": 2,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 2,
   "competition_score": 5,
+  "queries_attempted": [
+    "deployment automation database migration configuration management tool",
+    "DevOps release orchestration platform",
+    "CI/CD database migration tool",
+    "configuration management deployment orchestration software",
+    "SaaS deployment automation",
+    "database migration automation tool",
+    "infrastructure change management automation",
+    "continuous delivery platform with database deployments",
+    "runbook automation deployment database migration",
+    "internal developer platform deployment config management"
+  ],
   "competitors": [
     {
       "name": "Octopus Deploy",
@@ -205,44 +192,26 @@
     "Serverless/PaaS platforms (Heroku, Vercel) that abstract deployment but still require separate DB migration setup",
     "In-house scripts combined with configuration management (Ansible/Chef/Puppet) and database migration tools (Liquibase/Flyway)"
   ],
-  "verified_facts": [
-    "Three independent sources exist across two source types (forum/Hacker News and GitHub).",
-    "SIG-0002 evidences manual deployment orchestration across multiple cloud environments using shell scripts and runbooks.",
-    "SIG-004 evidences management of database schema migrations and rollback procedures across multiple environments.",
-    "SIG-002 evidences configuration and deployment pipeline management for multiple Discord bots across guilds.",
-    "No source contains direct quotes, frequency data, severity incidents, time costs, or dollar figures.",
-    "The described workarounds (shell scripts, shared documents, locally-run scripts) involve zero monetary spend."
-  ],
-  "inferences": [
-    "Deployment and migration work recurs regularly for teams practicing it, implying moderate frequency.",
-    "Manual orchestration consumes meaningful engineering time and carries failure/rollback risk.",
-    "The pain is globally applicable and not jurisdiction-bound.",
-    "The cluster's detailed 'current_workaround' narrative synthesizes elements from all three signals rather than appearing verbatim in any single source.",
-    "Category-level willingness to pay exists in the broader industry, but this cannot be attributed to the users in these signals."
-  ],
-  "assumptions": [
-    "The three signals reflect one coherent job-to-be-done, despite SIG-002's Discord-bot context differing materially from enterprise multi-environment deployment.",
-    "The target users have budget authority or purchasing influence.",
-    "The teams behind these signals have not already adopted existing mature tooling.",
-    "The one-line evidence summaries accurately represent richer underlying source content."
-  ],
-  "unknowns": [
-    "How often deployments/migrations occur and how often they fail for these specific users.",
-    "Any quantified time or dollar cost of the manual workflow.",
-    "Whether these users have evaluated and rejected existing solutions (CI/CD platforms, IaC tools, migration frameworks, GitOps controllers) — and why.",
-    "Team size, company size, and budget behind each signal.",
-    "Whether SIG-002 represents commercial or hobbyist use.",
-    "Why teams still on shell scripts and Google Docs would adopt a new paid tool when free mature alternatives already exist."
-  ],
-  "rejection_reasons": [
-    "Competition too high: 5/5 (max 2)"
-  ],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "REJECTED",
-  "created_at": "2026-08-12T15:53:57.672Z",
-  "updated_at": "2026-08-12T17:58:30.655Z"
+  "summary": "The competitive landscape is heavily commoditized and mature. Multiple direct competitors (Octopus Deploy, Harness CD, Spinnaker) offer purpose-built deployment orchestration with database migration capabilities and environment config management. Generic CI/CD platforms (GitLab, GitHub Actions, Jenkins) can orchestrate all three aspects via pipelines and plugins. Dedicated database migration tools (Liquibase, Flyway, Bytebase) and configuration management tools (Ansible, Chef, Puppet) cover the sub-problems, often integrated together. Platform-native services (AWS CodePipeline, Azure DevOps, Google Cloud Deploy) provide built-in alternatives. Open-source options are abundant. The problem is well-solved by existing tools; a new entrant would face significant incumbent competition unless providing a novel unified UX or deep integration that existing tools lack. Score = 5.",
+  "research_evidence_urls": [
+    "https://octopus.com",
+    "https://harness.io",
+    "https://spinnaker.io",
+    "https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/",
+    "https://github.com/features/actions",
+    "https://www.jenkins.io",
+    "https://argo-cd.readthedocs.io",
+    "https://www.ansible.com",
+    "https://www.chef.io",
+    "https://puppet.com",
+    "https://www.liquibase.com",
+    "https://flywaydb.org",
+    "https://www.hashicorp.com/products/terraform",
+    "https://aws.amazon.com/codepipeline/",
+    "https://azure.microsoft.com/en-us/products/devops/pipelines/",
+    "https://cloud.google.com/deploy",
+    "https://www.rundeck.com",
+    "https://bytebase.com",
+    "https://www.prisma.io/docs/orm/prisma-migrate"
+  ]
 }

@@ -1,28 +1,17 @@
 {
-  "id": "OP-137D",
-  "canonical_key": "CK-7134f633e23befae",
-  "title": "When I need to personalize outbound sales emails, I want to automatically research prospects from mu",
-  "target_user": "Sales Development Representative (SDR)",
-  "job_to_be_done": "When I need to personalize outbound sales emails, I want to automatically research prospects from multiple sources, so I can increase response rates without manual research.",
-  "painful_workflow": "Researching and personalizing outbound sales emails by manually looking up prospects on LinkedIn, company websites, and other sources.",
-  "current_workaround": "Switching between multiple browser tabs and tools to gather information about a prospect before writing a personalized email.",
-  "source_ids": [
-    "SIG-0004"
-  ],
-  "independent_sources": 1,
-  "source_type_count": 1,
-  "pain_score": 2,
-  "frequency_score": 3,
-  "urgency_score": 2,
-  "economic_impact_score": 2,
-  "operational_impact_score": 2,
-  "workaround_intensity_score": 2,
-  "willingness_to_pay_score": 2,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 1,
   "competition_score": 2,
+  "queries_attempted": [
+    "AI sales email personalization research tool",
+    "automatically research prospects for outbound emails",
+    "sales prospect research automation for personalization",
+    "SDR prospect research assistant personalization",
+    "personalized email opener generator from LinkedIn",
+    "outbound email personalization software with prospect intelligence",
+    "sales email personalization AI that researches prospects",
+    "alternatives to autobound smartwriter",
+    "platform native prospect research for email personalization HubSpot",
+    "open source email personalization scripts"
+  ],
   "competitors": [
     {
       "name": "Autobound",
@@ -108,36 +97,10 @@
       "market_positioning": "‘Appointment setting services’"
     }
   ],
-  "verified_facts": [
-    "The workflow of manually looking up prospects to personalize outbound emails exists (SIG-0004).",
-    "The evidence base consists of exactly one signal, one source, and one source type (SIG-0004 / SRC-0004 / product-hunt-reviews).",
-    "The evidence text contains no intensity language, quantification, stated consequences, or spend indicators."
-  ],
-  "inferences": [
-    "The task likely recurs frequently (possibly daily) given the typical SDR role, but this is inferred from the persona, not evidenced.",
-    "Because the source is a product review, a market of existing tools for this problem likely exists and the reviewer engaged with at least one — which cuts both ways: it hints the problem is recognized, but also suggests the pain may already be served by incumbents, weakening the case for a new entrant.",
-    "The 'increase response rates' motivation in the JTBD is plausible but is a framing added by the cluster, not present in SIG-0004."
-  ],
-  "assumptions": [
-    "That the person behind SIG-0004 is actually an SDR — the evidence does not state a role.",
-    "That the tab-switching workaround described in the cluster reflects the actual user's behavior rather than an elaboration of the one-line evidence.",
-    "That the reviewer was describing a pain rather than neutrally or positively describing a feature category."
-  ],
-  "unknowns": [
-    "Time cost per prospect and total weekly hours lost.",
-    "Whether manual research actually depresses response rates or pipeline for this user.",
-    "Any existing tool spend, subscriptions, or prior solution attempts.",
-    "Team size affected and whether this is an individual or organizational pain.",
-    "The sentiment, rating, and full context of SRC-0004.",
-    "Whether the user perceives this as a problem at all, or simply as a normal part of the job."
-  ],
-  "rejection_reasons": [],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "COMPETITION_CHECKED",
-  "created_at": "2026-08-12T16:10:49.290Z",
-  "updated_at": "2026-08-12T17:52:34.271Z"
+  "summary": "Several purpose‑built tools (Autobound, Smartwriter.ai, Lavender, Regie.ai, Lyne.ai) directly address the JTBD of automatically researching prospects to create personalized outbound emails. Most focus heavily on LinkedIn and company news, with limited multi‑source breadth (e.g., blog posts, podcasts, funding events). The market is not commodotized – no single tool dominates, and many are startups with modest market share. Meaningful gaps exist: few offer deep integrations with CRMs beyond basic sync, and comprehensive research across many disparate sources remains a manual/plugin combination for advanced users. This leaves room for a solution that delivers broader, more accurate research and embedds directly into the SDR workflow. Score: 2 – a few niche alternatives with gaps that an ambitious new entrant can exploit.",
+  "research_evidence_urls": [
+    "https://www.g2.com/categories/ai-sales-assistant",
+    "https://news.crunchbase.com/startups/ai-sales-email-personalization-tools/",
+    "https://techcrunch.com/2023/02/08/ai-sales-personalization-startups/"
+  ]
 }

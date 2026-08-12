@@ -1,29 +1,22 @@
 {
-  "id": "OP-9A4F",
-  "canonical_key": "CK-8c95dd51e38450c3",
-  "title": "When I need to track and manage affiliate or influencer partnerships, I want to automatically track ",
-  "target_user": "Marketing Manager / Influencer Coordinator / Indie Hacker",
-  "job_to_be_done": "When I need to track and manage affiliate or influencer partnerships, I want to automatically track referrals, calculate commissions, and reconcile payouts, so I can scale my program without manual spreadsheet errors.",
-  "painful_workflow": "Manually collecting Discord usernames/user IDs from influencers, mapping them to affiliate codes, and reconciling sales data from e-commerce platforms against Discord activity logs. Or using a spreadsheet to record affiliate links, sales, and calculate commissions.",
-  "current_workaround": "Spreadsheets listing influencer names, Discord handles, affiliate links, and manual export/import of sales data. Manually calculating commissions and sending invoices via email or PayPal.",
-  "source_ids": [
-    "SIG-004",
-    "SIG-0004"
-  ],
-  "independent_sources": 2,
-  "source_type_count": 2,
-  "pain_score": 2,
-  "frequency_score": 2,
-  "urgency_score": 2,
-  "economic_impact_score": 2,
-  "operational_impact_score": 2,
-  "workaround_intensity_score": 2,
-  "willingness_to_pay_score": 1,
-  "distribution_score": 3,
-  "global_score": 4,
-  "mvp_complexity_score": 3,
-  "evidence_quality_score": 2,
   "competition_score": 2,
+  "queries_attempted": [
+    "affiliate management software for Discord",
+    "influencer affiliate tracking platform",
+    "Discord affiliate link tracking tool",
+    "commission tracking for influencer programs",
+    "influencer partnership management SaaS",
+    "affiliate marketing software for small teams",
+    "influencer referral tracking tool",
+    "Discord sales tracking bot",
+    "automated influencer payout reconciliation",
+    "influencer commission calculator tool",
+    "affiliate program management for indie hackers",
+    "influencer affiliate link generator",
+    "influencer marketing platform with commission tracking",
+    "open source affiliate tracking",
+    "influencer affiliate management spreadsheet alternative"
+  ],
   "competitors": [
     {
       "name": "Refersion",
@@ -141,39 +134,19 @@
     "Manual Discord bot + spreadsheet workflow",
     "Custom-built solution using APIs"
   ],
-  "verified_facts": [
-    "SIG-004 references tracking of influencer partnerships and affiliate commissions from Discord-based campaigns (source type: marketplace).",
-    "SIG-0004 references an indie-hacker-forum user manually tracking affiliate referrals and commissions in a spreadsheet.",
-    "Neither source contains quantified pain, cost, time loss, error rates, or any mention of paid solutions.",
-    "The workaround documented in the evidence (spreadsheet) is free and currently functioning."
-  ],
-  "inferences": [
-    "Manual spreadsheet reconciliation is error-prone at scale — a reasonable general inference, but no error is actually documented in the evidence.",
-    "The cluster's detailed painful workflow (Discord ID mapping, activity-log reconciliation, PayPal invoicing) is constructed beyond what SIG-004 and SIG-0004 actually state.",
-    "The affiliate-tracking software category is mature and crowded with low-cost incumbents (general market knowledge, not derived from the provided evidence); the evidence does not establish that these users are underserved by existing tools.",
-    "The Discord-native reconciliation angle is the only potentially differentiated wedge, and it rests on a single vague marketplace signal (SIG-004)."
-  ],
-  "assumptions": [
-    "That users find spreadsheets inadequate — contradicted, if anything, by SIG-0004 showing continued spreadsheet use.",
-    "That affiliate programs in this segment are large enough for errors and reconciliation time to carry meaningful dollar cost.",
-    "That existing affiliate tools fail to handle Discord-based attribution, and that users have tried and rejected them.",
-    "That SIG-004 and SIG-0004 represent two genuinely independent sources."
-  ],
-  "unknowns": [
-    "Frequency and volume of reconciliation work (number of affiliates, payout cycles, transaction counts).",
-    "Any dollar figure attached to errors, time spent, or revenue delayed.",
-    "Whether any user has paid for, or even evaluated, existing affiliate tracking software.",
-    "What 'marketplace' source type means for SIG-004 and whether it expresses demand, supply, or complaint.",
-    "Whether SRC-004 and SRC-0004 are truly independent given their near-identical ID pattern.",
-    "Size and reachability of the segment running Discord-native affiliate programs at painful scale."
-  ],
-  "rejection_reasons": [],
-  "judge_verdict": "",
-  "confidence": 0,
-  "final_score": 0,
-  "run_id": "RUN-4DF5D4F5",
-  "stage": "competition",
-  "status": "COMPETITION_CHECKED",
-  "created_at": "2026-08-12T15:55:07.213Z",
-  "updated_at": "2026-08-12T18:03:02.087Z"
+  "summary": "The competitive landscape for a Discord-native affiliate/influencer tracking tool is surprisingly sparse. While there are many affiliate management platforms (Refersion, Tapfiliate, Post Affiliate Pro), none have native Discord integration or are designed for the specific workflow of collecting Discord user IDs, mapping them to affiliate codes, and reconciling sales data from e-commerce platforms against Discord activity. The existing solutions are either enterprise-focused (Impact, Grin), platform-specific (UpPromote for Shopify), or require significant custom development to work with Discord. The current workaround is entirely manual (spreadsheets + Discord bots + manual reconciliation), which is painful and error-prone. No purpose-built solution exists that combines Discord-native tracking with affiliate commission management for small teams and indie hackers. The market is not commoditized; it's underserved for this specific use case.",
+  "research_evidence_urls": [
+    "https://www.refersion.com",
+    "https://www.postaffiliatepro.com",
+    "https://www.tapfiliate.com",
+    "https://www.firstpromoter.com",
+    "https://www.impact.com",
+    "https://www.grin.com",
+    "https://www.uppromote.com",
+    "https://mee6.xyz",
+    "https://affiliatewp.com",
+    "https://sheets.google.com",
+    "https://airtable.com",
+    "https://www.notion.so"
+  ]
 }
