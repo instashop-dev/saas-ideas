@@ -1,0 +1,17 @@
+{
+  "run_id": "RUN-278BF3F6",
+  "started_at": "2026-08-13T01:58:11.150Z",
+  "completed_at": null,
+  "trigger": "manual",
+  "models": {},
+  "candidate_counts": {
+    "signals": 0,
+    "clusters": 0,
+    "validated": 0,
+    "competition_survivors": 0,
+    "finalists": 0,
+    "approved": 0
+  },
+  "estimated_cost": null,
+  "status": "created"
+}
