@@ -2,16 +2,22 @@ import { randomUUID } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { RunManifest, RunStatus } from '../schemas/run-manifest.js';
+import type { ResearchPlan } from '../schemas/index.js';
 
 const RESEARCH_DIR = resolve(process.cwd(), 'research', 'runs');
 
-export function createRunManifest(trigger: 'manual' | 'scheduled' | 'retry'): RunManifest {
+export function createRunManifest(
+  trigger: 'manual' | 'scheduled' | 'retry',
+  keyword: string | null = null,
+): RunManifest {
   const runId = `RUN-${randomUUID().slice(0, 8).toUpperCase()}`;
   const manifest: RunManifest = {
     run_id: runId,
     started_at: new Date().toISOString(),
     completed_at: null,
     trigger,
+    keyword: keyword ?? null,
+    research_plan: null,
     models: {},
     candidate_counts: {
       signals: 0,
@@ -99,6 +105,14 @@ export function recordModelUsed(runId: string, stage: string, model: string): Ru
   const manifest = loadRunManifest(runId);
   if (!manifest) return null;
   manifest.models[stage] = model;
+  saveRunManifest(manifest);
+  return manifest;
+}
+
+export function setResearchPlan(runId: string, plan: ResearchPlan): RunManifest | null {
+  const manifest = loadRunManifest(runId);
+  if (!manifest) return null;
+  manifest.research_plan = plan;
   saveRunManifest(manifest);
   return manifest;
 }

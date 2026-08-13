@@ -6,7 +6,7 @@ describe('loadConfig', () => {
     resetConfigCache();
     const config = loadConfig();
     expect(config.models.pain_miner.primary).toBeTruthy();
-    expect(config.research.ecosystems.length).toBeGreaterThan(0);
+    expect(config.research.max_signals_per_worker).toBeGreaterThan(0);
     expect(config.gates.min_pain_score).toBeGreaterThan(0);
     expect(config.llm.temperature).toBeDefined();
   });

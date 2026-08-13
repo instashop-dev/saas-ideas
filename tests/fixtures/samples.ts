@@ -104,7 +104,6 @@ export const sampleConfig = {
     judge: { primary: 'test-model', fallbacks: [] },
   },
   research: {
-    ecosystems: ['test-ecosystem'],
     max_signals_per_worker: 10,
     max_clusters_per_run: 5,
     max_candidates_after_validation: 3,

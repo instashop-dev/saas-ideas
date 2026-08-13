@@ -228,7 +228,24 @@ const mockData = vi.hoisted(() => {
     recommended_next_step: 'Gather more independent evidence.',
   };
 
+  // The research_planner's chosen sources (10 sources → upwork fails → 9 succeed × 2 signals).
+  const plan = {
+    sources: [
+      { ecosystem: 'github-issues', research_questions: ['q1'] },
+      { ecosystem: 'reddit', research_questions: ['q1'] },
+      { ecosystem: 'stack-exchange', research_questions: ['q1'] },
+      { ecosystem: 'indie-hackers', research_questions: ['q1'] },
+      { ecosystem: 'hacker-news', research_questions: ['q1'] },
+      { ecosystem: 'product-hunt-reviews', research_questions: ['q1'] },
+      { ecosystem: 'upwork-job-postings', research_questions: ['q1'] },
+      { ecosystem: 'g2-capterra-reviews', research_questions: ['q1'] },
+      { ecosystem: 'dev-to', research_questions: ['q1'] },
+      { ecosystem: 'discord-forums', research_questions: ['q1'] },
+    ],
+  };
+
   return {
+    plan,
     evidence,
     signals,
     clusterA,
@@ -248,7 +265,9 @@ vi.mock('../../src/openrouter/provider.js', () => ({
     const prompt = String(options?.userPrompt ?? '');
     let content: unknown;
 
-    if (prompt.includes('Ecosystem: upwork-job-postings')) {
+    if (prompt.includes('PLAN RESEARCH SOURCES')) {
+      content = mockData.plan;
+    } else if (prompt.includes('Ecosystem: upwork-job-postings')) {
       // Simulate an upstream provider failure for one ecosystem to test graceful degradation.
       throw new Error('simulated upstream research failure');
     } else if (prompt.includes('Search Context:')) {

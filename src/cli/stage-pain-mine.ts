@@ -2,7 +2,7 @@
 /**
  * Pain Mining Stage CLI
  *
- * Runs pain miners across configured ecosystems and saves raw signals.
+ * Runs pain miners across planner-selected sources and saves raw signals.
  * Invoked by GitHub Actions workflow: pain-mining.yml
  */
 
@@ -15,9 +15,38 @@ import {
   updateRunStatus,
   recordModelUsed,
   setCandidateCount,
+  setResearchPlan,
 } from '../state/run-manifest.js';
 import { runPainMiner } from '../agents/pain-miner.js';
+import { runResearchPlanner, resolvePlan } from '../agents/research-planner.js';
 import { mapWithConcurrency } from '../lib/concurrency.js';
+
+/**
+ * Build the pain-miner context string. When the planner supplied per-source
+ * questions, the prompt is guided by them (plus the keyword when present);
+ * otherwise it falls back to the generic context.
+ */
+function composeContext(
+  keyword: string | null,
+  ecosystem: string,
+  researchQuestions: string[],
+  maxSignals: number,
+): string {
+  const generic = `Search for recurring operational pain in the ${ecosystem} ecosystem. ` +
+    `Look for manual workflows, reconciliation tasks, integration gaps, ` +
+    `and compliance operations. Focus on signals where people are actively ` +
+    `complaining about or spending money to solve a problem. ` +
+    `Return between 3 and ${Math.min(10, maxSignals)} high-quality signals with ` +
+    `full evidence for each — prefer depth and verified detail over volume.`;
+
+  if (researchQuestions.length === 0) {
+    return generic;
+  }
+
+  const questions = researchQuestions.map((q, i) => `${i + 1}. ${q}`).join('\n');
+  const keywordLine = keyword ? `Keyword: ${keyword}\n\n` : '';
+  return `${keywordLine}Research questions for ${ecosystem}:\n${questions}\n\n${generic}`;
+}
 
 async function main(): Promise<void> {
   const runId = process.argv[2] || process.env['RUN_ID'];
@@ -39,10 +68,42 @@ async function main(): Promise<void> {
   updateRunStatus(runId, 'pain_mining');
 
   const config = loadConfig();
-  const ecosystems = config.research.ecosystems;
   const maxSignals = config.research.max_signals_per_worker;
 
-  console.log(`Mining ${ecosystems.length} ecosystems (max ${maxSignals} signals/worker)...\n`);
+  // Sources are decided in real time by the research_planner (keyword-guided,
+  // or broad discovery when no keyword is given). The resolved plan is persisted
+  // so Recovery re-runs reuse the same sources deterministically.
+  const keyword = manifest.keyword ?? null;
+  if (keyword) {
+    console.log(`Keyword: ${keyword}`);
+  }
+
+  let plan = manifest.research_plan;
+  if (!plan || plan.sources.length === 0) {
+    console.log('  Planning sources + questions via research_planner...');
+    const planResult = await runResearchPlanner(keyword);
+    const resolved = resolvePlan(planResult.data);
+    if (resolved) {
+      plan = { sources: resolved };
+      setResearchPlan(runId, plan);
+      recordModelUsed(runId, 'research_planner', planResult.metadata.model);
+    }
+  }
+
+  const sources: { ecosystem: string; research_questions: string[] }[] =
+    plan && plan.sources.length > 0
+      ? plan.sources.map((s) => ({
+          ecosystem: s.ecosystem,
+          research_questions: s.research_questions,
+        }))
+      : [];
+
+  if (sources.length === 0) {
+    console.error('Research planner produced no usable sources.');
+    process.exit(1);
+  }
+
+  console.log(`Mining ${sources.length} ecosystems (max ${maxSignals} signals/worker)...\n`);
 
   const rawSignalsDir = resolve(process.cwd(), 'research', 'raw-signals', runId);
   if (!existsSync(rawSignalsDir)) {
@@ -53,19 +114,15 @@ async function main(): Promise<void> {
   setCandidateCount(runId, 'signals', 0);
 
   const results = await mapWithConcurrency(
-    ecosystems,
+    sources,
     config.parallelism.pain_miners,
-    async (ecosystem) => {
+    async (source) => {
+      const ecosystem = source.ecosystem;
       console.log(`  Mining: ${ecosystem}...`);
       try {
         const result = await runPainMiner(
           ecosystem,
-          `Search for recurring operational pain in the ${ecosystem} ecosystem. ` +
-            `Look for manual workflows, reconciliation tasks, integration gaps, ` +
-            `and compliance operations. Focus on signals where people are actively ` +
-            `complaining about or spending money to solve a problem. ` +
-            `Return between 3 and ${Math.min(10, maxSignals)} high-quality signals with ` +
-            `full evidence for each — prefer depth and verified detail over volume.`,
+          composeContext(keyword, ecosystem, source.research_questions, maxSignals),
         );
 
         const ecoDir = resolve(rawSignalsDir, ecosystem.replace(/[^a-zA-Z0-9-]/g, '_'));

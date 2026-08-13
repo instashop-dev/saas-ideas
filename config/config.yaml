@@ -1,69 +1,66 @@
 models:
-  # Pain mining / web research → Kimi K3
+  # Pain mining / web research → DeepSeek V4 Flash (fast + reliable)
   pain_miner:
-    primary: 'moonshotai/kimi-k3'
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
-      - 'deepseek/deepseek-v4-flash'
+      - 'moonshotai/kimi-k3'
       - 'qwen/qwen3.7-flash'
 
-  # Clustering → Kimi K3
-  clusterer:
-    primary: 'moonshotai/kimi-k3'
+  # Research planner → keyword → source + per-source question selection
+  research_planner:
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
-      - 'deepseek/deepseek-v4-pro'
-      - 'deepseek/deepseek-v4-flash'
+      - 'moonshotai/kimi-k3'
 
-  # Pain validation → Kimi K3, fallback DeepSeek V4 Pro
-  validator:
-    primary: 'moonshotai/kimi-k3'
+  # Clustering
+  clusterer:
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
+      - 'moonshotai/kimi-k3'
+      - 'deepseek/deepseek-v4-pro'
+
+  # Pain validation
+  validator:
+    primary: 'deepseek/deepseek-v4-flash'
+    fallbacks:
+      - 'moonshotai/kimi-k3'
       - 'deepseek/deepseek-v4-pro'
       - 'z-ai/glm-5.2'
 
-  # Competition research → Kimi K3
+  # Competition research
   competition:
-    primary: 'moonshotai/kimi-k3'
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
+      - 'moonshotai/kimi-k3'
       - 'deepseek/deepseek-v4-pro'
-      - 'deepseek/deepseek-v4-flash'
 
-  # Debate: different models = useful diversity
-  # Bull → Kimi K3
+  # Debate
   bull:
-    primary: 'moonshotai/kimi-k3'
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
+      - 'moonshotai/kimi-k3'
       - 'deepseek/deepseek-v4-pro'
 
-  # Bear → DeepSeek V4 Pro (adversarial perspective from a different model family)
   bear:
-    primary: 'deepseek/deepseek-v4-pro'
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
       - 'moonshotai/kimi-k3'
+      - 'deepseek/deepseek-v4-pro'
 
-  # Customer → GLM 5.2 (buyer perspective from a third model family)
   customer:
-    primary: 'z-ai/glm-5.2'
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
+      - 'z-ai/glm-5.2'
       - 'moonshotai/kimi-k3'
 
-  # Final judge → Kimi K3
+  # Final judge
   judge:
-    primary: 'moonshotai/kimi-k3'
+    primary: 'deepseek/deepseek-v4-flash'
     fallbacks:
+      - 'moonshotai/kimi-k3'
       - 'deepseek/deepseek-v4-pro'
 
 research:
-  ecosystems:
-    - github-issues
-    - reddit
-    - stack-exchange
-    - indie-hackers
-    - hacker-news
-    - product-hunt-reviews
-    - upwork-job-postings
-    - g2-capterra-reviews
-    - dev-to
-    - discord-forums
   max_signals_per_worker: 30
   max_clusters_per_run: 50
   max_candidates_after_validation: 20

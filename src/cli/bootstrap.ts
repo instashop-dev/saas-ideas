@@ -34,7 +34,6 @@ function main(): void {
     const config = loadConfig();
     console.log(`  ✓ config/config.yaml loaded successfully`);
     console.log(`  ✓ Models configured: ${Object.keys(config.models).length} agents`);
-    console.log(`  ✓ Ecosystems: ${config.research.ecosystems.length}`);
     console.log(`  ✓ Gates: ${Object.keys(config.gates).length} rules`);
   } catch (err) {
     console.error(`  ✗ Config error: ${err}`);

@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { ResearchPlanSchema } from './index.js';
 
 export const RunStatusSchema = z.enum([
   'created',
@@ -27,6 +28,8 @@ export const RunManifestSchema = z.object({
   started_at: z.string(),
   completed_at: z.string().nullable(),
   trigger: z.enum(['manual', 'scheduled', 'retry']),
+  keyword: z.string().nullable().default(null),
+  research_plan: ResearchPlanSchema.nullable().default(null),
   config_snapshot: z.record(z.unknown()).optional(),
   models: z.record(z.string()),
   candidate_counts: RunCandidateCountsSchema,

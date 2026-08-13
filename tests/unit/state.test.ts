@@ -6,6 +6,7 @@ import {
   loadRunManifest,
   updateRunStatus,
   incrementCandidateCount,
+  setResearchPlan,
   listRunManifests,
 } from '../../src/state/run-manifest.js';
 
@@ -76,6 +77,26 @@ describe('run-manifest state', () => {
     incrementCandidateCount(manifest.run_id, 'signals', 5);
     const loaded2 = loadRunManifest(manifest.run_id);
     expect(loaded2!.candidate_counts.signals).toBe(15);
+  });
+
+  it('stores keyword and research plan on the manifest', () => {
+    const manifest = createRunManifest('manual', 'stripe reconciliation');
+    createdRunIds.push(manifest.run_id);
+    expect(manifest.keyword).toBe('stripe reconciliation');
+    expect(manifest.research_plan).toBeNull();
+
+    const plan = { sources: [{ ecosystem: 'reddit', research_questions: ['q1'] }] };
+    setResearchPlan(manifest.run_id, plan);
+
+    const loaded = loadRunManifest(manifest.run_id);
+    expect(loaded!.keyword).toBe('stripe reconciliation');
+    expect(loaded!.research_plan).toEqual(plan);
+  });
+
+  it('defaults keyword to null when omitted', () => {
+    const manifest = createTestManifest();
+    expect(manifest.keyword).toBeNull();
+    expect(manifest.research_plan).toBeNull();
   });
 
   it('lists all run manifests', () => {

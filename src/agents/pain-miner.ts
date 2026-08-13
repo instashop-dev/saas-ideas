@@ -86,7 +86,7 @@ export async function runPainMiner(
 
 Search Context: ${context}
 
-Find real, recurring operational pain signals in this ecosystem. Focus on manual workflows, spreadsheets, reconciliation, integration gaps, and repetitive operational tasks.
+Find real, recurring operational pain signals in this ecosystem. Focus on manual workflows, spreadsheets, reconciliation, integration gaps, and repetitive operational tasks. Restrict to pains/issues from the last 6 months only.
 
 Return an array of raw signals with associated evidence items. Each signal must have at least one evidence item.`;
 
@@ -113,7 +113,7 @@ export async function runPainMinerWithData(
 SEARCH RESULTS:
 ${searchResults}
 
-Find real, recurring operational pain signals. Return an array of raw signals with associated evidence items.`;
+Find real, recurring operational pain signals. Restrict to pains/issues from the last 6 months only. Return an array of raw signals with associated evidence items.`;
 
   const result = await callAgent(
     'pain_miner',

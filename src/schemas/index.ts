@@ -214,6 +214,15 @@ export const OpportunitySchema = z.object({
   product_concept: ProductConceptSchema.optional(),
 });
 
+export const ResearchPlanSourceSchema = z.object({
+  ecosystem: z.string().min(1),
+  research_questions: z.array(z.string().min(1)).min(1),
+});
+
+export const ResearchPlanSchema = z.object({
+  sources: z.array(ResearchPlanSourceSchema),
+});
+
 export type SourceType = z.infer<typeof SourceTypeSchema>;
 export type EvidenceItem = z.infer<typeof EvidenceItemSchema>;
 export type EvidenceBundle = z.infer<typeof EvidenceBundleSchema>;
@@ -230,3 +239,5 @@ export type Stage = z.infer<typeof StageSchema>;
 export type ProductConcept = z.infer<typeof ProductConceptSchema>;
 export type Opportunity = z.infer<typeof OpportunitySchema>;
 export type Verdict = z.infer<typeof VerdictSchema>;
+export type ResearchPlanSource = z.infer<typeof ResearchPlanSourceSchema>;
+export type ResearchPlan = z.infer<typeof ResearchPlanSchema>;

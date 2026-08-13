@@ -11,6 +11,10 @@ on:
           - manual
           - scheduled
           - retry
+      keyword:
+        description: 'Keyword to focus research on (optional)'
+        required: false
+        type: string
   schedule:
     - cron: '0 0 * * 0'  # Weekly on Sunday
 
@@ -43,7 +47,8 @@ jobs:
         id: create-run
         run: |
           TRIGGER="${{ inputs.trigger || 'scheduled' }}"
-          OUTPUT=$(npx tsx src/cli/discovery.ts "$TRIGGER")
+          KEYWORD="${{ inputs.keyword || '' }}"
+          OUTPUT=$(npx tsx src/cli/discovery.ts "$TRIGGER" "$KEYWORD")
           echo "$OUTPUT"
 
           RUN_ID=$(echo "$OUTPUT" | grep 'RUN_ID=' | cut -d'=' -f2)
@@ -63,3 +68,4 @@ jobs:
           echo "## Discovery Run Created" >> $GITHUB_STEP_SUMMARY
           echo "**Run ID**: $RUN_ID" >> $GITHUB_STEP_SUMMARY
           echo "**Trigger**: ${{ inputs.trigger || 'scheduled' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Keyword**: ${{ inputs.keyword || '(none — broad discovery)' }}" >> $GITHUB_STEP_SUMMARY

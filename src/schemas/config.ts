@@ -7,6 +7,7 @@ export const ModelConfigSchema = z.object({
 
 export const ModelsConfigSchema = z.object({
   pain_miner: ModelConfigSchema,
+  research_planner: ModelConfigSchema,
   clusterer: ModelConfigSchema,
   validator: ModelConfigSchema,
   competition: ModelConfigSchema,
@@ -17,20 +18,6 @@ export const ModelsConfigSchema = z.object({
 });
 
 export const ResearchConfigSchema = z.object({
-  ecosystems: z
-    .array(z.string())
-    .default([
-      'github-issues',
-      'reddit',
-      'stack-exchange',
-      'indie-hackers',
-      'hacker-news',
-      'product-hunt-reviews',
-      'upwork-job-postings',
-      'g2-capterra-reviews',
-      'dev-to',
-      'discord-forums',
-    ]),
   max_signals_per_worker: z.number().int().min(1).default(30),
   max_clusters_per_run: z.number().int().min(1).default(50),
   max_candidates_after_validation: z.number().int().min(1).default(20),

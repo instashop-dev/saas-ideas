@@ -75,6 +75,7 @@ created → pain_mining → clustering → validating → competition_checking �
 /
 ├── agents/              # Agent system prompts (Markdown)
 │   ├── pain_miner.md
+│   ├── research_planner.md
 │   ├── clusterer.md
 │   ├── validator.md
 │   ├── competition.md
@@ -163,7 +164,7 @@ npm run bootstrap
 Expected output:
 ```
 ✓ config/config.yaml loaded successfully
-✓ Models configured: 8 agents
+✓ Models configured: 9 agents
 ✓ Required directories created
 ✓ OPENROUTER_API_KEY is set
 ✓ Repository is ready for discovery runs.
@@ -174,7 +175,7 @@ Expected output:
 All thresholds are in `config/config.yaml`:
 
 - **Models**: Primary and fallback models per agent role
-- **Research**: Ecosystems, signal counts, candidate limits
+- **Research**: Signal counts, candidate limits
 - **Gates**: Minimum scores for each dimension
 - **LLM**: Temperature, timeout, retry settings
 - **Budget**: Max cost per run
@@ -192,11 +193,12 @@ Creates labels, validates config, checks secrets, creates directories. Safe to r
 
 ### Manual Discovery
 
-Via GitHub Actions: **Actions → Discovery → Run workflow**
+Via GitHub Actions: **Actions → Discovery → Run workflow** (optionally set the **Keyword** input to focus the run).
 
 Or locally:
 ```bash
-npm run discovery
+npm run discovery                              # broad discovery (no keyword)
+npm run discovery manual "stripe reconciliation"  # keyword-guided discovery
 ```
 
 ### Scheduled Discovery
@@ -231,17 +233,14 @@ models:
 
 Supported models include any [OpenRouter model](https://openrouter.ai/models).
 
-## Adding a Research Ecosystem
+## Keyword-Guided Research
 
-Edit `config/config.yaml`:
+Sources are chosen in real time by the `research_planner` agent — there is no hardcoded ecosystem list. Pass a keyword when starting a discovery run (the `keyword` workflow input, `npm run discovery manual "keyword"`, or the `KEYWORD` env var). The planner:
 
-```yaml
-research:
-  ecosystems:
-    - github-issues
-    - reddit
-    - your-new-ecosystem
-```
+1. Decides which online sources (communities, forums, Q&A sites, job boards, review sites, code hosts) are relevant to the keyword, and
+2. Writes focused research questions **per source**.
+
+Pain mining then searches only those sources, guided by their questions. Without a keyword, the planner performs broad operational pain discovery instead. The resolved plan is stored on the run manifest (reused on recovery re-runs).
 
 ## Cost Controls
 

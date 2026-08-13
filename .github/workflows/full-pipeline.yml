@@ -2,6 +2,11 @@ name: Full Pipeline
 
 on:
   workflow_dispatch:
+    inputs:
+      keyword:
+        description: 'Keyword to focus research on (optional)'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -31,7 +36,7 @@ jobs:
       - name: Create Discovery Run
         id: create-run
         run: |
-          OUTPUT=$(npx tsx src/cli/discovery.ts manual)
+          OUTPUT=$(npx tsx src/cli/discovery.ts manual "${{ inputs.keyword }}")
           RUN_ID=$(echo "$OUTPUT" | grep 'RUN_ID=' | cut -d'=' -f2)
           echo "RUN_ID=$RUN_ID" >> $GITHUB_OUTPUT
           echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
