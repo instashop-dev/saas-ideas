@@ -1,0 +1,100 @@
+{
+  "competition_score": 2,
+  "queries_attempted": [
+    "automated crm import from spreadsheet email web forms",
+    "crm data import automation tool",
+    "salesforce auto import from email attachment",
+    "dedup crm import tool",
+    "automate copy paste from excel to crm",
+    "hubspot import automation from web forms and emails",
+    "sales ops data loading tool",
+    "open source crm import script",
+    "freelancer data entry crm",
+    "zapier crm dedup alternative"
+  ],
+  "competitors": [
+    {
+      "name": "Zapier",
+      "url": "https://zapier.com",
+      "classification": "PARTIAL",
+      "notes": "General automation platform; can connect email, spreadsheets, web forms to CRM but requires manual mapping, no built-in dedup or intelligent merging; complex for non-technical sales ops managers; not purpose-built for CRM data import workflow.",
+      "feature_overlap": "Triggers from new rows in Google Sheets, email attachments, form submissions; actions to create/update CRM records. Lacks dedup and conflict resolution without advanced steps.",
+      "pricing": "Free tier with limits; paid plans $19.99/mo and up",
+      "market_positioning": "No-code automation for business users"
+    },
+    {
+      "name": "Data Loader / Data Loader.io",
+      "url": "https://dataloader.io",
+      "classification": "PARTIAL",
+      "notes": "Focused on bulk data import via CSV/Excel; does not handle email attachments or web forms natively; requires manual file upload or API triggers; no automated ingestion from arbitrary external sources; dedup is basic.",
+      "feature_overlap": "CSV import, field mapping, upsert/update. Lacks real-time automation from emails and web forms.",
+      "pricing": "Free limited; paid from $50/mo",
+      "market_positioning": "Salesforce import tool"
+    },
+    {
+      "name": "Parseur",
+      "url": "https://parseur.com",
+      "classification": "PARTIAL",
+      "notes": "Specifically extracts data from email attachments and bodies and sends to CRM; supports spreadsheets, PDFs, etc. But does not handle direct spreadsheet uploads or web form submissions; no native web form capture.",
+      "feature_overlap": "Email parsing to CRM (create/update records). Missing web forms and direct spreadsheet sync.",
+      "pricing": "Free tier; paid $14/mo and up",
+      "market_positioning": "Mail parser for automation"
+    },
+    {
+      "name": "Salesforce Data Import Wizard (Native)",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.data_import_wizard.htm",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Built into Salesforce, manual process (export/clean/import); no automation for new external data, no web form or email handling; requires user to initiate each import.",
+      "feature_overlap": "CSV/Excel import, dedup options. No automation, no real-time triggers from external sources.",
+      "pricing": "Included in Salesforce license",
+      "market_positioning": "CRM admin manual tool"
+    },
+    {
+      "name": "DemandTools (by Validity)",
+      "url": "https://www.validity.com/demandtools",
+      "classification": "DIRECT",
+      "notes": "Enterprise-class for Salesforce; advanced dedup, merge, data import from spreadsheets; but expensive, requires admin skill, no email/web form ingestion; primarily a data quality suite, not a lightweight import automation tool.",
+      "feature_overlap": "High-quality dedup, field mapping, error handling. Gaps: real-time email/form capture; pricing and complexity too high for many sales ops teams.",
+      "pricing": "Enterprise quoted (likely $500+/mo)",
+      "market_positioning": "Salesforce data quality"
+    },
+    {
+      "name": "Airtable",
+      "url": "https://airtable.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Database/spreadsheet hybrid that can replace Excel staging; has automations for web forms, email-to-table, and syncs to CRM via Zapier or native sync. However, it is not a CRM import tool; it's an intermediate staging platform that still requires additional steps to push to CRM.",
+      "feature_overlap": "Web form, email import, spreadsheet sync. Not a direct CRM import solution; adds another tool and complexity.",
+      "pricing": "Free tier; paid $20/mo and up",
+      "market_positioning": "Flexible database for work management"
+    },
+    {
+      "name": "Freelancers (Upwork / Fiverr)",
+      "url": "https://www.upwork.com",
+      "classification": "SERVICE",
+      "notes": "Human manual data entry from spreadsheets/emails into CRM; still error-prone and not automated; not scalable.",
+      "feature_overlap": "Accomplishes the same outcome manually. Not a software competitor but a workaround substitute.",
+      "pricing": "Variable per row/project",
+      "market_positioning": "Low-cost manual labor"
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Excel + Salesforce manual import",
+      "notes": "Current workaround: export data to Excel, clean, dedup, import via Data Import Wizard. Time-consuming, error-prone, not automated."
+    },
+    {
+      "name": "Custom Python/API scripts",
+      "notes": "Sales ops teams could hire developers to build scripts to parse emails, handle spreadsheets, and push to CRM via API. Not a product, requires maintenance."
+    }
+  ],
+  "summary": "The competitive landscape for an automated, all-in-one CRM import tool that handles multiple external sources (spreadsheets, emails, web forms) with intelligent dedup and update is fragmented. Most existing solutions cover only one source (e.g., email parsing or spreadsheet bulk import) or are too generic (Zapier) or too enterprise (DemandTools). The market lacks a purpose-built, user-friendly product specifically targeting Sales Operations Managers who need to eliminate manual copy-paste from diverse inputs directly into their CRM. Many weak/niche alternatives exist, but each has meaningful gaps in scope, automation, or ease of use, making the opportunity viable if executed well.",
+  "research_evidence_urls": [
+    "https://zapier.com",
+    "https://dataloader.io",
+    "https://parseur.com",
+    "https://help.salesforce.com/s/articleView?id=sf.data_import_wizard.htm",
+    "https://www.validity.com/demandtools",
+    "https://airtable.com",
+    "https://www.upwork.com"
+  ]
+}

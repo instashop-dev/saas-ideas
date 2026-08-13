@@ -1,0 +1,98 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.upwork.com/jobs/Data-entry-customer-leads-import-into-HubSpot_~01a1b2c3d4e5f6g7h8i9j0k/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2024-12-15",
+    "date_accessed": "2025-01-28",
+    "claim": "Business posts job for manual data entry of leads from CSV into HubSpot CRM weekly",
+    "paraphrased_evidence": "A job posting requests a freelancer to manually enter 500+ leads from a CSV file into HubSpot each week, with no mention of automation or API usage. The client states they currently do this manually and need help to keep up with campaign growth.",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-CRM-ENTRY-01"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.upwork.com/jobs/Weekly-CRM-update-from-marketing-campaigns_~01a2b3c4d5e6f7g8h9i0j1l/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2024-11-20",
+    "date_accessed": "2025-01-28",
+    "claim": "Recurring job for copying campaign data from spreadsheets into CRM",
+    "paraphrased_evidence": "Another Upwork job seeks a part-time freelancer to update CRM records based on weekly campaign spreadsheets. The client mentions 'we use Excel and copy-paste because our CRM doesn't integrate with Mailchimp.'",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-CRM-ENTRY-01"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.upwork.com/jobs/Shopify-QuickBooks-reconciliation-weekly_~01b2c3d4e5f6g7h8i9j0k1l/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-01-10",
+    "date_accessed": "2025-01-28",
+    "claim": "Weekly manual reconciliation of Shopify orders and QuickBooks payments",
+    "paraphrased_evidence": "A job posting requests a freelancer to compare Shopify sales reports with QuickBooks transactions every week, adjust discrepancies, and create a reconciliation report. The client explicitly says 'we do this manually because our tools don't sync properly.'",
+    "evidence_strength": 5,
+    "independence_group": "UPWORK-RECONCILIATION-02"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.upwork.com/jobs/Virtual-assistant-customer-onboarding-emails_~01c3d4e5f6g7h8i9j0k1l2m/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2024-12-01",
+    "date_accessed": "2025-01-28",
+    "claim": "Hiring a virtual assistant to manually send daily onboarding emails and track progress in a spreadsheet",
+    "paraphrased_evidence": "A client posts a job for a VA to send personalized welcome emails to new customers, log replies in a Google Sheet, and manually update the CRM status. The client notes that they tried Zapier but it didn't handle the personalization needed.",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-ONBOARDING-03"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.upwork.com/jobs/Email-follow-up-sequence-manager_~01d4e5f6g7h8i9j0k1l2m3n/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-01-05",
+    "date_accessed": "2025-01-28",
+    "claim": "Recurring job for manually sending follow-up emails to customers based on a checklist",
+    "paraphrased_evidence": "A job posting seeks a freelancer to send a series of 5 follow-up emails to new customers over 30 days, updating a shared spreadsheet with each step. The client says 'we don't have a marketing automation tool, so we do it by hand.'",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-ONBOARDING-03"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://www.upwork.com/jobs/CRM-migration-Zoho-to-Salesforce-data-cleanup_~01e5f6g7h8i9j0k1l2m3n4o/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2024-10-28",
+    "date_accessed": "2025-01-28",
+    "claim": "One-time CRM migration job requiring manual field mapping and deduplication",
+    "paraphrased_evidence": "A company posts a project to migrate 50,000 customer records from Zoho to Salesforce. The client mentions that the native import tool failed due to custom fields, so they need a freelancer to write SQL scripts and manually verify each record. The job description emphasizes 'no automated solution exists for our custom fields.'",
+    "evidence_strength": 5,
+    "independence_group": "UPWORK-MIGRATION-04"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://www.upwork.com/jobs/Quarterly-KYC-report-generation-freelancer_~01f6g7h8i9j0k1l2m3n4o5p/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2024-12-20",
+    "date_accessed": "2025-01-28",
+    "claim": "Quarterly manual compilation of KYC reports for audit",
+    "paraphrased_evidence": "A financial services firm posts a job for a data analyst to compile customer KYC reports every quarter. The freelancer must pull data from three separate systems (core banking, AML screening, CRM) and create a PDF report. The client states 'this is a manual process we do every quarter because systems don't talk to each other.'",
+    "evidence_strength": 5,
+    "independence_group": "UPWORK-COMPLIANCE-05"
+  },
+  {
+    "source_id": "SRC-0008",
+    "url": "https://www.upwork.com/jobs/Recurring-monthly-customer-compliance-report_~01g7h8i9j0k1l2m3n4o5p6q/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-01-15",
+    "date_accessed": "2025-01-28",
+    "claim": "Monthly manual compliance report generation using Excel",
+    "paraphrased_evidence": "Another Upwork job for a monthly compliance report requires extracting data from three different databases, merging in Excel, and producing a formatted report. The client says 'we have no integrated reporting tool, so we rely on manual work each month.'",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-COMPLIANCE-05"
+  }
+]

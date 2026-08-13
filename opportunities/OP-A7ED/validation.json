@@ -1,0 +1,49 @@
+{
+  "scores": {
+    "pain_intensity": 4,
+    "frequency": 3,
+    "urgency": 4,
+    "economic_impact": 3,
+    "operational_impact": 3,
+    "workaround_intensity": 4,
+    "willingness_to_pay": 4,
+    "global_applicability": 5,
+    "customer_accessibility": 5,
+    "evidence_quality": 3
+  },
+  "reasoning": {
+    "pain_intensity": "Evidence E4 describes data loss, corrupt records, and customer service disruption during migration, indicating severe pain. However, the ongoing pain of maintaining custom scripts (E1, E2) is less severe, suggesting a 4 rather than 5.",
+    "frequency": "E2 mentions 'constant breakage' when APIs update, but no specific cadence is given. API updates typically occur quarterly or monthly; CRM admins may not face this daily. Frequency is moderate, scoring 3.",
+    "urgency": "E4 shows 'weeks of delays' and customer service disruption, which implies high urgency. However, the problem is not described as blocking core operations daily, so a 4 is appropriate.",
+    "economic_impact": "E2 states 'costly maintenance' and E4 mentions delays and disruption, but no dollar figures or quantifiable losses are provided. The economic impact is inferred to be moderate (3), not extreme.",
+    "operational_impact": "E1 indicates developer time spent on scripts, and E4 mentions customer service disruption, but the entire team is not blocked. The disruption is partial, scoring 3.",
+    "workaround_intensity": "E1, E2, and E3 show that the current workaround involves custom scripts, hiring freelancers, and manual migration—all requiring significant effort and technical skill. This is a strong workaround, scoring 4.",
+    "willingness_to_pay": "The cluster indicates that companies are already hiring consultants and dedicating developer time (E1, E3), which implies existing spending. There is no evidence of deep-pocketed demand, but a willingness to pay is present, scoring 4.",
+    "global_applicability": "CRMs like Salesforce and Zoho are used globally, and integration challenges are universal. No evidence restricts this to a single region, so a score of 5 is justified.",
+    "customer_accessibility": "CRM administrators are a well-defined buyer persona with established online communities, job titles, and direct outreach channels (LinkedIn, forums). Accessibility is high, scoring 5.",
+    "evidence_quality": "The cluster relies on 3 independent sources and 2 source types, but the evidence is presented as summary statements without direct quotes, granular data, or verification. The quality is moderate, scoring 3."
+  },
+  "verified_facts": [
+    "CRM administrators build and maintain custom scripts to compensate for missing integrations (E1).",
+    "API changes cause breakage of those scripts (E2).",
+    "Manual data migration between Zoho and Salesforce requires field mapping and deduplication (E3).",
+    "Data loss, corrupt records, and duplicate contacts occurred during migration (E4)."
+  ],
+  "inferences": [
+    "The pain is frequent enough to cause ongoing maintenance burden.",
+    "The cost of custom development and breakage exceeds acceptable thresholds for some companies.",
+    "Off-the-shelf integration tools may not address all required customizations."
+  ],
+  "assumptions": [
+    "The reported pain is representative of a significant segment of CRM users.",
+    "Companies are willing to pay for a dedicated solution beyond existing iPaaS offerings.",
+    "The problem is not already solved by no-code integration platforms for most users."
+  ],
+  "unknowns": [
+    "Actual market size and how many CRM admins face this exact pain.",
+    "Specific dollar amounts spent on current workarounds.",
+    "Prevalence of competing solutions (Zapier, Workato, native connectors) that already address these needs.",
+    "Whether the migration pain is a one-time event versus an ongoing operational issue."
+  ],
+  "overall_assessment": "This cluster highlights a genuine pain point for CRM administrators who must bridge gaps between systems with custom scripts. The problem is painful, urgent during migrations, and has a high workaround intensity. However, the evidence lacks quantification of economic impact and frequency, and the market already has many integration platforms that could address some of these needs. The burning need threshold is not fully met because the pain is not universally daily, the economic impact is unverified, and the solution space is crowded. The cluster suggests a possible niche opportunity for complex, unsupported integrations, but as a skeptic, I see insufficient evidence of a 5/5 burning need that cannot be solved by existing tools or better API management practices."
+}

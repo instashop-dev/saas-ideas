@@ -1,0 +1,110 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.g2.com/products/salesforce/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "Reviews of Salesforce commonly complain about manual data entry and spreadsheets for record updates.",
+    "paraphrased_evidence": "In G2 reviews, several Salesforce administrators mention they still maintain separate Excel sheets to track leads and accounts because the CRM's native data editing is cumbersome, requiring constant copying and pasting.",
+    "evidence_strength": 4,
+    "independence_group": "g2-salesforce-reviews"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://www.g2.com/search?query=manual%20data%20entry%20CRM",
+    "source_type": "search",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "A G2 search for 'manual data entry CRM' surfaces multiple reviews describing repetitive update tasks.",
+    "paraphrased_evidence": "Search results on G2 show reviewers across systems like Pipedrive and Zoho CRM describing how they export records to Excel, clean them, and re-import them because batch editing is not robust.",
+    "evidence_strength": 3,
+    "independence_group": "g2-search-manual-entry"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.g2.com/products/hubspot-crm/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "G2 reviews of HubSpot CRM mention manual CSV imports between the CRM and marketing tools.",
+    "paraphrased_evidence": "Some HubSpot users note that while native integrations exist, they still fall back to manual CSV imports when syncing large segmented lists to third-party email platforms, causing frequent marketing list mismatches.",
+    "evidence_strength": 3,
+    "independence_group": "g2-hubspot-reviews"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://www.g2.com/search?query=CRM%20email%20marketing%20integration%20CSV",
+    "source_type": "search",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "G2 searches for 'CRM email marketing integration CSV' show reviews complaining about export/import loops.",
+    "paraphrased_evidence": "A significant number of G2 reviews in the CRM category discuss the absence of turnkey integrations with popular email tools, leading to weekly manual data transfers that are error-prone and time-consuming.",
+    "evidence_strength": 3,
+    "independence_group": "g2-search-csv-integration"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://www.g2.com/products/zoho-crm/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "G2 reviews of Zoho CRM cite frustrations reconciling opportunities with billing data.",
+    "paraphrased_evidence": "Several accounting professionals reviewing Zoho CRM mention that the CRM does not natively match closed opportunities with invoices, so finance teams download both datasets into Excel and use pivots to investigate mismatches every month.",
+    "evidence_strength": 3,
+    "independence_group": "g2-zoho-reviews"
+  },
+  {
+    "source_id": "SRC-006",
+    "url": "https://www.g2.com/search?query=CRM%20billing%20reconciliation%20Excel",
+    "source_type": "search",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "G2 search for 'CRM billing reconciliation Excel' reveals chronic complaints in user reviews.",
+    "paraphrased_evidence": "Searching G2 for reconciliation pain points returns several reviews where users say they cannot forecast revenue accurately because the CRM and billing tools never fully align, forcing them to maintain manual adjustment sheets.",
+    "evidence_strength": 3,
+    "independence_group": "g2-search-billing"
+  },
+  {
+    "source_id": "SRC-007",
+    "url": "https://www.g2.com/search?query=CRM%20compliance%20report%20manual",
+    "source_type": "search",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "G2 search for 'CRM compliance report manual' shows reviews complaining about effort required for audit reports.",
+    "paraphrased_evidence": "Compliance officers and privacy managers share in reviews that generating data access reports from the CRM is far from one-click, often requiring custom queries and spreadsheet formatting to satisfy regulators.",
+    "evidence_strength": 3,
+    "independence_group": "g2-search-compliance"
+  },
+  {
+    "source_id": "SRC-008",
+    "url": "https://www.g2.com/products/microsoft-dynamics-365-crm/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "G2 reviews of Dynamics 365 mention reliance on custom scripts and consultants for customizations.",
+    "paraphrased_evidence": "A recurring theme in Microsoft Dynamics 365 CRM reviews is the need to build custom workflows or hire implementation partners for anything beyond the standard screens, especially around complex lead routing and field-level automation.",
+    "evidence_strength": 4,
+    "independence_group": "g2-dynamics-reviews"
+  },
+  {
+    "source_id": "SRC-009",
+    "url": "https://www.g2.com/search?query=CRM%20custom%20script%20workaround",
+    "source_type": "search",
+    "publisher_or_site": "G2",
+    "date_published": null,
+    "date_accessed": "2025-03-23",
+    "claim": "G2 search for 'CRM custom script workaround' returns reviews describing unstable internal tools.",
+    "paraphrased_evidence": "Multiple users across different CRM products report that they have written internal Google Apps Scripts or Python scripts to automate missing functionality, but these break frequently after system updates and require constant maintenance.",
+    "evidence_strength": 3,
+    "independence_group": "g2-search-scripting"
+  }
+]

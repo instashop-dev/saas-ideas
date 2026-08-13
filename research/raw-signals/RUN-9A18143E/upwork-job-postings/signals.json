@@ -1,0 +1,80 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "customer support manager",
+    "workflow": "Manual import of customer data from spreadsheets into CRM after each marketing campaign",
+    "trigger": "New marketing campaign ends, generating leads in a CSV file",
+    "frequency": "weekly",
+    "current_workaround": "Hiring freelancers on Upwork to manually copy-paste rows from CSV into CRM fields, one by one",
+    "consequence": "Delayed follow-up with leads, inconsistent data entry (missing fields, duplicates), customer frustration from late responses",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-01-28T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "sales operations coordinator",
+    "workflow": "Weekly reconciliation of customer orders between Shopify and QuickBooks using manual cross-checking",
+    "trigger": "End of week, order totals in Shopify and QuickBooks don't match",
+    "frequency": "weekly",
+    "current_workaround": "Posting short-term contracts on Upwork for a data entry freelancer to export both system reports, compare line by line, and adjust journal entries",
+    "consequence": "Payroll errors, inventory discrepancies, accounting adjustments taking hours, risk of audit flags",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-01-28T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0004",
+      "SRC-0005"
+    ],
+    "target_role": "customer success manager",
+    "workflow": "Manual email follow-up sequence for customer onboarding – copying templates, updating status in Google Sheets",
+    "trigger": "New customer signs up for the SaaS product",
+    "frequency": "daily",
+    "current_workaround": "Hiring a virtual assistant on Upwork to manually send personalized emails from Gmail, track replies in a spreadsheet, and update the company's CRM when a customer moves to the next stage",
+    "consequence": "Inconsistent onboarding experience, missed follow-ups, low activation rates, no visibility into where each customer is in the process",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-01-28T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0006"
+    ],
+    "target_role": "IT administrator",
+    "workflow": "Manual migration of customer data from legacy CRM (Zoho) to Salesforce requiring field mapping and deduplication",
+    "trigger": "Company decided to switch CRM platforms, but built-in import tool fails to handle custom fields",
+    "frequency": "per-event (one-time but recurring across companies)",
+    "current_workaround": "Hiring an Upwork freelancer with SQL skills to write scripts to extract, transform, and load data, plus manual verification of each record",
+    "consequence": "Data loss, corrupt records, duplicate contacts, weeks of delays, customer service disruption during migration",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-01-28T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0007",
+      "SRC-0008"
+    ],
+    "target_role": "compliance officer",
+    "workflow": "Manual generation of customer KYC reports for financial audits using Excel pivot tables and copy-paste from multiple systems",
+    "trigger": "Quarterly audit or new customer onboarding requiring identity verification",
+    "frequency": "monthly",
+    "current_workaround": "Posting a recurring job on Upwork for a data analyst to pull customer data from banking core, AML screening tool, and CRM, then manually compile a PDF report with screenshots",
+    "consequence": "Non-compliance fines, missed reporting deadlines, inconsistent data quality, high cost of freelance labor each month",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-01-28T10:00:00Z"
+  }
+]

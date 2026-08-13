@@ -1,0 +1,102 @@
+[
+  {
+    "cluster_id": "CL-001",
+    "canonical_jtbd": "When new customer data arrives from external sources (spreadsheets, emails, web forms), I want to automatically import and update CRM records without manual copy-paste, so I can reduce errors, avoid duplicates, and free up time for sales and service activities.",
+    "target_user": "Sales Operations Manager",
+    "painful_workflow": "Manually copying customer data from spreadsheets, emails, or other sources into CRM fields, often involving multiple steps (export, clean, import, deduplicate) and requiring intermediate staging in Excel.",
+    "current_workaround": "Using Excel spreadsheets as an intermediate staging area for data cleaning before uploading to CRM, or hiring freelancers to manually copy-paste rows from CSV into CRM fields.",
+    "source_signal_ids": [
+      "SIG-001",
+      "SIG-001",
+      "SIG-0001",
+      "SIG-003"
+    ],
+    "source_evidence": [
+      "Manually entering and updating customer records in the CRM by copy-pasting from spreadsheets and other systems.",
+      "Data entry errors, duplicate records, and delayed sales follow-up due to time spent on manual tasks.",
+      "Manually copying customer data from email orders into a CRM and then re-entering the same data into invoicing software.",
+      "Data entry errors cause shipping mistakes, delayed invoices, and wasted 30–60 minutes per day.",
+      "Manual import of customer data from spreadsheets into CRM after each marketing campaign.",
+      "Delayed follow-up with leads, inconsistent data entry (missing fields, duplicates), customer frustration from late responses.",
+      "Exporting customer data from HubSpot into Excel, cleaning duplicates, then importing back after manual deduplication.",
+      "Non-compliance if emails sent to opt-out contacts; wasted 4–8 hours each month; staff dreads the process."
+    ],
+    "independent_sources": 8,
+    "source_type_count": 3,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "cluster_id": "CL-002",
+    "canonical_jtbd": "When I need to ensure data consistency across CRM, billing, marketing, and support systems, I want to automatically reconcile records without manual comparison, so I can prevent errors, improve attribution, and save hours of manual work.",
+    "target_user": "Financial Controller",
+    "painful_workflow": "Periodically exporting data from multiple systems (CRM, billing, marketing, support) into spreadsheets, manually matching line items, and identifying discrepancies using formulas like VLOOKUP.",
+    "current_workaround": "Using Excel pivot tables, VLOOKUPs, and manual cross-checking; hiring freelancers to compare reports line by line.",
+    "source_signal_ids": [
+      "SIG-003",
+      "SIG-002",
+      "SIG-002",
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      "Reconciling CRM opportunity data with billing and invoicing systems by pulling data from both and manually matching line items in spreadsheets.",
+      "Revenue recognition errors, delays in financial reporting, and time-consuming audits due to missing traceability.",
+      "Exporting contact lists and engagement data from the CRM and importing them into email marketing tools, then reconciling the resulting campaign data back into the CRM.",
+      "Stale or inconsistent data across systems, poor lead attribution, and wasted hours that could be spent on high-impact marketing activities.",
+      "Manually reconciling customer interactions across email, chat, and support tickets to ensure nothing is missed.",
+      "Missed follow-ups, duplicate responses, poor customer experience, and up to 2 hours daily spent on reconciliation.",
+      "Weekly reconciliation of customer orders between Shopify and QuickBooks using manual cross-checking.",
+      "Payroll errors, inventory discrepancies, accounting adjustments taking hours, risk of audit flags."
+    ],
+    "independent_sources": 6,
+    "source_type_count": 3,
+    "ambiguity_flag": true,
+    "ambiguity_reason": "SIG-002 (Reddit) focuses on communication channel reconciliation, which may differ from financial data reconciliation but shares the same manual cross-system comparison pattern.",
+    "created_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "cluster_id": "CL-003",
+    "canonical_jtbd": "When I need to respond to compliance requests or audits, I want to automatically generate accurate reports from CRM data, so I can avoid penalties, meet deadlines, and reduce manual effort.",
+    "target_user": "Compliance Officer",
+    "painful_workflow": "Manually querying CRM using SQL or custom reports, exporting to spreadsheets, formatting templates, and compiling PDFs with screenshots.",
+    "current_workaround": "Using custom SQL queries, Excel templates, and hiring freelancers to compile reports.",
+    "source_signal_ids": [
+      "SIG-004",
+      "SIG-0005"
+    ],
+    "source_evidence": [
+      "Generating compliance reports (e.g., GDPR access requests, audit logs) by manually querying the CRM and exporting data to spreadsheets for formatting and review.",
+      "Slow response times to legal requests, risk of missing data, and non-compliance penalties.",
+      "Manual generation of customer KYC reports for financial audits using Excel pivot tables and copy-paste from multiple systems.",
+      "Non-compliance fines, missed reporting deadlines, inconsistent data quality, high cost of freelance labor each month."
+    ],
+    "independent_sources": 3,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "cluster_id": "CL-004",
+    "canonical_jtbd": "When our CRM lacks required features or stable integrations, I want to build or use reliable integrations without custom scripts, so I can reduce technical debt, maintenance costs, and system breakage.",
+    "target_user": "CRM Administrator",
+    "painful_workflow": "Developing custom scripts, using unofficial APIs, or hiring consultants to bridge gaps between systems, with constant maintenance when APIs change.",
+    "current_workaround": "Custom scripts, hiring freelancers with SQL skills, manual verification.",
+    "source_signal_ids": [
+      "SIG-005",
+      "SIG-0004"
+    ],
+    "source_evidence": [
+      "Building and maintaining internal scripts or third-party workarounds to compensate for missing CRM customizations and integrations.",
+      "High technical debt, costly maintenance, and constant breakage when systems update their APIs.",
+      "Manual migration of customer data from legacy CRM (Zoho) to Salesforce requiring field mapping and deduplication.",
+      "Data loss, corrupt records, duplicate contacts, weeks of delays, customer service disruption during migration."
+    ],
+    "independent_sources": 3,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-03-23T00:00:00Z"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ],
+    "target_role": "small business owner or customer service manager",
+    "workflow": "Manually copying customer data from email orders into a CRM and then re-entering the same data into invoicing software",
+    "trigger": "New order received via email or web form",
+    "frequency": "daily",
+    "current_workaround": "Staff copy customer name, address, and order details from email into CRM, then again into QuickBooks or similar invoicing tool",
+    "consequence": "Data entry errors cause shipping mistakes, delayed invoices, and wasted 30–60 minutes per day",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-03-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "customer success manager in SaaS companies",
+    "workflow": "Manually reconciling customer interactions across email, chat, and support tickets to ensure nothing is missed",
+    "trigger": "A customer reaches out on multiple channels (e.g., email then live chat) about the same issue",
+    "frequency": "multiple times per day",
+    "current_workaround": "Team members search each tool separately and copy-paste conversation threads into a master spreadsheet; manually update status across systems",
+    "consequence": "Missed follow-ups, duplicate responses, poor customer experience, and up to 2 hours daily spent on reconciliation",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-03-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-004",
+      "SRC-005"
+    ],
+    "target_role": "operations manager at agencies using HubSpot",
+    "workflow": "Exporting customer data from HubSpot into Excel, cleaning duplicates, then importing back after manual deduplication",
+    "trigger": "End-of-month reporting and list cleaning required for email campaigns",
+    "frequency": "monthly",
+    "current_workaround": "Using Excel formulas to find duplicate contacts, manually merging records, then reimporting CSV into HubSpot; also manually tagging contacts for compliance",
+    "consequence": "Non-compliance if emails sent to opt-out contacts; wasted 4–8 hours each month; staff dreads the process",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-03-01T12:00:00Z"
+  }
+]

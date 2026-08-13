@@ -1,0 +1,25 @@
+{
+  "position": "CUSTOMER",
+  "summary": "As a Sales Operations Manager, I'm intrigued but cautious. I deal with data imports weekly, but my pain is manageable with Excel and freelancers. I'd consider a simple, affordable tool that automates email attachments and web forms with good dedup, but I'm skeptical about adding another subscription and trust it with my CRM data. My willingness to pay is low ($20–40/mo) and I'd need a free trial to prove it saves more time than it costs.",
+  "strongest_points": [
+    "Automating email attachment imports would save me the 2–3 hours I spend weekly cleaning and uploading CSVs",
+    "Built-in dedup and conflict resolution would reduce the errors I currently catch manually",
+    "No-code setup with native CRM integration (Salesforce/HubSpot) would lower adoption friction for my team"
+  ],
+  "weaknesses": [
+    "I already use Zapier for some automations and don't want another tool that does the same thing with marginal improvements",
+    "I'm not confident the dedup logic is accurate enough to avoid data corruption – I'd need to validate manually for the first few weeks",
+    "At $50+/mo, I'd struggle to justify the expense to my VP when freelancers cost $5/hour and Excel is free"
+  ],
+  "evidence_cited": [
+    "SRC-0001",
+    "SRC-0002",
+    "SRC-0003",
+    "SRC-0004",
+    "SRC-0005",
+    "SRC-0006",
+    "SRC-0007",
+    "SRC-0008"
+  ],
+  "confidence": 0.75
+}

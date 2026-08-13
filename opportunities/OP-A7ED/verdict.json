@@ -1,0 +1,175 @@
+{
+  "id": "OP-A7ED",
+  "canonical_key": "CK-70783876ebb6ad80",
+  "title": "When our CRM lacks required features or stable integrations, I want to build or use reliable integra",
+  "target_user": "CRM Administrator",
+  "job_to_be_done": "When our CRM lacks required features or stable integrations, I want to build or use reliable integrations without custom scripts, so I can reduce technical debt, maintenance costs, and system breakage.",
+  "painful_workflow": "Developing custom scripts, using unofficial APIs, or hiring consultants to bridge gaps between systems, with constant maintenance when APIs change.",
+  "current_workaround": "Custom scripts, hiring freelancers with SQL skills, manual verification.",
+  "source_ids": [
+    "SIG-005",
+    "SIG-0004"
+  ],
+  "independent_sources": 3,
+  "source_type_count": 2,
+  "pain_score": 4,
+  "frequency_score": 3,
+  "urgency_score": 4,
+  "economic_impact_score": 3,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 4,
+  "willingness_to_pay_score": 4,
+  "distribution_score": 3,
+  "global_score": 5,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 3,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "Zapier",
+      "url": "https://zapier.com",
+      "classification": "PARTIAL",
+      "notes": "Zapier is a general-purpose automation platform that can connect CRMs to other apps, but it is not purpose-built for CRM-specific integration challenges. It requires users to set up and maintain zaps, which can still break when APIs change. It does not address the deep, stable integration needs of CRM administrators.",
+      "feature_overlap": "Connects CRMs to other systems via pre-built integrations; no-code interface.",
+      "pricing": "Free tier with limited tasks; paid plans start at $19.99/month.",
+      "market_positioning": "General automation for non-technical users."
+    },
+    {
+      "name": "Make (formerly Integromat)",
+      "url": "https://www.make.com",
+      "classification": "PARTIAL",
+      "notes": "Make is another general automation platform with more complex workflows than Zapier. It can handle CRM integrations but is not specialized for CRM stability. Users still face maintenance when APIs change, and it is not a dedicated CRM integration solution.",
+      "feature_overlap": "Visual workflow builder for connecting CRMs to other apps.",
+      "pricing": "Free tier with limited operations; paid plans start at $9/month.",
+      "market_positioning": "Advanced automation for power users."
+    },
+    {
+      "name": "Workato",
+      "url": "https://www.workato.com",
+      "classification": "PARTIAL",
+      "notes": "Workato is an enterprise integration platform (iPaaS) that can handle CRM integrations, but it is overkill for CRM administrators seeking simple, reliable integrations. It is expensive and complex, targeting IT teams rather than CRM admins.",
+      "feature_overlap": "Pre-built connectors for CRMs; no-code integration builder.",
+      "pricing": "Enterprise pricing, typically $10,000+/year.",
+      "market_positioning": "Enterprise iPaaS for complex integrations."
+    },
+    {
+      "name": "MuleSoft Anypoint Platform",
+      "url": "https://www.mulesoft.com",
+      "classification": "SUBSTITUTE",
+      "notes": "MuleSoft is a full-scale integration platform for large enterprises. It can solve CRM integration problems but requires significant technical expertise and budget. It is not a direct alternative for CRM administrators seeking lightweight, stable integrations.",
+      "feature_overlap": "API-led connectivity for CRM systems.",
+      "pricing": "Enterprise pricing, typically $50,000+/year.",
+      "market_positioning": "Enterprise integration for IT teams."
+    },
+    {
+      "name": "Celigo",
+      "url": "https://www.celigo.com",
+      "classification": "PARTIAL",
+      "notes": "Celigo offers integration platform as a service (iPaaS) with pre-built connectors for CRMs like Salesforce and HubSpot. It is more focused on business users but still requires setup and maintenance. It is not specifically designed for CRM administrators facing API instability.",
+      "feature_overlap": "Pre-built CRM integrations; no-code interface.",
+      "pricing": "Starts at $150/month.",
+      "market_positioning": "Integration platform for mid-market businesses."
+    },
+    {
+      "name": "Tray.io",
+      "url": "https://tray.io",
+      "classification": "PARTIAL",
+      "notes": "Tray.io is a general automation platform with a visual builder. It can connect CRMs but is not purpose-built for CRM integration stability. It targets technical business users but still requires maintenance.",
+      "feature_overlap": "Visual workflow builder for CRM integrations.",
+      "pricing": "Starts at $584/month.",
+      "market_positioning": "Advanced automation for technical teams."
+    },
+    {
+      "name": "Open Source: Apache Camel",
+      "url": "https://camel.apache.org",
+      "classification": "OPEN_SOURCE",
+      "notes": "Apache Camel is an open-source integration framework that can be used to build CRM integrations. However, it requires significant coding and technical expertise, which defeats the purpose of avoiding custom scripts. It is not a no-code solution.",
+      "feature_overlap": "Integration routing and transformation for CRMs.",
+      "pricing": "Free (open source).",
+      "market_positioning": "Developer-focused integration framework."
+    },
+    {
+      "name": "Open Source: Node-RED",
+      "url": "https://nodered.org",
+      "classification": "OPEN_SOURCE",
+      "notes": "Node-RED is a flow-based programming tool for IoT and integrations. It can be used for CRM integrations but requires technical setup and maintenance. It is not a stable, purpose-built solution for CRM administrators.",
+      "feature_overlap": "Visual flow editor for connecting APIs.",
+      "pricing": "Free (open source).",
+      "market_positioning": "Developer tool for prototyping integrations."
+    },
+    {
+      "name": "Service: CRM Integration Consultants (e.g., Salesforce Consultants)",
+      "url": "https://www.salesforce.com/consultants/",
+      "classification": "SERVICE",
+      "notes": "Many consultancies offer custom CRM integration services. They build and maintain integrations, but this is expensive and still involves custom scripts. It does not solve the problem of ongoing maintenance and cost.",
+      "feature_overlap": "Custom integration development and maintenance.",
+      "pricing": "Varies, typically $100-$300/hour.",
+      "market_positioning": "Professional services for CRM integration."
+    },
+    {
+      "name": "Platform-Native: Salesforce AppExchange",
+      "url": "https://appexchange.salesforce.com",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Salesforce AppExchange offers many apps that extend CRM functionality, but these are often specific to Salesforce and may not address integration stability across different CRMs. They can reduce custom scripts but are limited to the Salesforce ecosystem.",
+      "feature_overlap": "Pre-built integrations and extensions for Salesforce.",
+      "pricing": "Varies by app, many free or subscription-based.",
+      "market_positioning": "Salesforce ecosystem apps."
+    },
+    {
+      "name": "Platform-Native: HubSpot App Marketplace",
+      "url": "https://ecosystem.hubspot.com/marketplace/apps",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "HubSpot's app marketplace offers integrations with other tools, but these are often shallow and may not cover complex needs. They reduce custom scripts but are limited to HubSpot's ecosystem.",
+      "feature_overlap": "Pre-built integrations for HubSpot.",
+      "pricing": "Varies by app, many free or subscription-based.",
+      "market_positioning": "HubSpot ecosystem apps."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Manual verification and custom scripts",
+      "url": null,
+      "classification": "SUBSTITUTE",
+      "notes": "The current workaround involves hiring freelancers or using SQL skills to build and maintain custom integrations. This is the baseline alternative but is painful due to maintenance and breakage."
+    },
+    {
+      "name": "Using CRM's built-in API directly",
+      "url": null,
+      "classification": "SUBSTITUTE",
+      "notes": "Some CRM administrators write custom scripts using official APIs, but these still require maintenance when APIs change. This is a common but fragile approach."
+    }
+  ],
+  "verified_facts": [
+    "CRM administrators build and maintain custom scripts to compensate for missing integrations (E1).",
+    "API changes cause breakage of those scripts (E2).",
+    "Manual data migration between Zoho and Salesforce requires field mapping and deduplication (E3).",
+    "Data loss, corrupt records, and duplicate contacts occurred during migration (E4)."
+  ],
+  "inferences": [
+    "The pain is frequent enough to cause ongoing maintenance burden.",
+    "The cost of custom development and breakage exceeds acceptable thresholds for some companies.",
+    "Off-the-shelf integration tools may not address all required customizations."
+  ],
+  "assumptions": [
+    "The reported pain is representative of a significant segment of CRM users.",
+    "Companies are willing to pay for a dedicated solution beyond existing iPaaS offerings.",
+    "The problem is not already solved by no-code integration platforms for most users."
+  ],
+  "unknowns": [
+    "Actual market size and how many CRM admins face this exact pain.",
+    "Specific dollar amounts spent on current workarounds.",
+    "Prevalence of competing solutions (Zapier, Workato, native connectors) that already address these needs.",
+    "Whether the migration pain is a one-time event versus an ongoing operational issue."
+  ],
+  "rejection_reasons": [
+    "Judge rejected: The frequency score of 3 fails the deterministic hard gate requiring pain, frequency, and willingness to pay all be at least 4. Without a strong recurring trigger, the opportunity does not meet the approval threshold, and the evidence base is too thin to justify further pursuit."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.75,
+  "final_score": 0,
+  "run_id": "RUN-9A18143E",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:59:27.439Z",
+  "updated_at": "2026-08-13T06:01:44.494Z"
+}

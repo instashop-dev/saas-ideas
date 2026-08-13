@@ -1,0 +1,8 @@
+{
+  "verdict": "REJECT",
+  "strongest_reason": "The frequency score of 3 fails the deterministic hard gate requiring pain, frequency, and willingness to pay all be at least 4. Without a strong recurring trigger, the opportunity does not meet the approval threshold, and the evidence base is too thin to justify further pursuit.",
+  "strongest_risk": "Platform and feature risk: native CRM ecosystems (Salesforce, HubSpot, Microsoft) and established iPaaS providers (Zapier, Workato, Celigo) can absorb this demand as a feature or incremental improvement, which could render a standalone product obsolete.",
+  "unresolved_assumption": "Whether CRM administrators face this integration breakage frequently enough to sustain ongoing subscription retention, given the low frequency score and the likelihood that API-change-driven breakage occurs only quarterly or annually.",
+  "confidence": 0.75,
+  "recommended_next_step": "Do not proceed to build. Revisit only if primary research demonstrates higher pain frequency and stronger evidence that CRM administrators will pay for a dedicated solution despite existing no-code and enterprise integration alternatives."
+}

@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 4,
+    "urgency": 3,
+    "economic_impact": 2,
+    "operational_impact": 3,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 2,
+    "global_applicability": 5,
+    "customer_accessibility": 4,
+    "evidence_quality": 3
+  },
+  "reasoning": {
+    "pain_intensity": "Evidence E4 reports 30–60 minutes wasted per day due to data entry errors, and E8 reports 4–8 hours per month. While annoying, this is a moderate time cost, not a severe operational crisis. Score 3.",
+    "frequency": "E4 indicates daily occurrence (30–60 min/day), and E8 indicates monthly occurrence (4–8 hours/month). Combined, the problem recurs at least weekly for many users. Score 4.",
+    "urgency": "E2 and E6 mention delayed sales follow-up and customer frustration, but no evidence of blocked revenue or compliance deadlines. The problem is inconvenient, not urgent. Score 3.",
+    "economic_impact": "No evidence quantifies dollar losses. E4 implies ~$10–20/day in wasted labor, and E8 ~$100–200/month. This is negligible compared to typical SaaS pricing. Score 2.",
+    "operational_impact": "E2 and E6 cite duplicate records and inconsistent data, and E4 mentions shipping mistakes. However, these are isolated errors, not team-wide bottlenecks. Score 3.",
+    "workaround_intensity": "E7 describes exporting, cleaning, and re-importing data—a moderate effort. E3 mentions re-entering data into invoicing software. No evidence of hiring full-time freelancers (only implied). Score 3.",
+    "willingness_to_pay": "No evidence shows users currently paying for a solution. The workaround (Excel, freelancers) is low-cost or free. No mention of existing paid tools. Score 2.",
+    "global_applicability": "CRM data import from spreadsheets/emails is a universal problem across all countries and industries. Score 5.",
+    "customer_accessibility": "Sales Operations Managers are easily identifiable via LinkedIn, CRM user groups, and industry events. Clear channels exist. Score 4.",
+    "evidence_quality": "8 evidence items from 3 source types, but many are similar (e.g., E1, E2, E5, E6 all describe manual entry and errors). No independent verification of severity or frequency across different companies. Score 3."
+  },
+  "verified_facts": [
+    "Manual copy-paste from spreadsheets to CRM is a common workflow (E1, E3, E5, E7).",
+    "Data entry errors cause shipping mistakes and delayed invoices (E4).",
+    "Time wasted ranges from 30–60 minutes per day to 4–8 hours per month (E4, E8).",
+    "Duplicate records and inconsistent data occur (E2, E6).",
+    "Exporting from HubSpot to Excel for deduplication is a known workaround (E7)."
+  ],
+  "inferences": [
+    "The time wasted is likely lower than reported due to self-reporting bias.",
+    "Many companies already use native CRM import tools or Zapier, reducing the pain.",
+    "The problem is more acute for small teams without dedicated ops staff."
+  ],
+  "assumptions": [
+    "The evidence represents typical Sales Ops Managers, not edge cases.",
+    "Users are not already paying for a solution because they find workarounds acceptable.",
+    "The 8 evidence items are from distinct, independent sources (cluster claims 8 independent sources)."
+  ],
+  "unknowns": [
+    "Actual dollar cost of errors (e.g., lost deals, compliance fines) is not quantified.",
+    "How many users have tried and abandoned automated import tools?",
+    "Whether the problem is seasonal or constant across all months.",
+    "The specific CRM systems involved (HubSpot is mentioned, but others are not)."
+  ],
+  "overall_assessment": "The pain of manual CRM data import is real and moderately frequent, but it is not severe enough to justify a dedicated SaaS product. The evidence shows time waste of 30–60 minutes per day or 4–8 hours per month, which is annoying but not critical. No evidence of significant economic impact, urgent blocking, or existing willingness to pay. Many low-cost or free alternatives (native imports, Zapier, automation scripts) already address this, and the workaround (Excel staging) is tolerable. The cluster scores 3 or below on most dimensions except frequency and global applicability. This is a 'nice-to-have' improvement, not a burning need."
+}

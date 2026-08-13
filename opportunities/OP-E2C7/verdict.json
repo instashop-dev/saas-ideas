@@ -1,0 +1,138 @@
+{
+  "id": "OP-E2C7",
+  "canonical_key": "CK-bd756f1373d6f1d9",
+  "title": "When new customer data arrives from external sources (spreadsheets, emails, web forms), I want to au",
+  "target_user": "Sales Operations Manager",
+  "job_to_be_done": "When new customer data arrives from external sources (spreadsheets, emails, web forms), I want to automatically import and update CRM records without manual copy-paste, so I can reduce errors, avoid duplicates, and free up time for sales and service activities.",
+  "painful_workflow": "Manually copying customer data from spreadsheets, emails, or other sources into CRM fields, often involving multiple steps (export, clean, import, deduplicate) and requiring intermediate staging in Excel.",
+  "current_workaround": "Using Excel spreadsheets as an intermediate staging area for data cleaning before uploading to CRM, or hiring freelancers to manually copy-paste rows from CSV into CRM fields.",
+  "source_ids": [
+    "SIG-001",
+    "SIG-001",
+    "SIG-0001",
+    "SIG-003"
+  ],
+  "independent_sources": 8,
+  "source_type_count": 3,
+  "pain_score": 3,
+  "frequency_score": 4,
+  "urgency_score": 3,
+  "economic_impact_score": 2,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 5,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 3,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "Zapier",
+      "url": "https://zapier.com",
+      "classification": "PARTIAL",
+      "notes": "General automation platform; can connect email, spreadsheets, web forms to CRM but requires manual mapping, no built-in dedup or intelligent merging; complex for non-technical sales ops managers; not purpose-built for CRM data import workflow.",
+      "feature_overlap": "Triggers from new rows in Google Sheets, email attachments, form submissions; actions to create/update CRM records. Lacks dedup and conflict resolution without advanced steps.",
+      "pricing": "Free tier with limits; paid plans $19.99/mo and up",
+      "market_positioning": "No-code automation for business users"
+    },
+    {
+      "name": "Data Loader / Data Loader.io",
+      "url": "https://dataloader.io",
+      "classification": "PARTIAL",
+      "notes": "Focused on bulk data import via CSV/Excel; does not handle email attachments or web forms natively; requires manual file upload or API triggers; no automated ingestion from arbitrary external sources; dedup is basic.",
+      "feature_overlap": "CSV import, field mapping, upsert/update. Lacks real-time automation from emails and web forms.",
+      "pricing": "Free limited; paid from $50/mo",
+      "market_positioning": "Salesforce import tool"
+    },
+    {
+      "name": "Parseur",
+      "url": "https://parseur.com",
+      "classification": "PARTIAL",
+      "notes": "Specifically extracts data from email attachments and bodies and sends to CRM; supports spreadsheets, PDFs, etc. But does not handle direct spreadsheet uploads or web form submissions; no native web form capture.",
+      "feature_overlap": "Email parsing to CRM (create/update records). Missing web forms and direct spreadsheet sync.",
+      "pricing": "Free tier; paid $14/mo and up",
+      "market_positioning": "Mail parser for automation"
+    },
+    {
+      "name": "Salesforce Data Import Wizard (Native)",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.data_import_wizard.htm",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Built into Salesforce, manual process (export/clean/import); no automation for new external data, no web form or email handling; requires user to initiate each import.",
+      "feature_overlap": "CSV/Excel import, dedup options. No automation, no real-time triggers from external sources.",
+      "pricing": "Included in Salesforce license",
+      "market_positioning": "CRM admin manual tool"
+    },
+    {
+      "name": "DemandTools (by Validity)",
+      "url": "https://www.validity.com/demandtools",
+      "classification": "DIRECT",
+      "notes": "Enterprise-class for Salesforce; advanced dedup, merge, data import from spreadsheets; but expensive, requires admin skill, no email/web form ingestion; primarily a data quality suite, not a lightweight import automation tool.",
+      "feature_overlap": "High-quality dedup, field mapping, error handling. Gaps: real-time email/form capture; pricing and complexity too high for many sales ops teams.",
+      "pricing": "Enterprise quoted (likely $500+/mo)",
+      "market_positioning": "Salesforce data quality"
+    },
+    {
+      "name": "Airtable",
+      "url": "https://airtable.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Database/spreadsheet hybrid that can replace Excel staging; has automations for web forms, email-to-table, and syncs to CRM via Zapier or native sync. However, it is not a CRM import tool; it's an intermediate staging platform that still requires additional steps to push to CRM.",
+      "feature_overlap": "Web form, email import, spreadsheet sync. Not a direct CRM import solution; adds another tool and complexity.",
+      "pricing": "Free tier; paid $20/mo and up",
+      "market_positioning": "Flexible database for work management"
+    },
+    {
+      "name": "Freelancers (Upwork / Fiverr)",
+      "url": "https://www.upwork.com",
+      "classification": "SERVICE",
+      "notes": "Human manual data entry from spreadsheets/emails into CRM; still error-prone and not automated; not scalable.",
+      "feature_overlap": "Accomplishes the same outcome manually. Not a software competitor but a workaround substitute.",
+      "pricing": "Variable per row/project",
+      "market_positioning": "Low-cost manual labor"
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Excel + Salesforce manual import",
+      "notes": "Current workaround: export data to Excel, clean, dedup, import via Data Import Wizard. Time-consuming, error-prone, not automated."
+    },
+    {
+      "name": "Custom Python/API scripts",
+      "notes": "Sales ops teams could hire developers to build scripts to parse emails, handle spreadsheets, and push to CRM via API. Not a product, requires maintenance."
+    }
+  ],
+  "verified_facts": [
+    "Manual copy-paste from spreadsheets to CRM is a common workflow (E1, E3, E5, E7).",
+    "Data entry errors cause shipping mistakes and delayed invoices (E4).",
+    "Time wasted ranges from 30–60 minutes per day to 4–8 hours per month (E4, E8).",
+    "Duplicate records and inconsistent data occur (E2, E6).",
+    "Exporting from HubSpot to Excel for deduplication is a known workaround (E7)."
+  ],
+  "inferences": [
+    "The time wasted is likely lower than reported due to self-reporting bias.",
+    "Many companies already use native CRM import tools or Zapier, reducing the pain.",
+    "The problem is more acute for small teams without dedicated ops staff."
+  ],
+  "assumptions": [
+    "The evidence represents typical Sales Ops Managers, not edge cases.",
+    "Users are not already paying for a solution because they find workarounds acceptable.",
+    "The 8 evidence items are from distinct, independent sources (cluster claims 8 independent sources)."
+  ],
+  "unknowns": [
+    "Actual dollar cost of errors (e.g., lost deals, compliance fines) is not quantified.",
+    "How many users have tried and abandoned automated import tools?",
+    "Whether the problem is seasonal or constant across all months.",
+    "The specific CRM systems involved (HubSpot is mentioned, but others are not)."
+  ],
+  "rejection_reasons": [
+    "Judge rejected: Willingness to pay is low (2/5) and pain intensity is moderate (3/5), meaning the burning need is not strong enough to sustain a paid product, and the customer perspective confirms users would struggle to justify spending over $20–40/month."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.85,
+  "final_score": 0,
+  "run_id": "RUN-9A18143E",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:55:20.690Z",
+  "updated_at": "2026-08-13T06:02:08.690Z"
+}

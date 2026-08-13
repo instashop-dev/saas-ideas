@@ -1,0 +1,51 @@
+{
+  "scores": {
+    "pain_intensity": 4,
+    "frequency": 3,
+    "urgency": 3,
+    "economic_impact": 3,
+    "operational_impact": 3,
+    "workaround_intensity": 4,
+    "willingness_to_pay": 3,
+    "global_applicability": 5,
+    "customer_accessibility": 4,
+    "evidence_quality": 3
+  },
+  "reasoning": {
+    "pain_intensity": "Evidence 2 (revenue recognition errors, delays in financial reporting, time-consuming audits) and Evidence 7 (payroll errors, inventory discrepancies, risk of audit flags) indicate significant consequences. However, the pain is not uniformly severe across all evidence—some describe 'wasted hours' (Evidence 4) and 'missed follow-ups' (Evidence 6), which are less intense. Score 4 reflects serious but not catastrophic pain.",
+    "frequency": "Evidence 5 mentions 'up to 2 hours daily spent on reconciliation' for customer interactions, while Evidence 7 describes 'weekly reconciliation of customer orders'. The cluster mixes daily and weekly frequencies. For a Financial Controller, financial reconciliation may be weekly or monthly. Score 3 reflects a recurring but not constant problem.",
+    "urgency": "Evidence 2 cites 'delays in financial reporting' and Evidence 7 'risk of audit flags', which create time pressure. However, no evidence suggests operations are blocked or that immediate action is required. The urgency is moderate, not critical. Score 3.",
+    "economic_impact": "Evidence 2 and 7 mention errors that could lead to financial losses, but no dollar amounts are provided. Hiring freelancers (Evidence 1, 3, 5) implies some cost, but the scale is unclear. Score 3 reflects a meaningful but unquantified economic impact.",
+    "operational_impact": "Evidence 5 says 'up to 2 hours daily' and Evidence 7 'accounting adjustments taking hours'. This disrupts individual workflows but does not block entire teams. Evidence 2 mentions 'time-consuming audits', which can involve multiple people. Score 3.",
+    "workaround_intensity": "Current workarounds include Excel VLOOKUPs, pivot tables, manual cross-checking, and hiring freelancers (Evidence 1, 3, 5, 7). Evidence 5 quantifies 2 hours daily, which is significant but not a full-time role. Score 4 reflects substantial manual effort.",
+    "willingness_to_pay": "Evidence 1 and 3 mention hiring freelancers to compare reports, indicating existing spend on labor. However, no evidence of paying for software tools. The willingness to pay for a SaaS solution is inferred but not confirmed. Score 3.",
+    "global_applicability": "Data reconciliation across CRM, billing, marketing, and support is a universal business problem, not tied to any single country's regulations. Score 5.",
+    "customer_accessibility": "Financial Controllers are a well-defined role with clear professional networks (LinkedIn, accounting associations). Evidence does not specify channels, but the target is reachable. Score 4.",
+    "evidence_quality": "There are 6 independent sources and 3 source types, but the ambiguity flag notes that SIG-002 (Reddit) focuses on communication channel reconciliation, which differs from financial data reconciliation. Some evidence (e.g., Evidence 5, 6) is about customer support, not the target user's core workflow. This weakens the cluster's focus. Score 3."
+  },
+  "verified_facts": [
+    "Manual reconciliation between systems (CRM, billing, marketing, support) is performed using spreadsheets and VLOOKUPs.",
+    "Errors such as revenue recognition errors, payroll errors, and inventory discrepancies occur due to inconsistent data.",
+    "Up to 2 hours per day are spent on reconciliation for customer interactions (Evidence 5).",
+    "Freelancers are hired to compare reports line by line (Evidence 1, 3).",
+    "Weekly reconciliation of orders between Shopify and QuickBooks is done manually (Evidence 7)."
+  ],
+  "inferences": [
+    "The pain of manual reconciliation is felt across multiple departments (finance, marketing, support), but the cluster targets Financial Controllers specifically.",
+    "The economic impact of errors is likely significant enough to justify spending on labor (freelancers), but not necessarily on software.",
+    "The frequency and intensity vary by use case; financial reconciliation may be less frequent but higher stakes than support reconciliation."
+  ],
+  "assumptions": [
+    "The evidence from communication channel reconciliation (SIG-002) is relevant to the financial controller's workflow.",
+    "Financial Controllers are the primary decision-makers for purchasing reconciliation software.",
+    "The workaround effort (2 hours daily) is representative of the target user's experience."
+  ],
+  "unknowns": [
+    "Exact dollar cost of errors and time spent for a typical Financial Controller.",
+    "Whether Financial Controllers are already using or evaluating existing reconciliation tools (e.g., Trovata, FloQast).",
+    "The specific frequency of reconciliation for the target user (daily, weekly, monthly).",
+    "The willingness to pay for a SaaS solution versus continuing to hire freelancers.",
+    "The size of the addressable market and ease of customer acquisition."
+  ],
+  "overall_assessment": "The cluster identifies a genuine pain point—manual data reconciliation across systems—but it is not a burning need. The evidence is mixed: some points to daily, low-stakes reconciliation (support channels) while others point to weekly, high-stakes financial reconciliation. The target user (Financial Controller) is clear, but the economic impact is unquantified and the workaround, while time-consuming, is not crippling. The presence of freelancer hiring suggests some willingness to pay, but not necessarily for a SaaS product. The global applicability is high, but the evidence quality is weakened by the ambiguity between financial and non-financial reconciliation. Overall, this opportunity scores moderately across dimensions and does not meet the 5/5 Burning Need threshold. Further validation with specific financial controllers and cost-benefit analysis is required before pursuing a product."
+}

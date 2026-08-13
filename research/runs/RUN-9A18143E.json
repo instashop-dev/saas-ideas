@@ -1,0 +1,64 @@
+{
+  "run_id": "RUN-9A18143E",
+  "started_at": "2026-08-13T05:51:48.629Z",
+  "completed_at": "2026-08-13T06:02:14.516Z",
+  "trigger": "manual",
+  "keyword": "customers",
+  "research_plan": {
+    "sources": [
+      {
+        "ecosystem": "reddit",
+        "research_questions": [
+          "What manual reconciliation steps do customer service teams describe when tracking customer interactions across channels?",
+          "Which repetitive customer data entry tasks are frequently mentioned as painful in small business subreddits?",
+          "What common complaints about CRM platforms or customer databases appear in posts about customer management?"
+        ]
+      },
+      {
+        "ecosystem": "g2-reviews",
+        "research_questions": [
+          "Which missing integrations or customizations in CRM tools are repeatedly cited as operational pain points?",
+          "What manual workflows (e.g., exporting/importing data, updating records) do reviewers say they still rely on spreadsheets to handle?",
+          "What specific compliance or reporting frustrations are raised in reviews of customer management software?"
+        ]
+      },
+      {
+        "ecosystem": "upwork-job-postings",
+        "research_questions": [
+          "What repetitive customer data entry, cleanup, or migration tasks are businesses outsourcing?",
+          "Which recurring CRM setup or configuration projects indicate a lack of seamless integration?",
+          "What manual customer communication workflows (e.g., email follow-ups, status updates) are being contracted as independent tasks?"
+        ]
+      },
+      {
+        "ecosystem": "stack-overflow",
+        "research_questions": [
+          "What common errors or frustrations arise when trying to integrate customer data from multiple sources (e.g., APIs, databases)?",
+          "Which manual reconciliation methods are developers asking about when syncing customer records between systems?",
+          "What repetitive data transformation or cleaning steps are frequently discussed in the context of customer information systems?"
+        ]
+      }
+    ]
+  },
+  "models": {
+    "research_planner": "deepseek/deepseek-v4-flash",
+    "pain_miner": "deepseek/deepseek-v4-flash",
+    "clusterer": "deepseek/deepseek-v4-flash",
+    "validator": "deepseek/deepseek-v4-pro",
+    "competition": "deepseek/deepseek-v4-flash",
+    "bull": "deepseek/deepseek-v4-flash",
+    "bear": "deepseek/deepseek-v4-flash",
+    "customer": "deepseek/deepseek-v4-flash",
+    "judge": "deepseek/deepseek-v4-flash"
+  },
+  "candidate_counts": {
+    "signals": 13,
+    "clusters": 4,
+    "validated": 4,
+    "competition_survivors": 3,
+    "finalists": 3,
+    "approved": 1
+  },
+  "estimated_cost": null,
+  "status": "completed"
+}

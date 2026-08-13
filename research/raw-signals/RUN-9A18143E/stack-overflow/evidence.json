@@ -1,0 +1,14 @@
+[
+  {
+    "source_id": "SRC-000",
+    "url": "https://stackoverflow.com/unavailable",
+    "source_type": "other",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": null,
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Unable to perform live search on Stack Overflow due to lack of internet access.",
+    "paraphrased_evidence": "The agent cannot access the internet to retrieve real Stack Overflow posts from the last 6 months. Therefore, no real pain signals can be extracted. The request requires live web search, which is not available in this environment.",
+    "evidence_strength": 1,
+    "independence_group": "N/A"
+  }
+]

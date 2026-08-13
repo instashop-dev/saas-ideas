@@ -1,0 +1,81 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ],
+    "target_role": "Sales Operations Manager",
+    "workflow": "Manually entering and updating customer records in the CRM by copy-pasting from spreadsheets and other systems.",
+    "trigger": "Whenever a new lead or account is created, or existing customer data changes.",
+    "frequency": "Daily",
+    "current_workaround": "Using Excel spreadsheets as an intermediate staging area for data cleaning before uploading to the CRM.",
+    "consequence": "Data entry errors, duplicate records, and delayed sales follow-up due to time spent on manual tasks.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-003",
+      "SRC-004"
+    ],
+    "target_role": "Marketing Operations Specialist",
+    "workflow": "Exporting contact lists and engagement data from the CRM and importing them into email marketing tools, then reconciling the resulting campaign data back into the CRM.",
+    "trigger": "Every marketing campaign launch and post-campaign analysis.",
+    "frequency": "Weekly",
+    "current_workaround": "Running manual CSV exports/imports and using spreadsheet formulas to enrich and segment data across tools.",
+    "consequence": "Stale or inconsistent data across systems, poor lead attribution, and wasted hours that could be spent on high-impact marketing activities.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-005",
+      "SRC-006"
+    ],
+    "target_role": "Financial Controller",
+    "workflow": "Reconciling CRM opportunity data with billing and invoicing systems by pulling data from both and manually matching line items in spreadsheets.",
+    "trigger": "Monthly close and quarterly business reviews.",
+    "frequency": "Monthly",
+    "current_workaround": "Exporting reports from the CRM and billing software, then using Excel pivot tables and VLOOKUPs to find discrepancies.",
+    "consequence": "Revenue recognition errors, delays in financial reporting, and time-consuming audits due to missing traceability.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-007"
+    ],
+    "target_role": "Compliance Officer",
+    "workflow": "Generating compliance reports (e.g., GDPR access requests, audit logs) by manually querying the CRM and exporting data to spreadsheets for formatting and review.",
+    "trigger": "Each compliance request or regulatory audit.",
+    "frequency": "Per-event",
+    "current_workaround": "Using custom SQL queries and Excel templates to produce required documentation.",
+    "consequence": "Slow response times to legal requests, risk of missing data, and non-compliance penalties.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-008",
+      "SRC-009"
+    ],
+    "target_role": "CRM Administrator",
+    "workflow": "Building and maintaining internal scripts or third-party workarounds to compensate for missing CRM customizations and integrations.",
+    "trigger": "Whenever the existing system lacks a specific feature or stable integration needed by the business.",
+    "frequency": "Per-event",
+    "current_workaround": "Developing custom scripts, hiring consultants, or using unofficial APIs to pull/push data between poorly integrated systems.",
+    "consequence": "High technical debt, costly maintenance, and constant breakage when systems update their APIs.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-23T00:00:00Z"
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "competition_score": 3,
+  "queries_attempted": [
+    "compliance report generator CRM",
+    "automated audit report from CRM data",
+    "compliance reporting software for Salesforce",
+    "generate compliance reports from CRM",
+    "audit report automation tool",
+    "compliance report builder SaaS",
+    "CRM compliance report template",
+    "open source compliance report generator",
+    "compliance report freelancer"
+  ],
+  "competitors": [
+    {
+      "name": "Conga (formerly Apttus) – Document Generation",
+      "url": "https://conga.com",
+      "classification": "PARTIAL",
+      "notes": "Conga Composer generates documents (PDF, Word) from Salesforce/CRM data. Can be configured for compliance reports, but requires template setup and is not purpose-built for compliance. Strong overlap in data extraction and formatting.",
+      "feature_overlap": "Data extraction from CRM, template-based document generation, PDF output, scheduling.",
+      "pricing": "Contact sales; typically per-user per-month, enterprise pricing.",
+      "market_positioning": "Document automation for sales and legal, not specifically compliance."
+    },
+    {
+      "name": "Nintex Workflow & Document Generation",
+      "url": "https://nintex.com",
+      "classification": "PARTIAL",
+      "notes": "Workflow automation platform with document generation capabilities. Can pull CRM data and generate compliance reports. Requires significant configuration and is a general-purpose tool.",
+      "feature_overlap": "Workflow triggers, data mapping, document templates, PDF generation.",
+      "pricing": "Starts around $1,000+/month for enterprise.",
+      "market_positioning": "Process automation and document generation for enterprises."
+    },
+    {
+      "name": "Salesforce Reports & Dashboards",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.reports_overview.htm",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Built-in reporting in Salesforce. Can create tabular/summary reports and export to Excel/PDF. Lacks automated compliance-specific formatting, narrative generation, and audit trail features. Users still need manual compilation.",
+      "feature_overlap": "CRM data querying, basic export, scheduling.",
+      "pricing": "Included with Salesforce licenses (Enterprise+).",
+      "market_positioning": "Native CRM reporting, not compliance-focused."
+    },
+    {
+      "name": "Microsoft Power Automate + Word Templates",
+      "url": "https://powerautomate.microsoft.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Can automate data extraction from Dynamics 365 or other CRM and populate Word templates to generate PDF reports. Requires technical setup and is a general automation tool.",
+      "feature_overlap": "Data integration, template population, PDF generation, scheduling.",
+      "pricing": "Per-user plans from $15/user/month; premium connectors extra.",
+      "market_positioning": "Low-code automation for Microsoft ecosystem."
+    },
+    {
+      "name": "Tableau / Power BI",
+      "url": "https://tableau.com / https://powerbi.microsoft.com",
+      "classification": "SUBSTITUTE",
+      "notes": "BI tools that connect to CRM data and create visual dashboards. Can export as PDF but not structured compliance reports with narrative. More suited for analysis than formatted report generation.",
+      "feature_overlap": "Data visualization, export to PDF, scheduled refresh.",
+      "pricing": "Tableau Creator $70/user/month; Power BI Pro $10/user/month.",
+      "market_positioning": "Business intelligence and analytics."
+    },
+    {
+      "name": "AuditBoard",
+      "url": "https://auditboard.com",
+      "classification": "PARTIAL",
+      "notes": "Audit management platform with reporting capabilities. Can integrate with CRM via APIs but is primarily for audit workflows, not automated report generation from CRM data. Overlap in compliance reporting but different primary use case.",
+      "feature_overlap": "Audit report templates, evidence collection, PDF export.",
+      "pricing": "Contact sales; enterprise pricing.",
+      "market_positioning": "Audit and risk management."
+    },
+    {
+      "name": "LogicGate",
+      "url": "https://logicgate.com",
+      "classification": "PARTIAL",
+      "notes": "GRC platform with reporting and automation. Can ingest CRM data but requires significant configuration. More focused on risk and compliance program management.",
+      "feature_overlap": "Compliance reporting, workflow automation, data integration.",
+      "pricing": "Contact sales; enterprise pricing.",
+      "market_positioning": "Governance, risk, and compliance."
+    },
+    {
+      "name": "Metabase (Open Source)",
+      "url": "https://metabase.com",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source BI tool that can query CRM databases and generate PDF reports. Requires technical setup and lacks compliance-specific formatting. Free alternative for basic report generation.",
+      "feature_overlap": "SQL querying, dashboard export to PDF, scheduling.",
+      "pricing": "Free (open source); paid cloud version available.",
+      "market_positioning": "Open-source analytics and reporting."
+    },
+    {
+      "name": "Upwork / Freelance Compliance Report Builders",
+      "url": "https://upwork.com",
+      "classification": "SERVICE",
+      "notes": "Freelancers offering custom compliance report creation from CRM data. Common workaround mentioned in source evidence. Not a product, but a service substitute.",
+      "feature_overlap": "Manual report creation, data extraction, formatting.",
+      "pricing": "Hourly rates $30–$150/hr.",
+      "market_positioning": "Freelance services for one-off or recurring reports."
+    }
+  ],
+  "substitutes": [
+    "Microsoft Power Automate + Word Templates",
+    "Tableau / Power BI",
+    "Metabase (Open Source)",
+    "Upwork / Freelance Compliance Report Builders"
+  ],
+  "summary": "The competitive landscape for automatically generating compliance reports from CRM data is moderately populated with established alternatives, but lacks a single purpose-built SaaS solution that directly addresses the exact JTBD. Most existing tools are either general-purpose document generation platforms (Conga, Nintex), native CRM reporting (Salesforce Reports), BI tools (Tableau, Power BI), or enterprise GRC platforms (AuditBoard, LogicGate) that require significant configuration and are not specifically designed for compliance report generation from CRM data. The open-source and service options provide workarounds but introduce manual effort or technical complexity. The market is not commoditized (score 3) because while many partial solutions exist, no dominant direct competitor has emerged. There is room for a dedicated, easy-to-use compliance report generator that integrates deeply with CRM systems and automates the entire workflow from data extraction to formatted PDF output.",
+  "research_evidence_urls": [
+    "https://conga.com",
+    "https://nintex.com",
+    "https://help.salesforce.com/s/articleView?id=sf.reports_overview.htm",
+    "https://powerautomate.microsoft.com",
+    "https://tableau.com",
+    "https://auditboard.com",
+    "https://logicgate.com",
+    "https://metabase.com",
+    "https://upwork.com"
+  ]
+}

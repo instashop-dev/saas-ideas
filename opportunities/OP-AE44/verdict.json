@@ -1,0 +1,150 @@
+{
+  "id": "OP-AE44",
+  "canonical_key": "CK-deb1b6fce76adb0a",
+  "title": "When I need to respond to compliance requests or audits, I want to automatically generate accurate r",
+  "target_user": "Compliance Officer",
+  "job_to_be_done": "When I need to respond to compliance requests or audits, I want to automatically generate accurate reports from CRM data, so I can avoid penalties, meet deadlines, and reduce manual effort.",
+  "painful_workflow": "Manually querying CRM using SQL or custom reports, exporting to spreadsheets, formatting templates, and compiling PDFs with screenshots.",
+  "current_workaround": "Using custom SQL queries, Excel templates, and hiring freelancers to compile reports.",
+  "source_ids": [
+    "SIG-004",
+    "SIG-0005"
+  ],
+  "independent_sources": 3,
+  "source_type_count": 2,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 4,
+  "economic_impact_score": 4,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 4,
+  "willingness_to_pay_score": 4,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 3,
+  "competition_score": 3,
+  "competitors": [
+    {
+      "name": "Conga (formerly Apttus) – Document Generation",
+      "url": "https://conga.com",
+      "classification": "PARTIAL",
+      "notes": "Conga Composer generates documents (PDF, Word) from Salesforce/CRM data. Can be configured for compliance reports, but requires template setup and is not purpose-built for compliance. Strong overlap in data extraction and formatting.",
+      "feature_overlap": "Data extraction from CRM, template-based document generation, PDF output, scheduling.",
+      "pricing": "Contact sales; typically per-user per-month, enterprise pricing.",
+      "market_positioning": "Document automation for sales and legal, not specifically compliance."
+    },
+    {
+      "name": "Nintex Workflow & Document Generation",
+      "url": "https://nintex.com",
+      "classification": "PARTIAL",
+      "notes": "Workflow automation platform with document generation capabilities. Can pull CRM data and generate compliance reports. Requires significant configuration and is a general-purpose tool.",
+      "feature_overlap": "Workflow triggers, data mapping, document templates, PDF generation.",
+      "pricing": "Starts around $1,000+/month for enterprise.",
+      "market_positioning": "Process automation and document generation for enterprises."
+    },
+    {
+      "name": "Salesforce Reports & Dashboards",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.reports_overview.htm",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Built-in reporting in Salesforce. Can create tabular/summary reports and export to Excel/PDF. Lacks automated compliance-specific formatting, narrative generation, and audit trail features. Users still need manual compilation.",
+      "feature_overlap": "CRM data querying, basic export, scheduling.",
+      "pricing": "Included with Salesforce licenses (Enterprise+).",
+      "market_positioning": "Native CRM reporting, not compliance-focused."
+    },
+    {
+      "name": "Microsoft Power Automate + Word Templates",
+      "url": "https://powerautomate.microsoft.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Can automate data extraction from Dynamics 365 or other CRM and populate Word templates to generate PDF reports. Requires technical setup and is a general automation tool.",
+      "feature_overlap": "Data integration, template population, PDF generation, scheduling.",
+      "pricing": "Per-user plans from $15/user/month; premium connectors extra.",
+      "market_positioning": "Low-code automation for Microsoft ecosystem."
+    },
+    {
+      "name": "Tableau / Power BI",
+      "url": "https://tableau.com / https://powerbi.microsoft.com",
+      "classification": "SUBSTITUTE",
+      "notes": "BI tools that connect to CRM data and create visual dashboards. Can export as PDF but not structured compliance reports with narrative. More suited for analysis than formatted report generation.",
+      "feature_overlap": "Data visualization, export to PDF, scheduled refresh.",
+      "pricing": "Tableau Creator $70/user/month; Power BI Pro $10/user/month.",
+      "market_positioning": "Business intelligence and analytics."
+    },
+    {
+      "name": "AuditBoard",
+      "url": "https://auditboard.com",
+      "classification": "PARTIAL",
+      "notes": "Audit management platform with reporting capabilities. Can integrate with CRM via APIs but is primarily for audit workflows, not automated report generation from CRM data. Overlap in compliance reporting but different primary use case.",
+      "feature_overlap": "Audit report templates, evidence collection, PDF export.",
+      "pricing": "Contact sales; enterprise pricing.",
+      "market_positioning": "Audit and risk management."
+    },
+    {
+      "name": "LogicGate",
+      "url": "https://logicgate.com",
+      "classification": "PARTIAL",
+      "notes": "GRC platform with reporting and automation. Can ingest CRM data but requires significant configuration. More focused on risk and compliance program management.",
+      "feature_overlap": "Compliance reporting, workflow automation, data integration.",
+      "pricing": "Contact sales; enterprise pricing.",
+      "market_positioning": "Governance, risk, and compliance."
+    },
+    {
+      "name": "Metabase (Open Source)",
+      "url": "https://metabase.com",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source BI tool that can query CRM databases and generate PDF reports. Requires technical setup and lacks compliance-specific formatting. Free alternative for basic report generation.",
+      "feature_overlap": "SQL querying, dashboard export to PDF, scheduling.",
+      "pricing": "Free (open source); paid cloud version available.",
+      "market_positioning": "Open-source analytics and reporting."
+    },
+    {
+      "name": "Upwork / Freelance Compliance Report Builders",
+      "url": "https://upwork.com",
+      "classification": "SERVICE",
+      "notes": "Freelancers offering custom compliance report creation from CRM data. Common workaround mentioned in source evidence. Not a product, but a service substitute.",
+      "feature_overlap": "Manual report creation, data extraction, formatting.",
+      "pricing": "Hourly rates $30–$150/hr.",
+      "market_positioning": "Freelance services for one-off or recurring reports."
+    }
+  ],
+  "substitutes": [
+    "Microsoft Power Automate + Word Templates",
+    "Tableau / Power BI",
+    "Metabase (Open Source)",
+    "Upwork / Freelance Compliance Report Builders"
+  ],
+  "verified_facts": [
+    "Manual generation of compliance reports involves SQL queries, Excel, and freelance labor (evidence 1, evidence 3, evidence 4).",
+    "Non-compliance fines and missed deadlines are cited as risks (evidence 2, evidence 4).",
+    "KYC reports are manually generated using Excel pivot tables and copy-paste (evidence 3).",
+    "GDPR access requests and audit logs are covered (evidence 1)."
+  ],
+  "inferences": [
+    "The manual process likely leads to inconsistent data quality (evidence 4 says 'inconsistent data quality').",
+    "Organizations are spending money on freelancers to address this problem (evidence 4).",
+    "The problem spans at least two compliance domains (GDPR and KYC)."
+  ],
+  "assumptions": [
+    "The CRM in question does not have adequate built-in compliance reporting features (not stated in evidence).",
+    "The pain is widespread enough that a SaaS tool would find a market across industries.",
+    "Compliance officers have decision-making authority or budget for purchasing tools."
+  ],
+  "unknowns": [
+    "How many organizations face this problem? No market size or frequency distribution.",
+    "What is the exact average cost of fines or freelancer expenses? Not provided.",
+    "Are there existing SaaS solutions (e.g., compliance automation tools) that already address this? No evidence of competitive landscape.",
+    "How long does it take to generate a report manually? Minutes, hours, or days? Unclear.",
+    "Is the target user truly a Compliance Officer, or could it be an IT/CRM admin? The evidence mentions 'manually querying the CRM' which is often an IT task."
+  ],
+  "rejection_reasons": [
+    "Competition too high: 3/5 (max 2)"
+  ],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-9A18143E",
+  "stage": "competition",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:55:01.343Z",
+  "updated_at": "2026-08-13T06:00:32.850Z"
+}

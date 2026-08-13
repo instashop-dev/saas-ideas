@@ -1,0 +1,16 @@
+{
+  "position": "CUSTOMER",
+  "summary": "As a CRM administrator, I'm tired of custom scripts that break whenever APIs change. I want a purpose-built, stable integration platform that doesn't require constant maintenance. I would likely search for this solution, especially if it offers a no-code experience and guaranteed API stability. But I need to see it work with my specific CRM (e.g., Salesforce, HubSpot, Dynamics) and prove it reduces breakage before I buy. I would pay $50–$150/month, but I'm skeptical of yet another tool that could become another maintenance burden. I would need a free trial, clear documentation, and evidence that it handles API changes automatically.",
+  "strongest_points": [
+    "Reduces the need for custom scripts and freelancers, directly addressing my pain of maintenance and breakage.",
+    "Promises stable integrations that automatically adapt to API changes — this is exactly what I struggle with.",
+    "Purpose-built for CRM administrators, so it likely understands my specific problems and doesn't require enterprise-level complexity or cost."
+  ],
+  "weaknesses": [
+    "I'm skeptical that a new tool can truly deliver on stability; I've been burned by 'no-code' platforms that still break.",
+    "I need to be sure it integrates with my specific CRM (Salesforce, HubSpot, or Dynamics) and the systems I already use (ERP, marketing, etc.). Without that, it's a no-go.",
+    "Pricing is unclear — if it's too cheap, I worry about reliability; if too expensive, I'll just stick with freelancers or open-source tools."
+  ],
+  "evidence_cited": [],
+  "confidence": 0.65
+}

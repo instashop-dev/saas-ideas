@@ -1,0 +1,23 @@
+{
+  "position": "CUSTOMER",
+  "summary": "I am a Financial Controller at a mid-market SaaS company ($20M-$100M ARR). I currently spend 8-12 hours per month exporting data from Salesforce (CRM), Stripe (billing), HubSpot (marketing), and Zendesk (support) into Excel, then using VLOOKUPs and pivot tables to find discrepancies. I also hire a part-time freelancer for $500/month to double-check my work. I would search for this solution, but I have high skepticism about whether it can actually handle the messy, real-world data across all four system types without massive setup effort.",
+  "strongest_points": [
+    "The pain is real and recurring — I waste 8-12 hours monthly on manual reconciliation, and I pay a freelancer $500/mo to help. A tool that saves me 10+ hours/month and eliminates the freelancer cost would pay for itself quickly.",
+    "No existing tool covers CRM + billing + marketing + support reconciliation. Trovata, BlackLine, and Nanonets only handle financial data. This is a genuine gap — I would actively search for a cross-system reconciliation tool.",
+    "The economic impact is clear: errors in attribution (e.g., marketing claiming a deal that billing shows as canceled) cost us real revenue. I've seen $15K+ in misattributed commissions in a single quarter."
+  ],
+  "weaknesses": [
+    "I am deeply skeptical that an automated tool can handle the messy reality of our data — different date formats, partial matches, missing fields, custom objects in Salesforce, and non-standard billing line items. I would need to see it work on my actual data before buying. A demo with sanitized data won't convince me.",
+    "Integration requirements are a dealbreaker: I need native connectors to Salesforce, Stripe, HubSpot, and Zendesk at minimum. If I have to use Zapier or custom APIs to connect, the setup effort kills the value proposition. I will not buy if setup takes more than 2 hours.",
+    "Budget is tight — I can justify up to $300-500/month for a tool that saves 10+ hours and eliminates the freelancer. But if pricing starts at $1,000+/month, I will not get approval from my CFO without a 3-month pilot proving ROI. The competitor pricing (Nanonets $499/mo, BlackLine $50k/yr) suggests this could be priced too high for mid-market."
+  ],
+  "evidence_cited": [
+    "SRC-0001",
+    "SRC-0002",
+    "SRC-0003",
+    "SRC-0004",
+    "SRC-0005",
+    "SRC-0006"
+  ],
+  "confidence": 0.75
+}

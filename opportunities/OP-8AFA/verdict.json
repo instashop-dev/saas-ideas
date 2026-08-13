@@ -1,0 +1,169 @@
+{
+  "id": "OP-8AFA",
+  "canonical_key": "CK-b775ccd937496078",
+  "title": "When I need to ensure data consistency across CRM, billing, marketing, and support systems, I want t",
+  "target_user": "Financial Controller",
+  "job_to_be_done": "When I need to ensure data consistency across CRM, billing, marketing, and support systems, I want to automatically reconcile records without manual comparison, so I can prevent errors, improve attribution, and save hours of manual work.",
+  "painful_workflow": "Periodically exporting data from multiple systems (CRM, billing, marketing, support) into spreadsheets, manually matching line items, and identifying discrepancies using formulas like VLOOKUP.",
+  "current_workaround": "Using Excel pivot tables, VLOOKUPs, and manual cross-checking; hiring freelancers to compare reports line by line.",
+  "source_ids": [
+    "SIG-003",
+    "SIG-002",
+    "SIG-002",
+    "SIG-0002"
+  ],
+  "independent_sources": 6,
+  "source_type_count": 3,
+  "pain_score": 4,
+  "frequency_score": 3,
+  "urgency_score": 3,
+  "economic_impact_score": 3,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 4,
+  "willingness_to_pay_score": 3,
+  "distribution_score": 3,
+  "global_score": 5,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 3,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "Trovata",
+      "url": "https://www.trovata.io",
+      "classification": "PARTIAL",
+      "notes": "Focuses on cash reconciliation and treasury data, not general CRM/billing/marketing/support reconciliation. Strong for financial data but limited scope.",
+      "feature_overlap": "Automated data aggregation and reconciliation for financial transactions, but not designed for operational system data (CRM, marketing, support).",
+      "pricing": "Not publicly listed, enterprise",
+      "market_positioning": "Treasury and cash management automation"
+    },
+    {
+      "name": "Nanonets",
+      "url": "https://nanonets.com",
+      "classification": "PARTIAL",
+      "notes": "AI-based data extraction and reconciliation tool. Works well for invoice and payment reconciliation but is document-centric, not system-to-system.",
+      "feature_overlap": "Automated matching and discrepancy detection, but requires document inputs rather than API-based system connections.",
+      "pricing": "Starts at ~$499/mo",
+      "market_positioning": "AI document processing and data extraction"
+    },
+    {
+      "name": "BlackLine",
+      "url": "https://www.blackline.com",
+      "classification": "PARTIAL",
+      "notes": "Enterprise financial close and account reconciliation platform. Very strong for GL/subledger reconciliation but not designed for operational CRM/marketing/support data.",
+      "feature_overlap": "Automated reconciliation workflows, matching rules, discrepancy reporting. Limited to financial accounts.",
+      "pricing": "Enterprise, typically $50k+/yr",
+      "market_positioning": "Financial close management for large enterprises"
+    },
+    {
+      "name": "Trintech",
+      "url": "https://www.trintech.com",
+      "classification": "PARTIAL",
+      "notes": "Similar to BlackLine - focused on financial close and balance sheet reconciliation. Not designed for operational system data.",
+      "feature_overlap": "Reconciliation automation, matching rules, audit trails. Financial account focused.",
+      "pricing": "Enterprise, $50k+/yr",
+      "market_positioning": "Financial governance and close automation"
+    },
+    {
+      "name": "Reconciliation.io",
+      "url": "https://reconciliation.io",
+      "classification": "PARTIAL",
+      "notes": "Data reconciliation platform but primarily for financial data (bank, credit card, ledger). Not designed for CRM/billing/marketing/support system data.",
+      "feature_overlap": "Automated data matching, rule-based reconciliation, discrepancy reporting. Financial data focus.",
+      "pricing": "Not publicly listed",
+      "market_positioning": "Financial data reconciliation"
+    },
+    {
+      "name": "Xero (reconciliation features)",
+      "url": "https://www.xero.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Bank reconciliation feature within accounting software. Only covers financial transactions, not operational system data.",
+      "feature_overlap": "Automated bank transaction matching. Very narrow scope.",
+      "pricing": "$13-70/mo",
+      "market_positioning": "Small business accounting"
+    },
+    {
+      "name": "QuickBooks (reconciliation features)",
+      "url": "https://quickbooks.intuit.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Built-in bank reconciliation. Only financial, not operational.",
+      "feature_overlap": "Bank transaction matching. No cross-system capability.",
+      "pricing": "$15-100/mo",
+      "market_positioning": "Small business accounting"
+    },
+    {
+      "name": "HubSpot Operations Hub",
+      "url": "https://www.hubspot.com/products/operations",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Data sync and deduplication within HubSpot ecosystem. Syncs CRM data with other tools but does not do reconciliation across billing, marketing, support systems.",
+      "feature_overlap": "Data syncing, deduplication, field mapping. Not reconciliation-focused.",
+      "pricing": "Starts at $50/mo",
+      "market_positioning": "CRM data management and automation"
+    },
+    {
+      "name": "Zapier / Make (Integromat)",
+      "url": "https://zapier.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Can be used to build custom reconciliation workflows but requires significant setup and is not purpose-built for reconciliation.",
+      "feature_overlap": "Data transfer and basic comparison logic. No built-in reconciliation intelligence.",
+      "pricing": "Free to $599/mo",
+      "market_positioning": "Workflow automation"
+    },
+    {
+      "name": "OpenRefine",
+      "url": "https://openrefine.org",
+      "classification": "OPEN_SOURCE",
+      "notes": "Data cleaning and reconciliation tool. Powerful for data matching but requires technical skill and is not automated/continuous.",
+      "feature_overlap": "Data matching, clustering, reconciliation. Manual/technical tool, not SaaS.",
+      "pricing": "Free",
+      "market_positioning": "Open source data cleaning"
+    },
+    {
+      "name": "Dedoose / Tally (consultancies)",
+      "url": "https://www.dedoose.com",
+      "classification": "SERVICE",
+      "notes": "Consultancies that offer manual data reconciliation services. Expensive, slow, error-prone.",
+      "feature_overlap": "Manual data comparison and reporting. Human-driven.",
+      "pricing": "Hourly, $100-300/hr",
+      "market_positioning": "Data reconciliation consulting"
+    }
+  ],
+  "substitutes": [
+    "Excel/Google Sheets with VLOOKUP and pivot tables",
+    "Freelancers on Upwork/Fiverr for manual reconciliation",
+    "Custom scripts (Python, SQL) for data comparison",
+    "Internal data warehouse with custom reconciliation queries"
+  ],
+  "verified_facts": [
+    "Manual reconciliation between systems (CRM, billing, marketing, support) is performed using spreadsheets and VLOOKUPs.",
+    "Errors such as revenue recognition errors, payroll errors, and inventory discrepancies occur due to inconsistent data.",
+    "Up to 2 hours per day are spent on reconciliation for customer interactions (Evidence 5).",
+    "Freelancers are hired to compare reports line by line (Evidence 1, 3).",
+    "Weekly reconciliation of orders between Shopify and QuickBooks is done manually (Evidence 7)."
+  ],
+  "inferences": [
+    "The pain of manual reconciliation is felt across multiple departments (finance, marketing, support), but the cluster targets Financial Controllers specifically.",
+    "The economic impact of errors is likely significant enough to justify spending on labor (freelancers), but not necessarily on software.",
+    "The frequency and intensity vary by use case; financial reconciliation may be less frequent but higher stakes than support reconciliation."
+  ],
+  "assumptions": [
+    "The evidence from communication channel reconciliation (SIG-002) is relevant to the financial controller's workflow.",
+    "Financial Controllers are the primary decision-makers for purchasing reconciliation software.",
+    "The workaround effort (2 hours daily) is representative of the target user's experience."
+  ],
+  "unknowns": [
+    "Exact dollar cost of errors and time spent for a typical Financial Controller.",
+    "Whether Financial Controllers are already using or evaluating existing reconciliation tools (e.g., Trovata, FloQast).",
+    "The specific frequency of reconciliation for the target user (daily, weekly, monthly).",
+    "The willingness to pay for a SaaS solution versus continuing to hire freelancers.",
+    "The size of the addressable market and ease of customer acquisition."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "APPROVE",
+  "confidence": 0.75,
+  "final_score": 0,
+  "run_id": "RUN-9A18143E",
+  "stage": "judge",
+  "status": "APPROVED",
+  "created_at": "2026-08-13T05:55:37.964Z",
+  "updated_at": "2026-08-13T06:01:24.347Z"
+}

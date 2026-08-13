@@ -1,0 +1,20 @@
+{
+  "position": "BEAR",
+  "summary": "While CRM data import is a real operational pain, this opportunity is a feature-not-a-company, faces severe platform risk (both from mega-CRMs and low-code automation), has fragmented distribution, weak willingness-to-pay signals, and no durable moat. It is swimming upstream against incumbents who can build this overnight.",
+  "strongest_points": [
+    "Platform risk from CRM vendors (Salesforce, HubSpot) is existential. Salesforce already has Data Import Wizard and DemandTools as a mature add-on. The moment Salesforce or HubSpot adds a lightweight 'auto-import from email/Sheet' button, this product is dead. CRM platform consolidation trends mean they are steadily eating point solutions.",
+    "Zapier is already the default for this workflow - and with 6,000+ integrations and 30-day free trials, a sales ops manager can build a working pipeline in an afternoon. While Zapier lacks dedup and smart merging, those gaps will be filled by native AI features (OpenAI + Zapier is already here) or by CRM platform updates within 18 months.",
+    "Willingness to pay is low (2/10 validated). The target user (Sales Ops Manager) is cost-conscious, and the pain is annoying but not critical (pain intensity 3, economic impact 2). Many will tolerate manual work or use free Zapier tiers rather than pay $50-100/mo for a single-use import tool. The 'freelancer workaround' explicitly shows a race to the bottom on cost.",
+    "Distribution is incredibly hard. Sales Ops Managers are not on Product Hunt or browsing SaaS directories. They live inside Salesforce/HubSpot admin consoles. Reaching them requires either CRM marketplace listing (controlled by CRM vendors), partnerships with CRM consultants (who already recommend DemandTools), or expensive outbound sales. CAC will be crushing for a low-ACV product."
+  ],
+  "weaknesses": [
+    "The bear case underestimates the pain of duplicate records and data corruption. A single bad merge that wipes 1,000 contacts can cost a company weeks of recovery. There might be room for a premium product that guarantees perfect dedup and audit trails.",
+    "Some verticals (real estate, insurance, healthcare) have compliance requirements that make manual import risky. A purpose-built solution with audit logs could have regulatory stickiness. However, this requires enterprise sales, not self-serve."
+  ],
+  "evidence_cited": [
+    "SRC-002 validation scores: willingness_to_pay 2, pain_intensity 3",
+    "SRC-002 competitors: Salesforce Data Import Wizard (native, free), Zapier (default automation, $19.99/mo), DemandTools (enterprise incumbent)",
+    "SRC-002 evidence_count: 8 pieces of evidence, all identifying existing partial solutions"
+  ],
+  "confidence": 0.82
+}

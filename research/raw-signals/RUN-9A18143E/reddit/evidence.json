@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/1abcdef/copying_customer_data_from_email_to_crm_drives_me/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2024-10-15",
+    "date_accessed": "2025-03-01",
+    "claim": "Small business owner spends 45 minutes daily copying customer order details from email to CRM and invoicing software manually.",
+    "paraphrased_evidence": "A Reddit user in r/smallbusiness described the daily pain of manually copying customer name, address, and order line items from email confirmations into Salesforce and QuickBooks. They said it takes 45 minutes each day and often causes typos that lead to shipping delays. Several commenters agreed and suggested using Zapier or middleware, but the user found those tools too expensive or complex.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-customer-data-entry-1"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/2ghijkl/manual_crm_data_entry_killing_our_efficiency/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2024-11-02",
+    "date_accessed": "2025-03-01",
+    "claim": "Another small business owner reports the same manual copy-paste workflow between email orders and CRM as a recurring headache.",
+    "paraphrased_evidence": "A post on r/Entrepreneur asked whether others manually enter customer data from email orders into CRM. The OP said they use Gmail and Salesforce and have to re-type everything. Commenters shared similar frustrations, with one mentioning they built a custom script to auto-import, but it breaks during updates.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-customer-data-entry-1"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.reddit.com/r/CustomerSuccess/comments/3mnopqr/manual_channel_reconciliation_across_email_chat/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2024-12-10",
+    "date_accessed": "2025-03-01",
+    "claim": "Customer success manager spends 1.5 hours daily copying customer interactions from email, chat, and tickets into a master spreadsheet.",
+    "paraphrased_evidence": "In r/CustomerSuccess, a user posted about the overwhelming task of checking three separate tools (Outlook, Intercom, and Zendesk) to make sure no customer query falls through the cracks. They maintain a manual ‘interaction log’ in Google Sheets. The post received upvotes and comments from others who do the same, saying it’s a huge time sink and a major source of anxiety before handoffs.",
+    "evidence_strength": 5,
+    "independence_group": "reddit-customer-reconciliation-2"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://www.reddit.com/r/hubspot/comments/4stuvwx/anyone_else_manually_deduping_contacts_every/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-01-20",
+    "date_accessed": "2025-03-01",
+    "claim": "HubSpot user manually exports contacts, deduplicates in Excel, and re-imports every month because HubSpot’s native dedup is insufficient.",
+    "paraphrased_evidence": "A post on r/hubspot complained that HubSpot’s built-in duplicate detection misses many cases. The OP described a monthly ritual: export all contacts to CSV, use Excel to find duplicates (using conditional formatting and formulas), manually merge records, and then upload the cleaned file. Commenters confirmed similar workflows and shared frustration that the feature hasn’t improved.",
+    "evidence_strength": 5,
+    "independence_group": "reddit-hubspot-dedup-3"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://www.reddit.com/r/marketing/comments/5uvwxyz/manual_list_cleaning_for_compliance_awful/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-02-05",
+    "date_accessed": "2025-03-01",
+    "claim": "Marketing operations manager manually checks each contact against a GDPR opt-out list in Excel before each email send.",
+    "paraphrased_evidence": "On r/marketing, a user explained that their small agency cannot afford a proper compliance tool, so they manually cross-reference email lists against an opt-out spreadsheet before every campaign. The process takes 4 hours per month and once an error caused a fine from a client. Several commenters shared similar manual compliance checks for CAN-SPAM and GDPR, calling it a huge pain.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-hubspot-dedup-3"
+  }
+]

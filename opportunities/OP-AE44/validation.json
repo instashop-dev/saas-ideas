@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 3,
+    "urgency": 4,
+    "economic_impact": 4,
+    "operational_impact": 3,
+    "workaround_intensity": 4,
+    "willingness_to_pay": 4,
+    "global_applicability": 4,
+    "customer_accessibility": 4,
+    "evidence_quality": 3
+  },
+  "reasoning": {
+    "pain_intensity": "Evidence mentions non-compliance fines and risk of missing data (evidence 2, evidence 4), but does not quantify the frequency or severity of fines. KYC reports are periodic, not daily crises. Score 3: painful but not severe for all scenarios.",
+    "frequency": "GDPR access requests can occur weekly; financial audits are quarterly/annual (evidence 1, evidence 3). Overall frequency is moderate, not daily. Score 3.",
+    "urgency": "Legal requests have strict deadlines; slow response risks penalties (evidence 2). Urgency is real but not a constant fire. Score 4.",
+    "economic_impact": "Non-compliance fines and high cost of freelancers are cited (evidence 4). Fines can be substantial, but no specific dollar amounts are given. Score 4 reflects potential high impact.",
+    "operational_impact": "Manual data extraction and formatting tie up compliance teams (evidence 1, evidence 3), but the process does not block the entire organization. Score 3.",
+    "workaround_intensity": "Current workaround involves custom SQL, Excel templates, and hiring freelancers (evidence 1, evidence 3, evidence 4). This requires significant time and skill. Score 4.",
+    "willingness_to_pay": "Organizations already pay freelancers and suffer fines, indicating readiness to spend on a solution (evidence 4). No evidence of existing SaaS rejections. Score 4.",
+    "global_applicability": "Compliance like GDPR and KYC are international (evidence 1, evidence 3). Most regulated industries worldwide face similar needs. Score 4.",
+    "customer_accessibility": "Compliance officers are identifiable via LinkedIn, industry events, and professional networks. CRM platforms like Salesforce have dedicated compliance user groups. Score 4.",
+    "evidence_quality": "3 independent sources and 2 source types (likely interview + forum/vendor content). However, evidence lacks quantitative data, specific quotes, or named companies. Score 3."
+  },
+  "verified_facts": [
+    "Manual generation of compliance reports involves SQL queries, Excel, and freelance labor (evidence 1, evidence 3, evidence 4).",
+    "Non-compliance fines and missed deadlines are cited as risks (evidence 2, evidence 4).",
+    "KYC reports are manually generated using Excel pivot tables and copy-paste (evidence 3).",
+    "GDPR access requests and audit logs are covered (evidence 1)."
+  ],
+  "inferences": [
+    "The manual process likely leads to inconsistent data quality (evidence 4 says 'inconsistent data quality').",
+    "Organizations are spending money on freelancers to address this problem (evidence 4).",
+    "The problem spans at least two compliance domains (GDPR and KYC)."
+  ],
+  "assumptions": [
+    "The CRM in question does not have adequate built-in compliance reporting features (not stated in evidence).",
+    "The pain is widespread enough that a SaaS tool would find a market across industries.",
+    "Compliance officers have decision-making authority or budget for purchasing tools."
+  ],
+  "unknowns": [
+    "How many organizations face this problem? No market size or frequency distribution.",
+    "What is the exact average cost of fines or freelancer expenses? Not provided.",
+    "Are there existing SaaS solutions (e.g., compliance automation tools) that already address this? No evidence of competitive landscape.",
+    "How long does it take to generate a report manually? Minutes, hours, or days? Unclear.",
+    "Is the target user truly a Compliance Officer, or could it be an IT/CRM admin? The evidence mentions 'manually querying the CRM' which is often an IT task."
+  ],
+  "overall_assessment": "The cluster identifies a real compliance reporting pain with manual workflows and risk of penalties. However, the evidence lacks quantification of frequency, cost, and the failure of existing CRM reporting features. The pain may be moderate, not a burning daily need for all compliance officers. The opportunity is plausible but not proven; further validation with concrete numbers and competitive analysis is required before committing to a SaaS product."
+}

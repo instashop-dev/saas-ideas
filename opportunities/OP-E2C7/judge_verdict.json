@@ -1,0 +1,8 @@
+{
+  "verdict": "REJECT",
+  "strongest_reason": "Willingness to pay is low (2/5) and pain intensity is moderate (3/5), meaning the burning need is not strong enough to sustain a paid product, and the customer perspective confirms users would struggle to justify spending over $20–40/month.",
+  "strongest_risk": "Platform risk from CRM vendors (Salesforce, HubSpot) and Zapier, who can easily add intelligent import features, making a point solution obsolete.",
+  "unresolved_assumption": "Whether users would actually pay for a purpose-built tool given the availability of free or low-cost partial solutions and the low willingness-to-pay signal.",
+  "confidence": 0.85,
+  "recommended_next_step": "If the team decides to pursue this space, they should first validate willingness to pay through a pre-sale or landing page test targeting a specific vertical with compliance needs, but under current evidence the opportunity does not clear the deterministic gates."
+}
