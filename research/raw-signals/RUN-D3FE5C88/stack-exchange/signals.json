@@ -1,0 +1,47 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Developer (WhatsApp Business API integrator)",
+    "workflow": "Automating WhatsApp message sending using the WhatsApp Business API requires manual session token refresh and re-authentication via QR code scanning when tokens expire.",
+    "trigger": "Session token expiry after 24 hours or server restart",
+    "frequency": "Daily to weekly",
+    "current_workaround": "Developers write scripts to periodically re-scan QR codes from the WhatsApp Web interface, or use headless browser automation (e.g., Puppeteer) to manually refresh the session.",
+    "consequence": "If session expires, automated messages stop; missed notifications or delayed responses can lead to customer dissatisfaction or SLA breaches.",
+    "ecosystem": "stack-exchange",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "System administrator managing WhatsApp notifications",
+    "workflow": "Monitoring and sending alerts via WhatsApp requires manual intervention to maintain the WhatsApp Web session and handle occasional disconnections due to network changes or WhatsApp policy updates.",
+    "trigger": "Server reboot, network change, or WhatsApp Web session timeout after 14 days of inactivity",
+    "frequency": "Weekly or bi-weekly",
+    "current_workaround": "Sysadmins rely on cron jobs that check session status and manually re-authenticate by scanning the QR code using a mobile device, often requiring physical access to the phone.",
+    "consequence": "Alerting pipeline fails silently; critical operational alerts (e.g., server down) may not be delivered, leading to prolonged downtime.",
+    "ecosystem": "stack-exchange",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Developer using WhatsApp Cloud API with Twilio or similar",
+    "workflow": "Integrating WhatsApp Cloud API for bulk messaging requires manual handling of webhook verification, media uploads, and template approval, with no native retry mechanism for failed sends.",
+    "trigger": "New message campaign or template submission",
+    "frequency": "Per event (multiple times per week)",
+    "current_workaround": "Developers build custom retry logic, manual webhook verification steps, and work with WhatsApp support to approve message templates, which can take days.",
+    "consequence": "Delays in sending time-sensitive communications (e.g., appointment reminders) cause missed appointments and revenue loss.",
+    "ecosystem": "stack-exchange",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  }
+]

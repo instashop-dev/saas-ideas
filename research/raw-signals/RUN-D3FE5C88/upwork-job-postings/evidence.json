@@ -1,0 +1,14 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.upwork.com/nx/search/jobs/?q=whatsapp+manual",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": null,
+    "date_accessed": "2025-06-02T00:00:00Z",
+    "claim": "Attempted source: Upwork job search for 'whatsapp manual' could not be retrieved or verified in this environment.",
+    "paraphrased_evidence": "Recorded as a failed/unverifiable source attempt per operating rules. No live web retrieval tool was available during this run, and Upwork job detail pages are dynamic, frequently expire, and often require authentication, so no specific job posting URL, posting date, or client description could be independently verified. Because fabricating URLs, quotations, or posting details is prohibited, zero pain signals were extracted rather than risk inventing evidence. To complete this research question, a live crawl of Upwork search results (keyword: 'whatsapp manual', filtered to the last 6 months) is required, capturing posting URLs, publish dates, task descriptions (e.g., manual bulk messaging without API, lead follow-up, order confirmation, support replies), and stated pain points (time consumption, errors, missed messages).",
+    "evidence_strength": 1,
+    "independence_group": "upwork-search-attempt-whatsapp-manual"
+  }
+]

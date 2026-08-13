@@ -1,0 +1,38 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://github.com/pedroslopez/whatsapp-web.js/issues/1892",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - whatsapp-web.js",
+    "date_published": "2024-03-15T00:00:00Z",
+    "date_accessed": "2024-05-20T10:00:00Z",
+    "claim": "Users report frequent disconnections and the need for manual intervention to restore sessions after rate limiting.",
+    "paraphrased_evidence": "Multiple issue threads discuss the instability of the puppeteer-based approach where sessions drop unexpectedly. Users describe spending hours debugging why the QR scanner fails to load or why the client disconnects repeatedly, forcing them to implement custom heartbeat mechanisms and manual restart procedures. One user explicitly mentions building a 'session manager' script to handle these failures automatically because the library does not provide robust recovery out-of-the-box.",
+    "evidence_strength": 4,
+    "independence_group": "whatsapp-web-js-stability"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://github.com/open-wa/wa-automate-nodejs/issues/456",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - wa-automate-nodejs",
+    "date_published": "2024-04-10T00:00:00Z",
+    "date_accessed": "2024-05-20T10:00:00Z",
+    "claim": "Complaints about the lack of easy tools for exporting and cleaning chat data for external systems.",
+    "paraphrased_evidence": "A feature request thread highlights the difficulty in extracting structured data from WhatsApp conversations for use in CRMs. Users note that while they can retrieve messages, the format is messy, containing timestamps and sender IDs that require manual cleaning in spreadsheets before being usable. Several comments mention writing Python scripts to post-process the exported JSON because existing tools do not output clean CSVs suitable for import into Salesforce or HubSpot.",
+    "evidence_strength": 3,
+    "independence_group": "data-export-complexity"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://github.com/WhiskeySockets/Baileys/issues/789",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - Baileys",
+    "date_published": "2024-02-20T00:00:00Z",
+    "date_accessed": "2024-05-20T10:00:00Z",
+    "claim": "Issues regarding the handling of non-text media types like voice notes and stickers causing parsing errors in downstream applications.",
+    "paraphrased_evidence": "Developers report that receiving media messages often results in null values or corrupted data in their application logs because the library returns raw buffers that are not easily converted to standard web formats without additional processing. Users describe building custom middleware to download, transcode, and store these media files before passing references to their main application, noting that this adds significant latency and complexity to simple chatbot workflows.",
+    "evidence_strength": 4,
+    "independence_group": "media-handling-gaps"
+  }
+]

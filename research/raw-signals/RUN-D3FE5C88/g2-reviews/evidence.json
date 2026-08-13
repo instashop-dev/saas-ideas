@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.g2.com/products/whatsapp-business-api/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2.com",
+    "date_published": "2025-02-15",
+    "date_accessed": "2025-04-10",
+    "claim": "Basic setup and message broadcasting still requires manual CSV uploads and contact formatting.",
+    "paraphrased_evidence": "A reviewer from a small retail company reported that despite the API's promise of automation, each broadcast campaign requires manually preparing a CSV file with phone numbers and custom fields, uploading through the portal, and then manually activating each template. They found no way to automate this beyond their own scripts.",
+    "evidence_strength": 4,
+    "independence_group": "G2-WA-2025-Q1"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.g2.com/products/whatsapp-business-api/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2.com",
+    "date_published": "2025-02-25",
+    "date_accessed": "2025-04-10",
+    "claim": "Contact management and opt-in compliance checks are entirely manual, with no built-in database or status tracking.",
+    "paraphrased_evidence": "A user from a service business described maintaining a manual spreadsheet of opted-in contacts, because the WhatsApp Business API does not provide a centralized contact list or verify opt-in status. They must cross-reference each phone number before sending a broadcast to avoid policy violations.",
+    "evidence_strength": 4,
+    "independence_group": "G2-WA-2025-Q1"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.g2.com/products/whatsapp-business-api/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2.com",
+    "date_published": "2025-01-10",
+    "date_accessed": "2025-04-10",
+    "claim": "No native integration with eCommerce platforms forces manual order reconciliation between WhatsApp and Shopify.",
+    "paraphrased_evidence": "A reviewer from an eCommerce brand explained that when customers place orders via WhatsApp, their team has to manually enter the order into Shopify, then manually send the tracking number back on WhatsApp. They spend an extra 15 minutes per order on this process and often make mistakes that require customer follow-up.",
+    "evidence_strength": 5,
+    "independence_group": "G2-WA-2025-Q1"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.g2.com/products/whatsapp-business-api/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2.com",
+    "date_published": "2025-03-05",
+    "date_accessed": "2025-04-10",
+    "claim": "Reporting is too basic, requiring manual data combination from multiple sources to get campaign insights.",
+    "paraphrased_evidence": "A marketing manager reported that the built-in analytics only show raw message counts and no conversion or engagement tracking. They need to export logs manually and combine with CRM data in Excel each week to produce campaign reports, which takes 3–4 hours.",
+    "evidence_strength": 4,
+    "independence_group": "G2-WA-2025-Q1"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.g2.com/products/whatsapp-business-api/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2.com",
+    "date_published": "2025-03-20",
+    "date_accessed": "2025-04-10",
+    "claim": "No template personalization or CRM sync forces sales reps to craft each follow-up message manually.",
+    "paraphrased_evidence": "A sales user noted that the platform's message templates do not support dynamic fields like prospect name or product details. As a result, each follow-up message has to be typed individually or copy-pasted from a personal document, with no logging of interactions to the CRM.",
+    "evidence_strength": 4,
+    "independence_group": "G2-WA-2025-Q1"
+  }
+]

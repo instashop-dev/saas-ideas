@@ -1,0 +1,66 @@
+[
+  {
+    "cluster_id": "CL-0001",
+    "canonical_jtbd": "When my automated WhatsApp messaging system loses connection due to session expiry or network change, I want to automatically re-authenticate without manual QR code scanning, so I can ensure uninterrupted delivery of critical notifications and avoid service downtime.",
+    "target_user": "Backend Developer / DevOps Engineer / System Administrator",
+    "painful_workflow": "1. Automated messaging runs via WhatsApp Web session. 2. Session expires after 24 hours or due to IP ban / inactivity. 3. Developer must manually detect disconnection, run custom scripts, scan QR code via headless browser or phone, and restart processes. 4. If session is not refreshed promptly, entire automation pipeline stalls.",
+    "current_workaround": "Writing custom scripts to detect disconnection, manually triggering QR code scanning via headless browsers, rotating phone numbers to avoid bans, and relying on cron jobs with physical phone access to re-authenticate.",
+    "source_signal_ids": [
+      "SIG-001",
+      "SIG-001",
+      "SIG-002"
+    ],
+    "source_evidence": [
+      "Developers write custom scripts to detect disconnection, manually trigger QR code scanning via headless browsers, and restart the node process. They often maintain a pool of multiple phone numbers/numbers to rotate when one gets banned. (SIG-001, github)",
+      "Developers write scripts to periodically re-scan QR codes from the WhatsApp Web interface, or use headless browser automation (e.g., Puppeteer) to manually refresh the session. (SIG-001, stack-exchange)",
+      "Sysadmins rely on cron jobs that check session status and manually re-authenticate by scanning the QR code using a mobile device, often requiring physical access to the phone. (SIG-002, stack-exchange)"
+    ],
+    "independent_sources": 3,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T14:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0002",
+    "canonical_jtbd": "When preparing a WhatsApp broadcast campaign, I want to automatically import and validate my contact list against opt-in compliance, so I can send messages quickly without risking account bans or manual data entry errors.",
+    "target_user": "Customer Support Manager / Marketing Manager",
+    "painful_workflow": "1. Business needs to send bulk messages (appointment reminders, promos). 2. Must manually export contacts from CRM, format into CSV/Excel. 3. Cross-reference against separate opt-in spreadsheet to verify compliance. 4. Upload batches one by one through API portal. 5. Risk of sending to wrong contacts or violating opt-in policy.",
+    "current_workaround": "Maintaining separate spreadsheets of opted-in contacts, manually cross-referencing import files before each broadcast, and building manual validation checks before upload.",
+    "source_signal_ids": [
+      "SIG-0001",
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      "Manually exporting contacts from CRM, formatting them into CSV/Excel for each message template, and uploading them one batch at a time through the API portal. (SIG-0001, g2)",
+      "Keeping a separate spreadsheet of opted-in contacts and cross-referencing import files against it each time they send a broadcast; building manual validation checks before upload. (SIG-0002, g2)"
+    ],
+    "independent_sources": 2,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T14:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0003",
+    "canonical_jtbd": "When a customer places an order or sends payment via WhatsApp, I want the order details to automatically sync with my eCommerce/inventory system, so I can avoid double data entry, reduce errors, and fulfill orders accurately.",
+    "target_user": "Operations Manager / eCommerce Business Owner",
+    "painful_workflow": "1. Customer sends order/payment confirmation via WhatsApp. 2. Agent manually copies details from chat into eCommerce admin or ERP. 3. Separately copies tracking number and sends WhatsApp update. 4. May take screenshots of WhatsApp messages and manually enter into inventory system. 5. Manual invoice creation and payment tracking adds extra steps.",
+    "current_workaround": "Copying order details from WhatsApp chat into eCommerce admin manually; taking screenshots and entering data into inventory/ERP; manually typing invoice details or attaching PDFs and following up for payment.",
+    "source_signal_ids": [
+      "SIG-0003",
+      "SIG-0003",
+      "SIG-0007"
+    ],
+    "source_evidence": [
+      "Copying order details from WhatsApp chat into the eCommerce admin manually; then separately copying the tracking number and sending a WhatsApp message to the customer. (SIG-0003, g2)",
+      "Support agents take screenshots of WhatsApp messages and manually enter order details into their inventory or ERP system. (SIG-0003, reddit)",
+      "Agents manually type invoice details into a message or attach a PDF generated from another system, then follow up manually for payment. (SIG-0007, reddit)"
+    ],
+    "independent_sources": 3,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T14:00:00Z"
+  }
+]

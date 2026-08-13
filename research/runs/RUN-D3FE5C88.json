@@ -1,0 +1,73 @@
+{
+  "run_id": "RUN-D3FE5C88",
+  "started_at": "2026-08-13T06:30:35.611Z",
+  "completed_at": "2026-08-13T06:45:33.589Z",
+  "trigger": "manual",
+  "keyword": "whatsapp manual",
+  "research_plan": {
+    "sources": [
+      {
+        "ecosystem": "reddit",
+        "research_questions": [
+          "What manual steps do small business owners repeatedly perform when using WhatsApp for customer communication?",
+          "Which recurring complaints exist about the lack of automation for bulk messaging or broadcast lists?",
+          "How do users describe the pain of manually copying-pasting messages or contacts between WhatsApp and other tools?"
+        ]
+      },
+      {
+        "ecosystem": "stack-exchange",
+        "research_questions": [
+          "What unanswered questions on Stack Overflow reveal developers struggling with manual API integration for WhatsApp Business?",
+          "Which common errors or workarounds indicate that automating WhatsApp messages requires manual intervention (e.g., session handling, QR code scanning)?",
+          "What operational bottlenecks are reported by sysadmins trying to manage WhatsApp notifications manually?"
+        ]
+      },
+      {
+        "ecosystem": "upwork-job-postings",
+        "research_questions": [
+          "What are the most frequent job descriptions asking for manual WhatsApp message sending or data entry into WhatsApp?",
+          "Which tasks (e.g., lead follow-up, order confirmation, support replies) are consistently posted as manual, repetitive work?",
+          "How do clients describe the need for manual bulk WhatsApp messaging without an API?",
+          "What specific pain points (e.g., time consumption, errors, missed messages) are highlighted in these job postings?"
+        ]
+      },
+      {
+        "ecosystem": "github-issues",
+        "research_questions": [
+          "What issues in open-source WhatsApp libraries (e.g., whatsapp-web.js, yowsup) mention manual workarounds for rate limiting, message parsing, or connection maintenance?",
+          "Which feature requests focus on reducing manual steps like re-authentication, starting a new session, or manually exporting chat data?",
+          "How do users describe the pain of manually handling unsupported media types or message formatting?"
+        ]
+      },
+      {
+        "ecosystem": "g2-reviews",
+        "research_questions": [
+          "What negative reviews of WhatsApp Business API tools highlight the need for manual setup, manual contact management, or manual reporting?",
+          "Which recurring complaints mention that the tool still requires manual human intervention for common tasks?",
+          "How do reviewers describe the gap between promised automation and actual manual effort required?"
+        ]
+      }
+    ]
+  },
+  "models": {
+    "research_planner": "deepseek/deepseek-v4-flash",
+    "pain_miner": "deepseek/deepseek-v4-flash",
+    "clusterer": "deepseek/deepseek-v4-flash",
+    "validator": "moonshotai/kimi-k3",
+    "competition": "deepseek/deepseek-v4-flash",
+    "bull": "deepseek/deepseek-v4-flash",
+    "bear": "deepseek/deepseek-v4-flash",
+    "customer": "deepseek/deepseek-v4-flash",
+    "judge": "deepseek/deepseek-v4-flash"
+  },
+  "candidate_counts": {
+    "signals": 18,
+    "clusters": 3,
+    "validated": 3,
+    "competition_survivors": 2,
+    "finalists": 2,
+    "approved": 0
+  },
+  "estimated_cost": null,
+  "status": "completed"
+}

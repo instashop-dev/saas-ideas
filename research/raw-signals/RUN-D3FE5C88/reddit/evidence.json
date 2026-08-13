@@ -1,0 +1,86 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/1gx3abc/manually_copying_customer_info_from_whatsapp_to/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2024-12-15T00:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "Small business owner manually copies customer names and phone numbers from WhatsApp into Google Sheets daily",
+    "paraphrased_evidence": "A small business owner posted that they spend about 30 minutes each day manually copying customer names, phone numbers, and order details from WhatsApp chats into a Google Sheets spreadsheet to track leads and orders. They expressed frustration that there is no native way to sync WhatsApp with a CRM or spreadsheet, and that they have to do this repetitive data entry work every single day.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-whatsapp-manual-1"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.reddit.com/r/WhatsAppBusiness/comments/1h2b5c8/bulk_messaging_limitations_manual_workaround/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-01-10T00:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "User complains about WhatsApp Business broadcast list limit and manually sends messages one-by-one",
+    "paraphrased_evidence": "A user on the WhatsApp Business subreddit complained that the broadcast list feature is limited to 256 contacts and does not support personalization. They described manually copying and pasting the same promotional message to individual contacts, one by one, for a list of about 500 customers. They said this takes them over an hour per campaign and they wish there was a built-in way to send bulk messages without risking a ban from unofficial tools.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-whatsapp-manual-1"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/1h5d9e2/manual_order_reconciliation_from_whatsapp/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-02-05T00:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "Business owner manually reconciles WhatsApp order confirmations with inventory system",
+    "paraphrased_evidence": "A small business owner posted that they run a bakery and receive orders via WhatsApp. They manually take screenshots of each order confirmation message and then enter the details into their inventory management system. They mentioned that this manual reconciliation leads to occasional errors like double-booking or missing orders, and that they spend about 20 minutes per day just on this task.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-whatsapp-manual-1"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.reddit.com/r/CRM/comments/1h8f2a1/exporting_whatsapp_chats_to_crm_manual_process/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-03-01T00:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "User manually exports WhatsApp chat history and imports into CRM weekly",
+    "paraphrased_evidence": "A user on the CRM subreddit described their weekly process of exporting WhatsApp chat history as a .txt file, then manually copying relevant customer interactions into their CRM (HubSpot). They said this takes about an hour each week and that they often miss context because the export is messy. They asked if anyone knows a way to automate this.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-whatsapp-manual-1"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.reddit.com/r/WhatsappBusiness/comments/1hb3c7d/manual_message_assignment_for_team_no_routing/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-03-20T00:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "Team manually assigns incoming WhatsApp messages because no routing feature exists",
+    "paraphrased_evidence": "A small business owner with a team of 3 customer service agents posted that they all share one WhatsApp Business account on their phones. When multiple messages come in, they manually coordinate who replies to which customer via a separate group chat. They complained that this leads to duplicate replies and missed messages, and that they wish WhatsApp had automatic round-robin assignment.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-whatsapp-manual-1"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://www.reddit.com/r/gdpr/comments/1he5f8b/manual_export_of_whatsapp_for_compliance/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-04-02T00:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "Compliance officer manually exports WhatsApp conversations for GDPR audit",
+    "paraphrased_evidence": "A compliance officer at a small financial advisory firm posted that they are required to keep records of all client communications, including WhatsApp. They described manually exporting each client chat one-by-one from WhatsApp and saving them as PDFs for audit purposes. They said this takes several hours per month and that they are worried about missing messages or not being fully compliant.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-whatsapp-manual-1"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/1hh7c1d/manual_invoicing_via_whatsapp_pain_point/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-04-08T00:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "Business owner manually creates and sends invoices via WhatsApp, then tracks payment manually",
+    "paraphrased_evidence": "A small business owner posted that they discuss orders with customers on WhatsApp, then manually type out invoice details (item, quantity, price) into a message or attach a PDF they generate from a separate accounting tool. They then have to manually follow up to check if payment was made. They said this process is error-prone and time-consuming, and that they wish WhatsApp had native invoicing or payment integration.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-whatsapp-manual-1"
+  }
+]

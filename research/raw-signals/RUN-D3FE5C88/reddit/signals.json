@@ -1,0 +1,107 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Small business owner / customer service manager",
+    "workflow": "Manually copying and pasting customer names and phone numbers from WhatsApp chats into a spreadsheet or CRM to track leads and orders",
+    "trigger": "Incoming customer inquiry or order via WhatsApp",
+    "frequency": "Daily, multiple times per day",
+    "current_workaround": "Users manually copy-paste contact details and order info from WhatsApp into Google Sheets or Excel",
+    "consequence": "Data entry errors, missed follow-ups, lost leads, wasted hours each week",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "Small business owner / marketing manager",
+    "workflow": "Manually sending bulk promotional messages or updates to customers one-by-one because WhatsApp Business broadcast lists are limited and unreliable",
+    "trigger": "Need to send a promotion, event reminder, or service update to multiple customers",
+    "frequency": "Weekly or per-campaign",
+    "current_workaround": "Users manually forward messages to individual contacts or small groups, or use unofficial bulk messaging tools that risk account bans",
+    "consequence": "Hours wasted per campaign, inconsistent delivery, risk of WhatsApp account being flagged or banned",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Customer support agent / small business owner",
+    "workflow": "Manually reconciling WhatsApp order confirmations with inventory or order management systems by cross-referencing screenshots and chat logs",
+    "trigger": "Customer sends an order or payment confirmation via WhatsApp",
+    "frequency": "Daily",
+    "current_workaround": "Support agents take screenshots of WhatsApp messages and manually enter order details into their inventory or ERP system",
+    "consequence": "Order errors, double-fulfillment, delayed shipping, customer complaints",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Small business owner / operations manager",
+    "workflow": "Manually exporting WhatsApp chat history and importing it into a CRM or analytics tool to track customer interactions and sales pipeline",
+    "trigger": "Need to analyze customer communication history or update CRM records",
+    "frequency": "Weekly or monthly",
+    "current_workaround": "Users export chat files (e.g., .txt) from WhatsApp and then manually parse or copy-paste relevant data into their CRM",
+    "consequence": "Incomplete data, time-consuming manual parsing, missed customer context, poor reporting",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Small business owner / customer service manager",
+    "workflow": "Manually assigning incoming WhatsApp messages to team members because WhatsApp Business does not support round-robin or skill-based routing",
+    "trigger": "Multiple customer messages arrive simultaneously",
+    "frequency": "Daily, multiple times per day",
+    "current_workaround": "Team members manually check a shared WhatsApp Business account and claim messages by replying, or use a shared device",
+    "consequence": "Duplicate responses, missed messages, slow response times, customer frustration",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0006"
+    ],
+    "target_role": "Small business owner / compliance officer",
+    "workflow": "Manually archiving and exporting WhatsApp conversations for regulatory compliance (e.g., GDPR, financial services record-keeping) because WhatsApp lacks built-in compliance export features",
+    "trigger": "Regulatory audit or internal compliance review",
+    "frequency": "Monthly or per-audit",
+    "current_workaround": "Users manually export chat histories one-by-one and store them in folders, or use third-party tools that may not be compliant",
+    "consequence": "Risk of non-compliance fines, incomplete records, hours of manual work per audit",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0007",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "Small business owner / customer service agent",
+    "workflow": "Manually creating and sending invoices or payment links via WhatsApp by typing out details or attaching PDFs, then tracking payment status manually",
+    "trigger": "Customer requests a quote or invoice after discussing order details",
+    "frequency": "Daily",
+    "current_workaround": "Agents manually type invoice details into a message or attach a PDF generated from another system, then follow up manually for payment",
+    "consequence": "Errors in invoice amounts, delayed payments, lost invoices, extra follow-up work",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  }
+]

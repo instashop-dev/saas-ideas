@@ -1,0 +1,163 @@
+{
+  "id": "OP-8FD9",
+  "canonical_key": "CK-15c5212bd1b161f4",
+  "title": "When preparing a WhatsApp broadcast campaign, I want to automatically import and validate my contact",
+  "target_user": "Customer Support Manager / Marketing Manager",
+  "job_to_be_done": "When preparing a WhatsApp broadcast campaign, I want to automatically import and validate my contact list against opt-in compliance, so I can send messages quickly without risking account bans or manual data entry errors.",
+  "painful_workflow": "1. Business needs to send bulk messages (appointment reminders, promos). 2. Must manually export contacts from CRM, format into CSV/Excel. 3. Cross-reference against separate opt-in spreadsheet to verify compliance. 4. Upload batches one by one through API portal. 5. Risk of sending to wrong contacts or violating opt-in policy.",
+  "current_workaround": "Maintaining separate spreadsheets of opted-in contacts, manually cross-referencing import files before each broadcast, and building manual validation checks before upload.",
+  "source_ids": [
+    "SIG-0001",
+    "SIG-0002"
+  ],
+  "independent_sources": 2,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 2,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io",
+      "classification": "PARTIAL",
+      "notes": "WATI is a WhatsApp Business API platform that offers bulk messaging, contact management, and some automation. It has contact import from CSV but does not have dedicated opt-in compliance validation or cross-referencing against separate opt-in lists. It assumes contacts are already opted in.",
+      "feature_overlap": "Contact import from CSV, bulk messaging, contact segmentation",
+      "pricing": "Paid plans starting ~$49/month",
+      "market_positioning": "All-in-one WhatsApp Business API platform for customer communication"
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Twilio provides the underlying WhatsApp Business API infrastructure. It offers contact management and messaging but no built-in opt-in compliance validation. Developers would need to build custom validation logic.",
+      "feature_overlap": "WhatsApp messaging API, contact management, message templates",
+      "pricing": "Pay-per-use pricing",
+      "market_positioning": "Developer-focused communication API platform"
+    },
+    {
+      "name": "MessageBird WhatsApp",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "MessageBird offers WhatsApp Business API with contact management and bulk messaging. It has some compliance features but no dedicated opt-in list cross-referencing or validation before broadcast.",
+      "feature_overlap": "WhatsApp messaging, contact import, bulk campaigns",
+      "pricing": "Pay-per-use + platform fees",
+      "market_positioning": "Omnichannel communication platform"
+    },
+    {
+      "name": "Interakt",
+      "url": "https://www.interakt.ai",
+      "classification": "PARTIAL",
+      "notes": "Interakt is a WhatsApp Business API platform for e-commerce. It offers contact management, broadcast, and automation. It has some compliance features but no dedicated opt-in validation against separate lists.",
+      "feature_overlap": "Contact import, bulk messaging, CRM integration",
+      "pricing": "Starting ~$49/month",
+      "market_positioning": "WhatsApp commerce and marketing platform"
+    },
+    {
+      "name": "WhatsApp Business App (Free)",
+      "url": "https://www.whatsapp.com/business",
+      "classification": "SUBSTITUTE",
+      "notes": "The free WhatsApp Business app allows contact management and broadcast lists but has severe limitations (max 256 contacts per broadcast, no API, no opt-in validation). It's a workaround for very small businesses.",
+      "feature_overlap": "Contact lists, broadcast messaging",
+      "pricing": "Free",
+      "market_positioning": "Free small business WhatsApp tool"
+    },
+    {
+      "name": "Excel/Google Sheets + Manual Process",
+      "url": "N/A (manual workflow)",
+      "classification": "SUBSTITUTE",
+      "notes": "The current workaround described in the opportunity. Users maintain separate opt-in spreadsheets and manually cross-reference before each broadcast. This is the primary alternative being replaced.",
+      "feature_overlap": "Contact list management, opt-in tracking",
+      "pricing": "Free (labor cost)",
+      "market_positioning": "Manual workaround"
+    },
+    {
+      "name": "Zapier + Google Sheets + WhatsApp API",
+      "url": "https://zapier.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Technical users can build a custom workflow using Zapier to connect Google Sheets (opt-in list) with WhatsApp API, adding some validation logic. This requires technical setup and maintenance.",
+      "feature_overlap": "Automated contact validation, WhatsApp messaging",
+      "pricing": "Zapier plans starting $19.99/month + API costs",
+      "market_positioning": "Automation platform for custom workflows"
+    },
+    {
+      "name": "Open Source WhatsApp Bots (e.g., whatsapp-web.js)",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open source libraries allow building custom WhatsApp automation, including contact management and validation. Requires significant development effort and violates WhatsApp ToS (risk of account ban).",
+      "feature_overlap": "WhatsApp messaging, contact management",
+      "pricing": "Free (development cost)",
+      "market_positioning": "Developer tool for custom WhatsApp solutions"
+    },
+    {
+      "name": "Salesforce Marketing Cloud WhatsApp",
+      "url": "https://www.salesforce.com/products/marketing-cloud/whatsapp/",
+      "classification": "PARTIAL",
+      "notes": "Enterprise-level solution with WhatsApp integration, contact management, and compliance features. However, it's extremely expensive, complex, and overkill for most SMBs. Opt-in validation is part of broader compliance but not a dedicated feature.",
+      "feature_overlap": "Contact management, opt-in compliance, WhatsApp messaging",
+      "pricing": "Enterprise pricing (typically $1,000+/month)",
+      "market_positioning": "Enterprise marketing automation"
+    },
+    {
+      "name": "HubSpot WhatsApp Integration",
+      "url": "https://www.hubspot.com/products/crm/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "HubSpot offers WhatsApp integration with contact management and some compliance features. It can track opt-in status but doesn't have dedicated pre-broadcast validation against separate lists.",
+      "feature_overlap": "Contact management, opt-in tracking, WhatsApp messaging",
+      "pricing": "Starting $45/month (Marketing Hub)",
+      "market_positioning": "CRM and marketing platform"
+    }
+  ],
+  "substitutes": [
+    "Excel/Google Sheets manual process",
+    "Zapier + Google Sheets custom workflow",
+    "WhatsApp Business App free version",
+    "Open source WhatsApp bots (risky)"
+  ],
+  "verified_facts": [
+    "Users manually export contacts from a CRM and format them into CSV/Excel for each message template (SIG-0001).",
+    "Users upload contact batches one at a time through an API portal (SIG-0001).",
+    "Users maintain a separate spreadsheet of opted-in contacts and cross-reference import files against it before each broadcast (SIG-0002).",
+    "Users build manual validation checks before upload (SIG-0002).",
+    "All evidence originates from a single source type (G2); only 2 signals total."
+  ],
+  "inferences": [
+    "The manual export-format-cross-reference-upload loop is time-consuming and error-prone, though no error incident is documented.",
+    "The compliance motivation likely relates to WhatsApp/Meta opt-in enforcement, but the 'account ban' risk in the JTBD is an inference — it appears in neither SIG-0001 nor SIG-0002.",
+    "Users likely already pay for a WhatsApp API/BSP platform (implied by 'API portal' in SIG-0001), meaning budget exists in the adjacent category but not for this specific problem.",
+    "This pain reads as a feature gap within existing WhatsApp marketing/BSP tools (contact import, opt-in management, bulk upload are standard platform features), suggesting incumbents may already address it or could trivially absorb it."
+  ],
+  "assumptions": [
+    "Broadcasts recur frequently enough (weekly or more) to make the manual loop a meaningful burden — cadence is unstated.",
+    "SIG-0001 and SIG-0002 come from genuinely independent users at different companies.",
+    "The API portal in use lacks adequate native import/opt-in validation features — the actual tool and its feature set are unknown.",
+    "The target user has authority and budget to buy a standalone tool rather than waiting for their existing platform to fix it."
+  ],
+  "unknowns": [
+    "Broadcast frequency and volume per user.",
+    "Time cost per campaign, error rates, and any actual compliance incident or ban.",
+    "Which CRM and which WhatsApp API/BSP portal are involved, and whether those tools already offer contact import and opt-in management.",
+    "Any demonstrated willingness to pay: tool purchases, searches for alternatives, or stated budget.",
+    "Company size, industry, geography, and segment of the affected users.",
+    "Whether the two G2 signals are independent or trace to the same product/company."
+  ],
+  "rejection_reasons": [
+    "Judge rejected: Low pain intensity (3/10), frequency (2/10), and willingness to pay (2/10) indicate that users do not find this problem sufficiently painful or urgent to justify a paid solution."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.85,
+  "final_score": 0,
+  "run_id": "RUN-D3FE5C88",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T06:43:13.921Z",
+  "updated_at": "2026-08-13T06:45:14.292Z"
+}

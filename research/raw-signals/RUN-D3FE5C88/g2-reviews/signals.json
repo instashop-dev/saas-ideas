@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Customer Support Manager / Operations Lead in small-to-mid business",
+    "workflow": "Setting up and maintaining WhatsApp Business API for outbound customer support requires manual contact imports and message formatting; the promised automation is not delivered.",
+    "trigger": "Business needs to send bulk or semi-automated messages to customers (e.g., appointment reminders, order updates) and expects the tool to handle contact sync and message templates automatically.",
+    "frequency": "Weekly (contact list updates, message campaign setup)",
+    "current_workaround": "Manually exporting contacts from CRM, formatting them into CSV/Excel for each message template, and uploading them one batch at a time through the API portal.",
+    "consequence": "Customer communications are delayed or missed; support team spends hours per week on data entry instead of problem-solving; high risk of sending wrong messages to wrong contacts due to manual errors.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-10T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "Customer Support Agent / Small Business Owner",
+    "workflow": "Manually managing contact lists and checking opt-in status for each broadcast; the tool does not maintain a central contact database nor validate compliance.",
+    "trigger": "Needs to send a promotional or informational broadcast to existing customers via WhatsApp, requiring verification that each recipient has opted in.",
+    "frequency": "Weekly or per campaign (multiple times a month)",
+    "current_workaround": "Keeping a separate spreadsheet of opted-in contacts and cross-referencing import files against it each time they send a broadcast; building manual validation checks before upload.",
+    "consequence": "Risk of violating WhatsApp's opt-in policy and getting the business account blocked; time wasted on repeated data validation rather than customer engagement.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-10T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Operations Manager / eCommerce Business Owner",
+    "workflow": "Reconciling messages and orders between WhatsApp and an eCommerce platform (e.g., Shopify, WooCommerce) because the integration is incomplete or doesn't exist.",
+    "trigger": "Customer places an order via website or WhatsApp, and the team needs to update the order status, inventory, and send tracking info—none of which syncs automatically.",
+    "frequency": "Daily (multiple times per day as orders come in)",
+    "current_workaround": "Copying order details from WhatsApp chat into the eCommerce admin manually; then separately copying the tracking number and sending a WhatsApp message to the customer.",
+    "consequence": "Double data entry for every order; frequent mistakes (e.g., wrong tracking, missed orders) that require customer follow-up; takes 5–10 minutes per order, adding hours daily.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-10T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Marketing Manager / Campaign Coordinator",
+    "workflow": "Generating performance reports for WhatsApp campaigns (delivery rates, read rates, response rates) by combining data from the WhatsApp API, CRM, and analytics tools.",
+    "trigger": "Weekly or monthly campaign reporting required by management or clients; the built-in analytics are too basic to show campaign-level ROI.",
+    "frequency": "Weekly",
+    "current_workaround": "Exporting raw message logs from the WhatsApp Business API, downloading CRM interaction data, and manually combining them in Excel or Google Sheets to produce reports.",
+    "consequence": "Reports take 3–4 hours to compile each week; data is often stale by the time it's presented; decisions are made on incomplete information.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-10T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Sales Representative / Account Manager",
+    "workflow": "Individually copying and sending custom follow-up messages to prospects manually via WhatsApp because the tool's message templates are rigid and don't support variables well.",
+    "trigger": "After a sales call or demo, the rep needs to send a personalized follow-up message with the prospect's name, product details, and next steps.",
+    "frequency": "Daily (10–50+ messages per rep)",
+    "current_workaround": "Typing each message from scratch or maintaining a personal template file (Word/Google Doc) and copy/pasting into WhatsApp Web; no CRM integration tracking these interactions.",
+    "consequence": "High cognitive load and risk of typos; inconsistent messaging across the team; no visibility for management into follow-up cadence; hundreds of hours wasted annually across sales team.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-10T10:00:00Z"
+  }
+]

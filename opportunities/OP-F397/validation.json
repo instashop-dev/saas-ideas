@@ -1,0 +1,49 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 1,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 2
+  },
+  "reasoning": {
+    "pain_intensity": "The evidence describes manual copy-paste work, which is tedious but not described as causing errors that lead to lost revenue, angry customers, or compliance failures. No evidence of severe consequences. (SIG-0003, g2; SIG-0003, reddit; SIG-0007, reddit)",
+    "frequency": "Order handling via WhatsApp could be daily for a busy business, but the evidence does not specify frequency. Assuming moderate frequency (multiple times per day) is reasonable but not confirmed. (SIG-0003, g2)",
+    "urgency": "No evidence suggests orders are being lost, delayed, or that customers are complaining. Manual entry is slow but not described as blocking operations. (SIG-0003, reddit)",
+    "economic_impact": "No evidence quantifies labor cost, error cost, or revenue impact. Copy-paste work for a few orders per day costs negligible dollars. (SIG-0003, g2; SIG-0007, reddit)",
+    "operational_impact": "Manual entry is a minor friction, not a bottleneck. The workflow still completes—just with extra steps. No evidence of team-wide disruption. (SIG-0003, reddit)",
+    "workaround_intensity": "Copying text from one app to another is low-effort. Taking a screenshot and typing is also low-effort. No evidence of a full-time person dedicated to this. (SIG-0003, g2; SIG-0003, reddit)",
+    "willingness_to_pay": "No evidence that anyone is currently paying for a solution, paying consultants, or using paid tools to solve this. The workaround is free (manual labor). (SIG-0003, g2; SIG-0007, reddit)",
+    "global_applicability": "WhatsApp is used globally for business communication, so this problem could apply in many countries. Score is high but not 5 because some markets use other messaging apps. (SIG-0003, g2)",
+    "customer_accessibility": "Operations managers and eCommerce business owners are identifiable via LinkedIn, industry forums, and WhatsApp Business API channels. Moderate accessibility. (SIG-0003, reddit)",
+    "evidence_quality": "Only 3 source signals from 2 source types (G2, Reddit). No direct quotes from business owners, no quantified data, no independent verification. Weak evidence base. (SIG-0003, g2; SIG-0003, reddit; SIG-0007, reddit)"
+  },
+  "verified_facts": [
+    "Support agents manually copy order details from WhatsApp into eCommerce admin systems. (SIG-0003, g2)",
+    "Support agents take screenshots of WhatsApp messages and manually enter order details into inventory/ERP systems. (SIG-0003, reddit)",
+    "Agents manually type invoice details or attach PDFs and follow up for payment. (SIG-0007, reddit)"
+  ],
+  "inferences": [
+    "The manual process likely introduces occasional typos or data entry errors.",
+    "The process slows down order fulfillment compared to an automated sync.",
+    "Businesses handling high WhatsApp order volumes would feel this pain more acutely."
+  ],
+  "assumptions": [
+    "Assumes that the manual entry is a significant time drain (not proven by evidence).",
+    "Assumes that errors from manual entry cause meaningful business harm (not proven).",
+    "Assumes that businesses would pay for automation rather than continue the free workaround."
+  ],
+  "unknowns": [
+    "Unknown how many orders per day/week the typical business processes via WhatsApp.",
+    "Unknown what the error rate is from manual entry and what it costs.",
+    "Unknown if businesses have tried or rejected existing WhatsApp-integrated eCommerce tools.",
+    "Unknown if the pain is severe enough to trigger purchase decisions vs. being a minor annoyance.",
+    "Unknown geographic or industry concentration of this problem."
+  ],
+  "overall_assessment": "This pain cluster describes a real but mild operational friction: manually copying WhatsApp order data into eCommerce systems. The evidence is thin—only 3 signals from 2 source types, with no quantified costs, no error rates, and no evidence of lost revenue or customer complaints. The workaround (copy-paste, screenshots) is low-effort and free, so willingness to pay is unproven. While the problem is globally applicable, it lacks the intensity, frequency, and economic impact of a burning need. This is a 'nice to have' automation opportunity, not a must-solve crisis. A SaaS product would need to be very cheap or bundled with higher-value features to gain traction."
+}

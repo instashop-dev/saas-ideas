@@ -1,0 +1,112 @@
+{
+  "competition_score": 2,
+  "queries_attempted": [
+    "WhatsApp session auto re-authentication",
+    "WhatsApp Web session keep alive",
+    "WhatsApp automation session management",
+    "WhatsApp API session expiry handling",
+    "WhatsApp business API session refresh",
+    "WhatsApp cloud API session management",
+    "WhatsApp multi-device session persistence",
+    "WhatsApp headless browser re-authentication",
+    "WhatsApp automation tool session recovery",
+    "WhatsApp chatbot session expiry solution",
+    "WhatsApp session auto reconnect service",
+    "WhatsApp Web session persistence library",
+    "WhatsApp unofficial API session management",
+    "WhatsApp auto QR scan tool",
+    "WhatsApp session expiry fix"
+  ],
+  "competitors": [
+    {
+      "name": "whatsapp-web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Popular Node.js library for WhatsApp Web automation. Provides session persistence via LocalAuth, but still requires initial QR code scan. On session expiry, it may attempt to restore but often fails silently or requires manual re-scan. Not a fully automatic solution.",
+      "feature_overlap": "Session management, message sending, event handling. Overlaps on the core automation but lacks automatic re-authentication without user intervention.",
+      "pricing": "Free (open source)",
+      "market_positioning": "Developer tool for building WhatsApp bots and automation. Relies on WhatsApp Web, thus inherits session expiry issues."
+    },
+    {
+      "name": "Baileys",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "OPEN_SOURCE",
+      "notes": "TypeScript library implementing the WhatsApp Web multi-device protocol. Supports session persistence via auth state. However, if the session token expires or is invalidated, re-authentication requires a new QR scan. No built-in automatic recovery.",
+      "feature_overlap": "Multi-device support, message handling, session state. Overlaps on automation but not on automatic re-auth.",
+      "pricing": "Free (open source)",
+      "market_positioning": "Alternative to whatsapp-web.js with better protocol compliance. Still requires manual initial auth and re-auth on expiry."
+    },
+    {
+      "name": "ChatAPI",
+      "url": "https://chatapi.com/",
+      "classification": "SERVICE",
+      "notes": "Commercial WhatsApp API service that uses unofficial methods. They claim to handle session persistence and reconnection. However, they still rely on QR code scanning for initial setup and may require periodic re-authentication. Not fully automatic; users report occasional manual intervention.",
+      "feature_overlap": "Provides API for sending/receiving messages, session management. Overlaps on automation but not fully automatic re-auth.",
+      "pricing": "Paid (usage-based, ~$0.05 per message)",
+      "market_positioning": "Unofficial WhatsApp API service for businesses. Positioned as easier than self-hosted solutions, but still has session reliability issues."
+    },
+    {
+      "name": "WhatsApp Business API (Official)",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official API from Meta. Uses access tokens, no QR codes. Session management is handled by Meta. However, it requires business verification, approval, and is designed for customer communication, not for personal automation or arbitrary messaging. Not a direct replacement for the target use case.",
+      "feature_overlap": "Message sending, webhooks, session management. Overlaps on the outcome (sending messages) but not on the problem (automating personal WhatsApp Web sessions).",
+      "pricing": "Free tier (1,000 conversations/month), then pay per conversation",
+      "market_positioning": "Enterprise-grade solution for customer engagement. Not suitable for developers wanting to automate personal WhatsApp accounts."
+    },
+    {
+      "name": "Twilio for WhatsApp",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Official WhatsApp Business API via Twilio. Same as above: requires business verification, uses tokens, no QR. Solves the session problem but only for approved business use cases. Not for personal account automation.",
+      "feature_overlap": "Message API, session management. Overlaps on sending messages but not on the specific workflow.",
+      "pricing": "Pay per message (varies by region)",
+      "market_positioning": "Cloud communications platform. Positioned for businesses, not for individual developers automating personal WhatsApp."
+    },
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io/",
+      "classification": "SUBSTITUTE",
+      "notes": "WhatsApp Business API platform. Provides session management, no QR scanning. Requires business verification. Not for personal automation.",
+      "feature_overlap": "Message broadcasting, chatbots, session management. Overlaps on automation but not on the target use case.",
+      "pricing": "Paid (starts at $49/month)",
+      "market_positioning": "Customer engagement platform for businesses."
+    },
+    {
+      "name": "WhatsApp Cloud API (Meta)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official cloud-hosted API. Same as Business API but hosted by Meta. No QR, token-based. Requires business verification.",
+      "feature_overlap": "Message sending, webhooks. Overlaps on outcome but not on problem.",
+      "pricing": "Free tier (1,000 conversations/month), then pay per conversation",
+      "market_positioning": "Official API for businesses."
+    },
+    {
+      "name": "Puppeteer/Playwright scripts for WhatsApp auto-reconnect",
+      "url": "https://github.com/search?q=whatsapp+auto+reconnect+puppeteer",
+      "classification": "OPEN_SOURCE",
+      "notes": "Various GitHub repositories with scripts that use headless browsers to detect session expiry and re-scan QR codes automatically. These are custom scripts, not products. They require maintenance and may break with WhatsApp updates.",
+      "feature_overlap": "Attempts to solve the exact problem but as a DIY solution. Overlaps on automatic re-authentication but not as a polished product.",
+      "pricing": "Free (open source)",
+      "market_positioning": "Developer workarounds, not commercial products."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "WhatsApp Business API (any provider)",
+      "url": "",
+      "classification": "SUBSTITUTE",
+      "notes": "All official WhatsApp Business API solutions avoid the session expiry problem entirely by using token-based authentication. However, they are not suitable for personal account automation due to business verification requirements and use case restrictions."
+    }
+  ],
+  "summary": "The competitive landscape for automatic WhatsApp session re-authentication without manual QR scanning is weak. Existing open-source libraries (whatsapp-web.js, Baileys) provide session persistence but still require initial QR scan and often fail on expiry. Commercial unofficial APIs (ChatAPI) claim to handle sessions but still have reliability issues and require manual intervention. Official WhatsApp Business APIs solve the session problem but are not applicable to personal account automation, which is the core use case here. The dominant workaround remains custom scripts using headless browsers, which are fragile and high-maintenance. There is no purpose-built SaaS product that automatically re-authenticates a WhatsApp Web session without any manual QR scanning. The opportunity addresses a clear gap: developers need a reliable, automatic solution for session recovery in unofficial WhatsApp automation. Competition score is 2 because few weak/niche alternatives exist (libraries and scripts) but none provide a complete, reliable, and easy-to-use solution.",
+  "research_evidence_urls": [
+    "https://github.com/pedroslopez/whatsapp-web.js",
+    "https://github.com/WhiskeySockets/Baileys",
+    "https://chatapi.com/",
+    "https://developers.facebook.com/docs/whatsapp/",
+    "https://www.twilio.com/whatsapp",
+    "https://www.wati.io/",
+    "https://github.com/search?q=whatsapp+auto+reconnect+puppeteer"
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Backend Developer / DevOps Engineer",
+    "workflow": "Manually managing WhatsApp Web session persistence and re-authentication cycles due to unstable library connections.",
+    "trigger": "Session expiration or IP ban by WhatsApp's anti-spam systems during bulk messaging operations.",
+    "frequency": "Daily (for high-volume senders)",
+    "current_workaround": "Developers write custom scripts to detect disconnection, manually trigger QR code scanning via headless browsers, and restart the node process. They often maintain a pool of multiple phone numbers/numbers to rotate when one gets banned.",
+    "consequence": "Service downtime for automated notifications; significant engineering time spent on maintaining fragile connection logic rather than core business features; risk of permanent number bans.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2024-05-20T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Marketing Operations Specialist",
+    "workflow": "Manual export and formatting of chat data for compliance reporting and customer history analysis.",
+    "trigger": "Monthly regulatory audits or internal customer service quality reviews requiring full conversation logs.",
+    "frequency": "Monthly",
+    "current_workaround": "Users manually export chats from WhatsApp Web/Desktop, clean up JSON/CSV files using Excel macros because the raw export includes metadata that breaks downstream parsing tools, and then upload them to CRM systems that lack native WhatsApp integration.",
+    "consequence": "High risk of human error in data entry; slow turnaround for audit responses; inability to automate customer sentiment analysis due to unstructured data formats.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2024-05-20T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Software Engineer (Integration Team)",
+    "workflow": "Building and maintaining fragile middleware to parse unsupported media types and complex message formatting from WhatsApp API responses.",
+    "trigger": "Receiving messages with stickers, voice notes, or location data that standard text-parsing libraries fail to handle correctly.",
+    "frequency": "Per-event (continuous)",
+    "current_workaround": "Engineering teams build custom parsers to decode base64 encoded media streams and convert WhatsApp-specific markup (like bold/italic) into HTML/Markdown compatible with their ticketing systems. These parsers break frequently when WhatsApp updates its protocol.",
+    "consequence": "Lost customer messages; incorrect routing of support tickets; increased technical debt as workarounds become more complex over time.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2024-05-20T10:00:00Z"
+  }
+]

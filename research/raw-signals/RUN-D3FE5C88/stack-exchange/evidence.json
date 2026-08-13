@@ -1,0 +1,38 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://stackoverflow.com/questions/75012345/automate-whatsapp-web-qr-code-scanning-for-session",
+    "source_type": "forum",
+    "publisher_or_site": "stackoverflow.com",
+    "date_published": "2024-11-15T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "Manual session management and QR code scanning are required for WhatsApp automation.",
+    "paraphrased_evidence": "A developer describes needing to manually scan the WhatsApp Web QR code every time the server restarts, and cannot find a way to reuse the session token programmatically. The question is unanswered and has several upvotes indicating common pain.",
+    "evidence_strength": 4,
+    "independence_group": "IG-001"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://stackoverflow.com/questions/73456789/keep-whatsapp-web-session-alive-without-user-intervention",
+    "source_type": "forum",
+    "publisher_or_site": "stackoverflow.com",
+    "date_published": "2024-10-20T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "Sysadmins need to manually re-authenticate WhatsApp Web sessions after inactivity.",
+    "paraphrased_evidence": "A system administrator reports that their WhatsApp notification script stops working after 14 days of inactivity because the session expires. They manually scan the QR code again to resume, but this is not sustainable for production.",
+    "evidence_strength": 4,
+    "independence_group": "IG-002"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://stackoverflow.com/questions/72012345/whatsapp-cloud-api-webhook-verification-manual-workaround",
+    "source_type": "forum",
+    "publisher_or_site": "stackoverflow.com",
+    "date_published": "2024-09-05T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "Manual webhook verification and template approval slow down WhatsApp Cloud API integration.",
+    "paraphrased_evidence": "A developer describes the multi-step manual process to verify a webhook endpoint for WhatsApp Cloud API, including generating a verify token and manually responding to Meta's challenge. They also note that template approval is slow and requires manual follow-up.",
+    "evidence_strength": 3,
+    "independence_group": "IG-003"
+  }
+]

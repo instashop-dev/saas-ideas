@@ -1,0 +1,130 @@
+{
+  "competition_score": 3,
+  "queries_attempted": [
+    "WhatsApp order sync eCommerce inventory system",
+    "WhatsApp order management software",
+    "WhatsApp to Shopify integration",
+    "WhatsApp to WooCommerce sync",
+    "WhatsApp order automation tool",
+    "WhatsApp ERP integration",
+    "WhatsApp order fulfillment software",
+    "WhatsApp order tracking system",
+    "WhatsApp payment confirmation sync",
+    "WhatsApp order entry automation",
+    "WhatsApp order processing SaaS",
+    "WhatsApp order management for small business",
+    "WhatsApp order management for operations manager",
+    "WhatsApp order sync with inventory",
+    "WhatsApp order management platform"
+  ],
+  "competitors": [
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io",
+      "classification": "DIRECT",
+      "notes": "Purpose-built WhatsApp Business API platform with dedicated order management features. Automatically captures order details from WhatsApp chats and syncs to Shopify, WooCommerce, and other eCommerce platforms. Includes payment tracking, inventory updates, and fulfillment workflows.",
+      "feature_overlap": "Automatic order capture from WhatsApp, sync to eCommerce admin, payment confirmation, inventory updates, order status notifications.",
+      "pricing": "Starts at $49/month (Growth plan); higher tiers for more features.",
+      "market_positioning": "WhatsApp Business API for customer engagement and sales, with strong eCommerce integration focus."
+    },
+    {
+      "name": "Zoko",
+      "url": "https://www.zoko.io",
+      "classification": "DIRECT",
+      "notes": "WhatsApp Business API platform specifically built for eCommerce. Offers order management, automated order sync with Shopify, WooCommerce, and other platforms. Supports payment collection, order tracking, and inventory updates.",
+      "feature_overlap": "Order capture from WhatsApp, sync to eCommerce admin, payment confirmation, inventory updates, automated order status messages.",
+      "pricing": "Starts at $29/month (Pro plan); free trial available.",
+      "market_positioning": "WhatsApp for eCommerce – sales, support, and order management in one platform."
+    },
+    {
+      "name": "Interakt",
+      "url": "https://www.interakt.ai",
+      "classification": "DIRECT",
+      "notes": "WhatsApp Business API platform for eCommerce. Provides order management, sync with Shopify, WooCommerce, and other platforms. Includes payment tracking, inventory updates, and automated order notifications.",
+      "feature_overlap": "Order capture from WhatsApp, sync to eCommerce admin, payment confirmation, inventory updates, order status automation.",
+      "pricing": "Starts at $29/month (Pro plan); free trial available.",
+      "market_positioning": "WhatsApp Business API for eCommerce – grow sales and automate operations."
+    },
+    {
+      "name": "Shopify Inbox",
+      "url": "https://www.shopify.com/inbox",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Shopify's native chat tool with WhatsApp integration. Allows customers to chat and place orders, but does not automatically sync order details from WhatsApp to Shopify admin. More focused on customer support and order inquiries than automated order entry.",
+      "feature_overlap": "WhatsApp chat integration, order inquiry handling, but lacks automatic order capture and sync from chat to inventory system.",
+      "pricing": "Free with Shopify subscription.",
+      "market_positioning": "Customer communication tool for Shopify stores."
+    },
+    {
+      "name": "Tidio",
+      "url": "https://www.tidio.com",
+      "classification": "PARTIAL",
+      "notes": "Customer service platform with WhatsApp integration. Offers some order management features via integrations, but not purpose-built for automatic order sync from WhatsApp to eCommerce systems. Primarily a live chat and chatbot tool.",
+      "feature_overlap": "WhatsApp chat, basic order status updates via integrations, but no automatic order capture and sync.",
+      "pricing": "Free plan available; paid plans start at $29/month.",
+      "market_positioning": "Customer service and sales chat platform."
+    },
+    {
+      "name": "ManyChat",
+      "url": "https://manychat.com",
+      "classification": "PARTIAL",
+      "notes": "WhatsApp automation platform focused on marketing and sales. Offers Shopify integration for order status updates, but does not automatically sync incoming order details from WhatsApp to eCommerce admin. More suited for outbound campaigns and order confirmations.",
+      "feature_overlap": "WhatsApp automation, order status notifications, but no automatic order capture and sync.",
+      "pricing": "Free plan available; paid plans start at $15/month.",
+      "market_positioning": "WhatsApp marketing and sales automation."
+    },
+    {
+      "name": "Zapier / Make (Integromat)",
+      "url": "https://zapier.com / https://make.com",
+      "classification": "SUBSTITUTE",
+      "notes": "No-code automation platforms that can connect WhatsApp (via Twilio or other connectors) to eCommerce systems. Users can build custom workflows to sync order details from WhatsApp to Shopify, WooCommerce, etc. Requires setup and maintenance, but achieves the same outcome.",
+      "feature_overlap": "Can replicate automatic order sync, payment tracking, inventory updates via custom zaps/scenarios.",
+      "pricing": "Free tiers available; paid plans start at $19.99/month (Zapier) or $9/month (Make).",
+      "market_positioning": "Automation platform connecting hundreds of apps."
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Infrastructure provider for WhatsApp Business API. Not a product itself, but enables developers to build custom order sync solutions. Used by many of the direct competitors above.",
+      "feature_overlap": "Provides the underlying API for WhatsApp messaging; no built-in order management.",
+      "pricing": "Pay-as-you-go (per message).",
+      "market_positioning": "Cloud communications platform."
+    },
+    {
+      "name": "Open source WhatsApp order bots",
+      "url": "https://github.com/search?q=whatsapp+order+bot",
+      "classification": "OPEN_SOURCE",
+      "notes": "Various GitHub repositories with WhatsApp order bots using Twilio or WhatsApp Web JS. Can be customized to sync orders to eCommerce systems. Requires development and hosting effort.",
+      "feature_overlap": "Can be built to capture orders from WhatsApp and sync to any system via API.",
+      "pricing": "Free (self-hosted).",
+      "market_positioning": "DIY solution for developers."
+    },
+    {
+      "name": "Custom development agencies",
+      "url": "https://www.google.com/search?q=whatsapp+ecommerce+integration+agency",
+      "classification": "SERVICE",
+      "notes": "Many agencies offer custom WhatsApp integration for eCommerce, including order sync. Typically one-time build + maintenance fees.",
+      "feature_overlap": "Custom-built solution that exactly matches the workflow.",
+      "pricing": "Varies widely ($2k–$20k+).",
+      "market_positioning": "Custom software development services."
+    }
+  ],
+  "substitutes": [
+    "Zapier / Make (Integromat) – no-code automation to connect WhatsApp to eCommerce systems.",
+    "Open source WhatsApp bots – custom development using Twilio or WhatsApp Web JS.",
+    "Custom development agencies – bespoke integration solutions."
+  ],
+  "summary": "The competitive landscape for automatically syncing WhatsApp order/payment details to eCommerce/inventory systems is well-established. At least three direct competitors (WATI, Zoko, Interakt) offer purpose-built solutions with strong feature overlap, including automatic order capture, sync to Shopify/WooCommerce, payment tracking, and inventory updates. These products are mature, reasonably priced, and actively marketed to eCommerce businesses. Additionally, platform-native tools (Shopify Inbox), partial solutions (Tidio, ManyChat), and substitutes (Zapier, open source, agencies) provide alternative paths to solve the same problem. The market is not overcrowded (score 3) but has credible, established alternatives. A new entrant would need clear differentiation—such as deeper multi-platform support, offline-first capabilities, lower pricing for micro-businesses, or superior AI-based order extraction—to gain traction. The problem is real and painful, but the 'no adequate purpose-built software' condition does not hold.",
+  "research_evidence_urls": [
+    "https://www.wati.io",
+    "https://www.zoko.io",
+    "https://www.interakt.ai",
+    "https://www.shopify.com/inbox",
+    "https://www.tidio.com",
+    "https://manychat.com",
+    "https://zapier.com",
+    "https://make.com",
+    "https://www.twilio.com/whatsapp",
+    "https://github.com/search?q=whatsapp+order+bot"
+  ]
+}
