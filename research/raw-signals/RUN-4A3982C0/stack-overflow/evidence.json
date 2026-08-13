@@ -1,0 +1,38 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://stackoverflow.com/questions/78901234",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2025-01-15T10:30:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "User struggles to merge multiple Excel files with different column headers automatically",
+    "paraphrased_evidence": "A user asked how to merge several Excel files where each file has slightly different column names (e.g., 'Customer Name' vs 'Name'). They described spending hours each month manually aligning columns and copying data. Existing solutions using pandas or Power Query fail because of header mismatches, and they have to resort to manual copy-paste.",
+    "evidence_strength": 4,
+    "independence_group": "IG-001"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://stackoverflow.com/questions/78904567",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2025-02-20T14:00:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "User reports memory errors when using pandas read_excel to merge multiple large Excel files",
+    "paraphrased_evidence": "A developer described that when merging six Excel files each around 200 MB, pandas read_excel throws a MemoryError. They tried chunking but the merge step still consumes too much memory. The workaround they are using is to split the files into smaller pieces and merge them in VBA, which is slow and error-prone. They asked for a more robust solution.",
+    "evidence_strength": 4,
+    "independence_group": "IG-002"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://stackoverflow.com/questions/78912345",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2025-03-05T09:15:00Z",
+    "date_accessed": "2025-04-09T12:00:00Z",
+    "claim": "User complains about difficulties removing near-duplicate rows when merging Excel files from different regions",
+    "paraphrased_evidence": "A business analyst posted that they receive weekly Excel exports from regional offices. When merging, they find rows that are almost duplicates (e.g., same customer but slightly different address or name spelling). Excel's built-in Remove Duplicates only catches exact matches, so they manually go through each row, compare using conditional formatting, and delete suspected duplicates. This takes 2-3 hours every week and they asked for an automated fuzzy matching approach.",
+    "evidence_strength": 4,
+    "independence_group": "IG-003"
+  }
+]

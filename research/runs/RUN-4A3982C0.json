@@ -1,0 +1,68 @@
+{
+  "run_id": "RUN-4A3982C0",
+  "started_at": "2026-08-13T06:23:11.955Z",
+  "completed_at": "2026-08-13T06:26:43.639Z",
+  "trigger": "manual",
+  "keyword": "automate excel merging",
+  "research_plan": {
+    "sources": [
+      {
+        "ecosystem": "reddit",
+        "research_questions": [
+          "What manual steps do users describe for combining multiple Excel files into one, and which tools or scripts do they wish existed?",
+          "How often do users complain about broken formatting, lost data, or time wasted when merging Excel sheets manually?",
+          "Which specific Excel merging tasks (e.g., combining sheets, appending rows, matching columns) generate the most frustration in recent threads?"
+        ]
+      },
+      {
+        "ecosystem": "stack-overflow",
+        "research_questions": [
+          "What are the most upvoted questions about automating Excel merging in Python, VBA, or Power Query, and what gaps in existing solutions do they reveal?",
+          "Which recurring errors or limitations (e.g., memory issues, header mismatches, duplicate handling) do users encounter when trying to merge Excel files programmatically?",
+          "What manual workarounds do users resort to when automated merging fails, and how often do they mention spreadsheets as a fallback?"
+        ]
+      },
+      {
+        "ecosystem": "github-issues",
+        "research_questions": [
+          "What feature requests or bug reports in popular Excel automation libraries (e.g., openpyxl, pandas, xlwings) relate to merging multiple files, and what pain points do they describe?",
+          "Which integration gaps (e.g., with cloud storage, databases, or reporting tools) do users highlight as blockers for fully automated Excel merging workflows?",
+          "How often do users request simpler, no-code merging solutions in issue discussions, and what specific manual steps do they want eliminated?"
+        ]
+      },
+      {
+        "ecosystem": "upwork-job-postings",
+        "research_questions": [
+          "What specific Excel merging tasks (e.g., consolidating monthly reports, combining survey data, merging customer lists) appear most frequently in job descriptions, and what manual effort do clients want to automate?",
+          "Which tools or skills (e.g., VBA, Python, Power Query, macros) do clients explicitly request for automating Excel merging, and what pain points do they mention in their project briefs?",
+          "How often do clients describe their current process as 'manual,' 'time-consuming,' or 'error-prone' when seeking help with Excel merging?"
+        ]
+      },
+      {
+        "ecosystem": "microsoft-community",
+        "research_questions": [
+          "What common complaints do users post about Power Query or Get & Transform when merging Excel files, and what specific scenarios (e.g., different column names, large files) cause the most trouble?",
+          "Which Excel features (e.g., Consolidate, VLOOKUP, Power Pivot) do users find insufficient for merging, and what workarounds do they share?",
+          "How frequently do users ask for a built-in 'merge multiple workbooks' feature, and what manual steps do they describe as alternatives?"
+        ]
+      }
+    ]
+  },
+  "models": {
+    "research_planner": "deepseek/deepseek-v4-flash",
+    "pain_miner": "deepseek/deepseek-v4-flash",
+    "clusterer": "deepseek/deepseek-v4-flash",
+    "validator": "deepseek/deepseek-v4-flash",
+    "competition": "deepseek/deepseek-v4-flash"
+  },
+  "candidate_counts": {
+    "signals": 24,
+    "clusters": 1,
+    "validated": 1,
+    "competition_survivors": 0,
+    "finalists": 0,
+    "approved": 0
+  },
+  "estimated_cost": null,
+  "status": "completed"
+}

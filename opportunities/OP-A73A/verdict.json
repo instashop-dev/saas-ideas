@@ -1,0 +1,196 @@
+{
+  "id": "OP-A73A",
+  "canonical_key": "CK-b15ec3e43c39afd9",
+  "title": "When I need to combine multiple Excel or CSV files from different sources into a single unified data",
+  "target_user": "Data Analyst / Business Analyst / Financial Analyst",
+  "job_to_be_done": "When I need to combine multiple Excel or CSV files from different sources into a single unified dataset for reporting or analysis, I want to merge them automatically without manual copy-paste or complex scripting, so I can produce accurate reports quickly and avoid errors from inconsistent formatting.",
+  "painful_workflow": "User receives multiple Excel or CSV files from different departments, subsidiaries, or external sources. Each file has different column names, data types, formatting, and sometimes different layouts. The user must manually open each file, copy the relevant data, and paste it into a master workbook. They then adjust column headers, align data types, remove duplicates, and reconcile totals. This process is repeated weekly, monthly, or per event.",
+  "current_workaround": "Manual copy-paste, VBA macros that break when column order changes, VLOOKUP/INDEX-MATCH to pull data, Power Query with manual schema standardization, hiring temporary contractors, or using Python/R scripts that require advanced skills.",
+  "source_ids": [
+    "SIG-001",
+    "SIG-002",
+    "SIG-003",
+    "SIG-004",
+    "SIG-005",
+    "SIG-001",
+    "SIG-002",
+    "SIG-003",
+    "SIG-004",
+    "SIG-005",
+    "SIG-0001",
+    "SIG-0002",
+    "SIG-0003",
+    "SIG-0004",
+    "SIG-001",
+    "SIG-002",
+    "SIG-003",
+    "SIG-0001",
+    "SIG-0002",
+    "SIG-0003",
+    "SIG-0004",
+    "SIG-0005",
+    "SIG-0006",
+    "SIG-0007"
+  ],
+  "independent_sources": 5,
+  "source_type_count": 4,
+  "pain_score": 4,
+  "frequency_score": 4,
+  "urgency_score": 3,
+  "economic_impact_score": 3,
+  "operational_impact_score": 4,
+  "workaround_intensity_score": 4,
+  "willingness_to_pay_score": 4,
+  "distribution_score": 3,
+  "global_score": 5,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 4,
+  "competition_score": 3,
+  "competitors": [
+    {
+      "name": "Microsoft Power Query (Excel / Power BI)",
+      "url": "https://powerquery.microsoft.com/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Built into Excel and Power BI. Can combine multiple files from a folder, but requires manual schema mapping (promote headers, change types, merge queries). Not fully automatic when column names or order change. Free with Excel.",
+      "feature_overlap": "Combines multiple Excel/CSV files, supports transformations, refreshable queries.",
+      "pricing": "Free with Excel 2016+ or Power BI Desktop",
+      "market_positioning": "Standard data preparation tool for Microsoft ecosystem"
+    },
+    {
+      "name": "Alteryx Designer",
+      "url": "https://www.alteryx.com/products/alteryx-designer",
+      "classification": "DIRECT",
+      "notes": "Enterprise data preparation platform. Can automatically combine files with different schemas using 'Auto Field' and 'Union' tools. Handles schema drift. Very powerful but expensive and requires training.",
+      "feature_overlap": "Full data blending, merging, schema alignment, automation.",
+      "pricing": "Starts at ~$5,195/year per user",
+      "market_positioning": "Premium data analytics automation for enterprises"
+    },
+    {
+      "name": "Easy Data Transform",
+      "url": "https://www.easydatatransform.com/",
+      "classification": "DIRECT",
+      "notes": "Desktop tool for merging CSV/Excel files. Can combine files with different columns using 'Merge' operation. Simple UI but still requires manual column mapping. One-time purchase.",
+      "feature_overlap": "Merge multiple files, transform columns, export.",
+      "pricing": "£95 one-time",
+      "market_positioning": "Affordable desktop data transformation tool"
+    },
+    {
+      "name": "CSV Merge (various online tools)",
+      "url": "https://www.convertcsv.com/merge-csv.htm",
+      "classification": "PARTIAL",
+      "notes": "Simple online tools to merge CSV files. Usually require same columns or manual selection. No handling of different schemas. Free but limited.",
+      "feature_overlap": "Basic merging of CSV files with same structure.",
+      "pricing": "Free",
+      "market_positioning": "Quick one-off merge utility"
+    },
+    {
+      "name": "OpenRefine",
+      "url": "https://openrefine.org/",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source data cleaning tool. Can import multiple files, reconcile columns, and merge datasets. Requires manual steps and some learning. Not automatic.",
+      "feature_overlap": "Data cleaning, transformation, merging.",
+      "pricing": "Free",
+      "market_positioning": "Open-source data wrangling for power users"
+    },
+    {
+      "name": "Python (pandas) / R (dplyr)",
+      "url": "https://pandas.pydata.org/",
+      "classification": "OPEN_SOURCE",
+      "notes": "Scripting libraries for data manipulation. Can automate merging with code, but requires programming skills. Not a SaaS product.",
+      "feature_overlap": "Full control over merging, schema mapping via code.",
+      "pricing": "Free",
+      "market_positioning": "Developer-oriented data analysis"
+    },
+    {
+      "name": "Tableau Prep Builder",
+      "url": "https://www.tableau.com/products/prep",
+      "classification": "PARTIAL",
+      "notes": "Data preparation tool from Tableau. Can combine files, but schema mapping is manual. Visual interface. Part of Tableau ecosystem.",
+      "feature_overlap": "Data blending, cleaning, merging.",
+      "pricing": "Starts at $70/user/month",
+      "market_positioning": "Data prep for Tableau users"
+    },
+    {
+      "name": "Google Sheets (IMPORTRANGE + QUERY)",
+      "url": "https://support.google.com/docs/answer/3093340",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Can import data from other sheets and combine using formulas. Manual setup, breaks with schema changes. Free with Google account.",
+      "feature_overlap": "Combine data from multiple sheets.",
+      "pricing": "Free",
+      "market_positioning": "Collaborative spreadsheet with basic import"
+    },
+    {
+      "name": "Zapier / Make (Integromat)",
+      "url": "https://zapier.com/",
+      "classification": "SUBSTITUTE",
+      "notes": "Automation platforms that can move data between apps. Can combine files via steps, but not designed for complex schema merging. Requires manual mapping.",
+      "feature_overlap": "Automated file processing pipelines.",
+      "pricing": "Free tier, paid plans start ~$20/month",
+      "market_positioning": "No-code automation for workflows"
+    },
+    {
+      "name": "Talend Data Preparation",
+      "url": "https://www.talend.com/products/data-preparation/",
+      "classification": "PARTIAL",
+      "notes": "Cloud data preparation tool. Can combine datasets, but schema mapping is manual. Free version available.",
+      "feature_overlap": "Data blending, cleansing, merging.",
+      "pricing": "Free tier, paid plans start ~$12/user/month",
+      "market_positioning": "Enterprise data integration with prep capabilities"
+    },
+    {
+      "name": "Knime Analytics Platform",
+      "url": "https://www.knime.com/",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source data analytics platform. Can merge files with nodes, but requires visual workflow building and manual mapping. Free.",
+      "feature_overlap": "Data merging, transformation, analytics.",
+      "pricing": "Free",
+      "market_positioning": "Open-source data science platform"
+    }
+  ],
+  "substitutes": [
+    "Manual copy-paste in Excel",
+    "VBA macros (custom scripts)",
+    "Hiring temporary contractors for data consolidation",
+    "Using SQL to load files into a database and join"
+  ],
+  "verified_facts": [
+    "Multiple users report spending 3-4 hours per week manually merging Excel/CSV files (SIG-001).",
+    "A company hired a temporary contractor at $2k/month to do this work (SIG-005).",
+    "Macro-based solutions break when column order changes (SIG-004).",
+    "Large files (100k+ rows, 100+ MB) cause crashes and memory errors (SIG-002, SIG-005).",
+    "Users use Power Query, VBA, Python, or R as workarounds but report significant friction (multiple signals).",
+    "Problem appears in financial, inventory, marketing, HR, sales, real estate, and digital advertising contexts (SIG-0001 to SIG-0007).",
+    "Manual merging leads to errors that cause misstated financials, delayed reports, and wasted ad spend (SIG-0001, SIG-0003, SIG-0002)."
+  ],
+  "inferences": [
+    "Because users pay $2k/month for contractors, there is budget available for a solution (SIG-005).",
+    "Because spreadsheet merging is a recurring weekly/monthly task, it likely impacts multiple team members across organizations (frequency + operational impact).",
+    "Because the problem appears across so many industries, the addressable market is large (global applicability 5).",
+    "Because users report using sophisticated workarounds (Power Query, Python), they are technically aware and likely to evaluate a technical solution."
+  ],
+  "assumptions": [
+    "Users would prefer an automated tool over manual work if it saves time (not proven — some may prefer manual control).",
+    "The $2k/month contractor cost is representative of the broader market willingness to pay (only one data point).",
+    "The problems described are not solvable by existing free tools (Power Query, Python scripts) with moderate training (not evaluated).",
+    "Users in job postings (SIG-0001 to SIG-0007) are representative of the broader target user base."
+  ],
+  "unknowns": [
+    "What percentage of analysts actually face this problem vs. having already solved it with established processes?",
+    "What is the exact churn rate of current workarounds — do users stick with Power Query or eventually revert to manual?",
+    "Is the $2k/month contractor cost sustainable or exceptional? Would the same user pay for a SaaS product?",
+    "Do the biggest companies (enterprise) have the same problem, or do they already use data warehouses/ETL tools?",
+    "How many total users (in millions) experience this pain regularly? Not quantified.",
+    "Are there regulatory or compliance drivers that could force adoption (e.g., SOX for financial reporting)? Not mentioned in evidence."
+  ],
+  "rejection_reasons": [
+    "Competition too high: 3/5 (max 2)"
+  ],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-4A3982C0",
+  "stage": "competition",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T06:25:23.410Z",
+  "updated_at": "2026-08-13T06:26:40.013Z"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Financial analyst",
+    "workflow": "Manually combining monthly financial reports from multiple Excel files into one master workbook for management review",
+    "trigger": "End-of-month close when each department submits its own Excel file",
+    "frequency": "Monthly",
+    "current_workaround": "Copy-pasting data from each department file into a master spreadsheet, then manually reformatting and reconciling totals",
+    "consequence": "Time-consuming and error-prone; missed or miscopied numbers lead to incorrect financial reporting and delayed decisions",
+    "ecosystem": "reddit",
+    "source_type": "search",
+    "collected_at": "2025-04-08T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "Operations coordinator",
+    "workflow": "Merging rows from multiple CSV/Excel exports from different SaaS tools into one weekly operations dashboard",
+    "trigger": "Weekly report preparation",
+    "frequency": "Weekly",
+    "current_workaround": "Using VLOOKUP or manual lookup to match IDs across files, then copying values into a consolidated sheet",
+    "consequence": "Hours lost every week and mismatched data; errors go unnoticed until stakeholders question the numbers",
+    "ecosystem": "reddit",
+    "source_type": "search",
+    "collected_at": "2025-04-08T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Data analyst in a small company",
+    "workflow": "Combining several Excel sheets with legacy formatting into a single report for leadership",
+    "trigger": "Ad-hoc requests from leadership to combine data from multiple departments",
+    "frequency": "Per-event",
+    "current_workaround": "Looking for a script or tool to automate the merge because copying and pasting breaks formatting and takes all day",
+    "consequence": "Routine tasks consume hours that could be spent on analysis; broken formatting makes reports look unprofessional",
+    "ecosystem": "reddit",
+    "source_type": "search",
+    "collected_at": "2025-04-08T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Reconciliation specialist",
+    "workflow": "Reconciling bank transactions with accounting records by matching transaction IDs in Excel",
+    "trigger": "Monthly bank statement close",
+    "frequency": "Monthly",
+    "current_workaround": "Downloading bank CSV and accounting export, then using manual spreadsheet formulas and copy-paste to find missing transactions",
+    "consequence": "High risk of missing fraud or errors; the manual process is slow and often requires rework",
+    "ecosystem": "reddit",
+    "source_type": "search",
+    "collected_at": "2025-04-08T00:00:00Z"
+  }
+]

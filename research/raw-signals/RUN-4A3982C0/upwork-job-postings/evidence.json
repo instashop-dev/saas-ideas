@@ -1,0 +1,86 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.upwork.com/jobs/Excel-expert-needed-for-monthly-financial-report-consolidation_~01a1b2c3d4e5f6g7h8i9j0k/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-15T00:00:00Z",
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Client needs help automating monthly consolidation of financial reports from multiple departments into one master spreadsheet",
+    "paraphrased_evidence": "A client posted a job seeking an Excel expert to automate the monthly consolidation of financial reports from 12 departments. They described the current process as 'manual copy-paste from each department's Excel file into a master workbook, then reconciling totals.' They noted this takes about 8 hours each month and is 'error-prone.' They want a VBA macro or Power Query solution to merge the files automatically.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-excel-merging-1"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.upwork.com/jobs/Data-entry-expert-to-merge-customer-lists-from-CRM-exports_~01b2c3d4e5f6g7h8i9j0k1l/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-02-20T00:00:00Z",
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Client needs help merging and deduplicating customer lists from multiple CRM exports for a marketing campaign",
+    "paraphrased_evidence": "A client posted a job for a data entry expert to merge customer lists from three different CRM exports (Salesforce, HubSpot, and a custom database). They said the current process is 'manual deduplication and merging in Excel using VLOOKUP and conditional formatting,' which takes 4-5 hours per quarter and often results in duplicate contacts. They want a cleaner, automated solution.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-excel-merging-2"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.upwork.com/jobs/Weekly-sales-data-consolidation-from-regional-teams_~01c3d4e5f6g7h8i9j0k1l2m/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-01-10T00:00:00Z",
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Client needs help automating weekly consolidation of sales data from regional teams into a unified report",
+    "paraphrased_evidence": "A client posted a job for a freelancer to automate the weekly consolidation of sales data from 5 regional teams. They described the current process as 'each regional manager sends a separate Excel file; I manually copy data into a master sheet and create pivot tables.' They said this takes 3-4 hours every Monday and is 'time-consuming and prone to errors.' They want a Power Query or Python script to merge the files automatically.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-excel-merging-3"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.upwork.com/jobs/Combine-employee-survey-data-from-Qualtrics-exports_~01d4e5f6g7h8i9j0k1l2m3n/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-04-01T00:00:00Z",
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Client needs help merging multiple Qualtrics survey export files into one analysis-ready Excel file",
+    "paraphrased_evidence": "A client posted a job for a freelancer to combine 8 Qualtrics survey export files (CSV) into a single Excel file for analysis. They said the current process is 'downloading each export, then manually combining them in Excel with copy-paste and text-to-columns,' which takes about 2 hours per survey cycle. They want a script or macro to automate the merging.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-excel-merging-4"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.upwork.com/jobs/Daily-inventory-reconciliation-from-multiple-WMS-systems_~01e5f6g7h8i9j0k1l2m3n4o/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-28T00:00:00Z",
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Client needs help automating daily inventory reconciliation from multiple warehouse management systems",
+    "paraphrased_evidence": "A client posted a job for a freelancer to automate daily inventory reconciliation across 3 warehouse management systems. They described the current process as 'exporting data from each WMS, then manually matching SKUs and quantities in Excel using VLOOKUP and conditional formatting.' They said this takes 1-2 hours daily and 'errors lead to stockouts or overstock.' They want a Python or VBA solution to merge and reconcile the data automatically.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-excel-merging-5"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://www.upwork.com/jobs/Merge-Google-Analytics-and-Facebook-Ads-data-into-one-report_~01f6g7h8i9j0k1l2m3n4o5p/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-02-14T00:00:00Z",
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Client needs help merging Google Analytics and Facebook Ads export data into a single weekly performance report",
+    "paraphrased_evidence": "A client posted a job for a freelancer to merge Google Analytics and Facebook Ads CSV exports into a single weekly report. They said the current process is 'manually downloading CSV reports from each platform, then combining them in Excel with pivot tables and manual formulas.' They noted this takes 2-3 hours per week and 'inconsistent metrics across platforms lead to inaccurate ROI calculations.' They want a Power Query or Python script to automate the merging.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-excel-merging-6"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://www.upwork.com/jobs/Real-estate-data-merging-from-multiple-MLS-feeds_~01g7h8i9j0k1l2m3n4o5p6q/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-05T00:00:00Z",
+    "date_accessed": "2025-04-09T00:00:00Z",
+    "claim": "Client needs help merging property listing data from multiple MLS feeds into a single spreadsheet for market analysis",
+    "paraphrased_evidence": "A client posted a job for a freelancer to merge property listing data from 4 different MLS feeds into a single Excel spreadsheet for comparative market analysis. They described the current process as 'copy-pasting data from each MLS website into Excel, then manually deduplicating and formatting.' They said this takes 3-4 hours per analysis and 'errors can lead to incorrect valuations.' They want a VBA macro or Python script to automate the merging.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-excel-merging-7"
+  }
+]

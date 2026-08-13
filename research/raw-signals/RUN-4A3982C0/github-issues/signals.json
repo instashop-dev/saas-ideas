@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Data Analyst",
+    "workflow": "Merging multiple Excel files with different column names and data types into a single unified dataset",
+    "trigger": "Weekly reporting cycle where data comes from different departments in separate Excel files",
+    "frequency": "weekly",
+    "current_workaround": "Manually copying and pasting columns, renaming headers, and using Excel formulas to align data types",
+    "consequence": "Errors in merged data lead to incorrect reports; takes 3-4 hours every week",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-03-25T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Data Engineer",
+    "workflow": "Automating the merging of large Excel files (100k+ rows) using pandas, but hitting memory limits and slow performance",
+    "trigger": "Monthly data consolidation from multiple sources into a single analytics database",
+    "frequency": "monthly",
+    "current_workaround": "Splitting files into smaller chunks, merging in stages, or using SQLite as an intermediate step",
+    "consequence": "Process takes over an hour and often crashes; requires manual monitoring and restarting",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-03-25T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Business Analyst",
+    "workflow": "Merging Excel files stored in OneDrive/SharePoint without downloading them locally first",
+    "trigger": "Ad-hoc requests from management to combine data from shared Excel files across teams",
+    "frequency": "per-event",
+    "current_workaround": "Downloading each file manually, merging locally, then re-uploading the result",
+    "consequence": "Version control issues; risk of using outdated files; takes 30 minutes per request",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-03-25T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Operations Manager",
+    "workflow": "Merging weekly inventory Excel files from multiple warehouses, each with slightly different formatting",
+    "trigger": "Weekly inventory reconciliation meeting",
+    "frequency": "weekly",
+    "current_workaround": "Using a VBA macro that often breaks when column order changes; then manually fixing errors",
+    "consequence": "Inventory discrepancies go unnoticed; takes 2 hours to fix macro issues each week",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-03-25T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "Financial Analyst",
+    "workflow": "Merging monthly financial reports from different subsidiaries, each using different Excel templates",
+    "trigger": "Monthly financial close process",
+    "frequency": "monthly",
+    "current_workaround": "Hiring a temporary contractor to manually align and merge the files each month",
+    "consequence": "High cost ($2k/month) and delays in reporting; errors from manual handling",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-03-25T10:00:00Z"
+  }
+]

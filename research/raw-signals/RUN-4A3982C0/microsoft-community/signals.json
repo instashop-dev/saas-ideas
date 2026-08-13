@@ -1,0 +1,79 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ],
+    "target_role": "Data Analyst / Business Analyst",
+    "workflow": "Merging multiple Excel files with different column names and structures into a single dataset for reporting or analysis",
+    "trigger": "Need to combine monthly or weekly reports from different departments or sources that have inconsistent formatting",
+    "frequency": "Monthly or weekly",
+    "current_workaround": "Users manually copy-paste data from each file into a master sheet, or use VBA macros to automate parts of the process, but struggle with mismatched columns and data types",
+    "consequence": "Hours of manual work per cycle, high risk of errors (e.g., misaligned rows, lost data), and delays in reporting",
+    "ecosystem": "microsoft-community",
+    "source_type": "forum",
+    "collected_at": "2025-03-15T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-003",
+      "SRC-004"
+    ],
+    "target_role": "IT Support / Power User",
+    "workflow": "Using Power Query to merge Excel files from a folder, but encountering errors when files have different column names or data types",
+    "trigger": "User attempts to combine files using Power Query's 'Combine Files' feature, but the process fails or produces incorrect results due to schema mismatch",
+    "frequency": "Per project or per reporting cycle",
+    "current_workaround": "Users manually edit each file to standardize column names and data types before using Power Query, or write custom M code to handle exceptions, which is complex and error-prone",
+    "consequence": "Frustration with Power Query's limitations, wasted time on data preparation, and reliance on manual workarounds that are not scalable",
+    "ecosystem": "microsoft-community",
+    "source_type": "forum",
+    "collected_at": "2025-03-15T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "Office Administrator / General User",
+    "workflow": "Merging multiple Excel workbooks into one without using VBA or Power Query, as these tools are perceived as too complex or not available",
+    "trigger": "User needs to combine data from several workbooks for a simple task like creating a mailing list or consolidating expenses",
+    "frequency": "Occasional, but recurring",
+    "current_workaround": "Users manually open each workbook, copy the relevant data, and paste it into a master workbook, often dealing with formatting issues and duplicate entries",
+    "consequence": "Time-consuming and tedious process, prone to human error, and no easy way to automate without learning advanced Excel features",
+    "ecosystem": "microsoft-community",
+    "source_type": "forum",
+    "collected_at": "2025-03-15T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-006"
+    ],
+    "target_role": "Financial Analyst / Accountant",
+    "workflow": "Using Excel's Consolidate feature to merge data from multiple sheets, but finding it limited because it only works with identical layouts and cannot handle text data",
+    "trigger": "User needs to combine financial data from different departments that have similar but not identical column structures",
+    "frequency": "Monthly or quarterly",
+    "current_workaround": "Users manually rearrange data in each sheet to match a common layout before using Consolidate, or use VLOOKUP/INDEX-MATCH to pull data from multiple sheets, which is complex and slow for large datasets",
+    "consequence": "Significant manual effort to prepare data, risk of errors in consolidation, and inability to easily update the merged dataset when source data changes",
+    "ecosystem": "microsoft-community",
+    "source_type": "forum",
+    "collected_at": "2025-03-15T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-007"
+    ],
+    "target_role": "Data Analyst / Business Intelligence Professional",
+    "workflow": "Merging large Excel files (over 100 MB) that cause Excel to crash or become unresponsive when using Power Query or manual methods",
+    "trigger": "User needs to combine several large datasets for analysis, but Excel's performance degrades significantly",
+    "frequency": "Per project or per reporting cycle",
+    "current_workaround": "Users split files into smaller chunks, use external tools like Python or R to merge data, or rely on Power Pivot with limited functionality, but these require additional skills and setup",
+    "consequence": "Productivity loss due to crashes and slow performance, need to learn and use alternative tools, and potential data loss if Excel crashes during the merge process",
+    "ecosystem": "microsoft-community",
+    "source_type": "forum",
+    "collected_at": "2025-03-15T10:00:00Z"
+  }
+]

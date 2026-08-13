@@ -1,0 +1,162 @@
+[
+  {
+    "cluster_id": "CL-0001",
+    "canonical_jtbd": "When I need to combine multiple Excel or CSV files from different sources into a single unified dataset for reporting or analysis, I want to merge them automatically without manual copy-paste or complex scripting, so I can produce accurate reports quickly and avoid errors from inconsistent formatting.",
+    "target_user": "Data Analyst / Business Analyst / Financial Analyst",
+    "painful_workflow": "User receives multiple Excel or CSV files from different departments, subsidiaries, or external sources. Each file has different column names, data types, formatting, and sometimes different layouts. The user must manually open each file, copy the relevant data, and paste it into a master workbook. They then adjust column headers, align data types, remove duplicates, and reconcile totals. This process is repeated weekly, monthly, or per event.",
+    "current_workaround": "Manual copy-paste, VBA macros that break when column order changes, VLOOKUP/INDEX-MATCH to pull data, Power Query with manual schema standardization, hiring temporary contractors, or using Python/R scripts that require advanced skills.",
+    "source_signal_ids": [
+      "SIG-001",
+      "SIG-002",
+      "SIG-003",
+      "SIG-004",
+      "SIG-005",
+      "SIG-001",
+      "SIG-002",
+      "SIG-003",
+      "SIG-004",
+      "SIG-005",
+      "SIG-0001",
+      "SIG-0002",
+      "SIG-0003",
+      "SIG-0004",
+      "SIG-001",
+      "SIG-002",
+      "SIG-003",
+      "SIG-0001",
+      "SIG-0002",
+      "SIG-0003",
+      "SIG-0004",
+      "SIG-0005",
+      "SIG-0006",
+      "SIG-0007"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-001",
+        "source_type": "github",
+        "evidence": "Merging multiple Excel files with different column names and data types into a single unified dataset; manually copying and pasting columns, renaming headers, using Excel formulas to align data types; errors lead to incorrect reports; takes 3-4 hours every week."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_type": "github",
+        "evidence": "Automating merging of large Excel files (100k+ rows) using pandas, but hitting memory limits and slow performance; splitting files into smaller chunks, merging in stages, or using SQLite as an intermediate step; process takes over an hour and often crashes."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "github",
+        "evidence": "Merging Excel files stored in OneDrive/SharePoint without downloading locally; downloading each file manually, merging locally, then re-uploading; version control issues, risk of using outdated files; takes 30 minutes per request."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_type": "github",
+        "evidence": "Merging weekly inventory Excel files from multiple warehouses with different formatting; using VBA macro that often breaks when column order changes; inventory discrepancies go unnoticed; takes 2 hours to fix macro issues each week."
+      },
+      {
+        "signal_id": "SIG-005",
+        "source_type": "github",
+        "evidence": "Merging monthly financial reports from different subsidiaries using different Excel templates; hiring a temporary contractor to manually align and merge files each month; high cost ($2k/month) and delays in reporting."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_type": "forum",
+        "evidence": "Merging multiple Excel files with different column names and structures; manually copy-paste or VBA macros; hours of manual work per cycle, high risk of errors, delays in reporting."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_type": "forum",
+        "evidence": "Using Power Query to merge Excel files from a folder, but encountering errors when files have different column names or data types; manually editing each file to standardize before using Power Query, or writing custom M code."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "forum",
+        "evidence": "Merging multiple Excel workbooks without VBA or Power Query; manually opening each workbook, copying and pasting; time-consuming, prone to human error."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_type": "forum",
+        "evidence": "Using Excel's Consolidate feature but limited to identical layouts and cannot handle text data; manually rearranging data in each sheet before using Consolidate, or using VLOOKUP/INDEX-MATCH."
+      },
+      {
+        "signal_id": "SIG-005",
+        "source_type": "forum",
+        "evidence": "Merging large Excel files (over 100 MB) that cause Excel to crash; splitting files into smaller chunks, using external tools like Python or R; productivity loss due to crashes and slow performance."
+      },
+      {
+        "signal_id": "SIG-0001",
+        "source_type": "search",
+        "evidence": "Manually combining monthly financial reports from multiple Excel files into one master workbook; copy-pasting data from each department file, then manually reformatting and reconciling totals; time-consuming and error-prone."
+      },
+      {
+        "signal_id": "SIG-0002",
+        "source_type": "search",
+        "evidence": "Merging rows from multiple CSV/Excel exports from different SaaS tools into one weekly operations dashboard; using VLOOKUP or manual lookup to match IDs across files; hours lost every week and mismatched data."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_type": "search",
+        "evidence": "Combining several Excel sheets with legacy formatting into a single report for leadership; looking for a script or tool to automate the merge because copying and pasting breaks formatting and takes all day."
+      },
+      {
+        "signal_id": "SIG-0004",
+        "source_type": "search",
+        "evidence": "Reconciling bank transactions with accounting records by matching transaction IDs in Excel; using manual spreadsheet formulas and copy-paste to find missing transactions; high risk of missing fraud or errors."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_type": "forum",
+        "evidence": "Merging multiple Excel files with inconsistent column headers into a single consolidated sheet; manually copy-pasting each sheet into a master workbook, then adjusting column names and formats by hand; hours of tedious work, high risk of header mismatches and data loss."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_type": "forum",
+        "evidence": "Programmatically merging large Excel files (over 100 MB each) using pandas read_excel, leading to memory errors and crashes; splitting files into smaller chunks, using VBA loops instead of pandas, or upgrading to a machine with more RAM."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "forum",
+        "evidence": "Removing duplicate rows when merging Excel files from different sources, where duplicates are not exact matches; manually comparing rows using conditional formatting, then deleting duplicates by hand; inaccurate reports, overcounted or undercounted metrics."
+      },
+      {
+        "signal_id": "SIG-0001",
+        "source_type": "job",
+        "evidence": "Consolidating monthly financial reports from multiple departments into a single master spreadsheet; manually copy-pasting data from each department's Excel file into a master workbook, then reconciling totals; errors in consolidated reports lead to misstated financials."
+      },
+      {
+        "signal_id": "SIG-0002",
+        "source_type": "job",
+        "evidence": "Merging customer lists from multiple CRM exports into a single clean file for a marketing campaign; manually deduplicating and merging CSV files in Excel using VLOOKUP and conditional formatting; duplicate contacts cause wasted ad spend."
+      },
+      {
+        "signal_id": "SIG-0003",
+        "source_type": "job",
+        "evidence": "Combining weekly sales data from multiple regional teams into a unified performance dashboard; each regional manager sends a separate Excel file; analyst manually copies data into a master sheet and creates pivot tables; delayed reports, inconsistent formatting."
+      },
+      {
+        "signal_id": "SIG-0004",
+        "source_type": "job",
+        "evidence": "Merging employee survey responses from multiple Qualtrics exports into a single analysis file; downloading CSV files from Qualtrics, then manually combining them in Excel with copy-paste and text-to-columns; time wasted on data prep instead of analysis."
+      },
+      {
+        "signal_id": "SIG-0005",
+        "source_type": "job",
+        "evidence": "Reconciling inventory data from multiple warehouse management systems into a single Excel file for reporting; exporting data from each WMS, then manually matching SKUs and quantities in Excel using VLOOKUP and conditional formatting; inventory discrepancies lead to stockouts or overstock."
+      },
+      {
+        "signal_id": "SIG-0006",
+        "source_type": "job",
+        "evidence": "Merging Google Analytics and Facebook Ads export data into a single performance report; manually downloading CSV reports from each platform, then combining them in Excel with pivot tables and manual formulas; inconsistent metrics across platforms lead to inaccurate ROI calculations."
+      },
+      {
+        "signal_id": "SIG-0007",
+        "source_type": "job",
+        "evidence": "Merging property listing data from multiple MLS feeds into a single spreadsheet for comparative market analysis; copy-pasting data from each MLS website into Excel, then manually deduplicating and formatting; time-consuming process delays client reports."
+      }
+    ],
+    "independent_sources": 5,
+    "source_type_count": 4,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-09T12:00:00Z"
+  }
+]

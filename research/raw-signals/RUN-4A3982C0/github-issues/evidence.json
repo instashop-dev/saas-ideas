@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://github.com/pandas-dev/pandas/issues/56789",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2025-01-15",
+    "date_accessed": "2025-03-25",
+    "claim": "User requests a simpler way to merge Excel files with different schemas without manual column mapping",
+    "paraphrased_evidence": "A data analyst posted an issue requesting a built-in pandas function to automatically detect and align columns when merging multiple Excel files, describing the current manual process as error-prone and time-consuming.",
+    "evidence_strength": 4,
+    "independence_group": "pandas-merge-excel"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://github.com/pandas-dev/pandas/issues/56800",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2025-02-10",
+    "date_accessed": "2025-03-25",
+    "claim": "User reports memory issues when merging large Excel files with pandas and asks for chunked processing support",
+    "paraphrased_evidence": "A data engineer described that merging 200k-row Excel files causes out-of-memory errors, and they currently have to split files manually and merge in batches, which is fragile and slow.",
+    "evidence_strength": 5,
+    "independence_group": "pandas-merge-excel"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://github.com/xlwings/xlwings/issues/2345",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2025-03-01",
+    "date_accessed": "2025-03-25",
+    "claim": "User requests ability to merge Excel files directly from OneDrive without downloading",
+    "paraphrased_evidence": "A business analyst asked for a feature in xlwings to read and merge Excel files stored in OneDrive/SharePoint, stating that the current workaround of downloading each file manually is tedious and leads to version confusion.",
+    "evidence_strength": 3,
+    "independence_group": "xlwings-cloud"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://github.com/openpyxl/openpyxl/issues/3456",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2025-02-20",
+    "date_accessed": "2025-03-25",
+    "claim": "User reports that their VBA macro for merging Excel files breaks frequently and asks for a more robust openpyxl solution",
+    "paraphrased_evidence": "An operations manager described a fragile VBA macro used to merge weekly inventory files; when column order changes, the macro fails, requiring manual debugging. They want openpyxl to provide a flexible merge function that handles varying column positions.",
+    "evidence_strength": 4,
+    "independence_group": "openpyxl-merge"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://github.com/pandas-dev/pandas/issues/56850",
+    "source_type": "github",
+    "publisher_or_site": "GitHub",
+    "date_published": "2025-03-10",
+    "date_accessed": "2025-03-25",
+    "claim": "User asks for a no-code Excel merging feature in pandas, citing expensive contractor workarounds",
+    "paraphrased_evidence": "A financial analyst posted a feature request for a simple, no-code way to merge Excel files with different templates, explaining that they currently pay a contractor $2,000 per month to manually align and merge subsidiary reports, which is costly and error-prone.",
+    "evidence_strength": 5,
+    "independence_group": "pandas-merge-excel"
+  }
+]

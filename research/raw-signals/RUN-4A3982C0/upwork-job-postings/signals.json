@@ -1,0 +1,107 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "financial analyst / accountant",
+    "workflow": "Consolidating monthly financial reports from multiple departments into a single master spreadsheet",
+    "trigger": "End of month close process",
+    "frequency": "monthly",
+    "current_workaround": "Manually copy-pasting data from each department's Excel file into a master workbook, then reconciling totals",
+    "consequence": "Errors in consolidated reports lead to misstated financials, delayed month-end close, and rework",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "data entry clerk / operations coordinator",
+    "workflow": "Merging customer lists from multiple CRM exports into a single clean file for a marketing campaign",
+    "trigger": "Quarterly email campaign preparation",
+    "frequency": "quarterly",
+    "current_workaround": "Manually deduplicating and merging CSV files in Excel using VLOOKUP and conditional formatting",
+    "consequence": "Duplicate contacts cause wasted ad spend and poor campaign performance; missing contacts reduce reach",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "sales operations analyst",
+    "workflow": "Combining weekly sales data from multiple regional teams into a unified performance dashboard",
+    "trigger": "Weekly sales review meeting preparation",
+    "frequency": "weekly",
+    "current_workaround": "Each regional manager sends a separate Excel file; analyst manually copies data into a master sheet and creates pivot tables",
+    "consequence": "Delayed reports, inconsistent formatting, and errors in sales forecasts",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "HR coordinator",
+    "workflow": "Merging employee survey responses from multiple Qualtrics exports into a single analysis file",
+    "trigger": "Annual employee engagement survey",
+    "frequency": "annually",
+    "current_workaround": "Downloading CSV files from Qualtrics, then manually combining them in Excel with copy-paste and text-to-columns",
+    "consequence": "Time wasted on data prep instead of analysis; risk of data corruption or misalignment",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "supply chain analyst",
+    "workflow": "Reconciling inventory data from multiple warehouse management systems into a single Excel file for reporting",
+    "trigger": "Daily inventory reconciliation",
+    "frequency": "daily",
+    "current_workaround": "Exporting data from each WMS, then manually matching SKUs and quantities in Excel using VLOOKUP and conditional formatting",
+    "consequence": "Inventory discrepancies lead to stockouts or overstock, costing thousands in lost sales or carrying costs",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0006"
+    ],
+    "target_role": "marketing analyst",
+    "workflow": "Merging Google Analytics and Facebook Ads export data into a single performance report",
+    "trigger": "Weekly marketing performance review",
+    "frequency": "weekly",
+    "current_workaround": "Manually downloading CSV reports from each platform, then combining them in Excel with pivot tables and manual formulas",
+    "consequence": "Inconsistent metrics across platforms lead to inaccurate ROI calculations and poor budget allocation decisions",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0007",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "real estate analyst",
+    "workflow": "Merging property listing data from multiple MLS feeds into a single spreadsheet for comparative market analysis",
+    "trigger": "Client property valuation requests",
+    "frequency": "per-event (multiple times per week)",
+    "current_workaround": "Copy-pasting data from each MLS website into Excel, then manually deduplicating and formatting",
+    "consequence": "Time-consuming process delays client reports; errors in data can lead to incorrect valuations",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-09T00:00:00Z"
+  }
+]

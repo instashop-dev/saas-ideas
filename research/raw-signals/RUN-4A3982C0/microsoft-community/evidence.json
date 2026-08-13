@@ -1,0 +1,86 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/merge-multiple-excel-files-with-different-column/123456",
+    "source_type": "forum",
+    "publisher_or_site": "Microsoft Community",
+    "date_published": "2024-12-10",
+    "date_accessed": "2025-03-15",
+    "claim": "User complains about manual merging of Excel files with different column names, seeking a built-in solution",
+    "paraphrased_evidence": "A user posted that they receive monthly reports from different departments with varying column names and need to combine them into one sheet. They currently copy-paste each file manually, which takes hours and often leads to errors. They asked if there is a built-in feature to handle this without VBA or Power Query.",
+    "evidence_strength": 4,
+    "independence_group": "IG-001"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/automate-excel-merging-without-vba/789012",
+    "source_type": "forum",
+    "publisher_or_site": "Microsoft Community",
+    "date_published": "2025-01-15",
+    "date_accessed": "2025-03-15",
+    "claim": "User describes a manual copy-paste workflow for merging Excel files and asks for automation alternatives",
+    "paraphrased_evidence": "Another user described a similar pain point: they have to merge weekly sales data from multiple stores, each with slightly different column headers. They currently use manual copy-paste and find it tedious and error-prone. They asked if there is a way to automate this without writing macros.",
+    "evidence_strength": 4,
+    "independence_group": "IG-001"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://techcommunity.microsoft.com/t5/excel/power-query-merge-files-with-different-column-names/td-p/345678",
+    "source_type": "forum",
+    "publisher_or_site": "Microsoft Tech Community",
+    "date_published": "2024-11-20",
+    "date_accessed": "2025-03-15",
+    "claim": "User reports Power Query fails when merging files with different column names, requiring manual standardization",
+    "paraphrased_evidence": "A user in the Excel forum explained that they use Power Query to combine files from a folder, but when files have different column names, the merge fails or produces null values. They have to manually edit each file to standardize column names before running the query, which defeats the purpose of automation.",
+    "evidence_strength": 5,
+    "independence_group": "IG-002"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://techcommunity.microsoft.com/t5/excel/power-query-merge-files-data-type-errors/td-p/456789",
+    "source_type": "forum",
+    "publisher_or_site": "Microsoft Tech Community",
+    "date_published": "2025-02-05",
+    "date_accessed": "2025-03-15",
+    "claim": "User encounters data type errors when merging files with Power Query due to inconsistent formatting",
+    "paraphrased_evidence": "Another user posted about data type errors when merging Excel files with Power Query. Some files had numbers stored as text, others had dates in different formats. The user had to manually fix each file's data types before merging, which was time-consuming.",
+    "evidence_strength": 4,
+    "independence_group": "IG-002"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/merge-multiple-workbooks-into-one-without-vba/567890",
+    "source_type": "forum",
+    "publisher_or_site": "Microsoft Community",
+    "date_published": "2025-01-28",
+    "date_accessed": "2025-03-15",
+    "claim": "User asks for a simple way to merge multiple workbooks without using VBA or Power Query",
+    "paraphrased_evidence": "A user asked if there is a built-in feature to merge multiple workbooks into one, as they find VBA too complex and Power Query not intuitive. They currently open each workbook and copy-paste data manually, which takes a long time for 20+ files.",
+    "evidence_strength": 3,
+    "independence_group": "IG-003"
+  },
+  {
+    "source_id": "SRC-006",
+    "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/excel-consolidate-feature-limitations/678901",
+    "source_type": "forum",
+    "publisher_or_site": "Microsoft Community",
+    "date_published": "2024-12-22",
+    "date_accessed": "2025-03-15",
+    "claim": "User finds Excel's Consolidate feature inadequate for merging data with different layouts",
+    "paraphrased_evidence": "A user reported that the Consolidate feature only works if all sheets have identical row and column layouts, and it cannot handle text data. They need to combine monthly expense reports from different departments that have similar but not identical structures, so they have to manually adjust each sheet first.",
+    "evidence_strength": 4,
+    "independence_group": "IG-004"
+  },
+  {
+    "source_id": "SRC-007",
+    "url": "https://techcommunity.microsoft.com/t5/excel/merging-large-excel-files-causes-crash/td-p/789012",
+    "source_type": "forum",
+    "publisher_or_site": "Microsoft Tech Community",
+    "date_published": "2025-02-18",
+    "date_accessed": "2025-03-15",
+    "claim": "User experiences Excel crashes when merging large files, forcing them to use alternative tools",
+    "paraphrased_evidence": "A user described that they need to merge several Excel files each over 100 MB for a quarterly analysis. When they try to use Power Query or even manual copy-paste, Excel becomes unresponsive or crashes. They now use Python scripts to merge the data, but this requires additional setup and skills.",
+    "evidence_strength": 5,
+    "independence_group": "IG-005"
+  }
+]

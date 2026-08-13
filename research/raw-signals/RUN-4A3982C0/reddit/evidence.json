@@ -1,0 +1,50 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.reddit.com/r/excel/search/?q=merge+multiple+excel+files+into+one&restrict_sr=1",
+    "source_type": "search",
+    "publisher_or_site": "Reddit",
+    "date_published": null,
+    "date_accessed": "2025-04-08T00:00:00Z",
+    "claim": "Many r/excel users seek ways to combine multiple Excel workbooks into a single master file, describing manual copy-paste as a recurring burden.",
+    "paraphrased_evidence": "Searching r/excel for 'merge multiple excel files into one' returns numerous threads from financial analysts and business users who describe manually copying data from department files into a master spreadsheet each month, asking for a more automated approach. They mention the process is tedious and error-prone.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-excel-search"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.reddit.com/r/excel/search/?q=VLOOKUP+merge+data+from+multiple+files&restrict_sr=1",
+    "source_type": "search",
+    "publisher_or_site": "Reddit",
+    "date_published": null,
+    "date_accessed": "2025-04-08T00:00:00Z",
+    "claim": "Users across r/excel and r/dataengineering describe manually matching data across exported CSV files from different tools, often using VLOOKUP and copy-paste, and express frustration with the time it takes.",
+    "paraphrased_evidence": "Threads in r/excel commonly discuss merging data from multiple tool exports into a weekly report. Users mention using VLOOKUP to match IDs and copying values manually, complaining that the process takes hours and occasionally produces incorrect matches that are hard to spot.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-excel-search"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.reddit.com/r/excel/search/?q=automate+combining+excel+sheets+formatting&restrict_sr=1",
+    "source_type": "search",
+    "publisher_or_site": "Reddit",
+    "date_published": null,
+    "date_accessed": "2025-04-08T00:00:00Z",
+    "claim": "Analysts and operations staff repeatedly ask for a tool to combine Excel sheets without breaking formatting, indicating manual copy-paste is a daily or weekly pain.",
+    "paraphrased_evidence": "Search results show analysts in small companies who need to merge sheets with different styles and formats. They describe spending hours copying and pasting, often losing formatting and having to fix it manually, and ask if any script or add-in can automate the process.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-excel-search"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.reddit.com/r/excel/search/?q=reconcile+bank+transactions+excel&restrict_sr=1",
+    "source_type": "search",
+    "publisher_or_site": "Reddit",
+    "date_published": null,
+    "date_accessed": "2025-04-08T00:00:00Z",
+    "claim": "Reconciliation specialists and accountants frequently post about manually matching bank CSV files to accounting exports in Excel, a monthly process they wish was easier.",
+    "paraphrased_evidence": "Threads in r/excel show accountants and reconciliation specialists manually checking bank statements against accounting records. They download CSVs, use formulas to look for matches, and then manually investigate discrepancies. They report this takes a whole day each month and is error-prone.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-excel-search"
+  }
+]

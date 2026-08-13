@@ -1,0 +1,135 @@
+{
+  "competition_score": 3,
+  "queries_attempted": [
+    "automatically merge excel files with different columns",
+    "combine csv files with different headers",
+    "data blending tool no coding",
+    "AI excel merger",
+    "merge multiple excel files without manual mapping",
+    "data preparation tool automatic schema mapping",
+    "ETL tool for excel files",
+    "combine spreadsheets with different column names",
+    "merge csv files with different headers online",
+    "excel merge tool for analysts",
+    "automated data consolidation tool"
+  ],
+  "competitors": [
+    {
+      "name": "Microsoft Power Query (Excel / Power BI)",
+      "url": "https://powerquery.microsoft.com/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Built into Excel and Power BI. Can combine multiple files from a folder, but requires manual schema mapping (promote headers, change types, merge queries). Not fully automatic when column names or order change. Free with Excel.",
+      "feature_overlap": "Combines multiple Excel/CSV files, supports transformations, refreshable queries.",
+      "pricing": "Free with Excel 2016+ or Power BI Desktop",
+      "market_positioning": "Standard data preparation tool for Microsoft ecosystem"
+    },
+    {
+      "name": "Alteryx Designer",
+      "url": "https://www.alteryx.com/products/alteryx-designer",
+      "classification": "DIRECT",
+      "notes": "Enterprise data preparation platform. Can automatically combine files with different schemas using 'Auto Field' and 'Union' tools. Handles schema drift. Very powerful but expensive and requires training.",
+      "feature_overlap": "Full data blending, merging, schema alignment, automation.",
+      "pricing": "Starts at ~$5,195/year per user",
+      "market_positioning": "Premium data analytics automation for enterprises"
+    },
+    {
+      "name": "Easy Data Transform",
+      "url": "https://www.easydatatransform.com/",
+      "classification": "DIRECT",
+      "notes": "Desktop tool for merging CSV/Excel files. Can combine files with different columns using 'Merge' operation. Simple UI but still requires manual column mapping. One-time purchase.",
+      "feature_overlap": "Merge multiple files, transform columns, export.",
+      "pricing": "£95 one-time",
+      "market_positioning": "Affordable desktop data transformation tool"
+    },
+    {
+      "name": "CSV Merge (various online tools)",
+      "url": "https://www.convertcsv.com/merge-csv.htm",
+      "classification": "PARTIAL",
+      "notes": "Simple online tools to merge CSV files. Usually require same columns or manual selection. No handling of different schemas. Free but limited.",
+      "feature_overlap": "Basic merging of CSV files with same structure.",
+      "pricing": "Free",
+      "market_positioning": "Quick one-off merge utility"
+    },
+    {
+      "name": "OpenRefine",
+      "url": "https://openrefine.org/",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source data cleaning tool. Can import multiple files, reconcile columns, and merge datasets. Requires manual steps and some learning. Not automatic.",
+      "feature_overlap": "Data cleaning, transformation, merging.",
+      "pricing": "Free",
+      "market_positioning": "Open-source data wrangling for power users"
+    },
+    {
+      "name": "Python (pandas) / R (dplyr)",
+      "url": "https://pandas.pydata.org/",
+      "classification": "OPEN_SOURCE",
+      "notes": "Scripting libraries for data manipulation. Can automate merging with code, but requires programming skills. Not a SaaS product.",
+      "feature_overlap": "Full control over merging, schema mapping via code.",
+      "pricing": "Free",
+      "market_positioning": "Developer-oriented data analysis"
+    },
+    {
+      "name": "Tableau Prep Builder",
+      "url": "https://www.tableau.com/products/prep",
+      "classification": "PARTIAL",
+      "notes": "Data preparation tool from Tableau. Can combine files, but schema mapping is manual. Visual interface. Part of Tableau ecosystem.",
+      "feature_overlap": "Data blending, cleaning, merging.",
+      "pricing": "Starts at $70/user/month",
+      "market_positioning": "Data prep for Tableau users"
+    },
+    {
+      "name": "Google Sheets (IMPORTRANGE + QUERY)",
+      "url": "https://support.google.com/docs/answer/3093340",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Can import data from other sheets and combine using formulas. Manual setup, breaks with schema changes. Free with Google account.",
+      "feature_overlap": "Combine data from multiple sheets.",
+      "pricing": "Free",
+      "market_positioning": "Collaborative spreadsheet with basic import"
+    },
+    {
+      "name": "Zapier / Make (Integromat)",
+      "url": "https://zapier.com/",
+      "classification": "SUBSTITUTE",
+      "notes": "Automation platforms that can move data between apps. Can combine files via steps, but not designed for complex schema merging. Requires manual mapping.",
+      "feature_overlap": "Automated file processing pipelines.",
+      "pricing": "Free tier, paid plans start ~$20/month",
+      "market_positioning": "No-code automation for workflows"
+    },
+    {
+      "name": "Talend Data Preparation",
+      "url": "https://www.talend.com/products/data-preparation/",
+      "classification": "PARTIAL",
+      "notes": "Cloud data preparation tool. Can combine datasets, but schema mapping is manual. Free version available.",
+      "feature_overlap": "Data blending, cleansing, merging.",
+      "pricing": "Free tier, paid plans start ~$12/user/month",
+      "market_positioning": "Enterprise data integration with prep capabilities"
+    },
+    {
+      "name": "Knime Analytics Platform",
+      "url": "https://www.knime.com/",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source data analytics platform. Can merge files with nodes, but requires visual workflow building and manual mapping. Free.",
+      "feature_overlap": "Data merging, transformation, analytics.",
+      "pricing": "Free",
+      "market_positioning": "Open-source data science platform"
+    }
+  ],
+  "substitutes": [
+    "Manual copy-paste in Excel",
+    "VBA macros (custom scripts)",
+    "Hiring temporary contractors for data consolidation",
+    "Using SQL to load files into a database and join"
+  ],
+  "summary": "The competitive landscape for merging Excel/CSV files with different schemas is moderately crowded. Established tools like Power Query (free, built-in), Alteryx (powerful but expensive), and open-source options (Python, OpenRefine) exist. However, nearly all require manual schema mapping, scripting, or significant training. No single product offers a truly automatic, no-code, affordable solution that handles arbitrary column differences without user intervention. This gap represents an opportunity, but the presence of many partial alternatives means the market is not empty. Competition score is 3: established alternatives exist, but none perfectly solve the core pain point of automatic schema alignment.",
+  "research_evidence_urls": [
+    "https://powerquery.microsoft.com/",
+    "https://www.alteryx.com/products/alteryx-designer",
+    "https://www.easydatatransform.com/",
+    "https://openrefine.org/",
+    "https://pandas.pydata.org/",
+    "https://www.tableau.com/products/prep",
+    "https://zapier.com/",
+    "https://www.talend.com/products/data-preparation/",
+    "https://www.knime.com/"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "scores": {
+    "pain_intensity": 4,
+    "frequency": 4,
+    "urgency": 3,
+    "economic_impact": 3,
+    "operational_impact": 4,
+    "workaround_intensity": 4,
+    "willingness_to_pay": 4,
+    "global_applicability": 5,
+    "customer_accessibility": 4,
+    "evidence_quality": 4
+  },
+  "reasoning": {
+    "pain_intensity": "4 — The problem is consistently described as 'time-consuming,' 'error-prone,' and causing 'delays' (SIG-001, SIG-003). One hiring contract at $2k/month (SIG-005) shows high annoyance. However, it is a recurring frustration, not a business failure. No evidence of catastrophic failure or company shutdown. Hence 4, not 5.",
+    "frequency": "4 — Evidence shows weekly or monthly recurrence: '3-4 hours every week' (SIG-001), 'weekly inventory' (SIG-004), 'monthly financial reports' (SIG-005). This is frequent enough to be painful but not multiple times per day. A data analyst may do this as a recurring task, not every hour.",
+    "urgency": "3 — While errors in reports can lead to 'misstated financials' (SIG-0001) and 'delayed reports' (SIG-0003), there is no evidence of immediate operational blocking or 'cannot do business without this.' The problem is urgent for report deadlines but not emergency. Users can use workarounds (Power Query, VBA, manual) and still produce something, albeit slowly.",
+    "economic_impact": "3 — SIG-005 shows $2k/month spent on a contractor for one use case. The SIGs show hours of labor (3-4 hours/week). That's real cost but not millions. No evidence of lost revenue beyond potential 'wasted ad spend' (SIG-0002) which is indirect. Overall, the economic impact is measurable but moderate.",
+    "operational_impact": "4 — Evidence shows entire teams blocked: 'inventory discrepancies go unnoticed' (SIG-004), 'delayed reports' (SIG-0003), 'fraud risk' (SIG-0004). The problem causes delays and errors that affect downstream decisions. However, it is not 'entire team blocked for days' — rather, slow and painful.",
+    "workaround_intensity": "4 — Workarounds are significant: 'hiring a temporary contractor' (SIG-005), 'writing VBA macros that break' (SIG-004), 'using Python/R with memory issues' (SIG-002). Manual copy-paste is the baseline, but also requires learning scripting or paying external help. This is a substantial hurdle.",
+    "willingness_to_pay": "4 — Evidence shows actual spend: $2k/month on a contractor (SIG-005). Temporary contractors and VBA macros are current 'solutions' people pay for. However, no evidence of paying for a SaaS tool yet — they are paying for labor. Willingness to switch to a product is plausible but unproven.",
+    "global_applicability": "5 — Excel/CSV merging is a universal problem across countries, industries, and roles. Evidence spans financial reporting (SIG-0001), marketing (SIG-0002), sales (SIG-0003), HR (SIG-0004), inventory (SIG-0005), digital ads (SIG-0006), real estate (SIG-0007). No geographic or regulatory constraint. Truly global.",
+    "customer_accessibility": "4 — Target users are clearly defined: Data/Business/Financial Analysts. Evidence comes from GitHub and job postings (easily identifiable). These users are active on forums, LinkedIn, job boards. However, reaching them precisely might require specific channels (e.g., LinkedIn groups, job platforms) — not trivial but feasible.",
+    "evidence_quality": "4 — Strong evidence: 5 independent source types (GitHub, forum, search, job posting), 7 different signals, many with specific time/cost numbers. However, all are self-reported anecdotes from a public forum/stack overflow context — not controlled studies or verified interviews. Some overlap across signals. Good but not '5/5 rigorous.'"
+  },
+  "verified_facts": [
+    "Multiple users report spending 3-4 hours per week manually merging Excel/CSV files (SIG-001).",
+    "A company hired a temporary contractor at $2k/month to do this work (SIG-005).",
+    "Macro-based solutions break when column order changes (SIG-004).",
+    "Large files (100k+ rows, 100+ MB) cause crashes and memory errors (SIG-002, SIG-005).",
+    "Users use Power Query, VBA, Python, or R as workarounds but report significant friction (multiple signals).",
+    "Problem appears in financial, inventory, marketing, HR, sales, real estate, and digital advertising contexts (SIG-0001 to SIG-0007).",
+    "Manual merging leads to errors that cause misstated financials, delayed reports, and wasted ad spend (SIG-0001, SIG-0003, SIG-0002)."
+  ],
+  "inferences": [
+    "Because users pay $2k/month for contractors, there is budget available for a solution (SIG-005).",
+    "Because spreadsheet merging is a recurring weekly/monthly task, it likely impacts multiple team members across organizations (frequency + operational impact).",
+    "Because the problem appears across so many industries, the addressable market is large (global applicability 5).",
+    "Because users report using sophisticated workarounds (Power Query, Python), they are technically aware and likely to evaluate a technical solution."
+  ],
+  "assumptions": [
+    "Users would prefer an automated tool over manual work if it saves time (not proven — some may prefer manual control).",
+    "The $2k/month contractor cost is representative of the broader market willingness to pay (only one data point).",
+    "The problems described are not solvable by existing free tools (Power Query, Python scripts) with moderate training (not evaluated).",
+    "Users in job postings (SIG-0001 to SIG-0007) are representative of the broader target user base."
+  ],
+  "unknowns": [
+    "What percentage of analysts actually face this problem vs. having already solved it with established processes?",
+    "What is the exact churn rate of current workarounds — do users stick with Power Query or eventually revert to manual?",
+    "Is the $2k/month contractor cost sustainable or exceptional? Would the same user pay for a SaaS product?",
+    "Do the biggest companies (enterprise) have the same problem, or do they already use data warehouses/ETL tools?",
+    "How many total users (in millions) experience this pain regularly? Not quantified.",
+    "Are there regulatory or compliance drivers that could force adoption (e.g., SOX for financial reporting)? Not mentioned in evidence."
+  ],
+  "overall_assessment": "This is a real, painful, and recurring problem with moderate to high validity. The evidence is strong across multiple independent sources and industries. However, it falls short of a 5/5 'burning need' in several dimensions: the pain is not catastrophic (no business failure evidence), frequency is weekly/monthly not daily, urgency is deadline-driven not operational-blocking, and economic impact is moderate (thousands not millions). The workaround intensity and willingness to pay are encouraging (contractors already hired). The biggest unknowns are (1) whether existing free tools (Power Query, Python) actually solve the problem for most users with minimal learning, and (2) whether the enterprise segment already has this solved via ETL pipelines. The opportunity is strong but would benefit from clearer evidence of market size and competitive differentiation against widely available free tools. Score: Not a burning 5/5, but a solid SaaS opportunity with significant addressable pain."
+}

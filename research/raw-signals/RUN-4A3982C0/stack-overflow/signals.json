@@ -1,0 +1,47 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Data Analyst",
+    "workflow": "Merging multiple Excel files with inconsistent column headers into a single consolidated sheet",
+    "trigger": "Monthly reporting cycle requiring combination of department-level Excel exports",
+    "frequency": "monthly",
+    "current_workaround": "Manually copy-pasting each sheet into a master workbook, then adjusting column names and formats by hand",
+    "consequence": "Hours of tedious work, high risk of header mismatches and data loss, delays in report delivery",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Python Developer / Data Engineer",
+    "workflow": "Programmatically merging large Excel files (over 100 MB each) using pandas read_excel, leading to memory errors and crashes",
+    "trigger": "Ad-hoc requests to combine historical data from multiple Excel files",
+    "frequency": "per-event",
+    "current_workaround": "Splitting files into smaller chunks, using VBA loops instead of pandas, or upgrading to a machine with more RAM",
+    "consequence": "Frequent script failures, wasted developer time debugging memory issues, inability to process full datasets",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Business Analyst",
+    "workflow": "Removing duplicate rows when merging Excel files from different sources, where duplicates are not exact matches",
+    "trigger": "Weekly consolidation of sales data from regional offices",
+    "frequency": "weekly",
+    "current_workaround": "Manually comparing rows using conditional formatting, then deleting duplicates by hand; sometimes using Excel's Remove Duplicates but it fails on fuzzy matches",
+    "consequence": "Inaccurate reports, overcounted or undercounted metrics, hours of manual verification",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-09T12:00:00Z"
+  }
+]
