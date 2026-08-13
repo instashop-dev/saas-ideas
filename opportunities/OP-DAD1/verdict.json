@@ -1,0 +1,60 @@
+{
+  "id": "OP-DAD1",
+  "canonical_key": "CK-0afa02462f6a05e2",
+  "title": "When I need to report on content performance across platforms, I want to automatically aggregate ana",
+  "target_user": "developer advocate / team lead",
+  "job_to_be_done": "When I need to report on content performance across platforms, I want to automatically aggregate analytics from dev.to, Medium, and my personal blog into a single view, so I can avoid hours of manual data entry and get real-time insights.",
+  "painful_workflow": "Manually exporting CSV from dev.to stats, copying data from other platforms, and reconciling in Excel for weekly or monthly reporting.",
+  "current_workaround": "Export CSV from dev.to stats, copy data from other platforms, then manually reconcile in Excel.",
+  "source_ids": [
+    "SIG-0002"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "The cluster is supported by exactly one signal (SIG-0002) from one source type (forum) with one independent source, per the cluster's own metadata.",
+    "The described workaround is manual: CSV export from dev.to, copying from other platforms, Excel reconciliation (SIG-0002).",
+    "The reporting cadence is weekly or monthly, not daily (SIG-0002).",
+    "No spend, paid tool, or consultant is mentioned anywhere in the evidence."
+  ],
+  "inferences": [
+    "The 'hours spent every week' claim in SIG-0002 suggests real but modest labor cost, though the magnitude is unverified.",
+    "The target user (developer advocate) is technical and could likely automate much of this via dev.to's public API and standard analytics tools, reducing both pain and willingness to pay.",
+    "The JTBD's demand for 'real-time insights' is inconsistent with a weekly/monthly reporting trigger, suggesting the stated need may be aspirational rather than operational."
+  ],
+  "assumptions": [
+    "That the single forum poster represents a broader population of developer advocates with the same workflow.",
+    "That the claimed time cost and error rates are accurate rather than exaggerated.",
+    "That multi-platform publishing (dev.to + Medium + personal blog) with formal reporting obligations is common enough to constitute a market."
+  ],
+  "unknowns": [
+    "How many developer advocates actually publish across all three platforms AND must report on performance regularly.",
+    "Whether anyone has ever paid for a tool to solve this, or whether existing analytics/dashboard tools already cover it.",
+    "The actual hours spent per reporting cycle — no quantification exists in the evidence.",
+    "Whether the forum poster attempted and failed to self-solve with scripting, or simply hasn't tried.",
+    "Whether 'data entry errors' have ever caused a real consequence (bad decision, embarrassment, rework)."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:12:50.001Z",
+  "updated_at": "2026-08-13T02:12:50.001Z"
+}

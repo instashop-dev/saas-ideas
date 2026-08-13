@@ -1,0 +1,54 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 2,
+    "urgency": 3,
+    "economic_impact": 3,
+    "operational_impact": 3,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 3,
+    "global_applicability": 3,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0005 claims audit findings, $10k+ consultant fees, and 2 weeks of frantic effort per quarter — real consequences if accurate. However, this entire pain profile rests on a single review (SRC-0007) from the g2-capterra-reviews ecosystem. Review-platform content is frequently incentivized, written to a template, or describing pain retrospectively after adopting a tool. 'Frantic effort' reads as stressful-but-survivable, not severe. Without corroboration, I cannot score above 3.",
+    "frequency": "SIG-0005 explicitly states the trigger is a 'Quarterly audit preparation cycle' — 4 occurrences per year. That is far below the daily/weekly recurrence expected of a burning need. SOC 2 Type II is fundamentally a periodic, calendar-predictable event, not a continuous operational pain. Score 2.",
+    "urgency": "Per SIG-0005, missed deadlines cause audit findings, which gives the work a hard deadline and real stakes. But the pain is entirely predictable (quarterly cycle known months in advance), plannable, and bounded in time. It is not blocking ongoing operations between cycles. Urgency is episodic, not persistent. Score 3.",
+    "economic_impact": "SIG-0005 cites consultant fees of $10k+ and 2 weeks of team effort per quarter — roughly $40k+/year plus labor if the claim is accurate and representative. That is meaningful for an SMB but modest in absolute SaaS terms, and both figures come from one unverified review with no company size, industry, or headcount context. Score 3.",
+    "operational_impact": "SIG-0005 describes 2 weeks of frantic effort per quarter plus interruption of department heads for screenshots and logs. This disrupts the compliance team and inconveniences others, but it is time-boxed, the organization clearly continues functioning, and no evidence shows revenue operations or customers being blocked. Score 3.",
+    "workaround_intensity": "The workaround in SIG-0005 (emailing department heads, shared drive with manual versioning) is genuinely clumsy and consumes ~2 weeks per quarter, but it demonstrably works — audits are being completed. It does not require a full-time person. A clumsy-but-functional workaround caps this at 3.",
+    "willingness_to_pay": "SIG-0005 mentions $10k+ consultant fees, which is real spend and the strongest signal in the cluster. However, that spend flows to consultants, not software, and the evidence's own ecosystem (g2-capterra-reviews) indicates the reviewer was on a platform where commercial compliance-automation products are already being reviewed and purchased — meaning existing tools, not a gap, capture this budget. No evidence of unmet spend. Score 3.",
+    "global_applicability": "SOC 2 is an AICPA (US) framework. SIG-0005 provides no evidence of demand outside US-centric SaaS companies or foreign firms serving US customers. Adjacent frameworks (ISO 27001) exist internationally but are not this workflow. Applicability is real but geographically bounded. Score 3.",
+    "customer_accessibility": "No evidence in SIG-0005 or SRC-0007 addresses how to identify or reach buyers. Compliance Officers are plausibly findable via LinkedIn and compliance communities, but that is my inference, not sourced fact. Score 3, flagged as inference.",
+    "evidence_quality": "This is the cluster's fatal weakness. independent_sources = 1, source_type_count = 1, and the sole signal (SIG-0005) traces to a single review (SRC-0007). By the rubric, a single anecdote = 1. Review-platform content carries additional risks: incentivized reviews, vendor-influenced content, and retrospective pain descriptions written after a tool solved the problem. There is zero independent corroboration of the frequency, the $10k figure, or the 2-week effort claim."
+  },
+  "verified_facts": [
+    "The cluster is supported by exactly one signal (SIG-0005) from exactly one source (SRC-0007), confirmed by independent_sources=1 and source_type_count=1 in the cluster metadata.",
+    "The sole source is a review in the g2-capterra-reviews ecosystem (source_type: 'review').",
+    "The stated trigger frequency is quarterly (per SIG-0005).",
+    "The stated consequences are: missed evidence deadlines, audit findings, consultant fees ($10k+), risk of non-compliance, and 2 weeks of frantic effort per quarter (per SIG-0005).",
+    "The current workaround is manual email collection plus shared-drive storage with manual versioning (per SIG-0005)."
+  ],
+  "inferences": [
+    "Because the evidence originates from a software review platform, commercial products already exist that target this exact workflow, and the reviewer was likely evaluating or using one — implying the pain is already addressed by incumbent solutions rather than representing an open gap.",
+    "The pain description may be retrospective (describing life before adopting the reviewed tool), which would mean the review actually evidences a solved problem.",
+    "The $10k+ consultant spend suggests budget exists in this category, but that budget appears already captured by consultants and existing tools.",
+    "SOC 2's US-centric nature bounds the addressable market primarily to US companies and foreign firms serving US customers."
+  ],
+  "assumptions": [
+    "That the single reviewer is representative of the broader Compliance Officer population.",
+    "That the $10k+ consultant fee and 2-week effort figures are accurate and typical rather than exaggerated or edge-case.",
+    "That the reviewer was not incentivized or influenced in writing the review.",
+    "That quarterly evidence collection is the norm rather than continuous monitoring, which many audit programs now require."
+  ],
+  "unknowns": [
+    "Company size, industry, and maturity of the reviewer's organization.",
+    "Whether the reviewer had already adopted a compliance automation tool when writing the review.",
+    "The competitive landscape and pricing of existing solutions (no evidence provided).",
+    "Actual conversion willingness: would buyers switch from consultants/incumbent tools to a new entrant?",
+    "How many organizations experience this pain at the claimed severity — no prevalence data exists in the evidence.",
+    "Whether the pain persists for organizations already using existing automation tools."
+  ],
+  "overall_assessment": "This cluster does not survive skeptical scrutiny. The underlying pain — manual SOC 2 evidence collection — is plausible and the claimed consequences (audit findings, $10k+ consultant fees, 2 weeks of quarterly effort per SIG-0005) are non-trivial. However, the entire case rests on a single review-platform anecdote (SRC-0007), which is the weakest possible evidence posture (evidence_quality: 1). The pain recurs only quarterly (frequency: 2), is predictable and plannable rather than continuously blocking (urgency: 3), and the workaround, while clumsy, demonstrably functions. Most damaging: the evidence's own ecosystem (g2-capterra-reviews) indicates this workflow is already served by commercial products being reviewed on that platform — the signal is as likely to describe a solved problem as an open opportunity. Willingness-to-pay evidence points to spend already captured by consultants and incumbents, not unmet demand. This fails the burning-need threshold on frequency, evidence quality, and market whitespace. Recommendation: do not advance without (a) at least 2-3 independent corroborating sources from distinct ecosystems, (b) evidence that pain persists despite existing tools, and (c) verification of the economic claims."
+}

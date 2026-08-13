@@ -1,0 +1,64 @@
+{
+  "id": "OP-9749",
+  "canonical_key": "CK-49af30d38f95e681",
+  "title": "When I receive a customer security questionnaire during an enterprise sales cycle, I want to automat",
+  "target_user": "Sales engineer, solutions engineer, or founder selling to enterprise customers",
+  "job_to_be_done": "When I receive a customer security questionnaire during an enterprise sales cycle, I want to automatically populate answers from a knowledge base of previous responses, so I can avoid slower deal cycles and repetitive paperwork.",
+  "painful_workflow": "Answering bespoke customer security questionnaires (often Excel files with hundreds of questions, or SIG/CAIQ variants) by hunting down previous answers and copy/pasting from old questionnaires and internal documents.",
+  "current_workaround": "A master answer spreadsheet or document maintained by hand, copy/paste from prior questionnaires, or purchasing questionnaire-automation tooling; HN commenters regularly describe this as one of the most tedious parts of enterprise sales.",
+  "source_ids": [
+    "SIG-0003"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 4,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0003 documents that enterprise security questionnaires arrive as bespoke Excel files with hundreds of questions or as SIG/CAIQ variants, and are answered by hunting prior answers and copy/pasting from old questionnaires and internal documents.",
+    "The trigger is each enterprise sales cycle, vendor assessment, or renewal review (SIG-0003).",
+    "Stated frequency is per-deal, multiple per month at companies with active enterprise pipelines (SIG-0003).",
+    "Current workarounds include hand-maintained master answer spreadsheets, copy/paste, and purchasing questionnaire-automation tooling (SIG-0003).",
+    "Stated consequences are slower deal cycles, inconsistent or stale answers, and senior technical staff time consumed (SIG-0003).",
+    "The cluster's evidence base is exactly one independent source and one source type (cluster metadata: independent_sources=1, source_type_count=1)."
+  ],
+  "inferences": [
+    "Because SIG-0003 itself lists 'purchasing questionnaire-automation tooling' as a current workaround, commercial solutions for this exact JTBD already exist and have paying customers — this is a contested, served market, not an unmet need.",
+    "The consistent use of 'tedious' rather than 'blocking,' 'costly,' or 'deal-killing' language suggests annoyance-grade pain that organizations have normalized as a cost of enterprise sales.",
+    "Generic LLM-based tools (paste questionnaire + knowledge base into a chat model) now partially absorb this JTBD at near-zero marginal cost, eroding the gap between workaround and dedicated product — a market-context inference not covered by the 2025-06 evidence.",
+    "Existing spend on incumbent tools implies high switching costs and a crowded competitive field for any new entrant, lowering the realistic opportunity even though willingness-to-pay scores well."
+  ],
+  "assumptions": [
+    "That HN commenter sentiment generalizes to the broader population of sales engineers and founders — unverified and subject to selection bias.",
+    "That the stated frequency ('multiple per month') reflects typical companies rather than the most active enterprise sellers.",
+    "That 'slower deal cycles' translates into material revenue impact, which no evidence quantifies."
+  ],
+  "unknowns": [
+    "Hours consumed per questionnaire and loaded dollar cost per deal — no quantification exists in the evidence.",
+    "Whether any deal is actually lost (not merely slowed) because of questionnaire friction.",
+    "Satisfaction levels with existing questionnaire-automation tools — if incumbents solve this well, the residual pain may be small.",
+    "Size of the segment that has active enterprise pipelines but has not already adopted tooling.",
+    "Willingness to pay a NEW vendor rather than an incumbent or a generic LLM workflow.",
+    "Any corroborating signal outside a single HN-derived search result."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:19:00.596Z",
+  "updated_at": "2026-08-13T02:19:00.596Z"
+}

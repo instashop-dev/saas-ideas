@@ -5,16 +5,17 @@
   "trigger": "manual",
   "models": {
     "pain_miner": "deepseek/deepseek-v4-flash",
-    "clusterer": "deepseek/deepseek-v4-flash"
+    "clusterer": "deepseek/deepseek-v4-flash",
+    "validator": "moonshotai/kimi-k3"
   },
   "candidate_counts": {
     "signals": 42,
     "clusters": 20,
-    "validated": 0,
+    "validated": 20,
     "competition_survivors": 0,
     "finalists": 0,
     "approved": 0
   },
   "estimated_cost": null,
-  "status": "clustering"
+  "status": "validating"
 }

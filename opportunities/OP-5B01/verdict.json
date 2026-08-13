@@ -1,0 +1,60 @@
+{
+  "id": "OP-5B01",
+  "canonical_key": "CK-c63fa0487d43971d",
+  "title": "When a new support ticket is created, I want to automatically assign it to the right agent based on ",
+  "target_user": "Customer Support Team Lead",
+  "job_to_be_done": "When a new support ticket is created, I want to automatically assign it to the right agent based on skill and workload, so I can reduce response times and avoid misassignments.",
+  "painful_workflow": "Manually reviewing each ticket, reading context, and assigning to the right agent via dropdown in the ticketing system.",
+  "current_workaround": "Team lead manually reviews each ticket, reads context, assigns to the right agent via dropdown in the ticketing system.",
+  "source_ids": [
+    "SIG-0004"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 4,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 5,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0004 reports that a team lead manually reviews and assigns each ticket via dropdown (single source).",
+    "SIG-0004 reports a consequence of slow response times, misassignments, team-lead bottleneck, and 15-20 min/day of reassignment effort (single source, unverified).",
+    "The cluster is supported by exactly 1 independent source and 1 source type.",
+    "The workflow recurs per ticket-creation event, i.e., potentially multiple times daily."
+  ],
+  "inferences": [
+    "Automatic ticket assignment (round-robin, skill-based, and load-based routing) is a mature, standard feature in mainstream ticketing platforms (e.g., the category reviewed on the very G2/Capterra ecosystem this signal came from). The described pain likely reflects under-configured tooling, a low-tier plan, or a basic/shared-inbox setup rather than an unserved market gap. This is general market knowledge, not derived from the provided evidence.",
+    "The economic cost, if the 15-20 min/day figure is accurate, plausibly lands in the low tens of thousands of dollars per year for a mid-size team — meaningful but below the threshold that typically triggers a new software purchase on its own.",
+    "Because incumbents bundle routing into platforms teams already pay for, a standalone solution would face extreme competition and a near-zero switching rationale for most buyers."
+  ],
+  "assumptions": [
+    "Assumes the team in SIG-0004 uses a ticketing system that lacks or has poorly configured routing — the evidence does not name the tool.",
+    "Assumes the '15-20 mins daily' figure is representative beyond one team — no corroboration exists.",
+    "Assumes the team lead's manual triage time is incremental cost rather than an accepted part of the role."
+  ],
+  "unknowns": [
+    "Which ticketing tool(s) the affected teams use and whether routing features are available but unused.",
+    "Team size, ticket volume, and industry of the source — all of which drastically change pain severity.",
+    "Whether any buyer has paid, or attempted to pay, to solve this specific problem.",
+    "Whether the signal reflects one disgruntled reviewer or a recurring complaint pattern.",
+    "Why the ecosystem label ('g2-capterra-reviews') and source_type ('forum') disagree — data provenance is unclear."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:15:13.621Z",
+  "updated_at": "2026-08-13T02:15:13.621Z"
+}

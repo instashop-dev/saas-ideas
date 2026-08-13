@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 1,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0003 asserts consequences of 'lost context, duplicate work, missed review deadlines' but provides no user quotes, no severity descriptions, and no concrete incidents. This is a single search-derived signal with no corroboration. The claimed gap is also contestable: the evidence does not establish that GitHub's native capabilities (required approving reviews via branch protection, required status checks, PR templates with task lists, GitHub Projects) fail to address the need — it simply asserts the gap exists. Annoyance-level pain is plausible; severe pain is unproven.",
+    "frequency": "SIG-0003 claims 'Daily, per PR' but this is an unverified assertion from one source. It is plausible that active dev teams open PRs daily (inference), but the painful subset — PRs 'requiring additional review steps beyond the standard GitHub review' — is undefined in size. No data on how many PRs actually trigger the workaround.",
+    "urgency": "Nothing in SIG-0003 indicates blocked operations. The existence of functioning workarounds (linked issues, spreadsheets, Jira/Asana) means work continues. 'Missed review deadlines' is claimed but no deadline-driven business process (e.g., release gates, compliance sign-offs) is evidenced.",
+    "economic_impact": "Zero dollar figures, zero time-cost estimates, zero revenue-impact claims in SIG-0003. 'Duplicate work' is mentioned but unquantified. No basis to score above 2.",
+    "operational_impact": "'Low visibility into review pipeline' (SIG-0003) is a real inconvenience but there is no evidence of teams being blocked, releases delayed, or headcount consumed. Single-source assertion only.",
+    "workaround_intensity": "The workarounds cited in SIG-0003 (linked GitHub issues, spreadsheets, Asana/Jira) are low-to-moderate effort and typically reuse tools the team already owns and lives in. Creating a linked issue is minutes of work, not a full-time burden. No evidence anyone dedicates significant labor to this tracking.",
+    "willingness_to_pay": "SIG-0003 contains no evidence of any spend dedicated to solving this problem — no paid tools purchased for review gating, no consultants, no internal tooling budget. Jira/Asana subscriptions are general-purpose and would exist regardless. Purely unvalidated.",
+    "global_applicability": "The one genuinely strong dimension: GitHub workflows are jurisdiction-independent and used globally, so the pain (if real) is not country-locked. Scored 4 rather than 5 because the evidence doesn't confirm the pain pattern across different team types or regions — applicability is inferred from the platform's nature, not demonstrated.",
+    "customer_accessibility": "Team leads and developers are a generally reachable audience (dev communities, GitHub itself), but SIG-0003 demonstrates no actual channel, no identified buyers, and no indication of who would own budget for this. Moderate default score based on audience identifiability, not evidence.",
+    "evidence_quality": "The fatal weakness: independent_sources = 1, source_type_count = 1, and the single signal (SIG-0003) is search-derived with no quotes, no metrics, no named users, no thread links, no upvote counts. This is the minimum possible evidence base. Score 1."
+  },
+  "verified_facts": [
+    "A single search-derived signal (SIG-0003, source SRC-0003) claims GitHub's built-in review workflow lacks custom checklists, approval gates, and cross-repo review support.",
+    "The same single signal claims the workaround is linked issues, spreadsheets, or external tools (Asana/Jira), occurring 'daily, per PR'.",
+    "The cluster has exactly 1 independent source and 1 source type."
+  ],
+  "inferences": [
+    "PRs occur daily in active development teams, so the trigger event is plausibly frequent — but the painful subset is unquantified.",
+    "Teams using Jira/Asana as a workaround already pay for those tools for other reasons, so the marginal workaround cost is likely low.",
+    "The pain pattern, if real, would apply globally because GitHub usage is not jurisdiction-specific."
+  ],
+  "assumptions": [
+    "That the claimed consequences (lost context, missed deadlines, duplicate work) actually occur at meaningful scale — asserted but not evidenced.",
+    "That GitHub's native features (branch protection required reviews, required status checks, PR template task lists, GitHub Projects) do not adequately mitigate the gap — the evidence never engages with them.",
+    "That team leads, rather than the org's existing PM tooling owner, would be the buyer."
+  ],
+  "unknowns": [
+    "No user quotes, forum threads, feature-request upvotes, or community discussion evidence.",
+    "No quantification: team sizes affected, time lost per PR, cost of missed deadlines.",
+    "No willingness-to-pay data: no existing paid solution spend, no budget owner identified.",
+    "No competitive landscape: whether existing review-tooling products already solve this and at what adoption.",
+    "No analysis of how GitHub-native features (branch protection, CODEOWNERS, Projects, PR templates) partially cover the claimed gap.",
+    "No segmentation: does this affect 5-person startups, regulated enterprises, or open-source maintainers differently?"
+  ],
+  "overall_assessment": "This cluster fails validation on evidence grounds. The entire case rests on one search-derived signal (SIG-0003) with no quotes, metrics, or independent corroboration — the weakest possible evidence base (evidence_quality: 1). The pain described is plausible and globally applicable, but plausibility is not validation: the claimed severity, frequency of the painful subset, and all economic/operational impacts are unverified assertions. Critically, the cluster never engages with GitHub's native partial solutions (required approving reviews, status checks, PR template checklists, Projects) or with the fact that the cited workarounds reuse tools teams already own, which lowers both workaround intensity and willingness to pay. There is zero evidence of dedicated spend. Recommendation: do not treat as validated. To rescue this cluster, gather independent evidence — GitHub community discussions and upvoted feature requests for checklists/approval gates, dev-forum threads with concrete incidents, and any spending signals on review-gating tooling — before re-scoring."
+}

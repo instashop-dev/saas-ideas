@@ -1,0 +1,51 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 2,
+    "urgency": 2,
+    "economic_impact": 1,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 1,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0004 claims accidental deletion 'can take hours to recreate,' but this is a hypothetical, conditional pain ('fear of accidental deletion'), not an experienced one. The evidence describes a precautionary workflow, not an active suffering. Additionally, the pain is partially mitigated by native platform capabilities (Discord server templates snapshot channels/roles/permissions) and free third-party tools, which the evidence itself references (DiscordChatExporter). A single forum post describing a 'fear' does not establish severe pain. Score: 2.",
+    "frequency": "SIG-0004 states frequency as 'Monthly or per restructuring event.' Server restructuring is an infrequent, discretionary event for most servers, and accidental deletion is rare. This is not a daily or weekly recurring pain; it is episodic at best. For the majority of Discord servers (small friend/gaming communities), restructuring may happen once or twice a year. Score: 2.",
+    "urgency": "The trigger in SIG-0004 is anticipatory ('fear of accidental deletion') rather than an active blocker. Backup is a classic insurance-type pain: urgency is near zero until the disaster occurs, and after it occurs, a backup tool is useless retroactively. Nothing in the evidence indicates operations are blocked. Score: 2.",
+    "economic_impact": "SIG-0004 cites 'hours to recreate' — volunteer admin time, not dollars. Most Discord servers are non-commercial communities. The evidence contains no revenue loss, no compliance exposure, no paid labor cost, and no customer-facing financial impact. No dollar figure appears anywhere in the evidence. Score: 1.",
+    "operational_impact": "Per SIG-0004, the consequence is recreation effort and neglected backups — an annoyance for a volunteer admin, not a team-blocking event. Losing a channel disrupts a community's continuity but does not halt any business operation described in the evidence. Score: 2.",
+    "workaround_intensity": "The workaround documented in SIG-0004 is low-effort and free: DiscordChatExporter (a free, open-source tool) for messages, plus screenshots/text files for config. This is not a full-time-person workaround; it is an occasional, semi-automated task. The low workaround burden actually undercuts the opportunity — the existing solution is cheap and adequate for most. Score: 2.",
+    "willingness_to_pay": "SIG-0004 contains zero evidence of any spend — no paid tools, no consultants, no subscriptions. The Discord bot ecosystem is notoriously resistant to monetization; server owners expect free bots, and the named workaround (DiscordChatExporter) is free. Free alternatives anchor the price at zero. Score: 1.",
+    "global_applicability": "Discord is a global platform with no jurisdiction-specific dependency in this workflow; the pain would apply to admins in any country. This is the cluster's strongest dimension, though the single-source evidence (SIG-0004) does not itself demonstrate geographic breadth. Score: 4.",
+    "customer_accessibility": "Discord admins are identifiable and reachable via Discord itself, Reddit, and forums, so identification is feasible. However, SIG-0004 gives no evidence of a *paying* buyer segment; reaching users is not the same as reaching buyers. Score: 3.",
+    "evidence_quality": "The entire cluster rests on one signal (SIG-0004), one source (SRC-0004), one source type (forum), with independent_sources: 1. There is no corroboration, no quantification, no verified incident of actual data loss, and no market signal. This is the minimum possible evidence base. Score: 1."
+  },
+  "verified_facts": [
+    "SIG-0004 documents a forum-sourced account of Discord admins manually backing up server configuration and message history via third-party tools (DiscordChatExporter) and manual copying (screenshots/text files).",
+    "The stated frequency in SIG-0004 is 'Monthly or per restructuring event' — episodic, not continuous.",
+    "The stated consequence in SIG-0004 is hours of recreation time for deleted channels/roles, and that manual backups are 'rarely comprehensive and often neglected.'",
+    "The cluster has exactly 1 independent source and 1 source type."
+  ],
+  "inferences": [
+    "The pain is primarily anticipatory/insurance-type ('fear of accidental deletion'), which historically correlates with low urgency and low willingness to pay.",
+    "Free alternatives likely absorb most of the demand: DiscordChatExporter (named in the evidence) is free, and Discord natively offers server templates that snapshot channel/role/permission structure — substantially reducing the 'hours to recreate' claim for configuration.",
+    "Existing backup bots in the Discord ecosystem (e.g., Xenon-type solutions) suggest this workflow is already addressed by free/freemium tools, making paid differentiation difficult.",
+    "The majority of Discord servers are non-commercial, so the 'hours of recreation' cost is volunteer time with no direct dollar value."
+  ],
+  "assumptions": [
+    "Assuming the single forum post is representative of a broader admin population — unverified.",
+    "Assuming the 'hours to recreate' estimate in SIG-0004 is accurate rather than rhetorical.",
+    "Assuming the forum poster is an actual server admin experiencing this workflow, not describing it secondhand."
+  ],
+  "unknowns": [
+    "How often accidental deletion or destructive restructuring actually occurs across Discord servers.",
+    "Whether any meaningful segment of admins pays for backup tooling today.",
+    "The size and commercial nature of servers that feel this pain (large paid communities vs. small friend servers).",
+    "Whether existing free backup bots already satisfy the demand, leaving no residual gap.",
+    "Any quantified market size or spend for Discord admin tooling."
+  ],
+  "overall_assessment": "This cluster does not survive skeptical scrutiny. The evidence base is the weakest possible: a single forum-sourced signal (SIG-0004) with no independent corroboration. The pain itself is episodic (monthly at best, per SIG-0004), anticipatory rather than active, and carries no demonstrated economic impact — the stated cost is volunteer hours, not dollars. Critically, the workaround is cheap and effective: the evidence itself names DiscordChatExporter (free), and Discord's native server templates plus existing free backup bots cover much of the configuration-snapshot need, anchoring willingness to pay at zero. The Discord ecosystem is notoriously hostile to paid admin tooling. The only strong dimensions are global applicability (4) and moderate customer accessibility (3), which cannot rescue a pain that is mild, rare, already solved for free, and supported by one anecdote. Total score: 20/50 — far below burning-need threshold. Recommendation: reject or demand multi-source evidence of actual data-loss incidents and existing paid spend before further consideration."
+}

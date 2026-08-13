@@ -1,0 +1,60 @@
+{
+  "id": "OP-6F06",
+  "canonical_key": "CK-f35240b9e209032a",
+  "title": "When spam messages bypass Discord's built-in AutoMod, I want to automatically detect and remove them",
+  "target_user": "Discord moderator or server admin",
+  "job_to_be_done": "When spam messages bypass Discord's built-in AutoMod, I want to automatically detect and remove them using custom regex filters, so I can protect community trust and reduce moderator workload.",
+  "painful_workflow": "Manually reviewing and removing spam messages that bypass Discord's built-in AutoMod, using third-party bots or manual deletion.",
+  "current_workaround": "Use third-party moderation bots with custom regex filters (e.g., Dyno, Carl-bot) or manually delete messages and ban users.",
+  "source_ids": [
+    "SIG-0002"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0002 (from SRC-0002, a Discord forum post collected 2025-04-10) reports that spam messages bypass Discord's built-in AutoMod, including repeated links and scam messages using character manipulation.",
+    "SIG-0002 states the current workaround is third-party moderation bots with custom regex filters (Dyno, Carl-bot) or manual deletion and banning.",
+    "SIG-0002 claims the problem occurs daily in high-traffic servers.",
+    "The cluster is supported by exactly one independent source and one source type."
+  ],
+  "inferences": [
+    "Because free, mature bots (Dyno, Carl-bot) already provide the exact capability described in the JTBD (custom regex spam filtering), the unmet headroom for a new paid product is likely small.",
+    "The target user base (volunteer Discord moderators/admins) likely has little to no budget authority, suppressing willingness to pay even where pain exists.",
+    "The residual pain is concentrated in edge cases that existing bots miss (e.g., character-manipulation scams), which is a narrower problem than the cluster framing suggests."
+  ],
+  "assumptions": [
+    "The single forum signal is assumed to be representative of a broader moderator population, which is unverified.",
+    "The claim of daily frequency in high-traffic servers is taken at face value from one source without corroboration.",
+    "It is assumed that Discord's native AutoMod has not since closed the regex/filtering gap, which would further shrink the opportunity."
+  ],
+  "unknowns": [
+    "Whether existing bots (Dyno, Carl-bot) actually fail in ways users would pay to fix, and how often.",
+    "Whether any server admins currently pay for moderation tooling, and how much.",
+    "The size of the segment of high-traffic, commercially motivated servers (e.g., brand/community servers with revenue at stake) versus volunteer hobby servers.",
+    "Whether scam-driven member harm translates into measurable churn or revenue loss for server owners.",
+    "Whether Discord's own AutoMod roadmap (keyword/wildcard/filter improvements) eliminates the gap natively."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:13:12.511Z",
+  "updated_at": "2026-08-13T02:13:12.511Z"
+}

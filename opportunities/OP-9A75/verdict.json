@@ -1,0 +1,62 @@
+{
+  "id": "OP-9A75",
+  "canonical_key": "CK-95342ad5f1d0a441",
+  "title": "When I need to check inventory levels at the end of the week, I want to automatically reconcile Shop",
+  "target_user": "E-commerce Operations Manager",
+  "job_to_be_done": "When I need to check inventory levels at the end of the week, I want to automatically reconcile Shopify sales with my warehouse management system, so I can avoid stockouts, overselling, and 4-5 hours of manual spreadsheet work.",
+  "painful_workflow": "Downloading inventory reports from Shopify and WMS, pasting into Google Sheets, manually comparing SKU counts, and flagging discrepancies.",
+  "current_workaround": "Download inventory reports from Shopify and WMS, paste into Google Sheets, manually compare SKU counts, flag discrepancies.",
+  "source_ids": [
+    "SIG-0002"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 3,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 4,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0002 (sourced from SRC-0003, a G2/Capterra review collected 2025-03-24) describes a weekly manual reconciliation workflow between Shopify and a WMS using downloaded reports and Google Sheets.",
+    "The review claims the task consumes 4-5 hours every Monday.",
+    "The review lists consequences: stockouts, overselling, manual error risk, and delayed fulfillment.",
+    "The cluster contains exactly 1 independent source and 1 source type (review)."
+  ],
+  "inferences": [
+    "Estimated labor cost of ~$10-15K/year, derived from the claimed 4-5 weekly hours multiplied by an assumed loaded wage rate.",
+    "Because the signal originates on G2/Capterra, the reviewer likely already pays for adjacent software (a WMS or inventory tool) whose native reconciliation is inadequate — implying some existing budget in the category, though not for this specific solution.",
+    "The workflow is plausibly common among Shopify merchants with a separate WMS, but generalizing from one review to a population is an inference, not a finding."
+  ],
+  "assumptions": [
+    "The 4-5 hour figure is accurate and not exaggerated for review effect.",
+    "The reviewer is representative of a broader merchant population rather than an edge case (e.g., unusual SKU volume or a poorly configured WMS).",
+    "A loaded ops-manager wage of $50-60/hr used in the economic impact estimate.",
+    "The canonical JTBD's 'end of the week' framing is consistent with the evidence's 'every Monday' timing (minor internal rephrasing, assumed equivalent)."
+  ],
+  "unknowns": [
+    "Whether any other merchant experiences this pain — there is zero corroborating evidence.",
+    "Whether existing Shopify App Store inventory-sync/reconciliation apps already solve this; the competitive landscape is entirely unaddressed by the evidence, and if mature solutions exist, willingness to pay for a new entrant collapses.",
+    "Actual dollar losses from the claimed stockouts and overselling — asserted but never quantified.",
+    "The reviewer's company size, order volume, and SKU count — pain severity likely scales with these, and no baseline is given.",
+    "The reviewer's geography and whether the claimed workflow generalizes across WMS vendors.",
+    "Whether buyers would purchase a standalone reconciliation tool or simply expect this as a feature of software they already pay for."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:15:56.260Z",
+  "updated_at": "2026-08-13T02:15:56.260Z"
+}

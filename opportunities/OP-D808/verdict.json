@@ -1,0 +1,64 @@
+{
+  "id": "OP-D808",
+  "canonical_key": "CK-cbcb936c4dd16235",
+  "title": "When I need to close the books at month-end, I want to automatically reconcile payment-processor pay",
+  "target_user": "Founder, bookkeeper, or finance/operations person at a SaaS or e-commerce company",
+  "job_to_be_done": "When I need to close the books at month-end, I want to automatically reconcile payment-processor payouts (Stripe, PayPal, Adyen) against invoices, fees, refunds, and chargebacks in QuickBooks or Xero, so I can avoid misstated revenue and hours of manual work.",
+  "painful_workflow": "Reconciling payment-processor payouts (Stripe, PayPal, Adyen) against individual invoices, fees, refunds, and chargebacks, then getting that data into QuickBooks or Xero; lump-sum payouts must be matched to many underlying transactions.",
+  "current_workaround": "CSV exports manipulated in Excel or Google Sheets, hand-written reconciliation scripts, paying bookkeepers to do the matching, or buying third-party connector tools that users complain break or mis-map data.",
+  "source_ids": [
+    "SIG-0002"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 3,
+  "economic_impact_score": 3,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 3,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0002 (sole source: SRC-0003) describes a workflow of reconciling lump-sum Stripe/PayPal/Adyen payouts against invoices, fees, refunds, and chargebacks into QuickBooks or Xero.",
+    "SIG-0002 states the trigger is month-end close and tax preparation, with monthly frequency.",
+    "SIG-0002 states current workarounds include CSV/Excel manipulation, hand-written scripts, paid bookkeepers, and third-party connector tools.",
+    "SIG-0002 states consequences of unreconciled books, misstated revenue, tax filing errors, and several hours of manual work per month.",
+    "The cluster has exactly 1 independent source and 1 source type (hacker-news search)."
+  ],
+  "inferences": [
+    "Because the evidence itself lists paid bookkeepers and purchased connector tools as workarounds, an incumbent solution market already exists and captures the available spend.",
+    "The named platforms are multi-country, so the core reconciliation problem likely applies across geographies (tax specifics would vary).",
+    "'Several hours monthly' implies per-customer economic impact in the low hundreds of dollars per month at typical bookkeeping rates, capping viable price points for a new tool.",
+    "The complaint that existing tools 'break or mis-map data' suggests a possible differentiation angle, but its prevalence is unknown."
+  ],
+  "assumptions": [
+    "That the single HN-derived source reflects a recurring, segment-wide pattern rather than one user's experience.",
+    "That 'several hours per month' is typical rather than a best- or worst-case outlier.",
+    "That dissatisfied users of existing connector tools would switch to a new entrant despite switching costs and data-migration risk.",
+    "That the stated consequences (misstated revenue, tax errors) actually occur at meaningful rates rather than being hypothetical risks."
+  ],
+  "unknowns": [
+    "Market size: how many businesses actually face this at painful volume levels.",
+    "Direct user quotes, engagement metrics, or any verification behind SRC-0003.",
+    "Pricing, market share, and satisfaction/churn data for existing connector tools and native Stripe/PayPal accounting integrations.",
+    "Whether 'tools break or mis-map data' is a widespread, verified complaint or an isolated claim.",
+    "How pain severity varies by transaction volume, platform mix, and country.",
+    "Whether any spend is currently unmet (i.e., money available for a new solution rather than already captured by incumbents)."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:18:09.522Z",
+  "updated_at": "2026-08-13T02:18:09.522Z"
+}

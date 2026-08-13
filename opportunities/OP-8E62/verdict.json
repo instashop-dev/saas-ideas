@@ -1,0 +1,58 @@
+{
+  "id": "OP-8E62",
+  "canonical_key": "CK-c896bfd1889caa00",
+  "title": "When I add new roles or modify permissions in a large Discord server, I want to automatically track ",
+  "target_user": "Discord server owner or administrator",
+  "job_to_be_done": "When I add new roles or modify permissions in a large Discord server, I want to automatically track role hierarchy and permissions to avoid conflicts, so I can prevent security breaches and data exposure.",
+  "painful_workflow": "Manually tracking role permissions and hierarchy using spreadsheets to avoid permission conflicts in large multi-community servers.",
+  "current_workaround": "Maintain a separate spreadsheet mapping roles → permissions → channel overrides, or use a third-party bot that logs permission changes.",
+  "source_ids": [
+    "SIG-0003"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0003 is a single forum-sourced signal describing manual spreadsheet tracking of roles → permissions → channel overrides (SRC-0003).",
+    "The stated frequency is weekly only 'during active server development,' i.e., conditional and episodic.",
+    "The evidence itself acknowledges an automated workaround already exists: third-party bots that log permission changes.",
+    "No dollar figures, incident examples, or payment behavior appear anywhere in the evidence."
+  ],
+  "inferences": [
+    "Existing free solutions (logging bots, plus Discord's native audit log and role/permission UI) likely absorb most of this need, compressing willingness to pay toward zero.",
+    "The addressable segment is narrow: only large, multi-community servers undergoing frequent role restructuring — a small fraction of all Discord servers.",
+    "Because most Discord servers are non-commercial, the 'security breach' consequence rarely translates into monetary loss."
+  ],
+  "assumptions": [
+    "The forum post reflects a real, non-trivial workflow rather than one admin's idiosyncratic process.",
+    "The described 'large multi-community server' context is representative of a reachable market segment and not an edge case."
+  ],
+  "unknowns": [
+    "How many server admins actually maintain permission spreadsheets (prevalence is unmeasured).",
+    "Whether any admin has ever paid for a permission-tracking/audit tool.",
+    "The actual incidence and cost of permission-error 'breaches' on Discord.",
+    "Whether Discord's native audit log and role hierarchy UI already resolve most of this pain, making the spreadsheet behavior an outlier."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:14:35.452Z",
+  "updated_at": "2026-08-13T02:14:35.452Z"
+}

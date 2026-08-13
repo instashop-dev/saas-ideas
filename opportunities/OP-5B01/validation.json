@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 4,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 3,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 2,
+    "global_applicability": 5,
+    "customer_accessibility": 4,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0004 cites slow response times, misassigned tickets, and 15-20 min/day of reassignment work. These are real inefficiencies but represent friction, not severe pain: no outages, no compliance exposure, no data loss, no customer churn is evidenced. The pain is a moderate operational annoyance, not a burning need.",
+    "frequency": "SIG-0004 states 'Per event (multiple times daily)'. Ticket creation is inherently high-frequency for any active support team, so recurrence is credible. However, actual volume depends entirely on team size and ticket load, which the evidence does not specify — a 3-person team and a 50-person team experience this very differently.",
+    "urgency": "Nothing in SIG-0004 indicates the problem blocks operations or carries deadlines. Tickets still get handled; they are just handled slower and sometimes by the wrong agent. There is no evidence of SLA breaches with financial penalties, regulatory risk, or escalation to leadership. This reads as 'nice to optimize,' not 'must fix now.'",
+    "economic_impact": "The only quantified impact is 'agents spend 15-20 mins daily reassigning misfiled tickets' (SIG-0004, single source, unverified). Even extrapolating generously (10 agents x ~17 min x ~$30/hr fully loaded ≈ $85/day ≈ $20k/year), this is a modest cost, and that extrapolation is my inference, not evidence. No revenue loss, churn, or penalty cost is documented.",
+    "operational_impact": "SIG-0004 claims the 'team lead becomes bottleneck,' which is the strongest operational claim. If true, triage throughput is capped by one person's availability (vacations, time zones, sick days). However, the evidence shows work continues via the manual workaround — operations are degraded, not disrupted.",
+    "workaround_intensity": "The workaround (SIG-0004) is the team lead reading tickets and using a dropdown — this is arguably a core part of a support team lead's existing job, not an extraordinary effort. It does not require a dedicated full-time hire, external consultants, or fragile scripts. Effort is real but proportional to a normal duty.",
+    "willingness_to_pay": "SIG-0004 contains zero evidence of anyone spending money specifically to solve assignment/routing. No consultants, no purchased tools, no internal build effort is mentioned. While support teams clearly pay for ticketing platforms generally (inference from the ecosystem label 'g2-capterra-reviews'), there is no evidence of budget allocated to THIS problem as a standalone purchase.",
+    "global_applicability": "Ticket triage is a universal support function independent of jurisdiction, language, or regulation. SIG-0004 describes a workflow with no country-specific dependency. This is the cluster's strongest dimension.",
+    "customer_accessibility": "Support team leads are a well-defined, reachable persona (LinkedIn, support communities, review sites like the G2/Capterra ecosystem the signal itself came from). However, SIG-0004 provides no direct evidence of where these buyers congregate or how they were reached, so this score rests on general market knowledge, not the evidence.",
+    "evidence_quality": "Weakest dimension. independent_sources=1, source_type_count=1. The entire cluster rests on SIG-0004, a single forum-type signal with an internally inconsistent label (ecosystem='g2-capterra-reviews' but source_type='forum'). The specific '15-20 mins daily' figure is unverified and uncorroborated. One anecdote is not a market signal."
+  },
+  "verified_facts": [
+    "SIG-0004 reports that a team lead manually reviews and assigns each ticket via dropdown (single source).",
+    "SIG-0004 reports a consequence of slow response times, misassignments, team-lead bottleneck, and 15-20 min/day of reassignment effort (single source, unverified).",
+    "The cluster is supported by exactly 1 independent source and 1 source type.",
+    "The workflow recurs per ticket-creation event, i.e., potentially multiple times daily."
+  ],
+  "inferences": [
+    "Automatic ticket assignment (round-robin, skill-based, and load-based routing) is a mature, standard feature in mainstream ticketing platforms (e.g., the category reviewed on the very G2/Capterra ecosystem this signal came from). The described pain likely reflects under-configured tooling, a low-tier plan, or a basic/shared-inbox setup rather than an unserved market gap. This is general market knowledge, not derived from the provided evidence.",
+    "The economic cost, if the 15-20 min/day figure is accurate, plausibly lands in the low tens of thousands of dollars per year for a mid-size team — meaningful but below the threshold that typically triggers a new software purchase on its own.",
+    "Because incumbents bundle routing into platforms teams already pay for, a standalone solution would face extreme competition and a near-zero switching rationale for most buyers."
+  ],
+  "assumptions": [
+    "Assumes the team in SIG-0004 uses a ticketing system that lacks or has poorly configured routing — the evidence does not name the tool.",
+    "Assumes the '15-20 mins daily' figure is representative beyond one team — no corroboration exists.",
+    "Assumes the team lead's manual triage time is incremental cost rather than an accepted part of the role."
+  ],
+  "unknowns": [
+    "Which ticketing tool(s) the affected teams use and whether routing features are available but unused.",
+    "Team size, ticket volume, and industry of the source — all of which drastically change pain severity.",
+    "Whether any buyer has paid, or attempted to pay, to solve this specific problem.",
+    "Whether the signal reflects one disgruntled reviewer or a recurring complaint pattern.",
+    "Why the ecosystem label ('g2-capterra-reviews') and source_type ('forum') disagree — data provenance is unclear."
+  ],
+  "overall_assessment": "This cluster describes a real, frequent, and universal workflow friction — but it fails skeptical scrutiny as a SaaS opportunity on three grounds. First, evidence quality is critically weak: the entire cluster rests on a single, internally inconsistent, unverified source (SIG-0004), with the only quantified impact (15-20 min/day) uncorroborated. Second, the pain is moderate, not burning: tickets still get resolved, nothing is blocked, and there is no compliance, revenue, or churn consequence in evidence. Third and most damning: automatic ticket routing is table-stakes functionality across the mainstream helpdesk category — the pain as described is most plausibly a configuration, plan-tier, or tool-maturity problem, not an unmet market need. A standalone product here would compete against features buyers already own. Recommendation: deprioritize unless new evidence identifies a specific segment (e.g., teams trapped on shared inboxes or vertical tools with no routing) with demonstrated spend on this exact problem. Overall verdict: NOT validated as a burning need."
+}

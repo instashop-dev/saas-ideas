@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 1,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0002 describes spam reaching members and 'damaging community trust,' which is a real harm (scam links can victimize members). However, the same evidence states the workaround — third-party bots with custom regex filters (Dyno, Carl-bot) — already performs the exact function described in the JTBD. The pain is therefore residual annoyance when bots miss edge cases, not an unsolved severe problem. No evidence of member churn, measurable harm, or moderator burnout is provided. A 3 reflects genuine but mitigated pain.",
+    "frequency": "SIG-0002 claims 'Daily (high-traffic servers),' but this is a single unverified forum claim, and the daily frequency is explicitly conditioned on high-traffic servers — a minority of Discord's server population. For the median server, frequency is likely far lower. Score reflects plausible-but-unverified daily occurrence in a narrow segment only.",
+    "urgency": "Nothing in SIG-0002 indicates blocked operations, revenue loss, or compliance exposure. Spam is cleaned up after the fact, and existing bots already intercept much of it. The consequence described ('manual cleanup takes moderator time and can miss subtle spam patterns') is a nuisance-level efficiency gap, not an urgent operational threat. No server shutdown, legal risk, or business interruption is evidenced.",
+    "economic_impact": "SIG-0002 quantifies no dollar cost. Discord moderators are overwhelmingly volunteers, so 'moderator time' has no direct labor cost to the server owner. 'Community trust' damage is asserted but not tied to any measurable economic outcome (member loss, lost revenue). For the vast majority of non-commercial community servers, the dollar impact is negligible. Indirect scam risk to members exists but is not an economic cost borne by the prospective buyer.",
+    "operational_impact": "Per SIG-0002, the disruption is moderator time spent on cleanup — a distributed, minor drain, not a team-blocking event. The evidence explicitly notes third-party bots already handle much of this workflow, so the residual operational impact is the gap cases only. No evidence of operations halting or escalation beyond routine moderation.",
+    "workaround_intensity": "This is a critical disproving point. The primary workaround named in SIG-0002 — installing Dyno or Carl-bot and configuring regex filters — is free, mature, and low-effort (a one-time setup). Manual deletion is only the fallback. A cheap, effective, entrenched workaround means the bar for displacing it is high and the pain of the status quo is low. Workaround intensity is trivial-to-low, not a full-time-person burden.",
+    "willingness_to_pay": "SIG-0002 contains zero evidence of anyone spending money on this problem. The named solutions (Dyno, Carl-bot) are free/freemium, and Discord's own AutoMod is free. The target user (volunteer moderator/admin of a community server) typically has no budget. There is no signal of consultants, paid tools, or premium subscriptions being purchased specifically for regex spam filtering. This is the weakest dimension and the strongest reason to disprove the opportunity.",
+    "global_applicability": "Discord is a global platform and spam/scam messages are a universal phenomenon across languages and regions, per the general nature of the problem described in SIG-0002. Regex-based filtering is largely language-agnostic, though spam patterns vary by locale. This is the strongest dimension, but applicability of the pain does not imply applicability of a paid solution.",
+    "customer_accessibility": "Discord server admins are reachable through well-known channels (Discord itself, bot directories like top.gg, Reddit communities such as r/discordapp and r/discord_bots), so identification is feasible. However, SIG-0002 gives no evidence about which subset of admins has budget or purchasing authority, and the volunteer nature of the user base makes the *buyer* (vs. user) ambiguous. Reachable users, unclear buyers.",
+    "evidence_quality": "The cluster rests on exactly one signal (SIG-0002) from one source (SRC-0002) of one type (forum), with independent_sources: 1 and source_type_count: 1. This is a single anecdote with no corroboration, no quantification, no verified user statements, and no observed purchasing behavior. By the rubric, a single anecdote is the definition of 1/5 evidence quality."
+  },
+  "verified_facts": [
+    "SIG-0002 (from SRC-0002, a Discord forum post collected 2025-04-10) reports that spam messages bypass Discord's built-in AutoMod, including repeated links and scam messages using character manipulation.",
+    "SIG-0002 states the current workaround is third-party moderation bots with custom regex filters (Dyno, Carl-bot) or manual deletion and banning.",
+    "SIG-0002 claims the problem occurs daily in high-traffic servers.",
+    "The cluster is supported by exactly one independent source and one source type."
+  ],
+  "inferences": [
+    "Because free, mature bots (Dyno, Carl-bot) already provide the exact capability described in the JTBD (custom regex spam filtering), the unmet headroom for a new paid product is likely small.",
+    "The target user base (volunteer Discord moderators/admins) likely has little to no budget authority, suppressing willingness to pay even where pain exists.",
+    "The residual pain is concentrated in edge cases that existing bots miss (e.g., character-manipulation scams), which is a narrower problem than the cluster framing suggests."
+  ],
+  "assumptions": [
+    "The single forum signal is assumed to be representative of a broader moderator population, which is unverified.",
+    "The claim of daily frequency in high-traffic servers is taken at face value from one source without corroboration.",
+    "It is assumed that Discord's native AutoMod has not since closed the regex/filtering gap, which would further shrink the opportunity."
+  ],
+  "unknowns": [
+    "Whether existing bots (Dyno, Carl-bot) actually fail in ways users would pay to fix, and how often.",
+    "Whether any server admins currently pay for moderation tooling, and how much.",
+    "The size of the segment of high-traffic, commercially motivated servers (e.g., brand/community servers with revenue at stake) versus volunteer hobby servers.",
+    "Whether scam-driven member harm translates into measurable churn or revenue loss for server owners.",
+    "Whether Discord's own AutoMod roadmap (keyword/wildcard/filter improvements) eliminates the gap natively."
+  ],
+  "overall_assessment": "This cluster does not survive skeptical scrutiny as a SaaS opportunity. The pain is real but modest, and — decisively — the evidence itself states that the proposed solution (custom regex spam filtering) is already delivered by free, entrenched incumbents (Dyno, Carl-bot) and partially by Discord's native AutoMod. The stated workaround is cheap and effective, workaround intensity is low, and there is zero evidence of willingness to pay: the user base is predominantly volunteer moderators with no budget, and no spend of any kind is documented. Economic and operational impact are unquantified and likely negligible for the typical non-commercial server. Evidence quality is the minimum possible: one signal, one source, one source type — a single anecdote. The burning-need threshold is not met on any axis: no revenue loss, no compliance exposure, no blocked operations, no active costly workaround, and no observed purchasing behavior. The only plausible wedge would be a narrow segment of commercial/brand servers where scam spam causes measurable member harm, but nothing in the evidence establishes that segment's size, pain severity, or willingness to pay. Recommendation: deprioritize or reject unless multiple independent sources demonstrate (a) failures of existing bots and (b) actual spend on alternatives."
+}

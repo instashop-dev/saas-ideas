@@ -1,0 +1,52 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 2,
+    "urgency": 3,
+    "economic_impact": 3,
+    "operational_impact": 3,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 4,
+    "global_applicability": 3,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0001 asserts real consequences (audit delays, blocked deals, weeks of senior engineering time), but this is a single aggregated search signal with zero first-person quotes, no quantified severity, and no verifiable primary threads (SRC-0001/SRC-0002 are referenced but not provided). Critically, SIG-0001's own workaround description states companies already pay for Vanta/Drata — meaning for much of the market the pain is already mitigated by mature tooling. Real but unverified and substantially pre-solved; cannot justify 4-5 on this evidence.",
+    "frequency": "SIG-0001 itself states the cadence: quarterly access reviews, annual audits, per-deal security reviews. That is episodic, not daily or weekly. Per-deal reviews could be frequent for high-volume enterprise sellers, but the evidence provides no deal-flow numbers. Periodic pain scores a 2.",
+    "urgency": "Audit windows and deal-blocking due diligence (SIG-0001) create deadline-driven urgency, but these deadlines are known months in advance and plannable. This is not an operational fire; it is a recurring scheduled burden. Episodic urgency = 3.",
+    "economic_impact": "SIG-0001 claims blocked enterprise deals and weeks of senior engineering time, which would imply thousands to tens of thousands of dollars per cycle — but no dollar figures, deal sizes, or hour counts appear anywhere in the evidence. This is inference, not fact. Plausible but unquantified = 3.",
+    "operational_impact": "Per SIG-0001, the work diverts senior engineers for weeks, but it does not block a team or halt operations; it is a tax on a few individuals a few times per year. Moderate disruption = 3.",
+    "workaround_intensity": "The manual workaround (screenshots in shared drives, spreadsheet access reviews per SIG-0001) is tedious but well-understood and functional. More importantly, SIG-0001 confirms the dominant workaround is purchasing an existing automation platform — i.e., the workaround for most of the addressable market is 'write a check to an incumbent,' not 'suffer manually.' Manual-effort intensity applies only to the shrinking holdout population = 3.",
+    "willingness_to_pay": "Strongest dimension: SIG-0001 explicitly confirms existing spend on Vanta, Drata, and compliance consultants, so budget for this problem is proven. However, the same signal notes HN complaints about platform pricing, indicating price resistance, and all confirmed spend flows to incumbents — willingness to pay for a NEW entrant's product is unproven. Proven category spend, unproven new-product spend = 4.",
+    "global_applicability": "SOC 2 is predominantly a US framework; ISO 27001 is international; enterprise due-diligence questionnaires are broadly global. The cluster mixes US-centric and global elements, and the evidence (HN-centric) skews US. Partial applicability = 3.",
+    "customer_accessibility": "B2B SaaS CTOs are identifiable via standard B2B channels, but the evidence names no channels, and this persona is among the most heavily marketed-to in existence (Vanta, Drata, Secureframe, Sprinto, Thoropass, et al.), making reach noisy and expensive. Identifiable but saturated = 3.",
+    "evidence_quality": "Weakest dimension and the core disproof: independent_sources = 1, source_type_count = 1, single ecosystem (hacker-news), source_type 'search', no quotes, no URLs, no dates on underlying discussions, and SRC-0001/SRC-0002 contents are not actually included. This is one aggregated assertion, not multiple independent verified sources = 1."
+  },
+  "verified_facts": [
+    "SIG-0001 describes manual SOC 2/ISO 27001 evidence collection (screenshots, spreadsheet access reviews, vendor certificate gathering) as a current practice.",
+    "SIG-0001 states companies pay for compliance automation platforms (Vanta, Drata) and compliance consultants.",
+    "SIG-0001 states HN discussions debate build-vs-buy and complain about platform pricing.",
+    "Stated frequency in SIG-0001: quarterly access reviews, annual audits, per-deal security reviews.",
+    "Cluster metadata confirms independent_sources = 1, source_type_count = 1, ecosystem = hacker-news."
+  ],
+  "inferences": [
+    "Blocked enterprise deals (SIG-0001) imply revenue impact, but no deal values are given.",
+    "'Weeks of senior engineering time' implies meaningful labor cost, but hours and rates are unstated.",
+    "Pricing complaints on HN may indicate dissatisfaction with incumbents, which could be an opening — or commoditization and price pressure.",
+    "The existence of well-funded incumbents implies the category pain was historically severe, but says nothing about residual unserved pain."
+  ],
+  "assumptions": [
+    "That HN build-vs-buy threads represent a broad buyer population rather than a vocal, cost-sensitive minority.",
+    "That a meaningful population still performs this workflow manually despite mature, heavily marketed automation platforms.",
+    "That the target persona would consider purchasing yet another compliance tool."
+  ],
+  "unknowns": [
+    "Actual content, dates, and URLs of SRC-0001 and SRC-0002 — the primary evidence is not inspectable.",
+    "What fraction of B2B SaaS startups still do this manually vs. already use Vanta/Drata/competitors.",
+    "Any quantified cost: hours spent, dollars lost, deals blocked.",
+    "Whether pricing complaints correlate with switching willingness or merely grumbling while renewing.",
+    "Volume and frequency of per-deal security reviews for the target segment."
+  ],
+  "overall_assessment": "This cluster cannot be validated as a burning need on the evidence provided, and the skeptical case is strong. First, the evidence base is a single aggregated search signal from one ecosystem with no inspectable primary sources — evidence_quality is 1/5 and every consequential claim (blocked deals, weeks of engineering time) is unquantified assertion. Second, the frequency is structurally episodic: the signal itself states quarterly reviews and annual audits, not daily/weekly recurrence. Third, and most damning for the opportunity, the cluster's own workaround description confirms the pain is already commercially solved: Vanta, Drata, and consultants are named as the existing spend, meaning the market is mature, saturated, and dominated by well-funded incumbents. The HN pricing complaints cut both ways — they signal dissatisfaction but also price sensitivity and commoditization, not an obvious wedge for a new entrant. Willingness to pay for the category is proven (4/5), but willingness to pay for a NEW product in this space is unevidenced. Verdict: plausible pain, proven category, weak and thinly evidenced opportunity. Do not advance without multiple independent, verifiable sources demonstrating a specific unserved segment (e.g., companies failed by incumbents) and quantified cost of the residual manual workflow."
+}

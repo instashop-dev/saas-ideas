@@ -1,0 +1,61 @@
+{
+  "id": "OP-68DD",
+  "canonical_key": "CK-633129641170f952",
+  "title": "When I restructure my Discord server or fear accidental deletion, I want to automatically back up se",
+  "target_user": "Discord server administrator",
+  "job_to_be_done": "When I restructure my Discord server or fear accidental deletion, I want to automatically back up server configuration and message history, so I can avoid hours of recreation and data loss.",
+  "painful_workflow": "Manually backing up server configuration (roles, channels, permissions) and message history using third-party tools or bots.",
+  "current_workaround": "Use bots like DiscordChatExporter for message backups, and manually copy role/channel settings via screenshots or text files.",
+  "source_ids": [
+    "SIG-0004"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0004 documents a forum-sourced account of Discord admins manually backing up server configuration and message history via third-party tools (DiscordChatExporter) and manual copying (screenshots/text files).",
+    "The stated frequency in SIG-0004 is 'Monthly or per restructuring event' — episodic, not continuous.",
+    "The stated consequence in SIG-0004 is hours of recreation time for deleted channels/roles, and that manual backups are 'rarely comprehensive and often neglected.'",
+    "The cluster has exactly 1 independent source and 1 source type."
+  ],
+  "inferences": [
+    "The pain is primarily anticipatory/insurance-type ('fear of accidental deletion'), which historically correlates with low urgency and low willingness to pay.",
+    "Free alternatives likely absorb most of the demand: DiscordChatExporter (named in the evidence) is free, and Discord natively offers server templates that snapshot channel/role/permission structure — substantially reducing the 'hours to recreate' claim for configuration.",
+    "Existing backup bots in the Discord ecosystem (e.g., Xenon-type solutions) suggest this workflow is already addressed by free/freemium tools, making paid differentiation difficult.",
+    "The majority of Discord servers are non-commercial, so the 'hours of recreation' cost is volunteer time with no direct dollar value."
+  ],
+  "assumptions": [
+    "Assuming the single forum post is representative of a broader admin population — unverified.",
+    "Assuming the 'hours to recreate' estimate in SIG-0004 is accurate rather than rhetorical.",
+    "Assuming the forum poster is an actual server admin experiencing this workflow, not describing it secondhand."
+  ],
+  "unknowns": [
+    "How often accidental deletion or destructive restructuring actually occurs across Discord servers.",
+    "Whether any meaningful segment of admins pays for backup tooling today.",
+    "The size and commercial nature of servers that feel this pain (large paid communities vs. small friend servers).",
+    "Whether existing free backup bots already satisfy the demand, leaving no residual gap.",
+    "Any quantified market size or spend for Discord admin tooling."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:13:42.895Z",
+  "updated_at": "2026-08-13T02:13:42.895Z"
+}

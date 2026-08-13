@@ -1,0 +1,64 @@
+{
+  "id": "OP-A8F6",
+  "canonical_key": "CK-4e6f903fbabc7af7",
+  "title": "When I need to prepare for a SOC 2 Type II audit, I want to automatically collect evidence from vari",
+  "target_user": "Compliance Officer",
+  "job_to_be_done": "When I need to prepare for a SOC 2 Type II audit, I want to automatically collect evidence from various departments, so I can avoid missed deadlines, audit findings, and weeks of frantic effort.",
+  "painful_workflow": "Manually emailing various department heads for screenshots, logs, and policy acknowledgments; storing everything in a shared drive folder with manual versioning.",
+  "current_workaround": "Compliance team emails various department heads for screenshots, logs, and policy acknowledgments; stores everything in a shared drive folder with manual versioning.",
+  "source_ids": [
+    "SIG-0005"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 2,
+  "urgency_score": 3,
+  "economic_impact_score": 3,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 3,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "The cluster is supported by exactly one signal (SIG-0005) from exactly one source (SRC-0007), confirmed by independent_sources=1 and source_type_count=1 in the cluster metadata.",
+    "The sole source is a review in the g2-capterra-reviews ecosystem (source_type: 'review').",
+    "The stated trigger frequency is quarterly (per SIG-0005).",
+    "The stated consequences are: missed evidence deadlines, audit findings, consultant fees ($10k+), risk of non-compliance, and 2 weeks of frantic effort per quarter (per SIG-0005).",
+    "The current workaround is manual email collection plus shared-drive storage with manual versioning (per SIG-0005)."
+  ],
+  "inferences": [
+    "Because the evidence originates from a software review platform, commercial products already exist that target this exact workflow, and the reviewer was likely evaluating or using one — implying the pain is already addressed by incumbent solutions rather than representing an open gap.",
+    "The pain description may be retrospective (describing life before adopting the reviewed tool), which would mean the review actually evidences a solved problem.",
+    "The $10k+ consultant spend suggests budget exists in this category, but that budget appears already captured by consultants and existing tools.",
+    "SOC 2's US-centric nature bounds the addressable market primarily to US companies and foreign firms serving US customers."
+  ],
+  "assumptions": [
+    "That the single reviewer is representative of the broader Compliance Officer population.",
+    "That the $10k+ consultant fee and 2-week effort figures are accurate and typical rather than exaggerated or edge-case.",
+    "That the reviewer was not incentivized or influenced in writing the review.",
+    "That quarterly evidence collection is the norm rather than continuous monitoring, which many audit programs now require."
+  ],
+  "unknowns": [
+    "Company size, industry, and maturity of the reviewer's organization.",
+    "Whether the reviewer had already adopted a compliance automation tool when writing the review.",
+    "The competitive landscape and pricing of existing solutions (no evidence provided).",
+    "Actual conversion willingness: would buyers switch from consultants/incumbent tools to a new entrant?",
+    "How many organizations experience this pain at the claimed severity — no prevalence data exists in the evidence.",
+    "Whether the pain persists for organizations already using existing automation tools."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:15:33.001Z",
+  "updated_at": "2026-08-13T02:15:33.001Z"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "OP-A726",
+  "canonical_key": "CK-7545be43baca6339",
+  "title": "When I start a pull request that requires additional review steps, I want to use custom checklists a",
+  "target_user": "Team lead / Developer",
+  "job_to_be_done": "When I start a pull request that requires additional review steps, I want to use custom checklists and approval gates within GitHub, so I can avoid lost context and missed review deadlines.",
+  "painful_workflow": "Creating issues linked to PRs, manually tracking review status in spreadsheets, or using external tools like Asana or Jira because GitHub's built-in review workflow doesn't support custom checklists, approval gates, or cross-repo reviews.",
+  "current_workaround": "Creating issues linked to PRs, manually tracking review status in spreadsheets, or using external tools like Asana or Jira.",
+  "source_ids": [
+    "SIG-0003"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "A single search-derived signal (SIG-0003, source SRC-0003) claims GitHub's built-in review workflow lacks custom checklists, approval gates, and cross-repo review support.",
+    "The same single signal claims the workaround is linked issues, spreadsheets, or external tools (Asana/Jira), occurring 'daily, per PR'.",
+    "The cluster has exactly 1 independent source and 1 source type."
+  ],
+  "inferences": [
+    "PRs occur daily in active development teams, so the trigger event is plausibly frequent — but the painful subset is unquantified.",
+    "Teams using Jira/Asana as a workaround already pay for those tools for other reasons, so the marginal workaround cost is likely low.",
+    "The pain pattern, if real, would apply globally because GitHub usage is not jurisdiction-specific."
+  ],
+  "assumptions": [
+    "That the claimed consequences (lost context, missed deadlines, duplicate work) actually occur at meaningful scale — asserted but not evidenced.",
+    "That GitHub's native features (branch protection required reviews, required status checks, PR template task lists, GitHub Projects) do not adequately mitigate the gap — the evidence never engages with them.",
+    "That team leads, rather than the org's existing PM tooling owner, would be the buyer."
+  ],
+  "unknowns": [
+    "No user quotes, forum threads, feature-request upvotes, or community discussion evidence.",
+    "No quantification: team sizes affected, time lost per PR, cost of missed deadlines.",
+    "No willingness-to-pay data: no existing paid solution spend, no budget owner identified.",
+    "No competitive landscape: whether existing review-tooling products already solve this and at what adoption.",
+    "No analysis of how GitHub-native features (branch protection, CODEOWNERS, Projects, PR templates) partially cover the claimed gap.",
+    "No segmentation: does this affect 5-person startups, regulated enterprises, or open-source maintainers differently?"
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:16:38.763Z",
+  "updated_at": "2026-08-13T02:16:38.763Z"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "OP-BE1D",
+  "canonical_key": "CK-9318b4fdc801a6a9",
+  "title": "When I close a deal in Salesforce, I want to automatically sync invoicing and revenue data to QuickB",
+  "target_user": "Sales Operations Manager",
+  "job_to_be_done": "When I close a deal in Salesforce, I want to automatically sync invoicing and revenue data to QuickBooks, so I can avoid billing delays, errors, and 2-3 hours of daily manual data entry.",
+  "painful_workflow": "Manually exporting opportunity data from Salesforce, formatting it in Excel, then importing into QuickBooks; also manually reconciling discrepancies weekly.",
+  "current_workaround": "Sales ops team manually exports opportunity data from Salesforce, formats it in Excel, then imports into QuickBooks; also manually reconciles discrepancies weekly.",
+  "source_ids": [
+    "SIG-0001"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 3,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "The cluster contains exactly one signal (SIG-0001) from one ecosystem (g2-capterra-reviews) and one source type (forum).",
+    "SIG-0001 self-reports a daily manual Salesforce→Excel→QuickBooks workflow with weekly reconciliation, attributed to a Sales Operations Manager.",
+    "SIG-0001 claims 2-3 hours of daily effort, billing delays, and revenue recognition errors as consequences.",
+    "Cluster metadata confirms independent_sources: 1 and source_type_count: 1, so SRC-0001 and SRC-0002 do not constitute independent corroboration."
+  ],
+  "inferences": [
+    "If the 2-3 hour daily claim is accurate, the labor cost is roughly 0.3-0.4 FTE (~$15-30k/year loaded) — meaningful but not catastrophic.",
+    "The continued use of a manual workaround, with no tool spend mentioned, implies the pain has not crossed the threshold to trigger purchasing behavior.",
+    "The Salesforce-QuickBooks integration category is mature and crowded (native connectors, AppExchange apps, iPaaS tools at low price points), so even a validated pain would face severe incumbent competition — this is market context, not evidence from the pack."
+  ],
+  "assumptions": [
+    "That the G2/Capterra review content underlying SIG-0001 accurately describes a current, real workflow rather than a historical or edge-case complaint.",
+    "That the target role was correctly identified from the review content.",
+    "That the claimed daily frequency and 2-3 hour duration are representative of more than one company."
+  ],
+  "unknowns": [
+    "Company size, deal volume, and industry of the source — is this a 10-person SMB or a mid-market firm?",
+    "Why existing integration solutions were not adopted (unawareness, cost, edge-case requirements, IT restrictions?) — this determines whether the pain is a market gap or a market-awareness problem.",
+    "Whether the 2-3 hours daily figure is typical across companies or an outlier.",
+    "Any quantified magnitude for billing delays, error rates, or 'missed opportunities.'",
+    "Whether the reviewer has budget authority or any purchase intent.",
+    "How many other companies share this exact workflow — there is zero prevalence data."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:14:55.102Z",
+  "updated_at": "2026-08-13T02:14:55.102Z"
+}

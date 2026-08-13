@@ -1,0 +1,61 @@
+{
+  "id": "OP-59AD",
+  "canonical_key": "CK-646496d42a0adfa6",
+  "title": "When a member joins a specific voice channel, I want to automatically assign them a role, so I can a",
+  "target_user": "Discord server administrator",
+  "job_to_be_done": "When a member joins a specific voice channel, I want to automatically assign them a role, so I can avoid manual role assignment and ensure channel-specific permissions are applied.",
+  "painful_workflow": "Manually assigning roles when a member joins a specific voice channel, or using third-party bots with custom commands.",
+  "current_workaround": "Use third-party bots like YAGPDB or MEE6 with custom commands, or manually assign roles via the member list.",
+  "source_ids": [
+    "SIG-0001"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "SIG-0001 documents a single forum-sourced account of a Discord admin workflow involving role assignment when a member joins a designated voice channel.",
+    "The evidence explicitly names functioning third-party bot workarounds (YAGPDB, MEE6) as current solutions in use.",
+    "The cluster is supported by exactly one independent source and one source type (discord-forums), collected 2025-04-10.",
+    "The stated consequence is members missing channel-specific permissions or community alerts, and manual assignment being slow and error-prone on large servers."
+  ],
+  "inferences": [
+    "Because free, mature bots already automate this exact trigger, the residual unmet pain is limited to admins unaware of or unwilling to configure those bots — a knowledge/discovery gap rather than a tooling gap.",
+    "The market for this capability is crowded with entrenched, free-at-entry competitors, making differentiation and monetization difficult.",
+    "The frequency of the triggering event (voice channel joins) is likely high on active servers, but the frequency of experienced pain is low wherever the bot workaround is deployed."
+  ],
+  "assumptions": [
+    "That 'large servers' in SIG-0001 implies meaningful manual labor volume; no server size, member counts, or join rates are provided.",
+    "That Discord server administrators represent a reachable and monetizable buyer segment; the evidence does not establish this.",
+    "That some servers have monetized contexts (paid communities, support queues tied to revenue) where a missed role has economic consequences; not stated in the evidence."
+  ],
+  "unknowns": [
+    "How many servers actually face this problem and at what scale.",
+    "Whether existing bots fully solve the use case or leave meaningful gaps (e.g., reliability, permission edge cases).",
+    "Any quantified time cost, error rate, or dollar impact of manual assignment.",
+    "Any instance of an admin paying money to solve this problem.",
+    "Whether Discord's native feature roadmap would absorb this capability, eliminating third-party opportunities.",
+    "Price sensitivity and conversion behavior of Discord admins for paid bot features."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:16:11.841Z",
+  "updated_at": "2026-08-13T02:16:11.841Z"
+}

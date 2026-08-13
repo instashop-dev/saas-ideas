@@ -1,0 +1,54 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 2,
+    "operational_impact": 3,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 4,
+    "global_applicability": 3,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0003 characterizes this as 'one of the most tedious parts of enterprise sales' — tedious is annoyance language, not severity language. The stated consequence is 'slower deal cycles' and 'stale answers,' not lost deals, compliance failures, or revenue destruction. No evidence in SIG-0003 shows a deal actually dying or a customer relationship being damaged by this workflow. Pain is chronic and real but reads as tolerated tedium, not acute suffering. 3/5.",
+    "frequency": "SIG-0003 states 'per-deal; multiple per month at companies with active enterprise pipelines.' That is genuinely recurring for a narrow segment, but it is not daily, and it is zero for the large population of companies without active enterprise pipelines. The frequency claim is also unverified — it comes from a single search-derived signal with no underlying data. 3/5.",
+    "urgency": "Nothing in SIG-0003 indicates this blocks operations. Questionnaires have deadlines, but teams demonstrably meet them via copy/paste and master spreadsheets — the workaround works, it is merely unpleasant. 'Slower deal cycles' is a drag, not a stoppage. No evidence of escalation, missed deadlines, or executive fire drills. 2/5.",
+    "economic_impact": "SIG-0003 asserts 'slower deal cycles' and 'senior technical staff consumed,' which implies real cost, but provides zero quantification — no hours per questionnaire, no dollar figures, no deal-delay measurements. Any dollar estimate would be pure inference. Additionally, part of this economic pain is already being paid away to existing tooling (per the workaround text), meaning the capturable residual is smaller than the gross pain. 2/5.",
+    "operational_impact": "SIG-0003 notes senior technical staff (sales engineers, founders) are 'consumed by repetitive paperwork' — pulling expensive people into clerical work is a genuine operational drag. But it does not block a team or halt delivery; it is a distributed time sink across deals, absorbed as a cost of doing enterprise sales. 3/5.",
+    "workaround_intensity": "The workaround per SIG-0003 is a hand-maintained master spreadsheet plus copy/paste from prior questionnaires — hours of tedious effort per questionnaire, but not a full-time headcount by any evidence presented. Notably, the evidence also lists 'purchasing questionnaire-automation tooling' as an existing workaround, meaning a meaningful share of sufferers have already reduced workaround intensity by buying a solution. 3/5.",
+    "willingness_to_pay": "This is the strongest dimension and the most double-edged. SIG-0003's own workaround text confirms companies are 'purchasing questionnaire-automation tooling' — demonstrated, existing spend on this exact problem. That earns a high WTP score. However, the skeptic's caveat: spend already flowing to incumbent tools means budget is allocated and captured; it validates the pain while simultaneously disproving the whitespace. 4/5.",
+    "global_applicability": "SIG/CAIQ questionnaires are standard instruments in B2B SaaS procurement and not bound to one country's law, so the problem plausibly travels. But SIG-0003 says nothing about geography; the HN-derived signal skews toward US-centric enterprise sales culture, where vendor security review is most ritualized. Applicability is inferred, not evidenced. 3/5.",
+    "customer_accessibility": "The target role (sales engineer, solutions engineer, technical founder) is well-defined and congregates in identifiable places (LinkedIn, HN, sales-engineering communities). However, SIG-0003 provides no evidence about reachability, and this exact audience is already heavily prospected by the existing questionnaire-automation and compliance vendors, making channels noisy and expensive. 3/5.",
+    "evidence_quality": "The weakest dimension and the decisive one. The cluster rests on exactly one signal (SIG-0003), one source (SRC-0004), one source type (search), with independent_sources: 1 and source_type_count: 1 by the cluster's own metadata. The underlying evidence is HN commenter sentiment — anecdotal, unquantified, unverified, and self-selected. There is no triangulation: no interviews, no quantified time studies, no spending data, no second ecosystem. This is a single-anecdote evidence base. 1/5."
+  },
+  "verified_facts": [
+    "SIG-0003 documents that enterprise security questionnaires arrive as bespoke Excel files with hundreds of questions or as SIG/CAIQ variants, and are answered by hunting prior answers and copy/pasting from old questionnaires and internal documents.",
+    "The trigger is each enterprise sales cycle, vendor assessment, or renewal review (SIG-0003).",
+    "Stated frequency is per-deal, multiple per month at companies with active enterprise pipelines (SIG-0003).",
+    "Current workarounds include hand-maintained master answer spreadsheets, copy/paste, and purchasing questionnaire-automation tooling (SIG-0003).",
+    "Stated consequences are slower deal cycles, inconsistent or stale answers, and senior technical staff time consumed (SIG-0003).",
+    "The cluster's evidence base is exactly one independent source and one source type (cluster metadata: independent_sources=1, source_type_count=1)."
+  ],
+  "inferences": [
+    "Because SIG-0003 itself lists 'purchasing questionnaire-automation tooling' as a current workaround, commercial solutions for this exact JTBD already exist and have paying customers — this is a contested, served market, not an unmet need.",
+    "The consistent use of 'tedious' rather than 'blocking,' 'costly,' or 'deal-killing' language suggests annoyance-grade pain that organizations have normalized as a cost of enterprise sales.",
+    "Generic LLM-based tools (paste questionnaire + knowledge base into a chat model) now partially absorb this JTBD at near-zero marginal cost, eroding the gap between workaround and dedicated product — a market-context inference not covered by the 2025-06 evidence.",
+    "Existing spend on incumbent tools implies high switching costs and a crowded competitive field for any new entrant, lowering the realistic opportunity even though willingness-to-pay scores well."
+  ],
+  "assumptions": [
+    "That HN commenter sentiment generalizes to the broader population of sales engineers and founders — unverified and subject to selection bias.",
+    "That the stated frequency ('multiple per month') reflects typical companies rather than the most active enterprise sellers.",
+    "That 'slower deal cycles' translates into material revenue impact, which no evidence quantifies."
+  ],
+  "unknowns": [
+    "Hours consumed per questionnaire and loaded dollar cost per deal — no quantification exists in the evidence.",
+    "Whether any deal is actually lost (not merely slowed) because of questionnaire friction.",
+    "Satisfaction levels with existing questionnaire-automation tools — if incumbents solve this well, the residual pain may be small.",
+    "Size of the segment that has active enterprise pipelines but has not already adopted tooling.",
+    "Willingness to pay a NEW vendor rather than an incumbent or a generic LLM workflow.",
+    "Any corroborating signal outside a single HN-derived search result."
+  ],
+  "overall_assessment": "This cluster describes a real and widely recognized pain, but it fails validation as a burning-need opportunity on three independent grounds. First, the evidence base is the weakest possible: one signal, one source, one source type, drawn from anecdotal HN commentary with zero quantification — evidence_quality 1/5 means every other score rests on an unverified foundation. Second, the pain profile is chronic tedium rather than acute urgency: deals slow but close, teams cope via spreadsheets, and the language of the evidence is 'tedious,' not 'blocking' — urgency 2/5, economic_impact 2/5. Third, and most damning for the opportunity thesis, the cluster's own workaround text confirms that questionnaire-automation tooling already exists and is being purchased — the market is served by established vendors, so demonstrated willingness-to-pay (4/5) validates the pain while simultaneously disproving the whitespace. A new entrant would face incumbents with deep integrations, allocated budgets, and switching costs, plus erosion from generic LLM workflows that handle knowledge-base-to-questionnaire drafting at near-zero cost. Recommendation: REJECT as a standalone new-product opportunity unless a sharply differentiated wedge (e.g., an underserved segment, a novel distribution channel, or a 10x cost undercut) can be evidenced. Before any reconsideration, demand triangulated evidence: quantified time-cost data, win/loss attribution showing deals harmed by questionnaire friction, and dissatisfaction signals from users of existing tools."
+}

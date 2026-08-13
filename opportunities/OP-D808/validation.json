@@ -1,0 +1,54 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 3,
+    "urgency": 3,
+    "economic_impact": 3,
+    "operational_impact": 2,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 3,
+    "global_applicability": 4,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0002 claims consequences of 'books that don't reconcile, misstated revenue, tax filing errors, and several hours of manual work every month.' If true, this is genuinely painful but not severe: the quantified burden is hours-scale, not days-scale, and the most serious claims (misstated revenue, tax errors) are asserted consequences, not documented incidents. All of this rests on a single source (SRC-0003) with no direct user quotes or corroboration. Real but moderate; not a 4-5.",
+    "frequency": "SIG-0002 explicitly states the trigger is 'month-end close and tax preparation' with frequency 'monthly.' Monthly recurrence is real but sits mid-scale: this is not a daily or weekly operational grind. Tax preparation is annual, which pulls the average down further. No evidence suggests higher-frequency reconciliation in the target segment.",
+    "urgency": "Month-end close and tax deadlines (SIG-0002) create genuine deadline pressure, but the work is deferrable back-office labor — the business does not stop operating if reconciliation slips a few days. Nothing in the evidence indicates blocked operations, halted payouts, or compliance enforcement action. Deadline-driven but absorbable.",
+    "economic_impact": "The only quantification in SIG-0002 is 'several hours of manual work every month.' At typical bookkeeper rates this implies low hundreds of dollars per month per customer — meaningful to an SMB but modest, and it caps what a new tool could charge. The claimed downside of 'tax filing errors' is unquantified and unverified. No evidence of revenue loss at scale.",
+    "operational_impact": "Per SIG-0002, the burden falls on a founder/bookkeeper/finance person during close. This disrupts one role periodically; it does not block a team, halt fulfillment, or stop sales. The business operates normally between closes. This is a contained back-office friction, not an operational bottleneck.",
+    "workaround_intensity": "SIG-0002 lists CSV/Excel manipulation, hand-written scripts, paid bookkeepers, and connector tools. These are real, non-trivial efforts, but none approaches a full-time person — the stated cost is 'several hours' monthly. Workarounds exist and function, which itself lowers the pain ceiling: the problem is annoying, not unmanageable.",
+    "willingness_to_pay": "SIG-0002 does state that users pay bookkeepers and buy third-party connector tools, which is direct evidence of existing spend. However: (a) this comes from the same single unverified source, and (b) existing spend flowing to incumbent tools is evidence the market is already served, not that there is headroom for a new entrant. The claim that tools 'break or mis-map data' is the only differentiation signal and is unverified.",
+    "global_applicability": "Inference, not direct evidence: the platforms named in SIG-0002 (Stripe, PayPal, Adyen, QuickBooks, Xero) operate across many countries, and payout-to-invoice reconciliation is a jurisdiction-agnostic accounting workflow. Tax specifics vary by country, but the core matching problem is universal. Scored 4 as a reasonable inference; the evidence itself addresses no geography.",
+    "customer_accessibility": "The target role (founder/bookkeeper/finance-ops at SaaS/e-commerce firms, per SIG-0002) is identifiable and reachable through known communities and professional networks. However, no acquisition channel is evidenced, and this is a noisy, well-tooled segment where standing out is costly. Reachable in principle, undifferentiated in practice.",
+    "evidence_quality": "The weakest dimension by far. The entire cluster rests on one signal (SIG-0002) from one source (SRC-0003), one ecosystem (hacker-news), one source type ('search'). independent_sources: 1, source_type_count: 1. There are no direct quotes, no thread links, no engagement metrics, no second anecdote, no review data, no verification. This is the definition of a single-anecdote evidence base."
+  },
+  "verified_facts": [
+    "SIG-0002 (sole source: SRC-0003) describes a workflow of reconciling lump-sum Stripe/PayPal/Adyen payouts against invoices, fees, refunds, and chargebacks into QuickBooks or Xero.",
+    "SIG-0002 states the trigger is month-end close and tax preparation, with monthly frequency.",
+    "SIG-0002 states current workarounds include CSV/Excel manipulation, hand-written scripts, paid bookkeepers, and third-party connector tools.",
+    "SIG-0002 states consequences of unreconciled books, misstated revenue, tax filing errors, and several hours of manual work per month.",
+    "The cluster has exactly 1 independent source and 1 source type (hacker-news search)."
+  ],
+  "inferences": [
+    "Because the evidence itself lists paid bookkeepers and purchased connector tools as workarounds, an incumbent solution market already exists and captures the available spend.",
+    "The named platforms are multi-country, so the core reconciliation problem likely applies across geographies (tax specifics would vary).",
+    "'Several hours monthly' implies per-customer economic impact in the low hundreds of dollars per month at typical bookkeeping rates, capping viable price points for a new tool.",
+    "The complaint that existing tools 'break or mis-map data' suggests a possible differentiation angle, but its prevalence is unknown."
+  ],
+  "assumptions": [
+    "That the single HN-derived source reflects a recurring, segment-wide pattern rather than one user's experience.",
+    "That 'several hours per month' is typical rather than a best- or worst-case outlier.",
+    "That dissatisfied users of existing connector tools would switch to a new entrant despite switching costs and data-migration risk.",
+    "That the stated consequences (misstated revenue, tax errors) actually occur at meaningful rates rather than being hypothetical risks."
+  ],
+  "unknowns": [
+    "Market size: how many businesses actually face this at painful volume levels.",
+    "Direct user quotes, engagement metrics, or any verification behind SRC-0003.",
+    "Pricing, market share, and satisfaction/churn data for existing connector tools and native Stripe/PayPal accounting integrations.",
+    "Whether 'tools break or mis-map data' is a widespread, verified complaint or an isolated claim.",
+    "How pain severity varies by transaction volume, platform mix, and country.",
+    "Whether any spend is currently unmet (i.e., money available for a new solution rather than already captured by incumbents)."
+  ],
+  "overall_assessment": "This cluster describes a plausible and genuinely annoying workflow, but it fails validation on both evidence and market-structure grounds. Every claim traces to a single Hacker News search result (SIG-0002/SRC-0003) with no quotes, no metrics, and zero independent corroboration — evidence_quality is 1/5 by definition. The pain as stated is monthly and bounded at 'several hours' of work: real, but absorbable, and nowhere near the burning-need threshold of daily recurrence, blocked operations, or severe economic loss. Most damagingly, the evidence itself undercuts the opportunity: the listed workarounds include paid bookkeepers and third-party connector tools, which confirms the spend is already captured by an existing, crowded solution market. The only wedge for a new entrant — that existing tools 'break or mis-map data' — is an unverified claim from that same single source. The strongest-scoring dimensions (global applicability, existing willingness to pay) argue for the pain's existence but against the opportunity for a new SaaS. Recommendation: do not advance as validated. Require multiple independent sources with direct user quotes, quantified time/cost data, and demonstrated dissatisfaction-driven churn from incumbent tools before reconsidering."
+}

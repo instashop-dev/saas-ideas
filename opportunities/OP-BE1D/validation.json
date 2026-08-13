@@ -1,0 +1,51 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 3,
+    "urgency": 2,
+    "economic_impact": 3,
+    "operational_impact": 2,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 2,
+    "global_applicability": 3,
+    "customer_accessibility": 4,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-0001 describes manual export/format/import plus weekly reconciliation, with consequences of billing delays and revenue recognition errors. That is a genuinely annoying, error-prone workflow, but the entire description rests on one signal. Critically, the user is still tolerating the manual process rather than adopting any of the many low-cost integration tools that exist in this category (market context, not from the evidence pack) — behavior that contradicts a severe-pain hypothesis. Severe pain usually triggers solution-seeking; none is evidenced. Capped at 3.",
+    "frequency": "SIG-0001 claims 'Daily' frequency and weekly reconciliation. If accurate, that is high frequency. However, this is a single unverified self-report; there is no second independent source (independent_sources: 1) to confirm the cadence is typical rather than one company's outlier situation. Score reflects the claim discounted for lack of corroboration.",
+    "urgency": "Nothing in SIG-0001 indicates the problem is blocking operations or has a deadline attached. The team has a functioning workaround and has lived with it long enough to describe it as routine. The fact that they have not purchased an existing connector (no tool spend is mentioned anywhere in the evidence) suggests this is tolerated friction, not an urgent fire. Score: 2.",
+    "economic_impact": "SIG-0001 claims 2-3 hours of daily labor. If true, that is roughly 0.3-0.4 FTE, plausibly $15-30k/year in loaded labor cost — meaningful but not dramatic, and entirely an inference from one unverified number. Billing delays and revenue recognition errors are asserted but not quantified (no dollar figures, no magnitude of delay, no error rate). Score: 3, held down by single-source quantification.",
+    "operational_impact": "The workflow described in SIG-0001 consumes one team's time but does not block the broader organization; deals still close, invoices still go out (late, per the claim). 'Missed opportunities due to stale data' is asserted with no supporting detail. This is contained inefficiency, not an operational bottleneck. Score: 2.",
+    "workaround_intensity": "Per SIG-0001, the workaround is export → Excel formatting → import → weekly manual reconciliation, allegedly 2-3 hours daily. That is a substantial workaround if the claim holds, but it is not a full-time person and the figure is unverified. Score: 3.",
+    "willingness_to_pay": "The evidence shows the opposite of willingness to pay: SIG-0001's subject is spending labor, not money, and there is no mention of paid tools, consultants, or prior purchase attempts. While the broader Salesforce-QuickBooks integration category demonstrably has paying customers (market context), that willingness is already captured by incumbent products and does not transfer to a new entrant. Evidence-based score: 2.",
+    "global_applicability": "QuickBooks is concentrated in the US, Canada, UK, and Australia, and Intuit has withdrawn from some markets; Salesforce is global. The pairing is common in SMB/mid-market but is not universal. SIG-0001 gives no geographic data. Score: 3 based on general market knowledge, not on the evidence pack.",
+    "customer_accessibility": "Sales Operations Manager is a well-defined, reachable persona (LinkedIn, Salesforce/RevOps communities, G2 reviewer audiences — the signal itself originated in the g2-capterra-reviews ecosystem, proving the persona is observable there). This is the strongest dimension, though accessibility of buyers for a commodity integration category also means incumbents reach them first. Score: 4.",
+    "evidence_quality": "Weakest dimension. The cluster rests on a single signal (SIG-0001) from a single ecosystem (g2-capterra-reviews) and a single source_type (forum). Although SIG-0001 lists SRC-0001 and SRC-0002, the cluster itself records independent_sources: 1, meaning these are not independent corroboration. Every quantitative claim (2-3 hours daily, daily frequency, billing delays) traces to this one signal. This is functionally a single anecdote. Score: 1."
+  },
+  "verified_facts": [
+    "The cluster contains exactly one signal (SIG-0001) from one ecosystem (g2-capterra-reviews) and one source type (forum).",
+    "SIG-0001 self-reports a daily manual Salesforce→Excel→QuickBooks workflow with weekly reconciliation, attributed to a Sales Operations Manager.",
+    "SIG-0001 claims 2-3 hours of daily effort, billing delays, and revenue recognition errors as consequences.",
+    "Cluster metadata confirms independent_sources: 1 and source_type_count: 1, so SRC-0001 and SRC-0002 do not constitute independent corroboration."
+  ],
+  "inferences": [
+    "If the 2-3 hour daily claim is accurate, the labor cost is roughly 0.3-0.4 FTE (~$15-30k/year loaded) — meaningful but not catastrophic.",
+    "The continued use of a manual workaround, with no tool spend mentioned, implies the pain has not crossed the threshold to trigger purchasing behavior.",
+    "The Salesforce-QuickBooks integration category is mature and crowded (native connectors, AppExchange apps, iPaaS tools at low price points), so even a validated pain would face severe incumbent competition — this is market context, not evidence from the pack."
+  ],
+  "assumptions": [
+    "That the G2/Capterra review content underlying SIG-0001 accurately describes a current, real workflow rather than a historical or edge-case complaint.",
+    "That the target role was correctly identified from the review content.",
+    "That the claimed daily frequency and 2-3 hour duration are representative of more than one company."
+  ],
+  "unknowns": [
+    "Company size, deal volume, and industry of the source — is this a 10-person SMB or a mid-market firm?",
+    "Why existing integration solutions were not adopted (unawareness, cost, edge-case requirements, IT restrictions?) — this determines whether the pain is a market gap or a market-awareness problem.",
+    "Whether the 2-3 hours daily figure is typical across companies or an outlier.",
+    "Any quantified magnitude for billing delays, error rates, or 'missed opportunities.'",
+    "Whether the reviewer has budget authority or any purchase intent.",
+    "How many other companies share this exact workflow — there is zero prevalence data."
+  ],
+  "overall_assessment": "This cluster does not survive skeptical validation. The pain type is plausible and the persona is reachable, but the entire case rests on a single signal from a single review ecosystem — functionally one anecdote — with every quantitative claim (2-3 hours daily, daily frequency, billing delays) unverified and uncorroborated. More damaging, the described behavior undermines the burning-need hypothesis: the user tolerates a manual workaround with no evidenced tool spend, in a category where cheap, mature integration solutions are widely available. That pattern indicates tolerated friction or solution unawareness, not an underserved burning need. Even if the pain were confirmed at the claimed intensity, a new entrant would face entrenched incumbents with native integrations. Recommendation: REJECT as currently evidenced. To reconsider, require (1) at least 3-5 independent signals from distinct ecosystems (forums, job postings for manual reconciliation work, Reddit/RevOps communities), (2) evidence of failed or abandoned attempts to use existing connectors, and (3) quantified economic impact from more than one company."
+}

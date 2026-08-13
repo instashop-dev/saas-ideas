@@ -1,0 +1,62 @@
+{
+  "id": "OP-CA3F",
+  "canonical_key": "CK-af5c5c6e55f245d7",
+  "title": "When I need to manage posts and comments for multiple dev.to accounts, I want to switch between pers",
+  "target_user": "organizer / team account manager",
+  "job_to_be_done": "When I need to manage posts and comments for multiple dev.to accounts, I want to switch between personal and organization accounts seamlessly, so I can avoid logging out and logging in repeatedly.",
+  "painful_workflow": "Manually logging out and logging in with different credentials, or using browser profiles to switch between multiple dev.to accounts.",
+  "current_workaround": "Logging out and logging in with different credentials, or using browser profiles.",
+  "source_ids": [
+    "SIG-0005"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 1,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 1,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "The cluster rests on exactly one signal (SIG-0005) with independent_sources = 1 and source_type_count = 1 (forum only).",
+    "The documented workaround in SIG-0005 is logout/login or browser profiles — both free and low-effort.",
+    "No economic impact, spend, or willingness-to-pay data appears anywhere in the provided evidence.",
+    "The pain is specific to a single platform ecosystem (dev.to)."
+  ],
+  "inferences": [
+    "The affected population (managers of multiple dev.to personal + organization accounts) is very small — likely hundreds to low thousands globally — making this a poor SaaS market.",
+    "Browser profiles substantially solve the stated problem, which suppresses both pain intensity and any willingness to pay.",
+    "If this pain were significant, the natural fix is a platform-side feature in the open-source Forem codebase, not a third-party SaaS — meaning the opportunity has no defensible product surface.",
+    "The listed consequences (wrong-account posting, scheduling limits) appear hypothetical rather than observed, since no incident is documented."
+  ],
+  "assumptions": [
+    "That SRC-0008 and SRC-0009 exist and actually describe this pain (no excerpts were provided to verify).",
+    "That the claimed 'daily' frequency reflects real usage rather than an estimate by the signal collector.",
+    "That dev.to has not shipped native multi-account/org switching since the signal was collected (2025-04-04), which would erase the pain entirely."
+  ],
+  "unknowns": [
+    "Actual number of users who manage multiple dev.to accounts.",
+    "Whether anyone has ever paid money or built tooling to solve this.",
+    "The verbatim content and credibility of SRC-0008 and SRC-0009.",
+    "Whether any real incident (e.g., an actual wrong-account post with consequences) has occurred.",
+    "Current state of dev.to/Forem native account-switching features.",
+    "Whether the signal author represents one complainant or many."
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:15:44.652Z",
+  "updated_at": "2026-08-13T02:15:44.652Z"
+}

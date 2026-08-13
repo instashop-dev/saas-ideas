@@ -1,0 +1,60 @@
+{
+  "id": "OP-1146",
+  "canonical_key": "CK-35c3e37fd5511449",
+  "title": "When I need to prepare monthly executive reports, I want to automatically aggregate metrics from Goo",
+  "target_user": "Marketing Analytics Manager",
+  "job_to_be_done": "When I need to prepare monthly executive reports, I want to automatically aggregate metrics from Google Analytics, SEMrush, and HubSpot, so I can avoid 2 days of manual compilation and get consistent, timely data.",
+  "painful_workflow": "Logging into each analytics tool, exporting PDFs/CSVs, copying key metrics into a PowerPoint deck, spending 2 days compiling.",
+  "current_workaround": "Log into each tool, export PDFs/CSVs, copy key metrics into a PowerPoint deck, spend 2 days compiling.",
+  "source_ids": [
+    "SIG-0003"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [],
+  "substitutes": [],
+  "verified_facts": [
+    "A Marketing Analytics Manager spends approximately 2 days per month manually compiling reports from Google Analytics, SEMrush, and HubSpot (SIG-0003)",
+    "The current workaround involves logging into each tool, exporting PDFs/CSVs, and copying metrics into a PowerPoint deck (SIG-0003)",
+    "Consequences include stale data, staff burnout, inconsistent metrics, and delayed decision-making (SIG-0003)",
+    "The trigger is monthly board meeting preparation (SIG-0003)"
+  ],
+  "inferences": [
+    "The labor cost of this workflow is approximately $600-900/month based on typical Marketing Analytics Manager compensation (inferred from SIG-0003's 2-day estimate)",
+    "The user is likely aware of automation tools but has not adopted one, possibly due to cost, complexity, or organizational inertia (inferred from the absence of tool mentions in SIG-0003)"
+  ],
+  "assumptions": [
+    "The G2/Capterra review is genuine and not incentivized or fabricated",
+    "The described workflow is representative of a broader pattern, not an edge case",
+    "The user's organization has not already solved this problem with an existing tool"
+  ],
+  "unknowns": [
+    "Whether the user has tried or is currently using any reporting automation tools (e.g., Supermetrics, Databox, Looker Studio, AgencyAnalytics)",
+    "Whether the user's organization has budget allocated for marketing analytics tooling",
+    "How many other Marketing Analytics Managers experience this exact same workflow with this exact tool stack",
+    "Whether the 2-day estimate is typical or an outlier",
+    "What specific features or integrations the user needs that existing tools do not provide",
+    "Whether the review was left on a product that already attempts to solve this problem (which would indicate dissatisfaction with existing solutions) or on an unrelated product"
+  ],
+  "rejection_reasons": [],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-278BF3F6",
+  "stage": "validation",
+  "status": "VALIDATED",
+  "created_at": "2026-08-13T02:15:37.277Z",
+  "updated_at": "2026-08-13T02:15:37.277Z"
+}
