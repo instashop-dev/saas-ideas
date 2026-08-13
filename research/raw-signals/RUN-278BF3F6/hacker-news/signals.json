@@ -1,0 +1,123 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "CTO, engineering lead, or de facto compliance owner at a B2B SaaS startup",
+    "workflow": "Collecting SOC 2 / ISO 27001 audit evidence by hand: screenshots of cloud and IAM configurations, quarterly user-access reviews assembled in spreadsheets, gathering vendor security certificates, tracking policy acknowledgments, and packaging all of it for auditors.",
+    "trigger": "Scheduled audit windows, quarterly access-review cycles, and enterprise customer due-diligence requests",
+    "frequency": "quarterly access reviews; annual audits; per-deal security reviews",
+    "current_workaround": "Manual screenshots stored in shared drives, spreadsheet-based access reviews, or paying for compliance automation platforms (e.g., Vanta, Drata) and compliance consultants; HN discussions frequently debate build-vs-buy and complain about platform pricing.",
+    "consequence": "Audit delays or failures, blocked enterprise deals, and weeks of senior engineering time diverted to evidence gathering",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Founder, bookkeeper, or finance/operations person at a SaaS or e-commerce company",
+    "workflow": "Reconciling payment-processor payouts (Stripe, PayPal, Adyen) against individual invoices, fees, refunds, and chargebacks, then getting that data into QuickBooks or Xero; lump-sum payouts must be matched to many underlying transactions.",
+    "trigger": "Month-end close and tax preparation",
+    "frequency": "monthly",
+    "current_workaround": "CSV exports manipulated in Excel or Google Sheets, hand-written reconciliation scripts, paying bookkeepers to do the matching, or buying third-party connector tools that users complain break or mis-map data.",
+    "consequence": "Books that don't reconcile, misstated revenue, tax filing errors, and several hours of manual work every month",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Sales engineer, solutions engineer, or founder selling to enterprise customers",
+    "workflow": "Answering bespoke customer security questionnaires (often Excel files with hundreds of questions, or SIG/CAIQ variants) by hunting down previous answers and copy/pasting from old questionnaires and internal documents.",
+    "trigger": "Each enterprise sales cycle, vendor assessment, or renewal review",
+    "frequency": "per-deal; multiple per month at companies with active enterprise pipelines",
+    "current_workaround": "A master answer spreadsheet or document maintained by hand, copy/paste from prior questionnaires, or purchasing questionnaire-automation tooling; HN commenters regularly describe this as one of the most tedious parts of enterprise sales.",
+    "consequence": "Slower deal cycles, inconsistent or stale answers reaching customers, and senior technical staff consumed by repetitive paperwork",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Backend engineer or operations lead at a SaaS company handling personal data",
+    "workflow": "Fulfilling GDPR/CCPA data subject requests: locating all of one user's data across production databases, data warehouses, logs, backups, and third-party processors, then deleting or exporting it and documenting completion.",
+    "trigger": "Each inbound data access or deletion request",
+    "frequency": "per-request, recurring; spikes after press coverage or policy changes",
+    "current_workaround": "Hand-written per-request scripts, spreadsheets to track request status and deadlines, and manual checklists for each third-party vendor that holds user data.",
+    "consequence": "Regulatory exposure, missed statutory deadlines (e.g., 30-day GDPR window), and incomplete deletions discovered later",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0006"
+    ],
+    "target_role": "Founder or operations lead at a remote-first startup",
+    "workflow": "Paying international contractors: collecting W-8BEN/W-9 forms, handling currency conversion and wire fees, tracking invoices across countries, issuing 1099s, and staying compliant with each jurisdiction's contractor rules.",
+    "trigger": "Each pay run, each new contractor onboarding, and annual tax filing",
+    "frequency": "biweekly or monthly pay runs; annual filings",
+    "current_workaround": "Manual wire transfers or Wise/PayPal payments tracked in spreadsheets, or paying employer-of-record / contractor platforms (Deel, Remote, Plane) specifically because the manual process is painful; HN threads on this topic recur and discuss misclassification risk.",
+    "consequence": "Tax penalties, worker misclassification risk, late or incorrect payments, and hours of administrative work per pay run",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "RevOps, data engineer, or operations generalist at a growing SaaS company",
+    "workflow": "Keeping customer records consistent across CRM (Salesforce/HubSpot), billing (Stripe), support tools, and the data warehouse: deduplicating records, fixing drift between systems, and reconciling conflicting metrics like MRR across sources.",
+    "trigger": "Ongoing data drift, reporting cycles, and disputes between teams over whose numbers are correct",
+    "frequency": "weekly to daily",
+    "current_workaround": "Zapier/Make glue that breaks silently, periodic CSV export/import, internal Python sync scripts that one person maintains, and manual deduplication passes in spreadsheets.",
+    "consequence": "Conflicting metrics across teams, billing errors, and decisions made on stale or wrong data",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0007",
+    "source_ids": [
+      "SRC-0008"
+    ],
+    "target_role": "IT admin, office/operations manager, or founder at a startup without dedicated IT staff",
+    "workflow": "Offboarding departing employees: revoking access across dozens of SaaS tools (Google Workspace, Slack, GitHub, AWS, and long tails of per-team tools) using a manual checklist, plus rotating any shared credentials the person knew.",
+    "trigger": "Each employee departure, contractor end, or role change",
+    "frequency": "per-event, recurring; painful in proportion to headcount churn",
+    "current_workaround": "Spreadsheet or wiki checklists of accounts, manually clicking through each tool's admin console, or buying identity-governance tooling; HN discussions note that shared accounts and per-team tools are routinely missed.",
+    "consequence": "Former employees retaining access (a real security incident vector) and orphaned paid seats quietly wasting money",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0008",
+    "source_ids": [
+      "SRC-0009"
+    ],
+    "target_role": "Small business owner or freelance bookkeeper",
+    "workflow": "Routine bookkeeping in QuickBooks Online: manual transaction categorization, fixing bank-feed mismatches and duplicates, duplicate data entry between invoicing/payment tools and QBO, and working around missing or regressed features.",
+    "trigger": "Ongoing bookkeeping work and month-end close",
+    "frequency": "weekly to monthly",
+    "current_workaround": "Excel side-ledgers kept in parallel, memorized workarounds, and paying accountants to clean up QBO files; recurring HN threads complain about QBO reliability, UI regressions, and price increases, with users asking for alternatives.",
+    "consequence": "Books that don't reconcile, accountant cleanup bills, and hours of lost time each month",
+    "ecosystem": "hacker-news",
+    "source_type": "search",
+    "collected_at": "2025-06-02T12:00:00Z"
+  }
+]

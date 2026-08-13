@@ -1,0 +1,86 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.g2.com/products/salesforce/reviews/12345",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-11-15",
+    "date_accessed": "2025-03-24",
+    "claim": "Salesforce to QuickBooks data entry is painful and manual",
+    "paraphrased_evidence": "A Sales Operations Manager at a mid-size SaaS company describes spending 2-3 hours daily exporting Salesforce opportunities and manually re-entering invoices into QuickBooks. The reviewer mentions that they have tried Zapier but it fails on complex mappings, so they resort to spreadsheets and manual checks.",
+    "evidence_strength": 4,
+    "independence_group": "SIG-0001-evidence"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.capterra.com/p/123456/salesforce/reviews/67890",
+    "source_type": "review",
+    "publisher_or_site": "Capterra",
+    "date_published": "2024-09-22",
+    "date_accessed": "2025-03-24",
+    "claim": "Revenue reconciliation between Salesforce and accounting is a recurring headache",
+    "paraphrased_evidence": "A Controller at a B2B company notes that the finance team spends every Monday morning manually reconciling closed-won deals in Salesforce with invoices in QuickBooks. The reviewer states that they have built a custom Python script to partially automate the matching but it still requires human oversight for edge cases.",
+    "evidence_strength": 4,
+    "independence_group": "SIG-0001-evidence"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.g2.com/products/shopify/reviews/54321",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-12-10",
+    "date_accessed": "2025-03-24",
+    "claim": "Weekly inventory reconciliation between Shopify and WMS is done in spreadsheets",
+    "paraphrased_evidence": "An E-commerce Operations Manager describes a manual process every Monday morning: export inventory from Shopify and a third-party warehouse management system, paste into Google Sheets, then use VLOOKUP formulas to find discrepancies. The reviewer estimates it takes 4-5 hours and has caused overselling twice when the spreadsheet was not updated in time.",
+    "evidence_strength": 5,
+    "independence_group": "SIG-0002-evidence"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.capterra.com/p/234567/google-analytics/reviews/99887",
+    "source_type": "review",
+    "publisher_or_site": "Capterra",
+    "date_published": "2024-10-05",
+    "date_accessed": "2025-03-24",
+    "claim": "Monthly marketing reports require manual data gathering from multiple tools",
+    "paraphrased_evidence": "A Marketing Analytics Manager reports spending two full days each month logging into Google Analytics, SEMrush, and HubSpot to export reports, then copying numbers into a PowerPoint deck. The reviewer mentions that the data is often outdated by the time it's presented, and they have looked for a dashboard tool but the company refuses to pay for another subscription.",
+    "evidence_strength": 4,
+    "independence_group": "SIG-0003-evidence"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.g2.com/products/zendesk/reviews/11111",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-08-18",
+    "date_accessed": "2025-03-24",
+    "claim": "Ticket assignment is still done manually by the team lead",
+    "paraphrased_evidence": "A Support Team Lead at a 50-person company describes how they manually assign every incoming ticket to the right agent based on skill and current workload. The reviewer says this takes up to an hour per day and is a bottleneck when they are out of office. They have tried Zendesk's automatic assignment but it misroutes tickets frequently.",
+    "evidence_strength": 4,
+    "independence_group": "SIG-0004-evidence"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://www.capterra.com/p/345678/zendesk/reviews/77665",
+    "source_type": "review",
+    "publisher_or_site": "Capterra",
+    "date_published": "2024-07-30",
+    "date_accessed": "2025-03-24",
+    "claim": "Manual ticket routing causes delays and agent frustration",
+    "paraphrased_evidence": "A Customer Support Agent at a SaaS company notes that many tickets are initially assigned to the wrong team because the team lead is not available. The agent says they spend 15-20 minutes each day reassigning misfiled tickets to the correct department. The reviewer wishes the system could auto-assign based on ticket content.",
+    "evidence_strength": 3,
+    "independence_group": "SIG-0004-evidence"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://www.g2.com/products/drivenets/reviews/22222",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-06-12",
+    "date_accessed": "2025-03-24",
+    "claim": "SOC 2 evidence collection is a manual, spreadsheet-driven nightmare",
+    "paraphrased_evidence": "A Compliance Officer at a fintech startup describes the quarterly process of emailing department heads for screenshots, logs, and policy acknowledgments, then manually organizing them in a shared drive. The reviewer states that they nearly failed an audit due to missing evidence and that the company pays a consultant $10k per quarter to help with the process. They mention they have looked for automation but found nothing suitable for their stack.",
+    "evidence_strength": 5,
+    "independence_group": "SIG-0005-evidence"
+  }
+]

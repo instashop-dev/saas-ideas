@@ -1,0 +1,98 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://hn.algolia.com/?query=soc%202%20audit%20manual",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN full-text search surfaces numerous recurring threads and comments about the manual burden of SOC 2 audit evidence collection.",
+    "paraphrased_evidence": "Recurring Hacker News discussions retrievable via this search describe SOC 2 preparation as weeks of manual work: taking screenshots of configurations, assembling access-review spreadsheets, and chasing vendor documentation. Commenters repeatedly describe diverting engineering time to evidence gathering and debate whether to build internal tooling or pay for automation. No specific comment is quoted; this paraphrases the recurring theme across many threads.",
+    "evidence_strength": 3,
+    "independence_group": "hn-search-soc2"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://hn.algolia.com/?query=vanta%20drata",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN discussions of compliance-automation vendors (Vanta, Drata) show companies paying meaningful sums specifically to escape manual compliance work, with complaints about pricing and gaps.",
+    "paraphrased_evidence": "Threads and comments surfaced by this search discuss compliance-automation pricing and limitations. The existence of a paid market for automating evidence collection, plus recurring complaints about cost and about remaining manual steps, corroborates that the underlying manual workflow is genuinely painful and that companies spend money to avoid it. Paraphrased theme; no specific comment quoted.",
+    "evidence_strength": 3,
+    "independence_group": "hn-search-soc2"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://hn.algolia.com/?query=stripe%20reconciliation%20quickbooks",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN search surfaces recurring complaints about reconciling Stripe payouts, fees, and refunds into accounting systems like QuickBooks.",
+    "paraphrased_evidence": "Recurring HN comments retrievable via this search describe month-end reconciliation pain: lump-sum Stripe payouts that must be matched to many transactions, fees and refunds that break naive imports, and CSV/Excel workarounds or paid bookkeepers used to close the books. Paraphrased theme across multiple threads; no specific comment quoted.",
+    "evidence_strength": 3,
+    "independence_group": "hn-search-stripe-recon"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://hn.algolia.com/?query=security%20questionnaire",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN search surfaces recurring complaints about answering bespoke customer security questionnaires as a repetitive, copy/paste-driven workflow.",
+    "paraphrased_evidence": "Recurring HN threads and comments retrievable via this search describe security questionnaires as one of the most tedious parts of enterprise sales: hundreds of near-duplicate questions in Excel, answers copy/pasted from prior questionnaires, and senior engineers pulled in repeatedly. Some commenters mention maintaining master answer documents or buying automation tooling. Paraphrased theme; no specific comment quoted.",
+    "evidence_strength": 3,
+    "independence_group": "hn-search-sec-questionnaire"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://hn.algolia.com/?query=gdpr%20deletion%20request",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN search surfaces recurring discussion of the operational difficulty of fulfilling GDPR deletion/access requests across many systems.",
+    "paraphrased_evidence": "Recurring HN comments retrievable via this search describe the pain of locating and deleting a single user's data scattered across databases, warehouses, logs, backups, and third-party SaaS tools, often handled with ad-hoc scripts and manual vendor checklists, with concern about backups and missed data creating compliance risk. Paraphrased theme; no specific comment quoted.",
+    "evidence_strength": 3,
+    "independence_group": "hn-search-dsar"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://hn.algolia.com/?query=paying%20international%20contractors",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN search surfaces recurring threads about the administrative and compliance burden of paying international contractors.",
+    "paraphrased_evidence": "Recurring HN threads retrievable via this search show founders and ops leads asking how to pay contractors abroad, discussing tax forms (W-8BEN, 1099), currency conversion costs, misclassification risk, and the manual spreadsheet tracking that pushes many to pay contractor-platform fees instead. Paraphrased theme; no specific comment quoted.",
+    "evidence_strength": 3,
+    "independence_group": "hn-search-contractor-pay"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://hn.algolia.com/?query=salesforce%20data%20sync",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN search surfaces recurring complaints about keeping CRM, billing, and warehouse data in sync, including fragile glue automation and manual deduplication.",
+    "paraphrased_evidence": "Recurring HN comments retrievable via this search describe drift between systems of record (CRM vs. billing vs. warehouse), Zapier-style integrations that fail silently, one-person-maintained sync scripts, and periodic manual cleanup of duplicates, leading to teams arguing over conflicting metrics. Paraphrased theme; no specific comment quoted.",
+    "evidence_strength": 2,
+    "independence_group": "hn-search-data-sync"
+  },
+  {
+    "source_id": "SRC-0008",
+    "url": "https://hn.algolia.com/?query=employee%20offboarding%20access",
+    "source_type": "search",
+    "publisher_or_site": "Hacker News (via Algolia HN Search)",
+    "date_published": null,
+    "date_accessed": "2025-06-02",
+    "claim": "HN search surfaces recurring discussion of manual, checklist-based employee offboarding and the risk of missed access revocation.",
+    "paraphrased_evidence": "Recurring HN threads retrievable via this search describe offboarding as a manual checklist across many SaaS admin consoles, with shared accounts and long-tail tools routinely missed, former employees retaining access, and orphaned paid seats going unnoticed. Paraphrased theme; no specific comment quoted.",
+    "evidence_strength": 2,
+    "independence_group": "hn-search-offboarding"
+  }
+]

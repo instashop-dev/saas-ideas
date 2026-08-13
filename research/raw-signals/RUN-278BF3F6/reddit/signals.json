@@ -1,0 +1,35 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002",
+      "SRC-0003"
+    ],
+    "target_role": "Bookkeeper / staff accountant at small businesses running Stripe into QuickBooks or Xero",
+    "workflow": "Reconciling Stripe payouts against bank deposits: each payout is a net lump sum combining many charges minus processing fees and refunds, so bookkeepers export Stripe CSVs, split out fees and refunds, and manually match each payout to individual sales in the accounting ledger.",
+    "trigger": "Each Stripe payout landing in the bank account; month-end close",
+    "frequency": "daily-to-weekly payouts; heavy effort at monthly close",
+    "current_workaround": "Export Stripe transaction CSVs into Excel or Google Sheets, manually compute fees, post manual journal entries; some buy connector apps or write scripts; recurring threads ask whether a better method exists.",
+    "consequence": "Bank feeds that never match, misstated revenue and merchant-fee expense, hours lost every month-end, accountant cleanup bills at tax time.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-06-15T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0004",
+      "SRC-0005"
+    ],
+    "target_role": "MSP billing administrator / service delivery manager",
+    "workflow": "Monthly reconciliation of per-client Microsoft 365 and other vendor license counts against PSA agreements (ConnectWise, Autotask, HaloPSA): technicians add and remove licenses during the month without updating billing agreements, so someone manually exports license counts per tenant and compares them to agreement quantities before invoicing.",
+    "trigger": "Monthly billing cycle",
+    "frequency": "monthly, often consuming a full staff-day or more",
+    "current_workaround": "PowerShell scripts to dump license counts per tenant, Excel comparisons against PSA agreement quantities, manual proration math; recurring r/msp threads describe license drift between vendor portals and billing systems.",
+    "consequence": "Chronic underbilling (revenue leakage) or overbilling (client disputes and credits), plus one or more person-days per month of reconciliation labor.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-06-15T00:00:00Z"
+  }
+]

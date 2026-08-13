@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://workplace.stackexchange.com/search?q=manual+crm+data+entry",
+    "source_type": "search",
+    "publisher_or_site": "Workplace Stack Exchange",
+    "date_published": null,
+    "date_accessed": "2025-01-20",
+    "claim": "Multiple Workplace Stack Exchange threads describe employees manually entering customer information from emails into CRM systems.",
+    "paraphrased_evidence": "A site-wide search for 'manual crm data entry' returns several questions and answers where users discuss the tedious process of copying order details from email confirmations into spreadsheets and then into CRM software, with many seeking advice on automating the data entry.",
+    "evidence_strength": 3,
+    "independence_group": "group-search-1"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://stackexchange.com/search?q=reconcile+bank+transactions+excel",
+    "source_type": "search",
+    "publisher_or_site": "Stack Exchange Network",
+    "date_published": null,
+    "date_accessed": "2025-01-20",
+    "claim": "Stack Exchange users regularly ask about reconciling bank transactions with accounting systems in Excel.",
+    "paraphrased_evidence": "Searching for 'reconcile bank transactions excel' across Stack Exchange yields discussions about manually downloading bank statements and matching them to ledger entries, with users sharing VBA and formula-based methods to speed up the monthly close.",
+    "evidence_strength": 2,
+    "independence_group": "group-search-2"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://serverfault.com/search?q=manual+patch+deployment+multiple+servers",
+    "source_type": "search",
+    "publisher_or_site": "Server Fault",
+    "date_published": null,
+    "date_accessed": "2025-01-20",
+    "claim": "Server Fault discussions highlight the difficulty of manually applying security patches to fleets of servers.",
+    "paraphrased_evidence": "The search results for 'manual patch deployment multiple servers' on Server Fault include questions from system administrators who spend significant time logging into each server to install updates, and who are looking for better orchestration or configuration management solutions.",
+    "evidence_strength": 3,
+    "independence_group": "group-search-3"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://stackoverflow.com/search?q=in-house+etl+script+maintenance",
+    "source_type": "search",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": null,
+    "date_accessed": "2025-01-20",
+    "claim": "Stack Overflow contains many questions about building and maintaining internal ETL scripts that are error-prone and time-consuming.",
+    "paraphrased_evidence": "Searching for 'in-house etl script maintenance' on Stack Overflow reveals developers discussing the burden of constantly fixing fragile data transformation scripts, especially when clients send files in varying formats, leading to frequent manual interventions.",
+    "evidence_strength": 3,
+    "independence_group": "group-search-4"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://workplace.stackexchange.com/search?q=excel+training+compliance+tracking",
+    "source_type": "search",
+    "publisher_or_site": "Workplace Stack Exchange",
+    "date_published": null,
+    "date_accessed": "2025-01-20",
+    "claim": "Workplace Stack Exchange users complain about using Excel spreadsheets to track mandatory employee compliance training deadlines.",
+    "paraphrased_evidence": "A search on Workplace Stack Exchange for 'excel training compliance tracking' returns posts where HR professionals note the manual process of exporting training data from an LMS, updating spreadsheets, and chasing employees with reminder emails, with an ongoing risk of missing regulatory deadlines.",
+    "evidence_strength": 3,
+    "independence_group": "group-search-5"
+  }
+]

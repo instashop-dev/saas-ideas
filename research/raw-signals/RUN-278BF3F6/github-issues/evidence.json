@@ -1,0 +1,38 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://github.com/dependabot/dependabot-core/issues?q=is%3Aissue+manual+update",
+    "source_type": "search",
+    "publisher_or_site": "GitHub Issues (Dependabot repository)",
+    "date_published": null,
+    "date_accessed": "2025-03-27",
+    "claim": "Developers discuss the pain of manually managing dependency updates even with automation tools like Dependabot",
+    "paraphrased_evidence": "Multiple GitHub issues in the Dependabot repository describe the overhead of manually reviewing each update PR, automating beyond basic configuration, and dealing with grouped updates. Users request better batch handling and smarter filtering to reduce manual intervention.",
+    "evidence_strength": 3,
+    "independence_group": "dep-updates"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://github.com/actions/starter-workflows/issues?q=manual+environment",
+    "source_type": "search",
+    "publisher_or_site": "GitHub Issues (Actions starter workflows)",
+    "date_published": null,
+    "date_accessed": "2025-03-27",
+    "claim": "Users complain about the tedious manual process of adapting starter workflows for different environments",
+    "paraphrased_evidence": "Issues in the starter-workflows repository show developers asking for multi-environment templates, reusable workflow components, and better support for environment-specific variables. Many describe manually copying and editing workflow files as a recurring source of errors.",
+    "evidence_strength": 3,
+    "independence_group": "ci-cd-config"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://github.com/orgs/community/discussions?q=manual+review+workflow",
+    "source_type": "search",
+    "publisher_or_site": "GitHub Community Discussions",
+    "date_published": null,
+    "date_accessed": "2025-03-27",
+    "claim": "Teams discuss the limitations of GitHub's built-in review and resort to manual tracking via issues",
+    "paraphrased_evidence": "Several community discussions describe using GitHub Issues to manage review assignments, checklists, and approval conditions because the native pull request review does not support custom workflows. Users report spending extra time linking issues, adding comments, and maintaining status spreadsheets.",
+    "evidence_strength": 3,
+    "independence_group": "code-review"
+  }
+]

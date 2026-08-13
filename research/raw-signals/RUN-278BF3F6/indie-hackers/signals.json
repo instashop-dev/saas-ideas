@@ -1,0 +1,111 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "indie hacker / solo SaaS founder",
+    "workflow": "Manually reconciling Stripe subscription payments with internal accounting records, often using spreadsheets to track chargebacks, refunds, and failed payments across multiple Stripe accounts or connected platforms.",
+    "trigger": "End of billing cycle or monthly close",
+    "frequency": "monthly",
+    "current_workaround": "Exporting Stripe transaction CSVs, manually matching against internal logs in Google Sheets or Excel, and writing formulas to flag discrepancies.",
+    "consequence": "Missed revenue from uncaught failed payments, double-counting refunds, and hours of tedious manual work that could be spent on product development.",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0003",
+      "SRC-0004"
+    ],
+    "target_role": "indie hacker / solo SaaS founder",
+    "workflow": "Manually syncing customer data between Stripe, a CRM (like HubSpot or Pipedrive), and an email marketing tool (like ConvertKit or Mailchimp) — copying and pasting customer lists, subscription statuses, and contact details.",
+    "trigger": "New customer signup, subscription change, or churn event",
+    "frequency": "daily",
+    "current_workaround": "Using Zapier or Make with fragile webhooks, or manually exporting/importing CSV files between systems each time a customer changes status.",
+    "consequence": "Broken automations lead to sending wrong emails to customers, missed follow-ups with churned users, and hours of debugging integration failures.",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0005",
+      "SRC-0006"
+    ],
+    "target_role": "indie hacker / solo SaaS founder",
+    "workflow": "Manually generating and sending invoices to customers, tracking payment status, and following up on overdue invoices — often using a combination of Stripe invoices, Google Docs, and manual email reminders.",
+    "trigger": "End of billing period or custom invoice request",
+    "frequency": "weekly",
+    "current_workaround": "Creating invoices manually in Stripe or a Google Doc, downloading as PDF, emailing to customer, then checking Stripe dashboard periodically to see if paid.",
+    "consequence": "Late payments, cash flow gaps, awkward manual follow-up emails, and hours of administrative overhead that distract from building the product.",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "indie hacker / solo SaaS founder",
+    "workflow": "Manually monitoring server uptime, error logs, and performance metrics across multiple cloud providers (AWS, DigitalOcean, Vercel) — checking dashboards, setting up basic alerts, and manually investigating incidents.",
+    "trigger": "Server error, performance degradation, or scheduled maintenance",
+    "frequency": "daily",
+    "current_workaround": "Using free tiers of monitoring tools (UptimeRobot, Sentry) with limited alerts, or manually SSH-ing into servers to check logs and restart services.",
+    "consequence": "Extended downtime, lost revenue from unavailable service, frustrated users, and late-night emergency debugging sessions.",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0008",
+      "SRC-0009"
+    ],
+    "target_role": "indie hacker / solo SaaS founder",
+    "workflow": "Manually managing SaaS subscriptions and tool stack — tracking which tools are active, what they cost, when they renew, and whether they're still needed. Often involves a spreadsheet of all subscriptions.",
+    "trigger": "Monthly or annual renewal cycle",
+    "frequency": "monthly",
+    "current_workaround": "Maintaining a personal Google Sheet with tool names, prices, renewal dates, and login credentials. Manually checking credit card statements against the sheet.",
+    "consequence": "Forgotten subscriptions draining cash, paying for unused tools, security risks from orphaned accounts, and hours of administrative overhead.",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0010"
+    ],
+    "target_role": "indie hacker / solo SaaS founder",
+    "workflow": "Manually handling customer support tickets across multiple channels (email, Twitter, in-app chat, forum) — reading messages, triaging issues, responding, and tracking resolution status in a spreadsheet or simple kanban board.",
+    "trigger": "Customer inquiry or bug report",
+    "frequency": "daily",
+    "current_workaround": "Using a shared email inbox or free tier of a helpdesk (like Freshdesk free) with limited automation, or manually tracking tickets in Trello/Notion.",
+    "consequence": "Slow response times, missed support requests, unhappy customers, and founder burnout from context-switching between channels.",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0007",
+    "source_ids": [
+      "SRC-0011"
+    ],
+    "target_role": "indie hacker / solo SaaS founder",
+    "workflow": "Manually managing affiliate/referral programs — tracking referrals, calculating commissions, sending payouts, and communicating with affiliates via email and spreadsheets.",
+    "trigger": "New referral or monthly payout cycle",
+    "frequency": "monthly",
+    "current_workaround": "Using a spreadsheet to log referral links, sales, and commission amounts. Manually calculating payouts and sending payments via PayPal or Stripe.",
+    "consequence": "Inaccurate commission calculations, delayed payouts, affiliate frustration, and difficulty scaling the program without dedicated software.",
+    "ecosystem": "indie-hackers",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  }
+]

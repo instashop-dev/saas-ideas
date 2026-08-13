@@ -1,0 +1,81 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "content creator / blogger",
+    "workflow": "Manually republishing dev.to articles to other platforms (Medium, personal blog, LinkedIn) one by one without any automation",
+    "trigger": "New article published on dev.to",
+    "frequency": "per event (each new article)",
+    "current_workaround": "Copy-paste article content, reformat Markdown, re-upload images, and adjust tags for each target platform",
+    "consequence": "Time loss (30-60 minutes per article), risk of formatting errors, inconsistent cross-posting, article decay when updates are not reflected across platforms",
+    "ecosystem": "dev-to",
+    "source_type": "forum",
+    "collected_at": "2025-04-04T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0003",
+      "SRC-0004"
+    ],
+    "target_role": "developer advocate / team lead",
+    "workflow": "Manually compiling cross-platform analytics from dev.to, Medium, and personal blog into a single spreadsheet for reporting",
+    "trigger": "Weekly or monthly performance reporting requirement",
+    "frequency": "weekly or monthly",
+    "current_workaround": "Export CSV from dev.to stats, copy data from other platforms, then manually reconcile in Excel",
+    "consequence": "Hours spent every week, data entry errors, no real-time view of content performance",
+    "ecosystem": "dev-to",
+    "source_type": "forum",
+    "collected_at": "2025-04-04T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0005",
+      "SRC-0006"
+    ],
+    "target_role": "moderator / community manager",
+    "workflow": "Manually reviewing and approving or deleting comments on popular articles to filter spam and abusive content",
+    "trigger": "Incoming comments on high-traffic posts",
+    "frequency": "daily",
+    "current_workaround": "Reading every comment, clicking to approve/reject in dev.to dashboard, no bulk moderation or keyword filtering",
+    "consequence": "Moderation fatigue, delayed response, spam may appear before removal, community trust erodes",
+    "ecosystem": "dev-to",
+    "source_type": "forum",
+    "collected_at": "2025-04-04T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "developer / automation engineer",
+    "workflow": "Manually invoking the dev.to API to publish articles from a CI/CD pipeline (e.g., GitHub Actions) because there is no native integration",
+    "trigger": "Every time a new draft is ready in a GitHub repo",
+    "frequency": "per event (each new article)",
+    "current_workaround": "Writing custom scripts using fetch/curl, managing API tokens, handling errors, and manually triggering the action",
+    "consequence": "Fragile custom scripts, maintenance burden, risk of API rate limits, no automatic retry or error handling",
+    "ecosystem": "dev-to",
+    "source_type": "github",
+    "collected_at": "2025-04-04T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0008",
+      "SRC-0009"
+    ],
+    "target_role": "organizer / team account manager",
+    "workflow": "Manually switching between multiple dev.to accounts (personal and organization) to manage posts and comments",
+    "trigger": "Need to act on behalf of an organization or manage multiple author profiles",
+    "frequency": "daily",
+    "current_workaround": "Logging out and logging in with different credentials, or using browser profiles",
+    "consequence": "Time wasted, accidental posting under wrong account, inability to schedule cross-account actions",
+    "ecosystem": "dev-to",
+    "source_type": "forum",
+    "collected_at": "2025-04-04T12:00:00Z"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://feedback.discord.com/forums/326712-discord-dream-land/suggestions/...",
+    "source_type": "forum",
+    "publisher_or_site": "Discord Feedback",
+    "date_published": null,
+    "date_accessed": "2025-04-10",
+    "claim": "Discord lacks native role assignment when a user joins a voice channel.",
+    "paraphrased_evidence": "Multiple Discord server administrators have requested a feature to automatically assign roles when a member joins a specific voice channel. The current workaround involves third-party bots or manual assignment, which is not scalable and requires additional setup.",
+    "evidence_strength": 4,
+    "independence_group": "GRP-001"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://github.com/discord/discord-api-docs/issues/...",
+    "source_type": "github",
+    "publisher_or_site": "GitHub – discord-api-docs",
+    "date_published": null,
+    "date_accessed": "2025-04-10",
+    "claim": "Discord's built-in AutoMod lacks advanced filter customization (regex, etc.), forcing manual moderation.",
+    "paraphrased_evidence": "A feature request in the Discord API documentation repo asks for the ability to define custom regex patterns in AutoMod rules. Currently, only basic keyword matching is supported, so moderators must either use third-party bots or manually review messages to catch obfuscated spam.",
+    "evidence_strength": 4,
+    "independence_group": "GRP-002"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://support.discord.com/hc/en-us/community/posts/...",
+    "source_type": "forum",
+    "publisher_or_site": "Discord Support Community",
+    "date_published": null,
+    "date_accessed": "2025-04-10",
+    "claim": "Discord's role permission system is complex and often leads to manual spreadsheet tracking.",
+    "paraphrased_evidence": "Server administrators frequently share templates and strategies for managing role permissions in spreadsheets to avoid conflicts. A common complaint is that Discord does not provide a 'permission overview' by role across all channels, so admins export data manually to ensure no overlap or misconfiguration.",
+    "evidence_strength": 3,
+    "independence_group": "GRP-003"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://feedback.discord.com/forums/326712-discord-dream-land/suggestions/...",
+    "source_type": "forum",
+    "publisher_or_site": "Discord Feedback",
+    "date_published": null,
+    "date_accessed": "2025-04-10",
+    "claim": "Discord does not offer a native server backup feature, requiring manual workaround.",
+    "paraphrased_evidence": "Users have requested a one-click backup of server configuration (roles, channels, permissions, messages). The absence of this feature means administrators must manually record settings or use third-party bots that are not officially supported, leading to incomplete backups and time-consuming recovery.",
+    "evidence_strength": 4,
+    "independence_group": "GRP-004"
+  }
+]

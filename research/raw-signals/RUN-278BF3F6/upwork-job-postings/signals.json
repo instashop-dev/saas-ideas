@@ -1,0 +1,47 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "bookkeeper / virtual assistant",
+    "workflow": "Manual data entry of invoice details from PDFs into accounting software (QuickBooks, Xero). Each invoice requires copying line items, amounts, dates, and vendor info.",
+    "trigger": "Receipt of invoices via email or portal",
+    "frequency": "daily",
+    "current_workaround": "Human manually types or copy-pastes each field from PDF to accounting system",
+    "consequence": "High error rate (wrong amounts, duplicate entries), late payment penalties, hours of tedious work per week",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "e-commerce operations manager",
+    "workflow": "Daily reconciliation of Shopify sales orders against inventory counts in a spreadsheet. Must export sales data, compare with physical stock, adjust quantities manually.",
+    "trigger": "End of each business day",
+    "frequency": "daily",
+    "current_workaround": "Export CSV from Shopify, open in Excel, manually compare with inventory spreadsheet, update quantities",
+    "consequence": "Stockouts or overselling due to lag in data; lost sales and customer dissatisfaction",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "marketing analyst / reporting specialist",
+    "workflow": "Weekly aggregation of performance data from Google Analytics, Facebook Ads Manager, and CRM into a single Excel report. Requires manual export, formatting, and formula creation.",
+    "trigger": "Weekly reporting deadline",
+    "frequency": "weekly",
+    "current_workaround": "Log into each platform, export CSV, open in Excel, copy/paste into template, adjust formulas",
+    "consequence": "Reports are delayed, inconsistent, and consume 4-6 hours per week; insights are stale by the time they are shared",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-10T12:00:00Z"
+  }
+]

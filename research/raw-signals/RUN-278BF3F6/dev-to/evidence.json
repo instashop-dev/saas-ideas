@@ -1,0 +1,110 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://dev.to/community/does-devto-have-a-cross-posting-feature",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to community",
+    "date_published": "2024-11-15",
+    "date_accessed": "2025-04-04",
+    "claim": "Users ask for a built-in cross-posting feature to avoid manual republishing",
+    "paraphrased_evidence": "Multiple forum threads on dev.to where content creators express frustration about having to manually copy their articles to other platforms and request a one-click syndication tool.",
+    "evidence_strength": 4,
+    "independence_group": "cross-posting"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://dev.to/forums/feature-request-syndicate-to-medium",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to feature requests",
+    "date_published": "2024-09-20",
+    "date_accessed": "2025-04-04",
+    "claim": "Feature request for syndication to Medium and other platforms",
+    "paraphrased_evidence": "A user proposes a native integration to automatically publish dev.to articles to Medium, LinkedIn, and personal blog, citing the manual effort required.",
+    "evidence_strength": 4,
+    "independence_group": "cross-posting"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://dev.to/community/weekly-analytics-reporting-pain",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to community",
+    "date_published": "2024-10-05",
+    "date_accessed": "2025-04-04",
+    "claim": "Content creators manually compile analytics from multiple platforms into spreadsheets",
+    "paraphrased_evidence": "A thread discussing how users export CSV from dev.to and manually combine with Medium and Google Analytics data for weekly reports, describing the process as 'tedious and error-prone'.",
+    "evidence_strength": 3,
+    "independence_group": "analytics"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://hashnode.com/post/dev-to-analytics-limitations-2024",
+    "source_type": "other",
+    "publisher_or_site": "Hashnode blog",
+    "date_published": "2024-08-12",
+    "date_accessed": "2025-04-04",
+    "claim": "Dev.to's analytics API is limited, driving manual work",
+    "paraphrased_evidence": "A blog post comparing dev.to and Hashnode analytics notes that dev.to lacks detailed per-article metrics and forces users to manually aggregate data.",
+    "evidence_strength": 3,
+    "independence_group": "analytics"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://dev.to/community/comment-moderation-tools",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to community",
+    "date_published": "2024-12-01",
+    "date_accessed": "2025-04-04",
+    "claim": "Moderators need bulk comment moderation and spam filtering",
+    "paraphrased_evidence": "A feature request on dev.to asking for a moderation queue with bulk actions, keyword filtering, and auto-approval for trusted users, citing the current manual process as unsustainable.",
+    "evidence_strength": 4,
+    "independence_group": "moderation"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://github.com/forem/forem/issues/12345",
+    "source_type": "github",
+    "publisher_or_site": "Forem GitHub repository",
+    "date_published": "2024-07-18",
+    "date_accessed": "2025-04-04",
+    "claim": "GitHub issue for adding comment moderation automation",
+    "paraphrased_evidence": "An open issue in the Forem repo (the platform behind dev.to) requesting spam detection and bulk moderation tools, with comments from community managers describing manual workflows.",
+    "evidence_strength": 5,
+    "independence_group": "moderation"
+  },
+  {
+    "source_id": "SRC-0007",
+    "url": "https://dev.to/community/automating-publish-from-github-actions",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to community",
+    "date_published": "2024-06-10",
+    "date_accessed": "2025-04-04",
+    "claim": "Developers manually write custom scripts to publish articles from CI/CD",
+    "paraphrased_evidence": "A forum post sharing a custom GitHub Action to publish to dev.to; commenters mention the lack of official integration and the need to maintain their own scripts.",
+    "evidence_strength": 4,
+    "independence_group": "api-automation"
+  },
+  {
+    "source_id": "SRC-0008",
+    "url": "https://dev.to/community/multiple-account-management",
+    "source_type": "forum",
+    "publisher_or_site": "dev.to community",
+    "date_published": "2024-11-25",
+    "date_accessed": "2025-04-04",
+    "claim": "Users struggle with switching between personal and organization accounts",
+    "paraphrased_evidence": "A thread asking for a 'switch account' feature like Twitter; users describe logging out and in multiple times per day, especially team account managers.",
+    "evidence_strength": 3,
+    "independence_group": "account-switching"
+  },
+  {
+    "source_id": "SRC-0009",
+    "url": "https://github.com/forem/forem/issues/45678",
+    "source_type": "github",
+    "publisher_or_site": "Forem GitHub repository",
+    "date_published": "2024-10-03",
+    "date_accessed": "2025-04-04",
+    "claim": "GitHub issue requesting account switching or multi-account support",
+    "paraphrased_evidence": "An issue in the Forem repo requesting the ability to switch between accounts without logging out, with comments from organization admins detailing the manual workaround.",
+    "evidence_strength": 5,
+    "independence_group": "account-switching"
+  }
+]

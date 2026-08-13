@@ -1,0 +1,14 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.producthunt.com",
+    "source_type": "search",
+    "publisher_or_site": "Product Hunt",
+    "date_published": null,
+    "date_accessed": "2025-06-01",
+    "claim": "Search attempt recorded as failed/unverifiable: no web retrieval or search tools were available in this session, so no Product Hunt review pages could be accessed, read, or verified.",
+    "paraphrased_evidence": "The task requested 3-10 verified pain signals from the product-hunt-reviews ecosystem with full evidence. Because this session has no browsing, search, or retrieval capability, no review threads, comment sections, or product pages on Product Hunt could be fetched. Per the operating rules, URLs and quotations must never be fabricated, and unverifiable source attempts must be recorded. Constructing signals from memory alone would require inventing specific review URLs and claims that cannot be verified, which is prohibited. Therefore zero signals are returned, and this failed attempt is logged so the orchestrator can re-run the search with retrieval tooling enabled.",
+    "evidence_strength": 1,
+    "independence_group": "product-hunt-reviews-failed-attempt"
+  }
+]

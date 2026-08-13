@@ -1,0 +1,38 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.upwork.com/jobs/Bookkeeper-Data-Entry-Invoices_~01abc123",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-15",
+    "date_accessed": "2025-04-10",
+    "claim": "Business needs a virtual assistant to manually enter invoice data from PDFs into QuickBooks daily.",
+    "paraphrased_evidence": "A small business posted a job seeking a bookkeeper to manually transfer invoice details (vendor, amount, date, line items) from emailed PDFs into QuickBooks. They noted the current process is error-prone and time-consuming, taking 2-3 hours each day.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-invoice-entry"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://www.upwork.com/jobs/Inventory-Reconciliation-Shopify-Excel_~01def456",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-28",
+    "date_accessed": "2025-04-10",
+    "claim": "E-commerce store needs daily reconciliation of Shopify sales with inventory spreadsheet to prevent stockouts.",
+    "paraphrased_evidence": "An online retailer posted a job for an operations assistant to perform daily reconciliation: export Shopify orders, compare against an Excel inventory sheet, and adjust stock levels manually. They mentioned that without this, they often oversell or run out of stock.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-inventory-recon"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.upwork.com/jobs/Marketing-Reporting-Analyst-Weekly_~01ghi789",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-04-02",
+    "date_accessed": "2025-04-10",
+    "claim": "Marketing agency needs a weekly report compiled manually from Google Analytics, Facebook Ads, and CRM data into Excel.",
+    "paraphrased_evidence": "A marketing agency posted a job for a reporting analyst to pull data from three platforms each week, format it in Excel, and create a summary report. They described the current process as 'copy-paste hell' taking half a day every Monday.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-reporting-manual"
+  }
+]

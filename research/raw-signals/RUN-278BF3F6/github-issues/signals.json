@@ -1,0 +1,47 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Open-source maintainer / DevOps engineer",
+    "workflow": "Manually updating dependencies across multiple repositories by creating pull requests for each package update",
+    "trigger": "New version release of a dependency or security advisory",
+    "frequency": "Weekly to monthly, per repository",
+    "current_workaround": "Using Dependabot or Renovate bot, but manually reviewing and merging each PR; often resorting to local scripts or manual git commands",
+    "consequence": "Delayed security patches, outdated dependencies, breaking changes missed, maintainer burnout",
+    "ecosystem": "github-issues",
+    "source_type": "search",
+    "collected_at": "2025-03-27T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "CI/CD engineer / Developer",
+    "workflow": "Copying and modifying CI/CD pipeline configuration files (e.g., GitHub Actions YAML) for each new environment (dev, staging, prod) and each microservice",
+    "trigger": "Adding a new service or environment",
+    "frequency": "Per new service or environment (weekly to monthly)",
+    "current_workaround": "Manually duplicating workflow files, using environment variables, or templating with tools like copier or cookiecutter",
+    "consequence": "Configuration drift, hard-to-debug build failures, time wasted on repetitive edits, increased risk of misconfiguration",
+    "ecosystem": "github-issues",
+    "source_type": "search",
+    "collected_at": "2025-03-27T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Team lead / Developer",
+    "workflow": "Using GitHub Issues as a makeshift code review tracking system because the built-in review workflow doesn't support custom checklists, approval gates, or cross-repo reviews",
+    "trigger": "Starting a pull request that requires additional review steps beyond the standard GitHub review",
+    "frequency": "Daily, per PR",
+    "current_workaround": "Creating issues linked to PRs, manually tracking review status in spreadsheets, or using external tools like Asana or Jira",
+    "consequence": "Lost context, duplicate work, missed review deadlines, low visibility into review pipeline",
+    "ecosystem": "github-issues",
+    "source_type": "search",
+    "collected_at": "2025-03-27T12:00:00Z"
+  }
+]

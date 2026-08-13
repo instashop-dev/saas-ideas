@@ -1,0 +1,79 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "Sales Operations Manager",
+    "workflow": "Manual data entry from Salesforce to QuickBooks for invoicing and revenue reconciliation",
+    "trigger": "New deal closed in Salesforce",
+    "frequency": "Daily",
+    "current_workaround": "Sales ops team manually exports opportunity data from Salesforce, formats it in Excel, then imports into QuickBooks; also manually reconciles discrepancies weekly",
+    "consequence": "Billing delays, errors in revenue recognition, wasted 2-3 hours daily, missed opportunities due to stale data",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "E-commerce Operations Manager",
+    "workflow": "Spreadsheet-based inventory reconciliation between Shopify and warehouse management system",
+    "trigger": "End of week inventory check",
+    "frequency": "Weekly",
+    "current_workaround": "Download inventory reports from Shopify and WMS, paste into Google Sheets, manually compare SKU counts, flag discrepancies",
+    "consequence": "Stockouts, overselling, manual error risk, 4-5 hours every Monday, delayed fulfillment",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Marketing Analytics Manager",
+    "workflow": "Manual report generation from multiple analytics tools (Google Analytics, SEMrush, HubSpot) for monthly executive reporting",
+    "trigger": "Monthly board meeting prep",
+    "frequency": "Monthly",
+    "current_workaround": "Log into each tool, export PDFs/CSVs, copy key metrics into a PowerPoint deck, spend 2 days compiling",
+    "consequence": "Stale data by the time report is shared, staff burnout, inconsistent metrics, delayed decision-making",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0005",
+      "SRC-0006"
+    ],
+    "target_role": "Customer Support Team Lead",
+    "workflow": "Manual ticket assignment to support agents based on skill and workload",
+    "trigger": "New support ticket created",
+    "frequency": "Per event (multiple times daily)",
+    "current_workaround": "Team lead manually reviews each ticket, reads context, assigns to the right agent via dropdown in the ticketing system",
+    "consequence": "Slow response times, misassigned tickets, team lead becomes bottleneck, agents spend 15-20 mins daily reassigning misfiled tickets",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0007"
+    ],
+    "target_role": "Compliance Officer",
+    "workflow": "Manual collection of evidence for SOC 2 Type II audit controls",
+    "trigger": "Quarterly audit preparation cycle",
+    "frequency": "Quarterly",
+    "current_workaround": "Compliance team emails various department heads for screenshots, logs, and policy acknowledgments; stores everything in a shared drive folder with manual versioning",
+    "consequence": "Missed evidence deadlines, audit findings, consultant fees ($10k+), risk of non-compliance, 2 weeks of frantic effort per quarter",
+    "ecosystem": "g2-capterra-reviews",
+    "source_type": "review",
+    "collected_at": "2025-03-24T12:00:00Z"
+  }
+]

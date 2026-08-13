@@ -1,0 +1,62 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Discord server administrator",
+    "workflow": "Manual role assignment when a member joins a specific voice channel (e.g., for a game lobby or support queue).",
+    "trigger": "Member joins a designated voice channel.",
+    "frequency": "Per-event (each time a member joins the voice channel)",
+    "current_workaround": "Use third-party bots like YAGPDB or MEE6 with custom commands, or manually assign roles via the member list.",
+    "consequence": "If not done, members miss channel-specific permissions or community alerts; manual assignment is slow and error-prone for large servers.",
+    "ecosystem": "discord-forums",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "Discord moderator or server admin",
+    "workflow": "Manual review and removal of spam messages that bypass Discord's built-in AutoMod (e.g., repeated links, scam messages using character manipulation).",
+    "trigger": "Spam message posted in a channel.",
+    "frequency": "Daily (high-traffic servers)",
+    "current_workaround": "Use third-party moderation bots with custom regex filters (e.g., Dyno, Carl-bot) or manually delete messages and ban users.",
+    "consequence": "Spam reaches members, damaging community trust; manual cleanup takes moderator time and can miss subtle spam patterns.",
+    "ecosystem": "discord-forums",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Discord server owner or administrator",
+    "workflow": "Manual tracking of role permissions and hierarchy using spreadsheets to avoid permission conflicts in large multi-community servers.",
+    "trigger": "Adding a new role or modifying permissions for existing roles.",
+    "frequency": "Weekly (during active server development)",
+    "current_workaround": "Maintain a separate spreadsheet mapping roles → permissions → channel overrides, or use a third-party bot that logs permission changes.",
+    "consequence": "Permission errors can lead to security breaches or accidental data exposure; manual spreadsheet updates are error-prone and not real-time.",
+    "ecosystem": "discord-forums",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Discord server administrator",
+    "workflow": "Manual backup of server configuration (roles, channels, permissions) and message history by exporting data via third-party tools or bots.",
+    "trigger": "Server restructuring, fear of accidental deletion, or migration to a new server.",
+    "frequency": "Monthly or per restructuring event",
+    "current_workaround": "Use bots like DiscordChatExporter for message backups, and manually copy role/channel settings via screenshots or text files.",
+    "consequence": "Without a backup, accidental deletion of a channel or role set can take hours to recreate; manual backups are rarely comprehensive and often neglected.",
+    "ecosystem": "discord-forums",
+    "source_type": "forum",
+    "collected_at": "2025-04-10T12:00:00Z"
+  }
+]

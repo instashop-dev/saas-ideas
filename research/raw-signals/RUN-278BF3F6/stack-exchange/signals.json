@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Sales Operations Coordinator",
+    "workflow": "Transcribing order details from email confirmations into an Excel spreadsheet, then manually uploading the spreadsheet into the CRM system.",
+    "trigger": "Whenever a customer places an order via email or web form",
+    "frequency": "Daily (dozens of orders per day)",
+    "current_workaround": "Using Excel formulas and VBA macros to pre-format data before import into CRM",
+    "consequence": "Data entry errors cause incorrect shipments, order delays, and time lost on cleanup",
+    "ecosystem": "stack-exchange",
+    "source_type": "search",
+    "collected_at": "2025-01-20T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Accounts Payable Analyst",
+    "workflow": "Downloading bank statements, manually matching each transaction to invoices in the ERP, and reconciling differences.",
+    "trigger": "Monthly financial close cycle",
+    "frequency": "Monthly",
+    "current_workaround": "Using Excel pivot tables and VLOOKUP formulas to speed up the matching",
+    "consequence": "Missed discrepancies can lead to unrecorded bank fees or duplicate payments, and close is delayed",
+    "ecosystem": "stack-exchange",
+    "source_type": "search",
+    "collected_at": "2025-01-20T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "System Administrator / DevOps Engineer",
+    "workflow": "Remotely logging into hundreds of servers to apply critical security patches, reboot, and verify services.",
+    "trigger": "Monthly Patch Tuesday or urgent out-of-band updates",
+    "frequency": "Monthly and ad-hoc",
+    "current_workaround": "Writing custom Bash scripts that use SSH and for loops to patch a subset of servers at a time",
+    "consequence": "Servers remain vulnerable if patches are not applied quickly; patch verification is often skipped",
+    "ecosystem": "stack-exchange",
+    "source_type": "search",
+    "collected_at": "2025-01-20T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Data Engineer / Developer",
+    "workflow": "Maintaining a homegrown ETL script that parses client-supplied Excel/CSV files and imports them into the warehouse, with frequent manual fixes when files change format.",
+    "trigger": "Each new client file arrives or when source format changes",
+    "frequency": "Weekly (multiple times per week)",
+    "current_workaround": "Keeping a set of disposable Python scripts and manual console commands to handle edge cases",
+    "consequence": "Broken scripts cause data quality issues and require urgent engineer attention instead of planned work",
+    "ecosystem": "stack-exchange",
+    "source_type": "search",
+    "collected_at": "2025-01-20T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "HR Manager / Training Coordinator",
+    "workflow": "Maintaining a master Excel workbook to track completion of mandatory compliance courses, updating rows from LMS export files and sending individual reminder emails to overdue employees.",
+    "trigger": "Quarterly compliance audit or onboarding of new employees",
+    "frequency": "Quarterly and as needed",
+    "current_workaround": "Using conditional formatting and pivot tables to highlight overdue training, then copying email addresses manually",
+    "consequence": "Could miss training deadlines for some employees, resulting in regulatory fines or audit findings",
+    "ecosystem": "stack-exchange",
+    "source_type": "search",
+    "collected_at": "2025-01-20T00:00:00Z"
+  }
+]
