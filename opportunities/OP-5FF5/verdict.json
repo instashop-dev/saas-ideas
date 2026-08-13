@@ -1,0 +1,152 @@
+{
+  "id": "OP-5FF5",
+  "canonical_key": "CK-090eb1823b435358",
+  "title": "When I need to manage my product catalog in WhatsApp Business, I want a reliable way to add, edit, a",
+  "target_user": "Business Admin Managing Product Catalog",
+  "job_to_be_done": "When I need to manage my product catalog in WhatsApp Business, I want a reliable way to add, edit, and organize catalog items, so I can keep prices and inventory accurate without manual re-entry or CSV upload failures.",
+  "painful_workflow": "Adding, editing, and organizing catalog items.",
+  "current_workaround": "Manually re-entering data or uploading CSV files that often fail due to formatting issues.",
+  "source_ids": [
+    "SIG-0002"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 3,
+  "competitors": [
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io",
+      "classification": "PARTIAL",
+      "notes": "WATI is a WhatsApp Business API platform that includes catalog management features. It allows adding, editing, and organizing catalog items via a dashboard and API. However, it is a full CRM/marketing platform, not a dedicated catalog tool. The catalog feature is part of a larger suite, so it may be overkill for pure catalog management.",
+      "feature_overlap": "Add/edit/delete catalog items, bulk upload via CSV, sync with inventory, catalog sharing in conversations.",
+      "pricing": "Starts at $49/month (Growth plan) – includes catalog management.",
+      "market_positioning": "All-in-one WhatsApp Business API platform for sales, support, and marketing."
+    },
+    {
+      "name": "Interakt",
+      "url": "https://www.interakt.ai",
+      "classification": "PARTIAL",
+      "notes": "Interakt offers WhatsApp Business API with catalog management, including bulk upload and real-time editing. It also provides analytics and automation. Again, not a standalone catalog tool but a broader platform.",
+      "feature_overlap": "Catalog creation, editing, bulk CSV upload, inventory tracking, catalog sharing.",
+      "pricing": "Starts at $29/month (Starter) – includes catalog features.",
+      "market_positioning": "WhatsApp Business API platform for e-commerce and customer engagement."
+    },
+    {
+      "name": "Yellow.ai",
+      "url": "https://yellow.ai",
+      "classification": "PARTIAL",
+      "notes": "Yellow.ai is a conversational AI platform that supports WhatsApp catalog management via its commerce module. It allows dynamic catalog updates and integration with e-commerce backends. More enterprise-focused.",
+      "feature_overlap": "Catalog sync, product management, automated catalog updates.",
+      "pricing": "Custom pricing (typically $500+/month).",
+      "market_positioning": "Enterprise conversational AI and automation platform."
+    },
+    {
+      "name": "MessageBird (now Bird)",
+      "url": "https://www.bird.com",
+      "classification": "PARTIAL",
+      "notes": "MessageBird's WhatsApp Business API includes catalog management through its Inbox and Engage products. It supports catalog creation and sharing but is part of a larger omnichannel platform.",
+      "feature_overlap": "Catalog creation, editing, sharing via WhatsApp.",
+      "pricing": "Pay-as-you-go API pricing + platform fees (custom).",
+      "market_positioning": "Omnichannel communications platform."
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Twilio provides the raw WhatsApp Business API. Developers can build custom catalog management solutions on top of it. Not a ready-made tool, but a substitute for those with technical resources.",
+      "feature_overlap": "Programmatic catalog management via API (add/edit/delete products).",
+      "pricing": "Pay-per-message + API usage (variable).",
+      "market_positioning": "Developer-focused communication API platform."
+    },
+    {
+      "name": "WhatsApp Business App (native)",
+      "url": "https://business.whatsapp.com",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "The free WhatsApp Business app includes a basic catalog feature. Users can add products manually or via CSV upload. However, CSV uploads often fail due to formatting issues, and there is no API or automation. This is the current workaround that the opportunity aims to replace.",
+      "feature_overlap": "Basic catalog creation and editing, CSV upload.",
+      "pricing": "Free.",
+      "market_positioning": "Official WhatsApp Business app for small businesses."
+    },
+    {
+      "name": "Shopify WhatsApp Integration (by Shopify or third-party)",
+      "url": "https://apps.shopify.com/search?q=whatsapp+catalog",
+      "classification": "SUBSTITUTE",
+      "notes": "Several Shopify apps (e.g., 'WhatsApp Catalog Sync', 'WATI for Shopify') sync Shopify product catalogs to WhatsApp. These are substitutes for businesses already using Shopify, but not standalone catalog management tools.",
+      "feature_overlap": "Automated catalog sync from Shopify to WhatsApp.",
+      "pricing": "Varies (often free to $20/month).",
+      "market_positioning": "Shopify app ecosystem for WhatsApp integration."
+    },
+    {
+      "name": "Open Source: whatsapp-catalog-api (GitHub)",
+      "url": "https://github.com/search?q=whatsapp+catalog+api",
+      "classification": "OPEN_SOURCE",
+      "notes": "There are open-source scripts and libraries that wrap the WhatsApp Business API for catalog management. These require technical setup and maintenance. Not a polished product.",
+      "feature_overlap": "Programmatic catalog CRUD via WhatsApp API.",
+      "pricing": "Free (self-hosted).",
+      "market_positioning": "Developer tools and DIY solutions."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Manual CSV upload in WhatsApp Business App",
+      "classification": "SUBSTITUTE",
+      "notes": "The current workaround – users manually create CSV files and upload them. Often fails due to formatting errors, leading to frustration."
+    },
+    {
+      "name": "Google Sheets + manual copy-paste",
+      "classification": "SUBSTITUTE",
+      "notes": "Some businesses maintain product data in Google Sheets and manually copy into WhatsApp catalog. Error-prone and time-consuming."
+    },
+    {
+      "name": "E-commerce platform native catalogs (Shopify, WooCommerce) + manual WhatsApp update",
+      "classification": "SUBSTITUTE",
+      "notes": "Businesses with an online store manage products there but must separately update WhatsApp catalog, leading to duplication."
+    }
+  ],
+  "verified_facts": [
+    "CSV uploads in WhatsApp Business catalog management sometimes fail due to formatting issues (SIG-0002).",
+    "Users currently work around this by manually re-entering data or retrying CSV uploads (SIG-0002)."
+  ],
+  "inferences": [
+    "The user is likely a small business owner or admin managing a product catalog on WhatsApp Business.",
+    "The CSV formatting issues may be caused by incorrect column headers, encoding, or data types.",
+    "The problem is more likely to affect businesses with larger catalogs or frequent updates."
+  ],
+  "assumptions": [
+    "The user has access to alternative tools like manual entry or CSV retries.",
+    "The frequency of catalog updates is low (weekly or monthly).",
+    "No other users or team members are affected by this problem.",
+    "The business is not losing sales or customers due to catalog inaccuracies."
+  ],
+  "unknowns": [
+    "How often do catalog updates occur?",
+    "What is the actual failure rate of CSV uploads?",
+    "How much time is wasted per failure?",
+    "Are there any financial consequences (e.g., lost sales, incorrect pricing)?",
+    "Are users already paying for any catalog management tools?",
+    "Does this problem affect businesses in multiple countries equally?",
+    "What specific formatting issues cause CSV failures?"
+  ],
+  "rejection_reasons": [
+    "Competition too high: 3/5 (max 2)"
+  ],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "competition",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:31:48.975Z",
+  "updated_at": "2026-08-13T05:33:34.966Z"
+}

@@ -1,0 +1,19 @@
+{
+  "position": "CUSTOMER",
+  "summary": "As a marketing manager dealing with WhatsApp template approvals, I'm frustrated by opaque rejections and unexpected category reclassifications that raise my costs. While I desperately want a solution to this pain, my willingness to pay is low (2/5) because I'm used to free or bundled tools. I'd consider a low-cost, integrated add-on that works with my existing BSP and provides clear rejection reasons and category alerts, but I'm skeptical a third party can actually surface better data than Meta provides natively.",
+  "strongest_points": [
+    "The core pain is real and acute – vague rejections waste hours of resubmission work and cost money when templates are reclassified",
+    "A transparent dashboard with rejection reasons would directly replace my current spreadsheets and manual tracking, saving operational time",
+    "Category change alerts could prevent costly surprises and help me budget accurately for message costs"
+  ],
+  "weaknesses": [
+    "My willingness to pay is low (validation score 2/5) – I expect such a tool to cost under $20/month or be a free add-on to my existing BSP, so premium pricing would stop me",
+    "I'm skeptical that any third-party tool can extract or provide clearer rejection reasons than Meta's own WhatsApp Manager – if Meta doesn't return detailed reasons, how can the tool create them?",
+    "Switching friction: I already use Twilio/WATI and am not eager to add another log-in or integrate yet another platform unless it seamlessly connects to my current workflow"
+  ],
+  "evidence_cited": [
+    "SRC-CASE (validation scores: pain_intensity=4, willingness_to_pay=2)",
+    "SRC-CASE (competition_score=2, partial solutions exist)"
+  ],
+  "confidence": 0.65
+}

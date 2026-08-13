@@ -1,0 +1,66 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001",
+      "SRC-002"
+    ],
+    "target_role": "small business owner / customer service manager",
+    "workflow": "Manually forwarding WhatsApp messages between team members because only one device can be logged into the WhatsApp Business API app at a time",
+    "trigger": "Customer sends a message when the primary staff member is offline or busy",
+    "frequency": "daily (multiple times per hour)",
+    "current_workaround": "Using multiple phones with the same number via SIM cloning or forwarding messages manually to another staff member's personal WhatsApp",
+    "consequence": "Missed or delayed responses, customer frustration, potential loss of sales, risk of account ban due to SIM cloning",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-003",
+      "SRC-004"
+    ],
+    "target_role": "small business owner / marketing lead",
+    "workflow": "Using WhatsApp Business for bulk outreach to customers, then getting the number banned or restricted with no clear recourse",
+    "trigger": "Sending promotional messages or appointment reminders to more than a few hundred contacts per day",
+    "frequency": "weekly (each time a campaign is run)",
+    "current_workaround": "Buying new SIM cards, switching to alternative messaging apps like Telegram, or using paid WhatsApp API resellers that are often unreliable",
+    "consequence": "Loss of business phone number, interruption of customer communication, extra cost of new SIMs, time wasted re-verifying with clients",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-005",
+      "SRC-006"
+    ],
+    "target_role": "e-commerce manager / order fulfillment coordinator",
+    "workflow": "Manually copying order details and payment confirmations from WhatsApp chats into a separate spreadsheet because WhatsApp Business does not support order tracking or payment links",
+    "trigger": "Customer sends a screenshot of payment or asks for order status in WhatsApp",
+    "frequency": "multiple times per day",
+    "current_workaround": "Maintaining a Google Sheets or Excel file with columns for order ID, payment status, customer name, and notes; staff manually update after each chat",
+    "consequence": "Data entry errors, missed updates, duplicate entries, time lost, difficulty scaling during peak seasons",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-007",
+      "SRC-008"
+    ],
+    "target_role": "small business owner / team lead",
+    "workflow": "Sharing a single WhatsApp Business number across multiple team members by logging in and out of the same device or using unofficial workarounds like WhatsApp Web with a shared QR code",
+    "trigger": "Multiple staff need to respond to customer chats from the same number",
+    "frequency": "daily",
+    "current_workaround": "Taking turns on a single phone, using WhatsApp Web on one computer while others watch, or using third-party tools that may violate WhatsApp's terms",
+    "consequence": "Security risks, chat history overlap, slow response times, accidental cross-talk, risk of account blocking",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-01-15T10:00:00Z"
+  }
+]

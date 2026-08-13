@@ -1,0 +1,51 @@
+{
+  "scores": {
+    "pain_intensity": 2,
+    "frequency": 2,
+    "urgency": 3,
+    "economic_impact": 2,
+    "operational_impact": 3,
+    "workaround_intensity": 3,
+    "willingness_to_pay": 2,
+    "global_applicability": 3,
+    "customer_accessibility": 3,
+    "evidence_quality": 1
+  },
+  "reasoning": {
+    "pain_intensity": "Score 2. The single source (SIG-003) mentions numbers 'getting stuck between states and registration failures,' which is frustrating but not described as catastrophic. No evidence of lost revenue, SLA breaches, or customer churn. The pain is a technical annoyance, not a business crisis.",
+    "frequency": "Score 2. Phone number migration is an infrequent event for most businesses—typically once per BSP switch or infrastructure upgrade, which might happen once a quarter or once a year. The source (SIG-003) does not indicate daily or weekly recurrence.",
+    "urgency": "Score 3. When a migration is in progress and a number gets stuck, it blocks messaging capability, which can be urgent. However, the source (SIG-003) does not describe this as blocking operations entirely—just causing delays. Moderate urgency, not critical.",
+    "economic_impact": "Score 2. No evidence of dollar amounts, lost deals, or revenue impact in SIG-003. Migration downtime might cost some productivity, but the source does not quantify any financial loss. Likely negligible to low.",
+    "operational_impact": "Score 3. A stuck number disrupts the specific messaging channel, which can affect customer communications. But the source (SIG-003) does not indicate that the entire team is blocked—just that the migration process is problematic. Moderate operational impact.",
+    "workaround_intensity": "Score 3. The described workaround (scheduled maintenance, parallel test numbers, manual coordination with BSPs, support tickets) requires effort but is not a full-time role. The source (SIG-003) does not suggest this consumes a person's entire day.",
+    "willingness_to_pay": "Score 2. No evidence in SIG-003 that anyone is currently paying for a solution to this problem. No mention of consultants, paid tools, or services being used. Willingness to pay is unproven.",
+    "global_applicability": "Score 3. Phone number migration between BSPs is a universal WhatsApp Business API concern, applicable in any country where WhatsApp is used for business. However, the source (SIG-003) is from Meta's developer community, which may skew toward certain regions.",
+    "customer_accessibility": "Score 3. Platform engineers responsible for WhatsApp infrastructure are identifiable via Meta developer forums, LinkedIn, and BSP partner networks. Reachable, but not as accessible as, say, a general consumer audience.",
+    "evidence_quality": "Score 1. Only a single source (SIG-003) from one forum post. No independent verification, no multiple sources, no quantitative data, no direct quotes from multiple users. This is the weakest possible evidence base."
+  },
+  "verified_facts": [
+    "A forum post on Meta's developer community describes phone number migration between BSPs or from on-premise to Cloud API as problematic (SIG-003).",
+    "The post mentions numbers getting stuck between states and registration failures (SIG-003)."
+  ],
+  "inferences": [
+    "The problem likely occurs during the migration process, not as a daily operational issue.",
+    "The user is a platform engineer or developer managing WhatsApp infrastructure.",
+    "The workaround involves manual coordination and support tickets, suggesting no automated solution exists."
+  ],
+  "assumptions": [
+    "The single forum post represents a broader, unexpressed pain (not verified).",
+    "The problem is severe enough to warrant a paid SaaS solution (not verified).",
+    "Users would pay for a tool that automates migration (not verified).",
+    "The migration frequency is high enough to justify a subscription (not verified)."
+  ],
+  "unknowns": [
+    "How many businesses experience this problem?",
+    "What is the actual downtime or revenue loss per migration failure?",
+    "Are there existing tools or services that partially solve this?",
+    "What is the typical frequency of phone number migrations per business?",
+    "Are users actively seeking or paying for a solution?",
+    "Is this problem specific to certain BSPs or regions?",
+    "What is the success rate of the current manual workaround?"
+  ],
+  "overall_assessment": "This pain cluster is based on a single forum post describing a technical annoyance during WhatsApp phone number migration. While the problem is real and frustrating for the individual who posted, there is insufficient evidence to conclude it is a widespread, high-frequency, high-cost problem that warrants a SaaS solution. The scores are uniformly low to moderate, with evidence quality being the weakest link. The workaround exists and, while manual, does not appear to be crippling. Without multiple independent sources, quantified economic impact, or demonstrated willingness to pay, this opportunity does not meet the threshold for a burning need. Further validation with at least 3-5 additional independent sources is required before any product investment."
+}

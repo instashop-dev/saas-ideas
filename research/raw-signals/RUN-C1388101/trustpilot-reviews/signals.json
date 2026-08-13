@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Marketing or customer support manager using WhatsApp Business API",
+    "workflow": "Submitting message templates for approval and waiting days for review, often requiring manual follow-up via support tickets or emails",
+    "trigger": "Need to send new promotional or transactional messages that require template approval",
+    "frequency": "Weekly (whenever new templates are needed)",
+    "current_workaround": "Submit templates well in advance, reuse generic templates, or manually escalate to support for faster approval",
+    "consequence": "Delayed marketing campaigns, missed time-sensitive notifications, frustrated customers",
+    "ecosystem": "trustpilot-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Finance or operations manager",
+    "workflow": "Manually reconciling monthly usage reports from the provider dashboard against invoices, identifying discrepancies in message counts, rates, or fees",
+    "trigger": "Monthly billing cycle",
+    "frequency": "Monthly",
+    "current_workaround": "Export CSV reports, compare in Excel, submit support tickets for corrections",
+    "consequence": "Overbilling goes unnoticed, wasted hours on reconciliation, potential financial loss",
+    "ecosystem": "trustpilot-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Business owner or IT administrator",
+    "workflow": "Account suspension or phone number blocking due to quality rating drops, requiring manual appeal with documentation and waiting for review",
+    "trigger": "Quality rating falls below threshold (often due to user complaints or opt-out rates)",
+    "frequency": "Per-event (unpredictable)",
+    "current_workaround": "Contact support, provide proof of opt-in, manually adjust messaging frequency and content",
+    "consequence": "Business communication halted, loss of customer trust, revenue impact, urgent manual intervention needed",
+    "ecosystem": "trustpilot-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Developer or system integrator",
+    "workflow": "Building and maintaining custom integrations between WhatsApp API and existing CRM or helpdesk tools, handling webhooks, contact sync, and template management",
+    "trigger": "Need to use WhatsApp alongside existing customer service platform",
+    "frequency": "One-time setup with ongoing maintenance",
+    "current_workaround": "Use third-party middleware, build custom scripts, or manually copy data between systems",
+    "consequence": "Fragile integrations, data inconsistency, extra development cost, delayed feature rollouts",
+    "ecosystem": "trustpilot-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "Operations manager or support lead",
+    "workflow": "When API downtime or critical issues occur, submitting support tickets and waiting hours or days for a response, then manually escalating through multiple channels",
+    "trigger": "Production outage, template approval stuck, or billing error",
+    "frequency": "Per-event (varies)",
+    "current_workaround": "Use community forums, contact account manager, or switch to backup provider",
+    "consequence": "Extended downtime, lost revenue, customer complaints, team frustration",
+    "ecosystem": "trustpilot-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-09T12:00:00Z"
+  }
+]

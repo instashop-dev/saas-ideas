@@ -1,0 +1,105 @@
+{
+  "competition_score": 2,
+  "queries_attempted": [
+    "WhatsApp template management tool",
+    "WhatsApp message template approval tool",
+    "WhatsApp template rejection reasons tool",
+    "WhatsApp template category management",
+    "WhatsApp Business API template manager",
+    "WhatsApp template submission tool",
+    "WhatsApp template approval software",
+    "manage WhatsApp message templates",
+    "WhatsApp template category reclassification tool",
+    "WhatsApp template tracking spreadsheet alternative"
+  ],
+  "competitors": [
+    {
+      "name": "Twilio WhatsApp Business API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Twilio offers WhatsApp Business API integration with template submission via API, but the approval process is still managed by WhatsApp. Twilio provides status webhooks and some reporting, but no dedicated UI for tracking rejections or category changes. It covers the API layer but not the template review clarity problem.",
+      "feature_overlap": "Template submission, status webhooks, category assignment (via API)",
+      "pricing": "Pay-per-interaction, competitive rates",
+      "market_positioning": "CPaaS provider for developers; focus on API flexibility, not end-user template management UX"
+    },
+    {
+      "name": "MessageBird WhatsApp Business API",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Similar to Twilio, provides API for template submission and status retrieval. Offers a dashboard but template approval details are limited. No specific rejection reason aggregation or category change alerts.",
+      "feature_overlap": "Template submission via API, status monitoring in dashboard",
+      "pricing": "Pay-per-conversation, various tiers",
+      "market_positioning": "Cloud communications platform, developer-oriented"
+    },
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io/",
+      "classification": "PARTIAL",
+      "notes": "WATI is a complete WhatsApp Business solution for marketing, sales, and support. It allows creating and submitting templates, but the template approval process is still opaque. WATI provides a template library and approval status display, but no explicit rejection reason explanation or automated category monitoring.",
+      "feature_overlap": "Template creation, submission, status tracking, template library",
+      "pricing": "Starts at $49/month, scales with contacts",
+      "market_positioning": "All-in-one WhatsApp Business platform for SMBs and teams"
+    },
+    {
+      "name": "Interakt",
+      "url": "https://interakt.co/",
+      "classification": "PARTIAL",
+      "notes": "Interakt offers WhatsApp Business API with template management, including approval tracking and conversation management. However, it does not proactively surface category reclassifications or provide reasons for template rejections beyond what WhatsApp returns.",
+      "feature_overlap": "Template submission, approval status, basic analytics",
+      "pricing": "Starts at $39/month",
+      "market_positioning": "WhatsApp marketing and commerce platform"
+    },
+    {
+      "name": "WhatsApp Business API (Meta's own tool)",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Meta's own solution provides the core template submission and review process. It is the root of the pain: opaque rejections, category reclassification. Some third-party tools build on top, but Meta's own interface (WhatsApp Manager) is the baseline everyone compares to. It is a substitute because users could stick with it, but it is exactly the pain point.",
+      "feature_overlap": "All core features: submit, review, resubmit, category assignment",
+      "pricing": "Free (part of API access, plus usage fees)",
+      "market_positioning": "Official platform for WhatsApp Business API, mandatory for all providers"
+    },
+    {
+      "name": "Shopify Inbox (WhatsApp integration)",
+      "url": "https://www.shopify.com/inbox",
+      "classification": "SUBSTITUTE",
+      "notes": "Shopify Inbox includes WhatsApp messaging for e-commerce, but template management is not a focus. It solves a different outcome (customer conversation) rather than template approval transparency.",
+      "feature_overlap": "WhatsApp messaging, but no template management visibility",
+      "pricing": "Free with Shopify plan",
+      "market_positioning": "Customer messaging for Shopify merchants"
+    },
+    {
+      "name": "Open Source: whatsapp-web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Library for interacting with WhatsApp Web. Can be used to automate template-related tasks, but does not handle template approval management or category monitoring. Requires significant development effort and risks violating WhatsApp ToS.",
+      "feature_overlap": "Ability to send messages (including templates) programmatically",
+      "pricing": "Free",
+      "market_positioning": "Developer library for WhatsApp automation, unofficial"
+    },
+    {
+      "name": "Template management consultancies (e.g., CM.com, Vonage)",
+      "url": "https://www.vonage.com/communications-apis/whatsapp/",
+      "classification": "SERVICE",
+      "notes": "Some BSPs offer managed services where they handle template submissions and provide reports. But they do not necessarily offer a transparent rejection reason dashboard or category alerts. They are services, not self-serve software.",
+      "feature_overlap": "Manual template submission assistance, status tracking (service-based)",
+      "pricing": "Custom pricing, often higher than self-serve tools",
+      "market_positioning": "Enterprise-grade WhatsApp solution with support"
+    }
+  ],
+  "substitutes": [
+    "Manual tracking in spreadsheets + WhatsApp Manager (the baseline workaround)",
+    "Building an in-house tool using Meta's API + webhook monitoring",
+    "Using Zapier to get notifications on template status changes (limited, no reasoning provided)"
+  ],
+  "summary": "The competitive landscape for a dedicated WhatsApp template approval transparency tool is sparse. Existing solutions (BSP dashboards, all-in-one platforms) provide partial coverage—they show template status but do not explain rejection reasons, highlight category shifts proactively, or give actionable insights to avoid reclassification. The closest competitors are the platforms like WATI, Interakt, Twilio, and MessageBird, but all treat template management as a secondary feature. No product specifically addresses the core pain point of 'vague rejection reasons' and 'unexpected category changes.' The market is not crowded; it is underserved. Competition score of 2 reflects that while there are alternatives, none fully solve the problem. Direct competition is virtually absent; partial solutions exist but leave major gaps. A purpose-built tool could differentiate strongly.",
+  "research_evidence_urls": [
+    "https://www.twilio.com/whatsapp",
+    "https://www.messagebird.com/en/whatsapp",
+    "https://www.wati.io/",
+    "https://interakt.co/",
+    "https://developers.facebook.com/docs/whatsapp/",
+    "https://www.shopify.com/inbox",
+    "https://github.com/pedroslopez/whatsapp-web.js",
+    "https://www.vonage.com/communications-apis/whatsapp/"
+  ]
+}

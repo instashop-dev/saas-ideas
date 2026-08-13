@@ -1,0 +1,745 @@
+[
+  {
+    "cluster_id": "CL-0001",
+    "canonical_jtbd": "When I need to send automated order confirmations, shipping updates, and abandoned cart reminders from my e-commerce platform to customers via WhatsApp, I want a reliable native integration that syncs order data and sends messages automatically, so I can save time, reduce manual errors, and improve customer experience.",
+    "target_user": "E-commerce Operations Manager / Shopify Merchant",
+    "painful_workflow": "Manually copying order details from Shopify or WooCommerce into WhatsApp to send confirmations, shipping updates, and abandoned cart reminders. Also manually verifying COD orders via WhatsApp before dispatching.",
+    "current_workaround": "Manually copying/pasting order details into WhatsApp chat windows, using fragile Zapier scripts, or maintaining spreadsheets to track orders and payments.",
+    "source_signal_ids": [
+      "SIG-001",
+      "SIG-003",
+      "SIG-001",
+      "SIG-002",
+      "SIG-003",
+      "SIG-003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-001",
+        "source_type": "review",
+        "ecosystem": "g2-reviews",
+        "evidence": "Manual reconciliation of WhatsApp order confirmations and shipping updates against Shopify backend data due to unreliable or missing native integration."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Manually copying order details and payment confirmations from WhatsApp chats into a separate spreadsheet because WhatsApp Business does not support order tracking or payment links."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_type": "forum",
+        "ecosystem": "shopify-community",
+        "evidence": "Sending WhatsApp order confirmations and shipping updates to customers manually."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_type": "forum",
+        "ecosystem": "shopify-community",
+        "evidence": "Verifying COD orders via WhatsApp before dispatching manually."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "forum",
+        "ecosystem": "shopify-community",
+        "evidence": "Sending abandoned cart recovery messages via WhatsApp manually."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Manually copying order details from WhatsApp chat into Shopify or WooCommerce admin panel to create a new order."
+      }
+    ],
+    "independent_sources": 4,
+    "source_type_count": 3,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0002",
+    "canonical_jtbd": "When I need to manage WhatsApp conversations across multiple team members, I want a shared inbox with multi-agent support that allows simultaneous access and automatic assignment, so I can respond quickly, avoid missed messages, and maintain a single customer conversation history.",
+    "target_user": "Small Business Owner / Customer Support Manager",
+    "painful_workflow": "Only one device can be logged into WhatsApp Business at a time, so team members must manually forward messages, take turns on a single phone, or use unofficial workarounds to share access.",
+    "current_workaround": "Using multiple phones with SIM cloning, manually forwarding messages to personal WhatsApp, taking turns on a single device, or using WhatsApp Web with a shared QR code.",
+    "source_signal_ids": [
+      "SIG-001",
+      "SIG-004",
+      "SIG-008"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-001",
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Manually forwarding WhatsApp messages between team members because only one device can be logged into the WhatsApp Business API app at a time."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Sharing a single WhatsApp Business number across multiple team members by logging in and out of the same device or using unofficial workarounds."
+      },
+      {
+        "signal_id": "SIG-008",
+        "source_type": "forum",
+        "ecosystem": "shopify-community",
+        "evidence": "Handling customer support inquiries that come through WhatsApp alongside Shopify Inbox, manually switching between apps."
+      }
+    ],
+    "independent_sources": 2,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0003",
+    "canonical_jtbd": "When I need to send bulk promotional or transactional messages via WhatsApp, I want a reliable way to send to many contacts without getting my number banned or restricted, so I can run marketing campaigns and customer communications at scale without risking my business communication channel.",
+    "target_user": "Small Business Owner / Marketing Lead",
+    "painful_workflow": "Sending bulk messages to customers via WhatsApp Business, which triggers rate limits and abuse detection, leading to number bans or restrictions.",
+    "current_workaround": "Buying new SIM cards, switching to alternative messaging apps, using paid WhatsApp API resellers, or manually sending messages one by one with delays.",
+    "source_signal_ids": [
+      "SIG-002",
+      "SIG-002",
+      "SIG-005",
+      "SIG-001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-002",
+        "source_type": "forum",
+        "ecosystem": "reddit",
+        "evidence": "Using WhatsApp Business for bulk outreach to customers, then getting the number banned or restricted with no clear recourse."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Managing rate limits and avoiding number bans by implementing complex throttling, delays, and account rotation strategies."
+      },
+      {
+        "signal_id": "SIG-005",
+        "source_type": "forum",
+        "ecosystem": "stack-overflow",
+        "evidence": "Manually iterating through contact lists, adding delays to avoid rate limits, and handling partial failures when sending bulk messages."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Manually copying and pasting customer contact lists into WhatsApp Web to send bulk promotional messages one by one."
+      }
+    ],
+    "independent_sources": 4,
+    "source_type_count": 3,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0004",
+    "canonical_jtbd": "When I need to sync WhatsApp conversations with my CRM (HubSpot/Salesforce), I want automatic bidirectional contact history logging and updates, so I can maintain complete customer profiles, preserve sales context, and ensure compliance.",
+    "target_user": "Sales Team Lead / CRM Administrator",
+    "painful_workflow": "Managing bidirectional sync between WhatsApp conversations and CRM where contact history is not automatically logged or updated correctly.",
+    "current_workaround": "Manually updating CRM notes after significant interactions, relying on fragile custom integrations/scripts, or using third-party middleware.",
+    "source_signal_ids": [
+      "SIG-003",
+      "SIG-004",
+      "SIG-005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-003",
+        "source_type": "review",
+        "ecosystem": "g2-reviews",
+        "evidence": "Managing bidirectional sync between WhatsApp conversations and CRM (HubSpot/Salesforce) where contact history is not automatically logged or updated correctly."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_type": "review",
+        "ecosystem": "trustpilot-reviews",
+        "evidence": "Building and maintaining custom integrations between WhatsApp API and existing CRM or helpdesk tools, handling webhooks, contact sync, and template management."
+      },
+      {
+        "signal_id": "SIG-005",
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Reconciling orders or leads that come in via WhatsApp with the CRM system manually."
+      }
+    ],
+    "independent_sources": 3,
+    "source_type_count": 3,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0005",
+    "canonical_jtbd": "When I need to submit and manage WhatsApp message templates for approval, I want a transparent and fast review process with clear rejection reasons and stable category assignments, so I can launch campaigns on time and avoid unexpected cost changes.",
+    "target_user": "Marketing Manager / Developer handling WhatsApp templates",
+    "painful_workflow": "Submitting message templates for approval, dealing with vague rejection reasons, and having templates reclassified from UTILITY to MARKETING, which changes per-message cost.",
+    "current_workaround": "Manually reviewing template status in WhatsApp Manager, maintaining spreadsheets tracking each template's category and approval state, repeatedly resubmitting with reworded content, and escalating via support tickets.",
+    "source_signal_ids": [
+      "SIG-004",
+      "SIG-001",
+      "SIG-004",
+      "SIG-003",
+      "SIG-001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-004",
+        "source_type": "review",
+        "ecosystem": "g2-reviews",
+        "evidence": "Handling template approval delays and number verification issues by manually coordinating with Meta/business managers while keeping customers waiting."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_type": "forum",
+        "ecosystem": "meta-developer-community",
+        "evidence": "Submitting and maintaining WhatsApp message templates. Meta rejects templates with terse or generic reasons, and templates approved as UTILITY are later reclassified as MARKETING."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_type": "forum",
+        "ecosystem": "shopify-community",
+        "evidence": "Managing WhatsApp Business API approval and template compliance."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "forum",
+        "ecosystem": "stack-overflow",
+        "evidence": "Manually validating template parameters to ensure correct formatting, localization, and escape sequences."
+      },
+      {
+        "signal_id": "SIG-001",
+        "source_type": "review",
+        "ecosystem": "trustpilot-reviews",
+        "evidence": "Submitting message templates for approval and waiting days for review, often requiring manual follow-up via support tickets or emails."
+      }
+    ],
+    "independent_sources": 5,
+    "source_type_count": 4,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0006",
+    "canonical_jtbd": "When I need to reconcile WhatsApp messaging charges and usage reports, I want accurate, transparent billing with consistent pricing and easy-to-audit reports, so I can avoid overpayment, budget surprises, and client billing disputes.",
+    "target_user": "Finance Operations Manager / Developer owning WhatsApp spend",
+    "painful_workflow": "Reconciling WhatsApp conversation/message charges where Meta's invoice, the BSP's invoice, and internal logs frequently do not match.",
+    "current_workaround": "Exporting usage reports from WhatsApp Manager and the BSP, matching them against internal send logs in spreadsheets, and filing billing disputes through support tickets.",
+    "source_signal_ids": [
+      "SIG-005",
+      "SIG-002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-005",
+        "source_type": "forum",
+        "ecosystem": "meta-developer-community",
+        "evidence": "Reconciling WhatsApp conversation/message charges. Charges in Meta's invoice, the BSP's invoice, and the sender's own logs frequently do not line up."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_type": "review",
+        "ecosystem": "trustpilot-reviews",
+        "evidence": "Manually reconciling monthly usage reports from the provider dashboard against invoices, identifying discrepancies in message counts, rates, or fees."
+      }
+    ],
+    "independent_sources": 2,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0007",
+    "canonical_jtbd": "When I need to monitor and maintain my WhatsApp channel health (quality rating, messaging limits, template pausing), I want proactive alerts and clear visibility into state changes, so I can prevent campaigns from being throttled or blocked and remediate issues before they impact revenue.",
+    "target_user": "Growth/Operations Manager / Developer responsible for WhatsApp channel health",
+    "painful_workflow": "Monitoring quality rating, per-template quality pausing, and messaging limit tiers. Teams discover drops only when sends start failing.",
+    "current_workaround": "Manual daily dashboard checks in WhatsApp Manager, internal runbooks for appealing quality decisions, and reliance on BSP-built alerting tools where available.",
+    "source_signal_ids": [
+      "SIG-006",
+      "SIG-003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-006",
+        "source_type": "forum",
+        "ecosystem": "meta-developer-community",
+        "evidence": "Monitoring quality rating, per-template quality pausing, and messaging limit tiers. Teams report unexpected drops from one messaging tier to a lower one."
+      },
+      {
+        "signal_id": "SIG-003",
+        "source_type": "review",
+        "ecosystem": "trustpilot-reviews",
+        "evidence": "Account suspension or phone number blocking due to quality rating drops, requiring manual appeal with documentation and waiting for review."
+      }
+    ],
+    "independent_sources": 2,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0008",
+    "canonical_jtbd": "When I need to complete Meta business verification and display name approval for WhatsApp Business API, I want a clear, predictable process with specific feedback on rejections, so I can onboard new businesses and brands without weeks of delays.",
+    "target_user": "Operations or Compliance Person onboarding a WhatsApp Business Account",
+    "painful_workflow": "Completing Meta business verification and display name approval. Document submissions rejected without specific reasons, review loops lasting days to weeks.",
+    "current_workaround": "Repeated manual resubmission of documents in Meta Business Settings, opening support tickets, escalating through a BSP, and maintaining checklists of accepted document formats learned by trial and error.",
+    "source_signal_ids": [
+      "SIG-002",
+      "SIG-004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-002",
+        "source_type": "forum",
+        "ecosystem": "meta-developer-community",
+        "evidence": "Completing Meta business verification and display name approval. Document submissions rejected without specific reasons, review loops lasting days to weeks."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_type": "review",
+        "ecosystem": "google-play-reviews",
+        "evidence": "Undergoing business verification to access the WhatsApp Business API or advanced features."
+      }
+    ],
+    "independent_sources": 2,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0009",
+    "canonical_jtbd": "When I need to migrate a phone number between BSPs or from on-premise API to Cloud API, I want a seamless migration process with clear steps and minimal downtime, so I can switch vendors or upgrade infrastructure without losing messaging capability or number quality.",
+    "target_user": "Platform Engineer responsible for WhatsApp infrastructure",
+    "painful_workflow": "Migrating a phone number between BSPs or from on-premise WhatsApp Business API to Cloud API. Requires manually disabling 2FA, re-verifying ownership, coordinating downtime, and reconfiguring webhooks.",
+    "current_workaround": "Scheduled maintenance windows, running parallel test numbers, manual coordination with both old and new BSP, and support tickets when registration or 2FA reset fails.",
+    "source_signal_ids": [
+      "SIG-003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-003",
+        "source_type": "forum",
+        "ecosystem": "meta-developer-community",
+        "evidence": "Migrating a phone number between BSPs or from the on-premise WhatsApp Business API to the Cloud API. Numbers getting stuck between states and registration failures."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0010",
+    "canonical_jtbd": "When I need to handle message-status webhooks reliably at scale, I want consistent, ordered, and complete delivery/read callbacks with deduplication support, so I can accurately report delivery status to customers and avoid duplicate messages.",
+    "target_user": "Backend Developer operating WhatsApp Cloud API integrations at scale",
+    "painful_workflow": "Handling message-status webhooks (sent/delivered/read) that have duplicate callbacks, out-of-order statuses, missing callbacks, and latency spikes.",
+    "current_workaround": "Custom dedup caches keyed by message ID, scheduled reconciliation scripts that flag messages with no terminal status, alerting on webhook lag, and defensive retry logic.",
+    "source_signal_ids": [
+      "SIG-004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-004",
+        "source_type": "forum",
+        "ecosystem": "meta-developer-community",
+        "evidence": "Handling message-status webhooks (sent/delivered/read). Duplicate callbacks, out-of-order statuses, missing delivered/read callbacks, and latency spikes."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0011",
+    "canonical_jtbd": "When I need to export WhatsApp chat data for analysis, CRM import, or compliance, I want a structured export format with proper fields (timestamps, sender, message type), so I can avoid manual data cleaning and ensure accurate reporting.",
+    "target_user": "Operations / Data Analyst",
+    "painful_workflow": "Exporting WhatsApp chat logs to CSV or Excel for analysis or CRM import. Native exports only produce .txt files with no structured fields.",
+    "current_workaround": "Use third-party chat export tools that cost money, or manually copy-paste key data from chat into a spreadsheet.",
+    "source_signal_ids": [
+      "SIG-002",
+      "SIG-002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-002",
+        "source_type": "review",
+        "ecosystem": "g2-reviews",
+        "evidence": "Exporting campaign performance data from WhatsApp Business API platforms to Excel/Google Sheets because the platform's native reporting lacks granular segmentation or export capabilities."
+      },
+      {
+        "signal_id": "SIG-002",
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Exporting WhatsApp chat logs to a CSV or Excel file so that customer conversations, order details, and timestamps can be analyzed for reporting or CRM import."
+      }
+    ],
+    "independent_sources": 2,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0012",
+    "canonical_jtbd": "When I need to send scheduled WhatsApp messages (appointment reminders, alerts), I want native scheduling support in the API, so I can avoid building and maintaining fragile custom cron jobs and timezone handling.",
+    "target_user": "Developer building WhatsApp notification systems",
+    "painful_workflow": "Manually scheduling WhatsApp messages by writing custom cron jobs, managing time zones, and handling queue persistence because the API does not natively support scheduled sends.",
+    "current_workaround": "Build internal schedulers using Redis or database tables, write scripts to poll and send at the right time, and handle retries manually.",
+    "source_signal_ids": [
+      "SIG-004",
+      "SIG-004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-004",
+        "source_type": "forum",
+        "ecosystem": "stack-overflow",
+        "evidence": "Manually scheduling WhatsApp messages by writing custom cron jobs, managing time zones, and handling queue persistence because the API does not natively support scheduled sends."
+      },
+      {
+        "signal_id": "SIG-004",
+        "source_type": "job",
+        "ecosystem": "upwork-job-postings",
+        "evidence": "Sending appointment reminders via WhatsApp to each patient individually. No scheduling tool natively sends WhatsApp reminders."
+      }
+    ],
+    "independent_sources": 2,
+    "source_type_count": 2,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0013",
+    "canonical_jtbd": "When I need to maintain WhatsApp automation using unofficial libraries, I want a stable, well-maintained library that doesn't break with every WhatsApp update, so I can avoid constant re-authentication, patching, and downtime.",
+    "target_user": "WhatsApp Automation Developer / Business Operator",
+    "painful_workflow": "Maintaining WhatsApp automation by constantly re-pairing devices and re-authenticating sessions after WhatsApp updates break unofficial libraries.",
+    "current_workaround": "Manually regenerate QR codes, re-link devices, downgrade library versions, or maintain multiple fallback accounts.",
+    "source_signal_ids": [
+      "SIG-0001",
+      "SIG-0006",
+      "SIG-0007",
+      "SIG-0010"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Maintaining WhatsApp automation by constantly re-pairing devices and re-authenticating sessions after WhatsApp updates break unofficial libraries."
+      },
+      {
+        "signal_id": "SIG-0006",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Continuously updating and patching unofficial WhatsApp libraries to keep them working after WhatsApp changes the protocol."
+      },
+      {
+        "signal_id": "SIG-0007",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Manually handling multi-device synchronization issues where messages are not delivered to all linked devices or sessions get out of sync."
+      },
+      {
+        "signal_id": "SIG-0010",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Implementing end-to-end encryption handling manually because unofficial libraries require custom decryption of incoming messages."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0014",
+    "canonical_jtbd": "When I need to access historical WhatsApp chat data for compliance, customer service, or analytics, I want the API to expose past messages, so I can retrieve context without building custom scraping or backup extraction tools.",
+    "target_user": "WhatsApp Automation Developer / Business Operator",
+    "painful_workflow": "Implementing message history synchronization from scratch because WhatsApp's multi-device protocol does not expose past messages.",
+    "current_workaround": "Build custom scripts to scrape messages from the phone or use third-party backup extraction tools. Some manually export chats from WhatsApp Desktop.",
+    "source_signal_ids": [
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0003",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Implementing message history synchronization from scratch because WhatsApp's multi-device protocol does not expose past messages."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0015",
+    "canonical_jtbd": "When I need to manage WhatsApp groups programmatically (add/remove members, send announcements, retrieve participant lists), I want full group management APIs, so I can scale group-based communication without risking account bans.",
+    "target_user": "WhatsApp Automation Developer / Business Operator",
+    "painful_workflow": "Manually managing group participants, sending bulk messages to groups, and handling group metadata because the unofficial libraries lack full group management APIs.",
+    "current_workaround": "Write custom scripts using low-level protocol commands or use multiple library versions to cover different group operations.",
+    "source_signal_ids": [
+      "SIG-0004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0004",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Manually managing group participants, sending bulk messages to groups, and handling group metadata because the unofficial libraries lack full group management APIs."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0016",
+    "canonical_jtbd": "When I need to send product catalogs and broadcast messages via WhatsApp, I want native support for these features in the API, so I can use WhatsApp's full business capabilities for marketing and sales.",
+    "target_user": "WhatsApp Automation Developer / Business Operator",
+    "painful_workflow": "Implementing catalog/product message sending and broadcast list management manually because these features are not supported by unofficial libraries.",
+    "current_workaround": "Construct custom message payloads using raw protocol buffers or use alternative channels like email for product sharing.",
+    "source_signal_ids": [
+      "SIG-0005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0005",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Implementing catalog/product message sending and broadcast list management manually because these features are not supported by unofficial libraries."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0017",
+    "canonical_jtbd": "When I need to send or receive media files (images, videos, documents) through WhatsApp automation, I want consistent support for all media types and sizes, so I can avoid failed transfers, corrupted files, and custom encoding work.",
+    "target_user": "WhatsApp Automation Developer / Business Operator",
+    "painful_workflow": "Implementing custom media handling because unofficial libraries have inconsistent support for media types and sizes.",
+    "current_workaround": "Write custom media encoding/decoding logic, handle upload/download manually, and implement retry mechanisms for failed media transfers.",
+    "source_signal_ids": [
+      "SIG-0008"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0008",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Implementing custom media handling (sending/receiving images, videos, documents) because unofficial libraries have inconsistent support for media types and sizes."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0018",
+    "canonical_jtbd": "When I need reliable message delivery guarantees in WhatsApp automation, I want built-in retry and queue management, so I can avoid lost messages, duplicate sends, and constant manual monitoring.",
+    "target_user": "WhatsApp Automation Developer / Business Operator",
+    "painful_workflow": "Manually handling message queuing and delivery guarantees because unofficial libraries do not provide built-in retry or queue management.",
+    "current_workaround": "Implement custom message queues, database-backed retry logic, and delivery confirmation tracking.",
+    "source_signal_ids": [
+      "SIG-0009"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0009",
+        "source_type": "github",
+        "ecosystem": "github-issues",
+        "evidence": "Manually handling message queuing and delivery guarantees because unofficial libraries do not provide built-in retry or queue management."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0019",
+    "canonical_jtbd": "When I need to set up automated away messages and greetings in WhatsApp Business, I want scheduling support so I can customize messages per time/day without manually toggling them on and off.",
+    "target_user": "WhatsApp Business Account Admin / Small Business Owner",
+    "painful_workflow": "Setting up and updating automated away messages and greeting messages without scheduling support.",
+    "current_workaround": "Manually toggling the away message on/off or editing the message text each time.",
+    "source_signal_ids": [
+      "SIG-0001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_type": "review",
+        "ecosystem": "google-play-reviews",
+        "evidence": "Setting up and updating automated away messages and greeting messages. Scheduling is not supported."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0020",
+    "canonical_jtbd": "When I need to manage my product catalog in WhatsApp Business, I want a reliable way to add, edit, and organize catalog items, so I can keep prices and inventory accurate without manual re-entry or CSV upload failures.",
+    "target_user": "Business Admin Managing Product Catalog",
+    "painful_workflow": "Adding, editing, and organizing catalog items.",
+    "current_workaround": "Manually re-entering data or uploading CSV files that often fail due to formatting issues.",
+    "source_signal_ids": [
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_type": "review",
+        "ecosystem": "google-play-reviews",
+        "evidence": "Adding, editing, and organizing catalog items. CSV uploads often fail due to formatting issues."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0021",
+    "canonical_jtbd": "When I need to access WhatsApp Business on multiple devices, I want proper multi-device support that doesn't require logging out and logging in repeatedly or using unofficial hacks that risk account bans.",
+    "target_user": "Business Owner or IT Admin Managing Multiple Devices",
+    "painful_workflow": "Accessing WhatsApp Business on a secondary device (tablet, work phone, or via web).",
+    "current_workaround": "Logging out and logging in repeatedly, or using an unofficial multi-device hack that risks account ban.",
+    "source_signal_ids": [
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0003",
+        "source_type": "review",
+        "ecosystem": "google-play-reviews",
+        "evidence": "Accessing WhatsApp Business on a secondary device. Account gets temporarily banned or chat history is lost when changing phones."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0022",
+    "canonical_jtbd": "When I need to refresh WhatsApp Cloud API access tokens, I want automatic token refresh or long-lived tokens for server-to-server communication, so I can avoid daily manual refresh and prevent API call failures.",
+    "target_user": "Backend Developer / Integration Engineer",
+    "painful_workflow": "Manually refreshing WhatsApp Cloud API access tokens every 24 hours because the API does not support automatic refresh or long-lived tokens for server-to-server communication.",
+    "current_workaround": "Write cron jobs or scheduled tasks that call the token refresh endpoint manually, or store refresh tokens and implement custom token rotation logic.",
+    "source_signal_ids": [
+      "SIG-001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-001",
+        "source_type": "forum",
+        "ecosystem": "stack-overflow",
+        "evidence": "Manually refreshing WhatsApp Cloud API access tokens every 24 hours because the API does not support automatic refresh or long-lived tokens."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0023",
+    "canonical_jtbd": "When I need to set up webhook endpoints for WhatsApp Cloud API, I want clear error messages and a reliable verification process, so I can avoid hours of debugging cryptic errors and delayed integrations.",
+    "target_user": "Developer Integrating WhatsApp Cloud API",
+    "painful_workflow": "Manually verifying webhook endpoints by repeatedly checking the challenge response and debugging cryptic error messages when the verification token does not match.",
+    "current_workaround": "Use tools like ngrok to test locally, constantly compare verification tokens, and manually resend verification requests from the Meta Developer portal.",
+    "source_signal_ids": [
+      "SIG-002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-002",
+        "source_type": "forum",
+        "ecosystem": "stack-overflow",
+        "evidence": "Manually verifying webhook endpoints by repeatedly checking the challenge response and debugging cryptic error messages."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0024",
+    "canonical_jtbd": "When I encounter API downtime or critical issues with WhatsApp, I want fast, responsive support with clear communication, so I can minimize production downtime and revenue impact.",
+    "target_user": "Operations Manager or Support Lead",
+    "painful_workflow": "When API downtime or critical issues occur, submitting support tickets and waiting hours or days for a response, then manually escalating through multiple channels.",
+    "current_workaround": "Use community forums, contact account manager, or switch to backup provider.",
+    "source_signal_ids": [
+      "SIG-005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-005",
+        "source_type": "review",
+        "ecosystem": "trustpilot-reviews",
+        "evidence": "When API downtime or critical issues occur, submitting support tickets and waiting hours or days for a response."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0025",
+    "canonical_jtbd": "When I need to export customer phone numbers from Shopify to use in WhatsApp broadcasts, I want a real-time sync that automatically updates contact lists, so I can avoid manual CSV exports and data privacy risks.",
+    "target_user": "Shopify Merchant / Store Owner",
+    "painful_workflow": "Manually exporting customer phone numbers from Shopify to use in WhatsApp broadcasts.",
+    "current_workaround": "Export CSV from Shopify, copy phone numbers, and upload to WhatsApp broadcast list or third-party tool.",
+    "source_signal_ids": [
+      "SIG-007"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-007",
+        "source_type": "forum",
+        "ecosystem": "shopify-community",
+        "evidence": "Manually exporting customer phone numbers from Shopify to use in WhatsApp broadcasts."
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-11T12:00:00Z"
+  }
+]

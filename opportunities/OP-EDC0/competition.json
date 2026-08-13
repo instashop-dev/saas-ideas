@@ -1,0 +1,132 @@
+{
+  "competition_score": 2,
+  "queries_attempted": [
+    "WhatsApp Business API scheduled messages",
+    "WhatsApp Cloud API schedule message send",
+    "WhatsApp API cron job alternative",
+    "WhatsApp message scheduling service",
+    "WhatsApp appointment reminder API",
+    "WhatsApp notification scheduler SaaS",
+    "WhatsApp Business API delayed send",
+    "schedule WhatsApp message programmatically",
+    "WhatsApp API queue send later",
+    "Twilio WhatsApp scheduled messages",
+    "MessageBird WhatsApp scheduled messages",
+    "WATI scheduled messages",
+    "WhatsApp API timezone handling",
+    "open source WhatsApp scheduler",
+    "WhatsApp message queue service"
+  ],
+  "competitors": [
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/docs/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Twilio's WhatsApp API does not natively support scheduled sends. Developers must use Twilio's Studio Flow or build custom scheduling with Twilio Functions + CRON. This is not a purpose-built solution for scheduled WhatsApp messages.",
+      "feature_overlap": "WhatsApp message sending, but no native scheduling",
+      "pricing": "Pay-per-message (~$0.005-0.05/message depending on region)",
+      "market_positioning": "General-purpose communications API platform"
+    },
+    {
+      "name": "MessageBird WhatsApp API",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "MessageBird offers WhatsApp API but no native scheduling. Developers must use their Flow Builder or external scheduling. Not a direct competitor for native scheduling.",
+      "feature_overlap": "WhatsApp message sending, no scheduling",
+      "pricing": "Pay-per-message (~$0.005-0.04/message)",
+      "market_positioning": "Omnichannel communications API"
+    },
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io",
+      "classification": "PARTIAL",
+      "notes": "WATI offers scheduled broadcast messages via their UI, but not a programmatic API for developers to schedule individual messages. More of a CRM/marketing tool than a developer API.",
+      "feature_overlap": "Scheduled WhatsApp broadcasts via UI",
+      "pricing": "From $49/month",
+      "market_positioning": "WhatsApp Business API platform for customer engagement"
+    },
+    {
+      "name": "Interakt",
+      "url": "https://www.interakt.ai",
+      "classification": "PARTIAL",
+      "notes": "Interakt offers scheduled WhatsApp messages via their dashboard, but limited programmatic scheduling API. More of a CRM/marketing tool.",
+      "feature_overlap": "Scheduled WhatsApp messages via UI",
+      "pricing": "From $49/month",
+      "market_positioning": "WhatsApp Business API platform"
+    },
+    {
+      "name": "WhatsApp Business API (Meta)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Meta's own WhatsApp Cloud API does NOT support scheduled message sending natively. This is the core pain point. They only support immediate send. No native scheduling endpoint exists.",
+      "feature_overlap": "WhatsApp message sending only",
+      "pricing": "Pay-per-message (~$0.005-0.08/message)",
+      "market_positioning": "Official WhatsApp API platform"
+    },
+    {
+      "name": "Bull Queue (Open Source)",
+      "url": "https://github.com/OptimalBits/bull",
+      "classification": "OPEN_SOURCE",
+      "notes": "Bull is a Redis-based queue for Node.js that can be used to schedule jobs. It's a general-purpose job scheduler, not purpose-built for WhatsApp. Developers must build the integration themselves.",
+      "feature_overlap": "Job scheduling and queue management",
+      "pricing": "Free (open source)",
+      "market_positioning": "General-purpose job queue for Node.js"
+    },
+    {
+      "name": "Celery (Open Source)",
+      "url": "https://docs.celeryq.dev",
+      "classification": "OPEN_SOURCE",
+      "notes": "Celery is a distributed task queue for Python that can schedule tasks. Not purpose-built for WhatsApp. Developers must build the integration.",
+      "feature_overlap": "Task scheduling and queue management",
+      "pricing": "Free (open source)",
+      "market_positioning": "General-purpose distributed task queue"
+    },
+    {
+      "name": "AWS EventBridge Scheduler",
+      "url": "https://aws.amazon.com/eventbridge/scheduler/",
+      "classification": "SUBSTITUTE",
+      "notes": "AWS EventBridge Scheduler can schedule API calls to WhatsApp API endpoints. It's a general-purpose cloud scheduler, not purpose-built for WhatsApp. Requires significant setup and AWS expertise.",
+      "feature_overlap": "Scheduled API calls",
+      "pricing": "Pay-per-schedule (~$1/month for 1M schedules)",
+      "market_positioning": "Cloud-native scheduling service"
+    },
+    {
+      "name": "Google Cloud Scheduler",
+      "url": "https://cloud.google.com/scheduler",
+      "classification": "SUBSTITUTE",
+      "notes": "Google Cloud Scheduler can trigger HTTP calls to WhatsApp API. General-purpose cloud scheduler, not purpose-built.",
+      "feature_overlap": "Scheduled HTTP calls",
+      "pricing": "Pay-per-job (~$0.10/month per job)",
+      "market_positioning": "Cloud-native scheduling service"
+    },
+    {
+      "name": "Zapier WhatsApp Integration",
+      "url": "https://zapier.com/apps/whatsapp/integrations",
+      "classification": "SUBSTITUTE",
+      "notes": "Zapier can schedule WhatsApp messages via their Schedule trigger + WhatsApp action. But it's a no-code tool, not a developer API. Limited flexibility and scalability.",
+      "feature_overlap": "Scheduled WhatsApp messages via no-code",
+      "pricing": "From $19.99/month",
+      "market_positioning": "No-code automation platform"
+    }
+  ],
+  "substitutes": [
+    "Custom cron jobs with Redis/Database queues",
+    "Cloud schedulers (AWS EventBridge, GCP Scheduler, Azure Scheduler)",
+    "General-purpose job queues (Bull, Celery, Sidekiq)",
+    "No-code automation (Zapier, Make)",
+    "WhatsApp Business API BSPs with UI scheduling (WATI, Interakt, Gupshup)"
+  ],
+  "summary": "The competitive landscape for a native WhatsApp scheduled message API is remarkably sparse. No major competitor offers a purpose-built, developer-friendly API for scheduling WhatsApp messages with automatic timezone handling and queue persistence. The current workarounds are all fragile, custom-built solutions or general-purpose tools that require significant development effort. Meta's own WhatsApp Cloud API does not support scheduling natively. BSPs like WATI and Interakt offer scheduling via UI but not as a programmatic API for developers. Cloud schedulers (AWS, GCP) can be used but require complex setup and don't handle WhatsApp-specific concerns like rate limiting, retries, and timezone conversion. This is a clear near-zero competition pattern: strong evidence of the problem (developers building custom schedulers), strong workaround evidence (Redis queues, cron jobs, cloud schedulers), and weak evidence of adequate purpose-built software. The opportunity is validated.",
+  "research_evidence_urls": [
+    "https://developers.facebook.com/docs/whatsapp/cloud-api",
+    "https://www.twilio.com/docs/whatsapp",
+    "https://www.messagebird.com/en/whatsapp",
+    "https://www.wati.io",
+    "https://www.interakt.ai",
+    "https://github.com/OptimalBits/bull",
+    "https://docs.celeryq.dev",
+    "https://aws.amazon.com/eventbridge/scheduler/",
+    "https://cloud.google.com/scheduler",
+    "https://zapier.com/apps/whatsapp/integrations"
+  ]
+}

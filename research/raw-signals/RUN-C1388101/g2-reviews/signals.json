@@ -1,0 +1,62 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "E-commerce Operations Manager / Shopify Admin",
+    "workflow": "Manual reconciliation of WhatsApp order confirmations and shipping updates against Shopify backend data due to unreliable or missing native integration.",
+    "trigger": "Customer inquiries about order status or failed automated notifications.",
+    "frequency": "Daily",
+    "current_workaround": "Manually checking Shopify admin for order details and copying/pasting information into WhatsApp chat windows or using third-party Zapier scripts that frequently break.",
+    "consequence": "Delayed customer responses, increased support ticket volume, and risk of sending incorrect order/shipping information.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2023-10-27T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Marketing Operations Specialist",
+    "workflow": "Exporting campaign performance data from WhatsApp Business API platforms to Excel/Google Sheets because the platform's native reporting lacks granular segmentation or export capabilities.",
+    "trigger": "Weekly/Monthly stakeholder reporting requirements.",
+    "frequency": "Weekly",
+    "current_workaround": "Downloading CSV exports (if available) or manually copying metrics from dashboards into spreadsheets for analysis and visualization.",
+    "consequence": "Significant time spent on manual data aggregation; high risk of human error in reporting; inability to create real-time dashboards.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2023-10-27T10:05:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Sales Team Lead / CRM Administrator",
+    "workflow": "Managing bidirectional sync between WhatsApp conversations and CRM (HubSpot/Salesforce) where contact history is not automatically logged or updated correctly.",
+    "trigger": "New incoming messages or outbound campaigns.",
+    "frequency": "Per-event/Daily",
+    "current_workaround": "Manually updating CRM notes after significant interactions or relying on fragile custom integrations/scripts that require constant maintenance.",
+    "consequence": "Incomplete customer profiles, lost sales context, and compliance risks due to unrecorded communication history.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2023-10-27T10:10:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Customer Support Agent",
+    "workflow": "Handling template approval delays and number verification issues by manually coordinating with Meta/business managers while keeping customers waiting.",
+    "trigger": "Need to send new promotional templates or onboarding new phone numbers.",
+    "frequency": "Monthly/Per-campaign",
+    "current_workaround": "Spending hours navigating Meta Business Manager interfaces, re-submitting rejected templates, and manually informing customers of delays.",
+    "consequence": "Campaign launch delays, frustrated customers, and operational downtime for support teams.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2023-10-27T10:15:00Z"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "position": "CUSTOMER",
+  "summary": "As an operations person onboarding WhatsApp Business Accounts, I find the verification process frustrating but not critical enough to pay for a dedicated tool. Free workarounds (community checklists, BSP support) already reduce the pain, and I'm skeptical that a SaaS can truly provide specific rejection feedback given Meta's opaque system. I would only consider buying if the price is very low and it demonstrably cuts weeks of delays.",
+  "strongest_points": [
+    "If the tool could actually predict rejection reasons before submission, it would save me days of trial-and-error resubmissions.",
+    "A clear, step-by-step guide tailored to my business type would reduce anxiety and speed up onboarding.",
+    "If it integrates directly with Meta's portal and automates document checks, it could replace my manual checklist and support tickets."
+  ],
+  "weaknesses": [
+    "I already get free support from my BSP (Twilio, WATI, etc.) and community forums — why pay extra?",
+    "I doubt a third-party tool can access Meta's internal rejection logic; it might just be a fancy checklist that I can replicate with a spreadsheet.",
+    "The economic impact of delays is moderate (score 2/5), so I'm not willing to spend more than $10–20/month per account."
+  ],
+  "evidence_cited": [
+    "SRC-0001",
+    "SRC-0002"
+  ],
+  "confidence": 0.7
+}

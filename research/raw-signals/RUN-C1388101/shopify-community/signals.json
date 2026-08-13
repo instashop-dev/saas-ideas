@@ -1,0 +1,122 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Sending WhatsApp order confirmations and shipping updates to customers manually",
+    "trigger": "Customer places an order or order status changes to shipped",
+    "frequency": "per-event (multiple times daily)",
+    "current_workaround": "Merchant manually copies order details and sends WhatsApp messages one by one from their phone",
+    "consequence": "Time wasted, delayed notifications, missed updates, poor customer experience, risk of losing orders",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Verifying COD (Cash on Delivery) orders via WhatsApp before dispatching",
+    "trigger": "Customer places a COD order",
+    "frequency": "per-event (multiple times daily)",
+    "current_workaround": "Merchant manually messages each COD customer on WhatsApp to confirm the order is genuine",
+    "consequence": "High rate of fake COD orders, wasted shipping costs, manual effort to chase customers, delayed fulfillment",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Sending abandoned cart recovery messages via WhatsApp manually",
+    "trigger": "Customer adds items to cart but does not complete checkout",
+    "frequency": "per-event (multiple times daily)",
+    "current_workaround": "Merchant manually copies customer phone numbers from Shopify and sends WhatsApp reminders",
+    "consequence": "Lost sales, low recovery rate, manual effort is unsustainable at scale, customers forget to complete purchase",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Managing WhatsApp Business API approval and template compliance",
+    "trigger": "Merchant wants to send automated WhatsApp messages through an app or integration",
+    "frequency": "once (setup) but recurring issues with template rejections and number bans",
+    "current_workaround": "Merchant submits templates manually, waits days for approval, reworks rejected templates, or uses personal WhatsApp number risking ban",
+    "consequence": "Delays in launching automated messaging, frustration, lost revenue, risk of permanent WhatsApp number ban",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Dealing with duplicate WhatsApp notifications from multiple Shopify apps",
+    "trigger": "Customer receives multiple WhatsApp messages for the same order event (e.g., confirmation + shipping)",
+    "frequency": "per-event (multiple times daily)",
+    "current_workaround": "Merchant tries to disable notifications in one app or manually deduplicate by turning off features",
+    "consequence": "Customer annoyance, unprofessional brand image, merchant confusion, wasted API costs",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-006",
+    "source_ids": [
+      "SRC-006"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Paying high monthly fees for WhatsApp integration apps on Shopify",
+    "trigger": "Merchant needs to connect WhatsApp to Shopify for automated messaging",
+    "frequency": "monthly",
+    "current_workaround": "Merchant pays $10–$50/month per app, often needing multiple apps for different functions (notifications, marketing, support)",
+    "consequence": "High operational cost, app switching, feature gaps, no single affordable solution covers all needs",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-007",
+    "source_ids": [
+      "SRC-007"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Manually exporting customer phone numbers from Shopify to use in WhatsApp broadcasts",
+    "trigger": "Merchant wants to send bulk WhatsApp messages (promotions, updates) to customers",
+    "frequency": "weekly or monthly",
+    "current_workaround": "Merchant exports CSV from Shopify, copies phone numbers, and uploads to WhatsApp broadcast list or third-party tool",
+    "consequence": "Time-consuming, error-prone, data privacy risk, no real-time sync, manual list management",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-008",
+    "source_ids": [
+      "SRC-008"
+    ],
+    "target_role": "Shopify merchant / store owner",
+    "workflow": "Handling customer support inquiries that come through WhatsApp alongside Shopify Inbox",
+    "trigger": "Customer sends a support message via WhatsApp instead of Shopify Inbox",
+    "frequency": "per-event (multiple times daily)",
+    "current_workaround": "Merchant manually switches between WhatsApp and Shopify Inbox, copies conversations, or misses messages",
+    "consequence": "Fragmented customer history, slow response times, missed messages, poor customer experience",
+    "ecosystem": "shopify-community",
+    "source_type": "forum",
+    "collected_at": "2025-04-08T12:00:00Z"
+  }
+]

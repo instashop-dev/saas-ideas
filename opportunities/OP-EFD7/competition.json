@@ -1,0 +1,161 @@
+{
+  "competition_score": 3,
+  "queries_attempted": [
+    "WhatsApp quality rating monitoring tool",
+    "WhatsApp messaging limit alert SaaS",
+    "WhatsApp template paused alert tool",
+    "WhatsApp Business API channel health monitoring",
+    "WhatsApp quality rating drop notification",
+    "WhatsApp Business API proactive alerts",
+    "WhatsApp template pause notification SaaS",
+    "WhatsApp account health dashboard",
+    "WhatsApp quality rating API alerting",
+    "site:g2.com WhatsApp quality rating monitoring",
+    "site:producthunt.com WhatsApp quality rating",
+    "WhatsApp Business Platform quality rating webhook",
+    "WhatsApp messaging limit tier alert service",
+    "WhatsApp BSP alerting quality rating",
+    "WhatsApp template rejection monitoring tool"
+  ],
+  "competitors": [
+    {
+      "name": "Meta WhatsApp Manager (Business Platform)",
+      "url": "https://business.facebook.com/wa/manage/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official dashboard shows quality rating, messaging limit tier, and template status (paused/rejected). Requires manual daily checks; no built-in proactive alerts for drops or pauses. Could add native alerting.",
+      "feature_overlap": "Quality rating, messaging limit tier, template status, appeal submission",
+      "pricing": "Free",
+      "market_positioning": "Source of truth for WhatsApp channel management"
+    },
+    {
+      "name": "Twilio WhatsApp API Console",
+      "url": "https://www.twilio.com/messaging/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Twilio provides WhatsApp sender metrics, message status, and error logs. Users can set alert triggers for error rates, but quality rating changes are not prominently surfaced; template pause notifications require custom webhook handling.",
+      "feature_overlap": "Delivery errors, sender status, basic alerting on message failures",
+      "pricing": "Pay-as-you-go; console included",
+      "market_positioning": "CPaaS/BSP for multi-channel messaging"
+    },
+    {
+      "name": "360dialog Hub",
+      "url": "https://www.360dialog.com/",
+      "classification": "PARTIAL",
+      "notes": "WhatsApp-focused BSP. Hub dashboard shows quality rating and messaging limit tier; may send email notifications on status changes (unverified). Not a dedicated alerting product, but can serve as a light workaround.",
+      "feature_overlap": "Quality rating, messaging limit, template status, API access",
+      "pricing": "Free with API usage markup",
+      "market_positioning": "WhatsApp Business API provider for developers/agencies"
+    },
+    {
+      "name": "Infobip WhatsApp Platform",
+      "url": "https://www.infobip.com/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Enterprise CPaaS with WhatsApp channel analytics. Provides quality metrics and delivery tracking; alerting via Moments/Engagement modules but not specifically for quality rating drops. Partial fit.",
+      "feature_overlap": "Quality rating visibility, template status, delivery analytics, alerting for delivery failures",
+      "pricing": "Custom enterprise pricing",
+      "market_positioning": "Omnichannel customer engagement platform"
+    },
+    {
+      "name": "Bird (formerly MessageBird)",
+      "url": "https://bird.com/",
+      "classification": "PARTIAL",
+      "notes": "Omnichannel CPaaS with WhatsApp channel health metrics and delivery monitoring. May alert on delivery errors but not proactively on quality rating or template pause changes.",
+      "feature_overlap": "Channel status, delivery errors, template management",
+      "pricing": "Custom",
+      "market_positioning": "CPaaS for developers"
+    },
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io/",
+      "classification": "PARTIAL",
+      "notes": "WhatsApp Business API platform for SMBs. Includes template management and some notifications for template rejections; quality rating and messaging limit tier alerts are not a focus.",
+      "feature_overlap": "Template status, send failures, basic WhatsApp account status",
+      "pricing": "Starts at $49/mo",
+      "market_positioning": "WhatsApp CRM and shared inbox for small teams"
+    },
+    {
+      "name": "AiSensy",
+      "url": "https://aisensy.com/",
+      "classification": "PARTIAL",
+      "notes": "WhatsApp marketing and automation platform. Provides template status notifications via email/dashboard; may display quality rating but lacks proactive quality-drop alerting.",
+      "feature_overlap": "Template status, send failures, basic WhatsApp account health",
+      "pricing": "Starts at $19/mo",
+      "market_positioning": "WhatsApp marketing for businesses"
+    },
+    {
+      "name": "Gupshup",
+      "url": "https://www.gupshup.com/",
+      "classification": "PARTIAL",
+      "notes": "Global CPaaS/BSP. Platform exposes quality rating, messaging limits, and template status via API/console; alerting possible through webhooks but not productized. Partial alternative.",
+      "feature_overlap": "Quality rating, messaging limits, template status, API webhooks",
+      "pricing": "Custom",
+      "market_positioning": "Conversational messaging platform"
+    },
+    {
+      "name": "Zoko",
+      "url": "https://www.zoko.io/",
+      "classification": "PARTIAL",
+      "notes": "WhatsApp commerce platform for Shopify. Manages templates and may show template rejection; quality rating and messaging limit alerts are not core.",
+      "feature_overlap": "Template status, send failures",
+      "pricing": "Starts at $39/mo",
+      "market_positioning": "WhatsApp commerce for e-commerce"
+    },
+    {
+      "name": "QuickReply.ai",
+      "url": "https://quickreply.ai/",
+      "classification": "PARTIAL",
+      "notes": "WhatsApp marketing automation for e-commerce. Includes template rejection alerts and some account health metrics; not focused on quality rating/messaging limit changes.",
+      "feature_overlap": "Template status, delivery failures",
+      "pricing": "Custom",
+      "market_positioning": "WhatsApp marketing for D2C brands"
+    },
+    {
+      "name": "Chatwoot",
+      "url": "https://www.chatwoot.com/",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source omnichannel inbox with WhatsApp integration. Does not track quality rating or messaging limit tiers out of the box; only delivery reports. Could be extended, but not a purpose-built solution.",
+      "feature_overlap": "Delivery status, message logs",
+      "pricing": "Free self-hosted; paid cloud",
+      "market_positioning": "Open-source customer support platform"
+    },
+    {
+      "name": "SuperLemon (Shopify App)",
+      "url": "https://superlemon.xyz/",
+      "classification": "PARTIAL",
+      "notes": "Shopify plugin for WhatsApp messages. If a template is paused, send failures may surface, but no proactive channel health monitoring. Not direct competition.",
+      "feature_overlap": "Send failures, template status via WhatsApp API",
+      "pricing": "Free tier; paid plans",
+      "market_positioning": "WhatsApp plugin for Shopify"
+    },
+    {
+      "name": "Custom webhooks + scripts (self-built)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/webhooks",
+      "classification": "SUBSTITUTE",
+      "notes": "Meta provides webhooks for phone_number_quality_update, message_template_status_update, etc. Developers can build real-time alerts with serverless functions or existing monitoring stacks. Common workaround but requires dev effort and maintenance.",
+      "feature_overlap": "Real-time notifications for quality changes, template pauses, messaging limit tier changes if coded",
+      "pricing": "Free (plus infrastructure cost)",
+      "market_positioning": "DIY developer solution"
+    }
+  ],
+  "substitutes": [
+    "Manual daily checks in Meta WhatsApp Manager",
+    "BSP-built dashboards and alerting (where available)",
+    "Self-built scripts using Meta Cloud API webhooks",
+    "Internal runbooks and checklists for quality appeals"
+  ],
+  "summary": "Moderate competitive landscape. Many BSPs and WhatsApp Business API platforms expose quality rating, messaging limit tier, and template status, but very few provide proactive, dedicated alerting for drops or pauses. Meta's own manager requires manual checks, and BSP alerting is inconsistent and often limited to delivery errors. Open-source solutions require custom development. No clear purpose-built SaaS dedicated solely to WhatsApp channel health monitoring with proactive alerts was identified, but partial alternatives and platform-native visibility create moderate competitive pressure. The differentiation would need to be proactive, real-time alerting and remediation workflows beyond what BSPs currently offer.",
+  "research_evidence_urls": [
+    "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/webhooks",
+    "https://developers.facebook.com/docs/whatsapp/api/quality-rating",
+    "https://www.twilio.com/messaging/whatsapp",
+    "https://www.360dialog.com/",
+    "https://www.infobip.com/whatsapp",
+    "https://bird.com/",
+    "https://www.wati.io/",
+    "https://aisensy.com/",
+    "https://www.gupshup.com/",
+    "https://www.zoko.io/",
+    "https://quickreply.ai/",
+    "https://www.chatwoot.com/",
+    "https://superlemon.xyz/"
+  ]
+}

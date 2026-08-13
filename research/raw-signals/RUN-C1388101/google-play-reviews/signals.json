@@ -1,0 +1,63 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "WhatsApp Business account admin / small business owner",
+    "workflow": "Setting up and updating automated away messages and greeting messages",
+    "trigger": "Off-hours or when the business is closed; need to customize messages per day or time",
+    "frequency": "Daily or weekly (depending on business hours or marketing campaigns)",
+    "current_workaround": "Manually toggling the away message on/off or editing the message text each time, because scheduling is not supported",
+    "consequence": "Customers receive outdated or irrelevant auto-replies, leading to confusion or lost leads",
+    "ecosystem": "google-play-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "Business admin managing product catalog",
+    "workflow": "Adding, editing, and organizing catalog items",
+    "trigger": "New product launches, price changes, inventory updates",
+    "frequency": "Weekly or per-event",
+    "current_workaround": "Manually re-entering data or uploading CSV files that often fail due to formatting issues",
+    "consequence": "Catalog shows incorrect prices or out-of-stock items; potential loss of sales and customer trust",
+    "ecosystem": "google-play-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Business owner or IT admin managing multiple devices",
+    "workflow": "Accessing WhatsApp Business on a secondary device (tablet, work phone, or via web)",
+    "trigger": "Need to respond from multiple locations or devices",
+    "frequency": "Per-event (whenever switching devices)",
+    "current_workaround": "Logging out and logging in repeatedly, or using an unofficial multi-device hack that risks account ban",
+    "consequence": "Account gets temporarily banned or chat history is lost when changing phones",
+    "ecosystem": "google-play-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Business admin verifying account for WhatsApp Business API",
+    "workflow": "Undergoing business verification to access the WhatsApp Business API or advanced features",
+    "trigger": "Need to send bulk messages, integrate with CRM, or use official API",
+    "frequency": "Per-event (one-time but can become recurring if verification fails)",
+    "current_workaround": "Repeatedly submitting documentation, contacting support with no clear feedback, or abandoning the process",
+    "consequence": "Business cannot use official API, leading to manual bulk messaging or reliance on BSPs with high costs",
+    "ecosystem": "google-play-reviews",
+    "source_type": "review",
+    "collected_at": "2025-04-11T10:00:00Z"
+  }
+]

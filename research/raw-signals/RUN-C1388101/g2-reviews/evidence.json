@@ -1,0 +1,50 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.g2.com/products/wati/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2023-09-15",
+    "date_accessed": "2023-10-27T10:00:00Z",
+    "claim": "Users report difficulties with seamless Shopify integration requiring manual workarounds.",
+    "paraphrased_evidence": "A reviewer noted that while WATI claims Shopify integration, it often fails to push order status updates automatically. The user had to manually check their Shopify dashboard and copy-paste tracking numbers into WhatsApp chats, describing the process as 'time-consuming' and 'prone to errors'. They mentioned building a custom Zapier flow that frequently broke, forcing them back to manual entry.",
+    "evidence_strength": 4,
+    "independence_group": "WATI-Shopify-Pain"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://www.g2.com/products/respond-io/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2023-08-20",
+    "date_accessed": "2023-10-27T10:05:00Z",
+    "claim": "Native reporting tools are insufficient, leading to manual spreadsheet reconciliation.",
+    "paraphrased_evidence": "A marketing operations specialist complained that respond.io's analytics do not allow for easy export of segmented data needed for weekly reports. They stated they spend 'at least 3 hours every week' manually copying open rates, click-throughs, and conversion data into Google Sheets to build their own dashboards. They expressed frustration that the tool does not offer more robust BI integration out of the box.",
+    "evidence_strength": 5,
+    "independence_group": "RespondIO-Reporting-Pain"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.g2.com/products/aissenty/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2023-10-01",
+    "date_accessed": "2023-10-27T10:10:00Z",
+    "claim": "CRM sync issues force manual logging of customer interactions.",
+    "paraphrased_evidence": "A sales team lead reported that AiSensy's integration with HubSpot is inconsistent. Conversations started on WhatsApp often do not appear in the HubSpot timeline unless manually triggered. This results in sales reps having to manually update deal stages and add notes in HubSpot after chatting, which they described as 'disruptive' and causing 'data silos'. They mentioned considering switching to a different provider due to this lack of interoperability.",
+    "evidence_strength": 4,
+    "independence_group": "AiSensy-CRM-Sync-Pain"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://www.g2.com/products/interakt/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2023-07-10",
+    "date_accessed": "2023-10-27T10:15:00Z",
+    "claim": "Template approval processes are opaque and cause significant operational delays.",
+    "paraphrased_evidence": "An e-commerce manager highlighted that Interakt does not provide clear feedback on why WhatsApp templates are rejected by Meta. They described spending 'hours each month' trying to guess the right wording to get approvals, often having to submit multiple variations. This manual trial-and-error process delayed product launches and required constant monitoring of the Meta Business Suite, which they found 'frustrating' and 'unpredictable'.",
+    "evidence_strength": 4,
+    "independence_group": "Interakt-Template-Approval-Pain"
+  }
+]

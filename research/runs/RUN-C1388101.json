@@ -1,0 +1,110 @@
+{
+  "run_id": "RUN-C1388101",
+  "started_at": "2026-08-13T04:52:57.251Z",
+  "completed_at": "2026-08-13T05:44:54.335Z",
+  "trigger": "manual",
+  "keyword": "whatsapp",
+  "research_plan": {
+    "sources": [
+      {
+        "ecosystem": "reddit",
+        "research_questions": [
+          "What manual workarounds do small business owners describe for handling high volumes of WhatsApp customer chats (labels, multiple phones, forwarding messages between staff)?",
+          "What complaints recur about WhatsApp Business numbers getting banned or restricted during outreach and bulk messaging?",
+          "Which order-tracking, payment-confirmation, or lead-logging tasks do people say they still do in spreadsheets or notebooks because WhatsApp lacks the feature?",
+          "What frustrations come up repeatedly about sharing one WhatsApp Business number across multiple team members or devices?"
+        ]
+      },
+      {
+        "ecosystem": "meta-developer-community",
+        "research_questions": [
+          "What recurring problems do developers report with WhatsApp message template submissions, rejections, and category changes?",
+          "What complaints appear about business verification, display name approval, phone number registration, and migrating numbers between BSPs?",
+          "Which webhook and message-status issues (missing callbacks, duplicates, latency) are posted repeatedly?",
+          "What confusion recurs around conversation-based pricing, billing reconciliation, and unexpected charges?"
+        ]
+      },
+      {
+        "ecosystem": "stack-overflow",
+        "research_questions": [
+          "Which WhatsApp Cloud API integration errors dominate questions (access token expiry, webhook verification failures, media upload/download issues)?",
+          "What workarounds do developers build for things the API does not natively support, such as scheduling messages, bulk sends, or chat assignment?",
+          "What recurring pain appears around template parameter formatting, localization, and variable mismatches?",
+          "What questions repeat about handling inbound media, replies, and conversation state at scale?"
+        ]
+      },
+      {
+        "ecosystem": "github-issues",
+        "research_questions": [
+          "In unofficial WhatsApp libraries (Baileys, whatsapp-web.js, whatsmeow), what breakage patterns recur after WhatsApp updates (pairing failures, session loss, multi-device sync bugs)?",
+          "How do users describe hitting rate limits or number bans, and what operational behaviors triggered them?",
+          "Which missing capabilities do users repeatedly request (history sync, group management, catalog/product messages, broadcast lists)?",
+          "What maintenance burden do maintainers describe in keeping automation running reliably for businesses?"
+        ]
+      },
+      {
+        "ecosystem": "g2-reviews",
+        "research_questions": [
+          "What do reviewers of WhatsApp engagement platforms (WATI, respond.io, AiSensy, Interakt) name as missing or broken integrations (CRM, Shopify, HubSpot, Google Sheets)?",
+          "What complaints recur about per-conversation pricing, hidden costs, and billing surprises?",
+          "Which manual steps do support and sales teams say they still perform inside these tools (chat assignment, tagging, exporting reports)?",
+          "What onboarding pain is mentioned around template approval, number setup, and Meta verification?"
+        ]
+      },
+      {
+        "ecosystem": "trustpilot-reviews",
+        "research_questions": [
+          "What operational failures do customers report for WhatsApp API providers and BSPs (360dialog, Twilio, MessageBird): downtime, slow template approvals, sudden account suspensions?",
+          "What billing, refund, and support-response disputes recur across providers?",
+          "What do reviewers say about number bans or quality-rating drops and how providers handled them?"
+        ]
+      },
+      {
+        "ecosystem": "upwork-job-postings",
+        "research_questions": [
+          "What WhatsApp-related tasks do businesses hire freelancers to automate (bulk messaging, chatbot flows, order notifications, appointment reminders)?",
+          "What manual data movement do job posts describe (exporting chats to spreadsheets, copying WhatsApp leads into a CRM, reconciling orders from chat)?",
+          "Which integrations are repeatedly requested in job posts (Zapier, Google Sheets, Shopify, HubSpot, payment links)?",
+          "What compliance or ban-avoidance requirements show up in postings, indicating pain with WhatsApp's limits?"
+        ]
+      },
+      {
+        "ecosystem": "shopify-community",
+        "research_questions": [
+          "What pain do merchants describe around WhatsApp order confirmations, COD verification, shipping updates, and abandoned cart recovery?",
+          "What complaints recur about connecting WhatsApp to Shopify (app costs, template approval delays, number bans, duplicate notifications)?",
+          "Which customer-communication tasks do merchants say they still do manually over WhatsApp every day?"
+        ]
+      },
+      {
+        "ecosystem": "google-play-reviews",
+        "research_questions": [
+          "What do WhatsApp Business app reviewers complain about most: label limits, away/greeting message constraints, catalog management, multi-device reliability?",
+          "Which feature requests recur (message scheduling, richer auto-replies, multiple admins, better analytics)?",
+          "What operational disruptions do reviewers describe (account bans, verification loops, lost chat history when changing phones)?"
+        ]
+      }
+    ]
+  },
+  "models": {
+    "research_planner": "moonshotai/kimi-k3",
+    "pain_miner": "deepseek/deepseek-v4-flash",
+    "clusterer": "deepseek/deepseek-v4-flash",
+    "validator": "deepseek/deepseek-v4-flash",
+    "competition": "deepseek/deepseek-v4-pro",
+    "bull": "deepseek/deepseek-v4-flash",
+    "bear": "deepseek/deepseek-v4-flash",
+    "customer": "deepseek/deepseek-v4-flash",
+    "judge": "deepseek/deepseek-v4-flash"
+  },
+  "candidate_counts": {
+    "signals": 51,
+    "clusters": 25,
+    "validated": 20,
+    "competition_survivors": 10,
+    "finalists": 10,
+    "approved": 0
+  },
+  "estimated_cost": null,
+  "status": "completed"
+}

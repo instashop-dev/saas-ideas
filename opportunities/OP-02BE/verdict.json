@@ -1,0 +1,119 @@
+{
+  "id": "OP-02BE",
+  "canonical_key": "CK-30af8e26e7eda1c6",
+  "title": "When I need to migrate a phone number between BSPs or from on-premise API to Cloud API, I want a sea",
+  "target_user": "Platform Engineer responsible for WhatsApp infrastructure",
+  "job_to_be_done": "When I need to migrate a phone number between BSPs or from on-premise API to Cloud API, I want a seamless migration process with clear steps and minimal downtime, so I can switch vendors or upgrade infrastructure without losing messaging capability or number quality.",
+  "painful_workflow": "Migrating a phone number between BSPs or from on-premise WhatsApp Business API to Cloud API. Requires manually disabling 2FA, re-verifying ownership, coordinating downtime, and reconfiguring webhooks.",
+  "current_workaround": "Scheduled maintenance windows, running parallel test numbers, manual coordination with both old and new BSP, and support tickets when registration or 2FA reset fails.",
+  "source_ids": [
+    "SIG-003"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 3,
+  "economic_impact_score": 2,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 1,
+  "competitors": [
+    {
+      "name": "Meta WhatsApp Business API Migration Guide",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/migrate-numbers",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official documentation from Meta outlining steps to migrate numbers from on-premise to Cloud API or between BSPs. Not a tool – it's a manual guide. No automation or UI.",
+      "feature_overlap": "Provides step-by-step instructions for disabling 2FA, re-verifying ownership, and reconfiguring webhooks. Overlaps with the problem description but requires manual execution.",
+      "pricing": "Free (documentation)",
+      "market_positioning": "Meta's official reference for migration; not a commercial product."
+    },
+    {
+      "name": "Twilio WhatsApp Number Migration Support",
+      "url": "https://www.twilio.com/docs/whatsapp/migrate-numbers",
+      "classification": "SERVICE",
+      "notes": "Twilio offers support and documentation for migrating numbers to/from their platform. They provide a migration checklist and can assist via support tickets. Not a standalone tool.",
+      "feature_overlap": "Covers the same workflow (disable 2FA, verify ownership, update webhooks) but relies on manual steps and Twilio support team involvement.",
+      "pricing": "Included with Twilio WhatsApp API usage; no separate fee for migration support.",
+      "market_positioning": "Part of Twilio's CPaaS offering; positions migration as a supported process, not a product."
+    },
+    {
+      "name": "MessageBird Number Porting",
+      "url": "https://developers.messagebird.com/docs/whatsapp/migrate-numbers",
+      "classification": "SERVICE",
+      "notes": "MessageBird provides documentation and support for porting WhatsApp numbers. They have a dedicated migration team for complex cases. Still manual coordination.",
+      "feature_overlap": "Same core steps; offers a migration form and support ticket system. No self-service automation.",
+      "pricing": "Included with MessageBird WhatsApp API usage.",
+      "market_positioning": "Value-added service for customers switching to/from MessageBird."
+    },
+    {
+      "name": "GitHub: whatsapp-number-migration-script",
+      "url": "https://github.com/search?q=whatsapp+number+migration",
+      "classification": "OPEN_SOURCE",
+      "notes": "Several open-source scripts exist that attempt to automate parts of the migration (e.g., resetting 2FA via API, updating webhooks). Quality varies, no official support, often outdated.",
+      "feature_overlap": "Automates some API calls but lacks end-to-end orchestration, error handling, and zero-downtime guarantees.",
+      "pricing": "Free (open source)",
+      "market_positioning": "Hobbyist or internal tooling; not a polished SaaS product."
+    },
+    {
+      "name": "WATI Migration Services",
+      "url": "https://www.wati.io/migrate-to-wati/",
+      "classification": "SERVICE",
+      "notes": "WATI (a WhatsApp BSP) offers migration assistance for businesses moving to their platform. They handle the process manually with dedicated support.",
+      "feature_overlap": "Covers the full migration workflow but is a service, not a self-service tool. Requires engaging WATI sales/support.",
+      "pricing": "Free for WATI customers (included in onboarding).",
+      "market_positioning": "Part of WATI's customer acquisition; not a standalone product."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Manual scheduled maintenance with parallel test numbers",
+      "url": "",
+      "classification": "SUBSTITUTE",
+      "notes": "Common workaround: run a second number in parallel, test, then switch. No tooling, high operational overhead.",
+      "feature_overlap": "Achieves the same outcome (migration) but with downtime, manual steps, and risk of message loss.",
+      "pricing": "N/A (internal process)",
+      "market_positioning": "Default approach for most platform engineers today."
+    }
+  ],
+  "verified_facts": [
+    "A forum post on Meta's developer community describes phone number migration between BSPs or from on-premise to Cloud API as problematic (SIG-003).",
+    "The post mentions numbers getting stuck between states and registration failures (SIG-003)."
+  ],
+  "inferences": [
+    "The problem likely occurs during the migration process, not as a daily operational issue.",
+    "The user is a platform engineer or developer managing WhatsApp infrastructure.",
+    "The workaround involves manual coordination and support tickets, suggesting no automated solution exists."
+  ],
+  "assumptions": [
+    "The single forum post represents a broader, unexpressed pain (not verified).",
+    "The problem is severe enough to warrant a paid SaaS solution (not verified).",
+    "Users would pay for a tool that automates migration (not verified).",
+    "The migration frequency is high enough to justify a subscription (not verified)."
+  ],
+  "unknowns": [
+    "How many businesses experience this problem?",
+    "What is the actual downtime or revenue loss per migration failure?",
+    "Are there existing tools or services that partially solve this?",
+    "What is the typical frequency of phone number migrations per business?",
+    "Are users actively seeking or paying for a solution?",
+    "Is this problem specific to certain BSPs or regions?",
+    "What is the success rate of the current manual workaround?"
+  ],
+  "rejection_reasons": [
+    "Judge rejected: Deterministic hard gates are not met: pain, frequency, and willingness to pay are all scored 2/5, far below the required threshold of 4 for approval. Evidence is also critically thin (1 independent source, 1 source type), and both the bear case (confidence 0.85) and customer perspective (confidence 0.85) independently conclude that free BSP-provided migration support and Meta’s documentation make a paid, dedicated tool unlikely to gain traction or monetize."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.93,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:30:54.051Z",
+  "updated_at": "2026-08-13T05:43:01.703Z"
+}

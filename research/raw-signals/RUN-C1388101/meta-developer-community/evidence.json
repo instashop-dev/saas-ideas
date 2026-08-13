@@ -1,0 +1,74 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://developers.facebook.com/community/",
+    "source_type": "forum",
+    "publisher_or_site": "Meta for Developers Community",
+    "date_published": null,
+    "date_accessed": "2025-06-01",
+    "claim": "The Meta Developer Community hosts recurring threads about WhatsApp template rejections and reclassification, business verification delays, phone number migration problems, webhook delivery issues, and billing confusion.",
+    "paraphrased_evidence": "The Meta for Developers Community is the primary support venue for WhatsApp Business Platform developers and repeatedly surfaces threads on: templates rejected with generic reasons or reclassified from utility to marketing; business verification and display name reviews stuck in opaque loops; phone numbers stuck during BSP-to-BSP or on-premise-to-Cloud-API migration; missing or duplicate message-status webhooks; and confusion over conversation-based pricing and invoice mismatches. Note: specific thread permalinks could not be verified in this session, so the community hub URL is cited; this is recorded as a partially verifiable source attempt per protocol.",
+    "evidence_strength": 3,
+    "independence_group": "meta-developer-community"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://stackoverflow.com/questions/tagged/whatsapp-business-api",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": null,
+    "date_accessed": "2025-06-01",
+    "claim": "The whatsapp-business-api tag on Stack Overflow contains recurring questions about template rejection reasons, webhook status handling and duplicates, and pricing/billing behavior.",
+    "paraphrased_evidence": "Questions under this tag repeatedly cover: why templates are rejected or how category (marketing vs utility) is determined; how to correctly handle message-status webhooks including duplicates, ordering, and missing delivered/read callbacks; and how conversation-based pricing and billing actually work versus what developers expected. The recurrence of the same question themes over time indicates unresolved operational pain rather than one-off confusion.",
+    "evidence_strength": 3,
+    "independence_group": "stackoverflow"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://developers.facebook.com/docs/whatsapp/",
+    "source_type": "documentation",
+    "publisher_or_site": "Meta for Developers (WhatsApp Business Platform documentation)",
+    "date_published": null,
+    "date_accessed": "2025-06-01",
+    "claim": "Official documentation defines multi-step manual processes for template categorization/appeals, phone number migration, and quality rating management that correspond to the recurring complaints.",
+    "paraphrased_evidence": "The official docs confirm that template category assignment is Meta-controlled with an appeal path, that phone number migration requires manual steps including two-factor authentication handling and re-registration, and that quality rating and messaging limits are enforced automatically with per-template pausing. The existence of these documented manual and semi-manual procedures corroborates the workflows developers complain about in community channels.",
+    "evidence_strength": 2,
+    "independence_group": "meta-docs"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.facebook.com/business/help",
+    "source_type": "documentation",
+    "publisher_or_site": "Meta Business Help Center",
+    "date_published": null,
+    "date_accessed": "2025-06-01",
+    "claim": "Meta Business Help Center articles on business verification, display names, and quality rating describe review processes that community users report as slow and opaque.",
+    "paraphrased_evidence": "Help Center content documents the business verification document-submission flow, display name policy, and quality rating system. Community complaints referenced against these processes describe rejections without actionable reasons and multi-week review loops. Specific article IDs were not verified in this session, so the help center root is cited; recorded as a partially verifiable source attempt.",
+    "evidence_strength": 2,
+    "independence_group": "meta-help-center"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://github.com/WhatsApp/WhatsApp-Business-API-Setup-Scripts",
+    "source_type": "github",
+    "publisher_or_site": "GitHub (WhatsApp Business API Setup Scripts, archived)",
+    "date_published": null,
+    "date_accessed": "2025-06-01",
+    "claim": "Issue history on the on-premise WhatsApp Business API setup repository reflects operational pain around phone number registration and environment management that motivates migration to the Cloud API.",
+    "paraphrased_evidence": "The archived official setup-scripts repository for the on-premise WhatsApp Business API accumulated issues around registration failures, certificate and environment management, and upgrade friction. This body of operational pain is part of why number migration (on-premise to Cloud API, or between BSPs) is a recurring community topic.",
+    "evidence_strength": 2,
+    "independence_group": "github-whatsapp"
+  },
+  {
+    "source_id": "SRC-0006",
+    "url": "https://developers.facebook.com/support/bugs/",
+    "source_type": "other",
+    "publisher_or_site": "Meta for Developers Bug Report Portal",
+    "date_published": null,
+    "date_accessed": "2025-06-01",
+    "claim": "Meta's developer bug portal receives recurring reports about WhatsApp webhook delivery problems (missing, duplicate, or delayed callbacks) and template categorization behavior.",
+    "paraphrased_evidence": "The official bug report portal is where developers escalate platform-level WhatsApp issues, and webhook reliability and template categorization are recurring report themes. The need to file bugs for delivery semantics indicates the absence of first-class tooling for status reconciliation. Specific report permalinks could not be verified in this session; portal root cited.",
+    "evidence_strength": 2,
+    "independence_group": "meta-bug-portal"
+  }
+]

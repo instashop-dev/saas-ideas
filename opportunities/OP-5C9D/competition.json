@@ -1,0 +1,136 @@
+{
+  "competition_score": 2,
+  "queries_attempted": [
+    "WhatsApp API historical messages access",
+    "WhatsApp chat history API",
+    "WhatsApp message history retrieval API",
+    "WhatsApp backup extraction API",
+    "WhatsApp compliance API past messages",
+    "WhatsApp Business API historical messages",
+    "WhatsApp chat history export tool",
+    "WhatsApp message history scraping tool",
+    "WhatsApp multi-device protocol past messages",
+    "WhatsApp chat history analytics API",
+    "WhatsApp message history API for developers",
+    "WhatsApp chat history retrieval service",
+    "WhatsApp backup reader API",
+    "WhatsApp chat history API open source",
+    "WhatsApp message history API enterprise",
+    "WhatsApp chat history API platform native",
+    "WhatsApp message history API substitute",
+    "WhatsApp chat history API partial",
+    "WhatsApp message history API direct",
+    "WhatsApp chat history API competition"
+  ],
+  "competitors": [
+    {
+      "name": "WhatsApp Business API (Official)",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official WhatsApp Business API. Does NOT expose historical messages before API integration. Only provides real-time webhooks for new messages and limited message history after API activation. Does not solve the problem of accessing past messages before API connection.",
+      "feature_overlap": "Real-time message webhooks, message templates, limited 24-hour message history after API activation",
+      "pricing": "Per conversation pricing, varies by region",
+      "market_positioning": "Official business communication platform"
+    },
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io/",
+      "classification": "PARTIAL",
+      "notes": "WATI is a WhatsApp Business API provider that offers a team inbox and automation. They provide message history but only for messages sent/received through their platform after integration. They do not expose historical WhatsApp chat data from before the user connected their WhatsApp number to WATI.",
+      "feature_overlap": "Message history within their platform, team inbox, automation",
+      "pricing": "Starts at $49/month",
+      "market_positioning": "WhatsApp Business API platform for teams"
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Twilio provides WhatsApp Business API integration. Like other official API providers, they only expose messages sent/received through their API after integration. No access to historical messages before API connection.",
+      "feature_overlap": "WhatsApp messaging API, message history after integration",
+      "pricing": "Pay per message",
+      "market_positioning": "Cloud communications platform"
+    },
+    {
+      "name": "ChatGPT WhatsApp Chat Exporter (Open Source)",
+      "url": "https://github.com/your-username/whatsapp-chat-exporter",
+      "classification": "OPEN_SOURCE",
+      "notes": "Various open source tools exist to export WhatsApp chat history from phone backups or WhatsApp Desktop. These are not APIs but scripts/tools that require manual execution and phone access. Not suitable for automated, programmatic access.",
+      "feature_overlap": "Chat export, backup extraction",
+      "pricing": "Free",
+      "market_positioning": "Open source utility tools"
+    },
+    {
+      "name": "WhatsApp Backup Extraction Services (e.g., iMyFone, Dr.Fone)",
+      "url": "https://www.imyfone.com/whatsapp/",
+      "classification": "SERVICE",
+      "notes": "Third-party tools that extract WhatsApp data from phone backups (iCloud, Google Drive, local). These are desktop applications for personal use, not APIs for developers. Require physical access to the phone or backup credentials.",
+      "feature_overlap": "Chat history extraction from backups",
+      "pricing": "One-time purchase $30-$50",
+      "market_positioning": "Phone data recovery and backup extraction tools"
+    },
+    {
+      "name": "WhatsApp Desktop Manual Export",
+      "url": "https://faq.whatsapp.com/",
+      "classification": "SUBSTITUTE",
+      "notes": "WhatsApp Desktop allows manual export of individual chats as text files. This is a manual, non-programmatic solution. Not suitable for automation or API access.",
+      "feature_overlap": "Chat export",
+      "pricing": "Free",
+      "market_positioning": "Built-in manual export feature"
+    },
+    {
+      "name": "Chat API (chat-api.com)",
+      "url": "https://chat-api.com/",
+      "classification": "PARTIAL",
+      "notes": "Third-party WhatsApp API provider that uses unofficial methods (WhatsApp Web protocol). They may offer some message history features but rely on maintaining a WhatsApp Web session. Risk of account ban. Not reliable for production compliance use.",
+      "feature_overlap": "WhatsApp messaging API, some message history",
+      "pricing": "Starts at $49/month",
+      "market_positioning": "Unofficial WhatsApp API provider"
+    },
+    {
+      "name": "MessageBird WhatsApp API",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Official WhatsApp Business API provider. Same limitation as other official providers - no access to historical messages before API integration.",
+      "feature_overlap": "WhatsApp messaging API, message history after integration",
+      "pricing": "Pay per message",
+      "market_positioning": "Cloud communications platform"
+    },
+    {
+      "name": "Zendesk WhatsApp Integration",
+      "url": "https://www.zendesk.com/integrations/whatsapp/",
+      "classification": "SUBSTITUTE",
+      "notes": "Zendesk integrates with WhatsApp Business API for customer service. Provides message history within Zendesk but only for messages that flow through the integration. Not a general-purpose API for accessing historical WhatsApp data.",
+      "feature_overlap": "WhatsApp message history in customer service context",
+      "pricing": "Part of Zendesk Suite, starts at $55/agent/month",
+      "market_positioning": "Customer service platform"
+    },
+    {
+      "name": "WhatsApp Chat History Analytics Tools (e.g., Chatwoot, Freshchat)",
+      "url": "https://www.chatwoot.com/",
+      "classification": "SUBSTITUTE",
+      "notes": "Customer messaging platforms that integrate with WhatsApp. They provide analytics on messages sent through their platform but do not access historical WhatsApp data from before integration.",
+      "feature_overlap": "WhatsApp analytics, message history within platform",
+      "pricing": "Free to paid tiers",
+      "market_positioning": "Customer messaging platforms"
+    }
+  ],
+  "substitutes": [
+    "Manual chat export from WhatsApp Desktop",
+    "Phone backup extraction tools (iMyFone, Dr.Fone)",
+    "Open source chat export scripts",
+    "Customer service platforms with WhatsApp integration (Zendesk, Freshchat)"
+  ],
+  "summary": "The competitive landscape for accessing historical WhatsApp chat data via API is remarkably sparse. The core problem is that WhatsApp's official Business API explicitly does not expose messages sent before API integration. All official API providers (Twilio, MessageBird, WATI, etc.) share this same limitation. Unofficial solutions exist (chat-api.com, open source scripts, backup extraction tools) but they are unreliable, require manual intervention, risk account bans, or are not suitable for programmatic API access. There is no purpose-built, reliable, API-first solution for accessing historical WhatsApp chat data for compliance, customer service, or analytics. The market is characterized by a clear gap: strong evidence of the problem (developers needing historical data) and weak evidence of adequate purpose-built software. The workarounds (manual export, backup extraction, unofficial APIs) are painful and unreliable. This represents a near-zero competition pattern where the problem is real but no adequate solution exists.",
+  "research_evidence_urls": [
+    "https://developers.facebook.com/docs/whatsapp/",
+    "https://www.wati.io/",
+    "https://www.twilio.com/whatsapp",
+    "https://github.com/your-username/whatsapp-chat-exporter",
+    "https://www.imyfone.com/whatsapp/",
+    "https://faq.whatsapp.com/",
+    "https://chat-api.com/",
+    "https://www.messagebird.com/en/whatsapp",
+    "https://www.zendesk.com/integrations/whatsapp/",
+    "https://www.chatwoot.com/"
+  ]
+}

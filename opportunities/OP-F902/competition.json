@@ -1,0 +1,141 @@
+{
+  "competition_score": 2,
+  "queries_attempted": [
+    "WhatsApp automation library stable maintained",
+    "WhatsApp unofficial API library 2024",
+    "WhatsApp Web JS library alternative",
+    "WhatsApp Business API unofficial library",
+    "WhatsApp automation without re-authentication",
+    "WhatsApp session persistence library",
+    "WhatsApp multi-device automation library",
+    "WhatsApp cloud API alternative unofficial",
+    "WhatsApp bot framework stable",
+    "WhatsApp automation service managed",
+    "WhatsApp gateway service",
+    "WhatsApp API proxy service",
+    "WhatsApp automation open source",
+    "WhatsApp Web automation script",
+    "WhatsApp automation consultancy"
+  ],
+  "competitors": [
+    {
+      "name": "Baileys (WhatsApp Web API)",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "OPEN_SOURCE",
+      "notes": "Most popular unofficial WhatsApp Web library. Actively maintained but still breaks with WhatsApp updates. Requires manual re-authentication periodically. The problem this opportunity targets is the core pain of Baileys users.",
+      "feature_overlap": "Full WhatsApp Web API coverage, multi-device support, session persistence",
+      "pricing": "Free (open source)",
+      "market_positioning": "The de facto standard unofficial WhatsApp library for Node.js developers"
+    },
+    {
+      "name": "whatsapp-web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Popular wrapper around WhatsApp Web. Same fundamental problem - breaks when WhatsApp updates. Users report frequent QR re-generation needs.",
+      "feature_overlap": "WhatsApp Web automation, message sending/receiving, media handling",
+      "pricing": "Free (open source)",
+      "market_positioning": "Beginner-friendly WhatsApp Web automation library"
+    },
+    {
+      "name": "WhatsApp Business API (Official)",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "SUBSTITUTE",
+      "notes": "Official solution but requires business verification, has strict rate limits, costs per conversation, and doesn't support all use cases (e.g., personal accounts, bulk messaging without templates). Not a direct substitute for unofficial library users.",
+      "feature_overlap": "Message sending/receiving, webhooks, media",
+      "pricing": "Pay per conversation (~$0.005-$0.08 per conversation)",
+      "market_positioning": "Enterprise-grade official WhatsApp integration"
+    },
+    {
+      "name": "WhatsApp Cloud API (Meta)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "SUBSTITUTE",
+      "notes": "Meta's hosted version of Business API. Same limitations as Business API - requires business verification, template messages, no personal account support.",
+      "feature_overlap": "Cloud-hosted WhatsApp API, webhooks, media",
+      "pricing": "Pay per conversation",
+      "market_positioning": "Meta's official cloud-hosted WhatsApp API"
+    },
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io/",
+      "classification": "SERVICE",
+      "notes": "Managed WhatsApp Business API platform. Not a direct competitor to a library - it's a full SaaS product. Targets businesses wanting out-of-box solution, not developers needing a library.",
+      "feature_overlap": "WhatsApp messaging, automation, team inbox",
+      "pricing": "Paid SaaS ($49+/month)",
+      "market_positioning": "WhatsApp Business API platform for customer communication"
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Twilio's WhatsApp Business API integration. Same limitations as official API - requires business verification, template approval, per-conversation pricing.",
+      "feature_overlap": "WhatsApp messaging via API",
+      "pricing": "Pay per conversation (~$0.005-$0.08)",
+      "market_positioning": "Developer-friendly WhatsApp Business API via Twilio"
+    },
+    {
+      "name": "Venom Bot",
+      "url": "https://github.com/orkestral/venom",
+      "classification": "OPEN_SOURCE",
+      "notes": "Another WhatsApp Web automation library. Same fundamental stability issues. Less actively maintained than Baileys.",
+      "feature_overlap": "WhatsApp Web automation, multi-device",
+      "pricing": "Free (open source)",
+      "market_positioning": "WhatsApp Web automation for bots"
+    },
+    {
+      "name": "WhatsApp Web JS (various forks)",
+      "url": "https://github.com/search?q=whatsapp+web+js&type=repositories",
+      "classification": "OPEN_SOURCE",
+      "notes": "Numerous forks and variants of whatsapp-web.js and Baileys. All suffer from same core problem - unofficial protocol reverse engineering.",
+      "feature_overlap": "WhatsApp Web automation",
+      "pricing": "Free (open source)",
+      "market_positioning": "Fragmented ecosystem of forks"
+    },
+    {
+      "name": "ChatAPI (WhatsApp Gateway Service)",
+      "url": "https://chatapi.com/",
+      "classification": "SERVICE",
+      "notes": "Managed WhatsApp gateway that uses unofficial methods. Provides stable API but still subject to WhatsApp blocking. Users report occasional downtime.",
+      "feature_overlap": "WhatsApp API, session management, webhooks",
+      "pricing": "Paid SaaS (~$30-100+/month)",
+      "market_positioning": "Managed WhatsApp API gateway"
+    },
+    {
+      "name": "WhatsApp Gateway (various providers)",
+      "url": "https://www.google.com/search?q=whatsapp+gateway+service",
+      "classification": "SERVICE",
+      "notes": "Many small providers offering WhatsApp gateway services. Most use unofficial methods and face same stability issues. Some claim better uptime.",
+      "feature_overlap": "WhatsApp API, session management",
+      "pricing": "Variable ($20-200+/month)",
+      "market_positioning": "Managed WhatsApp gateway services"
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Telegram Bot API",
+      "url": "https://core.telegram.org/bots/api",
+      "classification": "SUBSTITUTE",
+      "notes": "Official, stable, free API. Not WhatsApp but solves similar communication automation needs without stability issues.",
+      "feature_overlap": "Messaging automation, bots, webhooks",
+      "pricing": "Free",
+      "market_positioning": "Official Telegram bot platform"
+    },
+    {
+      "name": "Signal Bot (unofficial)",
+      "url": "https://github.com/signalapp/Signal-Desktop",
+      "classification": "SUBSTITUTE",
+      "notes": "Signal has unofficial libraries but same stability problems. Not a viable substitute.",
+      "feature_overlap": "Secure messaging automation",
+      "pricing": "Free",
+      "market_positioning": "Signal messaging automation"
+    }
+  ],
+  "summary": "The competitive landscape for 'stable WhatsApp automation via unofficial libraries' is paradoxical. There are many open-source libraries (Baileys, whatsapp-web.js, Venom) and managed services (ChatAPI, various gateways), but ALL of them suffer from the exact same core problem: they rely on reverse-engineering WhatsApp's proprietary protocol, which breaks with every WhatsApp update. The official WhatsApp Business API exists but is not a substitute for many use cases (personal accounts, bulk messaging without templates, no business verification). The market is fragmented with many solutions that all fail at the same thing - stability. No single product has solved the fundamental problem of maintaining session persistence across WhatsApp updates. The opportunity is real: developers are stuck choosing between unstable free libraries and expensive managed services that also break. A solution that truly solves session persistence and update resilience would address a massive unmet need. However, the technical challenge is significant - WhatsApp actively works against unofficial access.",
+  "research_evidence_urls": [
+    "https://github.com/WhiskeySockets/Baileys/issues",
+    "https://github.com/pedroslopez/whatsapp-web.js/issues",
+    "https://developers.facebook.com/docs/whatsapp/",
+    "https://www.wati.io/",
+    "https://www.twilio.com/whatsapp",
+    "https://chatapi.com/"
+  ]
+}

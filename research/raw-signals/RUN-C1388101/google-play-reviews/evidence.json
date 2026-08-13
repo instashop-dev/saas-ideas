@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://play.google.com/store/apps/details?id=com.whatsapp.w4b",
+    "source_type": "review",
+    "publisher_or_site": "Google Play Store",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "Users complain that away messages cannot be scheduled and require manual activation.",
+    "paraphrased_evidence": "Several reviewers mention needing to manually turn away messages on/off because there is no scheduler. They request pre-set time slots or recurring schedules for away messages.",
+    "evidence_strength": 3,
+    "independence_group": "whatsapp-business-auto-reply"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://play.google.com/store/apps/details?id=com.whatsapp.w4b",
+    "source_type": "review",
+    "publisher_or_site": "Google Play Store",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "Greeting message limits are too restrictive; users want longer messages or ability to use templates.",
+    "paraphrased_evidence": "Business owners report that the character limit for greeting and away messages is insufficient for sharing detailed information or promotions. They request the ability to use rich media or longer text.",
+    "evidence_strength": 3,
+    "independence_group": "whatsapp-business-auto-reply"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://play.google.com/store/apps/details?id=com.whatsapp.w4b",
+    "source_type": "review",
+    "publisher_or_site": "Google Play Store",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "Catalog management is tedious and error-prone; CSV uploads often fail.",
+    "paraphrased_evidence": "Reviewers describe spending hours manually entering product data because the CSV import feature frequently rejects files with vague errors. Some resort to spreadsheets to track catalog changes.",
+    "evidence_strength": 3,
+    "independence_group": "whatsapp-business-catalog"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://play.google.com/store/apps/details?id=com.whatsapp.w4b",
+    "source_type": "review",
+    "publisher_or_site": "Google Play Store",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "Multi-device support is unreliable; users lose chats or get banned when trying to use multiple phones.",
+    "paraphrased_evidence": "Common complaints include chat history not syncing properly between devices, and accounts being temporarily banned after logging in on an additional phone. Users ask for proper multi-device support like Telegram.",
+    "evidence_strength": 4,
+    "independence_group": "whatsapp-business-multi-device"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://play.google.com/store/apps/details?id=com.whatsapp.w4b",
+    "source_type": "review",
+    "publisher_or_site": "Google Play Store",
+    "date_published": null,
+    "date_accessed": "2025-04-11T10:00:00Z",
+    "claim": "Business verification process is opaque and painful; repeated submission of documents required.",
+    "paraphrased_evidence": "Several reviewers mention being stuck in a verification loop where they submit documents multiple times without clear reasons for rejection. This prevents them from using the WhatsApp Business API, forcing them to use third-party solutions or manual bulk messaging.",
+    "evidence_strength": 3,
+    "independence_group": "whatsapp-business-verification"
+  }
+]

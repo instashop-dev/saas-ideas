@@ -1,0 +1,116 @@
+{
+  "competition_score": 2,
+  "queries_attempted": [
+    "WhatsApp message delivery guarantee retry queue management",
+    "WhatsApp automation retry system",
+    "WhatsApp Business API retry automation tool",
+    "WhatsApp message queue management SaaS",
+    "WhatsApp message delivery reliability software",
+    "WhatsApp retry logic service",
+    "WhatsApp webhook retry management",
+    "WhatsApp automation queue with retry",
+    "WhatsApp message delivery guarantee tool",
+    "WhatsApp business messaging queue and retry"
+  ],
+  "competitors": [
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io",
+      "classification": "PARTIAL",
+      "notes": "WATI is a no-code WhatsApp Business API platform aimed at marketing and sales teams. It provides bulk messaging and basic retry on delivery failures, but it is not a developer-focused queuing and retry system. Developers cannot easily integrate it into custom automation pipelines.",
+      "feature_overlap": "Bulk message sending, delivery receipts, and some retry logic for failed messages.",
+      "pricing": "Starts at $49/month for small teams, based on agent seats.",
+      "market_positioning": "All-in-one WhatsApp marketing and customer engagement platform, not a developer tool."
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Twilio provides the WhatsApp Business API with delivery status webhooks, but does not offer built-in retry or queue management. Developers must implement their own retry logic using Twilio’s status callbacks. It is a general-purpose communication API, not a dedicated retry queue solution.",
+      "feature_overlap": "Message delivery, status callbacks, basic webhook handling.",
+      "pricing": "Pay-as-you-go: $0.005 per message (varies by region).",
+      "market_positioning": "Cloud communications platform for developers, covering SMS, voice, WhatsApp, etc."
+    },
+    {
+      "name": "MessageBird WhatsApp API",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "MessageBird offers a WhatsApp Business API with a dashboard that can retry failed messages, but it is not a programmatic queue/retry system. Retry is manual or rule-based at the platform level, not built into an API for developers.",
+      "feature_overlap": "WhatsApp message sending, delivery reports, manual retry options.",
+      "pricing": "Starting at $0.005 per message, with volume discounts.",
+      "market_positioning": "Omnichannel messaging platform for enterprises, similar to Twilio."
+    },
+    {
+      "name": "UltraMsg",
+      "url": "https://ultramsg.com",
+      "classification": "PARTIAL",
+      "notes": "UltraMsg is a WhatsApp gateway focusing on bulk messaging. It includes a message queue and auto-retry for failed sends. However, the queue is simplistic and retry intervals are not customizable. It is more of a basic gateway than a robust developer retry queue solution.",
+      "feature_overlap": "Message queue, auto-retry, delivery status.",
+      "pricing": "Free tier available, paid plans start at $10/month for higher limits.",
+      "market_positioning": "Affordable WhatsApp gateway for bulk messaging and notifications."
+    },
+    {
+      "name": "ChatAPI (aka WhatsApp Gateway)",
+      "url": "https://chat-api.com",
+      "classification": "PARTIAL",
+      "notes": "ChatAPI provides a WhatsApp gateway with a queue and retry mechanism, but it is built on top of WhatsApp Web (unofficial) and can be unreliable. The retry logic is basic and there is no advanced queue management like dead-letter queues or exponential backoff.",
+      "feature_overlap": "Message queue, automatic retry, status callbacks.",
+      "pricing": "Starts at $49/month for 1,000 messages.",
+      "market_positioning": "Unofficial WhatsApp API for developers, often used for chatbots and notifications."
+    },
+    {
+      "name": "WAPlus",
+      "url": "https://waplus.io",
+      "classification": "PARTIAL",
+      "notes": "WAPlus is a WhatsApp Business API provider that offers a queue and retry as part of its bulk messaging feature. It is not a standalone retry queue product; it is bundled with a broader API. Customization of retry logic is limited.",
+      "feature_overlap": "Message queue, automatic retry, delivery logs.",
+      "pricing": "Pay-as-you-go or subscription, starting at $20/month.",
+      "market_positioning": "WhatsApp Business API provider for businesses and developers."
+    },
+    {
+      "name": "WhatsApp Business API (Meta Cloud API)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Meta’s official WhatsApp Cloud API provides delivery receipts and webhooks, but no built-in retry or queue management. Developers must build their own system. This is the foundational platform, not a solution to the problem.",
+      "feature_overlap": "Message sending, delivery status webhooks, inbound messages.",
+      "pricing": "Free for first 1,000 conversations per month, then $0.005 per message.",
+      "market_positioning": "Official WhatsApp API, the underlying infrastructure for all business messaging."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Custom queue + retry system (e.g., RabbitMQ, Redis, AWS SQS)",
+      "classification": "SUBSTITUTE",
+      "notes": "Developers often build their own queue with database-backed retry logic and delivery tracking. This is the current workaround. It is flexible but requires significant engineering effort and ongoing maintenance.",
+      "feature_overlap": "Full control over queuing, retry policies, and delivery monitoring.",
+      "pricing": "Cost of infrastructure and developer time.",
+      "market_positioning": "In-house solution, not a product."
+    },
+    {
+      "name": "Open source libraries (e.g., Baileys, whatsapp-web.js, venom-bot)",
+      "classification": "OPEN_SOURCE",
+      "notes": "Unofficial libraries provide WhatsApp integration but rarely include built-in retry or queue management. Developers must add their own layer. These libraries are free but unreliable and can break due to WhatsApp changes.",
+      "feature_overlap": "Basic message sending and receiving, some event handling.",
+      "pricing": "Free.",
+      "market_positioning": "Unofficial connectors for WhatsApp Web, often used for automation."
+    },
+    {
+      "name": "WhatsApp automation consulting agencies",
+      "classification": "SERVICE",
+      "notes": "Agencies build custom WhatsApp automation solutions that include retry and queue management. They are expensive and not scalable for individual developers or small teams.",
+      "feature_overlap": "Custom-built retry and queue systems tailored to client needs.",
+      "pricing": "Project-based, typically $5,000 - $50,000+.",
+      "market_positioning": "Custom software development services."
+    }
+  ],
+  "summary": "The competitive landscape for a dedicated WhatsApp message retry and queue management SaaS is sparse. None of the existing products provide a purpose-built, developer-friendly solution that offers robust, customizable retry logic, dead-letter queues, and delivery guarantees. The closest alternatives are partial (gateways with basic retry) or platforms that bundle retry as a minor feature. The dominant workaround remains custom-built infrastructure, which is costly and time-consuming. There is a clear gap for a focused product that solves this specific pain point for WhatsApp automation developers. Competition score is 2 due to a few weak/niche alternatives with meaningful gaps.",
+  "research_evidence_urls": [
+    "https://www.wati.io/pricing",
+    "https://www.twilio.com/docs/whatsapp/api",
+    "https://www.messagebird.com/en/whatsapp",
+    "https://ultramsg.com/#pricing",
+    "https://chat-api.com/en/pricing.html",
+    "https://waplus.io/pricing",
+    "https://developers.facebook.com/docs/whatsapp/cloud-api"
+  ]
+}

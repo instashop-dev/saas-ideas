@@ -1,0 +1,117 @@
+{
+  "competition_score": 3,
+  "queries_attempted": [
+    "WhatsApp Business catalog management software",
+    "WhatsApp catalog sync tool",
+    "WhatsApp Business API product catalog automation",
+    "manage WhatsApp catalog items app",
+    "WhatsApp Business catalog CSV upload alternative",
+    "WhatsApp Business catalog integration platform",
+    "WhatsApp Business product catalog editor",
+    "WhatsApp Business catalog management for small business",
+    "open source WhatsApp catalog manager",
+    "WhatsApp Business catalog API solution"
+  ],
+  "competitors": [
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io",
+      "classification": "PARTIAL",
+      "notes": "WATI is a WhatsApp Business API platform that includes catalog management features. It allows adding, editing, and organizing catalog items via a dashboard and API. However, it is a full CRM/marketing platform, not a dedicated catalog tool. The catalog feature is part of a larger suite, so it may be overkill for pure catalog management.",
+      "feature_overlap": "Add/edit/delete catalog items, bulk upload via CSV, sync with inventory, catalog sharing in conversations.",
+      "pricing": "Starts at $49/month (Growth plan) – includes catalog management.",
+      "market_positioning": "All-in-one WhatsApp Business API platform for sales, support, and marketing."
+    },
+    {
+      "name": "Interakt",
+      "url": "https://www.interakt.ai",
+      "classification": "PARTIAL",
+      "notes": "Interakt offers WhatsApp Business API with catalog management, including bulk upload and real-time editing. It also provides analytics and automation. Again, not a standalone catalog tool but a broader platform.",
+      "feature_overlap": "Catalog creation, editing, bulk CSV upload, inventory tracking, catalog sharing.",
+      "pricing": "Starts at $29/month (Starter) – includes catalog features.",
+      "market_positioning": "WhatsApp Business API platform for e-commerce and customer engagement."
+    },
+    {
+      "name": "Yellow.ai",
+      "url": "https://yellow.ai",
+      "classification": "PARTIAL",
+      "notes": "Yellow.ai is a conversational AI platform that supports WhatsApp catalog management via its commerce module. It allows dynamic catalog updates and integration with e-commerce backends. More enterprise-focused.",
+      "feature_overlap": "Catalog sync, product management, automated catalog updates.",
+      "pricing": "Custom pricing (typically $500+/month).",
+      "market_positioning": "Enterprise conversational AI and automation platform."
+    },
+    {
+      "name": "MessageBird (now Bird)",
+      "url": "https://www.bird.com",
+      "classification": "PARTIAL",
+      "notes": "MessageBird's WhatsApp Business API includes catalog management through its Inbox and Engage products. It supports catalog creation and sharing but is part of a larger omnichannel platform.",
+      "feature_overlap": "Catalog creation, editing, sharing via WhatsApp.",
+      "pricing": "Pay-as-you-go API pricing + platform fees (custom).",
+      "market_positioning": "Omnichannel communications platform."
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Twilio provides the raw WhatsApp Business API. Developers can build custom catalog management solutions on top of it. Not a ready-made tool, but a substitute for those with technical resources.",
+      "feature_overlap": "Programmatic catalog management via API (add/edit/delete products).",
+      "pricing": "Pay-per-message + API usage (variable).",
+      "market_positioning": "Developer-focused communication API platform."
+    },
+    {
+      "name": "WhatsApp Business App (native)",
+      "url": "https://business.whatsapp.com",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "The free WhatsApp Business app includes a basic catalog feature. Users can add products manually or via CSV upload. However, CSV uploads often fail due to formatting issues, and there is no API or automation. This is the current workaround that the opportunity aims to replace.",
+      "feature_overlap": "Basic catalog creation and editing, CSV upload.",
+      "pricing": "Free.",
+      "market_positioning": "Official WhatsApp Business app for small businesses."
+    },
+    {
+      "name": "Shopify WhatsApp Integration (by Shopify or third-party)",
+      "url": "https://apps.shopify.com/search?q=whatsapp+catalog",
+      "classification": "SUBSTITUTE",
+      "notes": "Several Shopify apps (e.g., 'WhatsApp Catalog Sync', 'WATI for Shopify') sync Shopify product catalogs to WhatsApp. These are substitutes for businesses already using Shopify, but not standalone catalog management tools.",
+      "feature_overlap": "Automated catalog sync from Shopify to WhatsApp.",
+      "pricing": "Varies (often free to $20/month).",
+      "market_positioning": "Shopify app ecosystem for WhatsApp integration."
+    },
+    {
+      "name": "Open Source: whatsapp-catalog-api (GitHub)",
+      "url": "https://github.com/search?q=whatsapp+catalog+api",
+      "classification": "OPEN_SOURCE",
+      "notes": "There are open-source scripts and libraries that wrap the WhatsApp Business API for catalog management. These require technical setup and maintenance. Not a polished product.",
+      "feature_overlap": "Programmatic catalog CRUD via WhatsApp API.",
+      "pricing": "Free (self-hosted).",
+      "market_positioning": "Developer tools and DIY solutions."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Manual CSV upload in WhatsApp Business App",
+      "classification": "SUBSTITUTE",
+      "notes": "The current workaround – users manually create CSV files and upload them. Often fails due to formatting errors, leading to frustration."
+    },
+    {
+      "name": "Google Sheets + manual copy-paste",
+      "classification": "SUBSTITUTE",
+      "notes": "Some businesses maintain product data in Google Sheets and manually copy into WhatsApp catalog. Error-prone and time-consuming."
+    },
+    {
+      "name": "E-commerce platform native catalogs (Shopify, WooCommerce) + manual WhatsApp update",
+      "classification": "SUBSTITUTE",
+      "notes": "Businesses with an online store manage products there but must separately update WhatsApp catalog, leading to duplication."
+    }
+  ],
+  "summary": "The competitive landscape for WhatsApp Business catalog management is moderately crowded (score 3). Several WhatsApp Business API platforms (WATI, Interakt, Yellow.ai, MessageBird) offer catalog management as part of broader suites. These are partial competitors because they solve the problem but are not purpose-built solely for catalog management – they bundle it with CRM, marketing, and support features. The native WhatsApp Business app provides a basic free solution but is unreliable (CSV failures). Open-source and API-based substitutes exist for technical users. The opportunity's unique angle is a dedicated, reliable, easy-to-use catalog management tool that specifically addresses CSV upload failures and manual re-entry pain points, without the overhead of a full platform. However, the presence of many partial solutions means the market is not empty; differentiation will be key. The score of 3 reflects that while there are established alternatives, none are perfectly aligned with the JTBD of a simple, reliable catalog manager for WhatsApp Business.",
+  "research_evidence_urls": [
+    "https://www.wati.io/product/catalog/",
+    "https://www.interakt.ai/features/catalog/",
+    "https://yellow.ai/features/whatsapp-catalog/",
+    "https://www.bird.com/products/whatsapp/",
+    "https://www.twilio.com/docs/whatsapp/api/catalog",
+    "https://business.whatsapp.com/products/catalog",
+    "https://apps.shopify.com/search?q=whatsapp+catalog",
+    "https://github.com/search?q=whatsapp+catalog+api"
+  ]
+}

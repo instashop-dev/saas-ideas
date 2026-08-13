@@ -1,0 +1,207 @@
+{
+  "id": "OP-33F8",
+  "canonical_key": "CK-92195e5b36f20adb",
+  "title": "When I need to manage WhatsApp conversations across multiple team members, I want a shared inbox wit",
+  "target_user": "Small Business Owner / Customer Support Manager",
+  "job_to_be_done": "When I need to manage WhatsApp conversations across multiple team members, I want a shared inbox with multi-agent support that allows simultaneous access and automatic assignment, so I can respond quickly, avoid missed messages, and maintain a single customer conversation history.",
+  "painful_workflow": "Only one device can be logged into WhatsApp Business at a time, so team members must manually forward messages, take turns on a single phone, or use unofficial workarounds to share access.",
+  "current_workaround": "Using multiple phones with SIM cloning, manually forwarding messages to personal WhatsApp, taking turns on a single device, or using WhatsApp Web with a shared QR code.",
+  "source_ids": [
+    "SIG-001",
+    "SIG-004",
+    "SIG-008"
+  ],
+  "independent_sources": 2,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 2,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 2,
+  "competition_score": 5,
+  "competitors": [
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io",
+      "classification": "DIRECT",
+      "notes": "Purpose-built WhatsApp Business API platform that includes a shared team inbox with role-based permissions, automatic assignment, and internal collaboration. Directly targets SMBs needing multi-agent WhatsApp access.",
+      "feature_overlap": "Shared inbox, multi-agent, auto-assignment, contact history, labels, quick replies, broadcasts, integrations with CRMs",
+      "pricing": "Plans from approximately $49/month (Growth) to $299/month (Business), plus Meta conversation fees; 7-day free trial.",
+      "market_positioning": "WhatsApp Business API for support and sales, focused on small and medium businesses"
+    },
+    {
+      "name": "AiSensy",
+      "url": "https://aisensy.com",
+      "classification": "DIRECT",
+      "notes": "WhatsApp Business API platform with shared team inbox, role-based access, automatic assignment, and no-code chatbot. Competing directly for SMBs.",
+      "feature_overlap": "Shared inbox, multi-agent support, assignment rules, contact management, campaign management, integrations",
+      "pricing": "Free tier available; paid plans from around $27/month (Basic), up to custom enterprise",
+      "market_positioning": "WhatsApp marketing and support platform for SMEs, emphasizing ease of use and affordability"
+    },
+    {
+      "name": "Respond.io",
+      "url": "https://respond.io",
+      "classification": "DIRECT",
+      "notes": "Omnichannel shared inbox with strong WhatsApp support, multi-agent collaboration, automatic assignment, and automation. Directly addresses team-based WhatsApp handling.",
+      "feature_overlap": "Shared inbox, multi-agent, auto-assignment, conversation routing, internal notes, automation workflows, integrations",
+      "pricing": "Plans from $79/month (Team) to $249/month (Business); custom enterprise plans",
+      "market_positioning": "Omnichannel inbox for customer conversations, aimed at mid-market and SMB support teams"
+    },
+    {
+      "name": "Trengo",
+      "url": "https://trengo.com",
+      "classification": "DIRECT",
+      "notes": "Shared inbox platform that aggregates WhatsApp and other channels, with multi-agent support, assignment, and automation. Directly solves shared WhatsApp access.",
+      "feature_overlap": "Shared inbox, multi-agent, auto-assignment, collision detection, internal comments, workflows, reporting",
+      "pricing": "Plans from €125/month (Essentials) to €325/month (Scale); custom enterprise",
+      "market_positioning": "Team inbox for customer service, targeting European SMBs and mid-market"
+    },
+    {
+      "name": "Gallabox",
+      "url": "https://gallabox.com",
+      "classification": "DIRECT",
+      "notes": "WhatsApp Business API platform with shared team inbox, multi-agent, automatic assignment, and team collaboration features for SMBs.",
+      "feature_overlap": "Shared inbox, multi-agent, assignment, contact notes, quick replies, automation, e-commerce integrations",
+      "pricing": "Plans from about $79/month (Growth) to custom enterprise; WhatsApp API fees separate",
+      "market_positioning": "WhatsApp solution for sales and support, specializing in emerging markets and D2C brands"
+    },
+    {
+      "name": "Zoko",
+      "url": "https://zoko.io",
+      "classification": "DIRECT",
+      "notes": "WhatsApp shared inbox tool with team management, multi-agent support, automatic assignment, and Shopify integration. Direct competitor for e-commerce SMBs.",
+      "feature_overlap": "Shared inbox, multi-agent, assignment, catalog, carts, automation, Shopify integration",
+      "pricing": "Plans from $49/month (Starter) to $299/month (Advanced), plus Meta fees",
+      "market_positioning": "WhatsApp commerce and support platform for Shopify and e-commerce brands"
+    },
+    {
+      "name": "Rasayel",
+      "url": "https://rasayel.com",
+      "classification": "DIRECT",
+      "notes": "WhatsApp shared inbox and automation platform with multi-agent support, collision alerts, assignment, and internal collaboration.",
+      "feature_overlap": "Shared inbox, multi-agent, assignment, private notes, automation, broadcasts, analytics",
+      "pricing": "Plans start at roughly $99/month (Starter); custom enterprise tiers",
+      "market_positioning": "WhatsApp shared inbox for sales and support teams, targeting growing businesses"
+    },
+    {
+      "name": "TimelinesAI",
+      "url": "https://timelinesai.com",
+      "classification": "DIRECT",
+      "notes": "WhatsApp team inbox for multiple agents with shared inbox, automatic assignment, and CRM integrations.",
+      "feature_overlap": "Shared inbox, multi-agent, assignment, internal notes, CRM sync (HubSpot, Pipedrive), automation",
+      "pricing": "Plans from $29/month (Startup) to $99/month (Business); custom enterprise",
+      "market_positioning": "WhatsApp shared inbox and productivity for sales and support teams"
+    },
+    {
+      "name": "Chatwoot",
+      "url": "https://www.chatwoot.com",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source omnichannel shared inbox with official WhatsApp Business API integration, multi-agent support, automatic assignment, and self-host option. Free alternative that directly competes.",
+      "feature_overlap": "Shared inbox, multi-agent, assignment rules, internal notes, canned responses, automation, integrations",
+      "pricing": "Free open-source self-hosted; cloud plans from $19/month per agent",
+      "market_positioning": "Open-source alternative to Intercom/Zendesk, with strong WhatsApp support"
+    },
+    {
+      "name": "Freshworks Freshchat",
+      "url": "https://www.freshworks.com/freshchat/",
+      "classification": "PARTIAL",
+      "notes": "Omnichannel helpdesk that supports WhatsApp via Business API, offering multi-agent shared inbox, assignment, and automation. Broader than WhatsApp-only but directly addresses the JTBD.",
+      "feature_overlap": "Shared inbox, multi-agent, auto-assignment, collision detection, routing rules, knowledge base, reporting",
+      "pricing": "Free tier; paid plans from $15/agent/month (Growth) to $69/agent/month (Pro)",
+      "market_positioning": "Omnichannel customer support software for SMB to enterprise"
+    },
+    {
+      "name": "Zendesk",
+      "url": "https://www.zendesk.com",
+      "classification": "PARTIAL",
+      "notes": "Omnichannel customer service platform with WhatsApp integration through Sunshine Conversations. Supports multi-agent shared inbox, assignment, and conversation history.",
+      "feature_overlap": "Shared inbox, multi-agent, routing, automation, analytics, API, integrations",
+      "pricing": "Suite plans from $55/agent/month (Team) to $115/agent/month (Professional)",
+      "market_positioning": "Enterprise-grade customer service software for all channels"
+    },
+    {
+      "name": "HubSpot Service Hub",
+      "url": "https://www.hubspot.com/products/service",
+      "classification": "PARTIAL",
+      "notes": "CRM with helpdesk and WhatsApp integration, providing shared inbox and multi-agent handling tightly coupled to CRM data.",
+      "feature_overlap": "Shared inbox, multi-agent, assignment, automation, CRM records, reporting",
+      "pricing": "Free tools; Starter from $15/user/month; Professional $90/user/month",
+      "market_positioning": "All-in-one CRM and customer service platform for SMBs and mid-market"
+    },
+    {
+      "name": "Twilio (WhatsApp Business API)",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SERVICE",
+      "notes": "Provides the underlying WhatsApp Business API and messaging infrastructure. Teams often build custom shared inboxes on Twilio, or pair with a BSP/helpdesk. Not a turnkey shared inbox but enables it.",
+      "feature_overlap": "API access, message routing, multi-user via custom development, webhooks",
+      "pricing": "Pay-as-you-go per message; no per-user fee for API",
+      "market_positioning": "CPaaS provider powering WhatsApp integrations for developers and enterprises"
+    },
+    {
+      "name": "WhatsApp Business Platform",
+      "url": "https://business.whatsapp.com",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official API enables multiple agents via Business Solution Providers, but does not provide a native shared inbox UI. Serves as the foundation that competitors build on; a threat if Meta improves native multi-agent capabilities.",
+      "feature_overlap": "Multi-agent via API, message templates, automation, webhooks",
+      "pricing": "Conversation-based fees from Meta; free to access through BSPs",
+      "market_positioning": "Official WhatsApp business API for medium/large businesses"
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Multiple phones with SIM cloning",
+      "description": "Manual duplication of SIM/account across devices; violates WhatsApp ToS and is operationally risky"
+    },
+    {
+      "name": "Manual forwarding to personal WhatsApp",
+      "description": "Team members forward conversations to personal numbers, losing unified history and assignment"
+    },
+    {
+      "name": "Shared WhatsApp Web session (QR code)",
+      "description": "Multiple agents use the same WhatsApp Web session on different laptops; no assignment, collision, or audit trail"
+    },
+    {
+      "name": "Using personal WhatsApp groups or broadcasts",
+      "description": "Ad-hoc group chats for internal coordination, not a customer-facing shared inbox"
+    }
+  ],
+  "verified_facts": [
+    "Users manually forward WhatsApp messages between team members because only one device can be logged into WhatsApp Business at a time (SIG-001).",
+    "Users share a single WhatsApp Business number by logging in/out of the same device or using unofficial workarounds (SIG-004).",
+    "Users handle customer support inquiries through WhatsApp alongside Shopify Inbox, manually switching between apps (SIG-008)."
+  ],
+  "inferences": [
+    "The problem occurs for small businesses with multiple support staff who need to share a single WhatsApp Business number.",
+    "The current workarounds are time-consuming and may lead to missed messages or inconsistent customer history.",
+    "Users are not using the official WhatsApp Business API (which supports multi-agent) likely due to cost, complexity, or lack of awareness."
+  ],
+  "assumptions": [
+    "The frequency of the problem is at least weekly for affected users.",
+    "Users have not tried or cannot afford paid multi-agent solutions like WhatsApp Business API or third-party tools.",
+    "The pain is consistent across different small business verticals."
+  ],
+  "unknowns": [
+    "Actual frequency of the problem (daily vs. weekly).",
+    "Economic impact (lost revenue, customer churn) – not quantified.",
+    "Willingness to pay for a solution – no evidence of spending.",
+    "Number of affected users globally.",
+    "Whether existing solutions (WhatsApp Business API, WATI, etc.) adequately address the need."
+  ],
+  "rejection_reasons": [
+    "Competition too high: 5/5 (max 2)"
+  ],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "competition",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:30:32.196Z",
+  "updated_at": "2026-08-13T05:38:12.396Z"
+}

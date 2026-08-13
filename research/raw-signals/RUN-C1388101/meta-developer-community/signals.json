@@ -1,0 +1,102 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002",
+      "SRC-0003"
+    ],
+    "target_role": "Integrations developer / product engineer at a business or BSP using the WhatsApp Business Platform",
+    "workflow": "Submitting and maintaining WhatsApp message templates. Developers report that Meta rejects templates with terse or generic reasons, and that templates approved as UTILITY are later reclassified as MARKETING, which changes per-message cost. Teams manually audit template categories, reword and resubmit rejected templates, and file appeals through support channels.",
+    "trigger": "New template submission, or Meta's periodic automated category review of existing approved templates",
+    "frequency": "Per template submission, plus ongoing reclassification events reported monthly or per campaign cycle",
+    "current_workaround": "Manual review of template status in WhatsApp Manager, internal spreadsheets tracking each template's category and approval state, repeated resubmission with reworded content, and escalation via Meta support tickets or BSP account managers",
+    "consequence": "Unexpected messaging cost increases when utility templates are reclassified as marketing, delayed campaign launches, and blocked customer notifications while appeals are pending",
+    "ecosystem": "meta-developer-community",
+    "source_type": "forum",
+    "collected_at": "2025-06-01T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0004"
+    ],
+    "target_role": "Operations or compliance person (often a developer acting as one) onboarding a WhatsApp Business Account",
+    "workflow": "Completing Meta business verification and display name approval. Recurring complaints describe document submissions rejected without specific reasons, review loops lasting days to weeks, and display names rejected under ambiguous policy wording, forcing repeated manual resubmission.",
+    "trigger": "Onboarding a new business or brand to WhatsApp, or changing a display name",
+    "frequency": "Per onboarding event; retries within a single onboarding are common, and agencies/BSPs hit this repeatedly across clients",
+    "current_workaround": "Repeated manual resubmission of documents in Meta Business Settings, opening support tickets, escalating through a BSP, and maintaining checklists of accepted document formats learned by trial and error",
+    "consequence": "Go-live dates slip by weeks, client onboarding is blocked for agencies and BSPs, and engineering time is burned on a non-technical compliance queue",
+    "ecosystem": "meta-developer-community",
+    "source_type": "forum",
+    "collected_at": "2025-06-01T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0003",
+      "SRC-0005"
+    ],
+    "target_role": "Platform engineer responsible for WhatsApp infrastructure",
+    "workflow": "Migrating a phone number between BSPs or from the on-premise WhatsApp Business API to the Cloud API. The process requires manually disabling two-factor authentication on the number, re-verifying ownership, coordinating a downtime window, and reconfiguring webhooks and templates on the destination stack. Developers report numbers getting stuck between states and registration failures requiring support intervention.",
+    "trigger": "Switching BSP vendors, consolidating accounts, or migrating from on-premise API to Cloud API",
+    "frequency": "Per migration event; recurring across the ecosystem as companies change BSPs or Meta deprecates older stacks",
+    "current_workaround": "Scheduled maintenance windows, running parallel test numbers, manual coordination with both the old and new BSP, and support tickets when registration or 2FA reset fails",
+    "consequence": "Messaging downtime during cutover, risk of losing the number's quality rating or display name state, and stalled vendor migrations",
+    "ecosystem": "meta-developer-community",
+    "source_type": "forum",
+    "collected_at": "2025-06-01T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0002",
+      "SRC-0006",
+      "SRC-0001"
+    ],
+    "target_role": "Backend developer operating WhatsApp Cloud API integrations at scale",
+    "workflow": "Handling message-status webhooks (sent/delivered/read). Recurring reports describe duplicate callbacks, out-of-order statuses, missing delivered/read callbacks, and latency spikes. Because there is no reliable way to poll a message's final status, teams build their own reconciliation jobs comparing outbound send logs against received webhook statuses, plus idempotency and dedup stores to survive retries.",
+    "trigger": "Every message send; delivery incidents and callback gaps occur sporadically and at platform scale daily",
+    "frequency": "Continuous/daily for any high-volume sender",
+    "current_workaround": "Custom dedup caches keyed by message ID, scheduled reconciliation scripts that flag messages with no terminal status, alerting on webhook lag, and defensive retry logic to avoid double-sending when statuses are ambiguous",
+    "consequence": "Inaccurate delivery reporting shown to end customers, risk of duplicate customer messages if sends are retried blindly, and ongoing engineering cost to maintain homegrown reconciliation infrastructure",
+    "ecosystem": "meta-developer-community",
+    "source_type": "forum",
+    "collected_at": "2025-06-01T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002"
+    ],
+    "target_role": "Finance operations person or developer owning WhatsApp spend at a business, agency, or BSP",
+    "workflow": "Reconciling WhatsApp conversation/message charges. Recurring confusion around conversation-based pricing windows, the shift toward per-message pricing for template categories, and unexpected charges after utility templates are reclassified as marketing. Charges in Meta's invoice, the BSP's invoice, and the sender's own logs frequently do not line up, so teams reconcile them manually.",
+    "trigger": "Monthly billing cycle, plus any pricing-model change or template reclassification event",
+    "frequency": "Monthly reconciliation, with ad-hoc disputes after unexpected charges",
+    "current_workaround": "Exporting usage reports from WhatsApp Manager and the BSP, matching them against internal send logs in spreadsheets, and filing billing disputes through support tickets when totals diverge",
+    "consequence": "Overpayment that goes undetected, budget surprises mid-campaign, and client billing disputes for agencies that resell WhatsApp messaging",
+    "ecosystem": "meta-developer-community",
+    "source_type": "forum",
+    "collected_at": "2025-06-01T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0004",
+      "SRC-0003"
+    ],
+    "target_role": "Growth/operations manager or developer responsible for WhatsApp channel health",
+    "workflow": "Monitoring quality rating, per-template quality pausing, and messaging limit tiers. Teams report unexpected drops from one messaging tier to a lower one and templates being paused for quality reasons, discovered only when sends start failing. Monitoring is done by manually checking WhatsApp Manager dashboards because alerting on these state changes is incomplete.",
+    "trigger": "Customer block/report events that lower quality rating, or Meta's automated per-template quality enforcement",
+    "frequency": "Daily manual checks are common for high-volume senders; tier changes and template pauses occur without warning",
+    "current_workaround": "Manual daily dashboard checks in WhatsApp Manager, internal runbooks for appealing quality decisions, and reliance on BSP-built alerting tools where available",
+    "consequence": "Campaigns throttled or blocked during peak periods, revenue impact from reduced messaging limits, and scrambling to remediate quality after the fact instead of preventing it",
+    "ecosystem": "meta-developer-community",
+    "source_type": "forum",
+    "collected_at": "2025-06-01T00:00:00Z"
+  }
+]

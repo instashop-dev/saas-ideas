@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "pain_intensity": 3,
+    "frequency": 2,
+    "urgency": 3,
+    "economic_impact": 2,
+    "operational_impact": 2,
+    "workaround_intensity": 2,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 2,
+    "evidence_quality": 2
+  },
+  "reasoning": {
+    "pain_intensity": "SIG-002 describes rejections without specific reasons and review loops of days to weeks — genuinely frustrating, but this is onboarding friction, not an operational failure. Nothing breaks; a launch is merely delayed. SIG-004 does not even express pain — it neutrally states the user is 'undergoing business verification.' One substantive complaint source supports moderate, not severe, pain.",
+    "frequency": "This is the cluster's weakest dimension. Business verification is a one-time event per business entity; display name approval recurs only on name/number changes. For the stated target user (an ops/compliance person onboarding 'a WhatsApp Business Account'), this pain occurs once, maybe twice. Only agencies/BSPs onboarding many clients experience recurrence, and that segment is not the stated target user. Neither SIG-002 nor SIG-004 indicates recurrence.",
+    "urgency": "SIG-002 implies the delay blocks WhatsApp API onboarding, which gives it some urgency — a planned channel launch is stalled. But the business is not blocked overall; email, SMS, and other channels continue to operate. Days-to-weeks delay is costly to a launch timeline but is not 'blocking operations' in the 5/5 sense.",
+    "economic_impact": "No dollar figures appear in either source. The cost is a delayed channel launch and some staff time on resubmissions. For most SMBs this is hundreds to low thousands of dollars in opportunity cost at most, incurred once. There is no evidence of revenue loss, compliance fines, or churn attributable to this delay.",
+    "operational_impact": "The delay blocks one communication channel's go-live, not the team. The ops person spends intermittent effort resubmitting; the rest of the organization continues normally. SIG-002 describes annoyance and delay, not operational stoppage.",
+    "workaround_intensity": "The stated workaround — resubmitting documents, opening tickets, escalating through a BSP, keeping checklists — is real but episodic effort measured in hours spread over weeks, not a full-time role. 'Trial and error checklists' (per the cluster description, extrapolating from SIG-002) is mild process debt, not an intense workaround.",
+    "willingness_to_pay": "Critical weakness: the market has already routed around this pain via BSPs (Twilio, 360dialog, MessageBird, etc.) who bundle verification handling into onboarding — that is what the BSP escalation path in the workaround description shows. No evidence in SIG-002 or SIG-004 shows anyone paying for a standalone solution. Worse, the root cause is Meta's opaque review process; a third-party SaaS cannot shorten Meta's review queue or force specific rejection feedback. The only sellable value is document pre-validation checklists — content Meta and BSPs already publish.",
+    "global_applicability": "The one genuinely strong dimension. Meta business verification is a global process; document-type variation by country exists but the rejection-opacity pain is plausibly universal. SIG-002 (developer forum) and SIG-004 (Play review) are consistent with a global user base. Scored 4 rather than 5 because country-specific document requirements fragment any solution.",
+    "customer_accessibility": "The buyer is an ops person experiencing a transient, one-time pain — there is no natural moment or channel to reach them during the 1–3 week window of suffering, and once verified they never need the product again. The reachable, concentrated buyers (BSPs, agencies) already possess this expertise in-house, which is their value proposition. No evidence identifies a reachable buyer segment.",
+    "evidence_quality": "Effectively one substantive source. SIG-002 is a single forum complaint. SIG-004 is a neutral description of undergoing verification with no expressed pain, rejection, or delay — it barely qualifies as supporting evidence. The cluster's '2 independent sources' overstates the case. No quantified data, no verified multiple independent complaints, no evidence of spend."
+  },
+  "verified_facts": [
+    "SIG-002: At least one Meta developer community user reports document rejections without specific reasons and review loops lasting days to weeks during business verification/display name approval.",
+    "SIG-004: At least one Google Play reviewer references undergoing business verification to access the WhatsApp Business API or advanced features.",
+    "Meta business verification is a required step for WhatsApp Business API access (implied by both signals)."
+  ],
+  "inferences": [
+    "Some users experience multi-week onboarding delays due to opaque rejection feedback (inferred from SIG-002 only).",
+    "Users resort to trial-and-error resubmission and support/BSP escalation rather than a systematic solution (inferred from the cluster's workaround description, consistent with SIG-002).",
+    "The pain is absorbed today primarily through BSPs, suggesting the market has an existing incumbent solution channel."
+  ],
+  "assumptions": [
+    "That SIG-002's experience is representative of a broad population rather than an unlucky minority — unsupported by the evidence.",
+    "That review loops 'lasting days to weeks' are the norm rather than the tail of the distribution.",
+    "That the target user is responsible for multiple onboardings (needed to make frequency non-trivial) — contradicted by the cluster's own singular 'a WhatsApp Business Account' phrasing.",
+    "That Meta has not already mitigated this via embedded signup and improved verification flows since these signals were captured."
+  ],
+  "unknowns": [
+    "Actual rejection rates and the distribution of review times across the verifier population.",
+    "Whether any business has paid for a standalone verification-assistance product, and at what price.",
+    "Whether the pain persists under Meta's current onboarding flows (signal dates vs. platform changes).",
+    "Segment-level frequency: whether agencies/BSPs (the only recurring-pain segment) would buy a tool instead of relying on in-house expertise.",
+    "Whether a third party can meaningfully influence Meta's review outcomes at all — the core feasibility question."
+  ],
+  "overall_assessment": "This cluster describes a real but structurally weak SaaS opportunity. The evidence base is thin: one substantive complaint (SIG-002) plus one neutral mention (SIG-004) that does not actually express pain. More fundamentally, the pain is a one-time-per-business onboarding event, which destroys frequency and creates churn-by-design economics; the root cause is Meta's internal review process, which no third-party product can fix — a tool can only offer document checklists that Meta and BSPs already publish; and the market has already routed around the pain through BSPs who bundle verification handling into onboarding, undercutting willingness to pay for a standalone product. The strongest dimension is global applicability, but a universally experienced one-time annoyance with an incumbent absorption channel is a feature or agency service add-on, not a burning need. Total score 24/50 — well below the burning-need threshold. Recommendation: reject as a standalone opportunity; at most, revisit as a feature within a broader WhatsApp onboarding/compliance toolkit aimed at agencies, and only after gathering quantified evidence of rejection rates and existing spend."
+}

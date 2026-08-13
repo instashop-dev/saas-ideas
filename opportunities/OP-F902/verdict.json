@@ -1,0 +1,175 @@
+{
+  "id": "OP-F902",
+  "canonical_key": "CK-efdec67afdea3045",
+  "title": "When I need to maintain WhatsApp automation using unofficial libraries, I want a stable, well-mainta",
+  "target_user": "WhatsApp Automation Developer / Business Operator",
+  "job_to_be_done": "When I need to maintain WhatsApp automation using unofficial libraries, I want a stable, well-maintained library that doesn't break with every WhatsApp update, so I can avoid constant re-authentication, patching, and downtime.",
+  "painful_workflow": "Maintaining WhatsApp automation by constantly re-pairing devices and re-authenticating sessions after WhatsApp updates break unofficial libraries.",
+  "current_workaround": "Manually regenerate QR codes, re-link devices, downgrade library versions, or maintain multiple fallback accounts.",
+  "source_ids": [
+    "SIG-0001",
+    "SIG-0006",
+    "SIG-0007",
+    "SIG-0010"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 3,
+  "frequency_score": 3,
+  "urgency_score": 3,
+  "economic_impact_score": 2,
+  "operational_impact_score": 3,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 2,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 2,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "Baileys (WhatsApp Web API)",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "OPEN_SOURCE",
+      "notes": "Most popular unofficial WhatsApp Web library. Actively maintained but still breaks with WhatsApp updates. Requires manual re-authentication periodically. The problem this opportunity targets is the core pain of Baileys users.",
+      "feature_overlap": "Full WhatsApp Web API coverage, multi-device support, session persistence",
+      "pricing": "Free (open source)",
+      "market_positioning": "The de facto standard unofficial WhatsApp library for Node.js developers"
+    },
+    {
+      "name": "whatsapp-web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Popular wrapper around WhatsApp Web. Same fundamental problem - breaks when WhatsApp updates. Users report frequent QR re-generation needs.",
+      "feature_overlap": "WhatsApp Web automation, message sending/receiving, media handling",
+      "pricing": "Free (open source)",
+      "market_positioning": "Beginner-friendly WhatsApp Web automation library"
+    },
+    {
+      "name": "WhatsApp Business API (Official)",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "SUBSTITUTE",
+      "notes": "Official solution but requires business verification, has strict rate limits, costs per conversation, and doesn't support all use cases (e.g., personal accounts, bulk messaging without templates). Not a direct substitute for unofficial library users.",
+      "feature_overlap": "Message sending/receiving, webhooks, media",
+      "pricing": "Pay per conversation (~$0.005-$0.08 per conversation)",
+      "market_positioning": "Enterprise-grade official WhatsApp integration"
+    },
+    {
+      "name": "WhatsApp Cloud API (Meta)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "SUBSTITUTE",
+      "notes": "Meta's hosted version of Business API. Same limitations as Business API - requires business verification, template messages, no personal account support.",
+      "feature_overlap": "Cloud-hosted WhatsApp API, webhooks, media",
+      "pricing": "Pay per conversation",
+      "market_positioning": "Meta's official cloud-hosted WhatsApp API"
+    },
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io/",
+      "classification": "SERVICE",
+      "notes": "Managed WhatsApp Business API platform. Not a direct competitor to a library - it's a full SaaS product. Targets businesses wanting out-of-box solution, not developers needing a library.",
+      "feature_overlap": "WhatsApp messaging, automation, team inbox",
+      "pricing": "Paid SaaS ($49+/month)",
+      "market_positioning": "WhatsApp Business API platform for customer communication"
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Twilio's WhatsApp Business API integration. Same limitations as official API - requires business verification, template approval, per-conversation pricing.",
+      "feature_overlap": "WhatsApp messaging via API",
+      "pricing": "Pay per conversation (~$0.005-$0.08)",
+      "market_positioning": "Developer-friendly WhatsApp Business API via Twilio"
+    },
+    {
+      "name": "Venom Bot",
+      "url": "https://github.com/orkestral/venom",
+      "classification": "OPEN_SOURCE",
+      "notes": "Another WhatsApp Web automation library. Same fundamental stability issues. Less actively maintained than Baileys.",
+      "feature_overlap": "WhatsApp Web automation, multi-device",
+      "pricing": "Free (open source)",
+      "market_positioning": "WhatsApp Web automation for bots"
+    },
+    {
+      "name": "WhatsApp Web JS (various forks)",
+      "url": "https://github.com/search?q=whatsapp+web+js&type=repositories",
+      "classification": "OPEN_SOURCE",
+      "notes": "Numerous forks and variants of whatsapp-web.js and Baileys. All suffer from same core problem - unofficial protocol reverse engineering.",
+      "feature_overlap": "WhatsApp Web automation",
+      "pricing": "Free (open source)",
+      "market_positioning": "Fragmented ecosystem of forks"
+    },
+    {
+      "name": "ChatAPI (WhatsApp Gateway Service)",
+      "url": "https://chatapi.com/",
+      "classification": "SERVICE",
+      "notes": "Managed WhatsApp gateway that uses unofficial methods. Provides stable API but still subject to WhatsApp blocking. Users report occasional downtime.",
+      "feature_overlap": "WhatsApp API, session management, webhooks",
+      "pricing": "Paid SaaS (~$30-100+/month)",
+      "market_positioning": "Managed WhatsApp API gateway"
+    },
+    {
+      "name": "WhatsApp Gateway (various providers)",
+      "url": "https://www.google.com/search?q=whatsapp+gateway+service",
+      "classification": "SERVICE",
+      "notes": "Many small providers offering WhatsApp gateway services. Most use unofficial methods and face same stability issues. Some claim better uptime.",
+      "feature_overlap": "WhatsApp API, session management",
+      "pricing": "Variable ($20-200+/month)",
+      "market_positioning": "Managed WhatsApp gateway services"
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Telegram Bot API",
+      "url": "https://core.telegram.org/bots/api",
+      "classification": "SUBSTITUTE",
+      "notes": "Official, stable, free API. Not WhatsApp but solves similar communication automation needs without stability issues.",
+      "feature_overlap": "Messaging automation, bots, webhooks",
+      "pricing": "Free",
+      "market_positioning": "Official Telegram bot platform"
+    },
+    {
+      "name": "Signal Bot (unofficial)",
+      "url": "https://github.com/signalapp/Signal-Desktop",
+      "classification": "SUBSTITUTE",
+      "notes": "Signal has unofficial libraries but same stability problems. Not a viable substitute.",
+      "feature_overlap": "Secure messaging automation",
+      "pricing": "Free",
+      "market_positioning": "Signal messaging automation"
+    }
+  ],
+  "verified_facts": [
+    "Unofficial WhatsApp libraries require re-pairing and re-authentication after WhatsApp updates (SIG-0001).",
+    "Developers continuously patch unofficial libraries to keep them working (SIG-0006).",
+    "Multi-device synchronization issues occur with unofficial libraries (SIG-0007).",
+    "Manual handling of end-to-end encryption is needed with unofficial libraries (SIG-0010)."
+  ],
+  "inferences": [
+    "The pain is self-inflicted by choosing unofficial libraries over the official WhatsApp Business API.",
+    "The frequency of breakage is tied to WhatsApp's update cycle, which is unpredictable but not daily.",
+    "Developers who rely on unofficial libraries are likely cost-sensitive or building small-scale automations."
+  ],
+  "assumptions": [
+    "The evidence represents a significant portion of the target user base (only 4 signals from one source).",
+    "The workaround effort is not automated by the developers themselves.",
+    "Users would be willing to pay for a stable library rather than using free alternatives."
+  ],
+  "unknowns": [
+    "How many developers are affected? No user count or market size data.",
+    "What is the actual downtime cost per incident? No revenue or time-loss figures.",
+    "Are there existing paid solutions that already solve this? (e.g., Twilio, MessageBird, official API).",
+    "How often do WhatsApp updates actually break these libraries? No frequency data.",
+    "What is the churn rate or abandonment rate due to this pain?"
+  ],
+  "rejection_reasons": [
+    "Competition cap reached: only 10 survivors allowed"
+  ],
+  "judge_verdict": "",
+  "confidence": 0,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "competition",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:31:53.302Z",
+  "updated_at": "2026-08-13T05:35:31.395Z"
+}

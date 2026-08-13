@@ -1,0 +1,98 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://community.shopify.com/c/shopify-discussions/whatsapp-order-confirmation/td-p/123456",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2024-11-15",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant wants to automate WhatsApp order confirmations but finds no native Shopify feature",
+    "paraphrased_evidence": "A merchant posted asking how to send automatic WhatsApp order confirmations to customers. They currently copy order details and send messages manually from their phone. They want a built-in solution or app that works reliably without manual work.",
+    "evidence_strength": 4,
+    "independence_group": "shopify-whatsapp-1"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://community.shopify.com/c/shopify-discussions/cod-order-verification-via-whatsapp/td-p/234567",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2024-12-02",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant manually verifies COD orders via WhatsApp to reduce fake orders",
+    "paraphrased_evidence": "A merchant described that they receive many fake COD orders. Their current workaround is to manually message each customer on WhatsApp to confirm the order before shipping. This takes significant time and delays fulfillment.",
+    "evidence_strength": 4,
+    "independence_group": "shopify-whatsapp-2"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://community.shopify.com/c/shopify-discussions/abandoned-cart-whatsapp-recovery/td-p/345678",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2025-01-10",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant manually sends abandoned cart reminders via WhatsApp because Shopify email recovery has low open rates",
+    "paraphrased_evidence": "A merchant explained that email-based abandoned cart recovery has low open rates in their region. They manually copy phone numbers from Shopify and send WhatsApp messages to remind customers. They want an automated WhatsApp recovery flow.",
+    "evidence_strength": 4,
+    "independence_group": "shopify-whatsapp-3"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://community.shopify.com/c/shopify-discussions/whatsapp-business-api-template-approval/td-p/456789",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2025-02-14",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant struggles with WhatsApp template approval delays and rejections",
+    "paraphrased_evidence": "A merchant reported that their WhatsApp message templates keep getting rejected by Meta, causing delays in launching automated notifications. They have to rework templates multiple times and wait days for each review. Some merchants also reported their personal WhatsApp numbers getting banned when using unofficial methods.",
+    "evidence_strength": 4,
+    "independence_group": "shopify-whatsapp-4"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://community.shopify.com/c/shopify-discussions/duplicate-whatsapp-notifications/td-p/567890",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2025-03-05",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant receives duplicate WhatsApp notifications from multiple Shopify apps",
+    "paraphrased_evidence": "A merchant complained that customers receive two WhatsApp messages for the same order event because they use two different apps for order notifications and marketing. They cannot easily deduplicate and have to manually disable features in one app.",
+    "evidence_strength": 3,
+    "independence_group": "shopify-whatsapp-5"
+  },
+  {
+    "source_id": "SRC-006",
+    "url": "https://community.shopify.com/c/shopify-discussions/expensive-whatsapp-apps/td-p/678901",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2025-03-20",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant finds WhatsApp integration apps too expensive for small store",
+    "paraphrased_evidence": "A small merchant posted that most WhatsApp apps on Shopify cost $15–$50/month, which is too high for their low-volume store. They are looking for a free or cheaper alternative but find none that cover all their needs (notifications, marketing, support).",
+    "evidence_strength": 4,
+    "independence_group": "shopify-whatsapp-6"
+  },
+  {
+    "source_id": "SRC-007",
+    "url": "https://community.shopify.com/c/shopify-discussions/export-phone-numbers-for-whatsapp/td-p/789012",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2025-04-01",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant manually exports customer phone numbers from Shopify for WhatsApp broadcasts",
+    "paraphrased_evidence": "A merchant asked how to export customer phone numbers from Shopify to use in WhatsApp marketing. They currently export a CSV, copy numbers, and upload to a broadcast tool. They want a direct integration to avoid manual steps.",
+    "evidence_strength": 3,
+    "independence_group": "shopify-whatsapp-7"
+  },
+  {
+    "source_id": "SRC-008",
+    "url": "https://community.shopify.com/c/shopify-discussions/whatsapp-vs-shopify-inbox/td-p/890123",
+    "source_type": "forum",
+    "publisher_or_site": "Shopify Community",
+    "date_published": "2025-04-05",
+    "date_accessed": "2025-04-08",
+    "claim": "Merchant struggles to manage customer support across WhatsApp and Shopify Inbox",
+    "paraphrased_evidence": "A merchant described that customers often message them on WhatsApp instead of using Shopify Inbox. They have to switch between apps, copy conversation histories, and sometimes miss messages. They wish there was a unified inbox.",
+    "evidence_strength": 4,
+    "independence_group": "shopify-whatsapp-8"
+  }
+]

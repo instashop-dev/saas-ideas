@@ -1,0 +1,154 @@
+{
+  "id": "OP-B7BD",
+  "canonical_key": "CK-055c120a43e20ee5",
+  "title": "When I need to manage WhatsApp groups programmatically (add/remove members, send announcements, retr",
+  "target_user": "WhatsApp Automation Developer / Business Operator",
+  "job_to_be_done": "When I need to manage WhatsApp groups programmatically (add/remove members, send announcements, retrieve participant lists), I want full group management APIs, so I can scale group-based communication without risking account bans.",
+  "painful_workflow": "Manually managing group participants, sending bulk messages to groups, and handling group metadata because the unofficial libraries lack full group management APIs.",
+  "current_workaround": "Write custom scripts using low-level protocol commands or use multiple library versions to cover different group operations.",
+  "source_ids": [
+    "SIG-0004"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 3,
+  "economic_impact_score": 2,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 1,
+  "competitors": [
+    {
+      "name": "Baileys (WhatsApp Web API)",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "OPEN_SOURCE",
+      "notes": "Unofficial multi-device WhatsApp Web API. Provides group management capabilities but is unofficial, bans risk, and requires significant custom handling. No SaaS offering.",
+      "feature_overlap": "Can add/remove members, send messages to groups, retrieve participants",
+      "pricing": "Free (self-hosted)",
+      "market_positioning": "Unofficial library for WhatsApp automation developers"
+    },
+    {
+      "name": "WhatsApp Business API (Meta)",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "DIRECT",
+      "notes": "OFFICIAL Meta API. However, it does NOT expose group management APIs. Only supports business notifications to customers who opt-in. Cannot add/remove groups, manage group participants, or send to arbitrary groups. MASSIVE gap.",
+      "feature_overlap": "Sending messages to users (but not groups), no group management",
+      "pricing": "Per conversation pricing ($0.005-0.08 per message depending on region)",
+      "market_positioning": "Enterprise customer communication tool"
+    },
+    {
+      "name": "WAToolkit / WhatsApp Web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Unofficial WhatsApp Web wrapper. Provides basic group operations but same risks as Baileys: ban risk, no official support, requires self-hosting, scraping approach.",
+      "feature_overlap": "Add/remove members, send group messages, get participants",
+      "pricing": "Free (self-hosted)",
+      "market_positioning": "Unofficial WhatsApp automation library for Node.js"
+    },
+    {
+      "name": "WPPConnect",
+      "url": "https://github.com/wppconnect-team/wppconnect",
+      "classification": "OPEN_SOURCE",
+      "notes": "Unofficial WhatsApp automation tool. Group management possible but bans risk, unstable, requires WhatsApp Web scraping. No SaaS offering.",
+      "feature_overlap": "Group creation, member management, messaging",
+      "pricing": "Free (self-hosted)",
+      "market_positioning": "WhatsApp automation for developers"
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Uses WhatsApp Business API underneath. Same limitation: NO group management capabilities. Only 1:1 messaging.",
+      "feature_overlap": "Sending messages (but not to groups)",
+      "pricing": "$0.005 per message outgoing, $0.004 incoming (India rates)",
+      "market_positioning": "Cloud communications platform"
+    },
+    {
+      "name": "MessageBird (Bird) WhatsApp API",
+      "url": "https://www.bird.com/whatsapp",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Same WhatsApp Business API wrapper. No group management.",
+      "feature_overlap": "Sending WhatsApp messages (1:1 only)",
+      "pricing": "Per message pricing",
+      "market_positioning": "Omnichannel communication platform"
+    },
+    {
+      "name": "Chat-API.com",
+      "url": "https://chat-api.com",
+      "classification": "PARTIAL",
+      "notes": "Unofficial WhatsApp API service. Provides group management but is scraping-based, bans risk, and reliability is questionable. Operates as SaaS but uses unofficial methods.",
+      "feature_overlap": "Basic group management, group messaging",
+      "pricing": "Paid plans (€10-€100/month)",
+      "market_positioning": "Unofficial WhatsApp API as service"
+    },
+    {
+      "name": "Ultramsg",
+      "url": "https://ultramsg.com",
+      "classification": "PARTIAL",
+      "notes": "Another unofficial WhatsApp API service. Claims group management but same scraping/ban risk.",
+      "feature_overlap": "Group operations, group messaging",
+      "pricing": "Freemium + paid plans",
+      "market_positioning": "WhatsApp API alternative for developers"
+    },
+    {
+      "name": "WATI.io",
+      "url": "https://wati.io",
+      "classification": "SUBSTITUTE",
+      "notes": "Official WhatsApp Business API partner. Focuses on customer support/marketing. No group management APIs available.",
+      "feature_overlap": "WhatsApp messaging, templates, automation (but no programmatic group management)",
+      "pricing": "$49/month+",
+      "market_positioning": "WhatsApp Business API for customer engagement"
+    },
+    {
+      "name": "Trengo",
+      "url": "https://trengo.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Unified inbox with WhatsApp. No programmatic group management.",
+      "feature_overlap": "WhatsApp messaging aggregated with other channels",
+      "pricing": "€29/month+",
+      "market_positioning": "Customer communication platform"
+    }
+  ],
+  "substitutes": [],
+  "verified_facts": [
+    "There is a GitHub issue (SIG-0004) that mentions manual management of WhatsApp groups due to lack of full group management APIs in unofficial libraries.",
+    "The current workaround involves custom scripts using low-level protocol commands or multiple library versions."
+  ],
+  "inferences": [
+    "The problem likely exists for a subset of WhatsApp automation developers.",
+    "The risk of account bans is a plausible concern when using unofficial methods, though not explicitly stated in the evidence.",
+    "The user is likely trying to scale group-based communication beyond what free libraries easily support."
+  ],
+  "assumptions": [
+    "The developer needs to manage groups frequently (e.g., daily or weekly).",
+    "The workaround is time-consuming and risky enough to justify a paid solution.",
+    "There is no existing commercial product that adequately solves this specific need.",
+    "The target user is willing to pay for a SaaS product rather than continue using free libraries."
+  ],
+  "unknowns": [
+    "How many developers face this exact problem?",
+    "What is the actual frequency of group management operations?",
+    "Are there existing open-source solutions that partially address the need?",
+    "What is the specific gap in the unofficial libraries (e.g., which API features are missing)?",
+    "Is the user aware of and able to use the official WhatsApp Business API?",
+    "What is the severity of the account ban risk?",
+    "Is there any evidence of economic impact or revenue loss from this problem?"
+  ],
+  "rejection_reasons": [
+    "Judge rejected: Low willingness to pay (1/5) and low pain intensity (2/5) indicate insufficient market demand to sustain a SaaS business, despite the technical gap in group management APIs."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.85,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:31:39.260Z",
+  "updated_at": "2026-08-13T05:44:40.533Z"
+}

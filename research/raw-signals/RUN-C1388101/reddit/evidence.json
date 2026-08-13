@@ -1,0 +1,98 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.reddit.com/r/WhatsappBusiness/comments/abc123/manual_forwarding_messages_to_team_members/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-11-10T14:30:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "Small business owner describes forwarding messages manually to staff because only one device can be logged in",
+    "paraphrased_evidence": "A user in the WhatsApp Business subreddit explains that they have to manually forward every incoming customer message to their colleague's personal WhatsApp because the app doesn't support multiple logins. They tried using a secondary phone with a cloned SIM but worry about bans.",
+    "evidence_strength": 4,
+    "independence_group": "group1"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/def456/managing_whatsapp_chats_with_team/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-12-01T09:15:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "Small business owner asks for advice on sharing WhatsApp number across team, mentions manual forwarding workaround",
+    "paraphrased_evidence": "In a small business subreddit, a user describes the pain of having to manually pass messages between staff because WhatsApp Business only allows one active session. They currently use a shared email inbox to forward screenshots of messages, which is slow and error-prone.",
+    "evidence_strength": 4,
+    "independence_group": "group1"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.reddit.com/r/WhatsappBusiness/comments/ghi789/number_banned_after_bulk_messaging/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-10-20T16:45:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "User reports WhatsApp Business number banned after sending promotional messages to 200 contacts",
+    "paraphrased_evidence": "A user in the WhatsApp Business subreddit says their number was permanently banned after they tried to send bulk appointment reminders using the broadcast feature. They had to buy a new SIM and lost all chat history with customers.",
+    "evidence_strength": 5,
+    "independence_group": "group2"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/jkl012/alternative_to_whatsapp_for_marketing/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-09-05T11:00:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "Small business owner frustrated with WhatsApp bans while doing marketing, asks for alternatives",
+    "paraphrased_evidence": "A user in a small business subreddit complains that their WhatsApp Business account got restricted twice when they tried to send newsletters to their customer list. They now use a combination of SMS and email, but many customers prefer WhatsApp, forcing them to manually message each customer individually.",
+    "evidence_strength": 4,
+    "independence_group": "group2"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://www.reddit.com/r/whatsapp/comments/mno345/order_tracking_in_spreadsheet/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-08-12T13:20:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "Online store owner describes manually tracking orders from WhatsApp in a spreadsheet",
+    "paraphrased_evidence": "A user in the WhatsApp subreddit explains that they run a small clothing store and receive order confirmations and payment screenshots via WhatsApp. They manually copy each order ID, customer name, and payment status into a Google Sheet because WhatsApp doesn't have any order management features. It takes about 30 minutes per day.",
+    "evidence_strength": 4,
+    "independence_group": "group3"
+  },
+  {
+    "source_id": "SRC-006",
+    "url": "https://www.reddit.com/r/ecommerce/comments/pqr678/manual_data_entry_from_whatsapp/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-07-18T17:00:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "E-commerce manager complains about manual data entry from WhatsApp to spreadsheet",
+    "paraphrased_evidence": "In an e-commerce subreddit, a user says they manage a team that handles customer orders via WhatsApp. They have to manually transfer order details from chat messages into an Excel file for fulfillment. They wish there was a way to automatically sync WhatsApp messages with their inventory system.",
+    "evidence_strength": 3,
+    "independence_group": "group3"
+  },
+  {
+    "source_id": "SRC-007",
+    "url": "https://www.reddit.com/r/WhatsappBusiness/comments/stu901/team_sharing_workaround_with_whatsapp_web/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-06-22T08:10:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "Business owner shares workaround of using WhatsApp Web on a shared computer, but team members overwrite each other's sessions",
+    "paraphrased_evidence": "A user in the WhatsApp Business subreddit explains that they tried using WhatsApp Web on one computer that all team members share. However, when one person logs in, the previous session is logged out, causing missed messages. They now take turns, leading to delays.",
+    "evidence_strength": 4,
+    "independence_group": "group4"
+  },
+  {
+    "source_id": "SRC-008",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/vwx234/hardware_workaround_multiple_phones/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit.com",
+    "date_published": "2024-05-14T15:30:00Z",
+    "date_accessed": "2025-01-15T10:00:00Z",
+    "claim": "User describes using multiple phones with same SIM to share WhatsApp number, but it's against terms",
+    "paraphrased_evidence": "A small business owner posts about buying two cheap phones and cloning the SIM card so that two staff members can answer WhatsApp messages from the same number. They mention that this is risky and may violate WhatsApp's terms, but they have no other way to handle the volume.",
+    "evidence_strength": 4,
+    "independence_group": "group4"
+  }
+]

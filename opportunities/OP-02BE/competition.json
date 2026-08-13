@@ -1,0 +1,81 @@
+{
+  "competition_score": 1,
+  "queries_attempted": [
+    "WhatsApp phone number migration tool",
+    "migrate WhatsApp Business API number between BSPs",
+    "WhatsApp number porting service",
+    "WhatsApp BSP migration automation",
+    "WhatsApp Cloud API migration from on-premise",
+    "WhatsApp number migration without downtime",
+    "WhatsApp number migration software",
+    "WhatsApp number migration API",
+    "migrate WhatsApp number from Twilio to MessageBird",
+    "WhatsApp number migration consultant"
+  ],
+  "competitors": [
+    {
+      "name": "Meta WhatsApp Business API Migration Guide",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/migrate-numbers",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official documentation from Meta outlining steps to migrate numbers from on-premise to Cloud API or between BSPs. Not a tool – it's a manual guide. No automation or UI.",
+      "feature_overlap": "Provides step-by-step instructions for disabling 2FA, re-verifying ownership, and reconfiguring webhooks. Overlaps with the problem description but requires manual execution.",
+      "pricing": "Free (documentation)",
+      "market_positioning": "Meta's official reference for migration; not a commercial product."
+    },
+    {
+      "name": "Twilio WhatsApp Number Migration Support",
+      "url": "https://www.twilio.com/docs/whatsapp/migrate-numbers",
+      "classification": "SERVICE",
+      "notes": "Twilio offers support and documentation for migrating numbers to/from their platform. They provide a migration checklist and can assist via support tickets. Not a standalone tool.",
+      "feature_overlap": "Covers the same workflow (disable 2FA, verify ownership, update webhooks) but relies on manual steps and Twilio support team involvement.",
+      "pricing": "Included with Twilio WhatsApp API usage; no separate fee for migration support.",
+      "market_positioning": "Part of Twilio's CPaaS offering; positions migration as a supported process, not a product."
+    },
+    {
+      "name": "MessageBird Number Porting",
+      "url": "https://developers.messagebird.com/docs/whatsapp/migrate-numbers",
+      "classification": "SERVICE",
+      "notes": "MessageBird provides documentation and support for porting WhatsApp numbers. They have a dedicated migration team for complex cases. Still manual coordination.",
+      "feature_overlap": "Same core steps; offers a migration form and support ticket system. No self-service automation.",
+      "pricing": "Included with MessageBird WhatsApp API usage.",
+      "market_positioning": "Value-added service for customers switching to/from MessageBird."
+    },
+    {
+      "name": "GitHub: whatsapp-number-migration-script",
+      "url": "https://github.com/search?q=whatsapp+number+migration",
+      "classification": "OPEN_SOURCE",
+      "notes": "Several open-source scripts exist that attempt to automate parts of the migration (e.g., resetting 2FA via API, updating webhooks). Quality varies, no official support, often outdated.",
+      "feature_overlap": "Automates some API calls but lacks end-to-end orchestration, error handling, and zero-downtime guarantees.",
+      "pricing": "Free (open source)",
+      "market_positioning": "Hobbyist or internal tooling; not a polished SaaS product."
+    },
+    {
+      "name": "WATI Migration Services",
+      "url": "https://www.wati.io/migrate-to-wati/",
+      "classification": "SERVICE",
+      "notes": "WATI (a WhatsApp BSP) offers migration assistance for businesses moving to their platform. They handle the process manually with dedicated support.",
+      "feature_overlap": "Covers the full migration workflow but is a service, not a self-service tool. Requires engaging WATI sales/support.",
+      "pricing": "Free for WATI customers (included in onboarding).",
+      "market_positioning": "Part of WATI's customer acquisition; not a standalone product."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Manual scheduled maintenance with parallel test numbers",
+      "url": "",
+      "classification": "SUBSTITUTE",
+      "notes": "Common workaround: run a second number in parallel, test, then switch. No tooling, high operational overhead.",
+      "feature_overlap": "Achieves the same outcome (migration) but with downtime, manual steps, and risk of message loss.",
+      "pricing": "N/A (internal process)",
+      "market_positioning": "Default approach for most platform engineers today."
+    }
+  ],
+  "summary": "No dedicated SaaS product exists for migrating WhatsApp phone numbers between BSPs or from on-premise to Cloud API. The problem is currently solved through manual processes, BSP-provided support services, open-source scripts, or Meta's own documentation. All existing solutions require significant manual coordination, support tickets, or custom scripting. There is no purpose-built tool that offers a seamless, automated, zero-downtime migration experience. The competitive landscape is virtually empty for a self-service SaaS product targeting this specific JTBD.",
+  "research_evidence_urls": [
+    "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/migrate-numbers",
+    "https://www.twilio.com/docs/whatsapp/migrate-numbers",
+    "https://developers.messagebird.com/docs/whatsapp/migrate-numbers",
+    "https://github.com/search?q=whatsapp+number+migration",
+    "https://www.wati.io/migrate-to-wati/"
+  ]
+}

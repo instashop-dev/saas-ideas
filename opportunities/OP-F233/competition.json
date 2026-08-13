@@ -1,0 +1,228 @@
+{
+  "competition_score": 4,
+  "queries_attempted": [
+    "bulk WhatsApp sender without ban",
+    "WhatsApp marketing software anti-ban",
+    "WhatsApp Business API for SMB",
+    "WhatsApp broadcast tool small business",
+    "WhatsApp automation open source",
+    "WhatsApp bulk messaging service",
+    "WhatsApp marketing platform",
+    "WhatsApp spam tool",
+    "WhatsApp Web automation script",
+    "WhatsApp unofficial API bulk sender",
+    "WhatsApp Business API reseller",
+    "how to send bulk WhatsApp messages without getting banned"
+  ],
+  "competitors": [
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io/",
+      "classification": "DIRECT",
+      "notes": "Purpose-built WhatsApp Business API platform for SMBs. Provides bulk campaign sending, team inbox, and chatbots. Uses official WhatsApp Business API, which reduces ban risk when used within policy. Directly addresses the JTBD of sending bulk promotional/transactional messages without losing the number.",
+      "feature_overlap": "Bulk WhatsApp broadcasts, contact management, message templates, automation, shared inbox, analytics.",
+      "pricing": "Starts around $49/month (billed annually), plus per-message fees from Meta.",
+      "market_positioning": "WhatsApp Business API for support and marketing, targeting SMBs and growing teams."
+    },
+    {
+      "name": "AiSensy",
+      "url": "https://aisensy.com/",
+      "classification": "DIRECT",
+      "notes": "Dedicated WhatsApp marketing and automation platform. Offers bulk campaigns, no-code chatbot builder, and WhatsApp Business API onboarding. Positions itself as a solution to avoid number bans by using official API.",
+      "feature_overlap": "Bulk broadcasts, drip campaigns, chatbots, catalog sharing, team inbox, CRM integrations.",
+      "pricing": "Starts around $39/month plus Meta per-message fees.",
+      "market_positioning": "WhatsApp marketing & automation platform for businesses to send campaigns at scale without bans."
+    },
+    {
+      "name": "Interakt",
+      "url": "https://www.interakt.shop/",
+      "classification": "DIRECT",
+      "notes": "WhatsApp business platform popular in India. Provides bulk campaigns, automation, shared inbox, and official API integration. Helps SMBs send promotional WhatsApp messages while staying compliant.",
+      "feature_overlap": "Bulk WhatsApp broadcasts, automated flows, chat widget, team inbox, product catalogs.",
+      "pricing": "Plans from ₹999/month (approx $12) plus Meta fees.",
+      "market_positioning": "WhatsApp Business API for Indian SMBs to grow sales and support."
+    },
+    {
+      "name": "Gallabox",
+      "url": "https://gallabox.com/",
+      "classification": "DIRECT",
+      "notes": "WhatsApp business suite for SMBs. Bulk campaigns, automation, and team collaboration. Uses official API to reduce ban risk.",
+      "feature_overlap": "Bulk messaging, broadcast lists, chatbots, shared inbox, integrations.",
+      "pricing": "Plans from ₹999/month (approx $12) plus Meta fees.",
+      "market_positioning": "WhatsApp Business Platform for sales, marketing, and support teams."
+    },
+    {
+      "name": "DoubleTick",
+      "url": "https://doubletick.io/",
+      "classification": "DIRECT",
+      "notes": "WhatsApp API and automation platform for sales and marketing. Provides bulk messaging, sequences, and an unofficial anti-ban 'warm-up' feature in some plans. Direct competitor.",
+      "feature_overlap": "Bulk campaigns, WhatsApp automation, lead management, broadcast scheduling, API access.",
+      "pricing": "Plans from around ₹999/month (approx $12) plus Meta fees.",
+      "market_positioning": "WhatsApp API for sales teams to send bulk messages and automate follow-ups."
+    },
+    {
+      "name": "QuickReply.ai",
+      "url": "https://quickreply.ai/",
+      "classification": "DIRECT",
+      "notes": "WhatsApp marketing and automation platform aimed at e-commerce/D2C brands. Enables bulk promotional campaigns and automated flows via official API.",
+      "feature_overlap": "Bulk WhatsApp campaigns, cart recovery, order updates, chatbots, segmentation.",
+      "pricing": "Custom pricing, typically starting around $50/month.",
+      "market_positioning": "WhatsApp marketing and automation for D2C brands to drive revenue."
+    },
+    {
+      "name": "Zoko",
+      "url": "https://www.zoko.io/",
+      "classification": "DIRECT",
+      "notes": "WhatsApp API platform for e-commerce. Bulk campaigns, catalogs, and team inbox. Uses official WhatsApp Business API.",
+      "feature_overlap": "Broadcast messages, product catalogs, chatbots, CRM, multi-agent support.",
+      "pricing": "Plans from $49/month plus Meta fees.",
+      "market_positioning": "WhatsApp CRM and marketing for e-commerce businesses."
+    },
+    {
+      "name": "Twilio WhatsApp Business API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "DIRECT",
+      "notes": "Developer-facing official WhatsApp Business API provider. Enables programmatic bulk sending of transactional and promotional messages (with approved templates). Does not directly prevent bans but official API reduces risk if used compliantly.",
+      "feature_overlap": "Send and receive WhatsApp messages at scale, template management, automation via APIs, omnichannel integrations.",
+      "pricing": "Pay-as-you-go per message (e.g., $0.005 per template message in some regions) plus monthly Meta fees.",
+      "market_positioning": "Cloud communications platform for developers and enterprises to integrate WhatsApp."
+    },
+    {
+      "name": "360dialog",
+      "url": "https://www.360dialog.com/",
+      "classification": "DIRECT",
+      "notes": "WhatsApp Business API provider with a focus on SMBs and developers. Offers official API access, no monthly minimum, and partner network. Directly enables bulk sending with lower ban risk.",
+      "feature_overlap": "WhatsApp Business API access, message sending, template management, integrations.",
+      "pricing": "No monthly fee; pay per conversation/message",
+      "market_positioning": "Official WhatsApp Business API provider for every business size."
+    },
+    {
+      "name": "Gupshup",
+      "url": "https://www.gupshup.io/",
+      "classification": "DIRECT",
+      "notes": "Conversational messaging platform with WhatsApp Business API. Enables bulk campaigns, chatbots, and automation for enterprises and developers.",
+      "feature_overlap": "Bulk WhatsApp messaging, bot building, campaign management, API access.",
+      "pricing": "Custom enterprise pricing.",
+      "market_positioning": "Conversational messaging and AI-powered chatbots for businesses."
+    },
+    {
+      "name": "Respond.io",
+      "url": "https://respond.io/",
+      "classification": "PARTIAL",
+      "notes": "Omnichannel customer conversation platform that includes WhatsApp broadcasting. Not purpose-built solely for bulk WhatsApp, but covers a large part of the JTBD.",
+      "feature_overlap": "WhatsApp broadcast, shared inbox, automation, integrations.",
+      "pricing": "Starts around $79/month.",
+      "market_positioning": "Centralize customer conversations from all messaging channels."
+    },
+    {
+      "name": "Trengo",
+      "url": "https://trengo.com/",
+      "classification": "PARTIAL",
+      "notes": "Shared inbox with WhatsApp integration. Supports sending replies and some broadcast capabilities, but not primarily a bulk marketing tool.",
+      "feature_overlap": "WhatsApp messaging, team inbox, automations, limited broadcast.",
+      "pricing": "From €16/user/month.",
+      "market_positioning": "Customer engagement platform to manage all channels in one inbox."
+    },
+    {
+      "name": "Wassenger",
+      "url": "https://wassenger.com/",
+      "classification": "DIRECT",
+      "notes": "Unofficial WhatsApp automation and bulk sender using WhatsApp Web protocol. Enables sending to many contacts but carries ban risk if abused; includes some rotating and delay features.",
+      "feature_overlap": "Bulk messaging, contact import, scheduling, API, multi-device support.",
+      "pricing": "From $9/month per device.",
+      "market_positioning": "WhatsApp API and automation for power users and developers."
+    },
+    {
+      "name": "Evolution API",
+      "url": "https://github.com/EvolutionAPI/evolution-api",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source unofficial WhatsApp API server. Can be self-hosted to send bulk messages, but no built-in anti-ban guarantee; users risk number restrictions.",
+      "feature_overlap": "Send/receive WhatsApp messages, bulk messaging, webhook integrations.",
+      "pricing": "Free (self-hosted); paid hosting options exist.",
+      "market_positioning": "Open-source WhatsApp API for developers who want control."
+    },
+    {
+      "name": "Baileys",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open-source Node.js library implementing WhatsApp Web protocol. Enables automation and bulk sending, but highly risky for number bans without careful rate limiting.",
+      "feature_overlap": "Send/receive WhatsApp messages, media, automation.",
+      "pricing": "Free.",
+      "market_positioning": "Unofficial WhatsApp Web API library for developers."
+    },
+    {
+      "name": "whatsapp-web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Another popular open-source Node.js library for automating WhatsApp Web. Can be used for bulk sending but has no anti-ban protection.",
+      "feature_overlap": "Send/receive WhatsApp messages, automation.",
+      "pricing": "Free.",
+      "market_positioning": "Unofficial JavaScript API for WhatsApp Web."
+    },
+    {
+      "name": "Meta WhatsApp Business Platform",
+      "url": "https://business.whatsapp.com/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Official WhatsApp Business API. Allows businesses to send bulk messages via approved templates, with strict anti-spam policies. Using it reduces ban risk but restricts promotional content.",
+      "feature_overlap": "Bulk messaging via templates, opt-in management, analytics.",
+      "pricing": "Per-message fees based on conversation category.",
+      "market_positioning": "Official WhatsApp solution for business messaging."
+    },
+    {
+      "name": "Meta WhatsApp Business App",
+      "url": "https://business.whatsapp.com/products/business-app",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Free mobile app for small businesses. Has broadcast lists limited to 256 contacts; manual sending and no advanced automation, but it's a native option.",
+      "feature_overlap": "Broadcast lists, labels, quick replies, basic business profile.",
+      "pricing": "Free.",
+      "market_positioning": "Free WhatsApp Business app for micro-businesses."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Email marketing platforms (e.g., Mailchimp, Klaviyo)",
+      "url": "https://mailchimp.com/",
+      "classification": "SUBSTITUTE",
+      "notes": "Different channel but similar outcome: reaching many customers with promotional messages."
+    },
+    {
+      "name": "SMS marketing platforms (e.g., Twilio SMS, TextMagic)",
+      "url": "https://www.twilio.com/sms",
+      "classification": "SUBSTITUTE",
+      "notes": "Can send bulk text messages without WhatsApp-specific bans, though subject to carrier regulations."
+    },
+    {
+      "name": "Telegram marketing tools",
+      "url": "https://telegram.org/",
+      "classification": "SUBSTITUTE",
+      "notes": "Telegram offers bots and channels for bulk messaging; less restrictive than WhatsApp."
+    },
+    {
+      "name": "Push notification services",
+      "url": "https://onesignal.com/",
+      "classification": "SUBSTITUTE",
+      "notes": "If the audience has a mobile app, push notifications can deliver promotional messages without WhatsApp bans."
+    }
+  ],
+  "summary": "The competitive landscape is crowded. There are numerous established, purpose-built WhatsApp marketing platforms (WATI, AiSensy, Interakt, Gallabox, DoubleTick, QuickReply.ai, Zoko) that already solve the JTBD of sending bulk promotional/transactional WhatsApp messages while minimizing ban risk by using the official WhatsApp Business API. Additionally, official API providers (Twilio, 360dialog, Gupshup) and open-source unofficial tools (Baileys, Evolution API, whatsapp-web.js) provide alternatives. Platform-native options (Meta's official API and app) exist as well. There is no evidence of a near-zero competition pattern; instead, the market is saturated with direct and partial competitors. A new entrant would face intense competition and would need significant differentiation (e.g., a unique anti-ban technology) to gain traction.",
+  "research_evidence_urls": [
+    "https://www.wati.io/",
+    "https://aisensy.com/",
+    "https://www.interakt.shop/",
+    "https://gallabox.com/",
+    "https://doubletick.io/",
+    "https://quickreply.ai/",
+    "https://www.zoko.io/",
+    "https://www.twilio.com/whatsapp",
+    "https://www.360dialog.com/",
+    "https://www.gupshup.io/",
+    "https://respond.io/",
+    "https://trengo.com/",
+    "https://wassenger.com/",
+    "https://github.com/EvolutionAPI/evolution-api",
+    "https://github.com/WhiskeySockets/Baileys",
+    "https://github.com/pedroslopez/whatsapp-web.js",
+    "https://business.whatsapp.com/",
+    "https://business.whatsapp.com/products/business-app"
+  ]
+}

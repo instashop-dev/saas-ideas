@@ -1,0 +1,168 @@
+{
+  "id": "OP-0448",
+  "canonical_key": "CK-3974c27f63da74d9",
+  "title": "When I need to set up automated away messages and greetings in WhatsApp Business, I want scheduling ",
+  "target_user": "WhatsApp Business Account Admin / Small Business Owner",
+  "job_to_be_done": "When I need to set up automated away messages and greetings in WhatsApp Business, I want scheduling support so I can customize messages per time/day without manually toggling them on and off.",
+  "painful_workflow": "Setting up and updating automated away messages and greeting messages without scheduling support.",
+  "current_workaround": "Manually toggling the away message on/off or editing the message text each time.",
+  "source_ids": [
+    "SIG-0001"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 3,
+  "urgency_score": 2,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 1,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "WhatsApp Business App (Native)",
+      "url": "https://business.whatsapp.com/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "The native WhatsApp Business app provides away messages and greeting messages but lacks any scheduling capability. Users can set a single away message with a custom schedule (e.g., 'always send' or 'custom schedule' for specific hours), but this is limited to one message and does not support multiple time/day-specific messages. No scheduling for greetings.",
+      "feature_overlap": "Away messages, greeting messages, basic custom schedule (single message only)",
+      "pricing": "Free",
+      "market_positioning": "Official small business tool from Meta"
+    },
+    {
+      "name": "WhatsApp Business API (Cloud API / On-Premises)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "The WhatsApp Business API allows businesses to send messages programmatically and set up automated replies via webhooks. It does not natively provide a scheduling UI for away messages or greetings. Developers must build custom scheduling logic. Not a direct competitor for non-technical small business owners.",
+      "feature_overlap": "Automated replies, message sending via API",
+      "pricing": "Pay per conversation (varies by region)",
+      "market_positioning": "Enterprise/developer tool for custom integrations"
+    },
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io/",
+      "classification": "PARTIAL",
+      "notes": "WATI is a WhatsApp Business API platform that offers automated replies, chatbots, and scheduled messaging. It supports scheduling broadcast messages and automated responses, but its away message scheduling is not as granular as per-time/day customization for greetings. It is more focused on team inbox and customer support automation.",
+      "feature_overlap": "Automated replies, scheduled messages, chatbot, team inbox",
+      "pricing": "Starts at $49/month",
+      "market_positioning": "WhatsApp Business API platform for SMBs and teams"
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Twilio provides WhatsApp Business API access with full programmatic control. Developers can build custom scheduling for away messages and greetings. Not a direct solution for non-technical users; requires development effort.",
+      "feature_overlap": "Programmatic message sending, webhook-based replies",
+      "pricing": "Pay per message (varies)",
+      "market_positioning": "Developer-focused communication API platform"
+    },
+    {
+      "name": "ManyChat",
+      "url": "https://manychat.com/",
+      "classification": "PARTIAL",
+      "notes": "ManyChat is a chatbot platform for WhatsApp (and other channels). It offers automated responses, sequences, and scheduling. However, its scheduling is primarily for marketing sequences and not specifically for away message/greeting scheduling per time/day. More focused on marketing automation than simple away message management.",
+      "feature_overlap": "Automated replies, chatbot, scheduled sequences",
+      "pricing": "Free plan available; paid plans start at $15/month",
+      "market_positioning": "Chatbot and marketing automation platform"
+    },
+    {
+      "name": "Chatfuel",
+      "url": "https://chatfuel.com/",
+      "classification": "PARTIAL",
+      "notes": "Chatfuel offers WhatsApp chatbot automation with scheduled messages and auto-replies. Similar to ManyChat, it is more marketing-oriented and does not provide a simple away message scheduler for small business owners.",
+      "feature_overlap": "Auto-replies, scheduled messages, chatbot",
+      "pricing": "Free plan available; paid plans start at $15/month",
+      "market_positioning": "Chatbot platform for marketing and support"
+    },
+    {
+      "name": "Zoko",
+      "url": "https://www.zoko.io/",
+      "classification": "PARTIAL",
+      "notes": "Zoko is a WhatsApp Business API platform that offers team inbox, automated replies, and scheduled broadcasts. It has some scheduling capabilities but is not specifically designed for away message/greeting scheduling per time/day.",
+      "feature_overlap": "Automated replies, scheduled broadcasts, team inbox",
+      "pricing": "Starts at $29/month",
+      "market_positioning": "WhatsApp Business API platform for sales and support"
+    },
+    {
+      "name": "Interakt",
+      "url": "https://interakt.co/",
+      "classification": "PARTIAL",
+      "notes": "Interakt provides WhatsApp Business API tools including automated replies, chatbots, and scheduled messages. It offers away message automation but lacks granular per-time/day scheduling for greetings.",
+      "feature_overlap": "Automated replies, chatbots, scheduled messages",
+      "pricing": "Starts at $29/month",
+      "market_positioning": "WhatsApp Business API platform for SMBs"
+    },
+    {
+      "name": "WhatsApp Auto Reply (various apps)",
+      "url": "https://play.google.com/store/search?q=whatsapp%20auto%20reply&c=apps",
+      "classification": "PARTIAL",
+      "notes": "There are numerous third-party Android apps that claim to auto-reply to WhatsApp messages. Most are unreliable, violate WhatsApp ToS, and have poor reviews. They often lack scheduling features and are not suitable for business use.",
+      "feature_overlap": "Auto-reply, basic scheduling",
+      "pricing": "Free to $5 one-time",
+      "market_positioning": "Unofficial, often low-quality apps"
+    },
+    {
+      "name": "Open source WhatsApp bots (e.g., whatsapp-web.js)",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Open source libraries like whatsapp-web.js allow developers to build custom WhatsApp bots with auto-reply and scheduling. Requires technical expertise and may violate WhatsApp ToS (non-API approach). Not a direct competitor for non-technical users.",
+      "feature_overlap": "Auto-reply, custom scheduling",
+      "pricing": "Free (self-hosted)",
+      "market_positioning": "Developer tool for custom WhatsApp automation"
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Manual scheduling (calendar reminders)",
+      "url": "",
+      "classification": "SUBSTITUTE",
+      "notes": "Small business owners set calendar reminders to manually toggle away messages on/off or change greeting text at specific times. This is the primary workaround.",
+      "feature_overlap": "None (manual)",
+      "pricing": "Free",
+      "market_positioning": "Workaround"
+    },
+    {
+      "name": "Virtual assistant / VA services",
+      "url": "",
+      "classification": "SERVICE",
+      "notes": "Some businesses hire virtual assistants to manually update WhatsApp Business away messages and greetings on a schedule.",
+      "feature_overlap": "None (human service)",
+      "pricing": "Varies",
+      "market_positioning": "Human service"
+    }
+  ],
+  "verified_facts": [
+    "One Google Play review (SIG-0001) states that WhatsApp Business does not support scheduling for away messages and greetings."
+  ],
+  "inferences": [
+    "The reviewer found the lack of scheduling inconvenient enough to leave a review.",
+    "Manual toggling is the current workaround for this user."
+  ],
+  "assumptions": [
+    "The problem is widespread across many WhatsApp Business users.",
+    "Users would be willing to pay for a scheduling feature.",
+    "No other workarounds (e.g., third-party tools) exist or are acceptable."
+  ],
+  "unknowns": [
+    "How many users experience this pain?",
+    "What is the average time spent per week on manual toggling?",
+    "Are there any existing third-party solutions (e.g., automation tools) that address this?",
+    "What is the actual economic impact of missed messages due to forgetting to toggle?",
+    "Is the user open to paying for a standalone solution, or would they expect it as a free feature from WhatsApp?"
+  ],
+  "rejection_reasons": [
+    "Judge rejected: Pain score is only 2/5 and willingness to pay is 1/5, failing the deterministic gates that require scores of at least 4 for approval; the problem is not urgent or valuable enough to justify a paid solution."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.95,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:31:56.149Z",
+  "updated_at": "2026-08-13T05:43:07.132Z"
+}

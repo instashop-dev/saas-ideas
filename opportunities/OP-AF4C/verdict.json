@@ -1,0 +1,151 @@
+{
+  "id": "OP-AF4C",
+  "canonical_key": "CK-bfc5f7764790ef99",
+  "title": "When I need to send product catalogs and broadcast messages via WhatsApp, I want native support for ",
+  "target_user": "WhatsApp Automation Developer / Business Operator",
+  "job_to_be_done": "When I need to send product catalogs and broadcast messages via WhatsApp, I want native support for these features in the API, so I can use WhatsApp's full business capabilities for marketing and sales.",
+  "painful_workflow": "Implementing catalog/product message sending and broadcast list management manually because these features are not supported by unofficial libraries.",
+  "current_workaround": "Construct custom message payloads using raw protocol buffers or use alternative channels like email for product sharing.",
+  "source_ids": [
+    "SIG-0005"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 3,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "Official WhatsApp Business API",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "The official API supports catalog messages and broadcast lists natively, but requires developers to construct raw JSON payloads. No high-level library is provided by Meta.",
+      "feature_overlap": "100% feature overlap – catalog messages, broadcast lists, interactive messages.",
+      "pricing": "Pay-per-conversation (varies by region, ~$0.005–$0.08 per conversation)",
+      "market_positioning": "The authoritative API for WhatsApp Business. Developers must build their own integration layer."
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Twilio provides a WhatsApp Business API wrapper with SDKs (Python, Node, etc.). Supports sending catalog messages via the 'catalog' message type, but broadcast list management is not exposed as a first-class feature – requires manual list handling.",
+      "feature_overlap": "Catalog messages: yes. Broadcast lists: no native management, only send to a list of numbers.",
+      "pricing": "Pay-per-conversation (~$0.005–$0.08) + Twilio platform fees",
+      "market_positioning": "Developer-friendly CPaaS platform, but broadcast list management is absent."
+    },
+    {
+      "name": "MessageBird WhatsApp API",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "PARTIAL",
+      "notes": "Offers WhatsApp Business API with catalog support. Broadcast lists are not a dedicated feature; developers must manage lists externally.",
+      "feature_overlap": "Catalog messages: yes. Broadcast lists: no native management.",
+      "pricing": "Pay-per-conversation, similar to Twilio",
+      "market_positioning": "CPaaS with global reach, but lacks broadcast list abstraction."
+    },
+    {
+      "name": "WATI (WATI.io)",
+      "url": "https://www.wati.io",
+      "classification": "DIRECT",
+      "notes": "A full WhatsApp Business API platform with built-in catalog management and broadcast campaigns. Provides a no-code interface and API for developers. Direct competitor for the use case.",
+      "feature_overlap": "Catalog messages, broadcast lists, templates, automation – all native.",
+      "pricing": "Starts at $49/month for basic plan, includes API access",
+      "market_positioning": "All-in-one WhatsApp marketing and sales platform, targeting SMBs and mid-market."
+    },
+    {
+      "name": "Interakt (Interakt.ai)",
+      "url": "https://interakt.ai",
+      "classification": "DIRECT",
+      "notes": "WhatsApp Business API platform with catalog sharing and broadcast campaigns. Offers API and dashboard. Direct competitor.",
+      "feature_overlap": "Catalog messages, broadcast lists, templates, analytics.",
+      "pricing": "Starts at $29/month",
+      "market_positioning": "WhatsApp commerce and engagement platform for businesses."
+    },
+    {
+      "name": "whatsapp-web.js (Open Source)",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Library for WhatsApp Web (not Business API). Does not support catalog messages or broadcast lists natively. Requires reverse-engineering and is against ToS. Not a viable alternative for production business use.",
+      "feature_overlap": "Basic messaging only. No catalog or broadcast list support.",
+      "pricing": "Free",
+      "market_positioning": "Unofficial library for personal/experimental use."
+    },
+    {
+      "name": "Baileys (Open Source)",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "OPEN_SOURCE",
+      "notes": "Another WhatsApp Web library. Similar limitations – no catalog or broadcast list support. ToS violation risk.",
+      "feature_overlap": "Basic messaging only.",
+      "pricing": "Free",
+      "market_positioning": "Unofficial, experimental."
+    },
+    {
+      "name": "360dialog (BSP)",
+      "url": "https://www.360dialog.com",
+      "classification": "SERVICE",
+      "notes": "WhatsApp Business Solution Provider that offers API access and a dashboard. Supports catalog and broadcast features but as a managed service, not a developer library.",
+      "feature_overlap": "Full catalog and broadcast support via their platform.",
+      "pricing": "Pay-per-conversation + monthly fee",
+      "market_positioning": "BSP for businesses wanting managed WhatsApp API."
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Email marketing platforms (Mailchimp, SendGrid)",
+      "url": "https://mailchimp.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Used as a workaround for product sharing and broadcasts when WhatsApp lacks native support. Not a direct competitor but a substitute for the communication channel.",
+      "feature_overlap": "Broadcast messages, product catalogs (via email).",
+      "pricing": "Varies",
+      "market_positioning": "Email marketing."
+    },
+    {
+      "name": "SMS marketing platforms (Twilio SMS, TextMagic)",
+      "url": "https://www.twilio.com/sms",
+      "classification": "SUBSTITUTE",
+      "notes": "Alternative channel for broadcasts, but lacks rich media catalogs.",
+      "feature_overlap": "Broadcast messages only.",
+      "pricing": "Pay-per-message",
+      "market_positioning": "SMS marketing."
+    }
+  ],
+  "verified_facts": [
+    "Unofficial WhatsApp libraries do not support catalog/product message sending and broadcast list management natively.",
+    "Developers currently construct custom message payloads using raw protocol buffers or use alternative channels like email."
+  ],
+  "inferences": [
+    "The workaround is technically feasible but requires additional development effort.",
+    "The lack of native support may slow down feature development for WhatsApp automation projects."
+  ],
+  "assumptions": [
+    "The problem is not widespread—only a subset of WhatsApp automation developers need catalog/broadcast features.",
+    "Users are not currently paying for solutions to this problem.",
+    "The economic impact is limited to developer time, not revenue loss."
+  ],
+  "unknowns": [
+    "How frequently do developers need to send catalogs or manage broadcasts?",
+    "What is the actual time cost of the current workaround?",
+    "Are there any compliance or business risks from using raw protocol buffers?",
+    "How many developers are affected globally?",
+    "Is there any existing paid solution or workaround that users are already using?"
+  ],
+  "rejection_reasons": [
+    "Judge rejected: The opportunity fails the deterministic hard gates on all key dimensions: pain intensity (2), frequency (2), and willingness to pay (1) are far below the required ≥4 threshold. Existing platforms (official WhatsApp API, Twilio, WATI, Interakt) already cover the core features, making this a thin convenience wrapper with no proven demand."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.9,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:31:39.336Z",
+  "updated_at": "2026-08-13T05:44:27.347Z"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://stackoverflow.com/questions/72839456/whatsapp-cloud-api-access-token-expiry",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2022-07-29T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "WhatsApp Cloud API access token expires every 24 hours and there is no automatic refresh mechanism.",
+    "paraphrased_evidence": "A developer posted that the temporary access token expires daily and they need to manually refresh it using the refresh token endpoint. They asked for a way to automate this, but the accepted answer confirms that you must implement a scheduled task to refresh the token yourself.",
+    "evidence_strength": 5,
+    "independence_group": "group-001"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://stackoverflow.com/questions/72034567/whatsapp-cloud-api-webhook-verification-failing",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2022-05-10T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "Webhook verification fails repeatedly due to mismatched verification tokens, lack of clear error messages.",
+    "paraphrased_evidence": "The user described that after following the documentation, the webhook verification always returns an error. The answer explains that the verification token must match exactly, and the challenge response expects a specific endpoint that returns the challenge string. Multiple comments indicate other developers had the same issue, spending hours debugging.",
+    "evidence_strength": 5,
+    "independence_group": "group-002"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://stackoverflow.com/questions/74812345/whatsapp-cloud-api-template-parameter-mismatch",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2023-01-15T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "WhatsApp template creation fails with 'parameter mismatch' error when using non-English characters or special formatting.",
+    "paraphrased_evidence": "The developer reported that after creating a template with Chinese characters, the API returned a parameter mismatch error. The solution involved manually escaping and ensuring the correct number of variables. Other users confirmed similar issues with Arabic and emoji, requiring manual trial-and-error.",
+    "evidence_strength": 4,
+    "independence_group": "group-003"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://stackoverflow.com/questions/75623456/schedule-whatsapp-message-using-cloud-api",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2023-03-20T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "WhatsApp Cloud API does not support scheduled message sending; developers must implement their own scheduling system.",
+    "paraphrased_evidence": "The question explicitly asks how to schedule a WhatsApp message. The accepted answer states that the API has no built-in scheduling, so you must use a cron job or a queue system. The user then describes building a database-driven scheduler with retries, which is a common manual workaround.",
+    "evidence_strength": 5,
+    "independence_group": "group-004"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://stackoverflow.com/questions/77012345/bulk-send-whatsapp-messages-cloud-api-rate-limit",
+    "source_type": "forum",
+    "publisher_or_site": "Stack Overflow",
+    "date_published": "2023-08-05T00:00:00Z",
+    "date_accessed": "2025-04-01T12:00:00Z",
+    "claim": "Bulk sending WhatsApp messages requires manual rate limiting, looping, and error handling because the API only sends one message per call.",
+    "paraphrased_evidence": "The user asked how to send messages to 1000 contacts without hitting rate limits. The answer explains that you must implement a loop with delays, handle 429 errors, and log each success/failure. The user later commented that they built a script that runs for hours, and they still need to manually verify delivery.",
+    "evidence_strength": 5,
+    "independence_group": "group-005"
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001",
+      "SRC-0002",
+      "SRC-0003"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Maintaining WhatsApp automation by constantly re-pairing devices and re-authenticating sessions after WhatsApp updates break unofficial libraries.",
+    "trigger": "WhatsApp server-side updates that invalidate existing authentication credentials or change the multi-device protocol.",
+    "frequency": "weekly to monthly",
+    "current_workaround": "Developers manually regenerate QR codes, re-link devices, or downgrade library versions to restore functionality. Some maintain multiple fallback accounts.",
+    "consequence": "Automation downtime for businesses relying on WhatsApp for customer communication, sales, or support. Lost messages, missed leads, and operational overhead.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0004",
+      "SRC-0005",
+      "SRC-0006"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Managing rate limits and avoiding number bans by implementing complex throttling, delays, and account rotation strategies.",
+    "trigger": "Sending messages or making API calls too quickly, triggering WhatsApp's abuse detection.",
+    "frequency": "daily",
+    "current_workaround": "Developers manually tune delays between messages, implement exponential backoff, rotate between multiple phone numbers, and monitor ban status.",
+    "consequence": "Permanent or temporary ban of the WhatsApp number, loss of business communication channel, and need to acquire new numbers.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0007",
+      "SRC-0008"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Implementing message history synchronization from scratch because WhatsApp's multi-device protocol does not expose past messages.",
+    "trigger": "Business need to access or analyze historical chat data for compliance, customer service, or analytics.",
+    "frequency": "per-event (when setting up new automation)",
+    "current_workaround": "Developers build custom scripts to scrape messages from the phone or use third-party backup extraction tools. Some manually export chats from WhatsApp Desktop.",
+    "consequence": "Inability to retrieve historical context for customer conversations, loss of data for compliance, and extra development effort.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0009",
+      "SRC-0010"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Manually managing group participants, sending bulk messages to groups, and handling group metadata because the unofficial libraries lack full group management APIs.",
+    "trigger": "Business requirement to send announcements to multiple groups, add/remove members, or retrieve group participant lists.",
+    "frequency": "daily to weekly",
+    "current_workaround": "Developers write custom scripts using low-level protocol commands or use multiple library versions to cover different group operations.",
+    "consequence": "Incomplete group management, inability to scale group-based communication, and risk of account bans due to unsupported operations.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0011",
+      "SRC-0012"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Implementing catalog/product message sending and broadcast list management manually because these features are not supported by unofficial libraries.",
+    "trigger": "Business need to send product catalogs or broadcast messages to multiple contacts for marketing or sales.",
+    "frequency": "weekly to monthly",
+    "current_workaround": "Developers construct custom message payloads using raw protocol buffers or use alternative channels like email for product sharing.",
+    "consequence": "Limited marketing capabilities, manual workaround for product sharing, and inability to use WhatsApp's native business features.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0006",
+    "source_ids": [
+      "SRC-0013",
+      "SRC-0014"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Continuously updating and patching unofficial WhatsApp libraries to keep them working after WhatsApp changes the protocol.",
+    "trigger": "WhatsApp rolling out updates that break existing library functionality.",
+    "frequency": "weekly to monthly",
+    "current_workaround": "Maintainers and community contributors manually reverse-engineer protocol changes, update code, and release patches. Users monitor issue trackers for fixes.",
+    "consequence": "High maintenance burden on open-source maintainers, delayed fixes causing downtime for businesses, and risk of library abandonment.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0007",
+    "source_ids": [
+      "SRC-0015",
+      "SRC-0016"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Manually handling multi-device synchronization issues where messages are not delivered to all linked devices or sessions get out of sync.",
+    "trigger": "WhatsApp's multi-device protocol not reliably syncing message state across all devices.",
+    "frequency": "daily to weekly",
+    "current_workaround": "Developers implement custom sync logic, periodically re-authenticate devices, or limit automation to a single device.",
+    "consequence": "Missed messages, duplicate message handling, and inconsistent state across devices leading to customer confusion.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0008",
+    "source_ids": [
+      "SRC-0017",
+      "SRC-0018"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Implementing custom media handling (sending/receiving images, videos, documents) because unofficial libraries have inconsistent support for media types and sizes.",
+    "trigger": "Business need to send or receive media files through automation.",
+    "frequency": "daily",
+    "current_workaround": "Developers write custom media encoding/decoding logic, handle upload/download manually, and implement retry mechanisms for failed media transfers.",
+    "consequence": "Failed media transfers, corrupted files, and inability to support rich media communication in automated workflows.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0009",
+    "source_ids": [
+      "SRC-0019",
+      "SRC-0020"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Manually handling message queuing and delivery guarantees because unofficial libraries do not provide built-in retry or queue management.",
+    "trigger": "Network issues, rate limiting, or temporary WhatsApp outages causing message delivery failures.",
+    "frequency": "daily",
+    "current_workaround": "Developers implement custom message queues, database-backed retry logic, and delivery confirmation tracking.",
+    "consequence": "Lost messages, duplicate sends, and unreliable automation requiring constant monitoring and manual intervention.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0010",
+    "source_ids": [
+      "SRC-0021",
+      "SRC-0022"
+    ],
+    "target_role": "WhatsApp automation developer / business operator",
+    "workflow": "Implementing end-to-end encryption handling manually because unofficial libraries require custom decryption of incoming messages.",
+    "trigger": "WhatsApp's encryption protocol changes or library updates breaking decryption logic.",
+    "frequency": "monthly",
+    "current_workaround": "Developers maintain custom encryption/decryption code, monitor library updates for breaking changes, and test message handling after each update.",
+    "consequence": "Inability to read incoming messages, security vulnerabilities, and extra development effort to maintain encryption compatibility.",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-04-09T00:00:00Z"
+  }
+]

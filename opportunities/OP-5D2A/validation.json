@@ -1,0 +1,52 @@
+{
+  "scores": {
+    "pain_intensity": 4,
+    "frequency": 3,
+    "urgency": 4,
+    "economic_impact": 3,
+    "operational_impact": 3,
+    "workaround_intensity": 4,
+    "willingness_to_pay": 2,
+    "global_applicability": 4,
+    "customer_accessibility": 4,
+    "evidence_quality": 3
+  },
+  "reasoning": {
+    "pain_intensity": "Evidence shows template rejections with vague reasons (SIG-001 from Meta developer community), approval delays causing customer waiting (SIG-004 from G2), and reclassification from UTILITY to MARKETING (SIG-001) which implies cost changes. These are more than mild annoyances but not life-critical. Score 4.",
+    "frequency": "No quantitative data on submission frequency. Evidence mentions 'waiting days' and 'manual follow-up' (SIG-001 from Trustpilot), suggesting recurring but not multiple times daily. Likely weekly or bi-weekly for marketing campaigns. Score 3.",
+    "urgency": "Approval delays block campaign launches and cause customers to wait (SIG-004 from G2). This is urgent for time-sensitive campaigns but not a full-system outage. Score 4.",
+    "economic_impact": "Reclassification from UTILITY to MARKETING likely increases per-message costs (inferred from common WhatsApp pricing, not explicitly in evidence). No dollar amounts provided. Delays may cause revenue loss, but scale is unknown. Score 3.",
+    "operational_impact": "Manual coordination with Meta/business managers (SIG-004 from G2), repeated resubmissions, and support tickets disrupt marketing workflows. However, it affects the marketing/ops team, not the entire company. Score 3.",
+    "workaround_intensity": "Users manually coordinate, maintain status (inferred from cluster description, not directly in evidence), and follow up via tickets/emails (SIG-001 from Trustpilot). This is substantial manual effort, likely requiring dedicated hours. Score 4.",
+    "willingness_to_pay": "No evidence of users already paying for third-party tools to solve this. They pay for WhatsApp API usage (not mentioned in evidence) but not for a management solution. Score 2.",
+    "global_applicability": "WhatsApp Business API is used worldwide, and template approval is a cross-border issue (evidenced by forums like Meta Developer Community and Trustpilot reviews from multiple regions). Score 4.",
+    "customer_accessibility": "Buyers are marketing managers/developers using WhatsApp API. They are reachable via Meta developer forums, G2, Trustpilot, and Shopify communities. Clear channels exist. Score 4.",
+    "evidence_quality": "Five independent sources across four types (forums, reviews, Stack Overflow), but all qualitative, with no quantitative data on frequency or cost. Some evidence (SIG-003) is about template formatting validation, not the core approval pain. Score 3."
+  },
+  "verified_facts": [
+    "Meta rejects WhatsApp templates with terse/generic reasons (SIG-001 from Meta developer community).",
+    "Templates approved as UTILITY can later be reclassified as MARKETING (SIG-001 from Meta developer community).",
+    "Template approval can take days, requiring manual follow-up via support tickets or emails (SIG-001 from Trustpilot).",
+    "Approval delays force manual coordination with Meta/business managers while customers wait (SIG-004 from G2).",
+    "Some users manually validate template parameters for formatting, localization, and escape sequences (SIG-003 from Stack Overflow)."
+  ],
+  "inferences": [
+    "Reclassification from UTILITY to MARKETING increases per-message cost, based on standard WhatsApp pricing tiers (not explicitly stated in evidence).",
+    "Template approval delays likely lead to campaign delays and potential revenue loss.",
+    "The need for manual coordination and follow-up suggests there is no efficient existing solution.",
+    "The problem is experienced by multiple businesses globally, given diverse source ecosystems."
+  ],
+  "assumptions": [
+    "Users maintain spreadsheets to track template status (stated in cluster description but not directly in any source evidence).",
+    "The frequency of template submissions is at least monthly for active WhatsApp campaign users.",
+    "Users are aware of the financial impact of reclassification on their messaging costs.",
+    "There is no significant use of third-party solutions to mitigate this pain."
+  ],
+  "unknowns": [
+    "Actual dollar impact of cost reclassification and delays (no financial data).",
+    "How often templates are submitted per user (daily/weekly/monthly).",
+    "Percentage of WhatsApp Business API users affected by this issue.",
+    "Whether users are actively seeking or paying for a third-party management solution."
+  ],
+  "overall_assessment": "The pain cluster describes a real and inconvenient problem for WhatsApp template management, supported by multiple qualitative sources. However, scores cluster around 3-4, not the 5/5 required to demonstrate a burning need. Key weaknesses are the lack of quantitative evidence on frequency and cost impact, and no indication of existing willingness to pay. The operational and workaround intensity are notable, but without strong economic or urgency proof, this does not clear the burning need threshold. It may still be a viable opportunity if more data emerges, but current evidence is insufficient to justify high-conviction investment."
+}

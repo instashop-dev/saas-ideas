@@ -1,0 +1,8 @@
+{
+  "verdict": "REJECT",
+  "strongest_reason": "Deterministic hard gates are not met: pain, frequency, and willingness to pay are all scored 2/5, far below the required threshold of 4 for approval. Evidence is also critically thin (1 independent source, 1 source type), and both the bear case (confidence 0.85) and customer perspective (confidence 0.85) independently conclude that free BSP-provided migration support and Meta’s documentation make a paid, dedicated tool unlikely to gain traction or monetize.",
+  "strongest_risk": "Essential failure risk: the problem is infrequent, low-intensity, and already supported for free by Twilio, MessageBird, WATI, and Meta’s own migration guide. Even if a tool could be built, willingness to pay is only 2/5, making it nearly impossible to generate recurring revenue or justify a SaaS business.",
+  "unresolved_assumption": "The most critical unverified assumption is whether real-world migration frequency and willingness to pay are actually higher than the scores indicate — but the current evidence (one forum post) is insufficient to overturn the hard-gate failure, and both the bear and customer perspectives contradict that assumption.",
+  "confidence": 0.93,
+  "recommended_next_step": "Do not pursue this opportunity. If market conditions change (e.g., BSPs stop offering free migration support or Meta fails to improve built-in migration tooling), re-validate actual migration pain, frequency, and willingness to pay with at least 10–15 target-user interviews before considering a pivot."
+}

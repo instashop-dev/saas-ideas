@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Business owner / marketing manager",
+    "workflow": "Manually copying and pasting customer contact lists from Google Sheets or CRM into WhatsApp Web to send bulk promotional messages one by one, because WhatsApp Business API has strict limits and requires approval for broadcast templates.",
+    "trigger": "Need to send promotional offers or updates to a list of existing customers.",
+    "frequency": "Weekly or bi-weekly",
+    "current_workaround": "Manually paste each phone number into WhatsApp Web, type a message, send, then repeat for next contact. Some use USB SIM card devices or third-party bulk senders (risking ban).",
+    "consequence": "Hours of tedious work per batch; risk of WhatsApp account being flagged or banned for bulk messaging without API approval; missed opportunities if not done.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-08T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Operations / data analyst",
+    "workflow": "Exporting WhatsApp chat logs (from iPhone or Android backup) to a CSV or Excel file so that customer conversations, order details, and timestamps can be analyzed for reporting or CRM import. Native WhatsApp exports only produce .txt files with no structured fields.",
+    "trigger": "Need to analyze customer interactions, generate reports, or migrate chat history to a new CRM.",
+    "frequency": "Monthly or per campaign",
+    "current_workaround": "Use third-party chat export tools that cost money, or manually copy-paste key data from chat into a spreadsheet. Many freelancers are hired to do this data cleaning.",
+    "consequence": "Inaccurate data, hours of manual work, missing context, inability to search or filter historical chats.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-08T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "E-commerce manager / customer support lead",
+    "workflow": "Manually copying order details from WhatsApp chat (e.g., customer sends product name, quantity, address) into Shopify or WooCommerce admin panel to create a new order. No native integration exists between WhatsApp and most e-commerce platforms.",
+    "trigger": "Customer places an order via WhatsApp chat instead of the website.",
+    "frequency": "Multiple times per day",
+    "current_workaround": "Support agent reads the chat, creates a new order in Shopify, manually enters all fields. Some use Zapier with a WhatsApp Business API, but setup is complex and requires an approved template.",
+    "consequence": "Slow order processing, high risk of data entry errors (wrong address, product), delayed fulfillment, customer frustration.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-08T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Clinic / salon receptionist",
+    "workflow": "Sending appointment reminders via WhatsApp to each patient individually. No scheduling tool natively sends WhatsApp reminders; most integrate only with SMS or email.",
+    "trigger": "Upcoming appointment in the next 24 hours.",
+    "frequency": "Daily",
+    "current_workaround": "Receptionist manually checks the schedule, copies each patient's phone number from the PMS, opens WhatsApp Web, types a reminder message, and sends. Some use a spreadsheet with a WhatsApp link generator.",
+    "consequence": "Nurse or receptionist spends 30-60 minutes daily on reminders; missed appointments cost revenue; inconsistent follow-up.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-08T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "Sales operations / CRM admin",
+    "workflow": "Reconciling orders or leads that come in via WhatsApp with the CRM system. Example: a customer sends an order in WhatsApp, then later the order is entered into the CRM. There is no automated matching, so staff must manually check if the CRM entry matches the WhatsApp conversation.",
+    "trigger": "End-of-day or weekly reconciliation to ensure no order is missed.",
+    "frequency": "Daily or weekly",
+    "current_workaround": "Export both CRM data and WhatsApp chat logs to Excel, then use VLOOKUP or manual comparison. Many freelancers are hired to do this reconciliation.",
+    "consequence": "Orders can be lost or duplicated; customer complaints about missing items; trust issues with the business.",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-04-08T10:00:00Z"
+  }
+]

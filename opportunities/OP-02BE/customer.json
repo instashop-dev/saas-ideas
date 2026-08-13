@@ -1,0 +1,18 @@
+{
+  "position": "CUSTOMER",
+  "summary": "I'm a Platform Engineer responsible for WhatsApp infrastructure. I've migrated phone numbers between BSPs and from on-premise to Cloud API a few times. It's annoying but not crippling. I wouldn't actively search for a dedicated tool to solve this because the pain is infrequent and the current workaround (manual steps + support tickets) works, albeit with some downtime. I'd only consider buying if the tool were cheap, dead simple, and guaranteed zero downtime. Otherwise, I'll stick with the free documentation and open-source scripts.",
+  "strongest_points": [
+    "If the tool truly eliminated downtime during migration, that would be a strong motivator — my business can't afford message loss during a switch.",
+    "Automating the 2FA reset and re-verification steps would save me 30-60 minutes of manual API calls and coordination with support teams.",
+    "A clear, step-by-step UI with rollback capability would reduce my anxiety about breaking production messaging."
+  ],
+  "weaknesses": [
+    "I only migrate numbers once every 6-12 months, so the pain is low frequency. I'm not going to pay a recurring subscription for something I use rarely.",
+    "The free Meta documentation and open-source scripts already cover the basics. I can handle the manual steps myself or ask my BSP's support team to help for free.",
+    "I'm skeptical that a third-party tool can reliably handle WhatsApp's authentication flows without introducing new risks (e.g., token expiry, rate limits, or account locks)."
+  ],
+  "evidence_cited": [
+    "SRC-0001"
+  ],
+  "confidence": 0.85
+}

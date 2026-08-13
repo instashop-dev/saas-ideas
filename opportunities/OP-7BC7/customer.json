@@ -1,0 +1,16 @@
+{
+  "position": "CUSTOMER",
+  "summary": "As a Finance Operations Manager responsible for WhatsApp billing, I deal with mismatched invoices and manual reconciliation every month. It's annoying and time-consuming, but not a crisis. I'd consider a tool if it were cheap, easy to set up, and clearly saved me hours. But honestly, I'm not convinced I'd pay much—spreadsheets work, and I can ask a developer to script something. The pain is real but the willingness to pay is low.",
+  "strongest_points": [
+    "If the tool automates the entire reconciliation process and cuts my monthly effort from 4 hours to 15 minutes, I'd be interested—especially if it costs under $50/month.",
+    "Direct integration with Meta's billing API and my BSP (e.g., Twilio) would eliminate manual exports and reduce errors—that's a strong pull.",
+    "Pre-built dispute reports that I can submit to Meta or my BSP would save me from writing support tickets and chasing refunds."
+  ],
+  "weaknesses": [
+    "My willingness to pay is low (score 1/5). I'm not sure the ROI justifies a new SaaS subscription when spreadsheets and free scripts exist.",
+    "Switching friction: I already have a working (though painful) spreadsheet process. Adopting a new tool means training, data migration, and trusting it not to introduce errors.",
+    "Trust blockers: I'd be skeptical about data security (handling billing data) and whether the reconciliation logic is accurate enough to catch all discrepancies."
+  ],
+  "evidence_cited": [],
+  "confidence": 0.65
+}

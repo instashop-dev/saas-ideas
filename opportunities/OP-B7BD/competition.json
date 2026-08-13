@@ -1,0 +1,120 @@
+{
+  "competition_score": 1,
+  "queries_attempted": [
+    "whatsapp group management api",
+    "whatsapp group automation api programmatic",
+    "whatsapp group add remove members api",
+    "whatsapp business api group management",
+    "whatsapp bulk group management software",
+    "whatsapp group participant list api",
+    "whatsapp group announcements api",
+    "whatsapp group messaging api alternative",
+    "whatsapp group management tool for developers",
+    "whatsapp group automation SaaS",
+    "open source whatsapp group management api",
+    "whatsapp group administration api service"
+  ],
+  "competitors": [
+    {
+      "name": "Baileys (WhatsApp Web API)",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "OPEN_SOURCE",
+      "notes": "Unofficial multi-device WhatsApp Web API. Provides group management capabilities but is unofficial, bans risk, and requires significant custom handling. No SaaS offering.",
+      "feature_overlap": "Can add/remove members, send messages to groups, retrieve participants",
+      "pricing": "Free (self-hosted)",
+      "market_positioning": "Unofficial library for WhatsApp automation developers"
+    },
+    {
+      "name": "WhatsApp Business API (Meta)",
+      "url": "https://developers.facebook.com/docs/whatsapp/",
+      "classification": "DIRECT",
+      "notes": "OFFICIAL Meta API. However, it does NOT expose group management APIs. Only supports business notifications to customers who opt-in. Cannot add/remove groups, manage group participants, or send to arbitrary groups. MASSIVE gap.",
+      "feature_overlap": "Sending messages to users (but not groups), no group management",
+      "pricing": "Per conversation pricing ($0.005-0.08 per message depending on region)",
+      "market_positioning": "Enterprise customer communication tool"
+    },
+    {
+      "name": "WAToolkit / WhatsApp Web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "OPEN_SOURCE",
+      "notes": "Unofficial WhatsApp Web wrapper. Provides basic group operations but same risks as Baileys: ban risk, no official support, requires self-hosting, scraping approach.",
+      "feature_overlap": "Add/remove members, send group messages, get participants",
+      "pricing": "Free (self-hosted)",
+      "market_positioning": "Unofficial WhatsApp automation library for Node.js"
+    },
+    {
+      "name": "WPPConnect",
+      "url": "https://github.com/wppconnect-team/wppconnect",
+      "classification": "OPEN_SOURCE",
+      "notes": "Unofficial WhatsApp automation tool. Group management possible but bans risk, unstable, requires WhatsApp Web scraping. No SaaS offering.",
+      "feature_overlap": "Group creation, member management, messaging",
+      "pricing": "Free (self-hosted)",
+      "market_positioning": "WhatsApp automation for developers"
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Uses WhatsApp Business API underneath. Same limitation: NO group management capabilities. Only 1:1 messaging.",
+      "feature_overlap": "Sending messages (but not to groups)",
+      "pricing": "$0.005 per message outgoing, $0.004 incoming (India rates)",
+      "market_positioning": "Cloud communications platform"
+    },
+    {
+      "name": "MessageBird (Bird) WhatsApp API",
+      "url": "https://www.bird.com/whatsapp",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "Same WhatsApp Business API wrapper. No group management.",
+      "feature_overlap": "Sending WhatsApp messages (1:1 only)",
+      "pricing": "Per message pricing",
+      "market_positioning": "Omnichannel communication platform"
+    },
+    {
+      "name": "Chat-API.com",
+      "url": "https://chat-api.com",
+      "classification": "PARTIAL",
+      "notes": "Unofficial WhatsApp API service. Provides group management but is scraping-based, bans risk, and reliability is questionable. Operates as SaaS but uses unofficial methods.",
+      "feature_overlap": "Basic group management, group messaging",
+      "pricing": "Paid plans (€10-€100/month)",
+      "market_positioning": "Unofficial WhatsApp API as service"
+    },
+    {
+      "name": "Ultramsg",
+      "url": "https://ultramsg.com",
+      "classification": "PARTIAL",
+      "notes": "Another unofficial WhatsApp API service. Claims group management but same scraping/ban risk.",
+      "feature_overlap": "Group operations, group messaging",
+      "pricing": "Freemium + paid plans",
+      "market_positioning": "WhatsApp API alternative for developers"
+    },
+    {
+      "name": "WATI.io",
+      "url": "https://wati.io",
+      "classification": "SUBSTITUTE",
+      "notes": "Official WhatsApp Business API partner. Focuses on customer support/marketing. No group management APIs available.",
+      "feature_overlap": "WhatsApp messaging, templates, automation (but no programmatic group management)",
+      "pricing": "$49/month+",
+      "market_positioning": "WhatsApp Business API for customer engagement"
+    },
+    {
+      "name": "Trengo",
+      "url": "https://trengo.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Unified inbox with WhatsApp. No programmatic group management.",
+      "feature_overlap": "WhatsApp messaging aggregated with other channels",
+      "pricing": "€29/month+",
+      "market_positioning": "Customer communication platform"
+    }
+  ],
+  "substitutes": [],
+  "summary": "This is a NEAR-ZERO COMPETITION opportunity. The official Meta WhatsApp Business API has a CRITICAL GAP: it provides NO group management capabilities whatsoever. Unlike other messaging platforms (Telegram, Discord, Slack) which offer robust group management APIs, WhatsApp has a massive hole. The only 'competitors' are unofficial scraping-based solutions (Baileys, WhatsApp-web.js, Chat-API) that carry significant account ban risk, require self-hosting, offer zero reliability guarantees, and break with every WhatsApp update. No purpose-built, legitimate, reliable SaaS product exists that gives developers programmatic group management APIs for WhatsApp. The substitute solutions (Twilio, WATI, MessageBird) all use the same official API and therefore cannot offer group management either. This is a textbook case of strong problem evidence (developers are hacking together workarounds using unofficial libs) and weak evidence of adequate purpose-built software.",
+  "research_evidence_urls": [
+    "https://developers.facebook.com/docs/whatsapp/",
+    "https://github.com/WhiskeySockets/Baileys",
+    "https://github.com/pedroslopez/whatsapp-web.js",
+    "https://www.twilio.com/whatsapp",
+    "https://chat-api.com",
+    "https://ultramsg.com",
+    "https://wati.io"
+  ]
+}

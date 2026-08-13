@@ -1,0 +1,158 @@
+{
+  "id": "OP-01ED",
+  "canonical_key": "CK-c9294e4833c61256",
+  "title": "When I need to send or receive media files (images, videos, documents) through WhatsApp automation, ",
+  "target_user": "WhatsApp Automation Developer / Business Operator",
+  "job_to_be_done": "When I need to send or receive media files (images, videos, documents) through WhatsApp automation, I want consistent support for all media types and sizes, so I can avoid failed transfers, corrupted files, and custom encoding work.",
+  "painful_workflow": "Implementing custom media handling because unofficial libraries have inconsistent support for media types and sizes.",
+  "current_workaround": "Write custom media encoding/decoding logic, handle upload/download manually, and implement retry mechanisms for failed media transfers.",
+  "source_ids": [
+    "SIG-0008"
+  ],
+  "independent_sources": 1,
+  "source_type_count": 1,
+  "pain_score": 2,
+  "frequency_score": 2,
+  "urgency_score": 2,
+  "economic_impact_score": 1,
+  "operational_impact_score": 2,
+  "workaround_intensity_score": 3,
+  "willingness_to_pay_score": 1,
+  "distribution_score": 3,
+  "global_score": 4,
+  "mvp_complexity_score": 3,
+  "evidence_quality_score": 1,
+  "competition_score": 2,
+  "competitors": [
+    {
+      "name": "whatsapp-web.js",
+      "url": "https://github.com/pedroslopez/whatsapp-web.js",
+      "classification": "PARTIAL",
+      "notes": "Most popular unofficial WhatsApp Web automation library. Provides media sending (images, videos, documents, audio) but has known inconsistencies: certain file types fail, size limits vary, and encoding issues require custom workarounds. Not purpose-built for reliable media handling; media support is a secondary feature.",
+      "feature_overlap": "Sending images, videos, documents, audio via WhatsApp Web. Supports media upload and download.",
+      "pricing": "Free (open source)",
+      "market_positioning": "General-purpose WhatsApp automation library for developers."
+    },
+    {
+      "name": "Baileys",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "classification": "PARTIAL",
+      "notes": "Another popular unofficial WhatsApp Web library. Similar media handling capabilities with reported issues for certain media types (e.g., stickers, documents with specific MIME types). Inconsistent across WhatsApp protocol versions.",
+      "feature_overlap": "Media sending and receiving, including images, videos, documents, and audio.",
+      "pricing": "Free (open source)",
+      "market_positioning": "Lightweight WhatsApp Web automation library."
+    },
+    {
+      "name": "Venom",
+      "url": "https://github.com/orkestral/venom",
+      "classification": "PARTIAL",
+      "notes": "Unofficial WhatsApp automation library. Media handling similar to whatsapp-web.js but with its own set of bugs and limitations. Not actively maintained as of late 2023.",
+      "feature_overlap": "Media sending (images, videos, documents) via WhatsApp Web.",
+      "pricing": "Free (open source)",
+      "market_positioning": "WhatsApp automation with focus on multi-device support."
+    },
+    {
+      "name": "WhatsApp Business API (Cloud API)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "SUBSTITUTE",
+      "notes": "Official WhatsApp Business API. Reliable media handling but with strict constraints: max 16MB for images, 100MB for videos, limited document types, and requires business verification. Not suitable for personal or small-scale automation. Different approach (official API vs. unofficial Web automation).",
+      "feature_overlap": "Sending and receiving media messages with guaranteed delivery and format support within limits.",
+      "pricing": "Per conversation (free tier available, then $0.005-0.08 per conversation depending on region)",
+      "market_positioning": "Enterprise-grade WhatsApp messaging for businesses."
+    },
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Uses official WhatsApp Business API under the hood. Same media constraints as Cloud API. Provides reliable media handling but limited to official API capabilities. Not a direct competitor for unofficial automation use cases.",
+      "feature_overlap": "Media messaging via WhatsApp with Twilio's abstraction layer.",
+      "pricing": "Per message ($0.005 per message + media costs)",
+      "market_positioning": "Cloud communications platform with WhatsApp integration."
+    },
+    {
+      "name": "WATI",
+      "url": "https://www.wati.io",
+      "classification": "SUBSTITUTE",
+      "notes": "WhatsApp automation platform (SaaS). Includes media sending as part of its features. Relies on official WhatsApp Business API. Not a library or tool for developers to integrate into their own code; it's a full platform.",
+      "feature_overlap": "Send images, videos, documents via WhatsApp automation.",
+      "pricing": "Subscription-based (starts at $49/month)",
+      "market_positioning": "No-code WhatsApp marketing and support platform."
+    },
+    {
+      "name": "ChatAPI",
+      "url": "https://chat-api.com",
+      "classification": "SUBSTITUTE",
+      "notes": "WhatsApp API service that uses unofficial methods (similar to whatsapp-web.js). Provides media sending but with similar inconsistencies. Not a dedicated media handling solution.",
+      "feature_overlap": "Media sending via WhatsApp API.",
+      "pricing": "Pay-per-use (starts at $0.05 per message)",
+      "market_positioning": "WhatsApp API service for developers."
+    },
+    {
+      "name": "Ultramsg",
+      "url": "https://ultramsg.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Another WhatsApp API service. Media handling capabilities but dependent on underlying unofficial WhatsApp Web protocol. Inconsistent support for media types and sizes.",
+      "feature_overlap": "Media messaging via WhatsApp API.",
+      "pricing": "Pay-per-use (starts at $0.05 per message)",
+      "market_positioning": "WhatsApp API service for businesses."
+    },
+    {
+      "name": "whatsapp-media-downloader (npm)",
+      "url": "https://www.npmjs.com/package/whatsapp-media-downloader",
+      "classification": "PARTIAL",
+      "notes": "Niche npm package for downloading media from WhatsApp Web. Only handles download side, not sending. Very limited scope.",
+      "feature_overlap": "Downloading media from WhatsApp chats.",
+      "pricing": "Free (open source)",
+      "market_positioning": "Utility for extracting media from WhatsApp."
+    },
+    {
+      "name": "CloudConvert",
+      "url": "https://cloudconvert.com",
+      "classification": "SUBSTITUTE",
+      "notes": "Media conversion service. Can be used to pre-process media to supported formats before sending via WhatsApp. Not specific to WhatsApp automation; a general tool.",
+      "feature_overlap": "Converting media files to WhatsApp-compatible formats.",
+      "pricing": "Pay-per-conversion (free tier with limits)",
+      "market_positioning": "Online file converter."
+    }
+  ],
+  "substitutes": [
+    "WhatsApp Business API (Cloud API)",
+    "Twilio WhatsApp API",
+    "WATI",
+    "ChatAPI",
+    "Ultramsg",
+    "CloudConvert",
+    "FFmpeg (open source media conversion)"
+  ],
+  "verified_facts": [
+    "A developer on GitHub reported implementing custom media handling due to inconsistent support in unofficial libraries for WhatsApp media types/sizes.",
+    "The problem involves sending/receiving images, videos, and documents."
+  ],
+  "inferences": [
+    "The developer likely uses unofficial WhatsApp libraries (e.g., whatsapp-web.js) which have varied media support.",
+    "The problem may be common among developers using such libraries, but this is unknown."
+  ],
+  "assumptions": [
+    "The problem is not solved by official WhatsApp Business API (which handles media natively).",
+    "The reporter represents a broader set of developers with the same pain.",
+    "Custom encoding is a workaround that is time-consuming but not prohibitively expensive."
+  ],
+  "unknowns": [
+    "How many developers face this issue?",
+    "What is the exact failure rate of media transfers?",
+    "Are there any existing paid solutions or services that address this?",
+    "What is the average time spent on custom media handling?",
+    "Is this problem specific to one library or widespread?"
+  ],
+  "rejection_reasons": [
+    "Judge rejected: Willingness to pay is near zero (score 1/10), and developers already have free, entrenched open-source libraries (whatsapp-web.js, Baileys, Venom) that cover the core media-handling use case with workable workarounds, making a paid SaaS solution economically unviable."
+  ],
+  "judge_verdict": "REJECT",
+  "confidence": 0.85,
+  "final_score": 0,
+  "run_id": "RUN-C1388101",
+  "stage": "judge",
+  "status": "REJECTED",
+  "created_at": "2026-08-13T05:31:37.692Z",
+  "updated_at": "2026-08-13T05:42:52.190Z"
+}

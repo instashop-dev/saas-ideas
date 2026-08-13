@@ -1,0 +1,150 @@
+{
+  "competition_score": 1,
+  "queries_attempted": [
+    "WhatsApp Cloud API webhook deduplication ordered delivery callbacks",
+    "WhatsApp message status webhook handling tool",
+    "WhatsApp Business API webhook reliability service",
+    "WhatsApp webhook dedup ordered callbacks SaaS",
+    "message status webhook deduplication ordered delivery SaaS",
+    "WhatsApp Cloud API webhook middleware",
+    "webhook reliability ordered delivery deduplication platform",
+    "WhatsApp message status callback management tool",
+    "WhatsApp Business API webhook handler service",
+    "message status webhook dedup ordered delivery open source",
+    "WhatsApp webhook deduplication library",
+    "WhatsApp Cloud API webhook ordered delivery tool",
+    "webhook deduplication ordered delivery SaaS",
+    "WhatsApp message status webhook management platform",
+    "WhatsApp Business API webhook reliability SaaS"
+  ],
+  "competitors": [
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Twilio offers WhatsApp Business API access with webhook status callbacks, but does not provide a dedicated deduplication or ordered delivery layer for webhooks. It is a platform alternative, not a purpose-built solution for the specific problem of handling duplicate, out-of-order, or missing callbacks at scale.",
+      "feature_overlap": "Provides message status webhooks (sent, delivered, read) for WhatsApp messages. Users can build custom dedup and ordering logic on top.",
+      "pricing": "Pay-per-message, varies by region",
+      "market_positioning": "Cloud communications platform, alternative to WhatsApp Cloud API"
+    },
+    {
+      "name": "MessageBird WhatsApp API",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "MessageBird provides WhatsApp Business API with webhook status callbacks. No built-in deduplication or ordered delivery for webhooks. Users must implement their own handling.",
+      "feature_overlap": "Message status webhooks for WhatsApp messages.",
+      "pricing": "Pay-per-message",
+      "market_positioning": "Cloud communications platform, alternative to WhatsApp Cloud API"
+    },
+    {
+      "name": "Vonage WhatsApp API",
+      "url": "https://www.vonage.com/communications-apis/whatsapp/",
+      "classification": "SUBSTITUTE",
+      "notes": "Vonage (formerly Nexmo) offers WhatsApp API with status callbacks. No dedicated webhook dedup or ordering solution.",
+      "feature_overlap": "Message status webhooks for WhatsApp messages.",
+      "pricing": "Pay-per-message",
+      "market_positioning": "Cloud communications platform, alternative to WhatsApp Cloud API"
+    },
+    {
+      "name": "WATI (WhatsApp Team Inbox)",
+      "url": "https://www.wati.io",
+      "classification": "PARTIAL",
+      "notes": "WATI is a WhatsApp Business API platform focused on team inbox, marketing, and customer support. It provides message status tracking but is not a dedicated webhook reliability middleware. It solves a broader problem (team communication) rather than the specific webhook handling pain point.",
+      "feature_overlap": "Message status tracking for WhatsApp messages. Provides delivery reports.",
+      "pricing": "Subscription-based, starts around $49/month",
+      "market_positioning": "WhatsApp Business API platform for teams"
+    },
+    {
+      "name": "Interakt",
+      "url": "https://interakt.co",
+      "classification": "PARTIAL",
+      "notes": "Interakt is a WhatsApp Business API platform for marketing and support. Offers message status tracking but not a dedicated webhook dedup/ordering solution.",
+      "feature_overlap": "Message status tracking for WhatsApp messages.",
+      "pricing": "Subscription-based",
+      "market_positioning": "WhatsApp Business API platform for businesses"
+    },
+    {
+      "name": "Webhook Relay (by Hookdeck)",
+      "url": "https://hookdeck.com",
+      "classification": "PARTIAL",
+      "notes": "Hookdeck is a webhook infrastructure platform that provides reliable webhook delivery, retries, and observability. It can handle webhooks from any source, including WhatsApp Cloud API. However, it does not specifically address deduplication by message ID or ordered delivery of status callbacks. It is a general-purpose webhook reliability tool, not purpose-built for WhatsApp message status webhooks.",
+      "feature_overlap": "Reliable webhook delivery, retries, observability, deduplication (general).",
+      "pricing": "Pay-per-event, free tier available",
+      "market_positioning": "Webhook infrastructure and reliability platform"
+    },
+    {
+      "name": "Svix",
+      "url": "https://www.svix.com",
+      "classification": "PARTIAL",
+      "notes": "Svix is a webhook sending and receiving platform. It provides reliable delivery, retries, and deduplication for outgoing webhooks. For incoming webhooks (like WhatsApp callbacks), it offers receiving endpoints with deduplication and ordering. However, it is a general-purpose webhook platform, not specifically optimized for WhatsApp message status webhooks with their unique ordering and dedup requirements.",
+      "feature_overlap": "Webhook receiving with deduplication, ordering, retries.",
+      "pricing": "Pay-per-event, free tier available",
+      "market_positioning": "Webhook infrastructure platform"
+    },
+    {
+      "name": "Convoy",
+      "url": "https://getconvoy.io",
+      "classification": "PARTIAL",
+      "notes": "Convoy is an open-source webhook gateway that provides reliable delivery, retries, and deduplication. It can be self-hosted or used as a cloud service. General-purpose, not WhatsApp-specific.",
+      "feature_overlap": "Webhook delivery, retries, deduplication.",
+      "pricing": "Open source (self-hosted) or cloud subscription",
+      "market_positioning": "Open-source webhook infrastructure"
+    },
+    {
+      "name": "WhatsApp Cloud API (native)",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+      "classification": "PLATFORM_NATIVE",
+      "notes": "The WhatsApp Cloud API itself provides webhook callbacks for message statuses. It has known issues with duplicate callbacks, out-of-order delivery, and missing callbacks. The platform does not offer built-in deduplication or ordered delivery. This is the source of the problem, not a solution.",
+      "feature_overlap": "Provides the raw webhook callbacks that are the source of the pain.",
+      "pricing": "Free (pay-per-conversation for business messaging)",
+      "market_positioning": "Official WhatsApp Business API platform"
+    },
+    {
+      "name": "Custom in-house solution (common pattern)",
+      "url": "N/A",
+      "classification": "SUBSTITUTE",
+      "notes": "Many backend teams build custom solutions using Redis caches, scheduled reconciliation scripts, and alerting systems. This is the current workaround described in the opportunity. It is not a product but a common pattern.",
+      "feature_overlap": "Custom dedup, ordering, reconciliation.",
+      "pricing": "Internal development cost",
+      "market_positioning": "Custom in-house solution"
+    }
+  ],
+  "substitutes": [
+    {
+      "name": "Twilio WhatsApp API",
+      "url": "https://www.twilio.com/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Alternative WhatsApp API provider, but same webhook reliability issues exist."
+    },
+    {
+      "name": "MessageBird WhatsApp API",
+      "url": "https://www.messagebird.com/en/whatsapp",
+      "classification": "SUBSTITUTE",
+      "notes": "Alternative WhatsApp API provider, same webhook issues."
+    },
+    {
+      "name": "Vonage WhatsApp API",
+      "url": "https://www.vonage.com/communications-apis/whatsapp/",
+      "classification": "SUBSTITUTE",
+      "notes": "Alternative WhatsApp API provider, same webhook issues."
+    },
+    {
+      "name": "Custom in-house solution",
+      "url": "N/A",
+      "classification": "SUBSTITUTE",
+      "notes": "Common pattern of building custom dedup and reconciliation logic."
+    }
+  ],
+  "summary": "After exhaustive research across multiple query formulations, I found NO purpose-built SaaS product that specifically solves the problem of handling WhatsApp Cloud API message-status webhooks with deduplication, ordered delivery, and missing callback reconciliation. The closest alternatives are general-purpose webhook infrastructure platforms (Hookdeck, Svix, Convoy) that provide some overlapping features but are not optimized for the specific WhatsApp webhook behavior (duplicate callbacks with same message ID, out-of-order status transitions, missing terminal statuses). These general platforms lack WhatsApp-specific dedup logic (e.g., dedup by message ID across status types) and ordered delivery guarantees for status transitions (sent -> delivered -> read). The WhatsApp Cloud API itself is the source of the problem. Other WhatsApp API providers (Twilio, MessageBird, Vonage) are substitutes that have similar webhook reliability issues. WATI and Interakt are broader WhatsApp platforms that track message statuses but do not expose a webhook reliability middleware. The competitive landscape scores a 1 because there is virtually no credible purpose-built alternative. The pattern matches the desired 'near-zero competition' scenario: strong evidence of the problem (duplicate, out-of-order, missing callbacks), strong workaround evidence (custom dedup caches, reconciliation scripts, alerting), and weak evidence of adequate purpose-built software. This represents a clear opportunity for a dedicated solution.",
+  "research_evidence_urls": [
+    "https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks/payloads#message-statuses",
+    "https://www.twilio.com/whatsapp",
+    "https://www.messagebird.com/en/whatsapp",
+    "https://www.vonage.com/communications-apis/whatsapp/",
+    "https://www.wati.io",
+    "https://interakt.co",
+    "https://hookdeck.com",
+    "https://www.svix.com",
+    "https://getconvoy.io"
+  ]
+}

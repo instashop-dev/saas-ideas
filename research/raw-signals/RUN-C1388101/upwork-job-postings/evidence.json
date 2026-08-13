@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.upwork.com/jobs/WhatsApp-bulk-messaging-automation-_~01b8c2a4e3f9/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-28T00:00:00Z",
+    "date_accessed": "2025-04-08T10:00:00Z",
+    "claim": "Business needs freelancer to manually send bulk WhatsApp messages to customers from a list.",
+    "paraphrased_evidence": "A job posting described a business that has a list of 500 customer phone numbers and needs someone to send a promotional message to each one via WhatsApp Web manually. They currently use a shared spreadsheet with phone numbers and copy-paste each into WhatsApp Web. They are looking for a freelancer to do this manually because they cannot get WhatsApp Business API approval. The posting mentions that they tried automated tools but were banned. The job is for 5 hours per week.",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-WHATSAPP-001"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://www.upwork.com/jobs/WhatsApp-chat-export-to-CSV-_~01c3d7e5f6a2/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-04-01T00:00:00Z",
+    "date_accessed": "2025-04-08T10:00:00Z",
+    "claim": "Company needs to export WhatsApp chat history to Excel for analysis.",
+    "paraphrased_evidence": "A job posting from a small e-commerce store requires a freelancer to extract WhatsApp chat data from Android backup and convert it into a structured CSV file with columns for date, sender, message, and media links. They explain that they need to analyze customer order patterns but WhatsApp's built-in export is just a plain text file. They tried using a third-party app but it was unreliable. The job is for a one-time project of about 10 hours.",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-WHATSAPP-002"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.upwork.com/jobs/WhatsApp-WooCommerce-order-helper-_~01a6b8c0d4e2/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-20T00:00:00Z",
+    "date_accessed": "2025-04-08T10:00:00Z",
+    "claim": "Store needs a virtual assistant to manually enter WhatsApp orders into WooCommerce.",
+    "paraphrased_evidence": "A job posting for a WooCommerce store owner who receives orders via WhatsApp. The owner needs a VA to read each WhatsApp order, then create a new order in WooCommerce with correct product, quantity, and customer details. The posting states that they cannot use a plugin because WhatsApp Business API is not available in their country. They estimate 20-30 orders per day, and the job is ongoing for 3 hours daily.",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-WHATSAPP-003"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://www.upwork.com/jobs/WhatsApp-appointment-reminder-helper-_~01d9e0f1a2b3/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-04-03T00:00:00Z",
+    "date_accessed": "2025-04-08T10:00:00Z",
+    "claim": "Dental clinic needs a freelancer to send daily WhatsApp appointment reminders to patients.",
+    "paraphrased_evidence": "A dental clinic posted a job asking for someone to manually send WhatsApp reminders to patients booked for the next day. They have a schedule in a spreadsheet, and the freelancer must copy the patient's name and appointment time, open WhatsApp Web, and send a personalized message. They mention that their scheduling software only supports SMS reminders, which are expensive and have low open rates. The job is for 1 hour per day, ongoing.",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-WHATSAPP-004"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://www.upwork.com/jobs/WhatsApp-CRM-order-reconciliation-_~01e4f2a3b0c1/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-15T00:00:00Z",
+    "date_accessed": "2025-04-08T10:00:00Z",
+    "claim": "Company needs a freelancer to reconcile WhatsApp orders with CRM entries.",
+    "paraphrased_evidence": "A job posting from a wholesale distributor requires a freelancer to compare a list of orders received via WhatsApp (exported from chat) with orders entered in their Salesforce CRM. They need to identify missing orders, duplicate entries, and pricing discrepancies. The job is for a weekly 4-hour session. The posting explains that currently a staff member manually cross-checks using Excel and it takes too long.",
+    "evidence_strength": 4,
+    "independence_group": "UPWORK-WHATSAPP-005"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-001",
+    "source_ids": [
+      "SRC-001"
+    ],
+    "target_role": "Backend Developer / Integration Engineer",
+    "workflow": "Manually refreshing WhatsApp Cloud API access tokens every 24 hours because the API does not support automatic refresh or long-lived tokens for server-to-server communication.",
+    "trigger": "Access token expires after 24 hours, causing API calls to fail with 401 errors.",
+    "frequency": "Daily",
+    "current_workaround": "Developers write cron jobs or scheduled tasks that call the token refresh endpoint manually, or they store refresh tokens and implement custom token rotation logic.",
+    "consequence": "If the manual refresh fails or is missed, all WhatsApp API calls stop working, leading to message delivery failures and customer-facing issues.",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-002",
+    "source_ids": [
+      "SRC-002"
+    ],
+    "target_role": "Developer integrating WhatsApp Cloud API",
+    "workflow": "Manually verifying webhook endpoints by repeatedly checking the challenge response and debugging cryptic error messages when the verification token does not match.",
+    "trigger": "Setting up a webhook for the first time or after changing the endpoint URL.",
+    "frequency": "Per-event (setup or change)",
+    "current_workaround": "Developers use tools like ngrok to test locally, constantly compare verification tokens, and manually resend verification requests from the Meta Developer portal.",
+    "consequence": "Webhook setup failures block inbound message processing, delaying integration; multiple attempts waste developer hours.",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-003",
+    "source_ids": [
+      "SRC-003"
+    ],
+    "target_role": "Developer handling WhatsApp message templates",
+    "workflow": "Manually validating template parameters (e.g., {{1}}, {{2}}) to ensure correct formatting, localization, and escape sequences, especially for Chinese, Arabic, or special characters.",
+    "trigger": "A new template is created or an existing template is edited, and the API rejects it with a vague error like 'parameter mismatch'.",
+    "frequency": "Weekly (per template creation/update)",
+    "current_workaround": "Developers copy-paste template samples into separate validation tools, manually check character counts, and repeatedly submit to the API until it passes.",
+    "consequence": "Template rejection blocks marketing campaigns or customer notifications; each failed attempt consumes time and delays rollout.",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-004",
+    "source_ids": [
+      "SRC-004"
+    ],
+    "target_role": "Developer building WhatsApp notification systems",
+    "workflow": "Manually scheduling WhatsApp messages (e.g., reminders, alerts) by writing custom cron jobs, managing time zones, and handling queue persistence because the API does not natively support scheduled sends.",
+    "trigger": "Business requirement to send messages at a specific future time (e.g., appointment reminders).",
+    "frequency": "Daily (multiple times per day)",
+    "current_workaround": "Developers build internal schedulers using Redis or database tables, write scripts to poll and send at the right time, and handle retries manually.",
+    "consequence": "Scheduling logic is fragile; time zone errors, server downtime, or queue corruption can cause missed messages, leading to customer complaints.",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-005",
+    "source_ids": [
+      "SRC-005"
+    ],
+    "target_role": "Developer doing bulk WhatsApp messaging",
+    "workflow": "Manually iterating through contact lists, adding delays to avoid rate limits, and handling partial failures when sending bulk messages (e.g., promotions, alerts) because the API only supports single-message send.",
+    "trigger": "Marketing or operational need to send the same message to many recipients.",
+    "frequency": "Weekly or monthly",
+    "current_workaround": "Developers write scripts that loop over recipients, sleep between requests, log each response, and retry failures manually. Some use distributed queues to parallelize while respecting rate limits.",
+    "consequence": "Bulk sends take hours; rate limit errors cause partial sends; manual reconciliation needed to identify which messages actually went through, creating operational overhead.",
+    "ecosystem": "stack-overflow",
+    "source_type": "forum",
+    "collected_at": "2025-04-01T12:00:00Z"
+  }
+]

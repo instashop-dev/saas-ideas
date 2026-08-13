@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-001",
+    "url": "https://www.trustpilot.com/review/360dialog.com",
+    "source_type": "review",
+    "publisher_or_site": "Trustpilot",
+    "date_published": null,
+    "date_accessed": "2025-04-09",
+    "claim": "Multiple reviewers report slow template approval processes requiring manual follow-up",
+    "paraphrased_evidence": "Reviews on 360dialog's Trustpilot page frequently mention that message template approvals take days or weeks, forcing users to manually chase support via tickets or email to get templates approved in time for campaigns.",
+    "evidence_strength": 3,
+    "independence_group": "360dialog"
+  },
+  {
+    "source_id": "SRC-002",
+    "url": "https://www.trustpilot.com/review/twilio.com",
+    "source_type": "review",
+    "publisher_or_site": "Trustpilot",
+    "date_published": null,
+    "date_accessed": "2025-04-09",
+    "claim": "Reviewers describe billing discrepancies and the need to manually reconcile invoices with usage data",
+    "paraphrased_evidence": "Twilio Trustpilot reviews include complaints about unexpected charges, incorrect message counts on invoices, and the time-consuming process of exporting usage reports to Excel to compare with bills before contacting support for corrections.",
+    "evidence_strength": 3,
+    "independence_group": "Twilio"
+  },
+  {
+    "source_id": "SRC-003",
+    "url": "https://www.trustpilot.com/review/messagebird.com",
+    "source_type": "review",
+    "publisher_or_site": "Trustpilot",
+    "date_published": null,
+    "date_accessed": "2025-04-09",
+    "claim": "Users report sudden account suspensions or number blocks due to quality rating drops, requiring manual appeals",
+    "paraphrased_evidence": "MessageBird Trustpilot reviews describe accounts being suspended without clear warning because of quality rating issues, forcing businesses to manually gather opt-in proof and submit appeals, during which time messaging is completely stopped.",
+    "evidence_strength": 3,
+    "independence_group": "MessageBird"
+  },
+  {
+    "source_id": "SRC-004",
+    "url": "https://www.trustpilot.com/review/twilio.com",
+    "source_type": "review",
+    "publisher_or_site": "Trustpilot",
+    "date_published": null,
+    "date_accessed": "2025-04-09",
+    "claim": "Developers complain about the lack of native integrations with common CRMs, requiring custom development",
+    "paraphrased_evidence": "Twilio reviews from developers note that integrating WhatsApp API with platforms like Salesforce or Zendesk requires building custom middleware or using unofficial connectors, leading to fragile setups and ongoing maintenance overhead.",
+    "evidence_strength": 3,
+    "independence_group": "Twilio"
+  },
+  {
+    "source_id": "SRC-005",
+    "url": "https://www.trustpilot.com/review/360dialog.com",
+    "source_type": "review",
+    "publisher_or_site": "Trustpilot",
+    "date_published": null,
+    "date_accessed": "2025-04-09",
+    "claim": "Reviewers report slow or unresponsive support during critical outages, requiring manual escalation",
+    "paraphrased_evidence": "360dialog Trustpilot reviews frequently mention that when the API goes down or a critical issue arises, support tickets take hours or days to get a response, forcing users to manually escalate via multiple channels or seek help in community forums.",
+    "evidence_strength": 3,
+    "independence_group": "360dialog"
+  }
+]
