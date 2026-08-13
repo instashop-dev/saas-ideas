@@ -4,16 +4,17 @@
   "completed_at": null,
   "trigger": "manual",
   "models": {
-    "pain_miner": "deepseek/deepseek-v4-flash"
+    "pain_miner": "deepseek/deepseek-v4-flash",
+    "clusterer": "deepseek/deepseek-v4-flash"
   },
   "candidate_counts": {
     "signals": 42,
-    "clusters": 0,
+    "clusters": 20,
     "validated": 0,
     "competition_survivors": 0,
     "finalists": 0,
     "approved": 0
   },
   "estimated_cost": null,
-  "status": "pain_mining"
+  "status": "clustering"
 }

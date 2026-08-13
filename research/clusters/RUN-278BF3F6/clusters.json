@@ -1,0 +1,649 @@
+[
+  {
+    "cluster_id": "CL-0001",
+    "canonical_jtbd": "When I publish a new article on dev.to, I want to automatically republish it to my other platforms (Medium, personal blog, LinkedIn) with correct formatting, so I can save 30-60 minutes per article and ensure consistent cross-posting.",
+    "target_user": "content creator / blogger",
+    "painful_workflow": "Manually copy-pasting article content, reformatting Markdown, re-uploading images, and adjusting tags for each target platform after publishing on dev.to.",
+    "current_workaround": "Copy-paste article content, reformat Markdown, re-upload images, and adjust tags for each target platform.",
+    "source_signal_ids": [
+      "SIG-0001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001",
+          "SRC-0002"
+        ],
+        "target_role": "content creator / blogger",
+        "workflow": "Manually republishing dev.to articles to other platforms (Medium, personal blog, LinkedIn) one by one without any automation",
+        "trigger": "New article published on dev.to",
+        "frequency": "per event (each new article)",
+        "current_workaround": "Copy-paste article content, reformat Markdown, re-upload images, and adjust tags for each target platform",
+        "consequence": "Time loss (30-60 minutes per article), risk of formatting errors, inconsistent cross-posting, article decay when updates are not reflected across platforms",
+        "ecosystem": "dev-to",
+        "source_type": "forum",
+        "collected_at": "2025-04-04T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0002",
+    "canonical_jtbd": "When I need to report on content performance across platforms, I want to automatically aggregate analytics from dev.to, Medium, and my personal blog into a single view, so I can avoid hours of manual data entry and get real-time insights.",
+    "target_user": "developer advocate / team lead",
+    "painful_workflow": "Manually exporting CSV from dev.to stats, copying data from other platforms, and reconciling in Excel for weekly or monthly reporting.",
+    "current_workaround": "Export CSV from dev.to stats, copy data from other platforms, then manually reconcile in Excel.",
+    "source_signal_ids": [
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0003",
+          "SRC-0004"
+        ],
+        "target_role": "developer advocate / team lead",
+        "workflow": "Manually compiling cross-platform analytics from dev.to, Medium, and personal blog into a single spreadsheet for reporting",
+        "trigger": "Weekly or monthly performance reporting requirement",
+        "frequency": "weekly or monthly",
+        "current_workaround": "Export CSV from dev.to stats, copy data from other platforms, then manually reconcile in Excel",
+        "consequence": "Hours spent every week, data entry errors, no real-time view of content performance",
+        "ecosystem": "dev-to",
+        "source_type": "forum",
+        "collected_at": "2025-04-04T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0003",
+    "canonical_jtbd": "When I receive comments on high-traffic posts, I want to automatically filter spam and abusive content, so I can reduce moderation fatigue and maintain community trust.",
+    "target_user": "moderator / community manager",
+    "painful_workflow": "Manually reading every comment and clicking to approve/reject in dev.to dashboard, with no bulk moderation or keyword filtering.",
+    "current_workaround": "Reading every comment, clicking to approve/reject in dev.to dashboard, no bulk moderation or keyword filtering.",
+    "source_signal_ids": [
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0005",
+          "SRC-0006"
+        ],
+        "target_role": "moderator / community manager",
+        "workflow": "Manually reviewing and approving or deleting comments on popular articles to filter spam and abusive content",
+        "trigger": "Incoming comments on high-traffic posts",
+        "frequency": "daily",
+        "current_workaround": "Reading every comment, clicking to approve/reject in dev.to dashboard, no bulk moderation or keyword filtering",
+        "consequence": "Moderation fatigue, delayed response, spam may appear before removal, community trust erodes",
+        "ecosystem": "dev-to",
+        "source_type": "forum",
+        "collected_at": "2025-04-04T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0004",
+    "canonical_jtbd": "When I have a new draft ready in a GitHub repo, I want to automatically publish it to dev.to via a CI/CD pipeline, so I can avoid maintaining fragile custom scripts and API integrations.",
+    "target_user": "developer / automation engineer",
+    "painful_workflow": "Manually invoking the dev.to API from a CI/CD pipeline using custom scripts with fetch/curl, managing API tokens, handling errors, and manually triggering the action.",
+    "current_workaround": "Writing custom scripts using fetch/curl, managing API tokens, handling errors, and manually triggering the action.",
+    "source_signal_ids": [
+      "SIG-0004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0007"
+        ],
+        "target_role": "developer / automation engineer",
+        "workflow": "Manually invoking the dev.to API to publish articles from a CI/CD pipeline (e.g., GitHub Actions) because there is no native integration",
+        "trigger": "Every time a new draft is ready in a GitHub repo",
+        "frequency": "per event (each new article)",
+        "current_workaround": "Writing custom scripts using fetch/curl, managing API tokens, handling errors, and manually triggering the action",
+        "consequence": "Fragile custom scripts, maintenance burden, risk of API rate limits, no automatic retry or error handling",
+        "ecosystem": "dev-to",
+        "source_type": "github",
+        "collected_at": "2025-04-04T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0005",
+    "canonical_jtbd": "When I need to manage posts and comments for multiple dev.to accounts, I want to switch between personal and organization accounts seamlessly, so I can avoid logging out and logging in repeatedly.",
+    "target_user": "organizer / team account manager",
+    "painful_workflow": "Manually logging out and logging in with different credentials, or using browser profiles to switch between multiple dev.to accounts.",
+    "current_workaround": "Logging out and logging in with different credentials, or using browser profiles.",
+    "source_signal_ids": [
+      "SIG-0005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0005",
+        "source_ids": [
+          "SRC-0008",
+          "SRC-0009"
+        ],
+        "target_role": "organizer / team account manager",
+        "workflow": "Manually switching between multiple dev.to accounts (personal and organization) to manage posts and comments",
+        "trigger": "Need to act on behalf of an organization or manage multiple author profiles",
+        "frequency": "daily",
+        "current_workaround": "Logging out and logging in with different credentials, or using browser profiles",
+        "consequence": "Time wasted, accidental posting under wrong account, inability to schedule cross-account actions",
+        "ecosystem": "dev-to",
+        "source_type": "forum",
+        "collected_at": "2025-04-04T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0006",
+    "canonical_jtbd": "When a member joins a specific voice channel, I want to automatically assign them a role, so I can avoid manual role assignment and ensure channel-specific permissions are applied.",
+    "target_user": "Discord server administrator",
+    "painful_workflow": "Manually assigning roles when a member joins a specific voice channel, or using third-party bots with custom commands.",
+    "current_workaround": "Use third-party bots like YAGPDB or MEE6 with custom commands, or manually assign roles via the member list.",
+    "source_signal_ids": [
+      "SIG-0001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001"
+        ],
+        "target_role": "Discord server administrator",
+        "workflow": "Manual role assignment when a member joins a specific voice channel (e.g., for a game lobby or support queue).",
+        "trigger": "Member joins a designated voice channel.",
+        "frequency": "Per-event (each time a member joins the voice channel)",
+        "current_workaround": "Use third-party bots like YAGPDB or MEE6 with custom commands, or manually assign roles via the member list.",
+        "consequence": "If not done, members miss channel-specific permissions or community alerts; manual assignment is slow and error-prone for large servers.",
+        "ecosystem": "discord-forums",
+        "source_type": "forum",
+        "collected_at": "2025-04-10T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0007",
+    "canonical_jtbd": "When spam messages bypass Discord's built-in AutoMod, I want to automatically detect and remove them using custom regex filters, so I can protect community trust and reduce moderator workload.",
+    "target_user": "Discord moderator or server admin",
+    "painful_workflow": "Manually reviewing and removing spam messages that bypass Discord's built-in AutoMod, using third-party bots or manual deletion.",
+    "current_workaround": "Use third-party moderation bots with custom regex filters (e.g., Dyno, Carl-bot) or manually delete messages and ban users.",
+    "source_signal_ids": [
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0002"
+        ],
+        "target_role": "Discord moderator or server admin",
+        "workflow": "Manual review and removal of spam messages that bypass Discord's built-in AutoMod (e.g., repeated links, scam messages using character manipulation).",
+        "trigger": "Spam message posted in a channel.",
+        "frequency": "Daily (high-traffic servers)",
+        "current_workaround": "Use third-party moderation bots with custom regex filters (e.g., Dyno, Carl-bot) or manually delete messages and ban users.",
+        "consequence": "Spam reaches members, damaging community trust; manual cleanup takes moderator time and can miss subtle spam patterns.",
+        "ecosystem": "discord-forums",
+        "source_type": "forum",
+        "collected_at": "2025-04-10T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0008",
+    "canonical_jtbd": "When I add new roles or modify permissions in a large Discord server, I want to automatically track role hierarchy and permissions to avoid conflicts, so I can prevent security breaches and data exposure.",
+    "target_user": "Discord server owner or administrator",
+    "painful_workflow": "Manually tracking role permissions and hierarchy using spreadsheets to avoid permission conflicts in large multi-community servers.",
+    "current_workaround": "Maintain a separate spreadsheet mapping roles → permissions → channel overrides, or use a third-party bot that logs permission changes.",
+    "source_signal_ids": [
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0003"
+        ],
+        "target_role": "Discord server owner or administrator",
+        "workflow": "Manual tracking of role permissions and hierarchy using spreadsheets to avoid permission conflicts in large multi-community servers.",
+        "trigger": "Adding a new role or modifying permissions for existing roles.",
+        "frequency": "Weekly (during active server development)",
+        "current_workaround": "Maintain a separate spreadsheet mapping roles → permissions → channel overrides, or use a third-party bot that logs permission changes.",
+        "consequence": "Permission errors can lead to security breaches or accidental data exposure; manual spreadsheet updates are error-prone and not real-time.",
+        "ecosystem": "discord-forums",
+        "source_type": "forum",
+        "collected_at": "2025-04-10T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0009",
+    "canonical_jtbd": "When I restructure my Discord server or fear accidental deletion, I want to automatically back up server configuration and message history, so I can avoid hours of recreation and data loss.",
+    "target_user": "Discord server administrator",
+    "painful_workflow": "Manually backing up server configuration (roles, channels, permissions) and message history using third-party tools or bots.",
+    "current_workaround": "Use bots like DiscordChatExporter for message backups, and manually copy role/channel settings via screenshots or text files.",
+    "source_signal_ids": [
+      "SIG-0004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0004"
+        ],
+        "target_role": "Discord server administrator",
+        "workflow": "Manual backup of server configuration (roles, channels, permissions) and message history by exporting data via third-party tools or bots.",
+        "trigger": "Server restructuring, fear of accidental deletion, or migration to a new server.",
+        "frequency": "Monthly or per restructuring event",
+        "current_workaround": "Use bots like DiscordChatExporter for message backups, and manually copy role/channel settings via screenshots or text files.",
+        "consequence": "Without a backup, accidental deletion of a channel or role set can take hours to recreate; manual backups are rarely comprehensive and often neglected.",
+        "ecosystem": "discord-forums",
+        "source_type": "forum",
+        "collected_at": "2025-04-10T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0010",
+    "canonical_jtbd": "When I close a deal in Salesforce, I want to automatically sync invoicing and revenue data to QuickBooks, so I can avoid billing delays, errors, and 2-3 hours of daily manual data entry.",
+    "target_user": "Sales Operations Manager",
+    "painful_workflow": "Manually exporting opportunity data from Salesforce, formatting it in Excel, then importing into QuickBooks; also manually reconciling discrepancies weekly.",
+    "current_workaround": "Sales ops team manually exports opportunity data from Salesforce, formats it in Excel, then imports into QuickBooks; also manually reconciles discrepancies weekly.",
+    "source_signal_ids": [
+      "SIG-0001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001",
+          "SRC-0002"
+        ],
+        "target_role": "Sales Operations Manager",
+        "workflow": "Manual data entry from Salesforce to QuickBooks for invoicing and revenue reconciliation",
+        "trigger": "New deal closed in Salesforce",
+        "frequency": "Daily",
+        "current_workaround": "Sales ops team manually exports opportunity data from Salesforce, formats it in Excel, then imports into QuickBooks; also manually reconciles discrepancies weekly",
+        "consequence": "Billing delays, errors in revenue recognition, wasted 2-3 hours daily, missed opportunities due to stale data",
+        "ecosystem": "g2-capterra-reviews",
+        "source_type": "forum",
+        "collected_at": "2025-03-24T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0011",
+    "canonical_jtbd": "When I need to check inventory levels at the end of the week, I want to automatically reconcile Shopify sales with my warehouse management system, so I can avoid stockouts, overselling, and 4-5 hours of manual spreadsheet work.",
+    "target_user": "E-commerce Operations Manager",
+    "painful_workflow": "Downloading inventory reports from Shopify and WMS, pasting into Google Sheets, manually comparing SKU counts, and flagging discrepancies.",
+    "current_workaround": "Download inventory reports from Shopify and WMS, paste into Google Sheets, manually compare SKU counts, flag discrepancies.",
+    "source_signal_ids": [
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0003"
+        ],
+        "target_role": "E-commerce Operations Manager",
+        "workflow": "Spreadsheet-based inventory reconciliation between Shopify and warehouse management system",
+        "trigger": "End of week inventory check",
+        "frequency": "Weekly",
+        "current_workaround": "Download inventory reports from Shopify and WMS, paste into Google Sheets, manually compare SKU counts, flag discrepancies",
+        "consequence": "Stockouts, overselling, manual error risk, 4-5 hours every Monday, delayed fulfillment",
+        "ecosystem": "g2-capterra-reviews",
+        "source_type": "review",
+        "collected_at": "2025-03-24T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0012",
+    "canonical_jtbd": "When I need to prepare monthly executive reports, I want to automatically aggregate metrics from Google Analytics, SEMrush, and HubSpot, so I can avoid 2 days of manual compilation and get consistent, timely data.",
+    "target_user": "Marketing Analytics Manager",
+    "painful_workflow": "Logging into each analytics tool, exporting PDFs/CSVs, copying key metrics into a PowerPoint deck, spending 2 days compiling.",
+    "current_workaround": "Log into each tool, export PDFs/CSVs, copy key metrics into a PowerPoint deck, spend 2 days compiling.",
+    "source_signal_ids": [
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0004"
+        ],
+        "target_role": "Marketing Analytics Manager",
+        "workflow": "Manual report generation from multiple analytics tools (Google Analytics, SEMrush, HubSpot) for monthly executive reporting",
+        "trigger": "Monthly board meeting prep",
+        "frequency": "Monthly",
+        "current_workaround": "Log into each tool, export PDFs/CSVs, copy key metrics into a PowerPoint deck, spend 2 days compiling",
+        "consequence": "Stale data by the time report is shared, staff burnout, inconsistent metrics, delayed decision-making",
+        "ecosystem": "g2-capterra-reviews",
+        "source_type": "review",
+        "collected_at": "2025-03-24T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0013",
+    "canonical_jtbd": "When a new support ticket is created, I want to automatically assign it to the right agent based on skill and workload, so I can reduce response times and avoid misassignments.",
+    "target_user": "Customer Support Team Lead",
+    "painful_workflow": "Manually reviewing each ticket, reading context, and assigning to the right agent via dropdown in the ticketing system.",
+    "current_workaround": "Team lead manually reviews each ticket, reads context, assigns to the right agent via dropdown in the ticketing system.",
+    "source_signal_ids": [
+      "SIG-0004"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0004",
+        "source_ids": [
+          "SRC-0005",
+          "SRC-0006"
+        ],
+        "target_role": "Customer Support Team Lead",
+        "workflow": "Manual ticket assignment to support agents based on skill and workload",
+        "trigger": "New support ticket created",
+        "frequency": "Per event (multiple times daily)",
+        "current_workaround": "Team lead manually reviews each ticket, reads context, assigns to the right agent via dropdown in the ticketing system",
+        "consequence": "Slow response times, misassigned tickets, team lead becomes bottleneck, agents spend 15-20 mins daily reassigning misfiled tickets",
+        "ecosystem": "g2-capterra-reviews",
+        "source_type": "forum",
+        "collected_at": "2025-03-24T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0014",
+    "canonical_jtbd": "When I need to prepare for a SOC 2 Type II audit, I want to automatically collect evidence from various departments, so I can avoid missed deadlines, audit findings, and weeks of frantic effort.",
+    "target_user": "Compliance Officer",
+    "painful_workflow": "Manually emailing various department heads for screenshots, logs, and policy acknowledgments; storing everything in a shared drive folder with manual versioning.",
+    "current_workaround": "Compliance team emails various department heads for screenshots, logs, and policy acknowledgments; stores everything in a shared drive folder with manual versioning.",
+    "source_signal_ids": [
+      "SIG-0005"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0005",
+        "source_ids": [
+          "SRC-0007"
+        ],
+        "target_role": "Compliance Officer",
+        "workflow": "Manual collection of evidence for SOC 2 Type II audit controls",
+        "trigger": "Quarterly audit preparation cycle",
+        "frequency": "Quarterly",
+        "current_workaround": "Compliance team emails various department heads for screenshots, logs, and policy acknowledgments; stores everything in a shared drive folder with manual versioning",
+        "consequence": "Missed evidence deadlines, audit findings, consultant fees ($10k+), risk of non-compliance, 2 weeks of frantic effort per quarter",
+        "ecosystem": "g2-capterra-reviews",
+        "source_type": "review",
+        "collected_at": "2025-03-24T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0015",
+    "canonical_jtbd": "When a new version of a dependency is released or a security advisory is issued, I want to automatically update dependencies across multiple repositories, so I can avoid delayed security patches and maintainer burnout.",
+    "target_user": "Open-source maintainer / DevOps engineer",
+    "painful_workflow": "Manually updating dependencies across multiple repositories by creating pull requests for each package update, using Dependabot or Renovate bot but manually reviewing and merging each PR.",
+    "current_workaround": "Using Dependabot or Renovate bot, but manually reviewing and merging each PR; often resorting to local scripts or manual git commands.",
+    "source_signal_ids": [
+      "SIG-0001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001"
+        ],
+        "target_role": "Open-source maintainer / DevOps engineer",
+        "workflow": "Manually updating dependencies across multiple repositories by creating pull requests for each package update",
+        "trigger": "New version release of a dependency or security advisory",
+        "frequency": "Weekly to monthly, per repository",
+        "current_workaround": "Using Dependabot or Renovate bot, but manually reviewing and merging each PR; often resorting to local scripts or manual git commands",
+        "consequence": "Delayed security patches, outdated dependencies, breaking changes missed, maintainer burnout",
+        "ecosystem": "github-issues",
+        "source_type": "search",
+        "collected_at": "2025-03-27T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0016",
+    "canonical_jtbd": "When I add a new service or environment, I want to automatically generate CI/CD pipeline configuration files, so I can avoid configuration drift and repetitive edits.",
+    "target_user": "CI/CD engineer / Developer",
+    "painful_workflow": "Manually duplicating workflow files, using environment variables, or templating with tools like copier or cookiecutter for each new environment and microservice.",
+    "current_workaround": "Manually duplicating workflow files, using environment variables, or templating with tools like copier or cookiecutter.",
+    "source_signal_ids": [
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0002"
+        ],
+        "target_role": "CI/CD engineer / Developer",
+        "workflow": "Copying and modifying CI/CD pipeline configuration files (e.g., GitHub Actions YAML) for each new environment (dev, staging, prod) and each microservice",
+        "trigger": "Adding a new service or environment",
+        "frequency": "Per new service or environment (weekly to monthly)",
+        "current_workaround": "Manually duplicating workflow files, using environment variables, or templating with tools like copier or cookiecutter",
+        "consequence": "Configuration drift, hard-to-debug build failures, time wasted on repetitive edits, increased risk of misconfiguration",
+        "ecosystem": "github-issues",
+        "source_type": "search",
+        "collected_at": "2025-03-27T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0017",
+    "canonical_jtbd": "When I start a pull request that requires additional review steps, I want to use custom checklists and approval gates within GitHub, so I can avoid lost context and missed review deadlines.",
+    "target_user": "Team lead / Developer",
+    "painful_workflow": "Creating issues linked to PRs, manually tracking review status in spreadsheets, or using external tools like Asana or Jira because GitHub's built-in review workflow doesn't support custom checklists, approval gates, or cross-repo reviews.",
+    "current_workaround": "Creating issues linked to PRs, manually tracking review status in spreadsheets, or using external tools like Asana or Jira.",
+    "source_signal_ids": [
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0003"
+        ],
+        "target_role": "Team lead / Developer",
+        "workflow": "Using GitHub Issues as a makeshift code review tracking system because the built-in review workflow doesn't support custom checklists, approval gates, or cross-repo reviews",
+        "trigger": "Starting a pull request that requires additional review steps beyond the standard GitHub review",
+        "frequency": "Daily, per PR",
+        "current_workaround": "Creating issues linked to PRs, manually tracking review status in spreadsheets, or using external tools like Asana or Jira",
+        "consequence": "Lost context, duplicate work, missed review deadlines, low visibility into review pipeline",
+        "ecosystem": "github-issues",
+        "source_type": "search",
+        "collected_at": "2025-03-27T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-04-10T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0018",
+    "canonical_jtbd": "When I need to prepare for SOC 2 / ISO 27001 audits or respond to enterprise customer due-diligence requests, I want to automatically collect evidence from cloud configurations, user-access reviews, and vendor certificates, so I can avoid audit delays, blocked deals, and weeks of senior engineering time.",
+    "target_user": "CTO, engineering lead, or de facto compliance owner at a B2B SaaS startup",
+    "painful_workflow": "Collecting SOC 2 / ISO 27001 audit evidence by hand: screenshots of cloud and IAM configurations, quarterly user-access reviews assembled in spreadsheets, gathering vendor security certificates, tracking policy acknowledgments, and packaging all of it for auditors.",
+    "current_workaround": "Manual screenshots stored in shared drives, spreadsheet-based access reviews, or paying for compliance automation platforms (e.g., Vanta, Drata) and compliance consultants; HN discussions frequently debate build-vs-buy and complain about platform pricing.",
+    "source_signal_ids": [
+      "SIG-0001"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0001",
+        "source_ids": [
+          "SRC-0001",
+          "SRC-0002"
+        ],
+        "target_role": "CTO, engineering lead, or de facto compliance owner at a B2B SaaS startup",
+        "workflow": "Collecting SOC 2 / ISO 27001 audit evidence by hand: screenshots of cloud and IAM configurations, quarterly user-access reviews assembled in spreadsheets, gathering vendor security certificates, tracking policy acknowledgments, and packaging all of it for auditors.",
+        "trigger": "Scheduled audit windows, quarterly access-review cycles, and enterprise customer due-diligence requests",
+        "frequency": "quarterly access reviews; annual audits; per-deal security reviews",
+        "current_workaround": "Manual screenshots stored in shared drives, spreadsheet-based access reviews, or paying for compliance automation platforms (e.g., Vanta, Drata) and compliance consultants; HN discussions frequently debate build-vs-buy and complain about platform pricing.",
+        "consequence": "Audit delays or failures, blocked enterprise deals, and weeks of senior engineering time diverted to evidence gathering",
+        "ecosystem": "hacker-news",
+        "source_type": "search",
+        "collected_at": "2025-06-02T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0019",
+    "canonical_jtbd": "When I need to close the books at month-end, I want to automatically reconcile payment-processor payouts (Stripe, PayPal, Adyen) against invoices, fees, refunds, and chargebacks in QuickBooks or Xero, so I can avoid misstated revenue and hours of manual work.",
+    "target_user": "Founder, bookkeeper, or finance/operations person at a SaaS or e-commerce company",
+    "painful_workflow": "Reconciling payment-processor payouts (Stripe, PayPal, Adyen) against individual invoices, fees, refunds, and chargebacks, then getting that data into QuickBooks or Xero; lump-sum payouts must be matched to many underlying transactions.",
+    "current_workaround": "CSV exports manipulated in Excel or Google Sheets, hand-written reconciliation scripts, paying bookkeepers to do the matching, or buying third-party connector tools that users complain break or mis-map data.",
+    "source_signal_ids": [
+      "SIG-0002"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0002",
+        "source_ids": [
+          "SRC-0003"
+        ],
+        "target_role": "Founder, bookkeeper, or finance/operations person at a SaaS or e-commerce company",
+        "workflow": "Reconciling payment-processor payouts (Stripe, PayPal, Adyen) against individual invoices, fees, refunds, and chargebacks, then getting that data into QuickBooks or Xero; lump-sum payouts must be matched to many underlying transactions.",
+        "trigger": "Month-end close and tax preparation",
+        "frequency": "monthly",
+        "current_workaround": "CSV exports manipulated in Excel or Google Sheets, hand-written reconciliation scripts, paying bookkeepers to do the matching, or buying third-party connector tools that users complain break or mis-map data.",
+        "consequence": "Books that don't reconcile, misstated revenue, tax filing errors, and several hours of manual work every month",
+        "ecosystem": "hacker-news",
+        "source_type": "search",
+        "collected_at": "2025-06-02T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-06-02T12:00:00Z"
+  },
+  {
+    "cluster_id": "CL-0020",
+    "canonical_jtbd": "When I receive a customer security questionnaire during an enterprise sales cycle, I want to automatically populate answers from a knowledge base of previous responses, so I can avoid slower deal cycles and repetitive paperwork.",
+    "target_user": "Sales engineer, solutions engineer, or founder selling to enterprise customers",
+    "painful_workflow": "Answering bespoke customer security questionnaires (often Excel files with hundreds of questions, or SIG/CAIQ variants) by hunting down previous answers and copy/pasting from old questionnaires and internal documents.",
+    "current_workaround": "A master answer spreadsheet or document maintained by hand, copy/paste from prior questionnaires, or purchasing questionnaire-automation tooling; HN commenters regularly describe this as one of the most tedious parts of enterprise sales.",
+    "source_signal_ids": [
+      "SIG-0003"
+    ],
+    "source_evidence": [
+      {
+        "signal_id": "SIG-0003",
+        "source_ids": [
+          "SRC-0004"
+        ],
+        "target_role": "Sales engineer, solutions engineer, or founder selling to enterprise customers",
+        "workflow": "Answering bespoke customer security questionnaires (often Excel files with hundreds of questions, or SIG/CAIQ variants) by hunting down previous answers and copy/pasting from old questionnaires and internal documents.",
+        "trigger": "Each enterprise sales cycle, vendor assessment, or renewal review",
+        "frequency": "per-deal; multiple per month at companies with active enterprise pipelines",
+        "current_workaround": "A master answer spreadsheet or document maintained by hand, copy/paste from prior questionnaires, or purchasing questionnaire-automation tooling; HN commenters regularly describe this as one of the most tedious parts of enterprise sales.",
+        "consequence": "Slower deal cycles, inconsistent or stale answers reaching customers, and senior technical staff consumed by repetitive paperwork",
+        "ecosystem": "hacker-news",
+        "source_type": "search",
+        "collected_at": "2025-06-02T12:00:00Z"
+      }
+    ],
+    "independent_sources": 1,
+    "source_type_count": 1,
+    "ambiguity_flag": false,
+    "ambiguity_reason": "",
+    "created_at": "2025-06-02T12:00:00Z"
+  }
+]
