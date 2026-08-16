@@ -2,34 +2,76 @@
   {
     "signal_id": "SIG-0001",
     "source_ids": [
-      "SRC-0001",
-      "SRC-0002",
-      "SRC-0003"
+      "SRC-0001"
     ],
-    "target_role": "Bookkeeper / staff accountant at small businesses running Stripe into QuickBooks or Xero",
-    "workflow": "Reconciling Stripe payouts against bank deposits: each payout is a net lump sum combining many charges minus processing fees and refunds, so bookkeepers export Stripe CSVs, split out fees and refunds, and manually match each payout to individual sales in the accounting ledger.",
-    "trigger": "Each Stripe payout landing in the bank account; month-end close",
-    "frequency": "daily-to-weekly payouts; heavy effort at monthly close",
-    "current_workaround": "Export Stripe transaction CSVs into Excel or Google Sheets, manually compute fees, post manual journal entries; some buy connector apps or write scripts; recurring threads ask whether a better method exists.",
-    "consequence": "Bank feeds that never match, misstated revenue and merchant-fee expense, hours lost every month-end, accountant cleanup bills at tax time.",
+    "target_role": "small business owner / freelancer",
+    "workflow": "Monthly bank reconciliation: manually matching transactions in bank statements against accounting software entries, often using spreadsheets to track discrepancies.",
+    "trigger": "End of month closing or when bank statement arrives",
+    "frequency": "Monthly",
+    "current_workaround": "Export bank CSV, import into Excel, manually compare line by line with accounting software reports, then adjust entries.",
+    "consequence": "Errors in reconciliation lead to inaccurate financial reports, delayed tax filings, and potential cash flow mismanagement.",
     "ecosystem": "reddit",
     "source_type": "forum",
-    "collected_at": "2025-06-15T00:00:00Z"
+    "collected_at": "2025-03-24T12:00:00Z"
   },
   {
     "signal_id": "SIG-0002",
     "source_ids": [
-      "SRC-0004",
-      "SRC-0005"
+      "SRC-0002"
     ],
-    "target_role": "MSP billing administrator / service delivery manager",
-    "workflow": "Monthly reconciliation of per-client Microsoft 365 and other vendor license counts against PSA agreements (ConnectWise, Autotask, HaloPSA): technicians add and remove licenses during the month without updating billing agreements, so someone manually exports license counts per tenant and compares them to agreement quantities before invoicing.",
-    "trigger": "Monthly billing cycle",
-    "frequency": "monthly, often consuming a full staff-day or more",
-    "current_workaround": "PowerShell scripts to dump license counts per tenant, Excel comparisons against PSA agreement quantities, manual proration math; recurring r/msp threads describe license drift between vendor portals and billing systems.",
-    "consequence": "Chronic underbilling (revenue leakage) or overbilling (client disputes and credits), plus one or more person-days per month of reconciliation labor.",
+    "target_role": "accountant / bookkeeper",
+    "workflow": "Manual data entry of invoices from multiple vendors into accounting software; no automatic OCR or integration with email.",
+    "trigger": "Receipt of invoice via email or mail",
+    "frequency": "Daily",
+    "current_workaround": "Open each invoice PDF, manually type vendor, amount, date, and category into QuickBooks or Xero.",
+    "consequence": "High time cost, typos cause payment errors, and late payments due to backlog.",
     "ecosystem": "reddit",
     "source_type": "forum",
-    "collected_at": "2025-06-15T00:00:00Z"
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "IT administrator / sysadmin",
+    "workflow": "User provisioning and deprovisioning across multiple SaaS tools (Slack, Google Workspace, GitHub, etc.) – no single identity provider integration.",
+    "trigger": "Employee onboarding or offboarding",
+    "frequency": "Per event (multiple times per week)",
+    "current_workaround": "Manually create/disable accounts in each tool, often using a checklist in a shared spreadsheet.",
+    "consequence": "Security risk from orphaned accounts, delays in access for new hires, and wasted admin time.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "freelancer / independent contractor",
+    "workflow": "Tracking billable hours and expenses across multiple clients, then generating invoices manually.",
+    "trigger": "End of week or month, or project milestone",
+    "frequency": "Weekly",
+    "current_workaround": "Use a time tracker app (e.g., Toggl) but then manually copy totals into an invoice template in Google Docs or Excel, attach receipts manually.",
+    "consequence": "Missed billable hours, delayed payments, and difficulty proving expenses for tax deductions.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "small business owner",
+    "workflow": "Inventory management: manually updating stock levels after each sale or receipt, often using a spreadsheet because POS system doesn't sync with accounting.",
+    "trigger": "Every sale or inventory receipt",
+    "frequency": "Daily",
+    "current_workaround": "After each sale, log into POS, note items sold, then update an Excel sheet with quantities. For receipts, manually add new stock.",
+    "consequence": "Stockouts or overstocking, lost sales, and inaccurate cost of goods sold.",
+    "ecosystem": "reddit",
+    "source_type": "forum",
+    "collected_at": "2025-03-24T12:00:00Z"
   }
 ]

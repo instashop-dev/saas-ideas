@@ -1,0 +1,77 @@
+[
+  {
+    "signal_id": "SIG-0001",
+    "source_ids": [
+      "SRC-0001"
+    ],
+    "target_role": "Sales Operations Manager / CRM Administrator",
+    "workflow": "Manual reconciliation of lead data between marketing automation platforms and CRM due to lack of native field mapping or sync reliability.",
+    "trigger": "Daily or weekly lead volume spikes from campaigns.",
+    "frequency": "daily",
+    "current_workaround": "Exporting CSVs from the marketing platform, cleaning them in Excel, and manually importing or updating records in the CRM.",
+    "consequence": "Duplicate leads, lost opportunities due to delayed follow-up, and significant administrative overhead for sales ops teams.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2024-05-20T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0002",
+    "source_ids": [
+      "SRC-0002"
+    ],
+    "target_role": "Finance Controller / Accounts Payable Specialist",
+    "workflow": "Reconciling invoice data from multiple vendor portals into ERP systems where direct API integration is unavailable or too costly.",
+    "trigger": "End-of-month closing cycle.",
+    "frequency": "monthly",
+    "current_workaround": "Manually downloading PDF invoices, extracting line items via OCR or manual entry, and matching them against POs in spreadsheets before entering into the ERP.",
+    "consequence": "High risk of human error in financial reporting, delayed payments, and excessive overtime during close periods.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2024-05-20T10:05:00Z"
+  },
+  {
+    "signal_id": "SIG-0003",
+    "source_ids": [
+      "SRC-0003"
+    ],
+    "target_role": "HRIS Analyst / People Operations",
+    "workflow": "Migrating employee data between legacy HRIS and modern benefits administration platforms lacking bi-directional sync.",
+    "trigger": "New hire onboarding or quarterly benefits enrollment changes.",
+    "frequency": "per-event (weekly/monthly)",
+    "current_workaround": "Using Excel templates to format data exports from one system and manually uploading them to another, often requiring email confirmation loops with vendors.",
+    "consequence": "Payroll errors, incorrect benefit coverage for employees, and compliance risks due to data latency.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2024-05-20T10:10:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "IT Systems Integrator / DevOps Engineer",
+    "workflow": "Maintaining fragile custom scripts to bridge gaps between SaaS tools that do not support native webhooks or standard APIs.",
+    "trigger": "System updates breaking existing integrations or new tool adoption.",
+    "frequency": "ongoing maintenance",
+    "current_workaround": "Writing and maintaining internal Python/Node.js scripts using polling mechanisms to check for data changes, which are prone to failure and require constant monitoring.",
+    "consequence": "Data silos, inconsistent information across departments, and high technical debt as staff time is diverted from strategic projects to script maintenance.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2024-05-20T10:15:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Customer Success Manager",
+    "workflow": "Generating custom client health reports by aggregating data from product usage logs, support tickets, and billing systems.",
+    "trigger": "Quarterly Business Reviews (QBRs) with key accounts.",
+    "frequency": "quarterly",
+    "current_workaround": "Manually exporting data from each source system, joining datasets in Excel using complex VLOOKUPs/XLOOKUPs, and formatting charts for presentations.",
+    "consequence": "Delayed QBR preparation, potential inaccuracies in client health scoring, and inability to provide real-time insights to clients.",
+    "ecosystem": "g2-reviews",
+    "source_type": "review",
+    "collected_at": "2024-05-20T10:20:00Z"
+  }
+]

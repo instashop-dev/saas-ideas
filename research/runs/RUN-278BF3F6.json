@@ -6,10 +6,11 @@
   "models": {
     "pain_miner": "deepseek/deepseek-v4-flash",
     "clusterer": "deepseek/deepseek-v4-flash",
-    "validator": "moonshotai/kimi-k3"
+    "validator": "moonshotai/kimi-k3",
+    "research_planner": "deepseek/deepseek-v4-flash"
   },
   "candidate_counts": {
-    "signals": 42,
+    "signals": 23,
     "clusters": 20,
     "validated": 20,
     "competition_survivors": 0,
@@ -17,5 +18,50 @@
     "approved": 0
   },
   "estimated_cost": null,
-  "status": "validating"
+  "status": "pain_mining",
+  "research_plan": {
+    "sources": [
+      {
+        "ecosystem": "reddit",
+        "research_questions": [
+          "What manual processes do small business owners describe as most time-consuming in their daily operations?",
+          "Which repetitive data entry or spreadsheet tasks are frequently mentioned in r/excel or r/accounting?",
+          "What integration gaps between commonly used SaaS tools are users complaining about in r/sysadmin?",
+          "How do freelancers on r/freelance describe their invoicing and expense tracking pain points?"
+        ]
+      },
+      {
+        "ecosystem": "stack-exchange",
+        "research_questions": [
+          "On Stack Overflow, what are the most upvoted questions about automating Excel or Google Sheets workflows?",
+          "On Workplace SE, what operational inefficiencies do employees report around cross-department communication?",
+          "On Project Management SE, which recurring manual tracking or reporting tasks are cited as major pain points?"
+        ]
+      },
+      {
+        "ecosystem": "github-issues",
+        "research_questions": [
+          "In open-source project management or CRM tools, what feature requests for automation or integration are frequently reopened?",
+          "Which issues in devops tools mention painful manual deployment steps that users want to eliminate?",
+          "What database migration or data synchronization difficulties are repeatedly brought up in related repositories?"
+        ]
+      },
+      {
+        "ecosystem": "upwork-job-postings",
+        "research_questions": [
+          "What job postings explicitly ask for 'manual to automation' conversion of data entry or reporting tasks?",
+          "Which recurring projects involve building integrations between two or more business software that do not natively connect?",
+          "How many postings request help with cleaning up repetitive Excel/CSV manipulation workflows?"
+        ]
+      },
+      {
+        "ecosystem": "g2-reviews",
+        "research_questions": [
+          "In reviews of popular CRM or ERP software, what user complaints center around manual data transfer or reconciliation?",
+          "What negative reviews highlight excessive time spent on setup, configuration, or maintenance of integrations?",
+          "Which reviews mention that the product lacks basic automation for common business processes, forcing manual work?"
+        ]
+      }
+    ]
+  }
 }

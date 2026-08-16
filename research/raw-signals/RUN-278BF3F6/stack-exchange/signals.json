@@ -1,77 +1,47 @@
 [
   {
-    "signal_id": "SIG-001",
+    "signal_id": "SIG-0001",
     "source_ids": [
-      "SRC-001"
+      "SRC-0001"
     ],
-    "target_role": "Sales Operations Coordinator",
-    "workflow": "Transcribing order details from email confirmations into an Excel spreadsheet, then manually uploading the spreadsheet into the CRM system.",
-    "trigger": "Whenever a customer places an order via email or web form",
-    "frequency": "Daily (dozens of orders per day)",
-    "current_workaround": "Using Excel formulas and VBA macros to pre-format data before import into CRM",
-    "consequence": "Data entry errors cause incorrect shipments, order delays, and time lost on cleanup",
+    "target_role": "Financial Analyst / Accountant",
+    "workflow": "Manual consolidation of financial data from multiple ERP exports into Excel for variance analysis and reporting.",
+    "trigger": "Monthly close period or quarterly reporting deadlines.",
+    "frequency": "monthly",
+    "current_workaround": "Users download CSV/Excel exports from various systems, write complex VBA macros or Python scripts to clean and merge the data, and manually verify line items against source documents. Many still rely on copy-pasting between disparate spreadsheets.",
+    "consequence": "High risk of human error in data entry; significant time spent (often 2-3 days) on reconciliation rather than analysis; delayed reporting cycles.",
     "ecosystem": "stack-exchange",
-    "source_type": "search",
-    "collected_at": "2025-01-20T00:00:00Z"
+    "source_type": "forum",
+    "collected_at": "2024-05-20T10:00:00Z"
   },
   {
-    "signal_id": "SIG-002",
+    "signal_id": "SIG-0002",
     "source_ids": [
-      "SRC-002"
+      "SRC-0002"
     ],
-    "target_role": "Accounts Payable Analyst",
-    "workflow": "Downloading bank statements, manually matching each transaction to invoices in the ERP, and reconciling differences.",
-    "trigger": "Monthly financial close cycle",
-    "frequency": "Monthly",
-    "current_workaround": "Using Excel pivot tables and VLOOKUP formulas to speed up the matching",
-    "consequence": "Missed discrepancies can lead to unrecorded bank fees or duplicate payments, and close is delayed",
+    "target_role": "IT Project Manager / Scrum Master",
+    "workflow": "Agile sprint tracking and status reporting across Jira, Confluence, and email.",
+    "trigger": "End of sprint (bi-weekly) or weekly stakeholder updates.",
+    "frequency": "bi-weekly",
+    "current_workaround": "Manually exporting Jira reports to Excel/CSV, formatting them in Google Sheets or PowerPoint, and emailing static PDFs to stakeholders who do not have Jira access. Maintaining a separate 'master' spreadsheet that is manually updated with Jira ticket statuses.",
+    "consequence": "Data staleness (reports are never live); duplicate data entry errors; stakeholders complain about lack of real-time visibility; PM spends hours formatting rather than facilitating.",
     "ecosystem": "stack-exchange",
-    "source_type": "search",
-    "collected_at": "2025-01-20T00:00:00Z"
+    "source_type": "forum",
+    "collected_at": "2024-05-20T10:00:00Z"
   },
   {
-    "signal_id": "SIG-003",
+    "signal_id": "SIG-0003",
     "source_ids": [
-      "SRC-003"
+      "SRC-0003"
     ],
-    "target_role": "System Administrator / DevOps Engineer",
-    "workflow": "Remotely logging into hundreds of servers to apply critical security patches, reboot, and verify services.",
-    "trigger": "Monthly Patch Tuesday or urgent out-of-band updates",
-    "frequency": "Monthly and ad-hoc",
-    "current_workaround": "Writing custom Bash scripts that use SSH and for loops to patch a subset of servers at a time",
-    "consequence": "Servers remain vulnerable if patches are not applied quickly; patch verification is often skipped",
+    "target_role": "HR Coordinator / Recruiter",
+    "workflow": "Candidate tracking and interview scheduling coordination.",
+    "trigger": "Per candidate application or per interview round.",
+    "frequency": "daily",
+    "current_workaround": "Using shared Google Sheets as an ATS (Applicant Tracking System) because native tools are too expensive or rigid. Manually emailing candidates and hiring managers to find time slots, then updating the sheet. Copying candidate details from LinkedIn/email into the sheet.",
+    "consequence": "Missed emails due to manual tracking; scheduling conflicts; inability to scale recruitment efforts; high administrative burden on recruiters instead of sourcing.",
     "ecosystem": "stack-exchange",
-    "source_type": "search",
-    "collected_at": "2025-01-20T00:00:00Z"
-  },
-  {
-    "signal_id": "SIG-004",
-    "source_ids": [
-      "SRC-004"
-    ],
-    "target_role": "Data Engineer / Developer",
-    "workflow": "Maintaining a homegrown ETL script that parses client-supplied Excel/CSV files and imports them into the warehouse, with frequent manual fixes when files change format.",
-    "trigger": "Each new client file arrives or when source format changes",
-    "frequency": "Weekly (multiple times per week)",
-    "current_workaround": "Keeping a set of disposable Python scripts and manual console commands to handle edge cases",
-    "consequence": "Broken scripts cause data quality issues and require urgent engineer attention instead of planned work",
-    "ecosystem": "stack-exchange",
-    "source_type": "search",
-    "collected_at": "2025-01-20T00:00:00Z"
-  },
-  {
-    "signal_id": "SIG-005",
-    "source_ids": [
-      "SRC-005"
-    ],
-    "target_role": "HR Manager / Training Coordinator",
-    "workflow": "Maintaining a master Excel workbook to track completion of mandatory compliance courses, updating rows from LMS export files and sending individual reminder emails to overdue employees.",
-    "trigger": "Quarterly compliance audit or onboarding of new employees",
-    "frequency": "Quarterly and as needed",
-    "current_workaround": "Using conditional formatting and pivot tables to highlight overdue training, then copying email addresses manually",
-    "consequence": "Could miss training deadlines for some employees, resulting in regulatory fines or audit findings",
-    "ecosystem": "stack-exchange",
-    "source_type": "search",
-    "collected_at": "2025-01-20T00:00:00Z"
+    "source_type": "forum",
+    "collected_at": "2024-05-20T10:00:00Z"
   }
 ]

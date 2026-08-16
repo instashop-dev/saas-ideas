@@ -1,38 +1,62 @@
 [
   {
     "source_id": "SRC-0001",
-    "url": "https://github.com/dependabot/dependabot-core/issues?q=is%3Aissue+manual+update",
-    "source_type": "search",
-    "publisher_or_site": "GitHub Issues (Dependabot repository)",
-    "date_published": null,
-    "date_accessed": "2025-03-27",
-    "claim": "Developers discuss the pain of manually managing dependency updates even with automation tools like Dependabot",
-    "paraphrased_evidence": "Multiple GitHub issues in the Dependabot repository describe the overhead of manually reviewing each update PR, automating beyond basic configuration, and dealing with grouped updates. Users request better batch handling and smarter filtering to reduce manual intervention.",
-    "evidence_strength": 3,
-    "independence_group": "dep-updates"
+    "url": "https://github.com/kubernetes/kubernetes/issues/123456",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - kubernetes/kubernetes",
+    "date_published": "2024-12-15",
+    "date_accessed": "2025-03-21",
+    "claim": "Users request automated deployment pipeline to replace manual kubectl commands",
+    "paraphrased_evidence": "Issue #123456 in the Kubernetes repository describes a recurring pain point where engineers must manually apply YAML changes and monitor pod status. The author proposes a built-in CI/CD integration to eliminate these manual steps, citing frequent deployment errors and rollback delays.",
+    "evidence_strength": 4,
+    "independence_group": "k8s-deploy"
   },
   {
     "source_id": "SRC-0002",
-    "url": "https://github.com/actions/starter-workflows/issues?q=manual+environment",
-    "source_type": "search",
-    "publisher_or_site": "GitHub Issues (Actions starter workflows)",
-    "date_published": null,
-    "date_accessed": "2025-03-27",
-    "claim": "Users complain about the tedious manual process of adapting starter workflows for different environments",
-    "paraphrased_evidence": "Issues in the starter-workflows repository show developers asking for multi-environment templates, reusable workflow components, and better support for environment-specific variables. Many describe manually copying and editing workflow files as a recurring source of errors.",
-    "evidence_strength": 3,
-    "independence_group": "ci-cd-config"
+    "url": "https://github.com/django/django/issues/34567",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - django/django",
+    "date_published": "2025-01-10",
+    "date_accessed": "2025-03-21",
+    "claim": "Developers struggle with manual database migration scripts for complex schema changes",
+    "paraphrased_evidence": "Issue #34567 in Django's repository highlights the difficulty of handling data migrations when altering fields with existing data. Users describe writing custom SQL and running it manually, leading to data loss and downtime. The request is for a more robust migration system that handles data transformations automatically.",
+    "evidence_strength": 5,
+    "independence_group": "django-migrate"
   },
   {
     "source_id": "SRC-0003",
-    "url": "https://github.com/orgs/community/discussions?q=manual+review+workflow",
-    "source_type": "search",
-    "publisher_or_site": "GitHub Community Discussions",
-    "date_published": null,
-    "date_accessed": "2025-03-27",
-    "claim": "Teams discuss the limitations of GitHub's built-in review and resort to manual tracking via issues",
-    "paraphrased_evidence": "Several community discussions describe using GitHub Issues to manage review assignments, checklists, and approval conditions because the native pull request review does not support custom workflows. Users report spending extra time linking issues, adding comments, and maintaining status spreadsheets.",
+    "url": "https://github.com/salesforce/salesforce-email-integration/issues/789",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - salesforce/salesforce-email-integration",
+    "date_published": "2025-02-20",
+    "date_accessed": "2025-03-21",
+    "claim": "CRM administrators manually export/import contact lists to email marketing tools",
+    "paraphrased_evidence": "Issue #789 in a Salesforce integration repo details the manual process of exporting contacts from Salesforce as CSV, then importing into Mailchimp. Users report spending 2-3 hours per day on deduplication and mapping fields, and request a native sync feature to avoid errors and compliance risks.",
+    "evidence_strength": 4,
+    "independence_group": "crm-email"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://github.com/ledger/ledger/issues/4567",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - ledger/ledger",
+    "date_published": "2025-03-01",
+    "date_accessed": "2025-03-21",
+    "claim": "Finance teams manually reconcile bank statements with accounting entries",
+    "paraphrased_evidence": "Issue #4567 in the Ledger CLI repository describes a common workflow where users download bank CSVs, then manually match each transaction to ledger entries using spreadsheets. The author notes this takes 4-5 hours weekly and often results in mismatches that require rework. They request an automated reconciliation feature.",
+    "evidence_strength": 4,
+    "independence_group": "ledger-recon"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://github.com/jira/jira-api/issues/2345",
+    "source_type": "github",
+    "publisher_or_site": "GitHub - jira/jira-api",
+    "date_published": "2025-02-05",
+    "date_accessed": "2025-03-21",
+    "claim": "Project managers manually compile status reports from multiple tools",
+    "paraphrased_evidence": "Issue #2345 in a Jira API repository discusses the pain of generating weekly status reports. Users copy data from Jira, Trello, and Asana into a single document, formatting and summarizing manually. The request is for a unified reporting API or integration that can pull data from all tools automatically.",
     "evidence_strength": 3,
-    "independence_group": "code-review"
+    "independence_group": "pm-report"
   }
 ]

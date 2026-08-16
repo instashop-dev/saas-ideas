@@ -2,46 +2,76 @@
   {
     "signal_id": "SIG-0001",
     "source_ids": [
-      "SRC-001"
+      "SRC-0001"
     ],
-    "target_role": "bookkeeper / virtual assistant",
-    "workflow": "Manual data entry of invoice details from PDFs into accounting software (QuickBooks, Xero). Each invoice requires copying line items, amounts, dates, and vendor info.",
-    "trigger": "Receipt of invoices via email or portal",
-    "frequency": "daily",
-    "current_workaround": "Human manually types or copy-pastes each field from PDF to accounting system",
-    "consequence": "High error rate (wrong amounts, duplicate entries), late payment penalties, hours of tedious work per week",
+    "target_role": "Accounts Payable Clerk",
+    "workflow": "Manual data entry of invoice details from scanned PDFs into QuickBooks",
+    "trigger": "Receipt of vendor invoices via email or mail",
+    "frequency": "Daily",
+    "current_workaround": "Clerk manually types invoice number, date, amount, and line items from PDF into QuickBooks",
+    "consequence": "Errors in data entry lead to payment delays and vendor disputes; takes 2-3 hours daily",
     "ecosystem": "upwork-job-postings",
     "source_type": "job",
-    "collected_at": "2025-04-10T12:00:00Z"
+    "collected_at": "2025-03-20T10:00:00Z"
   },
   {
     "signal_id": "SIG-0002",
     "source_ids": [
-      "SRC-002"
+      "SRC-0002"
     ],
-    "target_role": "e-commerce operations manager",
-    "workflow": "Daily reconciliation of Shopify sales orders against inventory counts in a spreadsheet. Must export sales data, compare with physical stock, adjust quantities manually.",
-    "trigger": "End of each business day",
-    "frequency": "daily",
-    "current_workaround": "Export CSV from Shopify, open in Excel, manually compare with inventory spreadsheet, update quantities",
-    "consequence": "Stockouts or overselling due to lag in data; lost sales and customer dissatisfaction",
+    "target_role": "Marketing Operations Manager",
+    "workflow": "Manual export of leads from Salesforce and import into Mailchimp for email campaigns",
+    "trigger": "Weekly campaign scheduling",
+    "frequency": "Weekly",
+    "current_workaround": "Manager exports CSV from Salesforce, cleans columns, then imports into Mailchimp",
+    "consequence": "Leads are missed or duplicated; campaign timing slips; takes 4-5 hours per week",
     "ecosystem": "upwork-job-postings",
     "source_type": "job",
-    "collected_at": "2025-04-10T12:00:00Z"
+    "collected_at": "2025-03-20T10:00:00Z"
   },
   {
     "signal_id": "SIG-0003",
     "source_ids": [
-      "SRC-003"
+      "SRC-0003"
     ],
-    "target_role": "marketing analyst / reporting specialist",
-    "workflow": "Weekly aggregation of performance data from Google Analytics, Facebook Ads Manager, and CRM into a single Excel report. Requires manual export, formatting, and formula creation.",
-    "trigger": "Weekly reporting deadline",
-    "frequency": "weekly",
-    "current_workaround": "Log into each platform, export CSV, open in Excel, copy/paste into template, adjust formulas",
-    "consequence": "Reports are delayed, inconsistent, and consume 4-6 hours per week; insights are stale by the time they are shared",
+    "target_role": "Financial Analyst",
+    "workflow": "Monthly consolidation of sales data from multiple spreadsheets into a single report",
+    "trigger": "End of month close",
+    "frequency": "Monthly",
+    "current_workaround": "Analyst copies data from 12 regional Excel files into a master workbook, applies formulas, and formats charts",
+    "consequence": "Errors in copy-paste cause incorrect revenue figures; takes 2 full days each month",
     "ecosystem": "upwork-job-postings",
     "source_type": "job",
-    "collected_at": "2025-04-10T12:00:00Z"
+    "collected_at": "2025-03-20T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Bookkeeper",
+    "workflow": "Manual reconciliation of bank transactions against QuickBooks entries",
+    "trigger": "Monthly bank statement arrival",
+    "frequency": "Monthly",
+    "current_workaround": "Bookkeeper prints bank statement, checks each transaction against QuickBooks, marks cleared items",
+    "consequence": "Missed discrepancies lead to overdrafts or incorrect tax filings; takes 6-8 hours per month",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-03-20T10:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Project Coordinator",
+    "workflow": "Manual transfer of task updates from Trello to Asana for cross-team visibility",
+    "trigger": "Daily standup meeting preparation",
+    "frequency": "Daily",
+    "current_workaround": "Coordinator reads Trello cards and manually creates/updates corresponding Asana tasks",
+    "consequence": "Information lag causes missed deadlines; takes 1-2 hours daily",
+    "ecosystem": "upwork-job-postings",
+    "source_type": "job",
+    "collected_at": "2025-03-20T10:00:00Z"
   }
 ]

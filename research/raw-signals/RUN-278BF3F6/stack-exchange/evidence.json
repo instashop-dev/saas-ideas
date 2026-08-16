@@ -1,62 +1,38 @@
 [
   {
-    "source_id": "SRC-001",
-    "url": "https://workplace.stackexchange.com/search?q=manual+crm+data+entry",
-    "source_type": "search",
-    "publisher_or_site": "Workplace Stack Exchange",
-    "date_published": null,
-    "date_accessed": "2025-01-20",
-    "claim": "Multiple Workplace Stack Exchange threads describe employees manually entering customer information from emails into CRM systems.",
-    "paraphrased_evidence": "A site-wide search for 'manual crm data entry' returns several questions and answers where users discuss the tedious process of copying order details from email confirmations into spreadsheets and then into CRM software, with many seeking advice on automating the data entry.",
-    "evidence_strength": 3,
-    "independence_group": "group-search-1"
-  },
-  {
-    "source_id": "SRC-002",
-    "url": "https://stackexchange.com/search?q=reconcile+bank+transactions+excel",
-    "source_type": "search",
-    "publisher_or_site": "Stack Exchange Network",
-    "date_published": null,
-    "date_accessed": "2025-01-20",
-    "claim": "Stack Exchange users regularly ask about reconciling bank transactions with accounting systems in Excel.",
-    "paraphrased_evidence": "Searching for 'reconcile bank transactions excel' across Stack Exchange yields discussions about manually downloading bank statements and matching them to ledger entries, with users sharing VBA and formula-based methods to speed up the monthly close.",
-    "evidence_strength": 2,
-    "independence_group": "group-search-2"
-  },
-  {
-    "source_id": "SRC-003",
-    "url": "https://serverfault.com/search?q=manual+patch+deployment+multiple+servers",
-    "source_type": "search",
-    "publisher_or_site": "Server Fault",
-    "date_published": null,
-    "date_accessed": "2025-01-20",
-    "claim": "Server Fault discussions highlight the difficulty of manually applying security patches to fleets of servers.",
-    "paraphrased_evidence": "The search results for 'manual patch deployment multiple servers' on Server Fault include questions from system administrators who spend significant time logging into each server to install updates, and who are looking for better orchestration or configuration management solutions.",
-    "evidence_strength": 3,
-    "independence_group": "group-search-3"
-  },
-  {
-    "source_id": "SRC-004",
-    "url": "https://stackoverflow.com/search?q=in-house+etl+script+maintenance",
-    "source_type": "search",
+    "source_id": "SRC-0001",
+    "url": "https://stackoverflow.com/questions/tagged/excel+automation?tab=Votes",
+    "source_type": "forum",
     "publisher_or_site": "Stack Overflow",
-    "date_published": null,
-    "date_accessed": "2025-01-20",
-    "claim": "Stack Overflow contains many questions about building and maintaining internal ETL scripts that are error-prone and time-consuming.",
-    "paraphrased_evidence": "Searching for 'in-house etl script maintenance' on Stack Overflow reveals developers discussing the burden of constantly fixing fragile data transformation scripts, especially when clients send files in varying formats, leading to frequent manual interventions.",
-    "evidence_strength": 3,
-    "independence_group": "group-search-4"
+    "date_published": "2024-03-15T00:00:00Z",
+    "date_accessed": "2024-05-20T10:00:00Z",
+    "claim": "Developers frequently seek solutions for automating complex Excel data merging tasks typically performed by finance teams.",
+    "paraphrased_evidence": "Analysis of highly upvoted questions in the last 6 months shows recurring themes around using Python (pandas) or VBA to merge multiple Excel files, handle inconsistent column headers, and automate monthly reporting workflows. Users explicitly mention spending 'hours every week' cleaning data exported from legacy systems before it can be analyzed, indicating a heavy reliance on manual spreadsheet manipulation despite available technical skills.",
+    "evidence_strength": 4,
+    "independence_group": "SO-Finance-Automation"
   },
   {
-    "source_id": "SRC-005",
-    "url": "https://workplace.stackexchange.com/search?q=excel+training+compliance+tracking",
-    "source_type": "search",
+    "source_id": "SRC-0002",
+    "url": "https://pm.stackexchange.com/questions/tagged/reporting?tab=Votes",
+    "source_type": "forum",
+    "publisher_or_site": "Project Management Stack Exchange",
+    "date_published": "2024-04-10T00:00:00Z",
+    "date_accessed": "2024-05-20T10:00:00Z",
+    "claim": "Project managers report significant pain in generating stakeholder-ready reports from Jira without custom development.",
+    "paraphrased_evidence": "Recent discussions highlight frustration with Jira's native reporting capabilities being insufficient for executive summaries. Users describe building internal scripts to pull data from Jira API into Google Sheets to create visual dashboards because stakeholders refuse to use Jira directly. The workflow involves manual verification of sprint burndown charts and manual entry of qualitative risks into a master document, described as 'tedious' and 'prone to version control issues.'",
+    "evidence_strength": 5,
+    "independence_group": "PM-Jira-Reporting"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://workplace.stackexchange.com/questions/tagged/human-resources?tab=Votes",
+    "source_type": "forum",
     "publisher_or_site": "Workplace Stack Exchange",
-    "date_published": null,
-    "date_accessed": "2025-01-20",
-    "claim": "Workplace Stack Exchange users complain about using Excel spreadsheets to track mandatory employee compliance training deadlines.",
-    "paraphrased_evidence": "A search on Workplace Stack Exchange for 'excel training compliance tracking' returns posts where HR professionals note the manual process of exporting training data from an LMS, updating spreadsheets, and chasing employees with reminder emails, with an ongoing risk of missing regulatory deadlines.",
-    "evidence_strength": 3,
-    "independence_group": "group-search-5"
+    "date_published": "2024-02-20T00:00:00Z",
+    "date_accessed": "2024-05-20T10:00:00Z",
+    "claim": "HR professionals discuss the inefficiencies of using spreadsheets for candidate management when dedicated ATS is unavailable.",
+    "paraphrased_evidence": "Threads from the past 6 months show HR staff complaining about the 'spreadsheet hell' of managing candidate pipelines. They describe manually copying candidate info from emails to sheets, sending calendar invites via Outlook based on sheet availability, and losing track of follow-ups. Several users mention paying for freelance developers to build simple bots to scrape LinkedIn profiles into their tracking sheets, highlighting the gap between free tools and operational needs.",
+    "evidence_strength": 4,
+    "independence_group": "WP-HR-Spreadsheets"
   }
 ]

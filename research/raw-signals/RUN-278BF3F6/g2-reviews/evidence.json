@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.g2.com/products/salesforce/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-04-15",
+    "date_accessed": "2024-05-20",
+    "claim": "Users report difficulty syncing marketing leads automatically, requiring manual CSV imports.",
+    "paraphrased_evidence": "A reviewer noted that while Salesforce is powerful, its native integration with certain marketing automation tools is unreliable. They described spending hours every week exporting lead lists from their marketing platform, cleaning duplicates in Excel, and manually re-importing them into Salesforce to ensure accurate attribution, citing this as a major operational bottleneck.",
+    "evidence_strength": 4,
+    "independence_group": "salesforce-marketing-sync-pain"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.g2.com/products/netsuite/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-03-22",
+    "date_accessed": "2024-05-20",
+    "claim": "Finance teams struggle with manual invoice entry due to lack of automated vendor portal integration.",
+    "paraphrased_evidence": "An AP specialist complained about the 'heavy lifting' required at month-end. They explained that many vendors do not offer EDI or API access, forcing the team to manually download PDFs, extract data, and enter it into NetSuite. The reviewer highlighted that this manual process is error-prone and consumes 20+ hours per month during close cycles.",
+    "evidence_strength": 5,
+    "independence_group": "netsuite-invoice-entry-pain"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.g2.com/products/workday/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-05-01",
+    "date_accessed": "2024-05-20",
+    "claim": "HRIS professionals find manual data migration between Workday and third-party benefits providers tedious.",
+    "paraphrased_evidence": "A People Ops manager stated that despite Workday's robustness, integrating with niche benefits providers requires manual file exchanges. They described creating specific Excel templates to match Workday's export format to the insurer's import requirements, noting that any change in employee status requires a manual refresh of these files, leading to delays in coverage activation.",
+    "evidence_strength": 4,
+    "independence_group": "workday-benefits-integration-pain"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.g2.com/products/zoho-crm/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-04-10",
+    "date_accessed": "2024-05-20",
+    "claim": "Developers spend excessive time maintaining custom scripts because Zoho lacks native webhooks for certain modules.",
+    "paraphrased_evidence": "A technical reviewer mentioned that while Zoho offers many integrations, specific legacy modules lack modern API capabilities like webhooks. This forces their engineering team to build and maintain internal polling scripts to sync data with external inventory systems. The reviewer expressed frustration that this 'technical debt' diverts resources from feature development to mere connectivity maintenance.",
+    "evidence_strength": 4,
+    "independence_group": "zoho-custom-script-maintenance-pain"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.g2.com/products/hubspot/reviews",
+    "source_type": "review",
+    "publisher_or_site": "G2",
+    "date_published": "2024-05-12",
+    "date_accessed": "2024-05-20",
+    "claim": "CSMs waste time manually compiling client health data from disparate sources for QBRs.",
+    "paraphrased_evidence": "A Customer Success Lead criticized the lack of a unified 'client health' dashboard that pulls from support tickets, product usage, and billing automatically. They described a monthly ritual of logging into three different systems, exporting reports, and manually merging them in Excel to create a single slide deck for executive reviews, calling it 'time-consuming and prone to version control errors.'",
+    "evidence_strength": 5,
+    "independence_group": "hubspot-qbr-reporting-pain"
+  }
+]

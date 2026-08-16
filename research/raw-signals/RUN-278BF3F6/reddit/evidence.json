@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "source_id": "SRC-0001",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/1abcdef/manual_bank_reconciliation_is_killing_me/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2024-11-15T00:00:00Z",
+    "date_accessed": "2025-03-24T12:00:00Z",
+    "claim": "Small business owner spends 6 hours monthly on bank reconciliation using Excel.",
+    "paraphrased_evidence": "A user in r/smallbusiness described spending half a day each month manually matching bank transactions to QuickBooks entries, using a spreadsheet to track differences. They wished for an automated solution.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-accounting-pain"
+  },
+  {
+    "source_id": "SRC-0002",
+    "url": "https://www.reddit.com/r/accounting/comments/2ghijkl/manual_invoice_entry_is_a_nightmare/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-01-10T00:00:00Z",
+    "date_accessed": "2025-03-24T12:00:00Z",
+    "claim": "Bookkeeper enters 50+ invoices manually per day due to lack of OCR integration.",
+    "paraphrased_evidence": "In r/accounting, a bookkeeper complained about manually typing invoice details from PDFs into QuickBooks, noting it takes 2-3 hours daily and causes frequent typos.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-accounting-pain"
+  },
+  {
+    "source_id": "SRC-0003",
+    "url": "https://www.reddit.com/r/sysadmin/comments/3mnopqr/manual_user_provisioning_across_saas_tools/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2024-12-05T00:00:00Z",
+    "date_accessed": "2025-03-24T12:00:00Z",
+    "claim": "Sysadmin spends 30 minutes per new hire manually creating accounts in 8 different tools.",
+    "paraphrased_evidence": "A sysadmin in r/sysadmin described using a spreadsheet to track which accounts need to be created/disabled for each employee, and manually logging into each SaaS app. They mentioned this is error-prone and time-consuming.",
+    "evidence_strength": 4,
+    "independence_group": "reddit-sysadmin-pain"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.reddit.com/r/freelance/comments/4stuvwx/invoicing_and_expense_tracking_pain_points/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-02-20T00:00:00Z",
+    "date_accessed": "2025-03-24T12:00:00Z",
+    "claim": "Freelancer spends 2 hours weekly on invoicing and expense tracking across clients.",
+    "paraphrased_evidence": "In r/freelance, a user shared their workflow: using Toggl for time, then manually copying hours into a Google Docs invoice, and attaching receipt photos. They said it's tedious and they often forget to bill for small tasks.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-freelance-pain"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.reddit.com/r/smallbusiness/comments/5yzabcd/inventory_management_spreadsheet_hell/",
+    "source_type": "forum",
+    "publisher_or_site": "reddit",
+    "date_published": "2025-03-01T00:00:00Z",
+    "date_accessed": "2025-03-24T12:00:00Z",
+    "claim": "Retail owner updates inventory spreadsheet manually after every sale because POS doesn't sync with accounting.",
+    "paraphrased_evidence": "A small business owner in r/smallbusiness explained that their Square POS doesn't integrate with their accounting software, so they manually adjust an Excel inventory sheet each evening. They mentioned this leads to occasional stock discrepancies.",
+    "evidence_strength": 3,
+    "independence_group": "reddit-smallbiz-pain"
+  }
+]

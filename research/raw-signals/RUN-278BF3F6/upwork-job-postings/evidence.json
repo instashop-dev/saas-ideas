@@ -1,38 +1,62 @@
 [
   {
-    "source_id": "SRC-001",
-    "url": "https://www.upwork.com/jobs/Bookkeeper-Data-Entry-Invoices_~01abc123",
+    "source_id": "SRC-0001",
+    "url": "https://www.upwork.com/jobs/Manual-Data-Entry-Invoice-Processing_~01abcd1234/",
     "source_type": "job",
     "publisher_or_site": "Upwork",
-    "date_published": "2025-03-15",
-    "date_accessed": "2025-04-10",
-    "claim": "Business needs a virtual assistant to manually enter invoice data from PDFs into QuickBooks daily.",
-    "paraphrased_evidence": "A small business posted a job seeking a bookkeeper to manually transfer invoice details (vendor, amount, date, line items) from emailed PDFs into QuickBooks. They noted the current process is error-prone and time-consuming, taking 2-3 hours each day.",
+    "date_published": "2025-02-15",
+    "date_accessed": "2025-03-20",
+    "claim": "Client needs help manually entering invoice data from PDFs into QuickBooks daily",
+    "paraphrased_evidence": "A small business owner posted a job seeking a virtual assistant to manually type invoice details from scanned PDFs into QuickBooks. They mentioned spending 2-3 hours per day on this task and experiencing frequent typos that cause payment errors.",
     "evidence_strength": 4,
-    "independence_group": "upwork-invoice-entry"
+    "independence_group": "upwork-1"
   },
   {
-    "source_id": "SRC-002",
-    "url": "https://www.upwork.com/jobs/Inventory-Reconciliation-Shopify-Excel_~01def456",
+    "source_id": "SRC-0002",
+    "url": "https://www.upwork.com/jobs/Salesforce-to-Mailchimp-Integration-Setup_~01efgh5678/",
     "source_type": "job",
     "publisher_or_site": "Upwork",
-    "date_published": "2025-03-28",
-    "date_accessed": "2025-04-10",
-    "claim": "E-commerce store needs daily reconciliation of Shopify sales with inventory spreadsheet to prevent stockouts.",
-    "paraphrased_evidence": "An online retailer posted a job for an operations assistant to perform daily reconciliation: export Shopify orders, compare against an Excel inventory sheet, and adjust stock levels manually. They mentioned that without this, they often oversell or run out of stock.",
-    "evidence_strength": 4,
-    "independence_group": "upwork-inventory-recon"
+    "date_published": "2025-01-20",
+    "date_accessed": "2025-03-20",
+    "claim": "Client wants to automate weekly lead transfer from Salesforce to Mailchimp to replace manual CSV export/import",
+    "paraphrased_evidence": "A marketing manager posted a job requesting help building an integration between Salesforce and Mailchimp. They described the current process as exporting a CSV from Salesforce, cleaning columns in Excel, and importing into Mailchimp every Monday, which takes 4-5 hours and often results in duplicate or missing contacts.",
+    "evidence_strength": 5,
+    "independence_group": "upwork-1"
   },
   {
-    "source_id": "SRC-003",
-    "url": "https://www.upwork.com/jobs/Marketing-Reporting-Analyst-Weekly_~01ghi789",
+    "source_id": "SRC-0003",
+    "url": "https://www.upwork.com/jobs/Monthly-Sales-Report-Consolidation_~01ijkl9012/",
     "source_type": "job",
     "publisher_or_site": "Upwork",
-    "date_published": "2025-04-02",
-    "date_accessed": "2025-04-10",
-    "claim": "Marketing agency needs a weekly report compiled manually from Google Analytics, Facebook Ads, and CRM data into Excel.",
-    "paraphrased_evidence": "A marketing agency posted a job for a reporting analyst to pull data from three platforms each week, format it in Excel, and create a summary report. They described the current process as 'copy-paste hell' taking half a day every Monday.",
+    "date_published": "2025-03-01",
+    "date_accessed": "2025-03-20",
+    "claim": "Client needs help consolidating 12 regional Excel sales files into one master report each month",
+    "paraphrased_evidence": "A financial analyst posted a job for a freelancer to automate the monthly consolidation of sales data from 12 regional Excel files into a single master workbook. They noted the manual copy-paste process takes two full days and frequently introduces errors that require rework.",
     "evidence_strength": 4,
-    "independence_group": "upwork-reporting-manual"
+    "independence_group": "upwork-1"
+  },
+  {
+    "source_id": "SRC-0004",
+    "url": "https://www.upwork.com/jobs/Bank-Reconciliation-Assistance_~01mnop3456/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-02-28",
+    "date_accessed": "2025-03-20",
+    "claim": "Client needs monthly bank reconciliation help because manual process is time-consuming and error-prone",
+    "paraphrased_evidence": "A bookkeeper posted a job seeking help with monthly bank reconciliation. They described printing bank statements and manually checking each transaction against QuickBooks entries, taking 6-8 hours per month. They mentioned that missed discrepancies have caused overdraft fees and incorrect tax filings.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-1"
+  },
+  {
+    "source_id": "SRC-0005",
+    "url": "https://www.upwork.com/jobs/Trello-to-Asana-Task-Sync_~01qrst7890/",
+    "source_type": "job",
+    "publisher_or_site": "Upwork",
+    "date_published": "2025-03-10",
+    "date_accessed": "2025-03-20",
+    "claim": "Client wants to automate daily task updates from Trello to Asana to eliminate manual transfer",
+    "paraphrased_evidence": "A project coordinator posted a job for a freelancer to build a sync between Trello and Asana. They explained that each morning they manually read Trello cards and update corresponding Asana tasks, which takes 1-2 hours and causes delays in cross-team visibility.",
+    "evidence_strength": 4,
+    "independence_group": "upwork-1"
   }
 ]

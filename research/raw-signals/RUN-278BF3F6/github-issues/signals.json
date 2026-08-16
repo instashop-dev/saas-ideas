@@ -4,44 +4,74 @@
     "source_ids": [
       "SRC-0001"
     ],
-    "target_role": "Open-source maintainer / DevOps engineer",
-    "workflow": "Manually updating dependencies across multiple repositories by creating pull requests for each package update",
-    "trigger": "New version release of a dependency or security advisory",
-    "frequency": "Weekly to monthly, per repository",
-    "current_workaround": "Using Dependabot or Renovate bot, but manually reviewing and merging each PR; often resorting to local scripts or manual git commands",
-    "consequence": "Delayed security patches, outdated dependencies, breaking changes missed, maintainer burnout",
+    "target_role": "DevOps engineer",
+    "workflow": "Manual deployment steps for Kubernetes clusters",
+    "trigger": "New application version or configuration change",
+    "frequency": "Multiple times per week",
+    "current_workaround": "Engineers manually run kubectl commands, update YAML files, and verify pod status",
+    "consequence": "Deployment errors, rollback delays, and wasted engineering hours",
     "ecosystem": "github-issues",
-    "source_type": "search",
-    "collected_at": "2025-03-27T12:00:00Z"
+    "source_type": "github",
+    "collected_at": "2025-03-21T12:00:00Z"
   },
   {
     "signal_id": "SIG-0002",
     "source_ids": [
       "SRC-0002"
     ],
-    "target_role": "CI/CD engineer / Developer",
-    "workflow": "Copying and modifying CI/CD pipeline configuration files (e.g., GitHub Actions YAML) for each new environment (dev, staging, prod) and each microservice",
-    "trigger": "Adding a new service or environment",
-    "frequency": "Per new service or environment (weekly to monthly)",
-    "current_workaround": "Manually duplicating workflow files, using environment variables, or templating with tools like copier or cookiecutter",
-    "consequence": "Configuration drift, hard-to-debug build failures, time wasted on repetitive edits, increased risk of misconfiguration",
+    "target_role": "Database administrator / backend developer",
+    "workflow": "Manual database schema migration and data synchronization",
+    "trigger": "Schema changes or data model updates",
+    "frequency": "Weekly or per release",
+    "current_workaround": "Developers write custom SQL scripts, run them manually, and check for errors",
+    "consequence": "Data inconsistency, migration failures, and production downtime",
     "ecosystem": "github-issues",
-    "source_type": "search",
-    "collected_at": "2025-03-27T12:00:00Z"
+    "source_type": "github",
+    "collected_at": "2025-03-21T12:00:00Z"
   },
   {
     "signal_id": "SIG-0003",
     "source_ids": [
       "SRC-0003"
     ],
-    "target_role": "Team lead / Developer",
-    "workflow": "Using GitHub Issues as a makeshift code review tracking system because the built-in review workflow doesn't support custom checklists, approval gates, or cross-repo reviews",
-    "trigger": "Starting a pull request that requires additional review steps beyond the standard GitHub review",
-    "frequency": "Daily, per PR",
-    "current_workaround": "Creating issues linked to PRs, manually tracking review status in spreadsheets, or using external tools like Asana or Jira",
-    "consequence": "Lost context, duplicate work, missed review deadlines, low visibility into review pipeline",
+    "target_role": "CRM administrator / marketing operations",
+    "workflow": "Manual synchronization of customer data between CRM and email marketing platform",
+    "trigger": "New contact added or updated in CRM",
+    "frequency": "Daily",
+    "current_workaround": "Export CSV from CRM, import into email tool, deduplicate manually",
+    "consequence": "Stale or duplicate contacts, missed email campaigns, compliance risk",
     "ecosystem": "github-issues",
-    "source_type": "search",
-    "collected_at": "2025-03-27T12:00:00Z"
+    "source_type": "github",
+    "collected_at": "2025-03-21T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0004",
+    "source_ids": [
+      "SRC-0004"
+    ],
+    "target_role": "Finance / accounting team member",
+    "workflow": "Manual reconciliation of bank transactions with accounting software",
+    "trigger": "End of month or weekly bank statement",
+    "frequency": "Weekly",
+    "current_workaround": "Download bank CSV, manually match transactions in spreadsheet, adjust entries",
+    "consequence": "Errors in financial reports, late reconciliations, audit issues",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-03-21T12:00:00Z"
+  },
+  {
+    "signal_id": "SIG-0005",
+    "source_ids": [
+      "SRC-0005"
+    ],
+    "target_role": "Project manager / team lead",
+    "workflow": "Manual generation of weekly status reports from multiple project management tools",
+    "trigger": "End of sprint or weekly review",
+    "frequency": "Weekly",
+    "current_workaround": "Copy data from Jira, Trello, and Asana into a Google Doc, format manually",
+    "consequence": "Inconsistent reports, missed deadlines, wasted time",
+    "ecosystem": "github-issues",
+    "source_type": "github",
+    "collected_at": "2025-03-21T12:00:00Z"
   }
 ]
