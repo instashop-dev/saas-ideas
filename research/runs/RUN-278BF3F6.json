@@ -10,7 +10,7 @@
     "research_planner": "deepseek/deepseek-v4-flash"
   },
   "candidate_counts": {
-    "signals": 23,
+    "signals": 0,
     "clusters": 20,
     "validated": 20,
     "competition_survivors": 0,
